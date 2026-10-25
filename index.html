@@ -1,0 +1,1834 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ты гений</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Карточки для английских слов из файла words.txt">
+<meta name="theme-color" content="#e6eaf0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Ты гений">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one-screen study app. Header band, a 560px content column, tab bar band.
+   The index card fills the free height; English is set in a dictionary serif, Russian in a sans. */
+:root {
+  --desk: #e6eaf0;
+  --paper: #ffffff;
+  --paper-2: #f1f3f7;
+  --seg-on: #ffffff;
+  --knob: #ffffff;
+  --ink: #16203a;
+  --ink-2: #535d74;
+  --ink-3: #828ba0;
+  --hair: #d3d9e3;
+  --rule-red: #df5a52;
+  --rule-blue: #eef2f8;
+  --marker: #ffe14a;
+  --marker-ink: #16203a;
+  --good: #17784b;
+  --good-bg: #dcf1e5;
+  --bad: #b3392f;
+  --bad-bg: #f9e2df;
+  --shade: rgba(22, 32, 58, 0.13);
+  --scrim: rgba(14, 20, 34, 0.42);
+  --font-word: "Gentium Book Plus", "Gentium Plus", "Charis SIL", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Golos Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --desk: #0e1420;
+    --paper: #182033;
+    --paper-2: #20293d;
+    --seg-on: #323c53;
+    --knob: #ffffff;
+    --ink: #e6eaf2;
+    --ink-2: #a0a9bb;
+    --ink-3: #6f798e;
+    --hair: #2a3448;
+    --rule-red: #d9645c;
+    --rule-blue: #1c2538;
+    --marker: #f2d03c;
+    --marker-ink: #16203a;
+    --good: #5bcf96;
+    --good-bg: #153226;
+    --bad: #f08a82;
+    --bad-bg: #3a1e22;
+    --shade: rgba(0, 0, 0, 0.42);
+    --scrim: rgba(0, 0, 0, 0.58);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --desk: #0e1420;
+  --paper: #182033;
+  --paper-2: #20293d;
+  --seg-on: #323c53;
+  --knob: #ffffff;
+  --ink: #e6eaf2;
+  --ink-2: #a0a9bb;
+  --ink-3: #6f798e;
+  --hair: #2a3448;
+  --rule-red: #d9645c;
+  --rule-blue: #1c2538;
+  --marker: #f2d03c;
+  --marker-ink: #16203a;
+  --good: #5bcf96;
+  --good-bg: #153226;
+  --bad: #f08a82;
+  --bad-bg: #3a1e22;
+  --shade: rgba(0, 0, 0, 0.42);
+  --scrim: rgba(0, 0, 0, 0.58);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+:root {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--desk);
+}
+html, body { height: 100%; }
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--desk);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.i { width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.wrap {
+  width: 100%;
+  max-width: 560px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.shell { height: 100%; display: flex; flex-direction: column; }
+
+/* header */
+.top .wrap { display: flex; align-items: center; gap: 8px; padding-block: 10px 6px; }
+.brand { margin: 0 auto 0 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; }
+.picker { position: relative; display: block; min-width: 0; }
+.picker select {
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 50vw;
+  height: 40px;
+  padding: 0 34px 0 14px;
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.picker::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--ink-2);
+  border-bottom: 2px solid var(--ink-2);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+.picker-block select { max-width: none; border-radius: 12px; background: var(--paper-2); border-color: transparent; }
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--hair);
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-block: 2px 6px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--hair);
+  font-size: 14px;
+  line-height: 1.35;
+}
+.banner p { margin: 0; flex: 1 1 220px; min-width: 0; }
+.banner .i { width: 18px; height: 18px; vertical-align: -3px; }
+
+/* main area */
+.main { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.view { min-height: 100%; display: flex; flex-direction: column; padding-block: 2px 12px; }
+.view-cards { height: 100%; display: grid; grid-template-rows: auto minmax(250px, 1fr) auto auto; }
+
+.progress { display: flex; align-items: center; gap: 12px; padding-block: 6px 4px; }
+.bar { flex: 1; height: 6px; border-radius: 3px; background: var(--hair); overflow: hidden; }
+.bar span { display: block; height: 100%; border-radius: inherit; background: var(--marker); transition: width .3s ease; }
+.count { font-size: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* index card */
+.stage { position: relative; min-height: 0; display: flex; flex-direction: column; justify-content: center; padding-block: 10px; }
+.card {
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  max-height: 500px;
+  perspective: 1400px;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: transform .2s ease;
+}
+.card:focus-visible { outline-offset: 4px; }
+.card.dragging { transition: none; }
+.card.leaving { transition: transform .22s ease-in, opacity .22s ease-in; opacity: 0; }
+.card.enter { animation: card-in .24s ease-out; }
+@keyframes card-in { from { opacity: 0; transform: translateY(12px) scale(.985); } }
+.card-inner {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transform-style: preserve-3d;
+  transition: transform .45s cubic-bezier(.2, .75, .25, 1);
+}
+.card.flipped .card-inner { transform: rotateY(180deg); }
+.face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 18px 16px;
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: 0 1px 2px var(--shade), 0 16px 32px -18px var(--shade);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.front { transform: rotateY(0deg); }
+.back {
+  transform: rotateY(180deg);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--rule-red), var(--rule-red)),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 35px, var(--rule-blue) 35px, var(--rule-blue) 36px);
+  background-size: 100% 2px, 100% 100%;
+  background-position: 0 46px, 0 48px;
+  background-repeat: no-repeat;
+}
+.card:not(.flipped) .back, .card.flipped .front { pointer-events: none; }
+.face-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 24px;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.face-group { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.face-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding-block: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.word {
+  font-family: var(--font-word);
+  font-weight: 700;
+  font-size: clamp(32px, 9vw, 46px);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.ipa { min-height: 1.35em; font-family: var(--font-word); font-size: 19px; color: var(--ink-2); }
+.cue { font-size: 15px; color: var(--ink-3); }
+.cue[lang="en"] { font-family: var(--font-word); font-weight: 700; font-size: 18px; color: var(--ink-2); }
+.ru {
+  font-weight: 600;
+  font-size: clamp(24px, 6.6vw, 32px);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.ex {
+  margin: 6px 0 0;
+  max-width: 34ch;
+  font-family: var(--font-word);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 7px 13px 7px 11px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper-2);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.chip .i { width: 18px; height: 18px; }
+.chip:active { transform: scale(.97); }
+.swipe-tag {
+  position: absolute;
+  top: 16px;
+  z-index: 3;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: var(--paper);
+  font-size: 18px;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+}
+.swipe-tag.yes { left: 16px; color: var(--good); box-shadow: inset 0 0 0 2px var(--good); transform: rotate(-8deg); opacity: var(--yes, 0); }
+.swipe-tag.no { right: 16px; color: var(--bad); box-shadow: inset 0 0 0 2px var(--bad); transform: rotate(8deg); opacity: var(--no, 0); }
+
+/* level meter: five boxes, like a Leitner card box */
+.meter { display: inline-flex; gap: 3px; flex: none; }
+.meter i { width: 9px; height: 5px; border-radius: 2px; background: var(--hair); }
+.meter i.on { background: var(--good); }
+.tag-new {
+  flex: none;
+  padding: 1px 7px;
+  border-radius: 3px 6px 4px 7px;
+  background: var(--marker);
+  color: var(--marker-ink);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* buttons */
+.answer { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-block: 8px 4px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: transform .08s ease, filter .15s ease;
+}
+.btn:active { transform: scale(.98); }
+.btn-no { background: var(--bad-bg); color: var(--bad); }
+.btn-yes { background: var(--good-bg); color: var(--good); }
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--hair); }
+.btn-sm { min-height: 40px; padding: 8px 14px; border-radius: 11px; font-size: 15px; }
+.btn-danger { color: var(--bad); }
+.btn-link {
+  padding: 8px 2px;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--hair);
+  text-underline-offset: 4px;
+}
+@media (hover: hover) {
+  .btn:hover, .chip:hover, .opt:not(:disabled):hover, .row-main:hover { filter: brightness(.97); }
+}
+.keys { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .keys { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; padding-top: 8px; font-size: 13px; color: var(--ink-3); }
+}
+kbd {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--hair), inset 0 -1px 0 var(--hair);
+  color: var(--ink-2);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* test & write */
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-block: 8px 14px;
+  padding: 14px 18px 18px;
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: 0 1px 2px var(--shade), 0 16px 32px -18px var(--shade);
+  text-align: center;
+}
+.prompt .face-top { align-self: stretch; }
+.prompt .word, .prompt .ru { margin-top: 12px; }
+.options { display: grid; gap: 10px; }
+.opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--hair);
+  font-size: 17px;
+  line-height: 1.3;
+  text-align: left;
+}
+.opt[lang="en"] { font-family: var(--font-word); font-size: 20px; font-weight: 700; }
+.opt kbd { flex: none; }
+@media not all and (hover: hover) { .opt kbd { display: none; } }
+.opt.right { background: var(--good-bg); color: var(--good); box-shadow: inset 0 0 0 2px var(--good); }
+.opt.wrong { background: var(--bad-bg); color: var(--bad); box-shadow: inset 0 0 0 2px var(--bad); }
+.opt.dim { opacity: .5; }
+.opt:disabled { cursor: default; }
+.after { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; }
+.verdict { margin: 0; font-size: 17px; font-weight: 700; text-align: center; }
+.verdict.good { color: var(--good); }
+.verdict.bad { color: var(--bad); }
+
+.write { display: flex; gap: 10px; }
+.answer-input {
+  flex: 1;
+  min-width: 0;
+  height: 54px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--hair);
+  font-family: var(--font-word);
+  font-size: 21px;
+}
+.answer-input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.answer-input[readonly] { color: var(--ink-2); }
+.answer-input::placeholder { color: var(--ink-3); font-family: var(--font-ui); font-size: 16px; }
+.write .btn { flex: none; }
+.write-tools { display: flex; justify-content: space-between; gap: 12px; padding-top: 6px; }
+.hint { margin: 2px 0 0; font-family: var(--font-word); font-size: 21px; letter-spacing: .14em; white-space: pre-wrap; color: var(--ink-2); }
+.blank { display: inline-block; width: 3.4em; border-bottom: 2px solid var(--ink-3); vertical-align: -3px; }
+.feedback { display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 16px; text-align: center; }
+.fb-word { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 2px 10px; }
+.word-sm { font-family: var(--font-word); font-weight: 700; font-size: 28px; line-height: 1.15; }
+.yours { margin: 0; color: var(--ink-2); }
+.yours s { font-family: var(--font-word); font-size: 19px; color: var(--bad); }
+.feedback .ex { margin: 0; }
+.fb-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; }
+.fb-actions .btn:only-child { grid-column: 1 / -1; }
+
+/* end of a round */
+.done { margin-block: auto; display: flex; flex-direction: column; gap: 16px; padding-block: 16px; text-align: center; }
+.done h2 { margin: 0; font-size: 26px; font-weight: 700; text-wrap: balance; }
+.tally { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tally > div { display: flex; flex-direction: column; gap: 4px; padding: 16px 12px; border-radius: 16px; background: var(--paper); }
+.tally b { font-size: 40px; line-height: 1; font-variant-numeric: tabular-nums; }
+.tally span { font-size: 15px; color: var(--ink-2); }
+.t-good b { color: var(--good); }
+.t-bad b { color: var(--bad); }
+.done-actions { display: grid; gap: 10px; }
+.done-note { margin: 0; font-size: 14px; color: var(--ink-3); }
+
+/* list */
+.list-head { position: sticky; top: 0; z-index: 2; display: flex; flex-direction: column; gap: 10px; padding-block: 6px 10px; background: var(--desk); }
+.search {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--hair);
+  font-size: 16px;
+}
+.search:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.stats-row { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--ink-2); }
+.stats-row b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.list { display: flex; flex-direction: column; gap: 6px; }
+.list-group { margin: 14px 0 2px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+.list-group:first-child { margin-top: 2px; }
+.row { border-radius: 14px; background: var(--paper); }
+.row-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 14px;
+  background: none;
+  text-align: left;
+}
+.row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.row-en { font-family: var(--font-word); font-size: 19px; font-weight: 700; line-height: 1.25; overflow-wrap: anywhere; }
+.row-ru { font-size: 15px; color: var(--ink-2); overflow-wrap: anywhere; }
+.row-more { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 0 14px 14px; }
+.row-more .ipa:empty { display: none; }
+.row-more .ex { max-width: none; margin: 0; }
+.row-more .chips { justify-content: flex-start; }
+.empty, .skipped { margin: 12px 0 0; font-size: 14px; color: var(--ink-3); text-align: center; }
+
+/* empty and error states */
+.state { margin-block: auto; display: flex; flex-direction: column; align-items: center; gap: 12px; padding-block: 24px; text-align: center; }
+.state h2 { margin: 0; font-size: 22px; }
+.state p { margin: 0; max-width: 36ch; color: var(--ink-2); }
+code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-family: var(--font-word); font-size: .95em; }
+
+/* tab bar */
+.tabs { border-top: 1px solid var(--hair); background: var(--desk); }
+.tabs .wrap { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 4px 2px; }
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 6px 2px 5px;
+  border: 0;
+  background: none;
+  color: var(--ink-3);
+  font-size: 12px;
+  font-weight: 500;
+  touch-action: manipulation;
+}
+.tab .i { width: 24px; height: 24px; }
+.tab-label { padding: 1px 6px; border-radius: 3px 6px 4px 7px; }
+.tab[aria-current="page"] { color: var(--ink); }
+.tab[aria-current="page"] .tab-label { background: var(--marker); color: var(--marker-ink); }
+
+/* sheets */
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: var(--scrim);
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+.sheet.open { opacity: 1; }
+.sheet-panel {
+  width: 100%;
+  max-width: 560px;
+  max-height: 90%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-top: 4px;
+  padding-left: max(18px, env(safe-area-inset-left, 0px));
+  padding-right: max(18px, env(safe-area-inset-right, 0px));
+  padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  border-radius: 20px 20px 0 0;
+  background: var(--paper);
+  transform: translateY(24px);
+  transition: transform .22s cubic-bezier(.2, .8, .2, 1);
+}
+.sheet.open .sheet-panel { transform: none; }
+@media (min-width: 700px) {
+  .sheet { align-items: center; }
+  .sheet-panel { border-radius: 20px; max-height: 86%; }
+}
+.sheet-head { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 10px; background: var(--paper); }
+.sheet-head h2 { margin: 0; min-width: 0; font-size: 20px; font-weight: 700; overflow-wrap: anywhere; }
+.sheet-head h2[lang="en"] { font-family: var(--font-word); font-size: 24px; }
+.set-group { display: flex; flex-direction: column; gap: 8px; padding-block: 14px; border-top: 1px solid var(--hair); }
+.sheet-head + .set-group { border-top: 0; padding-top: 4px; }
+.set-label { font-size: 14px; font-weight: 600; color: var(--ink-2); }
+.set-label output { font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+.set-note { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-3); }
+.set-row { display: flex; align-items: center; gap: 10px; }
+.set-row .picker { flex: 1; }
+.set-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 3px; padding: 3px; border-radius: 12px; background: var(--paper-2); }
+.seg button { min-height: 38px; padding: 7px 6px; border: 0; border-radius: 9px; background: transparent; color: var(--ink-2); font-size: 15px; font-weight: 500; line-height: 1.15; }
+.seg button[aria-checked="true"] { background: var(--seg-on); color: var(--ink); box-shadow: 0 1px 2px var(--shade), 0 0 0 1px var(--hair); }
+input[type="range"] { width: 100%; margin: 4px 0; accent-color: var(--ink); }
+.toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 4px; }
+.switch { position: relative; width: 50px; height: 30px; flex: none; }
+.switch input { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.switch span { position: absolute; inset: 0; border-radius: 15px; background: var(--hair); transition: background .15s ease; }
+.switch span::after { content: ""; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: var(--knob); box-shadow: 0 1px 3px var(--shade); transition: transform .15s ease; }
+.switch input:checked + span { background: var(--good); }
+.switch input:checked + span::after { transform: translateX(20px); }
+.switch input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.yg-box { min-height: 220px; border-radius: 12px; overflow: hidden; background: var(--paper-2); }
+.yg-status { margin: 10px 0 0; font-size: 14px; color: var(--ink-2); }
+.yg-status:empty { display: none; }
+.yg-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 14px; padding-top: 12px; font-size: 13px; color: var(--ink-3); }
+.yg-foot a { color: var(--ink); }
+.yg-legal { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(86px + env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  max-width: calc(100% - 32px);
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 15px;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, 8px);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .card-inner, .sheet, .sheet-panel, .toast, .bar span, .switch span, .switch span::after { transition: none !important; }
+  .card.enter { animation: none; }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <div class="wrap">
+      <h1 class="brand">Ты гений</h1>
+      <label class="picker" for="group"><span class="sr">Тема</span><select id="group"></select></label>
+      <button class="icon-btn" id="openSettings" type="button" aria-label="Настройки">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg>
+      </button>
+    </div>
+  </header>
+  <div class="wrap"><div class="banner" id="banner" hidden></div></div>
+  <main class="main" id="main">
+    <div class="wrap view" id="view"></div>
+  </main>
+  <nav class="tabs" aria-label="Режимы">
+    <div class="wrap">
+      <button class="tab" type="button" data-mode="cards">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="7.5" width="13.5" height="12.5" rx="2.5"/><path d="M8 4.5h10A2.5 2.5 0 0 1 20.5 7v9"/></svg>
+        <span class="tab-label">Карточки</span>
+      </button>
+      <button class="tab" type="button" data-mode="test">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6.5" r="2"/><path d="M11 6.5h9"/><circle cx="6" cy="12" r="2"/><path d="M11 12h9"/><circle cx="6" cy="17.5" r="2" fill="currentColor"/><path d="M11 17.5h9"/></svg>
+        <span class="tab-label">Тест</span>
+      </button>
+      <button class="tab" type="button" data-mode="write">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16"/><path d="M15 4l3 3-8.5 8.5-4 1 1-4z"/></svg>
+        <span class="tab-label">Ввод</span>
+      </button>
+      <button class="tab" type="button" data-mode="list">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.5h11.5M8.5 12h11.5M8.5 17.5h11.5"/><circle cx="4.5" cy="6.5" r="1" fill="currentColor"/><circle cx="4.5" cy="12" r="1" fill="currentColor"/><circle cx="4.5" cy="17.5" r="1" fill="currentColor"/></svg>
+        <span class="tab-label">Список</span>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<div class="sheet" id="settings" hidden>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="sheet-head">
+      <h2 id="settingsTitle">Настройки</h2>
+      <button class="icon-btn" type="button" data-act="close" aria-label="Закрыть">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="set-group">
+      <span class="set-label" id="lblDir">Что показывать первым</span>
+      <div class="seg" role="radiogroup" aria-labelledby="lblDir">
+        <button type="button" role="radio" data-set="dir" data-val="en-ru">Английское слово</button>
+        <button type="button" role="radio" data-set="dir" data-val="ru-en">Перевод</button>
+      </div>
+    </div>
+
+    <div class="set-group">
+      <span class="set-label" id="lblAccent">Произношение</span>
+      <div class="seg" role="radiogroup" aria-labelledby="lblAccent">
+        <button type="button" role="radio" data-set="accent" data-val="us">Американское</button>
+        <button type="button" role="radio" data-set="accent" data-val="uk">Британское</button>
+      </div>
+      <label class="set-label" for="voice">Голос</label>
+      <div class="set-row">
+        <div class="picker picker-block"><select id="voice"></select></div>
+        <button class="btn btn-ghost btn-sm" type="button" data-act="test-voice">Проверить</button>
+      </div>
+      <label class="set-label" for="rate">Скорость речи <output id="rateOut" for="rate"></output></label>
+      <input type="range" id="rate" min="0.6" max="1.2" step="0.05">
+      <div class="toggle-row">
+        <label for="autoplay">Озвучивать слово само</label>
+        <span class="switch"><input type="checkbox" id="autoplay"><span></span></span>
+      </div>
+      <p class="set-note" id="voiceNote"></p>
+    </div>
+
+    <div class="set-group">
+      <span class="set-label" id="lblSize">Слов за подход</span>
+      <div class="seg" role="radiogroup" aria-labelledby="lblSize">
+        <button type="button" role="radio" data-set="size" data-val="10">10</button>
+        <button type="button" role="radio" data-set="size" data-val="20">20</button>
+        <button type="button" role="radio" data-set="size" data-val="50">50</button>
+        <button type="button" role="radio" data-set="size" data-val="0">Все</button>
+      </div>
+    </div>
+
+    <div class="set-group">
+      <span class="set-label">Список слов</span>
+      <p class="set-note" id="wordsInfo"></p>
+      <div class="set-actions">
+        <button class="btn btn-ghost btn-sm" type="button" data-act="reload">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.5v4.5H15"/></svg>
+          Обновить
+        </button>
+        <a class="btn btn-ghost btn-sm" id="editLink" href="#" target="_blank" rel="noopener" hidden>Редактировать words.txt</a>
+      </div>
+    </div>
+
+    <div class="set-group">
+      <span class="set-label" id="lblTheme">Оформление</span>
+      <div class="seg" role="radiogroup" aria-labelledby="lblTheme">
+        <button type="button" role="radio" data-set="theme" data-val="auto">Как в системе</button>
+        <button type="button" role="radio" data-set="theme" data-val="light">Светлое</button>
+        <button type="button" role="radio" data-set="theme" data-val="dark">Тёмное</button>
+      </div>
+    </div>
+
+    <div class="set-group">
+      <span class="set-label">Прогресс</span>
+      <p class="set-note">Хранится на этом устройстве. На iPhone и компьютере он свой.</p>
+      <div class="set-actions">
+        <button class="btn btn-ghost btn-sm btn-danger" type="button" data-act="reset">Сбросить прогресс</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sheet" id="ygSheet" hidden>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="ygTitle">
+    <div class="sheet-head">
+      <h2 id="ygTitle" lang="en"></h2>
+      <button class="icon-btn" type="button" data-act="close" aria-label="Закрыть">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="yg-box"><div id="ygWidget"></div></div>
+    <p class="yg-status" id="ygStatus" role="status"></p>
+    <div class="yg-foot">
+      <a id="ygLink" href="https://youglish.com" target="_blank" rel="noopener">Открыть на youglish.com</a>
+      <span class="yg-legal">
+        <span>Powered by <a href="https://youglish.com" target="_blank" rel="noopener">YouGlish.com</a></span>
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ---------- helpers ---------- */
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  const cssq = s => (window.CSS && CSS.escape) ? CSS.escape(s) : String(s).replace(/["\\]/g, '\\$&');
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
+  };
+  const reduced = () => { try { return matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } };
+  const DAY = 864e5;
+  const DAYS = [0, 1, 2, 4, 8, 16];
+  const WORD_FORMS = ['слово', 'слова', 'слов'];
+  function plural(n, f) {
+    const a = Math.abs(n) % 100, b = a % 10;
+    return n + ' ' + (a > 10 && a < 20 ? f[2] : b === 1 ? f[0] : b >= 2 && b <= 4 ? f[1] : f[2]);
+  }
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
+
+  const IS_PREVIEW = (() => { try { return window.self !== window.top || /claude/i.test(location.hostname); } catch (e) { return true; } })();
+  const HOST_THEME = document.documentElement.getAttribute('data-theme');
+
+  const ICON = {
+    voice: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M15.5 9.2a4 4 0 0 1 0 5.6M18 6.8a7.5 7.5 0 0 1 0 10.4"/></svg>',
+    rec: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v2.5"/></svg>',
+    video: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="3"/><path d="M10.5 9.5v5l4.3-2.5z" fill="currentColor" stroke="none"/></svg>',
+    example: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5h-9l-4 3v-3H5A1.5 1.5 0 0 1 3.5 15V7.5A1.5 1.5 0 0 1 5 6z"/></svg>',
+    share: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11M8 7.5l4-4 4 4"/><path d="M8.5 10.5H6v10h12v-10h-2.5"/></svg>'
+  };
+
+  /* ---------- state ---------- */
+  const DEFAULTS = { dir: 'en-ru', accent: 'us', voice: '', rate: 0.9, autoplay: true, size: 20, group: '', theme: 'auto' };
+  const S = Object.assign({}, DEFAULTS, store.get('tg:settings', {}));
+  const saveSettings = () => store.set('tg:settings', S);
+  let STATS = store.get('tg:stats', {});
+  const saveStats = () => store.set('tg:stats', STATS);
+
+  let WORDS = [], GROUPS = [], SKIPPED = [];
+  let KEYMAP = new Map();
+  const cached = store.get('tg:words', null) || {};
+  let wordsText = cached.text || '';
+  let wordsAt = cached.at || 0;
+  let loadState = wordsText ? 'ok' : 'loading';
+  let lastFetch = 0;
+  let mode = ['cards', 'test', 'write', 'list'].includes(store.get('tg:mode')) ? store.get('tg:mode') : 'cards';
+  const sessions = { cards: null, test: null, write: null };
+  let interacted = false;
+  let busy = false;
+  let listQuery = '';
+  let openKey = null;
+
+  const view = $('#view');
+
+  /* ---------- words.txt ---------- */
+  function parseWords(text) {
+    const words = [], groups = [], skipped = [];
+    let group = 'Без темы';
+    String(text || '').replace(/^\uFEFF/, '').split(/\r?\n/).forEach((raw, idx) => {
+      const line = raw.trim();
+      if (!line || line.startsWith('//')) return;
+      if (line.startsWith('#')) { group = line.replace(/^#+\s*/, '').trim() || 'Без темы'; return; }
+      let parts;
+      if (line.includes(';')) parts = line.split(';');
+      else if (line.includes('\t')) parts = line.split('\t');
+      else parts = line.split(/\s+[-–—]\s+/);
+      parts = parts.map(p => p.trim());
+      const en = parts[0] || '', ru = parts[1] || '', ex = parts.slice(2).filter(Boolean).join('; ');
+      if (!en || !ru) { skipped.push(idx + 1); return; }
+      if (!groups.includes(group)) groups.push(group);
+      words.push({ en, ru, ex, group, key: en.toLowerCase().replace(/\s+/g, ' ') });
+    });
+    return { words, groups, skipped };
+  }
+
+  function applyWords(text) {
+    const r = parseWords(text);
+    WORDS = r.words; GROUPS = r.groups; SKIPPED = r.skipped;
+    KEYMAP = new Map();
+    WORDS.forEach(w => { if (!KEYMAP.has(w.key)) KEYMAP.set(w.key, w); });
+    if (S.group && !GROUPS.includes(S.group)) { S.group = ''; saveSettings(); }
+    renderGroupPicker();
+    syncWordsInfo();
+  }
+  const byKey = k => KEYMAP.get(k) || null;
+  const pool = () => S.group ? WORDS.filter(w => w.group === S.group) : WORDS;
+
+  async function loadWords(opts = {}) {
+    lastFetch = Date.now();
+    try {
+      const res = await fetch('words.txt', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const text = await res.text();
+      wordsAt = Date.now();
+      const changed = text !== wordsText;
+      const hadWords = !!wordsText;
+      wordsText = text;
+      store.set('tg:words', { text, at: wordsAt });
+      loadState = 'ok';
+      if (changed) {
+        applyWords(text);
+        resetIdleSessions();
+        render();
+        if (hadWords) toast('Список обновлён: ' + plural(WORDS.length, WORD_FORMS));
+      } else {
+        syncWordsInfo();
+        if (opts.manual) toast('Список актуален: ' + plural(WORDS.length, WORD_FORMS));
+      }
+    } catch (e) {
+      if (!wordsText) { loadState = 'error'; render(); }
+      else if (opts.manual) toast('Нет связи с сайтом. Работаю с сохранённым списком');
+    }
+  }
+
+  /* ---------- progress (Leitner boxes 0–5) ---------- */
+  function record(w, ok, soft) {
+    const now = Date.now();
+    const prev = STATS[w.key];
+    const s = prev ? Object.assign({}, prev) : { b: 0, d: 0, n: 0, c: 0, e: 0 };
+    s.n++; s.t = now;
+    if (ok) {
+      s.c++;
+      if (!soft && (!prev || s.b === 0 || s.d <= now)) {
+        s.b = Math.min(5, s.b + 1);
+        s.d = now + DAYS[s.b] * DAY;
+      }
+    } else {
+      s.e++; s.b = 0; s.d = now;
+    }
+    STATS[w.key] = s;
+    saveStats();
+  }
+  const statusOf = w => { const s = STATS[w.key]; return !s ? 'new' : s.b >= 3 ? 'known' : 'learning'; };
+  function meterHTML(w) {
+    const s = STATS[w.key];
+    if (!s) return '<span class="tag-new">новое</span>';
+    let h = `<span class="meter" role="img" aria-label="Уровень ${s.b} из 5" title="Уровень ${s.b} из 5">`;
+    for (let i = 1; i <= 5; i++) h += i <= s.b ? '<i class="on"></i>' : '<i></i>';
+    return h + '</span>';
+  }
+  function buildQueue(words, size) {
+    const now = Date.now();
+    const ranked = words.map(w => {
+      const s = STATS[w.key];
+      let p;
+      if (!s) p = 1 + Math.random();
+      else if (s.d <= now) p = Math.random() * 0.5 + s.b * 0.1;
+      else p = 2 + (s.d - now) / DAY + Math.random() * 0.5;
+      return [p, w];
+    }).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+    return shuffle(size ? ranked.slice(0, size) : ranked);
+  }
+  const MAKERS = {
+    cards: q => ({ queue: q, i: 0, flipped: false, first: {}, rep: {}, spoken: -1 }),
+    test: q => ({ queue: q, i: 0, right: 0, wrong: [], answered: null, opts: null, spoken: -1, timer: 0 }),
+    write: q => ({ queue: q, i: 0, right: 0, wrong: [], state: null, hint: 0, prev: null })
+  };
+  function session(kind) {
+    if (!sessions[kind]) sessions[kind] = MAKERS[kind](buildQueue(pool(), S.size));
+    return sessions[kind];
+  }
+  function resetSessions() { sessions.cards = sessions.test = sessions.write = null; }
+  function resetIdleSessions() {
+    ['cards', 'test', 'write'].forEach(k => {
+      const s = sessions[k];
+      if (!s || s.i >= s.queue.length || (s.i === 0 && !s.flipped && s.answered == null && !s.state)) sessions[k] = null;
+    });
+  }
+  function currentWord() {
+    const s = sessions[mode];
+    return s && s.queue ? s.queue[s.i] || null : null;
+  }
+  const ttsText = w => w.en.split('/')[0].trim();
+
+  /* ---------- speech ---------- */
+  const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|pipe organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|ralph|kathy|princess|deranged|hysterical|eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley)\b/i;
+  const TTS = {
+    ok: 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window,
+    voices: [],
+    load() {
+      if (!this.ok) return;
+      try { this.voices = speechSynthesis.getVoices().filter(v => /^en([-_]|$)/i.test(v.lang) && !NOVELTY.test(v.name)); } catch (e) { this.voices = []; }
+    },
+    score(v) {
+      let s = 0;
+      const lang = v.lang.replace('_', '-').toLowerCase();
+      if (/premium|enhanced|natural|neural/i.test(v.name)) s += 60;
+      if (/^(samantha|ava|allison|susan|zoe|evan|nathan|tom|joelle|noelle|daniel|serena|kate|oliver|arthur|martha|stephanie|jamie)\b/i.test(v.name)) s += 25;
+      if (/google (us|uk) english/i.test(v.name)) s += 30;
+      if (/microsoft (aria|jenny|guy|ana|andrew|emma|brian|ava|christopher|eric|michelle|roger|steffan|sonia|libby|ryan|maisie|thomas)/i.test(v.name)) s += 30;
+      if (S.accent === 'uk' ? lang === 'en-gb' : lang === 'en-us') s += 40;
+      if (v.default) s += 2;
+      return s;
+    },
+    sorted() { return this.voices.slice().sort((a, b) => this.score(b) - this.score(a)); },
+    current() {
+      if (!this.voices.length) this.load();
+      return (S.voice && this.voices.find(v => v.voiceURI === S.voice)) || this.sorted()[0] || null;
+    },
+    speak(text) {
+      if (!this.ok) { toast('Этот браузер не умеет озвучивать текст'); return; }
+      try {
+        const synth = window.speechSynthesis;
+        synth.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        const v = this.current();
+        if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = S.accent === 'uk' ? 'en-GB' : 'en-US'; }
+        u.rate = S.rate;
+        this.last = u;
+        if (synth.paused) synth.resume();
+        synth.speak(u);
+      } catch (e) { /* ignore */ }
+    },
+    unlock() {
+      if (!this.ok || this.unlocked) return;
+      this.unlocked = true;
+      try { const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u); } catch (e) { /* ignore */ }
+    }
+  };
+  if (TTS.ok) {
+    TTS.load();
+    try { speechSynthesis.addEventListener('voiceschanged', () => { TTS.load(); fillVoiceSelect(); }); } catch (e) { /* old Safari */ }
+    [300, 1200, 3000].forEach(t => setTimeout(() => { TTS.load(); fillVoiceSelect(); }, t));
+  }
+  const firstTouch = () => { interacted = true; TTS.unlock(); };
+  ['click', 'touchend', 'keydown'].forEach(ev => window.addEventListener(ev, firstTouch, { once: true, capture: true }));
+
+  /* ---------- dictionary: transcription and recorded audio ---------- */
+  const Dict = {
+    cache: store.get('tg:dict', {}),
+    pending: {},
+    term(w) {
+      const t = w.en.split('/')[0].trim().toLowerCase().replace(/^to\s+/, '');
+      return /^[a-z][a-z'-]*$/.test(t) ? t : null;
+    },
+    cached(w) { const t = this.term(w); return t ? this.cache[t] || null : null; },
+    get(w) {
+      const t = this.term(w);
+      if (!t || IS_PREVIEW) return Promise.resolve(null);
+      if (this.cache[t]) return Promise.resolve(this.cache[t]);
+      if (this.pending[t]) return this.pending[t];
+      if (navigator.onLine === false) return Promise.resolve(null);
+      const p = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(t))
+        .then(r => { if (r.status === 404) return []; if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+        .then(data => { const e = this.parse(data); this.cache[t] = e; store.set('tg:dict', this.cache); return e; })
+        .catch(() => null)
+        .finally(() => { delete this.pending[t]; });
+      this.pending[t] = p;
+      return p;
+    },
+    parse(data) {
+      const out = { ipa: {}, audio: {} };
+      (Array.isArray(data) ? data : []).forEach(entry => {
+        (entry.phonetics || []).forEach(ph => {
+          let a = ph.audio || '';
+          if (a.startsWith('//')) a = 'https:' + a;
+          const acc = /-uk\.mp3/i.test(a) ? 'uk' : /-us\.mp3/i.test(a) ? 'us' : /-au\.mp3/i.test(a) ? 'au' : '';
+          if (a) { if (acc && !out.audio[acc]) out.audio[acc] = a; if (!out.audio.any) out.audio.any = a; }
+          if (ph.text) { if (acc && !out.ipa[acc]) out.ipa[acc] = ph.text; if (!out.ipa.any) out.ipa.any = ph.text; }
+        });
+        if (entry.phonetic && !out.ipa.any) out.ipa.any = entry.phonetic;
+      });
+      return out;
+    },
+    ipa(e) { return e ? e.ipa[S.accent] || e.ipa.any || '' : ''; },
+    audio(e) { return e ? e.audio[S.accent] || e.audio.us || e.audio.uk || e.audio.any || '' : ''; }
+  };
+  function fillDict(w) {
+    if (!w) return;
+    Dict.get(w).then(e => {
+      if (!e) return;
+      const ipa = Dict.ipa(e), audio = Dict.audio(e);
+      $$(`[data-ipa="${cssq(w.key)}"]`).forEach(el => { el.textContent = ipa; });
+      if (audio) $$(`[data-rec="${cssq(w.key)}"]`).forEach(el => { el.hidden = false; });
+    });
+  }
+  let player = null;
+  function playUrl(url) {
+    if (!url) { toast('Для этого слова нет записи диктора'); return; }
+    try {
+      if (player) player.pause();
+      player = new Audio(url);
+      const p = player.play();
+      if (p && p.catch) p.catch(() => toast('Запись не воспроизвелась. Проверь интернет'));
+    } catch (e) { /* ignore */ }
+  }
+  function playRecording(w) {
+    const e = Dict.cached(w);
+    if (e) { playUrl(Dict.audio(e)); return; }
+    Dict.get(w).then(x => playUrl(Dict.audio(x)));
+  }
+
+  /* ---------- YouGlish ---------- */
+  const yg = { promise: null, widget: null };
+  const ygQuery = w => w.en.split('/')[0].trim().replace(/^to\s+/i, '');
+  const ygUrl = w => `https://youglish.com/pronounce/${encodeURIComponent(ygQuery(w))}/english/${S.accent === 'uk' ? 'uk' : 'us'}`;
+  function ygLoad() {
+    if (yg.promise) return yg.promise;
+    yg.promise = new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error('timeout')), 12000);
+      window.onYouglishAPIReady = () => { clearTimeout(timer); resolve(); };
+      const s = document.createElement('script');
+      s.src = 'https://youglish.com/public/emb/widget.js';
+      s.async = true;
+      s.onerror = () => { clearTimeout(timer); reject(new Error('load')); };
+      document.head.appendChild(s);
+    }).catch(err => { yg.promise = null; throw err; });
+    return yg.promise;
+  }
+  function token(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  async function openYouglish(w) {
+    const status = $('#ygStatus');
+    $('#ygTitle').textContent = ygQuery(w);
+    $('#ygLink').href = ygUrl(w);
+    status.textContent = 'Загружаю ролики…';
+    openSheet('#ygSheet');
+    try {
+      await ygLoad();
+      if (!yg.widget) {
+        yg.widget = new window.YG.Widget('ygWidget', {
+          autoStart: 1,
+          components: 4 + 8 + 16 + 64,
+          backgroundColor: token('--paper'),
+          panelsBackgroundColor: token('--paper-2'),
+          titleColor: token('--ink'),
+          captionColor: token('--ink'),
+          textColor: token('--ink-2'),
+          linkColor: token('--ink'),
+          events: {
+            onFetchDone: e => { status.textContent = e && e.totalResult === 0 ? 'Роликов с этим словом не нашлось.' : ''; },
+            onError: () => { status.textContent = 'Ролик не загрузился. Открой его на сайте по ссылке ниже.'; }
+          }
+        });
+      }
+      yg.widget.fetch(ygQuery(w), 'english', S.accent === 'uk' ? 'uk' : 'us');
+    } catch (e) {
+      status.textContent = 'Плеер YouGlish не загрузился. Открой ролики на сайте по ссылке ниже.';
+    }
+  }
+
+  /* ---------- small UI pieces ---------- */
+  function chipsHTML(w, withEx) {
+    const k = esc(w.key);
+    return `<div class="chips">
+      <button class="chip" type="button" data-act="say" data-key="${k}">${ICON.voice}<span>Голос</span></button>
+      <button class="chip" type="button" data-act="rec" data-key="${k}" data-rec="${k}" hidden>${ICON.rec}<span>Диктор</span></button>
+      <a class="chip" data-act="yg" data-key="${k}" href="${esc(ygUrl(w))}" target="_blank" rel="noopener">${ICON.video}<span>YouGlish</span></a>
+      ${withEx ? `<button class="chip" type="button" data-act="say-ex" data-key="${k}">${ICON.example}<span>Пример</span></button>` : ''}
+    </div>`;
+  }
+  function progressHTML(i, n) {
+    const pct = n ? Math.round(i / n * 100) : 0;
+    return `<div class="progress"><div class="bar" role="progressbar" aria-label="Пройдено" aria-valuemin="0" aria-valuemax="${n}" aria-valuenow="${i}"><span style="width:${pct}%"></span></div><span class="count">${Math.min(i + 1, n)} из ${n}</span></div>`;
+  }
+  const keysHTML = (...pairs) => `<div class="keys" aria-hidden="true">${pairs.map(([k, t]) => `<span><kbd>${k}</kbd> ${t}</span>`).join('')}</div>`;
+  const topHTML = w => `<div class="face-top"><span class="face-group">${esc(w.group)}</span>${meterHTML(w)}</div>`;
+
+  let toastTimer = 0;
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg;
+    t.hidden = false;
+    requestAnimationFrame(() => t.classList.add('show'));
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { t.classList.remove('show'); setTimeout(() => { t.hidden = true; }, 200); }, 2600);
+  }
+
+  /* ---------- rendering ---------- */
+  function render() {
+    $$('.tab').forEach(t => t.setAttribute('aria-current', t.dataset.mode === mode ? 'page' : 'false'));
+    if (!WORDS.length) { renderEmpty(); return; }
+    ({ cards: renderCards, test: renderTest, write: renderWrite, list: renderList })[mode]();
+  }
+
+  function renderEmpty() {
+    view.className = 'wrap view';
+    if (loadState === 'loading') view.innerHTML = '<div class="state"><p>Загружаю список слов…</p></div>';
+    else if (loadState === 'error') view.innerHTML = '<div class="state"><h2>Список слов не загрузился</h2><p>Проверь интернет и то, что файл words.txt лежит рядом с index.html.</p><button class="btn btn-primary" type="button" data-act="reload">Попробовать снова</button></div>';
+    else view.innerHTML = '<div class="state"><h2>В words.txt пока нет слов</h2><p>Добавь строки вида <code>apple ; яблоко ; I ate an apple</code> и нажми «Обновить».</p><button class="btn btn-primary" type="button" data-act="reload">Обновить</button></div>';
+  }
+
+  function faceHTML(w, side) {
+    const enFirst = S.dir === 'en-ru';
+    const enSide = (side === 'front') === enFirst;
+    if (enSide) {
+      const withEx = !enFirst && !!w.ex;
+      return topHTML(w) + `<div class="face-body">
+          ${enFirst ? '' : `<div class="cue">${esc(w.ru)}</div>`}
+          <div class="word" lang="en">${esc(w.en)}</div>
+          <div class="ipa" data-ipa="${esc(w.key)}" lang="en"></div>
+          ${withEx ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}
+        </div>${chipsHTML(w, withEx)}`;
+    }
+    const exHere = enFirst && !!w.ex;
+    return topHTML(w) + `<div class="face-body">
+        ${enFirst ? `<div class="cue" lang="en">${esc(w.en)}</div>` : ''}
+        <div class="ru">${esc(w.ru)}</div>
+        ${exHere ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}
+      </div>${exHere ? `<div class="chips"><button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button></div>` : ''}`;
+  }
+
+  function renderCards(opts = {}) {
+    const ses = session('cards');
+    if (ses.i >= ses.queue.length) { renderDone('cards'); return; }
+    const w = ses.queue[ses.i];
+    view.className = 'wrap view view-cards';
+    view.innerHTML = progressHTML(ses.i, ses.queue.length) + `
+      <div class="stage">
+        <div class="card${ses.flipped ? ' flipped' : ''}${opts.enter && !reduced() ? ' enter' : ''}" id="card" tabindex="0" role="button" aria-label="Карточка, нажми чтобы перевернуть">
+          <div class="card-inner">
+            <section class="face front" aria-hidden="${ses.flipped}">${faceHTML(w, 'front')}</section>
+            <section class="face back" aria-hidden="${!ses.flipped}">${faceHTML(w, 'back')}</section>
+          </div>
+          <span class="swipe-tag yes" aria-hidden="true">Знаю</span>
+          <span class="swipe-tag no" aria-hidden="true">Не знаю</span>
+        </div>
+      </div>
+      <div class="answer">
+        <button class="btn btn-no" type="button" data-act="no">Не знаю</button>
+        <button class="btn btn-yes" type="button" data-act="yes">Знаю</button>
+      </div>
+      ${keysHTML(['Пробел', 'перевернуть'], ['←', 'не знаю'], ['→', 'знаю'], ['S', 'голос'])}`;
+    bindCard($('#card'));
+    fillDict(w);
+    const next = ses.queue[ses.i + 1];
+    if (next) Dict.get(next);
+    if (ses.spoken !== ses.i && !ses.flipped) {
+      ses.spoken = ses.i;
+      if (S.autoplay && interacted && S.dir === 'en-ru') TTS.speak(ttsText(w));
+    }
+  }
+
+  function bindCard(card) {
+    let sx = 0, sy = 0, dx = 0, pid = null, active = false, moved = false;
+    const settle = () => {
+      card.classList.remove('dragging');
+      card.style.transform = '';
+      card.style.setProperty('--yes', 0);
+      card.style.setProperty('--no', 0);
+    };
+    card.addEventListener('pointerdown', e => {
+      if (busy || e.button > 0 || e.target.closest('.chip')) return;
+      active = true; moved = false; pid = e.pointerId; sx = e.clientX; sy = e.clientY; dx = 0;
+    });
+    card.addEventListener('pointermove', e => {
+      if (!active || e.pointerId !== pid) return;
+      const mx = e.clientX - sx, my = e.clientY - sy;
+      if (!moved) {
+        if (Math.abs(mx) < 10 && Math.abs(my) < 10) return;
+        if (Math.abs(my) > Math.abs(mx)) { active = false; return; }
+        moved = true;
+        card.classList.add('dragging');
+        try { card.setPointerCapture(pid); } catch (er) { /* ignore */ }
+      }
+      dx = mx;
+      card.style.transform = `translateX(${dx}px) rotate(${dx / 22}deg)`;
+      card.style.setProperty('--yes', Math.max(0, Math.min(1, dx / 110)));
+      card.style.setProperty('--no', Math.max(0, Math.min(1, -dx / 110)));
+    });
+    card.addEventListener('pointerup', e => {
+      if (!active || e.pointerId !== pid) return;
+      active = false;
+      if (!moved) { flipCard(); return; }
+      card.classList.remove('dragging');
+      if (dx > 90) answerCard(true);
+      else if (dx < -90) answerCard(false);
+      else settle();
+    });
+    card.addEventListener('pointercancel', () => { active = false; settle(); });
+  }
+
+  function flipCard() {
+    const ses = sessions.cards;
+    const card = $('#card');
+    if (!ses || !card || busy) return;
+    ses.flipped = !ses.flipped;
+    card.classList.toggle('flipped', ses.flipped);
+    card.querySelector('.front').setAttribute('aria-hidden', String(ses.flipped));
+    card.querySelector('.back').setAttribute('aria-hidden', String(!ses.flipped));
+    if (ses.flipped && S.autoplay && S.dir === 'ru-en') TTS.speak(ttsText(ses.queue[ses.i]));
+  }
+
+  function answerCard(ok) {
+    const ses = sessions.cards;
+    if (mode !== 'cards' || !ses || busy || ses.i >= ses.queue.length) return;
+    busy = true;
+    const card = $('#card');
+    const animate = card && !reduced();
+    if (animate) {
+      card.classList.add('leaving');
+      card.style.transform = `translateX(${ok ? 130 : -130}%) rotate(${ok ? 14 : -14}deg)`;
+      card.style.setProperty(ok ? '--yes' : '--no', 1);
+    }
+    setTimeout(() => {
+      const w = ses.queue[ses.i];
+      record(w, ok);
+      if (!(w.key in ses.first)) ses.first[w.key] = ok;
+      if (!ok) {
+        const r = (ses.rep[w.key] || 0) + 1;
+        ses.rep[w.key] = r;
+        if (r <= 2) ses.queue.splice(Math.min(ses.queue.length, ses.i + 4), 0, w);
+      }
+      ses.i++;
+      ses.flipped = false;
+      busy = false;
+      if (mode === 'cards') renderCards({ enter: true });
+    }, animate ? 220 : 0);
+  }
+
+  function makeOptions(w) {
+    const field = S.dir === 'en-ru' ? 'ru' : 'en';
+    const answer = w[field];
+    const seen = new Set([answer.toLowerCase()]);
+    const opts = [answer];
+    const candidates = shuffle(pool().filter(x => x !== w)).concat(shuffle(WORDS.filter(x => x !== w)));
+    for (const x of candidates) {
+      const v = x[field], k = v.toLowerCase();
+      if (seen.has(k)) continue;
+      seen.add(k);
+      opts.push(v);
+      if (opts.length === 4) break;
+    }
+    return shuffle(opts);
+  }
+
+  function renderTest() {
+    const ses = session('test');
+    if (ses.i >= ses.queue.length) { renderDone('test'); return; }
+    const w = ses.queue[ses.i];
+    if (!ses.opts) ses.opts = makeOptions(w);
+    const enQ = S.dir === 'en-ru';
+    const correct = ses.opts.indexOf(enQ ? w.ru : w.en);
+    const ans = ses.answered;
+    view.className = 'wrap view view-test';
+    view.innerHTML = progressHTML(ses.i, ses.queue.length) + `
+      <div class="prompt">
+        ${topHTML(w)}
+        ${enQ
+          ? `<div class="word" lang="en">${esc(w.en)}</div><div class="ipa" data-ipa="${esc(w.key)}" lang="en"></div>${chipsHTML(w, false)}`
+          : `<div class="ru">${esc(w.ru)}</div>`}
+      </div>
+      <div class="options" role="group" aria-label="Варианты ответа">
+        ${ses.opts.map((o, i) => {
+          let cls = 'opt';
+          if (ans != null) cls += i === correct ? ' right' : i === ans ? ' wrong' : ' dim';
+          return `<button class="${cls}" type="button" data-act="opt" data-i="${i}"${ans != null ? ' disabled' : ''}${enQ ? '' : ' lang="en"'}><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`;
+        }).join('')}
+      </div>
+      <div class="after">
+        ${ans != null ? `<p class="verdict ${ans === correct ? 'good' : 'bad'}" role="status">${ans === correct ? 'Верно' : 'Неверно'}</p>
+          ${!enQ ? `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span><span class="ipa" data-ipa="${esc(w.key)}" lang="en"></span></div>${chipsHTML(w, !!w.ex)}` : ''}
+          <button class="btn btn-primary" type="button" data-act="next">Дальше</button>` : ''}
+      </div>
+      ${keysHTML(['1–4', 'выбрать ответ'], ['Enter', 'дальше'], ['S', 'голос'])}`;
+    fillDict(w);
+    const next = ses.queue[ses.i + 1];
+    if (next) Dict.get(next);
+    if (ans == null && ses.spoken !== ses.i) {
+      ses.spoken = ses.i;
+      if (enQ && S.autoplay && interacted) TTS.speak(ttsText(w));
+    }
+  }
+
+  function chooseOpt(i) {
+    const ses = sessions.test;
+    if (mode !== 'test' || !ses || ses.answered != null || !ses.opts || i >= ses.opts.length) return;
+    const w = ses.queue[ses.i];
+    const enQ = S.dir === 'en-ru';
+    const ok = i === ses.opts.indexOf(enQ ? w.ru : w.en);
+    ses.answered = i;
+    record(w, ok);
+    if (ok) ses.right++; else ses.wrong.push(w);
+    renderTest();
+    if (!enQ && S.autoplay) TTS.speak(ttsText(w));
+    if (ok) {
+      clearTimeout(ses.timer);
+      ses.timer = setTimeout(() => { if (sessions.test === ses && ses.answered != null && mode === 'test') nextTest(); }, 1300);
+    } else {
+      const b = $('[data-act="next"]');
+      if (b) b.focus({ preventScroll: true });
+    }
+  }
+  function nextTest() {
+    const ses = sessions.test;
+    if (!ses || ses.answered == null) return;
+    clearTimeout(ses.timer);
+    ses.i++; ses.answered = null; ses.opts = null;
+    if (mode === 'test') renderTest();
+  }
+
+  function maskExample(w) {
+    if (!w.ex) return '';
+    const base = w.en.split('/')[0].trim().replace(/^to\s+(be\s+)?/i, '');
+    if (!base) return '';
+    const re = new RegExp('(^|[^\\p{L}])(' + escRe(base).replace(/ +/g, '\\s+') + '(?:s|es|ed|d|ing)?)(?![\\p{L}])', 'iu');
+    const m = w.ex.match(re);
+    if (!m) return '';
+    const start = m.index + m[1].length, end = start + m[2].length;
+    return esc(w.ex.slice(0, start)) + '<span class="blank"></span>' + esc(w.ex.slice(end));
+  }
+  function hintPattern(en, level) {
+    return en.split('/')[0].trim().split(/\s+/)
+      .map(word => Array.from(word).map((ch, i) => (i < level || !/\p{L}/u.test(ch)) ? ch : '_').join(''))
+      .join('   ');
+  }
+  function normalize(s) {
+    return String(s).toLowerCase()
+      .replace(/[\u2018\u2019\u02bc`´]/g, "'")
+      .replace(/[^\p{L}\p{N}' -]+/gu, ' ')
+      .replace(/\s+/g, ' ').trim();
+  }
+  function isCorrect(input, en) {
+    const a = normalize(input);
+    const a2 = a.replace(/^to /, '');
+    return en.split('/').map(normalize).filter(Boolean).some(v => v === a || v.replace(/^to /, '') === a2);
+  }
+
+  function renderWrite() {
+    const ses = session('write');
+    if (ses.i >= ses.queue.length) { renderDone('write'); return; }
+    const w = ses.queue[ses.i];
+    const st = ses.state;
+    const masked = ses.hint ? maskExample(w) : '';
+    view.className = 'wrap view view-write';
+    view.innerHTML = progressHTML(ses.i, ses.queue.length) + `
+      <div class="prompt">
+        ${topHTML(w)}
+        <div class="ru">${esc(w.ru)}</div>
+        ${masked && !st ? `<p class="ex" lang="en">${masked}</p>` : ''}
+        ${ses.hint && !st ? `<p class="hint" lang="en" aria-label="Подсказка">${esc(hintPattern(w.en, ses.hint))}</p>` : ''}
+      </div>
+      <form class="write" id="writeForm" autocomplete="off" novalidate>
+        <input id="answer" class="answer-input" lang="en" type="text" inputmode="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="Напиши по-английски" aria-label="Ответ по-английски"${st ? ' readonly' : ''} value="${st ? esc(st.input) : ''}">
+        ${st ? '' : '<button class="btn btn-primary" type="submit">Проверить</button>'}
+      </form>
+      ${st ? feedbackHTML(w, st) : `<div class="write-tools">
+        <button class="btn-link" type="button" data-act="hint">${ses.hint ? 'Ещё буква' : 'Подсказка'}</button>
+        <button class="btn-link" type="button" data-act="giveup">Не помню</button>
+      </div>`}
+      ${keysHTML(['Enter', st ? 'дальше' : 'проверить'])}`;
+    $('#writeForm').addEventListener('submit', e => { e.preventDefault(); submitWrite(); });
+    if (st) {
+      fillDict(w);
+      const b = $('[data-act="wnext"]');
+      if (b) b.focus({ preventScroll: true });
+    } else {
+      $('#answer').focus({ preventScroll: true });
+    }
+  }
+  function feedbackHTML(w, st) {
+    const word = `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span><span class="ipa" data-ipa="${esc(w.key)}" lang="en"></span></div>`;
+    const ex = w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : '';
+    if (st.ok) {
+      return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : 'Верно'}</p>${word}${chipsHTML(w, !!w.ex)}${ex}
+        <div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
+    }
+    return `<div class="feedback" role="status"><p class="verdict bad">${st.input ? 'Неверно' : 'Правильный ответ'}</p>
+      ${st.input ? `<p class="yours">Ты написал: <s lang="en">${esc(st.input)}</s></p>` : ''}
+      ${word}${chipsHTML(w, !!w.ex)}${ex}
+      <div class="fb-actions">${st.input ? '<button class="btn btn-ghost" type="button" data-act="override">Я был прав</button>' : ''}<button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
+  }
+  function submitWrite() {
+    const ses = sessions.write;
+    const input = $('#answer');
+    if (!ses || ses.state || !input) return;
+    if (!input.value.trim()) { input.focus(); return; }
+    const w = ses.queue[ses.i];
+    const ok = isCorrect(input.value, w.en);
+    ses.prev = STATS[w.key] ? Object.assign({}, STATS[w.key]) : null;
+    record(w, ok, ses.hint > 0);
+    if (ok) ses.right++; else ses.wrong.push(w);
+    ses.state = { ok, input: input.value.trim() };
+    renderWrite();
+    if (S.autoplay) TTS.speak(ttsText(w));
+  }
+  function writeHint() {
+    const ses = sessions.write;
+    if (!ses || ses.state) return;
+    const w = ses.queue[ses.i];
+    const longest = Math.max(...w.en.split('/')[0].trim().split(/\s+/).map(x => x.length));
+    if (ses.hint < Math.max(1, longest - 1)) ses.hint++;
+    const typed = $('#answer') ? $('#answer').value : '';
+    renderWrite();
+    const input = $('#answer');
+    if (input) input.value = typed;
+  }
+  function writeGiveUp() {
+    const ses = sessions.write;
+    if (!ses || ses.state) return;
+    const w = ses.queue[ses.i];
+    ses.prev = STATS[w.key] ? Object.assign({}, STATS[w.key]) : null;
+    record(w, false);
+    ses.wrong.push(w);
+    ses.state = { ok: false, input: '' };
+    renderWrite();
+    if (S.autoplay) TTS.speak(ttsText(w));
+  }
+  function writeOverride() {
+    const ses = sessions.write;
+    if (!ses || !ses.state || ses.state.ok) return;
+    const w = ses.queue[ses.i];
+    if (ses.prev) STATS[w.key] = ses.prev; else delete STATS[w.key];
+    record(w, true, ses.hint > 0);
+    const at = ses.wrong.lastIndexOf(w);
+    if (at >= 0) ses.wrong.splice(at, 1);
+    ses.right++;
+    ses.state = { ok: true, input: ses.state.input, overridden: true };
+    renderWrite();
+  }
+  function nextWrite() {
+    const ses = sessions.write;
+    if (!ses || !ses.state) return;
+    ses.i++; ses.state = null; ses.hint = 0; ses.prev = null;
+    if (mode === 'write') renderWrite();
+  }
+
+  function dueNote() {
+    const now = Date.now();
+    let due = 0, fresh = 0, next = Infinity;
+    pool().forEach(w => {
+      const s = STATS[w.key];
+      if (!s) fresh++;
+      else if (s.d <= now) due++;
+      else next = Math.min(next, s.d);
+    });
+    if (due) return `Ждут повторения: ${plural(due, WORD_FORMS)}.` + (fresh ? ` Новых: ${fresh}.` : '');
+    if (fresh) return `Новых слов в списке: ${fresh}.`;
+    if (next < Infinity) {
+      const d = Math.ceil((next - now) / DAY);
+      return 'Следующее повторение ' + (d <= 1 ? 'завтра.' : 'через ' + plural(d, ['день', 'дня', 'дней']) + '.');
+    }
+    return '';
+  }
+  function renderDone(kind) {
+    const ses = sessions[kind];
+    let good, bad;
+    if (kind === 'cards') {
+      const vals = Object.values(ses.first);
+      good = vals.filter(Boolean).length;
+      bad = vals.length - good;
+    } else {
+      good = ses.right;
+      bad = new Set(ses.wrong).size;
+    }
+    const labels = kind === 'cards' ? ['знаю', 'повторить'] : ['верно', 'с ошибкой'];
+    view.className = 'wrap view view-done';
+    view.innerHTML = `<div class="done">
+      <h2>${bad ? 'Подход пройден' : 'Подход пройден без ошибок'}</h2>
+      <div class="tally">
+        <div class="t-good"><b>${good}</b><span>${labels[0]}</span></div>
+        <div class="t-bad"><b>${bad}</b><span>${labels[1]}</span></div>
+      </div>
+      <div class="done-actions">
+        ${bad ? `<button class="btn btn-primary" type="button" data-act="repeat" data-kind="${kind}">Повторить ошибки</button>` : ''}
+        <button class="btn ${bad ? 'btn-ghost' : 'btn-primary'}" type="button" data-act="restart" data-kind="${kind}">Новый подход</button>
+      </div>
+      <p class="done-note">${esc(dueNote())}</p>
+    </div>`;
+  }
+  function repeatErrors(kind) {
+    const ses = sessions[kind];
+    if (!ses) return;
+    let words;
+    if (kind === 'cards') words = Object.keys(ses.first).filter(k => !ses.first[k]).map(byKey).filter(Boolean);
+    else words = Array.from(new Set(ses.wrong));
+    if (!words.length) return;
+    sessions[kind] = MAKERS[kind](shuffle(words));
+    render();
+  }
+
+  function renderList() {
+    view.className = 'wrap view view-list';
+    view.innerHTML = `<div class="list-head">
+        <input id="q" type="search" class="search" placeholder="Найти слово или перевод" aria-label="Поиск по списку" autocomplete="off" autocapitalize="none" spellcheck="false" value="${esc(listQuery)}">
+        <div class="stats-row" id="listStats"></div>
+      </div>
+      <div class="list" id="listBody"></div>
+      ${SKIPPED.length ? `<p class="skipped">Пропущены строки без перевода: ${SKIPPED.slice(0, 12).join(', ')}${SKIPPED.length > 12 ? '…' : ''}</p>` : ''}`;
+    $('#q').addEventListener('input', e => { listQuery = e.target.value; renderListBody(); });
+    renderListBody();
+  }
+  function renderListBody() {
+    const words = pool();
+    const counts = { new: 0, learning: 0, known: 0 };
+    words.forEach(w => { counts[statusOf(w)]++; });
+    $('#listStats').innerHTML = `<span><b>${words.length}</b> всего</span><span><b>${counts.new}</b> новых</span><span><b>${counts.learning}</b> учу</span><span><b>${counts.known}</b> знаю</span>`;
+    const q = listQuery.trim().toLowerCase();
+    const shown = q ? words.filter(w => w.en.toLowerCase().includes(q) || w.ru.toLowerCase().includes(q)) : words;
+    let html = '';
+    let lastGroup = null;
+    shown.forEach(w => {
+      if (!S.group && w.group !== lastGroup) { html += `<h3 class="list-group">${esc(w.group)}</h3>`; lastGroup = w.group; }
+      const open = openKey === w.key;
+      html += `<div class="row">
+        <button class="row-main" type="button" data-act="row" data-key="${esc(w.key)}" aria-expanded="${open}">
+          <span class="row-text"><span class="row-en" lang="en">${esc(w.en)}</span><span class="row-ru">${esc(w.ru)}</span></span>
+          ${meterHTML(w)}
+        </button>
+        ${open ? `<div class="row-more"><div class="ipa" data-ipa="${esc(w.key)}" lang="en"></div>${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${chipsHTML(w, !!w.ex)}</div>` : ''}
+      </div>`;
+    });
+    if (!shown.length) html = `<p class="empty">По запросу «${esc(listQuery)}» ничего нет.</p>`;
+    $('#listBody').innerHTML = html;
+    if (openKey && byKey(openKey)) fillDict(byKey(openKey));
+  }
+
+  /* ---------- header, settings, theme ---------- */
+  function renderGroupPicker() {
+    const sel = $('#group');
+    sel.innerHTML = `<option value="">Все темы (${WORDS.length})</option>` +
+      GROUPS.map(g => `<option value="${esc(g)}">${esc(g)} (${WORDS.filter(w => w.group === g).length})</option>`).join('');
+    sel.value = S.group;
+  }
+  function applyTheme() {
+    const r = document.documentElement;
+    if (S.theme === 'auto') {
+      if (HOST_THEME) r.setAttribute('data-theme', HOST_THEME); else r.removeAttribute('data-theme');
+    } else {
+      r.setAttribute('data-theme', S.theme);
+    }
+    requestAnimationFrame(() => {
+      const m = $('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', getComputedStyle(document.body).backgroundColor);
+    });
+  }
+  function githubEditUrl() {
+    const h = location.hostname;
+    if (!/\.github\.io$/i.test(h)) return null;
+    const user = h.replace(/\.github\.io$/i, '');
+    const seg = location.pathname.split('/').filter(Boolean)[0];
+    const repo = seg && !seg.includes('.') ? seg : user + '.github.io';
+    return `https://github.com/${user}/${repo}/edit/main/words.txt`;
+  }
+  function syncWordsInfo() {
+    const info = $('#wordsInfo');
+    if (!info) return;
+    let t = WORDS.length ? `${plural(WORDS.length, WORD_FORMS)}, тем: ${GROUPS.length}.` : 'Слов пока нет.';
+    if (wordsAt) {
+      const d = new Date(wordsAt);
+      t += ` Загружено ${d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' })} в ${d.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' })}.`;
+    }
+    const edit = githubEditUrl();
+    if (IS_PREVIEW) t += ' Это превью со словами из примера. После выкладки на GitHub здесь появится кнопка «Редактировать words.txt».';
+    else if (!edit) t += ' Файл words.txt лежит рядом с приложением: поправь его и нажми «Обновить».';
+    info.textContent = t;
+    const link = $('#editLink');
+    link.hidden = !edit;
+    if (edit) link.href = edit;
+  }
+  function fillVoiceSelect() {
+    const sel = $('#voice');
+    if (!sel) return;
+    const list = TTS.sorted();
+    const cur = TTS.current();
+    if (!list.length) {
+      sel.innerHTML = '<option value="">Английских голосов нет</option>';
+      sel.disabled = true;
+    } else {
+      sel.disabled = false;
+      sel.innerHTML = list.map(v => `<option value="${esc(v.voiceURI)}"${cur && v.voiceURI === cur.voiceURI ? ' selected' : ''}>${esc(v.name.replace(/\s*[-–]\s*English.*$/i, ''))} · ${esc(v.lang.replace('_', '-'))}</option>`).join('');
+    }
+    const note = $('#voiceNote');
+    const ua = navigator.userAgent;
+    const ios = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (!TTS.ok) note.textContent = 'Этот браузер не умеет озвучивать текст. Кнопки «Диктор» и «YouGlish» работают.';
+    else if (ios) note.textContent = 'Голос живее: Настройки iPhone → Универсальный доступ → Устный контент → Голоса → Английский. Скачай, например, Ava или Zoe в улучшенном качестве, потом выбери его здесь.';
+    else if (/Edg\//.test(ua)) note.textContent = 'В Edge лучше всего звучат голоса с пометкой Natural. Им нужен интернет.';
+    else note.textContent = 'Если голос звучит плохо, открой приложение в Microsoft Edge: там есть голоса Natural.';
+  }
+  function syncSettingsUI() {
+    $$('[data-set]').forEach(b => b.setAttribute('aria-checked', String(String(S[b.dataset.set]) === b.dataset.val)));
+    $('#rate').value = S.rate;
+    $('#rateOut').textContent = '×' + Number(S.rate).toFixed(2);
+    $('#autoplay').checked = !!S.autoplay;
+    fillVoiceSelect();
+    syncWordsInfo();
+  }
+  function setSetting(k, raw) {
+    const v = k === 'size' ? Number(raw) : raw;
+    if (S[k] === v) return;
+    S[k] = v;
+    if (k === 'accent') S.voice = '';
+    saveSettings();
+    syncSettingsUI();
+    if (k === 'theme') applyTheme();
+    if (k === 'dir' || k === 'size') { resetSessions(); render(); }
+    if (k === 'accent' && mode !== 'list') render();
+    if (k === 'accent' && mode === 'list') renderListBody();
+  }
+
+  let lastFocus = null;
+  function openSheet(sel) {
+    const s = $(sel);
+    lastFocus = document.activeElement;
+    s.hidden = false;
+    requestAnimationFrame(() => requestAnimationFrame(() => s.classList.add('open')));
+    const close = s.querySelector('[data-act="close"]');
+    if (close) close.focus({ preventScroll: true });
+  }
+  function closeSheets() {
+    $$('.sheet').forEach(s => {
+      if (s.hidden) return;
+      s.classList.remove('open');
+      setTimeout(() => { s.hidden = true; }, reduced() ? 0 : 200);
+    });
+    if (yg.widget) { try { yg.widget.pause(); } catch (e) { /* ignore */ } }
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  }
+  function resetProgress(btn) {
+    if (!btn.dataset.armed) {
+      btn.dataset.armed = '1';
+      btn.textContent = 'Нажми ещё раз, чтобы сбросить';
+      setTimeout(() => { delete btn.dataset.armed; btn.textContent = 'Сбросить прогресс'; }, 4000);
+      return;
+    }
+    delete btn.dataset.armed;
+    btn.textContent = 'Сбросить прогресс';
+    STATS = {};
+    saveStats();
+    resetSessions();
+    render();
+    toast('Прогресс сброшен');
+  }
+
+  /* ---------- install hint ---------- */
+  let installEvent = null;
+  window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvent = e; renderBanner(); });
+  window.addEventListener('appinstalled', () => { installEvent = null; renderBanner(); });
+  function renderBanner() {
+    const b = $('#banner');
+    let standalone = false;
+    try { standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { /* ignore */ }
+    if (IS_PREVIEW || standalone || store.get('tg:banner-off', false)) { b.hidden = true; return; }
+    const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (ios) {
+      b.innerHTML = `<p>Чтобы открывать как приложение: ${ICON.share} <b>Поделиться</b> → <b>На экран «Домой»</b>.</p><button class="btn-link" type="button" data-act="banner-off">Понятно</button>`;
+      b.hidden = false;
+    } else if (installEvent) {
+      b.innerHTML = `<p>Можно установить как отдельное приложение с ярлыком.</p><button class="btn btn-primary btn-sm" type="button" data-act="install">Установить</button><button class="btn-link" type="button" data-act="banner-off">Скрыть</button>`;
+      b.hidden = false;
+    } else {
+      b.hidden = true;
+    }
+  }
+
+  /* ---------- events ---------- */
+  function setMode(m) {
+    if (m === mode) return;
+    mode = m;
+    store.set('tg:mode', m);
+    $('#main').scrollTop = 0;
+    render();
+  }
+
+  document.addEventListener('click', e => {
+    const el = e.target.closest('[data-act], [data-set], .tab');
+    if (!el) return;
+    if (el.classList.contains('tab')) { if (e.detail) el.blur(); setMode(el.dataset.mode); return; }
+    if (el.dataset.set) { setSetting(el.dataset.set, el.dataset.val); return; }
+    const w = el.dataset.key ? byKey(el.dataset.key) : currentWord();
+    switch (el.dataset.act) {
+      case 'yes': answerCard(true); break;
+      case 'no': answerCard(false); break;
+      case 'say': if (w) TTS.speak(ttsText(w)); break;
+      case 'say-ex': if (w && w.ex) TTS.speak(w.ex); break;
+      case 'rec': if (w) playRecording(w); break;
+      case 'yg': if (!IS_PREVIEW && w) { e.preventDefault(); openYouglish(w); } break;
+      case 'opt': chooseOpt(Number(el.dataset.i)); break;
+      case 'next': nextTest(); break;
+      case 'hint': writeHint(); break;
+      case 'giveup': writeGiveUp(); break;
+      case 'override': writeOverride(); break;
+      case 'wnext': nextWrite(); break;
+      case 'row': openKey = openKey === el.dataset.key ? null : el.dataset.key; renderListBody(); break;
+      case 'repeat': repeatErrors(el.dataset.kind); break;
+      case 'restart': sessions[el.dataset.kind] = null; render(); break;
+      case 'close': closeSheets(); break;
+      case 'reload': loadWords({ manual: true }); break;
+      case 'test-voice': TTS.speak('Hello! This is how I will read your words.'); break;
+      case 'reset': resetProgress(el); break;
+      case 'install': if (installEvent) { installEvent.prompt(); installEvent = null; renderBanner(); } break;
+      case 'banner-off': store.set('tg:banner-off', true); renderBanner(); break;
+    }
+  });
+  $$('.sheet').forEach(s => s.addEventListener('click', e => { if (e.target === s) closeSheets(); }));
+  $('#openSettings').addEventListener('click', () => { syncSettingsUI(); openSheet('#settings'); });
+  $('#group').addEventListener('change', e => {
+    S.group = e.target.value;
+    saveSettings();
+    resetSessions();
+    openKey = null;
+    render();
+  });
+  $('#voice').addEventListener('change', e => { S.voice = e.target.value; saveSettings(); TTS.speak('Hello!'); });
+  $('#rate').addEventListener('input', e => { S.rate = Number(e.target.value); $('#rateOut').textContent = '×' + S.rate.toFixed(2); saveSettings(); });
+  $('#rate').addEventListener('change', () => TTS.speak('throughout'));
+  $('#autoplay').addEventListener('change', e => { S.autoplay = e.target.checked; saveSettings(); });
+
+  document.addEventListener('keydown', e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const sheetOpen = $$('.sheet').some(s => !s.hidden);
+    if (sheetOpen) { if (e.key === 'Escape') closeSheets(); return; }
+    const tag = (e.target.tagName || '').toLowerCase();
+    const typing = tag === 'input' || tag === 'select' || tag === 'textarea';
+    const onControl = tag === 'button' || tag === 'a';
+    if (mode === 'cards' && !typing) {
+      if ((e.code === 'Space' || e.key === 'Enter') && !onControl) { e.preventDefault(); flipCard(); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); answerCard(true); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); answerCard(false); }
+      else if (e.code === 'KeyS') { const w = currentWord(); if (w) TTS.speak(ttsText(w)); }
+    } else if (mode === 'test' && !typing) {
+      const n = Number(e.key);
+      if (n >= 1 && n <= 4) chooseOpt(n - 1);
+      else if (e.key === 'Enter' && !onControl && sessions.test && sessions.test.answered != null) { e.preventDefault(); nextTest(); }
+      else if (e.code === 'KeyS') { const w = currentWord(); if (w) TTS.speak(ttsText(w)); }
+    } else if (mode === 'write') {
+      if (e.key === 'Enter' && !onControl && sessions.write && sessions.write.state) { e.preventDefault(); nextWrite(); }
+    }
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && Date.now() - lastFetch > 15000) loadWords();
+  });
+  try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme); } catch (e) { /* old Safari */ }
+
+  /* ---------- start ---------- */
+  applyTheme();
+  if (wordsText) applyWords(wordsText); else renderGroupPicker();
+  render();
+  renderBanner();
+  syncSettingsUI();
+  loadWords();
+
+  if (!IS_PREVIEW && 'serviceWorker' in navigator &&
+      (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+    navigator.serviceWorker.register('sw.js').catch(() => { /* offline mode unavailable */ });
+  }
+})();
+</script>
+</body>
+</html>

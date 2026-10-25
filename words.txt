@@ -1,0 +1,47 @@
+// Формат строки:  слово ; перевод ; пример
+// Пример можно не писать. Строка с # в начале задаёт тему.
+// Пустые строки и строки с // приложение пропускает.
+
+# Повседневное
+throughout ; на протяжении, повсюду ; It rained throughout the day.
+although ; хотя ; Although it was late, we kept working.
+enough ; достаточно ; We don't have enough time.
+reliable ; надёжный ; This is a reliable car.
+available ; доступный, свободный ; The manager is not available right now.
+to borrow ; брать взаймы ; Can I borrow your pen?
+to lend ; давать взаймы ; Could you lend me some money?
+to suggest ; предлагать ; I suggest we start now.
+eventually ; в конце концов ; Eventually, everything worked out.
+weather ; погода ; The weather is nice today.
+
+# Работа
+deadline ; крайний срок ; The deadline is Friday.
+schedule ; расписание, график ; Let's check the schedule.
+to postpone ; откладывать, переносить ; We had to postpone the meeting.
+requirement ; требование ; The design meets all requirements.
+to approve ; утверждать, одобрять ; The director approved the plan.
+estimate ; оценка, смета ; Can you send me a rough estimate?
+to attach ; прикреплять ; I attached the file to the email.
+to be in charge of ; отвечать за ; She is in charge of testing.
+meeting ; встреча, совещание ; The meeting starts at ten.
+to follow up ; вернуться к вопросу, связаться повторно ; I'll follow up with you tomorrow.
+
+# Фразовые глаголы
+to figure out ; разобраться, понять ; I can't figure out this problem.
+to look forward to ; ждать с нетерпением ; I look forward to your reply.
+to give up ; сдаваться, бросать ; Don't give up!
+to run out of ; закончиться (о запасе) ; We ran out of coffee.
+to come up with ; придумать ; She came up with a great idea.
+to carry on ; продолжать ; Carry on, please.
+to turn down ; отклонить, отказать ; They turned down our offer.
+to set up ; настроить, организовать ; I need to set up the new laptop.
+
+# Трудное произношение
+comfortable ; удобный ; This chair is very comfortable.
+vegetable ; овощ ; Eat more vegetables.
+Wednesday ; среда ; See you on Wednesday.
+colleague ; коллега ; My colleague will help you.
+queue ; очередь ; There was a long queue.
+thorough ; тщательный ; We need a thorough check.
+to determine ; определять ; We need to determine the cause.
+hierarchy ; иерархия ; The company has a strict hierarchy.
