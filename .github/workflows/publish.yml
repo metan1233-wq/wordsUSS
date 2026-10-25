@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -38,6 +40,8 @@ jobs:
           git add -A audio
           if ! git diff --cached --quiet; then
             git commit -m "Озвучка обновлена"
-            git pull --rebase --autostash
-            git push
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin main && git push && break
+              sleep 5
+            done
           fi
