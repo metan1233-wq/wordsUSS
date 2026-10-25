@@ -217,18 +217,18 @@ async def main():
         if not (AUDIO / wf).exists():
             jobs.append((w["en"], AUDIO / wf, "w"))
         # живая запись и транскрипция — спрашиваем словарь один раз
-        if prev.get("dict") == 2:
+        if prev.get("dict") == 3:
             rec["ipa"], rec["dict"] = prev.get("ipa", ""), prev["dict"]
             if prev.get("h") and (AUDIO / prev["h"]).exists():
                 rec["h"] = prev["h"]
         else:
             term = dict_term(w["en"])
-            rec["ipa"], rec["dict"] = "", 2
+            rec["ipa"], rec["dict"] = "", 3
             if term:
                 ipa, url = dictionary_info(term)
                 hf = f"h/{slug(term)}.mp3"
                 src, wipa, checked = human_audio(term, AUDIO / hf, url)
-                rec["ipa"] = ipa or wipa
+                rec["ipa"] = wipa if wipa.startswith("/") else (ipa or wipa)
                 if not checked:
                     rec.pop("dict")
                 if src:
