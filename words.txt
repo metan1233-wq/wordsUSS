@@ -3,20 +3,261 @@
 // Пустые строки и строки с // приложение пропускает.
 // Список: самые частые слова уровня B1 (и немного A2+ и B2) по темам.
 
+# Мои слова
+disease ; болезнь, заболевание ; Heart disease is very common.
+germs ; микробы ; Wash your hands to kill germs.
+at the same time ; в то же время; одновременно ; I can't talk and drive at the same time.
+to hang up ; повесить трубку ; Don't hang up, please.
+to receive ; получать ; Did you receive my email?
+means ; средство, способ ; A bike is my main means of transportation.
+besides ; кроме того; помимо ; Besides English, she speaks German.
+addiction ; зависимость, пристрастие ; Phone addiction is a real problem.
+repetitive ; повторяющийся, монотонный ; The job is very repetitive.
+cause ; причина; вызывать ; What was the cause of the fire?
+struggle ; борьба; бороться ; It was a struggle to wake up this morning.
+according to ; согласно, по словам ; According to the news, it will snow tomorrow.
+frequently ; часто ; He frequently travels for work.
+to consume ; потреблять ; Old cars consume a lot of fuel.
+plug ; вилка (электрическая); пробка ; Pull the plug out of the socket.
+resilience ; устойчивость, способность восстанавливаться ; Sport builds resilience.
+issue ; вопрос, проблема ; This is an important issue.
+to indulge ; баловать, потакать ; I sometimes indulge myself with chocolate.
+reward ; награда; вознаграждать ; Hard work brings rewards.
+it doesn't matter ; не имеет значения ; It doesn't matter what you say.
+citizenship ; гражданство ; She got her citizenship last year.
+fireplace ; камин ; We sat by the fireplace.
+roof ; крыша ; The roof is leaking.
+to depend on ; зависеть от ; It depends on the weather.
+goodness ; доброта ; I believe in the goodness of people.
+generous ; щедрый ; She is very generous with her time.
+exciting ; захватывающий ; It was an exciting game.
+smell ; запах; пахнуть ; I love the smell of coffee.
+bright ; яркий, светлый ; It's a bright sunny day.
+to sneak ; красться, подкрадываться ; He tried to sneak out of the house.
+loud ; громкий ; The music is too loud.
+especially ; особенно ; I love fruit, especially apples.
+pointless ; бессмысленный ; This meeting is pointless.
+to annoy ; раздражать, бесить ; Loud music annoys me.
+to complain ; жаловаться ; He always complains about the weather.
+to take away ; забирать, уносить ; Can I take away your plate?
+coat ; пальто ; Put on your coat, it's cold.
+quiet ; тихий ; We live on a quiet street.
+while ; пока, в то время как ; I read a book while I was waiting.
+nothing ; ничего ; There is nothing in the fridge.
+behind ; позади, за ; The parking lot is behind the hotel.
+mind ; ум, разум ; She has a sharp mind.
+mood ; настроение ; She is in a good mood today.
+brick ; кирпич ; The house is made of brick.
+to repair ; ремонтировать; ремонт ; Can you repair my bike?
+carpenter ; плотник ; The carpenter made a new table.
+pipe ; труба ; The water pipe is broken.
+plumber ; сантехник ; Call a plumber, the faucet is leaking.
+socket ; розетка ; Plug the charger into the socket.
+equipment ; оборудование ; The gym has modern equipment.
+law ; закон ; Everyone must obey the law.
+surgeon ; хирург ; The surgeon operated on his knee.
+sailor ; моряк, матрос ; Her father was a sailor.
+timetable ; расписание ; Check the bus timetable.
+schedule ; расписание, график ; Let's check the schedule.
+opportunity ; возможность ; This is a great opportunity.
+to find out ; узнать, выяснить ; I need to find out the price.
+to apply for ; подать заявку на ; I want to apply for this job.
+as soon as ; как только ; Call me as soon as you arrive.
+stairs ; лестница ; Take the stairs, the elevator is broken.
+to shout ; кричать; крик ; Don't shout at me!
+shiny ; блестящий ; She has shiny new shoes.
+swing ; качели; качаться ; The kids are playing on the swing.
+tree ; дерево ; There is an old tree in our yard.
+slippers ; тапочки ; Where are my slippers?
+raincoat ; дождевик ; Take a raincoat, it's going to rain.
+congratulations ; поздравляю; поздравления ; Congratulations on your new job!
+to regret ; сожалеть ; I regret saying that.
+rule ; правило ; Follow the rules.
+embankment ; набережная ; We walked along the embankment.
+journey ; поездка, путешествие ; The journey took five hours.
+to ruin ; разрушить, испортить ; The rain ruined our picnic.
+to believe ; верить ; I don't believe you.
+to frighten ; пугать ; The noise frightened the baby.
+terrifying ; ужасающий ; It was a terrifying experience.
+almost all day ; почти весь день ; I worked almost all day.
+to catch ; ловить, поймать ; Can you catch the ball?
+convenient ; удобный (по времени, месту) ; Is Monday convenient for you?
+cold ; простуда; холодный ; I have a cold.
+to catch a cold ; простудиться ; Dress warmly or you'll catch a cold.
+half ; половина ; Half of the students passed.
+one and a half ; полтора ; The trip takes one and a half hours.
+truth ; правда, истина ; Tell me the truth.
+to doubt ; сомневаться ; I doubt he will come.
+selfish ; эгоистичный ; Don't be so selfish.
+proud ; гордый ; I'm proud of you.
+to betray ; предавать ; He betrayed his friends.
+stuff ; вещи, штуки ; Take your stuff off the table.
+pocket ; карман ; My keys are in my pocket.
+crowd ; толпа ; There was a big crowd at the station.
+to throw ; бросать ; Don't throw stones.
+mess ; беспорядок ; Sorry about the mess.
+extra ; дополнительный ; Do you have an extra pen?
+barely ; едва ; I could barely see the road.
+protection ; защита ; Wear sunscreen for protection.
+to guess ; угадывать; полагать ; Guess who called me!
+to tear ; рвать ; Be careful not to tear the paper.
+breath ; дыхание ; Take a deep breath.
+though ; хотя; впрочем ; It was cold. I enjoyed the walk, though.
+field ; поле; область (знаний) ; Cows are eating grass in the field.
+to recognize ; узнавать ; I didn't recognize you!
+pattern ; закономерность; шаблон; узор ; I see a pattern in his mistakes.
+former ; бывший ; She is my former boss.
+wealthy ; богатый, состоятельный ; They come from a wealthy family.
+almost ; почти ; It's almost midnight.
+ridiculous ; нелепый, смешной ; That's a ridiculous idea.
+to dig ; копать ; The dog likes to dig in the garden.
+unless ; если не ; I won't go unless you come with me.
+reason ; причина ; What is the reason for the delay?
+calm ; спокойный ; Stay calm and listen.
+perhaps ; возможно, может быть ; Perhaps he missed the train.
+to insist ; настаивать ; She insisted on paying.
+pallid ; бледный ; He looked pallid and tired.
+wrinkle ; морщина ; She has a few wrinkles around her eyes.
+matrimony ; брак, супружество ; They were joined in holy matrimony.
+impression ; впечатление ; She made a good impression.
+across ; через, поперёк ; We walked across the bridge.
+to permit ; разрешать ; Smoking is not permitted here.
+to dump ; выбрасывать; бросить (партнёра) ; Don't dump trash here.
+driven ; целеустремлённый ; She is very driven.
+flaw ; недостаток, изъян ; Everyone has flaws.
+blueprint ; чертёж; план ; The architect showed us the blueprints.
+to make inroads ; продвинуться, добиться успеха (в новом деле) ; The company made inroads into the Asian market.
+poised ; готовый (к чему-то); уравновешенный ; The team is poised to win.
+tremendous ; огромный, потрясающий ; You did a tremendous job.
+ounce ; унция; капля, крупица ; He doesn't have an ounce of fear.
+to settle ; уладить; поселиться ; They settled the argument quickly.
+honestly ; честно говоря ; Honestly, I don't know.
+chase ; погоня; гнаться ; The police chase lasted an hour.
+tail ; хвост ; The dog wagged its tail.
+exactly ; точно, именно ; That's exactly what I mean.
+inconsistent ; непоследовательный, противоречивый ; His story is inconsistent.
+confession ; признание ; He made a full confession.
+coast ; побережье ; We drove along the coast.
+persistence ; настойчивость, упорство ; Persistence is the key to success.
+donut ; пончик ; I had a donut with my coffee.
+to increase ; увеличивать(ся); увеличение ; Prices increased last year.
+notion ; понятие, представление ; I had no notion of the time.
+bullet ; пуля ; The bullet missed him.
+trigger ; спусковой крючок; вызывать ; Stress can trigger a headache.
+to intimidate ; запугивать ; Don't let him intimidate you.
+gutter ; водосточный жёлоб; сточная канава ; The gutter is full of leaves.
+you bet ; ещё бы, конечно (разг., также betcha) ; "Are you coming?" "You bet!"
+incredible ; невероятный ; The view is incredible.
+to rip ; рвать ; I ripped my jeans.
+to disdain ; презирать ; He disdains fast food.
+abandoned ; заброшенный ; We found an abandoned house.
+worth ; стоящий; стоит (того) ; The film is worth watching.
+to deserve ; заслуживать ; You deserve a rest.
+ballsy ; дерзкий, смелый (разг.) ; That was a ballsy move.
+whatever ; что угодно; неважно ; Do whatever you want.
+to freak out ; психовать, паниковать (разг.) ; Don't freak out, it's only a spider.
+loan ; кредит, заём ; They took a loan from the bank.
+instantaneously ; мгновенно ; The message arrived instantaneously.
+arguably ; пожалуй, вероятно (можно утверждать) ; He is arguably the best player.
+to assure ; уверять ; I assure you it's safe.
+undefeated ; непобеждённый ; The team is still undefeated.
+bucket ; ведро ; Fill the bucket with water.
+to explode ; взрываться ; The bomb exploded at night.
+exile ; изгнание; изгнанник ; He lived in exile for ten years.
+sewer ; канализация ; Rats live in the sewer.
+creepy ; жуткий ; This old house is creepy.
+to adopt ; усыновлять; принимать ; They adopted a little girl.
+attorney ; адвокат ; I need to talk to my attorney.
+nephew ; племянник ; My nephew is ten years old.
+to appreciate ; ценить ; I appreciate your help.
+the deceased ; покойный, умерший ; The deceased left no will.
+to convene ; созывать ; The director convened a meeting.
+bogus ; фальшивый, липовый ; It was a bogus email.
+warrior ; воин ; He fought like a warrior.
+to welch on ; не сдержать слово, не заплатить долг (разг.) ; He welched on the deal.
+ceiling ; потолок ; The ceiling is very high.
+to crush ; раздавить ; Don't crush the box.
+conscience ; совесть ; My conscience is clear.
+access ; доступ ; I don't have access to this file.
+backwards ; назад, задом наперёд ; Count backwards from ten.
+royalty ; авторский гонорар; королевская семья ; She gets royalties from her books.
+concrete ; бетон; конкретный ; The wall is made of concrete.
+tomb ; гробница ; They found an ancient tomb.
+murderer ; убийца ; The murderer was arrested.
+to segregate ; разделять, изолировать ; We segregate our trash for recycling.
+transponder ; транспондер, приёмоответчик ; Every plane has a transponder.
+insolence ; наглость, дерзость ; I won't accept such insolence.
+bughouse ; психушка (старый сленг) ; This place is a bughouse!
+enlistment ; поступление на военную службу ; His enlistment lasted four years.
+transference ; перенос, передача ; The transference of power was peaceful.
+to withstand ; выдерживать ; The bridge can withstand strong winds.
+crane ; подъёмный кран; журавль ; A crane lifted the steel beams.
+to grovel ; пресмыкаться ; I won't grovel for forgiveness.
+niceness ; любезность ; Thanks for your niceness.
+remand ; содержание под стражей до суда ; He is on remand until the trial.
+simpleton ; простак ; Don't treat me like a simpleton.
+unfruitful ; бесплодный, безрезультатный ; The talks were unfruitful.
+to outmatch ; превосходить ; Our team was outmatched.
+stunning ; сногсшибательный ; You look stunning!
+occasion ; повод, случай ; It's a special occasion.
+to inquire ; узнавать, справляться ; I'm calling to inquire about the job.
+to blame ; винить, обвинять ; Don't blame yourself.
+gross ; мерзкий, отвратительный (разг.) ; This food looks gross.
+to inhabit ; населять ; Many birds inhabit the island.
+vessel ; судно; сосуд ; The vessel left the port at dawn.
+to spend time with ; проводить время с ; I want to spend time with my family.
+to waste time on ; тратить время на ; Don't waste time on social media.
+to stay in ; остаться дома ; Let's stay in tonight.
+to go out with ; пойти куда-нибудь с ; I'm going out with friends tonight.
+to make time for ; находить время для ; Make time for your hobbies.
+to be busy with ; быть занятым (чем-то) ; I'm busy with my report.
+to have a rest ; отдохнуть ; Have a rest after work.
+much better ; гораздо лучше ; I feel much better today.
+last time ; в прошлый раз ; Last time we met in Moscow.
+vocabulary ; словарный запас, лексика ; Reading helps build your vocabulary.
+to stay in touch ; оставаться на связи ; Let's stay in touch.
+take your time ; не торопись ; Take your time, there's no rush.
+to come up with ; придумать ; She came up with a great idea.
+right now ; прямо сейчас ; I'm busy right now.
+to divide ; делить ; Divide the cake into eight pieces.
+relationship ; отношения ; They have a good relationship.
+satisfying ; приносящий удовлетворение ; It's a satisfying job.
+tiring ; утомительный ; It was a long, tiring day.
+to exhaust ; изнурять; исчерпать ; The long walk exhausted me.
+to excite ; волновать, вызывать интерес ; The news excited everyone.
+endurance ; выносливость ; Running builds endurance.
+nausea ; тошнота ; The medicine may cause nausea.
+to take part in ; участвовать в ; I want to take part in a marathon.
+thin ; худой; тонкий ; He is tall and thin.
+flabbergasted ; ошеломлённый ; I'm flabbergasted!
+kind ; добрый; вид, сорт ; It's very kind of you.
+unpleasant ; неприятный ; It was an unpleasant surprise.
+cruel ; жестокий ; Don't be cruel to animals.
+irresponsible ; безответственный ; That was irresponsible behavior.
+obliged ; обязанный, вынужденный ; I felt obliged to help.
+values ; ценности (моральные) ; Family values are important to him.
+exact ; точный ; What is the exact time?
+even ; даже ; Even my grandma uses a smartphone.
+around the clock ; круглосуточно ; The shop is open around the clock.
+whether ; ли; будь то ; I don't know whether he is at home.
+essential ; необходимый, важнейший ; Water is essential for life.
+to overcome ; преодолевать ; You can overcome any problem.
+soon ; скоро ; See you soon.
+clear ; ясный, понятный ; Is that clear?
+desire ; желание ; She has a strong desire to travel.
+capable ; способный ; She is capable of great things.
+
 # Связки и вводные слова
 however ; однако ; The plan was good. However, it was too expensive.
 therefore ; поэтому, следовательно ; It was late, therefore we took a taxi.
 although ; хотя ; Although it was late, we kept working.
 despite ; несмотря на ; We went out despite the rain.
-unless ; если не ; I won't go unless you come with me.
-whether ; ли (выбор между вариантами) ; I don't know whether he is at home.
 instead ; вместо этого ; I didn't call him. I sent an email instead.
 otherwise ; иначе, в противном случае ; Hurry up, otherwise we will be late.
 moreover ; более того ; The flat is cheap. Moreover, it is near the station.
 anyway ; в любом случае ; It's raining, but I'll go anyway.
 actually ; на самом деле ; Actually, I don't like coffee.
 probably ; вероятно ; She will probably come tomorrow.
-especially ; особенно ; I love fruit, especially apples.
 nearly ; почти ; I nearly missed the bus.
 hardly ; едва, почти не ; I can hardly hear you.
 eventually ; в конце концов ; Eventually, everything worked out.
@@ -25,8 +266,6 @@ recently ; недавно ; I have recently moved to a new apartment.
 immediately ; немедленно ; Call me immediately if something happens.
 suddenly ; вдруг, внезапно ; Suddenly, the lights went out.
 throughout ; на протяжении, повсюду ; It rained throughout the day.
-while ; пока, в то время как ; I read a book while I was waiting.
-as soon as ; как только ; Call me as soon as you arrive.
 in order to ; чтобы, для того чтобы ; I left early in order to catch the train.
 as well ; тоже, также ; She speaks French as well.
 on the other hand ; с другой стороны ; The job is hard. On the other hand, it pays well.
@@ -34,7 +273,6 @@ for example ; например ; Some fruits, for example oranges, have a lot of
 in fact ; фактически, на самом деле ; In fact, the test was easy.
 at least ; по крайней мере ; At least nobody was hurt.
 such as ; такой как, например ; I like sports such as tennis and swimming.
-according to ; согласно, по словам ; According to the news, it will snow tomorrow.
 due to ; из-за, вследствие ; The flight was cancelled due to fog.
 apart from ; кроме, помимо ; Apart from Tom, everyone came.
 rather ; довольно; скорее ; The film was rather boring.
@@ -47,22 +285,17 @@ in general ; в целом ; In general, I like my job.
 to achieve ; достигать ; She wants to achieve her goal this year.
 to afford ; позволить себе (по деньгам) ; I can't afford a new car.
 to allow ; позволять, разрешать ; My parents allowed me to go.
-to apply ; подавать заявку; применять ; I want to apply for this job.
 to argue ; спорить ; They often argue about money.
 to arrange ; организовать, договориться ; I arranged a meeting for Monday.
 to avoid ; избегать ; Try to avoid fast food.
 to behave ; вести себя ; The children behaved well.
 to belong ; принадлежать ; This bag belongs to me.
-to blame ; винить ; Don't blame yourself.
-to complain ; жаловаться ; He always complains about the weather.
 to consider ; рассматривать, обдумывать ; We are considering a move to another city.
 to contain ; содержать ; This drink contains a lot of sugar.
 to convince ; убеждать ; She convinced me to stay.
 to deal with ; справляться с, иметь дело с ; I have to deal with many problems at work.
 to deny ; отрицать ; He denied everything.
-to depend on ; зависеть от ; It depends on the weather.
 to describe ; описывать ; Can you describe the man?
-to deserve ; заслуживать ; You deserve a rest.
 to develop ; развивать ; We need to develop new skills.
 to encourage ; поощрять, подбадривать ; My teacher encouraged me to read more.
 to expect ; ожидать ; I didn't expect to see you here.
@@ -71,7 +304,6 @@ to fail ; провалить, потерпеть неудачу ; He failed the 
 to force ; заставлять ; Nobody forced you to come.
 to improve ; улучшать ; I want to improve my English.
 to include ; включать ; The price includes breakfast.
-to increase ; увеличивать(ся) ; Prices increased last year.
 to intend ; намереваться ; I intend to finish it today.
 to manage ; справиться, суметь; управлять ; I managed to fix the bike.
 to mention ; упоминать ; She didn't mention the price.
@@ -124,7 +356,6 @@ to hurt ; болеть; причинять боль ; My leg hurts.
 to recover ; выздоравливать ; He recovered quickly.
 
 # Фразовые глаголы
-to find out ; узнать, выяснить ; I need to find out the price.
 to look after ; присматривать, заботиться ; Can you look after my dog?
 to look for ; искать ; I'm looking for my keys.
 to look up ; поискать (в словаре, в интернете) ; Look up this word in the dictionary.
@@ -161,7 +392,6 @@ to keep up with ; не отставать от ; It's hard to keep up with the n
 to set off ; отправиться (в путь) ; We set off early in the morning.
 to set up ; настроить, организовать ; I need to set up the new laptop.
 to end up ; в итоге оказаться ; We ended up in a small café.
-to come up with ; придумать ; She came up with a great idea.
 to rely on ; полагаться на ; You can rely on me.
 to back up ; делать резервную копию ; Back up your files regularly.
 to log in ; войти (в систему) ; I can't log in to my account.
@@ -172,19 +402,15 @@ to follow up ; вернуться к вопросу, связаться повт
 honest ; честный ; He is an honest man.
 polite ; вежливый ; Be polite to everyone.
 rude ; грубый ; It was rude to leave without a word.
-generous ; щедрый ; She is very generous with her time.
-selfish ; эгоистичный ; Don't be so selfish.
 patient ; терпеливый; пациент ; A good teacher is patient.
 confident ; уверенный в себе ; She is confident about her English.
 shy ; застенчивый ; He was too shy to speak.
 lazy ; ленивый ; I feel lazy today.
 hard-working ; трудолюбивый ; She is a hard-working student.
 friendly ; дружелюбный ; Our neighbors are very friendly.
-kind ; добрый ; It's very kind of you.
 brave ; смелый ; The firefighters were very brave.
 careful ; осторожный, внимательный ; Be careful on the road.
 careless ; небрежный, неосторожный ; It was a careless mistake.
-calm ; спокойный ; Stay calm and listen.
 cheerful ; жизнерадостный ; She is always cheerful.
 clever ; умный, сообразительный ; What a clever idea!
 curious ; любопытный ; Children are naturally curious.
@@ -217,7 +443,6 @@ jealous ; ревнивый, завидующий ; He is jealous of his brother.
 lonely ; одинокий ; She felt lonely in the new city.
 nervous ; нервничающий ; I'm nervous about the interview.
 pleased ; довольный ; I'm pleased with the result.
-proud ; гордый ; I'm proud of you.
 relaxed ; расслабленный ; I feel relaxed after a vacation.
 relieved ; испытывающий облегчение ; I was relieved to hear the news.
 satisfied ; удовлетворённый, довольный ; Are you satisfied with the service?
@@ -227,7 +452,6 @@ upset ; расстроенный ; She was upset about the news.
 worried ; обеспокоенный ; I'm worried about my mother.
 to miss ; скучать; пропускать ; I miss my family.
 to feel like ; хотеть, быть в настроении ; I feel like a cup of tea.
-mood ; настроение ; She is in a good mood today.
 fear ; страх ; He has a fear of flying.
 anger ; гнев ; He couldn't hide his anger.
 happiness ; счастье ; Money doesn't buy happiness.
@@ -248,9 +472,6 @@ sharp ; острый ; Be careful, the knife is sharp.
 soft ; мягкий ; This pillow is very soft.
 tight ; тесный, тугой ; These jeans are too tight.
 loose ; свободный, болтающийся ; This shirt is a bit loose.
-loud ; громкий ; The music is too loud.
-quiet ; тихий ; We live on a quiet street.
-bright ; яркий ; It's a bright sunny day.
 broken ; сломанный ; My phone is broken.
 ordinary ; обычный ; It was an ordinary day.
 unusual ; необычный ; That's an unusual name.
@@ -258,7 +479,6 @@ similar ; похожий ; Your bag is similar to mine.
 obvious ; очевидный ; The answer is obvious.
 useful ; полезный ; This app is very useful.
 useless ; бесполезный ; This old map is useless.
-convenient ; удобный (по времени, месту) ; Is Monday convenient for you?
 complicated ; сложный, запутанный ; The rules are complicated.
 necessary ; необходимый ; Is it necessary to book a table?
 valuable ; ценный ; This ring is very valuable.
@@ -299,7 +519,6 @@ full-time ; полный рабочий день ; He works full-time.
 staff ; персонал ; The staff were very helpful.
 to attend ; посещать (мероприятие) ; Did you attend the meeting?
 deadline ; крайний срок ; The deadline is Friday.
-schedule ; расписание, график ; Let's check the schedule.
 requirement ; требование ; The design meets all requirements.
 estimate ; оценка, смета ; Can you send me a rough estimate?
 meeting ; встреча, совещание ; The meeting starts at ten.
@@ -312,7 +531,6 @@ discount ; скидка ; Is there a student discount?
 cash ; наличные ; Can I pay in cash?
 change ; сдача; перемена ; Here is your change.
 debt ; долг ; He has a lot of debt.
-loan ; кредит, заём ; They took a loan from the bank.
 to owe ; быть должным ; I owe you ten dollars.
 budget ; бюджет ; We are on a tight budget.
 refund ; возврат денег ; I'd like a refund, please.
@@ -324,7 +542,6 @@ account ; счёт (в банке); аккаунт ; I opened a bank account.
 to charge ; брать плату; заряжать ; They charge extra for parking.
 fee ; плата, взнос ; The entrance fee is five dollars.
 tax ; налог ; The price includes tax.
-wealthy ; богатый, состоятельный ; They come from a wealthy family.
 value ; ценность, стоимость ; The value of the house went up.
 to deliver ; доставлять ; They deliver pizza until midnight.
 delivery ; доставка ; Delivery is free.
@@ -332,7 +549,6 @@ order ; заказ ; Your order will arrive tomorrow.
 to order ; заказывать ; Are you ready to order?
 
 # Путешествия
-journey ; поездка, путь ; The journey took five hours.
 trip ; поездка ; We had a great trip to Spain.
 flight ; рейс, полёт ; Our flight is at 6 a.m.
 luggage ; багаж ; How much luggage do you have?
@@ -354,7 +570,6 @@ one-way ; в одну сторону ; I need a one-way ticket.
 traffic ; движение (транспорта) ; There was a lot of traffic.
 traffic jam ; пробка ; We were stuck in a traffic jam.
 to land ; приземляться ; The plane landed on time.
-crowd ; толпа ; There was a big crowd at the station.
 to pack ; собирать вещи, упаковывать ; I need to pack my suitcase.
 suitcase ; чемодан ; My suitcase is too heavy.
 border ; граница ; We crossed the border at night.
@@ -369,7 +584,6 @@ to rent ; снимать (жильё) ; We rent an apartment downtown.
 landlord ; арендодатель ; Our landlord is very friendly.
 neighbor ; сосед ; My neighbor has a big dog.
 furniture ; мебель ; We need new furniture.
-to repair ; ремонтировать ; Can you repair my bike?
 to fix ; чинить ; He fixed the door.
 to tidy ; убирать, наводить порядок ; Tidy your room, please.
 laundry ; стирка, бельё ; I do the laundry on Sundays.
@@ -377,8 +591,6 @@ to iron ; гладить ; I need to iron my shirt.
 dishes ; посуда ; Who will wash the dishes?
 trash ; мусор ; Take out the trash, please.
 to move ; переезжать; двигать ; We moved to a new city last year.
-stairs ; лестница ; Take the stairs, the elevator is broken.
-ceiling ; потолок ; The ceiling is very high.
 heating ; отопление ; The heating doesn't work.
 electricity ; электричество ; We had no electricity for an hour.
 faucet ; кран ; The faucet is leaking.
@@ -386,7 +598,6 @@ tool ; инструмент ; I need the right tool for this.
 to lock ; запирать ; Don't forget to lock the door.
 noise ; шум ; The noise kept me awake.
 to decorate ; украшать; делать ремонт ; We decorated the living room.
-mess ; беспорядок ; Sorry about the mess.
 
 # Здоровье
 health ; здоровье ; Smoking is bad for your health.
@@ -456,7 +667,6 @@ weekday ; будний день ; The shop is open on weekdays.
 daily ; ежедневный ; I read the daily news.
 occasionally ; иногда, время от времени ; I occasionally eat meat.
 rarely ; редко ; She rarely goes out.
-frequently ; часто ; He frequently travels for work.
 already ; уже ; I have already eaten.
 yet ; ещё (не); уже (в вопросах) ; Have you finished yet?
 still ; всё ещё ; She is still at work.
@@ -480,18 +690,15 @@ to ask for ; просить (что-то) ; He asked for help.
 to reply ; отвечать ; Please reply to my email.
 to respond ; отвечать, реагировать ; She didn't respond to my message.
 to whisper ; шептать ; She whispered something in my ear.
-to shout ; кричать ; Don't shout at me!
 to joke ; шутить ; I was only joking.
 argument ; спор, ссора ; They had an argument about money.
 to interrupt ; перебивать ; Sorry to interrupt you.
 to make sense ; иметь смысл ; This doesn't make sense.
-honestly ; честно говоря ; Honestly, I don't know.
 obviously ; очевидно ; Obviously, she was tired.
 conversation ; разговор ; We had a nice conversation.
 to introduce ; представлять, знакомить ; Let me introduce my friend.
 to greet ; приветствовать ; She greeted us at the door.
 to lie ; лгать ; Don't lie to me.
-truth ; правда ; Tell me the truth.
 
 # Учёба
 knowledge ; знания ; Knowledge is power.
@@ -590,16 +797,13 @@ earthquake ; землетрясение ; There was a strong earthquake in Japan
 wildlife ; дикая природа ; The park is full of wildlife.
 to recycle ; перерабатывать ; We recycle paper and glass.
 energy ; энергия ; Solar energy is clean.
-coast ; побережье ; We drove along the coast.
 valley ; долина ; The village is in a valley.
-field ; поле ; Cows are eating grass in the field.
 desert ; пустыня ; It rarely rains in the desert.
 season ; время года, сезон ; Fall is my favorite season.
 plant ; растение ; Water the plants every day.
 nature ; природа ; I love walking in nature.
 
 # Люди и отношения
-relationship ; отношения ; They have a good relationship.
 relative ; родственник ; All our relatives came to the wedding.
 couple ; пара ; They are a nice couple.
 to get married ; пожениться ; They got married last year.
@@ -625,7 +829,6 @@ colleague ; коллега ; My colleague will help you.
 
 # Новости и общество
 government ; правительство ; The government announced new rules.
-law ; закон ; Everyone must obey the law.
 crime ; преступление ; Crime is falling in the city.
 to arrest ; арестовывать ; The police arrested two men.
 to steal ; красть ; Someone wants to steal my bike.
@@ -638,14 +841,12 @@ accident ; авария, несчастный случай ; He had a car accide
 to announce ; объявлять ; They announced the winners.
 article ; статья ; I read an interesting article.
 journalist ; журналист ; She works as a journalist.
-issue ; вопрос, проблема ; This is an important issue.
 society ; общество ; Technology changes society.
 community ; сообщество ; We live in a friendly community.
 peace ; мир (не война) ; We all want peace.
 to protest ; протестовать ; People protested in the streets.
 unemployment ; безработица ; Unemployment is rising.
 poverty ; бедность ; Many people live in poverty.
-rule ; правило ; Follow the rules.
 public ; общественный ; This is a public park.
 private ; частный ; This is a private beach.
 
@@ -665,7 +866,6 @@ to train ; тренироваться ; She trains every morning.
 fit ; в хорошей форме ; I want to get fit.
 gym ; спортзал ; I go to the gym twice a week.
 to join ; присоединиться, вступить ; I joined a running club.
-to take part in ; участвовать в ; I want to take part in a marathon.
 exhibition ; выставка ; We went to a photo exhibition.
 board game ; настольная игра ; We play board games on Fridays.
 to collect ; собирать, коллекционировать ; He collects old coins.
@@ -676,10 +876,8 @@ audience ; публика, зрители ; The audience loved the show.
 performance ; выступление ; It was a great performance.
 
 # Полезные существительные
-opportunity ; возможность ; This is a great opportunity.
 advantage ; преимущество ; What are the advantages of this plan?
 disadvantage ; недостаток ; The main disadvantage is the price.
-reason ; причина ; What is the reason for the delay?
 choice ; выбор ; You have no choice.
 decision ; решение ; It was a difficult decision.
 solution ; решение (проблемы) ; We need a solution quickly.
@@ -713,10 +911,7 @@ to take a break ; сделать перерыв ; Let's take a break.
 to take care of ; заботиться о ; She takes care of her grandmother.
 to take place ; проходить, состояться ; The meeting will take place on Monday.
 to have fun ; веселиться, хорошо провести время ; Have fun at the party!
-to keep in touch ; поддерживать связь ; Let's keep in touch.
 to change your mind ; передумать ; Call me if you change your mind.
-to catch a cold ; простудиться ; Dress warmly or you'll catch a cold.
-to waste time ; тратить время впустую ; Don't waste time on that.
 to save time ; экономить время ; Taking a taxi will save time.
 to be in a hurry ; спешить ; Sorry, I'm in a hurry.
 to run late ; опаздывать ; I'm running late, sorry.
