@@ -2,217 +2,267 @@
  "voice": "en-US-AvaMultilingualNeural",
  "words": {
   "although": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/although-it-was-late-we-kept-working-104fa9.mp3",
-   "ipa": "/ɑlˈðoʊ/",
+   "h": "h/although-dea713.mp3",
+   "ipa": "/ɔlˈðoʊ/",
+   "src": "wiktionary:en-us-although.ogg",
    "w": "w/although-735cfa.mp3"
   },
   "available": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-manager-is-not-available-right-now-2ce8f9.mp3",
-   "ipa": "/əˈveɪləb(ə)l/",
+   "h": "h/available-7b231a.mp3",
+   "ipa": "/əˈveɪ.lə.bəl/",
+   "src": "wiktionary:en-us-available.ogg",
    "w": "w/available-8b22d7.mp3"
   },
   "colleague": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/my-colleague-will-help-you-4456e8.mp3",
+   "h": "h/colleague-ace675.mp3",
    "ipa": "/ˈkɒliːɡ/",
+   "src": "wiktionary:En-us-colleague.ogg",
    "w": "w/colleague-1427f0.mp3"
   },
   "comfortable": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/this-chair-is-very-comfortable-7e852f.mp3",
-   "ipa": "/ˈkʌm.fə.tə.bəl/",
+   "h": "h/comfortable-2b867d.mp3",
+   "ipa": "/ˈkʌm(p)f.tə.bəl/",
+   "src": "wiktionary:En-us-comfortable.ogg",
    "w": "w/comfortable-656ea7.mp3"
   },
   "deadline": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-deadline-is-friday-85fd00.mp3",
+   "h": "h/deadline-e23839.mp3",
    "ipa": "/ˈdɛdˌlaɪn/",
+   "src": "wiktionary:LL-Q1860 (eng)-Back ache-deadline.wav",
    "w": "w/deadline-68b605.mp3"
   },
   "enough": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/we-don-t-have-enough-time-c0b296.mp3",
-   "ipa": "/iˈnʌf/",
+   "h": "h/enough-8ce77c.mp3",
+   "ipa": "/ɪˈnʌf/",
+   "src": "wiktionary:En-us-enough.ogg",
    "w": "w/enough-97bcb4.mp3"
   },
   "estimate": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/can-you-send-me-a-rough-estimate-bfadfe.mp3",
-   "ipa": "/ˈɛstɨmɨt/",
+   "h": "h/estimate-cb3fca.mp3",
+   "ipa": "/ˈɛs.tɪ.mət/",
+   "src": "wiktionary:en-us-estimate-noun.ogg",
    "w": "w/estimate-15c48a.mp3"
   },
   "eventually": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/eventually-everything-worked-out-285569.mp3",
+   "h": "h/eventually-586502.mp3",
    "ipa": "/ɪˈvɛn.t͡ʃu.ə.li/",
+   "src": "wiktionary:en-us-eventually.ogg",
    "w": "w/eventually-e2cc0a.mp3"
   },
   "hierarchy": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-company-has-a-strict-hierarchy-986b12.mp3",
+   "h": "h/hierarchy-ff59e8.mp3",
    "ipa": "/ˈhaɪ.ə.ɹɑː(ɹ).ki/",
+   "src": "wiktionary:en-us-hierarchy.ogg",
    "w": "w/hierarchy-4f79f3.mp3"
   },
   "meeting": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-meeting-starts-at-ten-3a4dc9.mp3",
+   "h": "h/meeting-bd7580.mp3",
    "ipa": "/ˈmitɪŋ/",
+   "src": "wiktionary:en-us-meeting.ogg",
    "w": "w/meeting-28f642.mp3"
   },
   "queue": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/there-was-a-long-queue-e8b083.mp3",
+   "h": "h/queue-103834.mp3",
    "ipa": "/kju/",
+   "src": "wiktionary:en-us-queue.ogg",
    "w": "w/queue-9a142a.mp3"
   },
   "reliable": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/this-is-a-reliable-car-d07a8d.mp3",
-   "ipa": "/ɹɪˈlaɪəbəl/",
+   "h": "h/reliable-c5e8cf.mp3",
+   "ipa": "/ɹɪˈlaɪəbl̩/",
+   "src": "wiktionary:en-us-reliable.ogg",
    "w": "w/reliable-d43ede.mp3"
   },
   "requirement": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-design-meets-all-requirements-ead453.mp3",
-   "ipa": "/ɹɪˈkwʌɪəm(ə)nt/",
+   "h": "h/requirement-15320a.mp3",
+   "ipa": "/ɹɪˈkwaɪɹmənt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-requirement.wav",
    "w": "w/requirement-229b96.mp3"
   },
   "schedule": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/let-s-check-the-schedule-e06cc4.mp3",
-   "ipa": "/ˈskɛ.dʒu.əl/",
+   "h": "h/schedule-11e9ba.mp3",
+   "ipa": "/ˈskɛd͡ʒ.ʊl/",
+   "src": "wiktionary:en-us-schedule.ogg",
    "w": "w/schedule-999274.mp3"
   },
   "thorough": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/we-need-a-thorough-check-d0402f.mp3",
-   "ipa": "/ˈθɜɹoʊ/",
+   "h": "h/thorough-d20bd8.mp3",
+   "ipa": "/ˈθɝoʊ/",
+   "src": "wiktionary:En-us-ne-thorough.ogg",
    "w": "w/thorough-035e95.mp3"
   },
   "throughout": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/it-rained-throughout-the-day-e10ada.mp3",
-   "ipa": "[θɹuːˈʷaʊt]",
+   "h": "h/throughout-330dbf.mp3",
+   "ipa": "/θɹuˈaʊt/",
+   "src": "wiktionary:en-us-throughout.ogg",
    "w": "w/throughout-f9fbfa.mp3"
   },
   "to approve": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-director-approved-the-plan-0602d4.mp3",
+   "h": "h/approve-e4788b.mp3",
    "ipa": "/əˈpɹuːv/",
+   "src": "wiktionary:LL-Q1860 (eng)-Mélange a trois-approve.wav",
    "w": "w/to-approve-6ba0d4.mp3"
   },
   "to attach": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/i-attached-the-file-to-the-email-e2c2ff.mp3",
-   "ipa": "/əˈtætʃ/",
+   "h": "h/attach-13ce07.mp3",
+   "ipa": "/əˈtæt͡ʃ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-attach.wav",
    "w": "w/to-attach-65242e.mp3"
   },
   "to be in charge of": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/she-is-in-charge-of-testing-e78879.mp3",
    "ipa": "",
    "w": "w/to-be-in-charge-of-2aefe6.mp3"
   },
   "to borrow": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/can-i-borrow-your-pen-1f1dd9.mp3",
-   "ipa": "/ˈbɑɹoʊ/",
+   "h": "h/borrow-72cd0a.mp3",
+   "ipa": "/ˈbɑɹ.oʊ/",
+   "src": "wiktionary:en-us-borrow.ogg",
    "w": "w/to-borrow-eed188.mp3"
   },
   "to carry on": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/carry-on-please-d7f91d.mp3",
    "ipa": "",
    "w": "w/to-carry-on-647e57.mp3"
   },
   "to come up with": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/she-came-up-with-a-great-idea-59f8cb.mp3",
    "ipa": "",
    "w": "w/to-come-up-with-395fb5.mp3"
   },
   "to determine": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/we-need-to-determine-the-cause-35a541.mp3",
-   "ipa": "/dɪˈtɝmɪn/",
+   "h": "h/determine-df9d6b.mp3",
+   "ipa": "/dɪˈtɜː(ɹ).mɪn/",
+   "src": "wiktionary:en-us-determine.ogg",
    "w": "w/to-determine-0460fb.mp3"
   },
   "to figure out": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/i-can-t-figure-out-this-problem-9e9670.mp3",
    "ipa": "",
    "w": "w/to-figure-out-3d7e73.mp3"
   },
   "to follow up": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/i-ll-follow-up-with-you-tomorrow-7f09be.mp3",
    "ipa": "",
    "w": "w/to-follow-up-e622ce.mp3"
   },
   "to give up": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/don-t-give-up-aaf4d2.mp3",
    "ipa": "",
    "w": "w/to-give-up-1821b8.mp3"
   },
   "to lend": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/could-you-lend-me-some-money-f78d55.mp3",
-   "ipa": "/lɛnd/",
+   "h": "h/lend-5e4fc9.mp3",
+   "ipa": "/ˈlɪ̟nd/",
+   "src": "wiktionary:En-us-lend.ogg",
    "w": "w/to-lend-5ec97a.mp3"
   },
   "to look forward to": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/i-look-forward-to-your-reply-a6edff.mp3",
    "ipa": "",
    "w": "w/to-look-forward-to-ea6566.mp3"
   },
   "to postpone": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/we-had-to-postpone-the-meeting-e8dcb2.mp3",
+   "h": "h/postpone-cdbd03.mp3",
    "ipa": "/poʊstˈpoʊn/",
+   "src": "wiktionary:en-us-postpone.ogg",
    "w": "w/to-postpone-31d74b.mp3"
   },
   "to run out of": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/we-ran-out-of-coffee-ad9750.mp3",
    "ipa": "",
    "w": "w/to-run-out-of-cd6287.mp3"
   },
   "to set up": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/i-need-to-set-up-the-new-laptop-170e2b.mp3",
    "ipa": "",
    "w": "w/to-set-up-95501a.mp3"
   },
   "to suggest": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/i-suggest-we-start-now-93d890.mp3",
-   "ipa": "/sə(ɡ)ˈdʒɛst/",
+   "h": "h/suggest-fd0a49.mp3",
+   "ipa": "/səˈd͡ʒɛst/",
+   "src": "wiktionary:En-us-suggest.ogg",
    "w": "w/to-suggest-4e7a20.mp3"
   },
   "to turn down": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/they-turned-down-our-offer-4330d7.mp3",
    "ipa": "",
    "w": "w/to-turn-down-ace32b.mp3"
   },
   "vegetable": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/eat-more-vegetables-4b53e2.mp3",
-   "ipa": "/ˈvɛd͡ʒtəbəl/",
+   "h": "h/vegetable-f13a90.mp3",
+   "ipa": "/ˈvɛt͡ʃ.tə.bəl/",
+   "src": "wiktionary:en-us-vegetable.ogg",
    "w": "w/vegetable-0e0d73.mp3"
   },
   "weather": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/the-weather-is-nice-today-a086f3.mp3",
+   "h": "h/weather-f98669.mp3",
    "ipa": "/ˈwɛðɚ/",
+   "src": "wiktionary:en-us-weather.ogg",
    "w": "w/weather-677256.mp3"
   },
   "wednesday": {
-   "dict": 2,
+   "dict": 3,
    "e": "e/see-you-on-wednesday-5862ff.mp3",
    "ipa": "",
    "w": "w/wednesday-7cf258.mp3"
