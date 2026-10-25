@@ -1,24 +1,674 @@
 {
  "voice": "en-US-AvaMultilingualNeural",
  "words": {
+  "ability": {
+   "dict": 4,
+   "e": "e/he-has-the-ability-to-learn-fast-e61611.mp3",
+   "h": "h/ability-083dba.mp3",
+   "ipa": "/əˈbɪl.ə.ti/",
+   "src": "wiktionary:en-us-ability.ogg",
+   "w": "w/ability-234b73.mp3"
+  },
+  "abroad": {
+   "dict": 4,
+   "e": "e/i-want-to-work-abroad-2ada20.mp3",
+   "h": "h/abroad-5fcf5c.mp3",
+   "ipa": "/əˈbɹɔːd/",
+   "src": "wiktionary:en-us-abroad.ogg",
+   "w": "w/abroad-dc3651.mp3"
+  },
+  "accident": {
+   "dict": 4,
+   "e": "e/he-had-a-car-accident-2e8fc6.mp3",
+   "h": "h/accident-f2b195.mp3",
+   "ipa": "/ˈæk.sə.dənt/",
+   "src": "wiktionary:En-us-accident.ogg",
+   "w": "w/accident-53a784.mp3"
+  },
+  "accommodation": {
+   "dict": 4,
+   "e": "e/the-price-includes-accommodation-59cc05.mp3",
+   "h": "h/accommodation-65b0cf.mp3",
+   "ipa": "/əˌkɑ.məˈdeɪ.ʃən/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-accommodation.wav",
+   "w": "w/accommodation-fd4a8a.mp3"
+  },
+  "according to": {
+   "dict": 4,
+   "e": "e/according-to-the-news-it-will-snow-tomor-b94e23.mp3",
+   "ipa": "",
+   "w": "w/according-to-1e1f89.mp3"
+  },
+  "account": {
+   "dict": 4,
+   "e": "e/i-opened-a-bank-account-ec546f.mp3",
+   "h": "h/account-ca2072.mp3",
+   "ipa": "/əˈkaʊnt/",
+   "src": "wiktionary:en-us-account.ogg",
+   "w": "w/account-d71b45.mp3"
+  },
+  "actually": {
+   "dict": 4,
+   "e": "e/actually-i-don-t-like-coffee-160a10.mp3",
+   "h": "h/actually-d617b5.mp3",
+   "ipa": "/ˈæk.t͡ʃ(u.)(ə.)li/",
+   "src": "wiktionary:en-us-actually.ogg",
+   "w": "w/actually-a97407.mp3"
+  },
+  "adult": {
+   "dict": 4,
+   "e": "e/tickets-for-adults-cost-ten-dollars-9be49a.mp3",
+   "h": "h/adult-82aef5.mp3",
+   "ipa": "/əˈdʌlt/",
+   "src": "wiktionary:en-us-adult.ogg",
+   "w": "w/adult-7a310e.mp3"
+  },
+  "advantage": {
+   "dict": 4,
+   "e": "e/what-are-the-advantages-of-this-plan-312141.mp3",
+   "h": "h/advantage-5caa3c.mp3",
+   "ipa": "/ədˈvæn.tɪd͡ʒ/",
+   "src": "wiktionary:En-us-advantage.ogg",
+   "w": "w/advantage-499cbf.mp3"
+  },
+  "advice": {
+   "dict": 4,
+   "e": "e/can-i-give-you-some-advice-46551f.mp3",
+   "h": "h/advice-8015f1.mp3",
+   "ipa": "/ədˈvaɪs/",
+   "src": "wiktionary:en-us-advice.ogg",
+   "w": "w/advice-2d2db4.mp3"
+  },
+  "afraid": {
+   "dict": 4,
+   "e": "e/i-m-afraid-of-dogs-a912bc.mp3",
+   "h": "h/afraid-2ae387.mp3",
+   "ipa": "/əˈfɹɛd/",
+   "src": "wiktionary:en-us-afraid.ogg",
+   "w": "w/afraid-0300a9.mp3"
+  },
+  "ago": {
+   "dict": 4,
+   "e": "e/i-met-him-two-years-ago-bb2632.mp3",
+   "h": "h/ago-f03c0a.mp3",
+   "ipa": "/əˈɡoʊ/",
+   "src": "wiktionary:en-us-ago.ogg",
+   "w": "w/ago-97ed41.mp3"
+  },
+  "agreement": {
+   "dict": 4,
+   "e": "e/we-reached-an-agreement-158921.mp3",
+   "h": "h/agreement-c0e571.mp3",
+   "ipa": "/əˈɡɹiːmənt/",
+   "src": "wiktionary:en-us-agreement.ogg",
+   "w": "w/agreement-5c161c.mp3"
+  },
+  "allergic": {
+   "dict": 4,
+   "e": "e/i-m-allergic-to-cats-0779be.mp3",
+   "h": "h/allergic-4ebbfa.mp3",
+   "ipa": "/əˈlɝ.d͡ʒɪk/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vininn126-allergic.wav",
+   "w": "w/allergic-29fc1f.mp3"
+  },
+  "already": {
+   "dict": 4,
+   "e": "e/i-have-already-eaten-943390.mp3",
+   "h": "h/already-e9bc90.mp3",
+   "ipa": "/ɔːlˈɹɛdi/",
+   "src": "wiktionary:en-us-already.ogg",
+   "w": "w/already-aaf718.mp3"
+  },
   "although": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/although-it-was-late-we-kept-working-104fa9.mp3",
    "h": "h/although-dea713.mp3",
    "ipa": "/ɔlˈðoʊ/",
    "src": "wiktionary:en-us-although.ogg",
    "w": "w/although-735cfa.mp3"
   },
+  "ambitious": {
+   "dict": 4,
+   "e": "e/she-is-ambitious-and-wants-to-be-a-manag-e14af4.mp3",
+   "h": "h/ambitious-b8ed47.mp3",
+   "ipa": "/æmˈbɪʃ.əs/",
+   "src": "wiktionary:en-us-ambitious.ogg",
+   "w": "w/ambitious-7a4b52.mp3"
+  },
+  "ambulance": {
+   "dict": 4,
+   "e": "e/call-an-ambulance-044bf4.mp3",
+   "h": "h/ambulance-d036c1.mp3",
+   "ipa": "/ˈæm.bjə.ləns/",
+   "src": "wiktionary:en-us-ambulance.ogg",
+   "w": "w/ambulance-88ef72.mp3"
+  },
+  "amount": {
+   "dict": 4,
+   "e": "e/a-large-amount-of-money-was-stolen-ec4c10.mp3",
+   "h": "h/amount-9cb6ff.mp3",
+   "ipa": "/əˈmaʊnt/",
+   "src": "wiktionary:en-us-amount.ogg",
+   "w": "w/amount-dfc7d6.mp3"
+  },
+  "anger": {
+   "dict": 4,
+   "e": "e/he-couldn-t-hide-his-anger-8ca43d.mp3",
+   "h": "h/anger-60b771.mp3",
+   "ipa": "/ˈæŋɡɚ/",
+   "src": "wiktionary:en-us-anger.ogg",
+   "w": "w/anger-1c1f44.mp3"
+  },
+  "angry": {
+   "dict": 4,
+   "e": "e/why-are-you-angry-with-me-34b5ba.mp3",
+   "h": "h/angry-246d1d.mp3",
+   "ipa": "[ˈɛŋ-]",
+   "src": "wiktionary:en-us-angry.ogg",
+   "w": "w/angry-21c7bc.mp3"
+  },
+  "annoyed": {
+   "dict": 4,
+   "e": "e/i-was-annoyed-by-the-noise-6a5326.mp3",
+   "h": "h/annoyed-2c4bbb.mp3",
+   "ipa": "/əˈnɔɪd/",
+   "src": "wiktionary:en-us-annoyed.ogg",
+   "w": "w/annoyed-7331ba.mp3"
+  },
+  "anxious": {
+   "dict": 4,
+   "e": "e/she-feels-anxious-before-exams-d55b86.mp3",
+   "h": "h/anxious-3d58da.mp3",
+   "ipa": "/ˈeɪŋkʃəs/",
+   "src": "wiktionary:en-us-anxious.ogg",
+   "w": "w/anxious-2fb557.mp3"
+  },
+  "anyway": {
+   "dict": 4,
+   "e": "e/it-s-raining-but-i-ll-go-anyway-fd0602.mp3",
+   "h": "h/anyway-736b67.mp3",
+   "ipa": "/ˈɛniweɪ/",
+   "src": "wiktionary:en-us-anyway.ogg",
+   "w": "w/anyway-94e672.mp3"
+  },
+  "apart from": {
+   "dict": 4,
+   "e": "e/apart-from-tom-everyone-came-73e919.mp3",
+   "ipa": "",
+   "w": "w/apart-from-095e6e.mp3"
+  },
+  "apartment": {
+   "dict": 4,
+   "e": "e/they-live-in-a-small-apartment-f53cc0.mp3",
+   "h": "h/apartment-2cdbff.mp3",
+   "ipa": "/əˈpɑɹt.mənt/",
+   "src": "wiktionary:en-us-apartment.ogg",
+   "w": "w/apartment-54ed51.mp3"
+  },
+  "appearance": {
+   "dict": 4,
+   "e": "e/don-t-judge-people-by-their-appearance-78c11d.mp3",
+   "h": "h/appearance-85a7b4.mp3",
+   "ipa": "/əˈpɪə.ɹəns/",
+   "src": "wiktionary:en-us-appearance.ogg",
+   "w": "w/appearance-fd03fe.mp3"
+  },
+  "application": {
+   "dict": 4,
+   "e": "e/send-your-application-by-email-3906f7.mp3",
+   "h": "h/application-d2005c.mp3",
+   "ipa": "/ˌæp.lɪˈkeɪ.ʃən/",
+   "src": "wiktionary:en-us-application.ogg",
+   "w": "w/application-a733a2.mp3"
+  },
+  "appointment": {
+   "dict": 4,
+   "e": "e/i-have-an-appointment-with-the-dentist-9e27fb.mp3",
+   "h": "h/appointment-d93e8e.mp3",
+   "ipa": "/əˈpɔɪnt.mɪnt/",
+   "src": "wiktionary:en-us-appointment.ogg",
+   "w": "w/appointment-64a4f8.mp3"
+  },
+  "area": {
+   "dict": 4,
+   "e": "e/this-area-is-very-safe-eb074c.mp3",
+   "h": "h/area-699e8a.mp3",
+   "ipa": "/ˈɛəɹi.ə/",
+   "src": "wiktionary:en-us-area.ogg",
+   "w": "w/area-b4a3c4.mp3"
+  },
+  "argument": {
+   "dict": 4,
+   "e": "e/they-had-an-argument-about-money-4d18ea.mp3",
+   "h": "h/argument-0f3802.mp3",
+   "ipa": "/ˈɑɹɡjʊmənt/",
+   "src": "wiktionary:En-us-argument.ogg",
+   "w": "w/argument-068779.mp3"
+  },
+  "arrival": {
+   "dict": 4,
+   "e": "e/arrival-is-at-8-p-m-1e5208.mp3",
+   "h": "h/arrival-7933e5.mp3",
+   "ipa": "/əˈɹaɪ.vl̩/",
+   "src": "wiktionary:en-us-arrival.ogg",
+   "w": "w/arrival-baba8e.mp3"
+  },
+  "article": {
+   "dict": 4,
+   "e": "e/i-read-an-interesting-article-f2c2eb.mp3",
+   "h": "h/article-565cec.mp3",
+   "ipa": "/ˈɑɹtɪkəl/",
+   "src": "wiktionary:En-us-article.ogg",
+   "w": "w/article-014ea7.mp3"
+  },
+  "as far as i know": {
+   "dict": 4,
+   "e": "e/as-far-as-i-know-he-is-at-home-700988.mp3",
+   "ipa": "",
+   "w": "w/as-far-as-i-know-46378e.mp3"
+  },
+  "as soon as": {
+   "dict": 4,
+   "e": "e/call-me-as-soon-as-you-arrive-eafc9c.mp3",
+   "ipa": "",
+   "w": "w/as-soon-as-01eb18.mp3"
+  },
+  "as usual": {
+   "dict": 4,
+   "e": "e/he-was-late-as-usual-09c18c.mp3",
+   "ipa": "",
+   "w": "w/as-usual-44d86a.mp3"
+  },
+  "as well": {
+   "dict": 4,
+   "e": "e/she-speaks-french-as-well-3f81e3.mp3",
+   "ipa": "",
+   "w": "w/as-well-1921e0.mp3"
+  },
+  "ashamed": {
+   "dict": 4,
+   "e": "e/i-m-ashamed-of-what-i-said-853d33.mp3",
+   "h": "h/ashamed-0f43c8.mp3",
+   "ipa": "/əˈʃeɪmd/",
+   "src": "wiktionary:en-us-ashamed.ogg",
+   "w": "w/ashamed-8b082e.mp3"
+  },
+  "at least": {
+   "dict": 4,
+   "e": "e/at-least-nobody-was-hurt-674ee6.mp3",
+   "ipa": "",
+   "w": "w/at-least-307e4b.mp3"
+  },
+  "at the moment": {
+   "dict": 4,
+   "e": "e/he-is-busy-at-the-moment-f2dbd2.mp3",
+   "ipa": "",
+   "w": "w/at-the-moment-a73bf8.mp3"
+  },
+  "attitude": {
+   "dict": 4,
+   "e": "e/she-has-a-positive-attitude-debe07.mp3",
+   "h": "h/attitude-628912.mp3",
+   "ipa": "/ˈætɪˌtud/",
+   "src": "wiktionary:en-us-attitude.ogg",
+   "w": "w/attitude-faf5d7.mp3"
+  },
+  "audience": {
+   "dict": 4,
+   "e": "e/the-audience-loved-the-show-28d831.mp3",
+   "h": "h/audience-a4930b.mp3",
+   "ipa": "/ˈɔːdi.əns/",
+   "src": "wiktionary:en-us-audience.ogg",
+   "w": "w/audience-2fbac0.mp3"
+  },
   "available": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-manager-is-not-available-right-now-2ce8f9.mp3",
    "h": "h/available-7b231a.mp3",
    "ipa": "/əˈveɪ.lə.bəl/",
    "src": "wiktionary:en-us-available.ogg",
    "w": "w/available-8b22d7.mp3"
   },
+  "bald": {
+   "dict": 4,
+   "e": "e/my-grandfather-is-bald-58a92a.mp3",
+   "h": "h/bald-4675f6.mp3",
+   "ipa": "/bɔːld/",
+   "src": "wiktionary:en-us-bald.ogg",
+   "w": "w/bald-ce21a1.mp3"
+  },
+  "bargain": {
+   "dict": 4,
+   "e": "e/this-jacket-was-a-real-bargain-e6f444.mp3",
+   "h": "h/bargain-a5e12c.mp3",
+   "ipa": "/ˈbɑːɹɡən/",
+   "src": "wiktionary:en-us-bargain.ogg",
+   "w": "w/bargain-b3e1f8.mp3"
+  },
+  "battery": {
+   "dict": 4,
+   "e": "e/my-battery-is-almost-dead-8497bd.mp3",
+   "h": "h/battery-3f3c58.mp3",
+   "ipa": "/ˈbæt.əɹi/",
+   "src": "wiktionary:En-us-battery.ogg",
+   "w": "w/battery-a6e6ea.mp3"
+  },
+  "beard": {
+   "dict": 4,
+   "e": "e/he-has-a-long-beard-a2abe7.mp3",
+   "h": "h/beard-c8dc9f.mp3",
+   "ipa": "/bɪɹd/",
+   "src": "wiktionary:en-us-beard.ogg",
+   "w": "w/beard-5ab987.mp3"
+  },
+  "behavior": {
+   "dict": 4,
+   "e": "e/his-behavior-was-strange-e0e04f.mp3",
+   "h": "h/behavior-7b09f3.mp3",
+   "ipa": "/bɪˈheɪ.vjəɹ/",
+   "src": "wiktionary:en-us-behavior.ogg",
+   "w": "w/behavior-fe0b63.mp3"
+  },
+  "benefit": {
+   "dict": 4,
+   "e": "e/exercise-has-many-benefits-a74167.mp3",
+   "h": "h/benefit-212403.mp3",
+   "ipa": "/ˈbɛn.ɪˌfɪt/",
+   "src": "wiktionary:en-us-benefit.ogg",
+   "w": "w/benefit-e88852.mp3"
+  },
+  "bill": {
+   "dict": 4,
+   "e": "e/can-we-have-the-bill-please-65dd38.mp3",
+   "h": "h/bill-c692d6.mp3",
+   "ipa": "/ˈbɪl/",
+   "src": "wiktionary:en-us-bill.ogg",
+   "w": "w/bill-1d444e.mp3"
+  },
+  "bitter": {
+   "dict": 4,
+   "e": "e/the-coffee-is-bitter-7692de.mp3",
+   "h": "h/bitter-23fda7.mp3",
+   "ipa": "/ˈbɪt.ɚ/",
+   "src": "wiktionary:en-us-bitter.ogg",
+   "w": "w/bitter-f6636d.mp3"
+  },
+  "board game": {
+   "dict": 4,
+   "e": "e/we-play-board-games-on-fridays-7e362d.mp3",
+   "ipa": "",
+   "w": "w/board-game-b80594.mp3"
+  },
+  "border": {
+   "dict": 4,
+   "e": "e/we-crossed-the-border-at-night-fdfbb9.mp3",
+   "h": "h/border-ca6bcd.mp3",
+   "ipa": "/ˈbɔɹ.dɚ/",
+   "src": "wiktionary:en-us-border.ogg",
+   "w": "w/border-2de8b5.mp3"
+  },
+  "bored": {
+   "dict": 4,
+   "e": "e/i-m-bored-let-s-go-out-5ef86d.mp3",
+   "h": "h/bored-aa6897.mp3",
+   "ipa": "/bɔːd/",
+   "src": "wiktionary:en-us-board.ogg",
+   "w": "w/bored-2c909f.mp3"
+  },
+  "brave": {
+   "dict": 4,
+   "e": "e/the-firefighters-were-very-brave-9159f5.mp3",
+   "h": "h/brave-9fc1aa.mp3",
+   "ipa": "/bɹeɪv/",
+   "src": "wiktionary:en-us-brave.ogg",
+   "w": "w/brave-066192.mp3"
+  },
+  "bridge": {
+   "dict": 4,
+   "e": "e/cross-the-bridge-and-turn-left-2f1484.mp3",
+   "h": "h/bridge-2fa198.mp3",
+   "ipa": "/bɹɪd͡ʒ/",
+   "src": "wiktionary:en-us-bridge.ogg",
+   "w": "w/bridge-e08587.mp3"
+  },
+  "bright": {
+   "dict": 4,
+   "e": "e/it-s-a-bright-sunny-day-8f6552.mp3",
+   "h": "h/bright-0570b9.mp3",
+   "ipa": "[ˈbɹʷaːt]",
+   "src": "wiktionary:En-us-bright.ogg",
+   "w": "w/bright-866eef.mp3"
+  },
+  "broken": {
+   "dict": 4,
+   "e": "e/my-phone-is-broken-6a412d.mp3",
+   "h": "h/broken-0b8a1c.mp3",
+   "ipa": "/ˈbɹoʊ.kɪn/",
+   "src": "wiktionary:en-us-broken.ogg",
+   "w": "w/broken-35e494.mp3"
+  },
+  "budget": {
+   "dict": 4,
+   "e": "e/we-are-on-a-tight-budget-f85586.mp3",
+   "h": "h/budget-81e4a5.mp3",
+   "ipa": "/ˈbʌd͡ʒ.ɪt/",
+   "src": "wiktionary:en-us-budget.ogg",
+   "w": "w/budget-a8ad7b.mp3"
+  },
+  "building": {
+   "dict": 4,
+   "e": "e/it-s-the-tallest-building-in-the-city-d508c5.mp3",
+   "h": "h/building-b81145.mp3",
+   "ipa": "/ˈbɪl.dɪŋ/",
+   "src": "wiktionary:en-us-building.ogg",
+   "w": "w/building-13b100.mp3"
+  },
+  "business": {
+   "dict": 4,
+   "e": "e/he-runs-a-small-business-269c8d.mp3",
+   "h": "h/business-6a577a.mp3",
+   "ipa": "/ˈbɪz.nɪs/",
+   "src": "wiktionary:en-us-business.ogg",
+   "w": "w/business-ecbf87.mp3"
+  },
+  "by accident": {
+   "dict": 4,
+   "e": "e/i-deleted-it-by-accident-f181f8.mp3",
+   "ipa": "",
+   "w": "w/by-accident-28485a.mp3"
+  },
+  "by the way": {
+   "dict": 4,
+   "e": "e/by-the-way-where-is-tom-094f1f.mp3",
+   "ipa": "",
+   "w": "w/by-the-way-015ed0.mp3"
+  },
+  "calm": {
+   "dict": 4,
+   "e": "e/stay-calm-and-listen-c79155.mp3",
+   "h": "h/calm-2ec3d0.mp3",
+   "ipa": "/kɑm/",
+   "src": "wiktionary:en-us-calm.ogg",
+   "w": "w/calm-4fe856.mp3"
+  },
+  "camping": {
+   "dict": 4,
+   "e": "e/we-went-camping-in-the-mountains-0b8f3f.mp3",
+   "h": "h/camping-64634f.mp3",
+   "ipa": "/ˈkæmp.ɪŋ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-camping.wav",
+   "w": "w/camping-f4494b.mp3"
+  },
+  "career": {
+   "dict": 4,
+   "e": "e/she-wants-a-career-in-medicine-929ccb.mp3",
+   "h": "h/career-25f6f0.mp3",
+   "ipa": "/kəˈɹɪə/",
+   "src": "wiktionary:en-us-career.ogg",
+   "w": "w/career-370737.mp3"
+  },
+  "careful": {
+   "dict": 4,
+   "e": "e/be-careful-on-the-road-e6abaa.mp3",
+   "h": "h/careful-7c41be.mp3",
+   "ipa": "/ˈkɛɹfəl/",
+   "src": "wiktionary:en-us-careful.ogg",
+   "w": "w/careful-8ad20d.mp3"
+  },
+  "careless": {
+   "dict": 4,
+   "e": "e/it-was-a-careless-mistake-828383.mp3",
+   "h": "h/careless-eeaae8.mp3",
+   "ipa": "/kɛɹ.ləs/",
+   "src": "wiktionary:en-us-careless.ogg",
+   "w": "w/careless-67c221.mp3"
+  },
+  "cash": {
+   "dict": 4,
+   "e": "e/can-i-pay-in-cash-a6bc9c.mp3",
+   "h": "h/cash-a34c86.mp3",
+   "ipa": "/kæʃ/",
+   "src": "wiktionary:en-us-cash.ogg",
+   "w": "w/cash-d80474.mp3"
+  },
+  "ceiling": {
+   "dict": 4,
+   "e": "e/the-ceiling-is-very-high-cb38e5.mp3",
+   "h": "h/ceiling-baacee.mp3",
+   "ipa": "/ˈsilɪŋ/",
+   "src": "wiktionary:en-us-ceiling.ogg",
+   "w": "w/ceiling-d0eaaf.mp3"
+  },
+  "century": {
+   "dict": 4,
+   "e": "e/this-house-is-from-the-19th-century-8f41b2.mp3",
+   "h": "h/century-75a03f.mp3",
+   "ipa": "/ˈsɛn.(t)ʃ(ə.)ɹi/",
+   "src": "wiktionary:En-us-century.ogg",
+   "w": "w/century-86d5d3.mp3"
+  },
+  "certificate": {
+   "dict": 4,
+   "e": "e/i-received-a-certificate-at-the-end-of-t-773b4e.mp3",
+   "h": "h/certificate-735ad5.mp3",
+   "ipa": "/səˈtɪf.ɪ.kɪt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-certificate.wav",
+   "w": "w/certificate-f8b7a6.mp3"
+  },
+  "challenge": {
+   "dict": 4,
+   "e": "e/learning-a-language-is-a-challenge-06d46e.mp3",
+   "h": "h/challenge-bb064b.mp3",
+   "ipa": "/ˈt͡ʃæl.ɪnd͡ʒ/",
+   "src": "wiktionary:En-us-challenge.ogg",
+   "w": "w/challenge-8e2771.mp3"
+  },
+  "champion": {
+   "dict": 4,
+   "e": "e/he-is-the-world-champion-225b6b.mp3",
+   "h": "h/champion-e79efc.mp3",
+   "ipa": "/ˈt͡ʃæm.pi.ən/",
+   "src": "wiktionary:en-us-champion.ogg",
+   "w": "w/champion-4f0d1b.mp3"
+  },
+  "change": {
+   "dict": 4,
+   "e": "e/here-is-your-change-e2ee53.mp3",
+   "h": "h/change-7550b6.mp3",
+   "ipa": "/ˈt͡ʃeɪnd͡ʒ/",
+   "src": "wiktionary:En-us-change.ogg",
+   "w": "w/change-ec2fda.mp3"
+  },
+  "charger": {
+   "dict": 4,
+   "e": "e/have-you-seen-my-charger-8c1cc3.mp3",
+   "h": "h/charger-e2faa9.mp3",
+   "ipa": "/ˈtʃɑɹdʒəɹ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-charger.wav",
+   "w": "w/charger-ae271d.mp3"
+  },
+  "cheerful": {
+   "dict": 4,
+   "e": "e/she-is-always-cheerful-3e8d14.mp3",
+   "h": "h/cheerful-e86b47.mp3",
+   "ipa": "/ˈt͡ʃɪɹfl̩/",
+   "src": "wiktionary:en-us-cheerful.ogg",
+   "w": "w/cheerful-91028d.mp3"
+  },
+  "childhood": {
+   "dict": 4,
+   "e": "e/i-had-a-happy-childhood-a4fbbb.mp3",
+   "h": "h/childhood-d26dc0.mp3",
+   "ipa": "/ˈtʃaɪld.hʊd/",
+   "src": "wiktionary:en-us-childhood.ogg",
+   "w": "w/childhood-284d62.mp3"
+  },
+  "chocolate": {
+   "dict": 4,
+   "e": "e/i-love-dark-chocolate-cd879a.mp3",
+   "h": "h/chocolate-891c5f.mp3",
+   "ipa": "a=GA",
+   "src": "wiktionary:En-us-chocolate.ogg",
+   "w": "w/chocolate-69ba22.mp3"
+  },
+  "choice": {
+   "dict": 4,
+   "e": "e/you-have-no-choice-a5d211.mp3",
+   "h": "h/choice-630af5.mp3",
+   "ipa": "/tʃɔɪs/",
+   "src": "wiktionary:en-us-choice.ogg",
+   "w": "w/choice-989390.mp3"
+  },
+  "clever": {
+   "dict": 4,
+   "e": "e/what-a-clever-idea-be5726.mp3",
+   "h": "h/clever-a31a61.mp3",
+   "ipa": "/ˈklɛv.ɚ/",
+   "src": "wiktionary:en-us-clever.ogg",
+   "w": "w/clever-6d8bc9.mp3"
+  },
+  "client": {
+   "dict": 4,
+   "e": "e/we-have-a-meeting-with-a-new-client-a407f1.mp3",
+   "h": "h/client-d2a04d.mp3",
+   "ipa": "/ˈklaɪ.ənt/",
+   "src": "wiktionary:en-us-client.ogg",
+   "w": "w/client-051a1a.mp3"
+  },
+  "climate": {
+   "dict": 4,
+   "e": "e/the-climate-is-changing-354f72.mp3",
+   "h": "h/climate-9d7ccb.mp3",
+   "ipa": "/ˈklaɪ.mɪt/",
+   "src": "wiktionary:en-us-climate.ogg",
+   "w": "w/climate-d2acd0.mp3"
+  },
+  "clothes": {
+   "dict": 4,
+   "e": "e/i-need-new-clothes-738580.mp3",
+   "h": "h/clothes-00b1e4.mp3",
+   "ipa": "/kloʊðz/",
+   "src": "wiktionary:en-us-clothes.ogg",
+   "w": "w/clothes-0c7611.mp3"
+  },
+  "coach": {
+   "dict": 4,
+   "e": "e/our-coach-is-very-strict-d641de.mp3",
+   "h": "h/coach-c63c8e.mp3",
+   "ipa": "/koʊt͡ʃ/",
+   "src": "wiktionary:en-us-coach.ogg",
+   "w": "w/coach-30bb37.mp3"
+  },
+  "coast": {
+   "dict": 4,
+   "e": "e/we-drove-along-the-coast-e5c552.mp3",
+   "h": "h/coast-366eb3.mp3",
+   "ipa": "/koʊst/",
+   "src": "wiktionary:en-us-coast.ogg",
+   "w": "w/coast-302994.mp3"
+  },
   "colleague": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/my-colleague-will-help-you-4456e8.mp3",
    "h": "h/colleague-ace675.mp3",
    "ipa": "/ˈkɒliːɡ/",
@@ -26,95 +676,2611 @@
    "w": "w/colleague-1427f0.mp3"
   },
   "comfortable": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/this-chair-is-very-comfortable-7e852f.mp3",
    "h": "h/comfortable-2b867d.mp3",
    "ipa": "/ˈkʌm(p)f.tə.bəl/",
    "src": "wiktionary:En-us-comfortable.ogg",
    "w": "w/comfortable-656ea7.mp3"
   },
+  "community": {
+   "dict": 4,
+   "e": "e/we-live-in-a-friendly-community-eb0054.mp3",
+   "h": "h/community-418b03.mp3",
+   "ipa": "/k(ə)ˈmju.nə.ti/",
+   "src": "wiktionary:en-us-community.ogg",
+   "w": "w/community-8e1dcf.mp3"
+  },
+  "competition": {
+   "dict": 4,
+   "e": "e/she-won-a-dance-competition-81e10b.mp3",
+   "h": "h/competition-1b44f6.mp3",
+   "ipa": "/ˌkɒm.pəˈtɪʃ.ən/",
+   "src": "wiktionary:en-us-competition.ogg",
+   "w": "w/competition-54b7a9.mp3"
+  },
+  "complicated": {
+   "dict": 4,
+   "e": "e/the-rules-are-complicated-785bfe.mp3",
+   "h": "h/complicated-d27c7a.mp3",
+   "ipa": "/ˈkɒm.plɪˌkeɪ.tɪd/",
+   "src": "wiktionary:en-us-complicated.ogg",
+   "w": "w/complicated-2ece89.mp3"
+  },
+  "condition": {
+   "dict": 4,
+   "e": "e/the-car-is-in-good-condition-9acf95.mp3",
+   "h": "h/condition-afad9a.mp3",
+   "ipa": "/kənˈdɪʃ(ə)n/",
+   "src": "wiktionary:En-us-condition.ogg",
+   "w": "w/condition-288d4d.mp3"
+  },
+  "confident": {
+   "dict": 4,
+   "e": "e/she-is-confident-about-her-english-364314.mp3",
+   "h": "h/confident-39a449.mp3",
+   "ipa": "/ˈkɑnfɪdənt/",
+   "src": "wiktionary:en-us-confident.ogg",
+   "w": "w/confident-c6a49e.mp3"
+  },
+  "confused": {
+   "dict": 4,
+   "e": "e/i-m-confused-by-these-instructions-d05d4b.mp3",
+   "h": "h/confused-bc6226.mp3",
+   "ipa": "/kənˈfjuzd/",
+   "src": "wiktionary:en-us-confused.ogg",
+   "w": "w/confused-70e38a.mp3"
+  },
+  "connection": {
+   "dict": 4,
+   "e": "e/the-internet-connection-is-slow-a76327.mp3",
+   "h": "h/connection-814605.mp3",
+   "ipa": "/kəˈnɛkʃən/",
+   "src": "wiktionary:en-us-connection.ogg",
+   "w": "w/connection-f021fb.mp3"
+  },
+  "contract": {
+   "dict": 4,
+   "e": "e/read-the-contract-carefully-d0b376.mp3",
+   "h": "h/contract-d61cea.mp3",
+   "ipa": "/ˈkɑntɹækt/",
+   "src": "wiktionary:en-us-contract-noun.ogg",
+   "w": "w/contract-d1eb88.mp3"
+  },
+  "convenient": {
+   "dict": 4,
+   "e": "e/is-monday-convenient-for-you-a2c964.mp3",
+   "h": "h/convenient-23e0d9.mp3",
+   "ipa": "/kənˈvi.njənt/",
+   "src": "wiktionary:en-us-convenient.ogg",
+   "w": "w/convenient-fae448.mp3"
+  },
+  "conversation": {
+   "dict": 4,
+   "e": "e/we-had-a-nice-conversation-756942.mp3",
+   "h": "h/conversation-78b6f9.mp3",
+   "ipa": "/ˌkɒn.vəˈseɪ.ʃn̩/",
+   "src": "wiktionary:en-us-conversation.ogg",
+   "w": "w/conversation-d5c7db.mp3"
+  },
+  "corner": {
+   "dict": 4,
+   "e": "e/the-shop-is-on-the-corner-5adade.mp3",
+   "h": "h/corner-eb542d.mp3",
+   "ipa": "/ˈkɔɹ.nɚ/",
+   "src": "wiktionary:en-us-corner.ogg",
+   "w": "w/corner-ae7ca3.mp3"
+  },
+  "cough": {
+   "dict": 4,
+   "e": "e/i-have-a-bad-cough-367a30.mp3",
+   "h": "h/cough-1b9bcb.mp3",
+   "ipa": "/kɔf/",
+   "src": "wiktionary:En-us-cough.ogg",
+   "w": "w/cough-66d7e2.mp3"
+  },
+  "countryside": {
+   "dict": 4,
+   "e": "e/i-love-the-countryside-37425c.mp3",
+   "h": "h/countryside-82bf7e.mp3",
+   "ipa": "/ˈkʌn.tɹiˌsaɪd/",
+   "src": "wiktionary:En-uk-countryside.ogg",
+   "w": "w/countryside-76f85a.mp3"
+  },
+  "couple": {
+   "dict": 4,
+   "e": "e/they-are-a-nice-couple-9faff3.mp3",
+   "h": "h/couple-33fc2d.mp3",
+   "ipa": "/ˈkʌp.əl/",
+   "src": "wiktionary:en-us-couple.ogg",
+   "w": "w/couple-c9392b.mp3"
+  },
+  "course": {
+   "dict": 4,
+   "e": "e/i-m-taking-an-english-course-b5cfe6.mp3",
+   "h": "h/course-480956.mp3",
+   "ipa": "/kɔɹs/",
+   "src": "wiktionary:en-us-course.ogg",
+   "w": "w/course-bcd307.mp3"
+  },
+  "crime": {
+   "dict": 4,
+   "e": "e/crime-is-falling-in-the-city-bbded9.mp3",
+   "h": "h/crime-cdde32.mp3",
+   "ipa": "/kɹaɪm/",
+   "src": "wiktionary:En-us-crime.ogg",
+   "w": "w/crime-b96753.mp3"
+  },
+  "crowd": {
+   "dict": 4,
+   "e": "e/there-was-a-big-crowd-at-the-station-9cfc74.mp3",
+   "h": "h/crowd-c3bd87.mp3",
+   "ipa": "/ˈkɹæʊ̯d/",
+   "src": "wiktionary:en-us-crowd.ogg",
+   "w": "w/crowd-37a7c6.mp3"
+  },
+  "crowded": {
+   "dict": 4,
+   "e": "e/the-bus-was-very-crowded-98f99c.mp3",
+   "h": "h/crowded-8bd8c4.mp3",
+   "ipa": "/ˈkɹaʊdɪd/",
+   "src": "wiktionary:en-us-crowded.ogg",
+   "w": "w/crowded-fcd0ae.mp3"
+  },
+  "curious": {
+   "dict": 4,
+   "e": "e/children-are-naturally-curious-2f966e.mp3",
+   "h": "h/curious-293028.mp3",
+   "ipa": "/ˈkjʊ.ɹəs/",
+   "src": "wiktionary:En-us-curious.ogg",
+   "w": "w/curious-96934a.mp3"
+  },
+  "curly": {
+   "dict": 4,
+   "e": "e/she-has-curly-hair-8ac3ea.mp3",
+   "h": "h/curly-e122d2.mp3",
+   "ipa": "/ˈkɜːli/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-curly.wav",
+   "w": "w/curly-9e78a9.mp3"
+  },
+  "customer": {
+   "dict": 4,
+   "e": "e/the-customer-is-always-right-9d6016.mp3",
+   "h": "h/customer-b39f00.mp3",
+   "ipa": "/ˈkʌs.tə.mɚ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-customer.wav",
+   "w": "w/customer-490bd1.mp3"
+  },
+  "customs": {
+   "dict": 4,
+   "e": "e/we-went-through-customs-quickly-53f9a6.mp3",
+   "h": "h/customs-adee35.mp3",
+   "ipa": "/ˈkʌs.təmz/",
+   "src": "wiktionary:en-us-customs.ogg",
+   "w": "w/customs-49ea65.mp3"
+  },
+  "daily": {
+   "dict": 4,
+   "e": "e/i-read-the-daily-news-b2b3dc.mp3",
+   "h": "h/daily-2fe14b.mp3",
+   "ipa": "/ˈdeɪli/",
+   "src": "wiktionary:en-us-daily.ogg",
+   "w": "w/daily-e75ef6.mp3"
+  },
+  "data": {
+   "dict": 4,
+   "e": "e/your-data-is-safe-0aaa66.mp3",
+   "h": "h/data-a17c9a.mp3",
+   "ipa": "/ˈdætə/",
+   "src": "wiktionary:en-us-data1.ogg",
+   "w": "w/data-6e50b5.mp3"
+  },
   "deadline": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-deadline-is-friday-85fd00.mp3",
    "h": "h/deadline-e23839.mp3",
    "ipa": "/ˈdɛdˌlaɪn/",
    "src": "wiktionary:LL-Q1860 (eng)-Back ache-deadline.wav",
    "w": "w/deadline-68b605.mp3"
   },
+  "debt": {
+   "dict": 4,
+   "e": "e/he-has-a-lot-of-debt-3c4c39.mp3",
+   "h": "h/debt-e52ec7.mp3",
+   "ipa": "/ˈdɛt/",
+   "src": "wiktionary:en-us-debt.ogg",
+   "w": "w/debt-a5fb99.mp3"
+  },
+  "decade": {
+   "dict": 4,
+   "e": "e/prices-have-doubled-in-a-decade-f999e7.mp3",
+   "h": "h/decade-964ec4.mp3",
+   "ipa": "/ˈdɛkəd/",
+   "src": "wiktionary:en-us-decade.ogg",
+   "w": "w/decade-514cf7.mp3"
+  },
+  "decision": {
+   "dict": 4,
+   "e": "e/it-was-a-difficult-decision-1696ff.mp3",
+   "h": "h/decision-8501a3.mp3",
+   "ipa": "/dɪˈsɪʒn̩/",
+   "src": "wiktionary:en-us-decision.ogg",
+   "w": "w/decision-876e18.mp3"
+  },
+  "deep": {
+   "dict": 4,
+   "e": "e/the-lake-is-very-deep-e28cc6.mp3",
+   "h": "h/deep-3dde59.mp3",
+   "ipa": "/diːp/",
+   "src": "wiktionary:en-us-deep.ogg",
+   "w": "w/deep-b45979.mp3"
+  },
+  "degree": {
+   "dict": 4,
+   "e": "e/she-has-a-degree-in-economics-ad2d17.mp3",
+   "h": "h/degree-7955b9.mp3",
+   "ipa": "/dɪˈɡɹiː/",
+   "src": "wiktionary:en-us-degree.ogg",
+   "w": "w/degree-da7229.mp3"
+  },
+  "delay": {
+   "dict": 4,
+   "e": "e/there-is-a-two-hour-delay-047795.mp3",
+   "h": "h/delay-ab464f.mp3",
+   "ipa": "/dɪˈleɪ/",
+   "src": "wiktionary:En-us-delay.ogg",
+   "w": "w/delay-7c24a6.mp3"
+  },
+  "delicious": {
+   "dict": 4,
+   "e": "e/the-dinner-was-delicious-af7220.mp3",
+   "h": "h/delicious-7ab9d1.mp3",
+   "ipa": "/dɪˈlɪ.ʃəs/",
+   "src": "wiktionary:en-us-delicious.ogg",
+   "w": "w/delicious-f1742c.mp3"
+  },
+  "delivery": {
+   "dict": 4,
+   "e": "e/delivery-is-free-7e8dab.mp3",
+   "h": "h/delivery-391cb1.mp3",
+   "ipa": "/dɪˈlɪv.(ə.)ɹi/",
+   "src": "wiktionary:en-au-delivery.ogg",
+   "w": "w/delivery-85ee7b.mp3"
+  },
+  "departure": {
+   "dict": 4,
+   "e": "e/check-the-departure-time-0aeca0.mp3",
+   "h": "h/departure-8eb961.mp3",
+   "ipa": "/dɪˈpɑː(ɹ)tjə(ɹ)/",
+   "src": "wiktionary:en-us-departure.ogg",
+   "w": "w/departure-612e92.mp3"
+  },
+  "desert": {
+   "dict": 4,
+   "e": "e/it-rarely-rains-in-the-desert-bf4010.mp3",
+   "h": "h/desert-2d5128.mp3",
+   "ipa": "/dɪˈzɝt/",
+   "src": "wiktionary:en-us-desert-noun.ogg",
+   "w": "w/desert-a7f460.mp3"
+  },
+  "despite": {
+   "dict": 4,
+   "e": "e/we-went-out-despite-the-rain-8ffea0.mp3",
+   "h": "h/despite-68e3e9.mp3",
+   "ipa": "/dɪˈspaɪt/",
+   "src": "wiktionary:en-us-despite.ogg",
+   "w": "w/despite-dced58.mp3"
+  },
+  "dessert": {
+   "dict": 4,
+   "e": "e/what-s-for-dessert-9df894.mp3",
+   "h": "h/dessert-f5194b.mp3",
+   "ipa": "/dɪˈzɝt/",
+   "src": "wiktionary:en-us-dessert.ogg",
+   "w": "w/dessert-f78304.mp3"
+  },
+  "destination": {
+   "dict": 4,
+   "e": "e/paris-is-a-popular-destination-b80449.mp3",
+   "h": "h/destination-0cf1bc.mp3",
+   "ipa": "/dɛstɪˈneɪʃən/",
+   "src": "wiktionary:en-us-destination.ogg",
+   "w": "w/destination-9fd62d.mp3"
+  },
+  "detail": {
+   "dict": 4,
+   "e": "e/tell-me-the-details-c51227.mp3",
+   "h": "h/detail-b7f90d.mp3",
+   "ipa": "/dɪˈteɪl/",
+   "src": "wiktionary:En-us-detail.ogg",
+   "w": "w/detail-0775b4.mp3"
+  },
+  "device": {
+   "dict": 4,
+   "e": "e/turn-off-all-devices-d7676f.mp3",
+   "h": "h/device-f3a929.mp3",
+   "ipa": "/dɪˈvaɪs/",
+   "src": "wiktionary:en-us-device.ogg",
+   "w": "w/device-c66df9.mp3"
+  },
+  "dictionary": {
+   "dict": 4,
+   "e": "e/look-it-up-in-the-dictionary-5996d8.mp3",
+   "h": "h/dictionary-f18bfb.mp3",
+   "ipa": "/ˈdɪkʃəˌnɛɹi/",
+   "src": "wiktionary:En-us-dictionary.ogg",
+   "w": "w/dictionary-65e264.mp3"
+  },
+  "diet": {
+   "dict": 4,
+   "e": "e/she-is-on-a-diet-c47807.mp3",
+   "h": "h/diet-0a9696.mp3",
+   "ipa": "/ˈdaɪət/",
+   "src": "wiktionary:en-us-diet.ogg",
+   "w": "w/diet-a95e60.mp3"
+  },
+  "difference": {
+   "dict": 4,
+   "e": "e/what-is-the-difference-between-them-429bea.mp3",
+   "h": "h/difference-48d53c.mp3",
+   "ipa": "/ˈdɪf.(ə.)ɹəns/",
+   "src": "wiktionary:En-us-difference.ogg",
+   "w": "w/difference-c93313.mp3"
+  },
+  "directions": {
+   "dict": 4,
+   "e": "e/can-you-give-me-directions-to-the-statio-121f68.mp3",
+   "h": "h/directions-2c8421.mp3",
+   "ipa": "/dɪˈɹɛk.ʃənz/",
+   "src": "wiktionary:en-us-directions.ogg",
+   "w": "w/directions-cd9e60.mp3"
+  },
+  "dirty": {
+   "dict": 4,
+   "e": "e/your-shoes-are-dirty-26e21f.mp3",
+   "h": "h/dirty-33797b.mp3",
+   "ipa": "/ˈdɝti/",
+   "src": "wiktionary:en-us-dirty.ogg",
+   "w": "w/dirty-73b967.mp3"
+  },
+  "disadvantage": {
+   "dict": 4,
+   "e": "e/the-main-disadvantage-is-the-price-e14eb8.mp3",
+   "h": "h/disadvantage-1b5e03.mp3",
+   "ipa": "/ˌdɪsədˈvæntɪd͡ʒ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-disadvantage.wav",
+   "w": "w/disadvantage-b567ab.mp3"
+  },
+  "disappointed": {
+   "dict": 4,
+   "e": "e/we-were-disappointed-with-the-hotel-df35de.mp3",
+   "h": "h/disappointed-746996.mp3",
+   "ipa": "/ˌdɪsəˈpɔɪntɪd/",
+   "src": "wiktionary:en-us-disappointed.ogg",
+   "w": "w/disappointed-b03577.mp3"
+  },
+  "discount": {
+   "dict": 4,
+   "e": "e/is-there-a-student-discount-022bd0.mp3",
+   "h": "h/discount-c467ca.mp3",
+   "ipa": "/dɪˈskaʊnt/",
+   "src": "wiktionary:En-us-discount.ogg",
+   "w": "w/discount-167fee.mp3"
+  },
+  "discussion": {
+   "dict": 4,
+   "e": "e/we-had-a-long-discussion-65ea87.mp3",
+   "h": "h/discussion-c25575.mp3",
+   "ipa": "/dɪˈskʌʃ.ən/",
+   "src": "wiktionary:en-us-discussion.ogg",
+   "w": "w/discussion-f5594b.mp3"
+  },
+  "dish": {
+   "dict": 4,
+   "e": "e/this-dish-is-very-spicy-0437f9.mp3",
+   "h": "h/dish-5862a4.mp3",
+   "ipa": "/dɪʃ/",
+   "src": "wiktionary:en-us-dish.ogg",
+   "w": "w/dish-39a742.mp3"
+  },
+  "dishes": {
+   "dict": 4,
+   "e": "e/who-will-wash-the-dishes-292080.mp3",
+   "h": "h/dishes-3c8359.mp3",
+   "ipa": "/ˈdɪʃɪz/",
+   "src": "wiktionary:en-us-dishes.ogg",
+   "w": "w/dishes-024e45.mp3"
+  },
+  "divorce": {
+   "dict": 4,
+   "e": "e/their-divorce-was-difficult-ba95b2.mp3",
+   "h": "h/divorce-7c5c57.mp3",
+   "ipa": "/dɪˈvɔːs/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-divorce.wav",
+   "w": "w/divorce-8c2e45.mp3"
+  },
+  "downtown": {
+   "dict": 4,
+   "e": "e/let-s-meet-downtown-ad66d4.mp3",
+   "h": "h/downtown-248191.mp3",
+   "ipa": "/ˈdæʊ̯nˌtæʊ̯n/",
+   "src": "wiktionary:LL-Q1860 (eng)-Flame, not lame-downtown.wav",
+   "w": "w/downtown-598946.mp3"
+  },
+  "due to": {
+   "dict": 4,
+   "e": "e/the-flight-was-cancelled-due-to-fog-156713.mp3",
+   "ipa": "",
+   "w": "w/due-to-50bc40.mp3"
+  },
+  "during": {
+   "dict": 4,
+   "e": "e/i-fell-asleep-during-the-film-f6afd5.mp3",
+   "h": "h/during-ffed39.mp3",
+   "ipa": "/ˈdjʊə.ɹɪŋ/",
+   "src": "wiktionary:en-us-during.ogg",
+   "w": "w/during-0e84bd.mp3"
+  },
+  "earthquake": {
+   "dict": 4,
+   "e": "e/there-was-a-strong-earthquake-in-japan-f94220.mp3",
+   "h": "h/earthquake-e8dea3.mp3",
+   "ipa": "/ˈɝθkweɪk/",
+   "src": "wiktionary:En-us-earthquake.ogg",
+   "w": "w/earthquake-0226a3.mp3"
+  },
+  "easy-going": {
+   "dict": 4,
+   "e": "e/my-boss-is-easy-going-15c93c.mp3",
+   "ipa": "",
+   "w": "w/easy-going-c766fe.mp3"
+  },
+  "effect": {
+   "dict": 4,
+   "e": "e/the-medicine-had-no-effect-df6af4.mp3",
+   "h": "h/effect-68d1da.mp3",
+   "ipa": "/ɪˈfɛkt/",
+   "src": "wiktionary:En-us-effect.ogg",
+   "w": "w/effect-39a9df.mp3"
+  },
+  "effort": {
+   "dict": 4,
+   "e": "e/it-takes-a-lot-of-effort-7ddfc4.mp3",
+   "h": "h/effort-3f1e72.mp3",
+   "ipa": "/ˈɛf.ət/",
+   "src": "wiktionary:en-us-effort.ogg",
+   "w": "w/effort-f06feb.mp3"
+  },
+  "elderly": {
+   "dict": 4,
+   "e": "e/she-looks-after-her-elderly-parents-3c771f.mp3",
+   "h": "h/elderly-eb229e.mp3",
+   "ipa": "/ˈɛldɚli/",
+   "src": "wiktionary:en-us-elderly.ogg",
+   "w": "w/elderly-5a01f4.mp3"
+  },
+  "election": {
+   "dict": 4,
+   "e": "e/the-election-is-in-may-e12331.mp3",
+   "h": "h/election-ed9c23.mp3",
+   "ipa": "/ɪˈlɛkʃ(ə)n/",
+   "src": "wiktionary:en-us-election.ogg",
+   "w": "w/election-65fc08.mp3"
+  },
+  "electricity": {
+   "dict": 4,
+   "e": "e/we-had-no-electricity-for-an-hour-12eb17.mp3",
+   "h": "h/electricity-3894e2.mp3",
+   "ipa": "/ɪˌlɛkˈtɹɪsɪti/",
+   "src": "wiktionary:en-us-electricity.ogg",
+   "w": "w/electricity-d20eb9.mp3"
+  },
+  "embarrassed": {
+   "dict": 4,
+   "e": "e/i-was-so-embarrassed-when-i-fell-ab39de.mp3",
+   "h": "h/embarrassed-ecc16f.mp3",
+   "ipa": "/ɪmˈbɛɹ.əst/",
+   "src": "wiktionary:LL-Q1860 (eng)-Flame, not lame-embarrassed.wav",
+   "w": "w/embarrassed-8f3382.mp3"
+  },
+  "emergency": {
+   "dict": 4,
+   "e": "e/call-911-in-an-emergency-634c62.mp3",
+   "h": "h/emergency-a4b751.mp3",
+   "ipa": "/ɪˈmɝ.d͡ʒən.si/",
+   "src": "wiktionary:en-us-emergency.ogg",
+   "w": "w/emergency-3fe4f8.mp3"
+  },
+  "employee": {
+   "dict": 4,
+   "e": "e/the-company-has-200-employees-9ce2d1.mp3",
+   "h": "h/employee-caf322.mp3",
+   "ipa": "/ˌɛm.plɔɪˈiː/",
+   "src": "wiktionary:en-us-employee.ogg",
+   "w": "w/employee-d6a768.mp3"
+  },
+  "employer": {
+   "dict": 4,
+   "e": "e/my-employer-pays-for-my-training-4c0ee1.mp3",
+   "h": "h/employer-70cafc.mp3",
+   "ipa": "/ɪmˈplɔɪ.ɚ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-employer.wav",
+   "w": "w/employer-824f94.mp3"
+  },
+  "empty": {
+   "dict": 4,
+   "e": "e/the-fridge-is-empty-ad9397.mp3",
+   "h": "h/empty-ad8710.mp3",
+   "ipa": "/ˈɪm(p).ti/",
+   "src": "wiktionary:en-us-empty.ogg",
+   "w": "w/empty-459c45.mp3"
+  },
+  "energy": {
+   "dict": 4,
+   "e": "e/solar-energy-is-clean-a54ed2.mp3",
+   "h": "h/energy-173d91.mp3",
+   "ipa": "/ˈɪnɚd͡ʒi/",
+   "src": "wiktionary:En-us-energy.ogg",
+   "w": "w/energy-ce8786.mp3"
+  },
   "enough": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/we-don-t-have-enough-time-c0b296.mp3",
    "h": "h/enough-8ce77c.mp3",
    "ipa": "/ɪˈnʌf/",
    "src": "wiktionary:En-us-enough.ogg",
    "w": "w/enough-97bcb4.mp3"
   },
+  "environment": {
+   "dict": 4,
+   "e": "e/we-must-protect-the-environment-f867dd.mp3",
+   "h": "h/environment-c6e454.mp3",
+   "ipa": "/ɪnˈvaɪ.ɚn.mənt/",
+   "src": "wiktionary:En-us-environment.ogg",
+   "w": "w/environment-8ecb38.mp3"
+  },
+  "especially": {
+   "dict": 4,
+   "e": "e/i-love-fruit-especially-apples-983659.mp3",
+   "h": "h/especially-8284b5.mp3",
+   "ipa": "/ɪˈspɛʃ.(ə.)li/",
+   "src": "wiktionary:En-us-especially.ogg",
+   "w": "w/especially-958e3c.mp3"
+  },
   "estimate": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/can-you-send-me-a-rough-estimate-bfadfe.mp3",
    "h": "h/estimate-cb3fca.mp3",
    "ipa": "/ˈɛs.tɪ.mət/",
    "src": "wiktionary:en-us-estimate-noun.ogg",
    "w": "w/estimate-15c48a.mp3"
   },
+  "event": {
+   "dict": 4,
+   "e": "e/it-was-a-big-event-in-our-town-1fce8f.mp3",
+   "h": "h/event-5006ed.mp3",
+   "ipa": "/ɪˈvɛnt/",
+   "src": "wiktionary:en-us-event.ogg",
+   "w": "w/event-d57974.mp3"
+  },
   "eventually": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/eventually-everything-worked-out-285569.mp3",
    "h": "h/eventually-586502.mp3",
    "ipa": "/ɪˈvɛn.t͡ʃu.ə.li/",
    "src": "wiktionary:en-us-eventually.ogg",
    "w": "w/eventually-e2cc0a.mp3"
   },
+  "excited": {
+   "dict": 4,
+   "e": "e/the-kids-are-excited-about-the-trip-15a585.mp3",
+   "h": "h/excited-f529c0.mp3",
+   "ipa": "/ɪkˈsaɪ.tɪd/",
+   "src": "wiktionary:En-us-excited.ogg",
+   "w": "w/excited-3a0452.mp3"
+  },
+  "exercise": {
+   "dict": 4,
+   "e": "e/regular-exercise-is-good-for-you-2a10d0.mp3",
+   "h": "h/exercise-eb70d1.mp3",
+   "ipa": "/ˈɛk.sɚ.saɪz/",
+   "src": "wiktionary:en-us-exercise.ogg",
+   "w": "w/exercise-6900b3.mp3"
+  },
+  "exhibition": {
+   "dict": 4,
+   "e": "e/we-went-to-a-photo-exhibition-a1efa7.mp3",
+   "h": "h/exhibition-bf0d88.mp3",
+   "ipa": "/ɛksɪˈbɪʃən/",
+   "src": "wiktionary:en-us-exhibition.ogg",
+   "w": "w/exhibition-52a0fe.mp3"
+  },
+  "experience": {
+   "dict": 4,
+   "e": "e/do-you-have-any-work-experience-588187.mp3",
+   "h": "h/experience-f96da0.mp3",
+   "ipa": "/ɪkˈspɪɹ.i.ən(t)s/",
+   "src": "wiktionary:en-us-experience.ogg",
+   "w": "w/experience-fca773.mp3"
+  },
+  "factory": {
+   "dict": 4,
+   "e": "e/he-works-at-a-car-factory-6f6065.mp3",
+   "h": "h/factory-7b202d.mp3",
+   "ipa": "/ˈfæk.tɚ.i/",
+   "src": "wiktionary:En-uk-factory.ogg",
+   "w": "w/factory-31b7c5.mp3"
+  },
+  "failure": {
+   "dict": 4,
+   "e": "e/the-project-was-a-failure-bc1c35.mp3",
+   "h": "h/failure-d68049.mp3",
+   "ipa": "/ˈfeɪl.jəɹ/",
+   "src": "wiktionary:En-ca-failure.ogg",
+   "w": "w/failure-a4eab1.mp3"
+  },
+  "fan": {
+   "dict": 4,
+   "e": "e/he-is-a-big-soccer-fan-29aab4.mp3",
+   "h": "h/fan-289944.mp3",
+   "ipa": "[fɛən]",
+   "src": "wiktionary:LL-Q1860 (eng)-Aquild-fan.wav",
+   "w": "w/fan-e87360.mp3"
+  },
+  "faucet": {
+   "dict": 4,
+   "e": "e/the-faucet-is-leaking-164d3c.mp3",
+   "h": "h/faucet-63fade.mp3",
+   "ipa": "/ˈfɔsɪt/",
+   "src": "wiktionary:en-us-faucet.ogg",
+   "w": "w/faucet-40d735.mp3"
+  },
+  "fear": {
+   "dict": 4,
+   "e": "e/he-has-a-fear-of-flying-ff3c64.mp3",
+   "h": "h/fear-865a39.mp3",
+   "ipa": "/fɪɚ/",
+   "src": "wiktionary:En-us-fear.ogg",
+   "w": "w/fear-e17b04.mp3"
+  },
+  "february": {
+   "dict": 4,
+   "e": "e/my-birthday-is-in-february-92e873.mp3",
+   "h": "h/february-4d8f35.mp3",
+   "ipa": "/ˈfɛb.ɹuˌɛɹi/",
+   "src": "wiktionary:en-us-February.ogg",
+   "w": "w/february-fbf536.mp3"
+  },
+  "fee": {
+   "dict": 4,
+   "e": "e/the-entrance-fee-is-five-dollars-a6dd76.mp3",
+   "h": "h/fee-9c15cd.mp3",
+   "ipa": "/fiː/",
+   "src": "wiktionary:en-us-fee.ogg",
+   "w": "w/fee-d93e36.mp3"
+  },
+  "fever": {
+   "dict": 4,
+   "e": "e/she-has-a-high-fever-52df2e.mp3",
+   "h": "h/fever-e2f347.mp3",
+   "ipa": "/ˈfiːvə/",
+   "src": "wiktionary:en-us-fever.ogg",
+   "w": "w/fever-2a1eab.mp3"
+  },
+  "field": {
+   "dict": 4,
+   "e": "e/cows-are-eating-grass-in-the-field-673ec1.mp3",
+   "h": "h/field-2da0b6.mp3",
+   "ipa": "/ˈfi(ː)ld/",
+   "src": "wiktionary:en-us-field.ogg",
+   "w": "w/field-568efa.mp3"
+  },
+  "finally": {
+   "dict": 4,
+   "e": "e/finally-the-train-arrived-984975.mp3",
+   "h": "h/finally-8f4e3e.mp3",
+   "ipa": "/ˈfaɪ.nə.li/",
+   "src": "wiktionary:En-us-finally.ogg",
+   "w": "w/finally-d01157.mp3"
+  },
+  "fit": {
+   "dict": 4,
+   "e": "e/i-want-to-get-fit-66c0e9.mp3",
+   "h": "h/fit-9c20b9.mp3",
+   "ipa": "/fɪt/",
+   "src": "wiktionary:en-us-fit.ogg",
+   "w": "w/fit-ae89f7.mp3"
+  },
+  "flavor": {
+   "dict": 4,
+   "e": "e/i-like-the-flavor-of-mint-92baeb.mp3",
+   "h": "h/flavor-02ce10.mp3",
+   "ipa": "/ˈfleɪvə/",
+   "src": "wiktionary:en-us-flavour.ogg",
+   "w": "w/flavor-44684d.mp3"
+  },
+  "flight": {
+   "dict": 4,
+   "e": "e/our-flight-is-at-6-a-m-0382c8.mp3",
+   "h": "h/flight-cca502.mp3",
+   "ipa": "/ˈflaɪ̯t/",
+   "src": "wiktionary:en-us-flight.ogg",
+   "w": "w/flight-81f9b5.mp3"
+  },
+  "flood": {
+   "dict": 4,
+   "e": "e/the-flood-damaged-many-houses-a01874.mp3",
+   "h": "h/flood-ff0db9.mp3",
+   "ipa": "/flʌd/",
+   "src": "wiktionary:En-us-flood.ogg",
+   "w": "w/flood-56f2bd.mp3"
+  },
+  "fluent": {
+   "dict": 4,
+   "e": "e/he-is-fluent-in-three-languages-07398c.mp3",
+   "h": "h/fluent-0e8f57.mp3",
+   "ipa": "/ˈfluənt/",
+   "src": "wiktionary:En-us-fluent.ogg",
+   "w": "w/fluent-97d15b.mp3"
+  },
+  "fog": {
+   "dict": 4,
+   "e": "e/there-was-thick-fog-this-morning-e239f8.mp3",
+   "h": "h/fog-dfebbd.mp3",
+   "ipa": "/fɒɡ/",
+   "src": "wiktionary:en-us-fog.ogg",
+   "w": "w/fog-d57940.mp3"
+  },
+  "for a while": {
+   "dict": 4,
+   "e": "e/let-s-wait-for-a-while-4727af.mp3",
+   "ipa": "",
+   "w": "w/for-a-while-77a116.mp3"
+  },
+  "for example": {
+   "dict": 4,
+   "e": "e/some-fruits-for-example-oranges-have-a-l-0d02fe.mp3",
+   "ipa": "",
+   "w": "w/for-example-f00741.mp3"
+  },
+  "forecast": {
+   "dict": 4,
+   "e": "e/the-forecast-says-it-will-rain-67819b.mp3",
+   "h": "h/forecast-018c49.mp3",
+   "ipa": "/ˈfɔɹkæst/",
+   "src": "wiktionary:en-us-forecast.ogg",
+   "w": "w/forecast-95be41.mp3"
+  },
+  "foreign": {
+   "dict": 4,
+   "e": "e/i-want-to-learn-a-foreign-language-b07787.mp3",
+   "h": "h/foreign-44d161.mp3",
+   "ipa": "/ˈfɒɹɪn/",
+   "src": "wiktionary:En-us-foreign.ogg",
+   "w": "w/foreign-f4fbc2.mp3"
+  },
+  "freezing": {
+   "dict": 4,
+   "e": "e/it-s-freezing-outside-2d1ebd.mp3",
+   "h": "h/freezing-05468b.mp3",
+   "ipa": "/ˈfɹiːz.ɪŋ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Persent101-freezing.wav",
+   "w": "w/freezing-0a1714.mp3"
+  },
+  "frequently": {
+   "dict": 4,
+   "e": "e/he-frequently-travels-for-work-e7e535.mp3",
+   "h": "h/frequently-da2f4c.mp3",
+   "ipa": "/ˈfɹiː.kwənt.li/",
+   "src": "wiktionary:en-us-frequently.ogg",
+   "w": "w/frequently-aed80f.mp3"
+  },
+  "fresh": {
+   "dict": 4,
+   "e": "e/i-like-fresh-bread-28bad0.mp3",
+   "h": "h/fresh-67a4c8.mp3",
+   "ipa": "/fɹɛʃ/",
+   "src": "wiktionary:en-us-fresh.ogg",
+   "w": "w/fresh-6e8f45.mp3"
+  },
+  "friendly": {
+   "dict": 4,
+   "e": "e/our-neighbors-are-very-friendly-25679d.mp3",
+   "h": "h/friendly-412093.mp3",
+   "ipa": "/ˈfɹɛnd.li/",
+   "src": "wiktionary:en-us-friendly.ogg",
+   "w": "w/friendly-f1e862.mp3"
+  },
+  "friendship": {
+   "dict": 4,
+   "e": "e/our-friendship-is-very-important-to-me-a25649.mp3",
+   "h": "h/friendship-850b4d.mp3",
+   "ipa": "/ˈfɹɛn(d)ʃɪp/",
+   "src": "wiktionary:en-us-friendship.ogg",
+   "w": "w/friendship-e0ada6.mp3"
+  },
+  "frightened": {
+   "dict": 4,
+   "e": "e/the-child-was-frightened-by-the-noise-f0ba96.mp3",
+   "h": "h/frightened-817fe6.mp3",
+   "ipa": "/ˈfɹaɪtn̩d/",
+   "src": "wiktionary:en-us-frightened.ogg",
+   "w": "w/frightened-1ad51e.mp3"
+  },
+  "full-time": {
+   "dict": 4,
+   "e": "e/he-works-full-time-5468a6.mp3",
+   "h": "h/full-time-077f2c.mp3",
+   "ipa": "/ˌfʊl ˈtaɪm/",
+   "src": "wiktionary:LL-Q1860 (eng)-Flame, not lame-full-time.wav",
+   "w": "w/full-time-9d347b.mp3"
+  },
+  "furniture": {
+   "dict": 4,
+   "e": "e/we-need-new-furniture-ae83b9.mp3",
+   "h": "h/furniture-7b6e7a.mp3",
+   "ipa": "/ˈfɝ.nɪ.t͡ʃɚ/",
+   "src": "wiktionary:En-us-furniture.ogg",
+   "w": "w/furniture-1cd9d7.mp3"
+  },
+  "generation": {
+   "dict": 4,
+   "e": "e/three-generations-live-in-this-house-b31ca0.mp3",
+   "h": "h/generation-cd738e.mp3",
+   "ipa": "/ˌd͡ʒɛnəˈɹeɪʃən/",
+   "src": "wiktionary:en-us-generation.ogg",
+   "w": "w/generation-03d681.mp3"
+  },
+  "generous": {
+   "dict": 4,
+   "e": "e/she-is-very-generous-with-her-time-dc97be.mp3",
+   "h": "h/generous-feb97d.mp3",
+   "ipa": "/ˈd͡ʒɛn(ə)ɹəs/",
+   "src": "wiktionary:en-us-generous.ogg",
+   "w": "w/generous-e1e9c7.mp3"
+  },
+  "goal": {
+   "dict": 4,
+   "e": "e/my-goal-is-to-speak-english-fluently-e08da9.mp3",
+   "h": "h/goal-db9a02.mp3",
+   "ipa": "/ɡoʊl/",
+   "src": "wiktionary:en-us-goal.ogg",
+   "w": "w/goal-f4e3d6.mp3"
+  },
+  "government": {
+   "dict": 4,
+   "e": "e/the-government-announced-new-rules-e69046.mp3",
+   "h": "h/government-1785a9.mp3",
+   "ipa": "/ˈɡʌv.ɚ(n).mənt/",
+   "src": "wiktionary:en-us-government.ogg",
+   "w": "w/government-83da11.mp3"
+  },
+  "grade": {
+   "dict": 4,
+   "e": "e/she-got-a-good-grade-in-math-f7f749.mp3",
+   "h": "h/grade-39a6bd.mp3",
+   "ipa": "[ɡɹeɪd]",
+   "src": "wiktionary:en-us-grade.ogg",
+   "w": "w/grade-5aa642.mp3"
+  },
+  "grateful": {
+   "dict": 4,
+   "e": "e/i-m-grateful-for-your-help-64a911.mp3",
+   "h": "h/grateful-54bb9b.mp3",
+   "ipa": "/ˈɡɹeɪtf(ə)l/",
+   "src": "wiktionary:En-us-grateful.ogg",
+   "w": "w/grateful-e93f38.mp3"
+  },
+  "grocery store": {
+   "dict": 4,
+   "e": "e/i-need-to-go-to-the-grocery-store-68dafd.mp3",
+   "ipa": "",
+   "w": "w/grocery-store-496fcf.mp3"
+  },
+  "guest": {
+   "dict": 4,
+   "e": "e/we-have-guests-tonight-620739.mp3",
+   "h": "h/guest-35675e.mp3",
+   "ipa": "/ɡɛst/",
+   "src": "wiktionary:en-us-guest.ogg",
+   "w": "w/guest-938562.mp3"
+  },
+  "guide": {
+   "dict": 4,
+   "e": "e/our-guide-spoke-three-languages-c3d970.mp3",
+   "h": "h/guide-4956fa.mp3",
+   "ipa": "/ɡaɪd/",
+   "src": "wiktionary:en-us-guide.ogg",
+   "w": "w/guide-c3c399.mp3"
+  },
+  "gym": {
+   "dict": 4,
+   "e": "e/i-go-to-the-gym-twice-a-week-607b10.mp3",
+   "h": "h/gym-21d286.mp3",
+   "ipa": "/d͡ʒɪm/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vininn126-gym.wav",
+   "w": "w/gym-c8f241.mp3"
+  },
+  "habit": {
+   "dict": 4,
+   "e": "e/smoking-is-a-bad-habit-685468.mp3",
+   "h": "h/habit-380051.mp3",
+   "ipa": "/ˈhæb.ɪt/",
+   "src": "wiktionary:en-us-habit.ogg",
+   "w": "w/habit-1da6fb.mp3"
+  },
+  "happiness": {
+   "dict": 4,
+   "e": "e/money-doesn-t-buy-happiness-9361f5.mp3",
+   "h": "h/happiness-554d02.mp3",
+   "ipa": "/ˈhæpinɪs/",
+   "src": "wiktionary:en-us-happiness.ogg",
+   "w": "w/happiness-8d178e.mp3"
+  },
+  "hard-working": {
+   "dict": 4,
+   "e": "e/she-is-a-hard-working-student-63fd04.mp3",
+   "ipa": "",
+   "w": "w/hard-working-4cf997.mp3"
+  },
+  "hardly": {
+   "dict": 4,
+   "e": "e/i-can-hardly-hear-you-aafc14.mp3",
+   "h": "h/hardly-be67ab.mp3",
+   "ipa": "/ˈhɑɹdli/",
+   "src": "wiktionary:en-us-hardly.ogg",
+   "w": "w/hardly-193fa6.mp3"
+  },
+  "headache": {
+   "dict": 4,
+   "e": "e/i-have-a-terrible-headache-b0ee98.mp3",
+   "h": "h/headache-9023bc.mp3",
+   "ipa": "/ˈhɛdeɪk/",
+   "src": "wiktionary:en-us-headache.ogg",
+   "w": "w/headache-fe2ffc.mp3"
+  },
+  "health": {
+   "dict": 4,
+   "e": "e/smoking-is-bad-for-your-health-d5e497.mp3",
+   "h": "h/health-834b34.mp3",
+   "ipa": "/ˈhɛlθ/",
+   "src": "wiktionary:en-us-health.ogg",
+   "w": "w/health-849d0c.mp3"
+  },
+  "healthy": {
+   "dict": 4,
+   "e": "e/eat-healthy-food-0921da.mp3",
+   "h": "h/healthy-de18cc.mp3",
+   "ipa": "/ˈhɛl.θi/",
+   "src": "wiktionary:en-us-healthy.ogg",
+   "w": "w/healthy-371366.mp3"
+  },
+  "heating": {
+   "dict": 4,
+   "e": "e/the-heating-doesn-t-work-1793aa.mp3",
+   "h": "h/heating-5caf10.mp3",
+   "ipa": "/ˈhiːtɪŋ/",
+   "src": "wiktionary:en-us-heating.ogg",
+   "w": "w/heating-6a4f02.mp3"
+  },
+  "heavy": {
+   "dict": 4,
+   "e": "e/this-bag-is-too-heavy-023d49.mp3",
+   "h": "h/heavy-7e8518.mp3",
+   "ipa": "/ˈhɛv.i/",
+   "src": "wiktionary:en-us-heavy.ogg",
+   "w": "w/heavy-9e1dad.mp3"
+  },
+  "height": {
+   "dict": 4,
+   "e": "e/what-is-your-height-a6e10b.mp3",
+   "h": "h/height-73e7e5.mp3",
+   "ipa": "/haɪt/",
+   "src": "wiktionary:en-us-height.ogg",
+   "w": "w/height-ed6259.mp3"
+  },
   "hierarchy": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-company-has-a-strict-hierarchy-986b12.mp3",
    "h": "h/hierarchy-ff59e8.mp3",
    "ipa": "/ˈhaɪ.ə.ɹɑː(ɹ).ki/",
    "src": "wiktionary:en-us-hierarchy.ogg",
    "w": "w/hierarchy-4f79f3.mp3"
   },
+  "hiking": {
+   "dict": 4,
+   "e": "e/hiking-is-my-favorite-activity-02690e.mp3",
+   "h": "h/hiking-f17dde.mp3",
+   "ipa": "/ˈhaɪkɪŋ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-hiking.wav",
+   "w": "w/hiking-b2d8bd.mp3"
+  },
+  "hobby": {
+   "dict": 4,
+   "e": "e/photography-is-my-hobby-7978b6.mp3",
+   "h": "h/hobby-54b7e8.mp3",
+   "ipa": "/ˈhɑ.bi/",
+   "src": "wiktionary:LL-Q1860 (eng)-I learned some phrases-hobby.wav",
+   "w": "w/hobby-5c3f66.mp3"
+  },
+  "honest": {
+   "dict": 4,
+   "e": "e/he-is-an-honest-man-5eb097.mp3",
+   "h": "h/honest-538618.mp3",
+   "ipa": "/ˈɒn.ɪst/",
+   "src": "wiktionary:En-us-honest.ogg",
+   "w": "w/honest-e0dbde.mp3"
+  },
+  "honestly": {
+   "dict": 4,
+   "e": "e/honestly-i-don-t-know-7c01c1.mp3",
+   "h": "h/honestly-d22755.mp3",
+   "ipa": "/ˈɒn.ɪst.li/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-honestly.wav",
+   "w": "w/honestly-112728.mp3"
+  },
+  "however": {
+   "dict": 4,
+   "e": "e/the-plan-was-good-however-it-was-too-exp-7aa6d1.mp3",
+   "h": "h/however-500f87.mp3",
+   "ipa": "/haʊˈɛvɚ/",
+   "src": "wiktionary:en-us-however.ogg",
+   "w": "w/however-6ccc7a.mp3"
+  },
+  "huge": {
+   "dict": 4,
+   "e": "e/they-live-in-a-huge-house-a11c14.mp3",
+   "h": "h/huge-f2104f.mp3",
+   "ipa": "/juːdʒ/",
+   "src": "wiktionary:en-us-huge.ogg",
+   "w": "w/huge-039bb7.mp3"
+  },
+  "humid": {
+   "dict": 4,
+   "e": "e/summers-here-are-hot-and-humid-d8bd81.mp3",
+   "h": "h/humid-f98975.mp3",
+   "ipa": "/ˈhjuːmɪd/",
+   "src": "wiktionary:en-us-humid.ogg",
+   "w": "w/humid-f0e3a4.mp3"
+  },
+  "illness": {
+   "dict": 4,
+   "e": "e/he-missed-work-because-of-illness-d87fb1.mp3",
+   "h": "h/illness-8ff90d.mp3",
+   "ipa": "/ˈɪl.nəs/",
+   "src": "wiktionary:En-us-illness.ogg",
+   "w": "w/illness-c4ac0b.mp3"
+  },
+  "immediately": {
+   "dict": 4,
+   "e": "e/call-me-immediately-if-something-happens-9c59ac.mp3",
+   "h": "h/immediately-3e7ce5.mp3",
+   "ipa": "/ɪˈmi.di.ɪt.li/",
+   "src": "wiktionary:en-us-immediately.ogg",
+   "w": "w/immediately-f4f907.mp3"
+  },
+  "in advance": {
+   "dict": 4,
+   "e": "e/book-the-tickets-in-advance-9a4e4e.mp3",
+   "ipa": "",
+   "w": "w/in-advance-280ebd.mp3"
+  },
+  "in fact": {
+   "dict": 4,
+   "e": "e/in-fact-the-test-was-easy-867ae7.mp3",
+   "ipa": "",
+   "w": "w/in-fact-f8a66a.mp3"
+  },
+  "in general": {
+   "dict": 4,
+   "e": "e/in-general-i-like-my-job-da9db5.mp3",
+   "ipa": "",
+   "w": "w/in-general-fab307.mp3"
+  },
+  "in order to": {
+   "dict": 4,
+   "e": "e/i-left-early-in-order-to-catch-the-train-2d57dc.mp3",
+   "ipa": "",
+   "w": "w/in-order-to-64ea44.mp3"
+  },
+  "in time": {
+   "dict": 4,
+   "e": "e/we-got-there-just-in-time-22d771.mp3",
+   "ipa": "",
+   "w": "w/in-time-b6bdec.mp3"
+  },
+  "influence": {
+   "dict": 4,
+   "e": "e/he-has-a-big-influence-on-me-338b40.mp3",
+   "h": "h/influence-976430.mp3",
+   "ipa": "/ɪnˈflu.əns/",
+   "src": "wiktionary:en-us-influence.ogg",
+   "w": "w/influence-31c780.mp3"
+  },
+  "ingredient": {
+   "dict": 4,
+   "e": "e/mix-all-the-ingredients-01290d.mp3",
+   "h": "h/ingredient-611a2a.mp3",
+   "ipa": "/ɪnˈɡɹiːdi.ənt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-ingredient.wav",
+   "w": "w/ingredient-d69f43.mp3"
+  },
+  "injury": {
+   "dict": 4,
+   "e": "e/he-had-a-serious-injury-246527.mp3",
+   "h": "h/injury-c5b0c1.mp3",
+   "ipa": "/ˈɪn.d͡ʒɚ.i/",
+   "src": "wiktionary:en-us-injury.ogg",
+   "w": "w/injury-a01a68.mp3"
+  },
+  "instead": {
+   "dict": 4,
+   "e": "e/i-didn-t-call-him-i-sent-an-email-instea-5a9895.mp3",
+   "h": "h/instead-571d5b.mp3",
+   "ipa": "/ɪnˈstɛd/",
+   "src": "wiktionary:en-us-instead.ogg",
+   "w": "w/instead-bdb537.mp3"
+  },
+  "interesting": {
+   "dict": 4,
+   "e": "e/it-s-an-interesting-book-5d6bdd.mp3",
+   "h": "h/interesting-68f555.mp3",
+   "ipa": "/ˈɪntəɹəstɪŋ/",
+   "src": "wiktionary:en-us-interesting-2.ogg",
+   "w": "w/interesting-cefc93.mp3"
+  },
+  "intersection": {
+   "dict": 4,
+   "e": "e/turn-right-at-the-intersection-0b140f.mp3",
+   "h": "h/intersection-4b6914.mp3",
+   "ipa": "/ˈɪntəɹˌsɛkʃən/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-intersection.wav",
+   "w": "w/intersection-7986ac.mp3"
+  },
+  "island": {
+   "dict": 4,
+   "e": "e/they-live-on-an-island-effb8e.mp3",
+   "h": "h/island-7bd1a9.mp3",
+   "ipa": "/ˈaɪ.lənd/",
+   "src": "wiktionary:En-us-island.ogg",
+   "w": "w/island-172a5e.mp3"
+  },
+  "issue": {
+   "dict": 4,
+   "e": "e/this-is-an-important-issue-29005e.mp3",
+   "h": "h/issue-00819c.mp3",
+   "ipa": "/ˈɪʃ(j)u/",
+   "src": "wiktionary:en-us-issue.ogg",
+   "w": "w/issue-4d97ef.mp3"
+  },
+  "it's up to you": {
+   "dict": 4,
+   "e": "e/tea-or-coffee-it-s-up-to-you-007066.mp3",
+   "ipa": "",
+   "w": "w/it-s-up-to-you-5f14e8.mp3"
+  },
+  "jealous": {
+   "dict": 4,
+   "e": "e/he-is-jealous-of-his-brother-ab4f35.mp3",
+   "h": "h/jealous-b12fb7.mp3",
+   "ipa": "/ˈd͡ʒɛl.əs/",
+   "src": "wiktionary:en-us-jealous.ogg",
+   "w": "w/jealous-130918.mp3"
+  },
+  "job interview": {
+   "dict": 4,
+   "e": "e/i-have-a-job-interview-tomorrow-029c7f.mp3",
+   "ipa": "",
+   "w": "w/job-interview-5e32be.mp3"
+  },
+  "journalist": {
+   "dict": 4,
+   "e": "e/she-works-as-a-journalist-326a84.mp3",
+   "h": "h/journalist-4c7c61.mp3",
+   "ipa": "/ˈd͡ʒɝnəlɪst/",
+   "src": "wiktionary:En-uk-journalist.ogg",
+   "w": "w/journalist-eeb6e0.mp3"
+  },
+  "journey": {
+   "dict": 4,
+   "e": "e/the-journey-took-five-hours-ee8460.mp3",
+   "h": "h/journey-7da33f.mp3",
+   "ipa": "/ˈd͡ʒɝni/",
+   "src": "wiktionary:en-us-journey.ogg",
+   "w": "w/journey-88bbb0.mp3"
+  },
+  "keyboard": {
+   "dict": 4,
+   "e": "e/the-keyboard-is-broken-1b32de.mp3",
+   "h": "h/keyboard-384a8a.mp3",
+   "ipa": "/ˈki.bɔɹd/",
+   "src": "wiktionary:En-us-keyboard.ogg",
+   "w": "w/keyboard-1ab04b.mp3"
+  },
+  "kind": {
+   "dict": 4,
+   "e": "e/it-s-very-kind-of-you-98a50a.mp3",
+   "h": "h/kind-0ef25a.mp3",
+   "ipa": "/kaɪnd/",
+   "src": "wiktionary:en-us-kind.ogg",
+   "w": "w/kind-2cd9e9.mp3"
+  },
+  "knowledge": {
+   "dict": 4,
+   "e": "e/knowledge-is-power-d73a7c.mp3",
+   "h": "h/knowledge-cce245.mp3",
+   "ipa": "/ˈnɑ.lɪdʒ/",
+   "src": "wiktionary:en-us-knowledge.ogg",
+   "w": "w/knowledge-b7539d.mp3"
+  },
+  "landlord": {
+   "dict": 4,
+   "e": "e/our-landlord-is-very-friendly-d5b465.mp3",
+   "h": "h/landlord-3a3c20.mp3",
+   "ipa": "/ˈlæn(d).lɔɹd/",
+   "src": "wiktionary:En-au-landlord.ogg",
+   "w": "w/landlord-fa554d.mp3"
+  },
+  "lately": {
+   "dict": 4,
+   "e": "e/i-ve-been-very-busy-lately-b8a4e3.mp3",
+   "h": "h/lately-e39e8b.mp3",
+   "ipa": "/ˈleɪt.li/",
+   "src": "wiktionary:en-us-lately.ogg",
+   "w": "w/lately-823931.mp3"
+  },
+  "laundry": {
+   "dict": 4,
+   "e": "e/i-do-the-laundry-on-sundays-b1f257.mp3",
+   "h": "h/laundry-d34c12.mp3",
+   "ipa": "/ˈlɔːn.dɹi/",
+   "src": "wiktionary:en-us-laundry.ogg",
+   "w": "w/laundry-9ceb4f.mp3"
+  },
+  "law": {
+   "dict": 4,
+   "e": "e/everyone-must-obey-the-law-2b3d07.mp3",
+   "h": "h/law-c660f2.mp3",
+   "ipa": "/lɔ/",
+   "src": "wiktionary:en-us-law.ogg",
+   "w": "w/law-311280.mp3"
+  },
+  "lazy": {
+   "dict": 4,
+   "e": "e/i-feel-lazy-today-e7474d.mp3",
+   "h": "h/lazy-1078cf.mp3",
+   "ipa": "/ˈleɪ̯zi(ː)/",
+   "src": "wiktionary:en-us-lazy.ogg",
+   "w": "w/lazy-d8628c.mp3"
+  },
+  "lecture": {
+   "dict": 4,
+   "e": "e/the-lecture-starts-at-nine-4eef76.mp3",
+   "h": "h/lecture-af09e2.mp3",
+   "ipa": "/ˈlɛk.t͡ʃɚ/",
+   "src": "wiktionary:En-us-lecture.ogg",
+   "w": "w/lecture-387cda.mp3"
+  },
+  "leftovers": {
+   "dict": 4,
+   "e": "e/we-ate-the-leftovers-for-lunch-1d7000.mp3",
+   "h": "h/leftovers-eef071.mp3",
+   "ipa": "",
+   "src": "wiktionary:LL-Q1860 (eng)-Flame, not lame-leftovers.wav",
+   "w": "w/leftovers-0e83b8.mp3"
+  },
+  "leisure": {
+   "dict": 4,
+   "e": "e/what-do-you-do-in-your-leisure-time-4d927a.mp3",
+   "h": "h/leisure-6188ba.mp3",
+   "ipa": "/ˈlɛʒə(ɹ)/",
+   "src": "wiktionary:en-us-leisure.ogg",
+   "w": "w/leisure-12b05d.mp3"
+  },
+  "level": {
+   "dict": 4,
+   "e": "e/what-is-your-english-level-10ea72.mp3",
+   "h": "h/level-ad60c5.mp3",
+   "ipa": "/ˈlɛvəl/",
+   "src": "wiktionary:en-us-level.ogg",
+   "w": "w/level-8895c5.mp3"
+  },
+  "library": {
+   "dict": 4,
+   "e": "e/i-study-in-the-library-01f6b1.mp3",
+   "h": "h/library-00299a.mp3",
+   "ipa": "/ˈlaɪˌbɹɛɹ.i/",
+   "src": "wiktionary:en-us-library.ogg",
+   "w": "w/library-170cfb.mp3"
+  },
+  "lightning": {
+   "dict": 4,
+   "e": "e/the-tree-was-hit-by-lightning-5eb1ef.mp3",
+   "h": "h/lightning-71f497.mp3",
+   "ipa": "/ˈlaɪt.nɪŋ/",
+   "src": "wiktionary:En-us-lightning.ogg",
+   "w": "w/lightning-5dd176.mp3"
+  },
+  "loan": {
+   "dict": 4,
+   "e": "e/they-took-a-loan-from-the-bank-3f5fa3.mp3",
+   "h": "h/loan-5826e3.mp3",
+   "ipa": "/loʊn/",
+   "src": "wiktionary:en-us-loan.ogg",
+   "w": "w/loan-baccf6.mp3"
+  },
+  "local": {
+   "dict": 4,
+   "e": "e/try-the-local-food-f4b055.mp3",
+   "h": "h/local-939bb4.mp3",
+   "ipa": "/ˈləʊ.kl̩/",
+   "src": "wiktionary:En-us-local.ogg",
+   "w": "w/local-f8b8a6.mp3"
+  },
+  "lonely": {
+   "dict": 4,
+   "e": "e/she-felt-lonely-in-the-new-city-36cb0e.mp3",
+   "h": "h/lonely-2689a5.mp3",
+   "ipa": "/ˈloʊnli/",
+   "src": "wiktionary:En-us-lonely.ogg",
+   "w": "w/lonely-4775da.mp3"
+  },
+  "loose": {
+   "dict": 4,
+   "e": "e/this-shirt-is-a-bit-loose-c66065.mp3",
+   "h": "h/loose-678050.mp3",
+   "ipa": "/lus/",
+   "src": "wiktionary:en-us-loose.ogg",
+   "w": "w/loose-fff645.mp3"
+  },
+  "loud": {
+   "dict": 4,
+   "e": "e/the-music-is-too-loud-9b1e1c.mp3",
+   "h": "h/loud-d1c6f1.mp3",
+   "ipa": "/ˈlæʊ̯d/",
+   "src": "wiktionary:en-us-loud.ogg",
+   "w": "w/loud-fcc819.mp3"
+  },
+  "luggage": {
+   "dict": 4,
+   "e": "e/how-much-luggage-do-you-have-d3deb9.mp3",
+   "h": "h/luggage-a750c6.mp3",
+   "ipa": "/ˈlʌɡɪd͡ʒ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-luggage.wav",
+   "w": "w/luggage-16c25e.mp3"
+  },
+  "match": {
+   "dict": 4,
+   "e": "e/we-watched-the-match-on-tv-546864.mp3",
+   "h": "h/match-ef5c84.mp3",
+   "ipa": "/mæt͡ʃ/",
+   "src": "wiktionary:en-us-match.ogg",
+   "w": "w/match-41877b.mp3"
+  },
+  "meal": {
+   "dict": 4,
+   "e": "e/we-had-a-nice-meal-ccddfd.mp3",
+   "h": "h/meal-8504d9.mp3",
+   "ipa": "/ˈmiːl/",
+   "src": "wiktionary:en-us-meal.ogg",
+   "w": "w/meal-2ddb43.mp3"
+  },
+  "mean": {
+   "dict": 4,
+   "e": "e/don-t-be-mean-to-your-brother-cf48fd.mp3",
+   "h": "h/mean-5f00f7.mp3",
+   "ipa": "/min/",
+   "src": "wiktionary:en-us-mean.ogg",
+   "w": "w/mean-71709b.mp3"
+  },
+  "meaning": {
+   "dict": 4,
+   "e": "e/what-is-the-meaning-of-this-word-434ec2.mp3",
+   "h": "h/meaning-2a9079.mp3",
+   "ipa": "/ˈmi.nɪŋ/",
+   "src": "wiktionary:en-us-meaning.ogg",
+   "w": "w/meaning-40d490.mp3"
+  },
+  "meanwhile": {
+   "dict": 4,
+   "e": "e/meanwhile-the-others-were-waiting-2e4300.mp3",
+   "h": "h/meanwhile-6c246f.mp3",
+   "ipa": "/ˈmiːnwaɪl/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-meanwhile.wav",
+   "w": "w/meanwhile-627f78.mp3"
+  },
+  "medicine": {
+   "dict": 4,
+   "e": "e/take-this-medicine-twice-a-day-7fe6cf.mp3",
+   "h": "h/medicine-ea5eb8.mp3",
+   "ipa": "/ˈmɛd.ɪ.sɪn/",
+   "src": "wiktionary:En-us-medicine.ogg",
+   "w": "w/medicine-0c84cd.mp3"
+  },
   "meeting": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-meeting-starts-at-ten-3a4dc9.mp3",
    "h": "h/meeting-bd7580.mp3",
    "ipa": "/ˈmitɪŋ/",
    "src": "wiktionary:en-us-meeting.ogg",
    "w": "w/meeting-28f642.mp3"
   },
+  "memory": {
+   "dict": 4,
+   "e": "e/i-have-a-bad-memory-for-names-7535c9.mp3",
+   "h": "h/memory-81c5d4.mp3",
+   "ipa": "/ˈmɛm.ə.ɹi/",
+   "src": "wiktionary:En-us-memory.ogg",
+   "w": "w/memory-e8f8a2.mp3"
+  },
+  "mess": {
+   "dict": 4,
+   "e": "e/sorry-about-the-mess-7ce1aa.mp3",
+   "h": "h/mess-ad3676.mp3",
+   "ipa": "/mɛs/",
+   "src": "wiktionary:en-us-mess.ogg",
+   "w": "w/mess-767c60.mp3"
+  },
+  "mistake": {
+   "dict": 4,
+   "e": "e/everyone-makes-mistakes-3004f0.mp3",
+   "h": "h/mistake-c07a45.mp3",
+   "ipa": "/mɪˈsteɪk/",
+   "src": "wiktionary:en-us-mistake.ogg",
+   "w": "w/mistake-8ec66d.mp3"
+  },
+  "modest": {
+   "dict": 4,
+   "e": "e/he-is-very-modest-about-his-success-90eb5d.mp3",
+   "h": "h/modest-0a1784.mp3",
+   "ipa": "/ˈmɑdəst/",
+   "src": "wiktionary:en-us-modest.ogg",
+   "w": "w/modest-6b7f3b.mp3"
+  },
+  "mood": {
+   "dict": 4,
+   "e": "e/she-is-in-a-good-mood-today-5bcac5.mp3",
+   "h": "h/mood-89b9fb.mp3",
+   "ipa": "/muːd/",
+   "src": "wiktionary:en-us-mood.ogg",
+   "w": "w/mood-ddcbcd.mp3"
+  },
+  "moreover": {
+   "dict": 4,
+   "e": "e/the-flat-is-cheap-moreover-it-is-near-th-b8d671.mp3",
+   "h": "h/moreover-5331e3.mp3",
+   "ipa": "/moɹˈoʊ.vɚ/",
+   "src": "wiktionary:en-us-moreover.ogg",
+   "w": "w/moreover-56348d.mp3"
+  },
+  "mountain": {
+   "dict": 4,
+   "e": "e/we-climbed-a-mountain-368ee4.mp3",
+   "h": "h/mountain-d79ac4.mp3",
+   "ipa": "/ˈmaʊn.t(ə)n/",
+   "src": "wiktionary:En-us-mountain.ogg",
+   "w": "w/mountain-7a7976.mp3"
+  },
+  "narrow": {
+   "dict": 4,
+   "e": "e/the-street-is-very-narrow-44bcfa.mp3",
+   "h": "h/narrow-e1b335.mp3",
+   "ipa": "/ˈnæɹəʊ/",
+   "src": "wiktionary:En-us-ne-narrow.ogg",
+   "w": "w/narrow-d073a3.mp3"
+  },
+  "nature": {
+   "dict": 4,
+   "e": "e/i-love-walking-in-nature-e14fda.mp3",
+   "h": "h/nature-a5197f.mp3",
+   "ipa": "/ˈneɪ̯.tʃə(ɹ)/",
+   "src": "wiktionary:en-us-nature.ogg",
+   "w": "w/nature-1443db.mp3"
+  },
+  "nearby": {
+   "dict": 4,
+   "e": "e/is-there-a-bank-nearby-12a6d4.mp3",
+   "h": "h/nearby-880902.mp3",
+   "ipa": "/ˌnɪə(ɹ)ˈbaɪ/",
+   "src": "wiktionary:en-us-nearby.ogg",
+   "w": "w/nearby-12bb7c.mp3"
+  },
+  "nearly": {
+   "dict": 4,
+   "e": "e/i-nearly-missed-the-bus-b10149.mp3",
+   "h": "h/nearly-749a99.mp3",
+   "ipa": "/ˈnɪəli/",
+   "src": "wiktionary:en-us-nearly.ogg",
+   "w": "w/nearly-286d3a.mp3"
+  },
+  "necessary": {
+   "dict": 4,
+   "e": "e/is-it-necessary-to-book-a-table-585f10.mp3",
+   "h": "h/necessary-fce3b4.mp3",
+   "ipa": "/ˈnɛs.əˌsɛ.ɹi/",
+   "src": "wiktionary:en-us-necessary.ogg",
+   "w": "w/necessary-71d8ef.mp3"
+  },
+  "neighbor": {
+   "dict": 4,
+   "e": "e/my-neighbor-has-a-big-dog-54a1ba.mp3",
+   "h": "h/neighbor-3ba288.mp3",
+   "ipa": "/ˈneɪ.bɚ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vininn126-neighbor.wav",
+   "w": "w/neighbor-18252a.mp3"
+  },
+  "neighborhood": {
+   "dict": 4,
+   "e": "e/we-live-in-a-quiet-neighborhood-6ce8e0.mp3",
+   "h": "h/neighborhood-131b6e.mp3",
+   "ipa": "/ˈneɪbɚˌhʊd/",
+   "src": "wiktionary:en-us-neighborhood.ogg",
+   "w": "w/neighborhood-ce5f20.mp3"
+  },
+  "nervous": {
+   "dict": 4,
+   "e": "e/i-m-nervous-about-the-interview-0bf847.mp3",
+   "h": "h/nervous-e159bc.mp3",
+   "ipa": "/ˈnɝvəs/",
+   "src": "wiktionary:en-us-nervous.ogg",
+   "w": "w/nervous-70f9d7.mp3"
+  },
+  "never mind": {
+   "dict": 4,
+   "e": "e/never-mind-it-s-not-important-2dee73.mp3",
+   "ipa": "",
+   "w": "w/never-mind-575a28.mp3"
+  },
+  "no wonder": {
+   "dict": 4,
+   "e": "e/no-wonder-you-are-tired-36b849.mp3",
+   "ipa": "",
+   "w": "w/no-wonder-e125a0.mp3"
+  },
+  "noise": {
+   "dict": 4,
+   "e": "e/the-noise-kept-me-awake-281a4b.mp3",
+   "h": "h/noise-9424ac.mp3",
+   "ipa": "/ˈnoɪ̯z/",
+   "src": "wiktionary:en-us-noise.ogg",
+   "w": "w/noise-c49f2d.mp3"
+  },
+  "nowadays": {
+   "dict": 4,
+   "e": "e/nowadays-everyone-has-a-phone-ec80df.mp3",
+   "h": "h/nowadays-db25fc.mp3",
+   "ipa": "/ˈnaʊ.ə.deɪz/",
+   "src": "wiktionary:En-us-nowadays.ogg",
+   "w": "w/nowadays-661257.mp3"
+  },
+  "obvious": {
+   "dict": 4,
+   "e": "e/the-answer-is-obvious-642c75.mp3",
+   "h": "h/obvious-e3ff2d.mp3",
+   "ipa": "/ˈɑb.vi.əs/",
+   "src": "wiktionary:en-us-obvious.ogg",
+   "w": "w/obvious-57ff0c.mp3"
+  },
+  "obviously": {
+   "dict": 4,
+   "e": "e/obviously-she-was-tired-b176e8.mp3",
+   "h": "h/obviously-9fe5e1.mp3",
+   "ipa": "/ˈɒ(b).vi.əs.li/",
+   "src": "wiktionary:en-us-obviously.ogg",
+   "w": "w/obviously-bca500.mp3"
+  },
+  "occasionally": {
+   "dict": 4,
+   "e": "e/i-occasionally-eat-meat-1b2458.mp3",
+   "h": "h/occasionally-11b0b7.mp3",
+   "ipa": "/əˈkeɪʒənəli/",
+   "src": "wiktionary:en-us-occasionally.ogg",
+   "w": "w/occasionally-b3f739.mp3"
+  },
+  "on purpose": {
+   "dict": 4,
+   "e": "e/he-did-it-on-purpose-411883.mp3",
+   "ipa": "",
+   "w": "w/on-purpose-6f9fe3.mp3"
+  },
+  "on the other hand": {
+   "dict": 4,
+   "e": "e/the-job-is-hard-on-the-other-hand-it-pay-0af069.mp3",
+   "ipa": "",
+   "w": "w/on-the-other-hand-330411.mp3"
+  },
+  "on time": {
+   "dict": 4,
+   "e": "e/the-train-arrived-on-time-90646c.mp3",
+   "ipa": "",
+   "w": "w/on-time-b92c83.mp3"
+  },
+  "one-way": {
+   "dict": 4,
+   "e": "e/i-need-a-one-way-ticket-1e7be1.mp3",
+   "h": "h/one-way-5ef4d0.mp3",
+   "ipa": "/wʌn.weɪ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-one-way.wav",
+   "w": "w/one-way-fa69c1.mp3"
+  },
+  "opinion": {
+   "dict": 4,
+   "e": "e/in-my-opinion-he-is-right-04f688.mp3",
+   "h": "h/opinion-b0af31.mp3",
+   "ipa": "/əˈpɪn.jən/",
+   "src": "wiktionary:en-us-opinion.ogg",
+   "w": "w/opinion-ad217a.mp3"
+  },
+  "opportunity": {
+   "dict": 4,
+   "e": "e/this-is-a-great-opportunity-41de31.mp3",
+   "h": "h/opportunity-198e71.mp3",
+   "ipa": "/ˌɑ.pɚˈt(j)u.nə.ti/",
+   "src": "wiktionary:En-us-opportunity.ogg",
+   "w": "w/opportunity-bfa815.mp3"
+  },
+  "opposite": {
+   "dict": 4,
+   "e": "e/the-bank-is-opposite-the-station-a43321.mp3",
+   "h": "h/opposite-959010.mp3",
+   "ipa": "/ˈɑ.pə.sɪt/",
+   "src": "wiktionary:en-us-opposite.ogg",
+   "w": "w/opposite-d60409.mp3"
+  },
+  "order": {
+   "dict": 4,
+   "e": "e/your-order-will-arrive-tomorrow-a58801.mp3",
+   "h": "h/order-cce55e.mp3",
+   "ipa": "/ˈɔː.də/",
+   "src": "wiktionary:en-us-order.ogg",
+   "w": "w/order-927afc.mp3"
+  },
+  "ordinary": {
+   "dict": 4,
+   "e": "e/it-was-an-ordinary-day-aebd97.mp3",
+   "h": "h/ordinary-eb9e4a.mp3",
+   "ipa": "/ˈɔɹdɪnɛɹi/",
+   "src": "wiktionary:en-us-ordinary.ogg",
+   "w": "w/ordinary-339a48.mp3"
+  },
+  "otherwise": {
+   "dict": 4,
+   "e": "e/hurry-up-otherwise-we-will-be-late-dfb3fb.mp3",
+   "h": "h/otherwise-804275.mp3",
+   "ipa": "/ˈʌð.ɚˌwaɪz/",
+   "src": "wiktionary:en-us-otherwise.ogg",
+   "w": "w/otherwise-32c931.mp3"
+  },
+  "overtime": {
+   "dict": 4,
+   "e": "e/i-worked-overtime-yesterday-e5baf9.mp3",
+   "h": "h/overtime-adf3f4.mp3",
+   "ipa": "/ˈoʊ.vɚˌtaɪm/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-overtime.wav",
+   "w": "w/overtime-437468.mp3"
+  },
+  "pain": {
+   "dict": 4,
+   "e": "e/i-have-a-pain-in-my-back-fb7c71.mp3",
+   "h": "h/pain-4582cd.mp3",
+   "ipa": "/peɪ̯n/",
+   "src": "wiktionary:en-us-pain.ogg",
+   "w": "w/pain-3a58c3.mp3"
+  },
+  "parking lot": {
+   "dict": 4,
+   "e": "e/the-parking-lot-is-full-b453fa.mp3",
+   "ipa": "",
+   "w": "w/parking-lot-3259d3.mp3"
+  },
+  "part-time": {
+   "dict": 4,
+   "e": "e/she-has-a-part-time-job-7feed5.mp3",
+   "h": "h/part-time-213c8e.mp3",
+   "ipa": "",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-part-time.wav",
+   "w": "w/part-time-f5f364.mp3"
+  },
+  "partner": {
+   "dict": 4,
+   "e": "e/she-lives-with-her-partner-a851c9.mp3",
+   "h": "h/partner-3624db.mp3",
+   "ipa": "/ˈpɑɹt.nɚ/",
+   "src": "wiktionary:en-us-partner.ogg",
+   "w": "w/partner-f68da8.mp3"
+  },
+  "password": {
+   "dict": 4,
+   "e": "e/don-t-share-your-password-772a23.mp3",
+   "h": "h/password-5baa61.mp3",
+   "ipa": "/ˈpæs.wɜɹd/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-password.wav",
+   "w": "w/password-c8a579.mp3"
+  },
+  "patient": {
+   "dict": 4,
+   "e": "e/a-good-teacher-is-patient-06e9d5.mp3",
+   "h": "h/patient-b1b0b8.mp3",
+   "ipa": "/ˈpeɪ̯ʃənt/",
+   "src": "wiktionary:en-us-patient.ogg",
+   "w": "w/patient-4f85ca.mp3"
+  },
+  "peace": {
+   "dict": 4,
+   "e": "e/we-all-want-peace-6c4c12.mp3",
+   "h": "h/peace-d7c50a.mp3",
+   "ipa": "/ˈpiːs/",
+   "src": "wiktionary:En-us-peace.ogg",
+   "w": "w/peace-88262b.mp3"
+  },
+  "pedestrian": {
+   "dict": 4,
+   "e": "e/this-street-is-for-pedestrians-only-dd7b90.mp3",
+   "h": "h/pedestrian-fa95ea.mp3",
+   "ipa": "/pəˈdɛstɹiən/",
+   "src": "wiktionary:en-us-pedestrian.ogg",
+   "w": "w/pedestrian-1ed3fb.mp3"
+  },
+  "performance": {
+   "dict": 4,
+   "e": "e/it-was-a-great-performance-8ee3de.mp3",
+   "h": "h/performance-476ee0.mp3",
+   "ipa": "/pɚˈfɔɹ.mən(t)s/",
+   "src": "wiktionary:en-us-performance.ogg",
+   "w": "w/performance-473484.mp3"
+  },
+  "period": {
+   "dict": 4,
+   "e": "e/it-was-a-difficult-period-09f190.mp3",
+   "h": "h/period-54235b.mp3",
+   "ipa": "/ˈpɪɚ.i.əd/",
+   "src": "wiktionary:en-us-period.ogg",
+   "w": "w/period-e56857.mp3"
+  },
+  "permanent": {
+   "dict": 4,
+   "e": "e/she-found-a-permanent-job-385d4d.mp3",
+   "h": "h/permanent-8699f2.mp3",
+   "ipa": "/ˈpɝ.mə.nənt/",
+   "src": "wiktionary:en-us-permanent.ogg",
+   "w": "w/permanent-573cef.mp3"
+  },
+  "pharmacy": {
+   "dict": 4,
+   "e": "e/is-there-a-pharmacy-near-here-7e7b86.mp3",
+   "h": "h/pharmacy-adfa59.mp3",
+   "ipa": "/ˈfɑːməsi/",
+   "src": "wiktionary:En-us-pharmacy.ogg",
+   "w": "w/pharmacy-9311c6.mp3"
+  },
+  "pill": {
+   "dict": 4,
+   "e": "e/take-one-pill-after-meals-fd5386.mp3",
+   "h": "h/pill-93720c.mp3",
+   "ipa": "/pɪl/",
+   "src": "wiktionary:en-us-pill.ogg",
+   "w": "w/pill-1fed43.mp3"
+  },
+  "plant": {
+   "dict": 4,
+   "e": "e/water-the-plants-every-day-dcdbee.mp3",
+   "h": "h/plant-baf0bf.mp3",
+   "ipa": "/plænt/",
+   "src": "wiktionary:en-us-plant.ogg",
+   "w": "w/plant-644ac3.mp3"
+  },
+  "platform": {
+   "dict": 4,
+   "e": "e/the-train-leaves-from-platform-4-156cbc.mp3",
+   "h": "h/platform-3c72ab.mp3",
+   "ipa": "/ˈplætfɔɹm/",
+   "src": "wiktionary:en-us-platform.ogg",
+   "w": "w/platform-c77dff.mp3"
+  },
+  "pleased": {
+   "dict": 4,
+   "e": "e/i-m-pleased-with-the-result-3a8ae7.mp3",
+   "h": "h/pleased-b28206.mp3",
+   "ipa": "/pliːzd/",
+   "src": "wiktionary:en-us-pleased.ogg",
+   "w": "w/pleased-843c80.mp3"
+  },
+  "point of view": {
+   "dict": 4,
+   "e": "e/i-understand-your-point-of-view-0186b4.mp3",
+   "ipa": "",
+   "w": "w/point-of-view-29748f.mp3"
+  },
+  "polite": {
+   "dict": 4,
+   "e": "e/be-polite-to-everyone-c16ace.mp3",
+   "h": "h/polite-16f575.mp3",
+   "ipa": "/pəˈlaɪt/",
+   "src": "wiktionary:En-polite.ogg",
+   "w": "w/polite-825b70.mp3"
+  },
+  "pollution": {
+   "dict": 4,
+   "e": "e/air-pollution-is-a-big-problem-5bec49.mp3",
+   "h": "h/pollution-233471.mp3",
+   "ipa": "/pəˈluʃən/",
+   "src": "wiktionary:En-uk-pollution.ogg",
+   "w": "w/pollution-c319f2.mp3"
+  },
+  "population": {
+   "dict": 4,
+   "e": "e/the-city-has-a-population-of-one-million-85ec2e.mp3",
+   "h": "h/population-db4d33.mp3",
+   "ipa": "/ˌpɑ.pjəˈleɪ.ʃən/",
+   "src": "wiktionary:en-us-population.ogg",
+   "w": "w/population-612938.mp3"
+  },
+  "portion": {
+   "dict": 4,
+   "e": "e/the-portions-are-huge-here-d2e85c.mp3",
+   "h": "h/portion-7b813d.mp3",
+   "ipa": "/ˈpoɹʃən/",
+   "src": "wiktionary:en-us-portion.ogg",
+   "w": "w/portion-680e1d.mp3"
+  },
+  "post office": {
+   "dict": 4,
+   "e": "e/where-is-the-post-office-dabca8.mp3",
+   "ipa": "",
+   "w": "w/post-office-3b953f.mp3"
+  },
+  "poverty": {
+   "dict": 4,
+   "e": "e/many-people-live-in-poverty-91c63e.mp3",
+   "h": "h/poverty-5ac883.mp3",
+   "ipa": "/ˈpɒvəti/",
+   "src": "wiktionary:en-us-poverty.ogg",
+   "w": "w/poverty-8b626a.mp3"
+  },
+  "prescription": {
+   "dict": 4,
+   "e": "e/you-need-a-prescription-for-this-3e5847.mp3",
+   "h": "h/prescription-9fd01a.mp3",
+   "ipa": "/pɹəˈskɹɪp.ʃən/",
+   "src": "wiktionary:en-us-prescription.ogg",
+   "w": "w/prescription-58b5bb.mp3"
+  },
+  "private": {
+   "dict": 4,
+   "e": "e/this-is-a-private-beach-27cbd9.mp3",
+   "h": "h/private-e80721.mp3",
+   "ipa": "[ˈpʰɹaɪ̯vɪt]",
+   "src": "wiktionary:en-us-private.ogg",
+   "w": "w/private-bce727.mp3"
+  },
+  "probably": {
+   "dict": 4,
+   "e": "e/she-will-probably-come-tomorrow-22ecd6.mp3",
+   "h": "h/probably-a843d4.mp3",
+   "ipa": "/ˈpɹɑ.bə.bli/",
+   "src": "wiktionary:en-us-probably.ogg",
+   "w": "w/probably-e27135.mp3"
+  },
+  "progress": {
+   "dict": 4,
+   "e": "e/you-are-making-good-progress-44e8e4.mp3",
+   "h": "h/progress-5aaf89.mp3",
+   "ipa": "/pɹəˈɡɹɛs/",
+   "src": "wiktionary:en-us-progress-noun.ogg",
+   "w": "w/progress-3dd922.mp3"
+  },
+  "promotion": {
+   "dict": 4,
+   "e": "e/she-got-a-promotion-bcc914.mp3",
+   "h": "h/promotion-410c25.mp3",
+   "ipa": "/pɹəˈmoʊʃn̩/",
+   "src": "wiktionary:en-us-promotion.ogg",
+   "w": "w/promotion-9f3508.mp3"
+  },
+  "proud": {
+   "dict": 4,
+   "e": "e/i-m-proud-of-you-d44740.mp3",
+   "h": "h/proud-0f4d42.mp3",
+   "ipa": "/ˈpɹæʊ̯d/",
+   "src": "wiktionary:en-us-proud.ogg",
+   "w": "w/proud-d8e33a.mp3"
+  },
+  "public": {
+   "dict": 4,
+   "e": "e/this-is-a-public-park-537ab2.mp3",
+   "h": "h/public-61c9b2.mp3",
+   "ipa": "/ˈpʌb.lɪk/",
+   "src": "wiktionary:En-us-public.ogg",
+   "w": "w/public-c16b51.mp3"
+  },
+  "public transportation": {
+   "dict": 4,
+   "e": "e/i-use-public-transportation-every-day-989e32.mp3",
+   "ipa": "",
+   "w": "w/public-transportation-a9deaf.mp3"
+  },
+  "purpose": {
+   "dict": 4,
+   "e": "e/what-is-the-purpose-of-your-visit-eb2ba4.mp3",
+   "h": "h/purpose-231e65.mp3",
+   "ipa": "/ˈpɜː.pəs/",
+   "src": "wiktionary:en-us-purpose.ogg",
+   "w": "w/purpose-252d1c.mp3"
+  },
+  "quality": {
+   "dict": 4,
+   "e": "e/the-quality-of-the-food-is-excellent-2723d0.mp3",
+   "h": "h/quality-4ff18f.mp3",
+   "ipa": "/ˈkwɑləti/",
+   "src": "wiktionary:en-us-quality.ogg",
+   "w": "w/quality-f7fda0.mp3"
+  },
   "queue": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/there-was-a-long-queue-e8b083.mp3",
    "h": "h/queue-103834.mp3",
    "ipa": "/kju/",
    "src": "wiktionary:en-us-queue.ogg",
    "w": "w/queue-9a142a.mp3"
   },
+  "quiet": {
+   "dict": 4,
+   "e": "e/we-live-on-a-quiet-street-3970a5.mp3",
+   "h": "h/quiet-58bdb0.mp3",
+   "ipa": "/ˈkwaɪ̯.ət/",
+   "src": "wiktionary:en-us-quiet.ogg",
+   "w": "w/quiet-c85b75.mp3"
+  },
+  "quite": {
+   "dict": 4,
+   "e": "e/the-test-was-quite-difficult-e5a44a.mp3",
+   "h": "h/quite-589810.mp3",
+   "ipa": "/kwaɪ̯t/",
+   "src": "wiktionary:en-us-quite.ogg",
+   "w": "w/quite-d26540.mp3"
+  },
+  "rarely": {
+   "dict": 4,
+   "e": "e/she-rarely-goes-out-41610a.mp3",
+   "h": "h/rarely-bc87c9.mp3",
+   "ipa": "/ˈɹɛɹli/",
+   "src": "wiktionary:en-us-rarely.ogg",
+   "w": "w/rarely-5a4882.mp3"
+  },
+  "rather": {
+   "dict": 4,
+   "e": "e/the-film-was-rather-boring-c0f9ff.mp3",
+   "h": "h/rather-7e8b78.mp3",
+   "ipa": "/ˈɹʌðə(ɹ)/",
+   "src": "wiktionary:en-us-rather.ogg",
+   "w": "w/rather-78edf0.mp3"
+  },
+  "raw": {
+   "dict": 4,
+   "e": "e/don-t-eat-raw-meat-a087eb.mp3",
+   "h": "h/raw-ce1580.mp3",
+   "ipa": "/ɹɔː/",
+   "src": "wiktionary:en-us-raw.ogg",
+   "w": "w/raw-70d4ca.mp3"
+  },
+  "reason": {
+   "dict": 4,
+   "e": "e/what-is-the-reason-for-the-delay-b00543.mp3",
+   "h": "h/reason-7947e9.mp3",
+   "ipa": "/ˈɹiːzən/",
+   "src": "wiktionary:en-us-reason.ogg",
+   "w": "w/reason-44b241.mp3"
+  },
+  "reasonable": {
+   "dict": 4,
+   "e": "e/the-price-is-reasonable-f69816.mp3",
+   "h": "h/reasonable-759cc8.mp3",
+   "ipa": "/ˈɹi.zə.nə.bəl/",
+   "src": "wiktionary:en-us-reasonable.ogg",
+   "w": "w/reasonable-710dac.mp3"
+  },
+  "receipt": {
+   "dict": 4,
+   "e": "e/keep-the-receipt-310120.mp3",
+   "h": "h/receipt-14e60a.mp3",
+   "ipa": "/ɹɪˈsit/",
+   "src": "wiktionary:en-us-receipt.ogg",
+   "w": "w/receipt-9a5827.mp3"
+  },
+  "recently": {
+   "dict": 4,
+   "e": "e/i-have-recently-moved-to-a-new-apartment-95c306.mp3",
+   "h": "h/recently-fd92cc.mp3",
+   "ipa": "/ˈɹi.sənt.li/",
+   "src": "wiktionary:en-us-recently.ogg",
+   "w": "w/recently-3344f2.mp3"
+  },
+  "recipe": {
+   "dict": 4,
+   "e": "e/can-you-give-me-the-recipe-1e3a54.mp3",
+   "h": "h/recipe-e2a227.mp3",
+   "ipa": "/ˈɹɛs.ɪ.pi/",
+   "src": "wiktionary:En-us-recipe.ogg",
+   "w": "w/recipe-a46759.mp3"
+  },
+  "refund": {
+   "dict": 4,
+   "e": "e/i-d-like-a-refund-please-d039b9.mp3",
+   "h": "h/refund-b51118.mp3",
+   "ipa": "/ɹɪˈfʌnd/",
+   "src": "wiktionary:en-us-refund-verb.ogg",
+   "w": "w/refund-48e23d.mp3"
+  },
+  "relationship": {
+   "dict": 4,
+   "e": "e/they-have-a-good-relationship-4591ac.mp3",
+   "h": "h/relationship-6a73a9.mp3",
+   "ipa": "/ɹɪˈleɪʃ(ə)nˌʃɪp/",
+   "src": "wiktionary:En-us-relationship.ogg",
+   "w": "w/relationship-9bdf69.mp3"
+  },
+  "relative": {
+   "dict": 4,
+   "e": "e/all-our-relatives-came-to-the-wedding-b17c45.mp3",
+   "h": "h/relative-d89972.mp3",
+   "ipa": "/ˈɹɛl.ə.tɪv/",
+   "src": "wiktionary:en-us-relative.ogg",
+   "w": "w/relative-a239c8.mp3"
+  },
+  "relaxed": {
+   "dict": 4,
+   "e": "e/i-feel-relaxed-after-a-vacation-b39bc5.mp3",
+   "h": "h/relaxed-00174a.mp3",
+   "ipa": "/ɹɪˈlækst/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-relaxed.wav",
+   "w": "w/relaxed-f05af6.mp3"
+  },
   "reliable": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/this-is-a-reliable-car-d07a8d.mp3",
    "h": "h/reliable-c5e8cf.mp3",
    "ipa": "/ɹɪˈlaɪəbl̩/",
    "src": "wiktionary:en-us-reliable.ogg",
    "w": "w/reliable-d43ede.mp3"
   },
+  "relieved": {
+   "dict": 4,
+   "e": "e/i-was-relieved-to-hear-the-news-31a4c7.mp3",
+   "h": "h/relieved-34c5be.mp3",
+   "ipa": "/ɹɪˈliːvd/",
+   "src": "wiktionary:en-us-relieved.ogg",
+   "w": "w/relieved-1c1513.mp3"
+  },
+  "report": {
+   "dict": 4,
+   "e": "e/i-need-to-finish-this-report-7307d5.mp3",
+   "h": "h/report-a27297.mp3",
+   "ipa": "/ɹɪˈpɔːt/",
+   "src": "wiktionary:en-us-report.ogg",
+   "w": "w/report-e9ea46.mp3"
+  },
   "requirement": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-design-meets-all-requirements-ead453.mp3",
    "h": "h/requirement-15320a.mp3",
    "ipa": "/ɹɪˈkwaɪɹmənt/",
    "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-requirement.wav",
    "w": "w/requirement-229b96.mp3"
   },
+  "research": {
+   "dict": 4,
+   "e": "e/she-does-research-on-climate-8b6b9c.mp3",
+   "h": "h/research-2c7bf1.mp3",
+   "ipa": "/ˈɹiˌsɝt͡ʃ/",
+   "src": "wiktionary:En-us-research.ogg",
+   "w": "w/research-fc7c4a.mp3"
+  },
+  "reservation": {
+   "dict": 4,
+   "e": "e/i-have-a-reservation-for-smith-6dd0fd.mp3",
+   "h": "h/reservation-bcf112.mp3",
+   "ipa": "/ˌɹɛz.ɚˈveɪ.ʃən/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-reservation.wav",
+   "w": "w/reservation-6ae841.mp3"
+  },
+  "resident": {
+   "dict": 4,
+   "e": "e/local-residents-complained-about-the-noi-9805d9.mp3",
+   "h": "h/resident-891cde.mp3",
+   "ipa": "/ˈɹɛzɪdənt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-resident.wav",
+   "w": "w/resident-e1ad8f.mp3"
+  },
+  "responsibility": {
+   "dict": 4,
+   "e": "e/it-s-my-responsibility-be93b6.mp3",
+   "h": "h/responsibility-0cbd26.mp3",
+   "ipa": "/ɹɪˌspɑn.səˈbɪl.ə.ti/",
+   "src": "wiktionary:en-us-responsibility.ogg",
+   "w": "w/responsibility-7263c3.mp3"
+  },
+  "responsible": {
+   "dict": 4,
+   "e": "e/who-is-responsible-for-this-project-eb9a90.mp3",
+   "h": "h/responsible-37926b.mp3",
+   "ipa": "/ɹɪˈspɒn.sə.bəl/",
+   "src": "wiktionary:en-us-responsible.ogg",
+   "w": "w/responsible-f2e608.mp3"
+  },
+  "risk": {
+   "dict": 4,
+   "e": "e/it-s-not-worth-the-risk-355beb.mp3",
+   "h": "h/risk-11a110.mp3",
+   "ipa": "/ɹɪsk/",
+   "src": "wiktionary:En-us-risk.ogg",
+   "w": "w/risk-48c4b5.mp3"
+  },
+  "round-trip ticket": {
+   "dict": 4,
+   "e": "e/a-round-trip-ticket-please-4928eb.mp3",
+   "ipa": "",
+   "w": "w/round-trip-ticket-179aef.mp3"
+  },
+  "rude": {
+   "dict": 4,
+   "e": "e/it-was-rude-to-leave-without-a-word-22a0fd.mp3",
+   "h": "h/rude-06458d.mp3",
+   "ipa": "/ɹud/",
+   "src": "wiktionary:en-us-rude.ogg",
+   "w": "w/rude-c68df0.mp3"
+  },
+  "rule": {
+   "dict": 4,
+   "e": "e/follow-the-rules-472ba6.mp3",
+   "h": "h/rule-0f4001.mp3",
+   "ipa": "/ɹul/",
+   "src": "wiktionary:en-us-rule.ogg",
+   "w": "w/rule-0b586a.mp3"
+  },
+  "salary": {
+   "dict": 4,
+   "e": "e/he-has-a-good-salary-fd0ebd.mp3",
+   "h": "h/salary-47dfeb.mp3",
+   "ipa": "/ˈsæləɹi/",
+   "src": "wiktionary:En-us-salary.ogg",
+   "w": "w/salary-8b06c8.mp3"
+  },
+  "sale": {
+   "dict": 4,
+   "e": "e/i-bought-this-coat-on-sale-75da01.mp3",
+   "h": "h/sale-5b8a76.mp3",
+   "ipa": "/seːl/",
+   "src": "wiktionary:en-us-sale.ogg",
+   "w": "w/sale-347666.mp3"
+  },
+  "salty": {
+   "dict": 4,
+   "e": "e/the-soup-is-too-salty-5ccc2a.mp3",
+   "h": "h/salty-31c31e.mp3",
+   "ipa": "/sɑlti/",
+   "src": "wiktionary:En-au-salty.ogg",
+   "w": "w/salty-90f3b4.mp3"
+  },
+  "satisfied": {
+   "dict": 4,
+   "e": "e/are-you-satisfied-with-the-service-b5e2a4.mp3",
+   "h": "h/satisfied-a34b2d.mp3",
+   "ipa": "/ˈsætɪsfaɪd/",
+   "src": "wiktionary:en-us-satisfied.ogg",
+   "w": "w/satisfied-09c8ce.mp3"
+  },
+  "scared": {
+   "dict": 4,
+   "e": "e/i-was-scared-of-the-dark-as-a-child-2f83eb.mp3",
+   "h": "h/scared-34305c.mp3",
+   "ipa": "/skɛəd/",
+   "src": "wiktionary:en-us-scared.ogg",
+   "w": "w/scared-03129a.mp3"
+  },
   "schedule": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/let-s-check-the-schedule-e06cc4.mp3",
    "h": "h/schedule-11e9ba.mp3",
    "ipa": "/ˈskɛd͡ʒ.ʊl/",
    "src": "wiktionary:en-us-schedule.ogg",
    "w": "w/schedule-999274.mp3"
   },
+  "score": {
+   "dict": 4,
+   "e": "e/what-s-the-score-736b3e.mp3",
+   "h": "h/score-75ebcb.mp3",
+   "ipa": "/skɔː/",
+   "src": "wiktionary:en-us-score.ogg",
+   "w": "w/score-93837e.mp3"
+  },
+  "screen": {
+   "dict": 4,
+   "e": "e/my-phone-screen-is-broken-05d423.mp3",
+   "h": "h/screen-35b19f.mp3",
+   "ipa": "/ˈskɹiːn/",
+   "src": "wiktionary:en-us-screen.ogg",
+   "w": "w/screen-2d8835.mp3"
+  },
+  "season": {
+   "dict": 4,
+   "e": "e/fall-is-my-favorite-season-e3e476.mp3",
+   "h": "h/season-76f5e4.mp3",
+   "ipa": "[ˈsi.zn̩]",
+   "src": "wiktionary:en-us-season.ogg",
+   "w": "w/season-0d1e37.mp3"
+  },
+  "selfish": {
+   "dict": 4,
+   "e": "e/don-t-be-so-selfish-9cb22a.mp3",
+   "h": "h/selfish-f38545.mp3",
+   "ipa": "/ˈsɛl.fɪʃ/",
+   "src": "wiktionary:en-us-selfish.ogg",
+   "w": "w/selfish-d92136.mp3"
+  },
+  "sensible": {
+   "dict": 4,
+   "e": "e/that-s-a-sensible-decision-c74512.mp3",
+   "h": "h/sensible-27a851.mp3",
+   "ipa": "/ˈsɛn.sə.bəl/",
+   "src": "wiktionary:en-us-sensible.ogg",
+   "w": "w/sensible-b9fcbd.mp3"
+  },
+  "sensitive": {
+   "dict": 4,
+   "e": "e/she-is-very-sensitive-to-criticism-9a8b98.mp3",
+   "h": "h/sensitive-7a9b93.mp3",
+   "ipa": "/ˈsɛn.sɪt.ɪv/",
+   "src": "wiktionary:En-us-sensitive.ogg",
+   "w": "w/sensitive-8f8b2d.mp3"
+  },
+  "sharp": {
+   "dict": 4,
+   "e": "e/be-careful-the-knife-is-sharp-82e2ea.mp3",
+   "h": "h/sharp-ca0b62.mp3",
+   "ipa": "/ʃɑɹp/",
+   "src": "wiktionary:en-us-sharp.ogg",
+   "w": "w/sharp-800347.mp3"
+  },
+  "shy": {
+   "dict": 4,
+   "e": "e/he-was-too-shy-to-speak-1f6640.mp3",
+   "h": "h/shy-df3993.mp3",
+   "ipa": "/ʃaɪ/",
+   "src": "wiktionary:en-us-shy.ogg",
+   "w": "w/shy-e76d33.mp3"
+  },
+  "sidewalk": {
+   "dict": 4,
+   "e": "e/walk-on-the-sidewalk-c21415.mp3",
+   "h": "h/sidewalk-59f947.mp3",
+   "ipa": "/ˈsaɪdwɔk/",
+   "src": "wiktionary:en-us-sidewalk.ogg",
+   "w": "w/sidewalk-11dd7e.mp3"
+  },
+  "sightseeing": {
+   "dict": 4,
+   "e": "e/we-went-sightseeing-in-rome-7cef6d.mp3",
+   "h": "h/sightseeing-f4c005.mp3",
+   "ipa": "",
+   "src": "wiktionary:en-us-sightseeing.ogg",
+   "w": "w/sightseeing-107d28.mp3"
+  },
+  "signal": {
+   "dict": 4,
+   "e": "e/there-is-no-signal-here-816bcf.mp3",
+   "h": "h/signal-36ab4a.mp3",
+   "ipa": "/ˈsɪɡnəl/",
+   "src": "wiktionary:En-us-signal.ogg",
+   "w": "w/signal-a46cae.mp3"
+  },
+  "similar": {
+   "dict": 4,
+   "e": "e/your-bag-is-similar-to-mine-cf49e5.mp3",
+   "h": "h/similar-af62f3.mp3",
+   "ipa": "/ˈsɪm.ɪ.lə/",
+   "src": "wiktionary:en-us-similar.ogg",
+   "w": "w/similar-16b906.mp3"
+  },
+  "since": {
+   "dict": 4,
+   "e": "e/i-have-lived-here-since-2020-bd8343.mp3",
+   "h": "h/since-2eb888.mp3",
+   "ipa": "/sɪn(t)s/",
+   "src": "wiktionary:en-us-since.ogg",
+   "w": "w/since-18c997.mp3"
+  },
+  "situation": {
+   "dict": 4,
+   "e": "e/the-situation-is-getting-better-2094c0.mp3",
+   "h": "h/situation-eea032.mp3",
+   "ipa": "/ˌsɪ.t͡ʃuˈ(w)eɪ.ʃən/",
+   "src": "wiktionary:en-us-situation.ogg",
+   "w": "w/situation-471497.mp3"
+  },
+  "skill": {
+   "dict": 4,
+   "e": "e/communication-is-an-important-skill-328a90.mp3",
+   "h": "h/skill-34b33e.mp3",
+   "ipa": "[skɪɫ]",
+   "src": "wiktionary:en-us-skill.ogg",
+   "w": "w/skill-57e5a2.mp3"
+  },
+  "slim": {
+   "dict": 4,
+   "e": "e/she-is-tall-and-slim-faf0c4.mp3",
+   "h": "h/slim-80a9a7.mp3",
+   "ipa": "/ˈslɪm/",
+   "src": "wiktionary:en-us-slim.ogg",
+   "w": "w/slim-d7a5e6.mp3"
+  },
+  "smooth": {
+   "dict": 4,
+   "e": "e/the-road-was-smooth-d3e70e.mp3",
+   "h": "h/smooth-254f76.mp3",
+   "ipa": "/smuːð/",
+   "src": "wiktionary:en-us-smooth.ogg",
+   "w": "w/smooth-392288.mp3"
+  },
+  "snack": {
+   "dict": 4,
+   "e": "e/i-had-a-snack-at-work-485e23.mp3",
+   "h": "h/snack-1ba61a.mp3",
+   "ipa": "/snæk/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-snack.wav",
+   "w": "w/snack-93861e.mp3"
+  },
+  "social media": {
+   "dict": 4,
+   "e": "e/she-spends-hours-on-social-media-0f26a3.mp3",
+   "ipa": "",
+   "w": "w/social-media-76fe4d.mp3"
+  },
+  "society": {
+   "dict": 4,
+   "e": "e/technology-changes-society-284994.mp3",
+   "h": "h/society-4abdad.mp3",
+   "ipa": "/səˈsaɪ.ə.ti/",
+   "src": "wiktionary:en-us-society.ogg",
+   "w": "w/society-3ac010.mp3"
+  },
+  "soft": {
+   "dict": 4,
+   "e": "e/this-pillow-is-very-soft-0f3630.mp3",
+   "h": "h/soft-eb74f2.mp3",
+   "ipa": "/sɔft/",
+   "src": "wiktionary:En-us-soft.ogg",
+   "w": "w/soft-f48888.mp3"
+  },
+  "software": {
+   "dict": 4,
+   "e": "e/we-need-new-software-2d1ad0.mp3",
+   "h": "h/software-c981d1.mp3",
+   "ipa": "/ˈsɒf(t)ˌwɛɹ/",
+   "src": "wiktionary:en-us-software.ogg",
+   "w": "w/software-1a51c1.mp3"
+  },
+  "solution": {
+   "dict": 4,
+   "e": "e/we-need-a-solution-quickly-d56056.mp3",
+   "h": "h/solution-00f97c.mp3",
+   "ipa": "/səˈl(j)uːʃən/",
+   "src": "wiktionary:en-us-solution.ogg",
+   "w": "w/solution-f84a37.mp3"
+  },
+  "sore throat": {
+   "dict": 4,
+   "e": "e/i-have-a-sore-throat-46120a.mp3",
+   "ipa": "",
+   "w": "w/sore-throat-2c390e.mp3"
+  },
+  "sour": {
+   "dict": 4,
+   "e": "e/the-lemon-is-sour-000d00.mp3",
+   "h": "h/sour-000b4b.mp3",
+   "ipa": "/ˈsaʊ.ə/",
+   "src": "wiktionary:en-us-sour.ogg",
+   "w": "w/sour-ef22c1.mp3"
+  },
+  "specific": {
+   "dict": 4,
+   "e": "e/can-you-be-more-specific-629942.mp3",
+   "h": "h/specific-660cff.mp3",
+   "ipa": "/spɪˈsɪf.ɪk/",
+   "src": "wiktionary:en-us-specific.ogg",
+   "w": "w/specific-d5ecfc.mp3"
+  },
+  "spicy": {
+   "dict": 4,
+   "e": "e/i-don-t-like-spicy-food-bdf3dd.mp3",
+   "h": "h/spicy-680c1e.mp3",
+   "ipa": "/ˈspaɪsi/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-spicy.wav",
+   "w": "w/spicy-73a727.mp3"
+  },
+  "square": {
+   "dict": 4,
+   "e": "e/the-caf-is-on-the-main-square-aa8f26.mp3",
+   "h": "h/square-bfed89.mp3",
+   "ipa": "/skwɛə(ɹ)/",
+   "src": "wiktionary:En-us-square.ogg",
+   "w": "w/square-4516e6.mp3"
+  },
+  "staff": {
+   "dict": 4,
+   "e": "e/the-staff-were-very-helpful-ddc386.mp3",
+   "h": "h/staff-6ccb4b.mp3",
+   "ipa": "[stæf]",
+   "src": "wiktionary:En-us-staff.ogg",
+   "w": "w/staff-a45ee1.mp3"
+  },
+  "stairs": {
+   "dict": 4,
+   "e": "e/take-the-stairs-the-elevator-is-broken-c6af62.mp3",
+   "h": "h/stairs-5f56ad.mp3",
+   "ipa": "/ˈstɛəz/",
+   "src": "wiktionary:en-us-stairs.ogg",
+   "w": "w/stairs-ce469e.mp3"
+  },
+  "still": {
+   "dict": 4,
+   "e": "e/she-is-still-at-work-5d7e3a.mp3",
+   "h": "h/still-677c1b.mp3",
+   "ipa": "/ˈstɪl/",
+   "src": "wiktionary:en-us-still.ogg",
+   "w": "w/still-c820d8.mp3"
+  },
+  "storm": {
+   "dict": 4,
+   "e": "e/the-storm-lasted-all-night-88bd42.mp3",
+   "h": "h/storm-6ad3a9.mp3",
+   "ipa": "/stoɹm/",
+   "src": "wiktionary:En-us-storm.ogg",
+   "w": "w/storm-64e0c5.mp3"
+  },
+  "stranger": {
+   "dict": 4,
+   "e": "e/don-t-talk-to-strangers-df871d.mp3",
+   "h": "h/stranger-ed5acf.mp3",
+   "ipa": "/ˈstɹeɪnd͡ʒə(ɹ)/",
+   "src": "wiktionary:en-us-stranger.ogg",
+   "w": "w/stranger-90019c.mp3"
+  },
+  "strict": {
+   "dict": 4,
+   "e": "e/our-teacher-was-very-strict-212409.mp3",
+   "h": "h/strict-41eaab.mp3",
+   "ipa": "/stɹɪkt/",
+   "src": "wiktionary:en-us-strict.ogg",
+   "w": "w/strict-ccd60e.mp3"
+  },
+  "stubborn": {
+   "dict": 4,
+   "e": "e/he-is-too-stubborn-to-change-his-mind-5a0b15.mp3",
+   "h": "h/stubborn-06d9b4.mp3",
+   "ipa": "/ˈstʌbɚn/",
+   "src": "wiktionary:en-us-stubborn.ogg",
+   "w": "w/stubborn-529cad.mp3"
+  },
+  "subject": {
+   "dict": 4,
+   "e": "e/math-is-my-favorite-subject-a0e207.mp3",
+   "h": "h/subject-335ce1.mp3",
+   "ipa": "/ˈsʌb.d͡ʒɛkt/",
+   "src": "wiktionary:en-us-subject-noun.ogg",
+   "w": "w/subject-df26d0.mp3"
+  },
+  "suburbs": {
+   "dict": 4,
+   "e": "e/they-live-in-the-suburbs-77551c.mp3",
+   "h": "h/suburbs-5c221d.mp3",
+   "ipa": "/ˈsʌbɝbz/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-suburbs.wav",
+   "w": "w/suburbs-4aa7ab.mp3"
+  },
+  "success": {
+   "dict": 4,
+   "e": "e/the-party-was-a-big-success-415325.mp3",
+   "h": "h/success-53a568.mp3",
+   "ipa": "/səkˈsɛs/",
+   "src": "wiktionary:en-us-success.ogg",
+   "w": "w/success-6bfd42.mp3"
+  },
+  "such as": {
+   "dict": 4,
+   "e": "e/i-like-sports-such-as-tennis-and-swimmin-c81b96.mp3",
+   "ipa": "",
+   "w": "w/such-as-ca41e0.mp3"
+  },
+  "suddenly": {
+   "dict": 4,
+   "e": "e/suddenly-the-lights-went-out-9a3318.mp3",
+   "h": "h/suddenly-fac40e.mp3",
+   "ipa": "/ˈsʌd.ən.li/",
+   "src": "wiktionary:en-us-suddenly.ogg",
+   "w": "w/suddenly-96cbe5.mp3"
+  },
+  "suitable": {
+   "dict": 4,
+   "e": "e/this-film-is-not-suitable-for-children-4fdac3.mp3",
+   "h": "h/suitable-cf86ce.mp3",
+   "ipa": "[ˈsju.tə.bɫ̩]",
+   "src": "wiktionary:En-us-suitable.ogg",
+   "w": "w/suitable-d49a2a.mp3"
+  },
+  "suitcase": {
+   "dict": 4,
+   "e": "e/my-suitcase-is-too-heavy-0d2f6e.mp3",
+   "h": "h/suitcase-b6d198.mp3",
+   "ipa": "/ˈsutkeɪs/",
+   "src": "wiktionary:en-us-suitcase.ogg",
+   "w": "w/suitcase-768dea.mp3"
+  },
+  "surprised": {
+   "dict": 4,
+   "e": "e/i-was-surprised-to-see-him-0edbe4.mp3",
+   "h": "h/surprised-39da98.mp3",
+   "ipa": "/səˈpɹaɪzd/",
+   "src": "wiktionary:en-us-surprised.ogg",
+   "w": "w/surprised-31c9ad.mp3"
+  },
+  "task": {
+   "dict": 4,
+   "e": "e/i-have-a-lot-of-tasks-today-e9ae0d.mp3",
+   "h": "h/task-7fbb72.mp3",
+   "ipa": "/tæsk/",
+   "src": "wiktionary:en-us-task.ogg",
+   "w": "w/task-a8d7d6.mp3"
+  },
+  "tax": {
+   "dict": 4,
+   "e": "e/the-price-includes-tax-161367.mp3",
+   "h": "h/tax-e8e27c.mp3",
+   "ipa": "/tæks/",
+   "src": "wiktionary:en-us-tax.ogg",
+   "w": "w/tax-667462.mp3"
+  },
+  "team": {
+   "dict": 4,
+   "e": "e/our-team-works-well-together-7d8662.mp3",
+   "h": "h/team-d25187.mp3",
+   "ipa": "/ˈtiːm/",
+   "src": "wiktionary:en-us-team.ogg",
+   "w": "w/team-333b59.mp3"
+  },
+  "teenager": {
+   "dict": 4,
+   "e": "e/my-son-is-a-teenager-now-525d6f.mp3",
+   "h": "h/teenager-56c995.mp3",
+   "ipa": "/ˈtinˌeɪdʒɚ/",
+   "src": "wiktionary:en-us-teenager.ogg",
+   "w": "w/teenager-ed1a1a.mp3"
+  },
+  "temperature": {
+   "dict": 4,
+   "e": "e/the-temperature-dropped-at-night-41a13a.mp3",
+   "h": "h/temperature-7033e9.mp3",
+   "ipa": "/ˈtɛm.pəɹ.ə.t͡ʃə(ɹ)/",
+   "src": "wiktionary:en-us-temperature.ogg",
+   "w": "w/temperature-9466e9.mp3"
+  },
+  "temporary": {
+   "dict": 4,
+   "e": "e/it-s-only-a-temporary-job-0dc6b9.mp3",
+   "h": "h/temporary-dcdc8b.mp3",
+   "ipa": "/ˈtɛm.pəˌɹɛɹ.i/",
+   "src": "wiktionary:En-us-temporary.ogg",
+   "w": "w/temporary-2c0335.mp3"
+  },
+  "therefore": {
+   "dict": 4,
+   "e": "e/it-was-late-therefore-we-took-a-taxi-45dea0.mp3",
+   "h": "h/therefore-012071.mp3",
+   "ipa": "/ˈðɛə.fɔː/",
+   "src": "wiktionary:en-us-therefore.ogg",
+   "w": "w/therefore-262712.mp3"
+  },
   "thorough": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/we-need-a-thorough-check-d0402f.mp3",
    "h": "h/thorough-d20bd8.mp3",
    "ipa": "/ˈθɝoʊ/",
@@ -122,150 +3288,2030 @@
    "w": "w/thorough-035e95.mp3"
   },
   "throughout": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/it-rained-throughout-the-day-e10ada.mp3",
    "h": "h/throughout-330dbf.mp3",
    "ipa": "/θɹuˈaʊt/",
    "src": "wiktionary:en-us-throughout.ogg",
    "w": "w/throughout-f9fbfa.mp3"
   },
+  "thunder": {
+   "dict": 4,
+   "h": "h/thunder-badcfa.mp3",
+   "ipa": "/ˈθʌndɚ/",
+   "src": "wiktionary:en-us-thunder.ogg",
+   "w": "w/thunder-21ef91.mp3"
+  },
+  "tight": {
+   "dict": 4,
+   "e": "e/these-jeans-are-too-tight-8bccf2.mp3",
+   "h": "h/tight-98b9f3.mp3",
+   "ipa": "/taɪt/",
+   "src": "wiktionary:en-us-tight.ogg",
+   "w": "w/tight-4bd880.mp3"
+  },
+  "tiny": {
+   "dict": 4,
+   "e": "e/our-kitchen-is-tiny-8c894e.mp3",
+   "h": "h/tiny-d4927d.mp3",
+   "ipa": "/ˈtaɪni/",
+   "src": "wiktionary:en-us-tiny.ogg",
+   "w": "w/tiny-5f38cc.mp3"
+  },
+  "tip": {
+   "dict": 4,
+   "e": "e/we-left-a-tip-for-the-waiter-d9cc82.mp3",
+   "h": "h/tip-306a96.mp3",
+   "ipa": "/tɪp/",
+   "src": "wiktionary:en-us-tip.ogg",
+   "w": "w/tip-b07f9f.mp3"
+  },
+  "to achieve": {
+   "dict": 4,
+   "e": "e/she-wants-to-achieve-her-goal-this-year-bd079a.mp3",
+   "h": "h/achieve-f9659d.mp3",
+   "ipa": "/əˈt͡ʃiv/",
+   "src": "wiktionary:En-us-achieve.ogg",
+   "w": "w/to-achieve-d21aff.mp3"
+  },
+  "to admit": {
+   "dict": 4,
+   "e": "e/she-admitted-her-mistake-ede53a.mp3",
+   "h": "h/admit-4a4f47.mp3",
+   "ipa": "/ədˈmɪt/",
+   "src": "wiktionary:en-us-admit.ogg",
+   "w": "w/to-admit-fb747c.mp3"
+  },
+  "to advise": {
+   "dict": 4,
+   "e": "e/the-doctor-advised-me-to-rest-45f2a8.mp3",
+   "h": "h/advise-1ce9e2.mp3",
+   "ipa": "/ədˈvaɪz/",
+   "src": "wiktionary:En-us-advise.ogg",
+   "w": "w/to-advise-b372a9.mp3"
+  },
+  "to afford": {
+   "dict": 4,
+   "e": "e/i-can-t-afford-a-new-car-f2c498.mp3",
+   "h": "h/afford-15cdad.mp3",
+   "ipa": "/əˈfoɹd/",
+   "src": "wiktionary:en-us-afford.ogg",
+   "w": "w/to-afford-7ba425.mp3"
+  },
+  "to agree": {
+   "dict": 4,
+   "e": "e/i-agree-with-you-942081.mp3",
+   "h": "h/agree-c96005.mp3",
+   "ipa": "/əˈɡɹi/",
+   "src": "wiktionary:en-us-agree.ogg",
+   "w": "w/to-agree-339cfd.mp3"
+  },
+  "to allow": {
+   "dict": 4,
+   "e": "e/my-parents-allowed-me-to-go-3bd072.mp3",
+   "h": "h/allow-6452e7.mp3",
+   "ipa": "/əˈlaʊ/",
+   "src": "wiktionary:en-us-allow.ogg",
+   "w": "w/to-allow-e3b6be.mp3"
+  },
+  "to announce": {
+   "dict": 4,
+   "e": "e/they-announced-the-winners-3df267.mp3",
+   "h": "h/announce-4abd4f.mp3",
+   "ipa": "/əˈnaʊn(t)s/",
+   "src": "wiktionary:en-us-announce.ogg",
+   "w": "w/to-announce-651211.mp3"
+  },
+  "to apologize": {
+   "dict": 4,
+   "e": "e/he-apologized-for-being-late-d76248.mp3",
+   "h": "h/apologize-31cfc0.mp3",
+   "ipa": "/əˈpɒləˌd͡ʒaɪz/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-apologize.wav",
+   "w": "w/to-apologize-c1c4f1.mp3"
+  },
+  "to apply": {
+   "dict": 4,
+   "e": "e/i-want-to-apply-for-this-job-091a4f.mp3",
+   "h": "h/apply-69f45d.mp3",
+   "ipa": "[əˈplaɪ]",
+   "src": "wiktionary:en-us-apply.ogg",
+   "w": "w/to-apply-9686e6.mp3"
+  },
   "to approve": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-director-approved-the-plan-0602d4.mp3",
    "h": "h/approve-e4788b.mp3",
    "ipa": "/əˈpɹuːv/",
    "src": "wiktionary:LL-Q1860 (eng)-Mélange a trois-approve.wav",
    "w": "w/to-approve-6ba0d4.mp3"
   },
+  "to argue": {
+   "dict": 4,
+   "e": "e/they-often-argue-about-money-02120c.mp3",
+   "h": "h/argue-bf1a4c.mp3",
+   "ipa": "/ˈɑɹ.ɡju/",
+   "src": "wiktionary:En-us-argue.ogg",
+   "w": "w/to-argue-e1e466.mp3"
+  },
+  "to arrange": {
+   "dict": 4,
+   "e": "e/i-arranged-a-meeting-for-monday-5d0069.mp3",
+   "h": "h/arrange-991ecc.mp3",
+   "ipa": "/əˈɹeɪnd͡ʒ/",
+   "src": "wiktionary:en-us-arrange.ogg",
+   "w": "w/to-arrange-4cd9c4.mp3"
+  },
+  "to arrest": {
+   "dict": 4,
+   "e": "e/the-police-arrested-two-men-5ec152.mp3",
+   "h": "h/arrest-5450f3.mp3",
+   "ipa": "/əˈɹɛst/",
+   "src": "wiktionary:En-us-arrest.ogg",
+   "w": "w/to-arrest-3a5f9b.mp3"
+  },
+  "to ask for": {
+   "dict": 4,
+   "e": "e/he-asked-for-help-3a2813.mp3",
+   "ipa": "",
+   "w": "w/to-ask-for-dea8dd.mp3"
+  },
   "to attach": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/i-attached-the-file-to-the-email-e2c2ff.mp3",
    "h": "h/attach-13ce07.mp3",
    "ipa": "/əˈtæt͡ʃ/",
    "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-attach.wav",
    "w": "w/to-attach-65242e.mp3"
   },
+  "to attend": {
+   "dict": 4,
+   "e": "e/did-you-attend-the-meeting-f9bc8e.mp3",
+   "h": "h/attend-600f31.mp3",
+   "ipa": "/əˈtɛnd/",
+   "src": "wiktionary:En-us-attend.ogg",
+   "w": "w/to-attend-f54148.mp3"
+  },
+  "to avoid": {
+   "dict": 4,
+   "e": "e/try-to-avoid-fast-food-9a35e5.mp3",
+   "h": "h/avoid-dec073.mp3",
+   "ipa": "/əˈvɔɪd/",
+   "src": "wiktionary:en-us-avoid.ogg",
+   "w": "w/to-avoid-b5e146.mp3"
+  },
+  "to back up": {
+   "dict": 4,
+   "e": "e/back-up-your-files-regularly-d32c99.mp3",
+   "ipa": "",
+   "w": "w/to-back-up-c2e596.mp3"
+  },
+  "to bake": {
+   "dict": 4,
+   "e": "e/my-grandma-bakes-bread-every-week-ff53c9.mp3",
+   "h": "h/bake-74521f.mp3",
+   "ipa": "/beɪk/",
+   "src": "wiktionary:en-us-bake.ogg",
+   "w": "w/to-bake-0622a2.mp3"
+  },
+  "to be in a hurry": {
+   "dict": 4,
+   "e": "e/sorry-i-m-in-a-hurry-02e389.mp3",
+   "ipa": "",
+   "w": "w/to-be-in-a-hurry-3ceff9.mp3"
+  },
   "to be in charge of": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/she-is-in-charge-of-testing-e78879.mp3",
    "ipa": "",
    "w": "w/to-be-in-charge-of-2aefe6.mp3"
   },
+  "to be located": {
+   "dict": 4,
+   "e": "e/the-hotel-is-located-near-the-beach-9f45b9.mp3",
+   "ipa": "",
+   "w": "w/to-be-located-349215.mp3"
+  },
+  "to behave": {
+   "dict": 4,
+   "e": "e/the-children-behaved-well-c53c84.mp3",
+   "h": "h/behave-9ad09b.mp3",
+   "ipa": "/bɪˈheɪv/",
+   "src": "wiktionary:en-us-behave.ogg",
+   "w": "w/to-behave-29b937.mp3"
+  },
+  "to belong": {
+   "dict": 4,
+   "e": "e/this-bag-belongs-to-me-89f506.mp3",
+   "h": "h/belong-f9e0fb.mp3",
+   "ipa": "/bɪˈlɒŋ/",
+   "src": "wiktionary:en-us-belong.ogg",
+   "w": "w/to-belong-619320.mp3"
+  },
+  "to blame": {
+   "dict": 4,
+   "e": "e/don-t-blame-yourself-d26562.mp3",
+   "h": "h/blame-e04a67.mp3",
+   "ipa": "/bleɪm/",
+   "src": "wiktionary:en-us-blame.ogg",
+   "w": "w/to-blame-d54182.mp3"
+  },
+  "to boil": {
+   "dict": 4,
+   "e": "e/boil-the-water-first-b8fdab.mp3",
+   "h": "h/boil-807a11.mp3",
+   "ipa": "/bɔɪl/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-boil.wav",
+   "w": "w/to-boil-1edbac.mp3"
+  },
+  "to book": {
+   "dict": 4,
+   "e": "e/i-booked-a-room-for-two-nights-6678ae.mp3",
+   "h": "h/book-e7e694.mp3",
+   "ipa": "/bʊk/",
+   "src": "wiktionary:en-us-book.ogg",
+   "w": "w/to-book-baa4a8.mp3"
+  },
   "to borrow": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/can-i-borrow-your-pen-1f1dd9.mp3",
    "h": "h/borrow-72cd0a.mp3",
    "ipa": "/ˈbɑɹ.oʊ/",
    "src": "wiktionary:en-us-borrow.ogg",
    "w": "w/to-borrow-eed188.mp3"
   },
+  "to break down": {
+   "dict": 4,
+   "e": "e/our-car-broke-down-on-the-way-9162bd.mp3",
+   "ipa": "",
+   "w": "w/to-break-down-717d57.mp3"
+  },
+  "to break up": {
+   "dict": 4,
+   "e": "e/they-broke-up-last-month-2f1094.mp3",
+   "ipa": "",
+   "w": "w/to-break-up-3bd1cf.mp3"
+  },
+  "to breathe": {
+   "dict": 4,
+   "e": "e/breathe-slowly-fe6fe4.mp3",
+   "h": "h/breathe-5224fe.mp3",
+   "ipa": "/bɹið/",
+   "src": "wiktionary:En-us-breathe.ogg",
+   "w": "w/to-breathe-164b28.mp3"
+  },
+  "to bring up": {
+   "dict": 4,
+   "e": "e/she-was-brought-up-in-a-small-town-f66c77.mp3",
+   "ipa": "",
+   "w": "w/to-bring-up-eda59a.mp3"
+  },
+  "to call back": {
+   "dict": 4,
+   "e": "e/i-ll-call-you-back-later-8b303e.mp3",
+   "ipa": "",
+   "w": "w/to-call-back-3a50b1.mp3"
+  },
+  "to cancel": {
+   "dict": 4,
+   "e": "e/they-had-to-cancel-the-flight-35d807.mp3",
+   "h": "h/cancel-4fd065.mp3",
+   "ipa": "/ˈkæn.sl̩/",
+   "src": "wiktionary:En-au-cancel.ogg",
+   "w": "w/to-cancel-b51bfa.mp3"
+  },
   "to carry on": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/carry-on-please-d7f91d.mp3",
    "ipa": "",
    "w": "w/to-carry-on-647e57.mp3"
   },
+  "to catch a cold": {
+   "dict": 4,
+   "e": "e/dress-warmly-or-you-ll-catch-a-cold-60a544.mp3",
+   "ipa": "",
+   "w": "w/to-catch-a-cold-a42fc8.mp3"
+  },
+  "to change your mind": {
+   "dict": 4,
+   "e": "e/call-me-if-you-change-your-mind-484da7.mp3",
+   "ipa": "",
+   "w": "w/to-change-your-mind-275059.mp3"
+  },
+  "to charge": {
+   "dict": 4,
+   "e": "e/they-charge-extra-for-parking-25d601.mp3",
+   "h": "h/charge-5ea9c3.mp3",
+   "ipa": "/ˈt͡ʃɑɹd͡ʒ/",
+   "src": "wiktionary:en-us-charge.ogg",
+   "w": "w/to-charge-edee94.mp3"
+  },
+  "to collect": {
+   "dict": 4,
+   "e": "e/he-collects-old-coins-e3c378.mp3",
+   "h": "h/collect-b3d0a8.mp3",
+   "ipa": "/kəˈlɛkt/",
+   "src": "wiktionary:en-us-collect.ogg",
+   "w": "w/to-collect-cd4571.mp3"
+  },
   "to come up with": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/she-came-up-with-a-great-idea-59f8cb.mp3",
    "ipa": "",
    "w": "w/to-come-up-with-395fb5.mp3"
   },
+  "to compete": {
+   "dict": 4,
+   "e": "e/ten-teams-will-compete-510754.mp3",
+   "h": "h/compete-755268.mp3",
+   "ipa": "/kəmˈpiːt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-compete.wav",
+   "w": "w/to-compete-d4691a.mp3"
+  },
+  "to complain": {
+   "dict": 4,
+   "e": "e/he-always-complains-about-the-weather-431bcb.mp3",
+   "h": "h/complain-6a9157.mp3",
+   "ipa": "/kəmˈpleɪn/",
+   "src": "wiktionary:en-us-complain.ogg",
+   "w": "w/to-complain-8909b3.mp3"
+  },
+  "to concentrate": {
+   "dict": 4,
+   "e": "e/i-can-t-concentrate-with-this-noise-ce2a5a.mp3",
+   "h": "h/concentrate-0a45ca.mp3",
+   "ipa": "/ˈkɑn.sən.tɹeɪt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-concentrate.wav",
+   "w": "w/to-concentrate-f434db.mp3"
+  },
+  "to consider": {
+   "dict": 4,
+   "e": "e/we-are-considering-a-move-to-another-cit-1f0b4e.mp3",
+   "h": "h/consider-9cef6d.mp3",
+   "ipa": "/kənˈsɪd.əɹ/",
+   "src": "wiktionary:en-us-consider.ogg",
+   "w": "w/to-consider-1cb0ee.mp3"
+  },
+  "to contain": {
+   "dict": 4,
+   "e": "e/this-drink-contains-a-lot-of-sugar-9ba83d.mp3",
+   "h": "h/contain-c1380a.mp3",
+   "ipa": "/kənˈteɪn/",
+   "src": "wiktionary:en-ca-contain.ogg",
+   "w": "w/to-contain-cfff06.mp3"
+  },
+  "to convince": {
+   "dict": 4,
+   "e": "e/she-convinced-me-to-stay-456849.mp3",
+   "h": "h/convince-485958.mp3",
+   "ipa": "/kənˈvɪns/",
+   "src": "wiktionary:En-us-convince.ogg",
+   "w": "w/to-convince-744d7a.mp3"
+  },
+  "to correct": {
+   "dict": 4,
+   "e": "e/the-teacher-corrected-my-mistakes-8a1d4c.mp3",
+   "h": "h/correct-3179a6.mp3",
+   "ipa": "/kəˈɹɛkt/",
+   "src": "wiktionary:en-us-correct.ogg",
+   "w": "w/to-correct-cb902f.mp3"
+  },
+  "to cost": {
+   "dict": 4,
+   "e": "e/how-much-does-it-cost-a6c0dd.mp3",
+   "h": "h/cost-885dc4.mp3",
+   "ipa": "/kɒst/",
+   "src": "wiktionary:en-us-cost.ogg",
+   "w": "w/to-cost-15261a.mp3"
+  },
+  "to cut down on": {
+   "dict": 4,
+   "e": "e/i-m-trying-to-cut-down-on-sugar-a34165.mp3",
+   "ipa": "",
+   "w": "w/to-cut-down-on-2eb06b.mp3"
+  },
+  "to deal with": {
+   "dict": 4,
+   "e": "e/i-have-to-deal-with-many-problems-at-wor-75e5ee.mp3",
+   "ipa": "",
+   "w": "w/to-deal-with-e247f3.mp3"
+  },
+  "to decorate": {
+   "dict": 4,
+   "e": "e/we-decorated-the-living-room-bdd766.mp3",
+   "h": "h/decorate-836a8e.mp3",
+   "ipa": "/ˈdɛkəɹeɪt/",
+   "src": "wiktionary:en-us-decorate.ogg",
+   "w": "w/to-decorate-440495.mp3"
+  },
+  "to delete": {
+   "dict": 4,
+   "e": "e/i-deleted-the-message-by-mistake-0412c4.mp3",
+   "h": "h/delete-948598.mp3",
+   "ipa": "/dɪˈliːt/",
+   "src": "wiktionary:en-us-delete.ogg",
+   "w": "w/to-delete-611a91.mp3"
+  },
+  "to deliver": {
+   "dict": 4,
+   "e": "e/they-deliver-pizza-until-midnight-9883f1.mp3",
+   "h": "h/deliver-c3a71b.mp3",
+   "ipa": "/dɪˈlɪv.ɚ/",
+   "src": "wiktionary:En-us-deliver.ogg",
+   "w": "w/to-deliver-a0e1b4.mp3"
+  },
+  "to deny": {
+   "dict": 4,
+   "e": "e/he-denied-everything-e5bdf4.mp3",
+   "h": "h/deny-1d16dc.mp3",
+   "ipa": "/dəˈnaɪ/",
+   "src": "wiktionary:en-us-deny.ogg",
+   "w": "w/to-deny-73ce04.mp3"
+  },
+  "to depend on": {
+   "dict": 4,
+   "e": "e/it-depends-on-the-weather-33ae7d.mp3",
+   "ipa": "",
+   "w": "w/to-depend-on-65035f.mp3"
+  },
+  "to describe": {
+   "dict": 4,
+   "e": "e/can-you-describe-the-man-205ada.mp3",
+   "h": "h/describe-dbc350.mp3",
+   "ipa": "[dɪˈskɹaɪ̯b]",
+   "src": "wiktionary:En-us-describe.ogg",
+   "w": "w/to-describe-793035.mp3"
+  },
+  "to deserve": {
+   "dict": 4,
+   "e": "e/you-deserve-a-rest-b45cdd.mp3",
+   "h": "h/deserve-1fbe43.mp3",
+   "ipa": "/dɪˈzɜːv/",
+   "src": "wiktionary:en-us-deserve.ogg",
+   "w": "w/to-deserve-b4ae5b.mp3"
+  },
   "to determine": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/we-need-to-determine-the-cause-35a541.mp3",
    "h": "h/determine-df9d6b.mp3",
    "ipa": "/dɪˈtɜː(ɹ).mɪn/",
    "src": "wiktionary:en-us-determine.ogg",
    "w": "w/to-determine-0460fb.mp3"
   },
+  "to develop": {
+   "dict": 4,
+   "e": "e/we-need-to-develop-new-skills-ff7f4b.mp3",
+   "h": "h/develop-418a6b.mp3",
+   "ipa": "/dɪˈvɛl.əp/",
+   "src": "wiktionary:en-us-develop.ogg",
+   "w": "w/to-develop-593ca3.mp3"
+  },
+  "to disagree": {
+   "dict": 4,
+   "e": "e/i-disagree-with-this-idea-45f35b.mp3",
+   "h": "h/disagree-f58443.mp3",
+   "ipa": "/dɪsəˈɡɹi/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-disagree.wav",
+   "w": "w/to-disagree-c064ad.mp3"
+  },
+  "to discuss": {
+   "dict": 4,
+   "e": "e/let-s-discuss-it-tomorrow-f5728a.mp3",
+   "h": "h/discuss-1b7949.mp3",
+   "ipa": "/dɪˈskʌs/",
+   "src": "wiktionary:En-us-discuss.ogg",
+   "w": "w/to-discuss-8bbc9f.mp3"
+  },
+  "to do your best": {
+   "dict": 4,
+   "e": "e/just-do-your-best-cccdd8.mp3",
+   "ipa": "",
+   "w": "w/to-do-your-best-f23eb7.mp3"
+  },
+  "to download": {
+   "dict": 4,
+   "e": "e/download-the-app-for-free-4b0fcf.mp3",
+   "h": "h/download-817248.mp3",
+   "ipa": "/ˈdaʊnˌloʊd/",
+   "src": "wiktionary:en-us-download.ogg",
+   "w": "w/to-download-a87fdd.mp3"
+  },
+  "to earn": {
+   "dict": 4,
+   "e": "e/he-earns-a-lot-of-money-0a3152.mp3",
+   "h": "h/earn-ae6844.mp3",
+   "ipa": "/ɝn/",
+   "src": "wiktionary:en-us-earn.ogg",
+   "w": "w/to-earn-d5820e.mp3"
+  },
+  "to encourage": {
+   "dict": 4,
+   "e": "e/my-teacher-encouraged-me-to-read-more-7440c4.mp3",
+   "h": "h/encourage-808cae.mp3",
+   "ipa": "/ɪnˈkʌɹ.ɪd͡ʒ/",
+   "src": "wiktionary:En-us-encourage.ogg",
+   "w": "w/to-encourage-0a6c17.mp3"
+  },
+  "to end up": {
+   "dict": 4,
+   "e": "e/we-ended-up-in-a-small-caf-ec2932.mp3",
+   "ipa": "",
+   "w": "w/to-end-up-8f2d0c.mp3"
+  },
+  "to enjoy": {
+   "dict": 4,
+   "e": "e/i-enjoy-cooking-4a08b1.mp3",
+   "h": "h/enjoy-540e18.mp3",
+   "ipa": "/ɛnˈd͡ʒɔɪ/",
+   "src": "wiktionary:en-us-enjoy.ogg",
+   "w": "w/to-enjoy-2241cf.mp3"
+  },
+  "to examine": {
+   "dict": 4,
+   "e": "e/the-doctor-examined-my-throat-89955e.mp3",
+   "h": "h/examine-8fcd29.mp3",
+   "ipa": "/ɪɡˈzæmɪn/",
+   "src": "wiktionary:en-us-examine.ogg",
+   "w": "w/to-examine-9eec44.mp3"
+  },
+  "to exchange": {
+   "dict": 4,
+   "e": "e/can-i-exchange-these-shoes-b048e8.mp3",
+   "h": "h/exchange-a3497f.mp3",
+   "ipa": "/ɛksˈt͡ʃeɪnd͡ʒ/",
+   "src": "wiktionary:en-us-exchange.ogg",
+   "w": "w/to-exchange-96902d.mp3"
+  },
+  "to expect": {
+   "dict": 4,
+   "e": "e/i-didn-t-expect-to-see-you-here-724c24.mp3",
+   "h": "h/expect-ff93c4.mp3",
+   "ipa": "/ɪkˈspɛkt/",
+   "src": "wiktionary:en-us-expect.ogg",
+   "w": "w/to-expect-f71ae7.mp3"
+  },
+  "to explain": {
+   "dict": 4,
+   "e": "e/can-you-explain-this-rule-again-6c2a4f.mp3",
+   "h": "h/explain-f7c138.mp3",
+   "ipa": "/ɪkˈspleɪn/",
+   "src": "wiktionary:en-us-explain.ogg",
+   "w": "w/to-explain-e947ae.mp3"
+  },
+  "to explore": {
+   "dict": 4,
+   "e": "e/we-explored-the-old-town-304c66.mp3",
+   "h": "h/explore-9dda97.mp3",
+   "ipa": "/ɪkˈsplɔː/",
+   "src": "wiktionary:En-us-explore.ogg",
+   "w": "w/to-explore-bb8b33.mp3"
+  },
+  "to fail": {
+   "dict": 4,
+   "e": "e/he-failed-the-exam-cbbe0b.mp3",
+   "h": "h/fail-a602e2.mp3",
+   "ipa": "/feɪl/",
+   "src": "wiktionary:en-us-fail.ogg",
+   "w": "w/to-fail-ff2fc0.mp3"
+  },
+  "to fall in love": {
+   "dict": 4,
+   "e": "e/they-fell-in-love-in-paris-2349e8.mp3",
+   "ipa": "",
+   "w": "w/to-fall-in-love-588159.mp3"
+  },
+  "to feel like": {
+   "dict": 4,
+   "e": "e/i-feel-like-a-cup-of-tea-5ecc57.mp3",
+   "ipa": "",
+   "w": "w/to-feel-like-302073.mp3"
+  },
   "to figure out": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/i-can-t-figure-out-this-problem-9e9670.mp3",
    "ipa": "",
    "w": "w/to-figure-out-3d7e73.mp3"
   },
+  "to fill in": {
+   "dict": 4,
+   "e": "e/please-fill-in-this-form-3e4f61.mp3",
+   "ipa": "",
+   "w": "w/to-fill-in-a21311.mp3"
+  },
+  "to find out": {
+   "dict": 4,
+   "e": "e/i-need-to-find-out-the-price-bd0a1d.mp3",
+   "ipa": "",
+   "w": "w/to-find-out-c46b7e.mp3"
+  },
+  "to fire": {
+   "dict": 4,
+   "e": "e/he-was-fired-last-month-e2cf2c.mp3",
+   "h": "h/fire-1da840.mp3",
+   "ipa": "[ˈfäːɚ]",
+   "src": "wiktionary:En-us-fire.ogg",
+   "w": "w/to-fire-084701.mp3"
+  },
+  "to fix": {
+   "dict": 4,
+   "e": "e/he-fixed-the-door-94ae30.mp3",
+   "h": "h/fix-99f707.mp3",
+   "ipa": "/fɪks/",
+   "src": "wiktionary:en-us-fix.ogg",
+   "w": "w/to-fix-29e80b.mp3"
+  },
   "to follow up": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/i-ll-follow-up-with-you-tomorrow-7f09be.mp3",
    "ipa": "",
    "w": "w/to-follow-up-e622ce.mp3"
   },
+  "to force": {
+   "dict": 4,
+   "e": "e/nobody-forced-you-to-come-1f2c1e.mp3",
+   "h": "h/force-fafec1.mp3",
+   "ipa": "/foːɹs/",
+   "src": "wiktionary:en-us-force.ogg",
+   "w": "w/to-force-fbccc1.mp3"
+  },
+  "to fry": {
+   "dict": 4,
+   "e": "e/fry-the-onions-for-five-minutes-fe3863.mp3",
+   "h": "h/fry-00c710.mp3",
+   "ipa": "/fɹaɪ/",
+   "src": "wiktionary:en-us-fry.ogg",
+   "w": "w/to-fry-99b924.mp3"
+  },
+  "to get along": {
+   "dict": 4,
+   "e": "e/we-get-along-very-well-382423.mp3",
+   "ipa": "",
+   "w": "w/to-get-along-e55ce8.mp3"
+  },
+  "to get better": {
+   "dict": 4,
+   "e": "e/i-hope-you-get-better-soon-46f86c.mp3",
+   "ipa": "",
+   "w": "w/to-get-better-65d539.mp3"
+  },
+  "to get lost": {
+   "dict": 4,
+   "e": "e/we-got-lost-in-the-old-town-8743b9.mp3",
+   "ipa": "",
+   "w": "w/to-get-lost-3925d7.mp3"
+  },
+  "to get married": {
+   "dict": 4,
+   "e": "e/they-got-married-last-year-1af92f.mp3",
+   "ipa": "",
+   "w": "w/to-get-married-a43a2d.mp3"
+  },
+  "to get on with": {
+   "dict": 4,
+   "e": "e/i-get-on-well-with-my-colleagues-047e67.mp3",
+   "ipa": "",
+   "w": "w/to-get-on-with-b5e487.mp3"
+  },
+  "to get rid of": {
+   "dict": 4,
+   "e": "e/i-want-to-get-rid-of-these-old-clothes-bc74f1.mp3",
+   "ipa": "",
+   "w": "w/to-get-rid-of-c18a95.mp3"
+  },
+  "to get up": {
+   "dict": 4,
+   "e": "e/i-get-up-at-seven-e59169.mp3",
+   "ipa": "",
+   "w": "w/to-get-up-ab1691.mp3"
+  },
+  "to give back": {
+   "dict": 4,
+   "e": "e/please-give-back-my-book-5c0b39.mp3",
+   "ipa": "",
+   "w": "w/to-give-back-b3cb52.mp3"
+  },
   "to give up": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/don-t-give-up-aaf4d2.mp3",
    "ipa": "",
    "w": "w/to-give-up-1821b8.mp3"
   },
+  "to go on": {
+   "dict": 4,
+   "e": "e/what-s-going-on-9e2f8c.mp3",
+   "ipa": "",
+   "w": "w/to-go-on-0c03fb.mp3"
+  },
+  "to graduate": {
+   "dict": 4,
+   "e": "e/he-graduated-from-college-last-year-646736.mp3",
+   "h": "h/graduate-2c6a6b.mp3",
+   "ipa": "/ˈɡɹæd͡ʒueɪt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-graduate (noun).wav",
+   "w": "w/to-graduate-5c464e.mp3"
+  },
+  "to greet": {
+   "dict": 4,
+   "e": "e/she-greeted-us-at-the-door-39b470.mp3",
+   "h": "h/greet-35ff71.mp3",
+   "ipa": "/ɡɹiːt/",
+   "src": "wiktionary:en-us-greet.ogg",
+   "w": "w/to-greet-1c7953.mp3"
+  },
+  "to grow": {
+   "dict": 4,
+   "e": "e/we-grow-tomatoes-in-the-garden-23a014.mp3",
+   "h": "h/grow-c7c5d7.mp3",
+   "ipa": "/ˈɡɹɜʊ̯/",
+   "src": "wiktionary:en-us-grow.ogg",
+   "w": "w/to-grow-dd2915.mp3"
+  },
+  "to hand in": {
+   "dict": 4,
+   "e": "e/hand-in-your-reports-by-friday-e2530a.mp3",
+   "ipa": "",
+   "w": "w/to-hand-in-738c3e.mp3"
+  },
+  "to happen": {
+   "dict": 4,
+   "e": "e/what-happened-yesterday-347955.mp3",
+   "h": "h/happen-53571a.mp3",
+   "ipa": "/ˈhæpən/",
+   "src": "wiktionary:en-us-happen.ogg",
+   "w": "w/to-happen-a64060.mp3"
+  },
+  "to have fun": {
+   "dict": 4,
+   "ipa": "",
+   "w": "w/to-have-fun-0e55d9.mp3"
+  },
+  "to hire": {
+   "dict": 4,
+   "e": "e/they-hired-two-new-designers-5f1635.mp3",
+   "h": "h/hire-c498ae.mp3",
+   "ipa": "/ˈhaɪɹ/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-hire.wav",
+   "w": "w/to-hire-ffc5e3.mp3"
+  },
+  "to hurt": {
+   "dict": 4,
+   "e": "e/my-leg-hurts-0c99a8.mp3",
+   "h": "h/hurt-7ee201.mp3",
+   "ipa": "/hɜːt/",
+   "src": "wiktionary:en-us-hurt.ogg",
+   "w": "w/to-hurt-467a04.mp3"
+  },
+  "to improve": {
+   "dict": 4,
+   "e": "e/i-want-to-improve-my-english-079e32.mp3",
+   "h": "h/improve-69a429.mp3",
+   "ipa": "/ɪmˈpɹuːv/",
+   "src": "wiktionary:en-us-improve.ogg",
+   "w": "w/to-improve-4d2db3.mp3"
+  },
+  "to include": {
+   "dict": 4,
+   "e": "e/the-price-includes-breakfast-e34efc.mp3",
+   "h": "h/include-d3ecb0.mp3",
+   "ipa": "/ɪnˈkluːd/",
+   "src": "wiktionary:en-us-include.ogg",
+   "w": "w/to-include-0530ef.mp3"
+  },
+  "to increase": {
+   "dict": 4,
+   "e": "e/prices-increased-last-year-7c7673.mp3",
+   "h": "h/increase-f9c975.mp3",
+   "ipa": "/ɪnˈkɹiːs/",
+   "src": "wiktionary:en-us-increase-verb.ogg",
+   "w": "w/to-increase-36b7f1.mp3"
+  },
+  "to injure": {
+   "dict": 4,
+   "e": "e/she-injured-her-knee-39d5f5.mp3",
+   "h": "h/injure-6a7d2e.mp3",
+   "ipa": "/ˈɪn.d͡ʒɚ/",
+   "src": "wiktionary:en-us-injure.ogg",
+   "w": "w/to-injure-086826.mp3"
+  },
+  "to install": {
+   "dict": 4,
+   "e": "e/install-the-latest-update-cf1a0b.mp3",
+   "h": "h/install-89fb51.mp3",
+   "ipa": "/ɪnˈstɑl/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-install.wav",
+   "w": "w/to-install-bb4de8.mp3"
+  },
+  "to intend": {
+   "dict": 4,
+   "e": "e/i-intend-to-finish-it-today-44bf6e.mp3",
+   "h": "h/intend-f72c7b.mp3",
+   "ipa": "/ɪnˈtɛnd/",
+   "src": "wiktionary:en-us-intend.ogg",
+   "w": "w/to-intend-ccf904.mp3"
+  },
+  "to interrupt": {
+   "dict": 4,
+   "e": "e/sorry-to-interrupt-you-b4806c.mp3",
+   "h": "h/interrupt-691911.mp3",
+   "ipa": "/ˌɪntəˈɹʌpt/",
+   "src": "wiktionary:en-us-interrupt.ogg",
+   "w": "w/to-interrupt-75478e.mp3"
+  },
+  "to introduce": {
+   "dict": 4,
+   "e": "e/let-me-introduce-my-friend-8cc81d.mp3",
+   "h": "h/introduce-a69afe.mp3",
+   "ipa": "/ˌɪntɹəˈdus/",
+   "src": "wiktionary:en-us-introduce.ogg",
+   "w": "w/to-introduce-73b599.mp3"
+  },
+  "to invite": {
+   "dict": 4,
+   "e": "e/she-invited-me-to-her-party-ad7a56.mp3",
+   "h": "h/invite-f52bc4.mp3",
+   "ipa": "/ɪnˈvaɪt/",
+   "src": "wiktionary:En-us-invite.ogg",
+   "w": "w/to-invite-72751b.mp3"
+  },
+  "to iron": {
+   "dict": 4,
+   "e": "e/i-need-to-iron-my-shirt-b8c69a.mp3",
+   "h": "h/iron-b6a8f8.mp3",
+   "ipa": "/ˈaɪ.ɚn/",
+   "src": "wiktionary:En-us-iron.ogg",
+   "w": "w/to-iron-6bd27b.mp3"
+  },
+  "to join": {
+   "dict": 4,
+   "e": "e/i-joined-a-running-club-0efe1f.mp3",
+   "h": "h/join-c455b3.mp3",
+   "ipa": "/ˈd͡ʒɔɪn/",
+   "src": "wiktionary:en-us-join.ogg",
+   "w": "w/to-join-ec47b1.mp3"
+  },
+  "to joke": {
+   "dict": 4,
+   "e": "e/i-was-only-joking-bb8b0d.mp3",
+   "h": "h/joke-355c72.mp3",
+   "ipa": "/ˈd͡ʒoʊ̯k/",
+   "src": "wiktionary:En-us-joke.ogg",
+   "w": "w/to-joke-e2ebd9.mp3"
+  },
+  "to keep in touch": {
+   "dict": 4,
+   "e": "e/let-s-keep-in-touch-cdaace.mp3",
+   "ipa": "",
+   "w": "w/to-keep-in-touch-36f427.mp3"
+  },
+  "to keep up with": {
+   "dict": 4,
+   "e": "e/it-s-hard-to-keep-up-with-the-news-c82dc2.mp3",
+   "ipa": "",
+   "w": "w/to-keep-up-with-b325ef.mp3"
+  },
+  "to land": {
+   "dict": 4,
+   "e": "e/the-plane-landed-on-time-494290.mp3",
+   "h": "h/land-3d3b60.mp3",
+   "ipa": "[ɫeə̯nd]",
+   "src": "wiktionary:en-us-land.ogg",
+   "w": "w/to-land-511254.mp3"
+  },
+  "to last": {
+   "dict": 4,
+   "e": "e/the-meeting-lasted-two-hours-22d886.mp3",
+   "h": "h/last-213ed3.mp3",
+   "ipa": "/læst/",
+   "src": "wiktionary:En-us-last.ogg",
+   "w": "w/to-last-a5f5dc.mp3"
+  },
   "to lend": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/could-you-lend-me-some-money-f78d55.mp3",
    "h": "h/lend-5e4fc9.mp3",
    "ipa": "/ˈlɪ̟nd/",
    "src": "wiktionary:En-us-lend.ogg",
    "w": "w/to-lend-5ec97a.mp3"
   },
+  "to lie": {
+   "dict": 4,
+   "e": "e/don-t-lie-to-me-ee0f26.mp3",
+   "h": "h/lie-54e2fc.mp3",
+   "ipa": "/laɪ/",
+   "src": "wiktionary:en-us-lie.ogg",
+   "w": "w/to-lie-3ffc9c.mp3"
+  },
+  "to lock": {
+   "dict": 4,
+   "e": "e/don-t-forget-to-lock-the-door-c9ef8c.mp3",
+   "h": "h/lock-e11779.mp3",
+   "ipa": "/lɑk/",
+   "src": "wiktionary:en-us-lock.ogg",
+   "w": "w/to-lock-131a40.mp3"
+  },
+  "to log in": {
+   "dict": 4,
+   "e": "e/i-can-t-log-in-to-my-account-8b962e.mp3",
+   "ipa": "",
+   "w": "w/to-log-in-81cc35.mp3"
+  },
+  "to look after": {
+   "dict": 4,
+   "e": "e/can-you-look-after-my-dog-9656d2.mp3",
+   "ipa": "",
+   "w": "w/to-look-after-7202d8.mp3"
+  },
+  "to look for": {
+   "dict": 4,
+   "e": "e/i-m-looking-for-my-keys-0725b4.mp3",
+   "ipa": "",
+   "w": "w/to-look-for-624e30.mp3"
+  },
   "to look forward to": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/i-look-forward-to-your-reply-a6edff.mp3",
    "ipa": "",
    "w": "w/to-look-forward-to-ea6566.mp3"
   },
+  "to look like": {
+   "dict": 4,
+   "e": "e/you-look-like-your-father-a479bf.mp3",
+   "ipa": "",
+   "w": "w/to-look-like-d3d70a.mp3"
+  },
+  "to look up": {
+   "dict": 4,
+   "e": "e/look-up-this-word-in-the-dictionary-8b99d6.mp3",
+   "ipa": "",
+   "w": "w/to-look-up-45e7c6.mp3"
+  },
+  "to lose": {
+   "dict": 4,
+   "e": "e/we-lost-the-game-1394ee.mp3",
+   "h": "h/lose-4db924.mp3",
+   "ipa": "/luz/",
+   "src": "wiktionary:en-us-lose.ogg",
+   "w": "w/to-lose-0e72d5.mp3"
+  },
+  "to make a decision": {
+   "dict": 4,
+   "e": "e/i-need-to-make-a-decision-today-d4db88.mp3",
+   "ipa": "",
+   "w": "w/to-make-a-decision-0a849f.mp3"
+  },
+  "to make a mistake": {
+   "dict": 4,
+   "e": "e/don-t-worry-if-you-make-a-mistake-5a24d2.mp3",
+   "ipa": "",
+   "w": "w/to-make-a-mistake-738f02.mp3"
+  },
+  "to make friends": {
+   "dict": 4,
+   "e": "e/it-s-easy-to-make-friends-here-d3ad38.mp3",
+   "ipa": "",
+   "w": "w/to-make-friends-ad59a6.mp3"
+  },
+  "to make money": {
+   "dict": 4,
+   "e": "e/he-wants-to-make-money-online-15de22.mp3",
+   "ipa": "",
+   "w": "w/to-make-money-8dfb7e.mp3"
+  },
+  "to make sense": {
+   "dict": 4,
+   "e": "e/this-doesn-t-make-sense-b2d864.mp3",
+   "ipa": "",
+   "w": "w/to-make-sense-13a1b9.mp3"
+  },
+  "to make up": {
+   "dict": 4,
+   "e": "e/he-made-up-a-funny-story-81ae7e.mp3",
+   "ipa": "",
+   "w": "w/to-make-up-bdb76d.mp3"
+  },
+  "to manage": {
+   "dict": 4,
+   "e": "e/i-managed-to-fix-the-bike-30ea2e.mp3",
+   "h": "h/manage-3f282f.mp3",
+   "ipa": "/ˈmæn.ɪd͡ʒ/",
+   "src": "wiktionary:en-us-manage.ogg",
+   "w": "w/to-manage-d47b74.mp3"
+  },
+  "to melt": {
+   "dict": 4,
+   "e": "e/the-snow-melted-quickly-0b033b.mp3",
+   "h": "h/melt-c6a0f6.mp3",
+   "ipa": "/mɛlt/",
+   "src": "wiktionary:en-us-melt.ogg",
+   "w": "w/to-melt-e8208e.mp3"
+  },
+  "to memorize": {
+   "dict": 4,
+   "e": "e/i-memorize-ten-words-a-day-c4aaf3.mp3",
+   "h": "h/memorize-092133.mp3",
+   "ipa": "/ˈmɛm.əˌɹaɪ̯z/",
+   "src": "wiktionary:en-us-memorize.ogg",
+   "w": "w/to-memorize-f1cc7f.mp3"
+  },
+  "to mention": {
+   "dict": 4,
+   "e": "e/she-didn-t-mention-the-price-1f5468.mp3",
+   "h": "h/mention-7ee02f.mp3",
+   "ipa": "/ˈmɛnʃən/",
+   "src": "wiktionary:en-us-mention.ogg",
+   "w": "w/to-mention-dca371.mp3"
+  },
+  "to miss": {
+   "dict": 4,
+   "e": "e/i-miss-my-family-31c910.mp3",
+   "h": "h/miss-f749d7.mp3",
+   "ipa": "/mɪs/",
+   "src": "wiktionary:En-us-miss.ogg",
+   "w": "w/to-miss-59bde1.mp3"
+  },
+  "to move": {
+   "dict": 4,
+   "e": "e/we-moved-to-a-new-city-last-year-95af9a.mp3",
+   "h": "h/move-379d6c.mp3",
+   "ipa": "/muːv/",
+   "src": "wiktionary:en-us-move.ogg",
+   "w": "w/to-move-e87686.mp3"
+  },
+  "to negotiate": {
+   "dict": 4,
+   "e": "e/we-need-to-negotiate-the-price-a1b502.mp3",
+   "h": "h/negotiate-0c1a64.mp3",
+   "ipa": "/nəˈɡoʊ.ʃi.eɪt/",
+   "src": "wiktionary:en-us-negotiate.ogg",
+   "w": "w/to-negotiate-171e45.mp3"
+  },
+  "to notice": {
+   "dict": 4,
+   "e": "e/did-you-notice-anything-strange-062165.mp3",
+   "h": "h/notice-a81b09.mp3",
+   "ipa": "/ˈnəʊ.tɪs/",
+   "src": "wiktionary:en-us-notice.ogg",
+   "w": "w/to-notice-95c7b9.mp3"
+  },
+  "to offer": {
+   "dict": 4,
+   "e": "e/they-offered-me-a-job-f9ff43.mp3",
+   "h": "h/offer-98362e.mp3",
+   "ipa": "/ˈɒfə/",
+   "src": "wiktionary:en-us-offer.ogg",
+   "w": "w/to-offer-cea70a.mp3"
+  },
+  "to order": {
+   "dict": 4,
+   "e": "e/are-you-ready-to-order-42ac52.mp3",
+   "h": "h/order-cce55e.mp3",
+   "ipa": "/ˈɔː.də/",
+   "src": "wiktionary:en-us-order.ogg",
+   "w": "w/to-order-08bf7f.mp3"
+  },
+  "to organize": {
+   "dict": 4,
+   "e": "e/she-organized-the-conference-7992bd.mp3",
+   "h": "h/organize-0be178.mp3",
+   "ipa": "/ˈɔɹɡənaɪz/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-organize.wav",
+   "w": "w/to-organize-72c8c7.mp3"
+  },
+  "to owe": {
+   "dict": 4,
+   "e": "e/i-owe-you-ten-dollars-3aa041.mp3",
+   "h": "h/owe-f66d5d.mp3",
+   "ipa": "/oʊ/",
+   "src": "wiktionary:en-us-o.ogg",
+   "w": "w/to-owe-724f96.mp3"
+  },
+  "to own": {
+   "dict": 4,
+   "e": "e/they-own-two-cars-45bd68.mp3",
+   "h": "h/own-fbf63c.mp3",
+   "ipa": "/oʊn/",
+   "src": "wiktionary:En-us-own.ogg",
+   "w": "w/to-own-7ec51c.mp3"
+  },
+  "to pack": {
+   "dict": 4,
+   "e": "e/i-need-to-pack-my-suitcase-c02221.mp3",
+   "h": "h/pack-6acd62.mp3",
+   "ipa": "/pæk/",
+   "src": "wiktionary:En-au-pack.ogg",
+   "w": "w/to-pack-d61d34.mp3"
+  },
+  "to pass an exam": {
+   "dict": 4,
+   "e": "e/i-hope-to-pass-an-exam-next-week-d9b408.mp3",
+   "ipa": "",
+   "w": "w/to-pass-an-exam-ab7dda.mp3"
+  },
+  "to pay attention": {
+   "dict": 4,
+   "e": "e/pay-attention-to-the-details-5ae48f.mp3",
+   "ipa": "",
+   "w": "w/to-pay-attention-9f2ea2.mp3"
+  },
+  "to persuade": {
+   "dict": 4,
+   "e": "e/he-persuaded-me-to-buy-it-4a9612.mp3",
+   "h": "h/persuade-cd0de7.mp3",
+   "ipa": "/pə(ɹ)ˈsweɪd/",
+   "src": "wiktionary:en-us-persuade.ogg",
+   "w": "w/to-persuade-ef50c9.mp3"
+  },
+  "to pick up": {
+   "dict": 4,
+   "e": "e/i-ll-pick-you-up-at-six-c05488.mp3",
+   "ipa": "",
+   "w": "w/to-pick-up-540047.mp3"
+  },
+  "to point out": {
+   "dict": 4,
+   "e": "e/she-pointed-out-a-mistake-3f7137.mp3",
+   "ipa": "",
+   "w": "w/to-point-out-e20a44.mp3"
+  },
+  "to post": {
+   "dict": 4,
+   "e": "e/he-posted-a-photo-online-ff96bb.mp3",
+   "h": "h/post-9b4660.mp3",
+   "ipa": "/poʊst/",
+   "src": "wiktionary:en-us-post.ogg",
+   "w": "w/to-post-9d731e.mp3"
+  },
   "to postpone": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/we-had-to-postpone-the-meeting-e8dcb2.mp3",
    "h": "h/postpone-cdbd03.mp3",
    "ipa": "/poʊstˈpoʊn/",
    "src": "wiktionary:en-us-postpone.ogg",
    "w": "w/to-postpone-31d74b.mp3"
   },
+  "to practice": {
+   "dict": 4,
+   "e": "e/practice-speaking-every-day-718ec2.mp3",
+   "h": "h/practice-e17674.mp3",
+   "ipa": "/ˈpɹæktɪs/",
+   "src": "wiktionary:en-us-practice.ogg",
+   "w": "w/to-practice-aafe79.mp3"
+  },
+  "to prefer": {
+   "dict": 4,
+   "e": "e/i-prefer-tea-to-coffee-b03c62.mp3",
+   "h": "h/prefer-866e90.mp3",
+   "ipa": "[pɹɪˈfɝ]",
+   "src": "wiktionary:en-us-prefer.ogg",
+   "w": "w/to-prefer-43faa0.mp3"
+  },
+  "to prevent": {
+   "dict": 4,
+   "e": "e/washing-your-hands-can-prevent-illness-c0733c.mp3",
+   "h": "h/prevent-1b2bf1.mp3",
+   "ipa": "/pɹɪˈvɛnt/",
+   "src": "wiktionary:en-us-prevent.ogg",
+   "w": "w/to-prevent-b178fb.mp3"
+  },
+  "to print": {
+   "dict": 4,
+   "e": "e/can-you-print-this-document-ee3c0b.mp3",
+   "h": "h/print-6d0d58.mp3",
+   "ipa": "/pɹɪnt/",
+   "src": "wiktionary:en-us-print.ogg",
+   "w": "w/to-print-ae7c79.mp3"
+  },
+  "to promise": {
+   "dict": 4,
+   "e": "e/i-promise-to-call-you-f45e06.mp3",
+   "h": "h/promise-8c2fd8.mp3",
+   "ipa": "/ˈpɹɒmɪs/",
+   "src": "wiktionary:en-us-promise.ogg",
+   "w": "w/to-promise-0e8299.mp3"
+  },
+  "to protect": {
+   "dict": 4,
+   "e": "e/sunglasses-protect-your-eyes-49e008.mp3",
+   "h": "h/protect-145969.mp3",
+   "ipa": "/pɹəˈtɛkt/",
+   "src": "wiktionary:en-us-protect.ogg",
+   "w": "w/to-protect-879e4e.mp3"
+  },
+  "to protest": {
+   "dict": 4,
+   "e": "e/people-protested-in-the-streets-3e9a38.mp3",
+   "h": "h/protest-3060df.mp3",
+   "ipa": "/pɹəˈtɛst/",
+   "src": "wiktionary:en-us-protest-noun.ogg",
+   "w": "w/to-protest-f95adf.mp3"
+  },
+  "to provide": {
+   "dict": 4,
+   "e": "e/the-hotel-provides-free-towels-c03ab6.mp3",
+   "h": "h/provide-4ab69d.mp3",
+   "ipa": "/pɹəˈvaɪd/",
+   "src": "wiktionary:en-us-provide.ogg",
+   "w": "w/to-provide-9192f0.mp3"
+  },
+  "to put off": {
+   "dict": 4,
+   "e": "e/don-t-put-off-your-homework-8f214e.mp3",
+   "ipa": "",
+   "w": "w/to-put-off-42bc43.mp3"
+  },
+  "to quit": {
+   "dict": 4,
+   "e": "e/she-quit-her-job-to-travel-aea58a.mp3",
+   "h": "h/quit-f59118.mp3",
+   "ipa": "/kwɪt/",
+   "src": "wiktionary:en-us-quit.ogg",
+   "w": "w/to-quit-7f99f2.mp3"
+  },
+  "to raise": {
+   "dict": 4,
+   "e": "e/they-raised-three-children-6c47a5.mp3",
+   "h": "h/raise-657db1.mp3",
+   "ipa": "/ɹeɪz/",
+   "src": "wiktionary:en-us-raise.ogg",
+   "w": "w/to-raise-4eb238.mp3"
+  },
+  "to realize": {
+   "dict": 4,
+   "e": "e/i-realized-that-i-had-lost-my-keys-6504da.mp3",
+   "h": "h/realize-dab96e.mp3",
+   "ipa": "/ˈɹi(.ə)ˌlaɪz/",
+   "src": "wiktionary:En-us-realize.ogg",
+   "w": "w/to-realize-963f57.mp3"
+  },
+  "to recommend": {
+   "dict": 4,
+   "e": "e/can-you-recommend-a-good-book-eb81ca.mp3",
+   "h": "h/recommend-1fe945.mp3",
+   "ipa": "/ˌɹɛkəˈmɛnd/",
+   "src": "wiktionary:en-us-recommend.ogg",
+   "w": "w/to-recommend-6b9c84.mp3"
+  },
+  "to recover": {
+   "dict": 4,
+   "e": "e/he-recovered-quickly-15e473.mp3",
+   "h": "h/recover-55bc5d.mp3",
+   "ipa": "/ɹɪˈkʌvɚ/",
+   "src": "wiktionary:en-us-recover.ogg",
+   "w": "w/to-recover-0f1704.mp3"
+  },
+  "to recycle": {
+   "dict": 4,
+   "e": "e/we-recycle-paper-and-glass-a02434.mp3",
+   "h": "h/recycle-089f4e.mp3",
+   "ipa": "/ɹəˈsaɪkəl/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-recycle.wav",
+   "w": "w/to-recycle-e54bea.mp3"
+  },
+  "to reduce": {
+   "dict": 4,
+   "e": "e/we-need-to-reduce-costs-603e13.mp3",
+   "h": "h/reduce-48c368.mp3",
+   "ipa": "/ɹəˈd(j)us/",
+   "src": "wiktionary:En-us-reduce.ogg",
+   "w": "w/to-reduce-e579af.mp3"
+  },
+  "to refuse": {
+   "dict": 4,
+   "e": "e/he-refused-to-answer-dc7061.mp3",
+   "h": "h/refuse-106f0a.mp3",
+   "ipa": "/ɹɪˈfjuz/",
+   "src": "wiktionary:en-us-refuse.ogg",
+   "w": "w/to-refuse-64f186.mp3"
+  },
+  "to relax": {
+   "dict": 4,
+   "e": "e/i-relax-by-reading-d78d3a.mp3",
+   "h": "h/relax-63bb09.mp3",
+   "ipa": "/ɹɪˈlæks/",
+   "src": "wiktionary:en-us-relax.ogg",
+   "w": "w/to-relax-50d7ee.mp3"
+  },
+  "to rely on": {
+   "dict": 4,
+   "e": "e/you-can-rely-on-me-e72f11.mp3",
+   "ipa": "",
+   "w": "w/to-rely-on-9784b8.mp3"
+  },
+  "to remind": {
+   "dict": 4,
+   "e": "e/remind-me-to-call-mom-1f5210.mp3",
+   "h": "h/remind-aa6f93.mp3",
+   "ipa": "/ɹəˈmaɪnd/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-remind.wav",
+   "w": "w/to-remind-5a64ef.mp3"
+  },
+  "to rent": {
+   "dict": 4,
+   "e": "e/we-rent-an-apartment-downtown-f21284.mp3",
+   "h": "h/rent-511bd3.mp3",
+   "ipa": "/ˈɹɛnt/",
+   "src": "wiktionary:en-us-rent.ogg",
+   "w": "w/to-rent-b7d81b.mp3"
+  },
+  "to repair": {
+   "dict": 4,
+   "e": "e/can-you-repair-my-bike-713110.mp3",
+   "h": "h/repair-e8a7d6.mp3",
+   "ipa": "/ˈɹiːpɛɚ/",
+   "src": "wiktionary:En-us-repair.ogg",
+   "w": "w/to-repair-5dde26.mp3"
+  },
+  "to replace": {
+   "dict": 4,
+   "e": "e/we-need-to-replace-the-old-window-ab3b34.mp3",
+   "h": "h/replace-3cacc7.mp3",
+   "ipa": "/ɹɪˈpleɪs/",
+   "src": "wiktionary:en-us-replace.ogg",
+   "w": "w/to-replace-6cf121.mp3"
+  },
+  "to reply": {
+   "dict": 4,
+   "e": "e/please-reply-to-my-email-3afc07.mp3",
+   "h": "h/reply-a5dfd1.mp3",
+   "ipa": "/ɹɪˈplaɪ/",
+   "src": "wiktionary:en-us-reply.ogg",
+   "w": "w/to-reply-268546.mp3"
+  },
+  "to require": {
+   "dict": 4,
+   "e": "e/this-job-requires-experience-16df4d.mp3",
+   "h": "h/require-623e76.mp3",
+   "ipa": "/ɹɪˈkwaɪɹ/",
+   "src": "wiktionary:en-us-require.ogg",
+   "w": "w/to-require-6b5b42.mp3"
+  },
+  "to respect": {
+   "dict": 4,
+   "e": "e/i-respect-his-opinion-583518.mp3",
+   "h": "h/respect-14012c.mp3",
+   "ipa": "/ɹɪˈspɛkt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-respect.wav",
+   "w": "w/to-respect-e77c4a.mp3"
+  },
+  "to respond": {
+   "dict": 4,
+   "e": "e/she-didn-t-respond-to-my-message-371d18.mp3",
+   "h": "h/respond-c0b789.mp3",
+   "ipa": "/ɹɪˈspɑnd/",
+   "src": "wiktionary:en-us-respond.ogg",
+   "w": "w/to-respond-2c359c.mp3"
+  },
+  "to retire": {
+   "dict": 4,
+   "e": "e/my-father-retired-last-year-31f3c4.mp3",
+   "h": "h/retire-f5a828.mp3",
+   "ipa": "/ɹiˈtaɪɚ/",
+   "src": "wiktionary:en-au-retire.ogg",
+   "w": "w/to-retire-98b002.mp3"
+  },
+  "to return": {
+   "dict": 4,
+   "e": "e/i-want-to-return-this-item-6bc2f2.mp3",
+   "h": "h/return-63143b.mp3",
+   "ipa": "/ɹɪˈtɝn/",
+   "src": "wiktionary:en-us-return.ogg",
+   "w": "w/to-return-5d7856.mp3"
+  },
+  "to review": {
+   "dict": 4,
+   "e": "e/i-need-to-review-for-the-test-702ef1.mp3",
+   "h": "h/review-61e62b.mp3",
+   "ipa": "/ɹɪˈvju/",
+   "src": "wiktionary:En-us-review.ogg",
+   "w": "w/to-review-17446a.mp3"
+  },
+  "to run into": {
+   "dict": 4,
+   "e": "e/i-ran-into-an-old-friend-yesterday-5f238f.mp3",
+   "ipa": "",
+   "w": "w/to-run-into-c7875f.mp3"
+  },
+  "to run late": {
+   "dict": 4,
+   "e": "e/i-m-running-late-sorry-dc10d6.mp3",
+   "ipa": "",
+   "w": "w/to-run-late-995da7.mp3"
+  },
   "to run out of": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/we-ran-out-of-coffee-ad9750.mp3",
    "ipa": "",
    "w": "w/to-run-out-of-cd6287.mp3"
   },
+  "to save": {
+   "dict": 4,
+   "e": "e/i-m-saving-for-a-new-car-4589e1.mp3",
+   "h": "h/save-13a4a1.mp3",
+   "ipa": "/seɪv/",
+   "src": "wiktionary:en-us-save.ogg",
+   "w": "w/to-save-9a10f5.mp3"
+  },
+  "to save time": {
+   "dict": 4,
+   "e": "e/taking-a-taxi-will-save-time-006f64.mp3",
+   "ipa": "",
+   "w": "w/to-save-time-ad676f.mp3"
+  },
+  "to scroll": {
+   "dict": 4,
+   "e": "e/stop-scrolling-and-go-to-sleep-0c23c8.mp3",
+   "h": "h/scroll-c29dac.mp3",
+   "ipa": "/skɹoʊl/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-scroll.wav",
+   "w": "w/to-scroll-396562.mp3"
+  },
+  "to search": {
+   "dict": 4,
+   "e": "e/search-for-it-online-548334.mp3",
+   "h": "h/search-3559d7.mp3",
+   "ipa": "/sɜːt͡ʃ/",
+   "src": "wiktionary:en-us-search.ogg",
+   "w": "w/to-search-333aa9.mp3"
+  },
+  "to set off": {
+   "dict": 4,
+   "e": "e/we-set-off-early-in-the-morning-7b9865.mp3",
+   "ipa": "",
+   "w": "w/to-set-off-fc202d.mp3"
+  },
   "to set up": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/i-need-to-set-up-the-new-laptop-170e2b.mp3",
    "ipa": "",
    "w": "w/to-set-up-95501a.mp3"
   },
+  "to share": {
+   "dict": 4,
+   "e": "e/we-share-a-kitchen-1f2e60.mp3",
+   "h": "h/share-aab90d.mp3",
+   "ipa": "/ʃɛə/",
+   "src": "wiktionary:en-us-share.ogg",
+   "w": "w/to-share-b18eab.mp3"
+  },
+  "to shine": {
+   "dict": 4,
+   "e": "e/the-sun-is-shining-6a81a6.mp3",
+   "h": "h/shine-3da90b.mp3",
+   "ipa": "/ʃaɪn/",
+   "src": "wiktionary:en-us-shine.ogg",
+   "w": "w/to-shine-5c032d.mp3"
+  },
+  "to shout": {
+   "dict": 4,
+   "e": "e/don-t-shout-at-me-4d3381.mp3",
+   "h": "h/shout-d1c79a.mp3",
+   "ipa": "/ʃaʊt/",
+   "src": "wiktionary:en-us-shout.ogg",
+   "w": "w/to-shout-0f29c3.mp3"
+  },
+  "to show up": {
+   "dict": 4,
+   "e": "e/he-didn-t-show-up-for-the-meeting-f9f90c.mp3",
+   "ipa": "",
+   "w": "w/to-show-up-c26bf4.mp3"
+  },
+  "to sneeze": {
+   "dict": 4,
+   "e": "e/i-can-t-stop-sneezing-59f30a.mp3",
+   "h": "h/sneeze-531f5b.mp3",
+   "ipa": "/sniːz/",
+   "src": "wiktionary:en-us-sneeze.ogg",
+   "w": "w/to-sneeze-57a645.mp3"
+  },
+  "to solve": {
+   "dict": 4,
+   "e": "e/we-solved-the-problem-together-64a0c6.mp3",
+   "h": "h/solve-f544e4.mp3",
+   "ipa": "/sɒlv/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-solve.wav",
+   "w": "w/to-solve-17ed9b.mp3"
+  },
+  "to sort out": {
+   "dict": 4,
+   "e": "e/don-t-worry-we-ll-sort-it-out-672252.mp3",
+   "ipa": "",
+   "w": "w/to-sort-out-9504ec.mp3"
+  },
+  "to spend": {
+   "dict": 4,
+   "e": "e/i-spend-too-much-money-on-clothes-3a4641.mp3",
+   "h": "h/spend-91c38f.mp3",
+   "ipa": "/spɪnd/",
+   "src": "wiktionary:en-us-spend.ogg",
+   "w": "w/to-spend-7d9955.mp3"
+  },
+  "to steal": {
+   "dict": 4,
+   "e": "e/someone-wants-to-steal-my-bike-998e7a.mp3",
+   "h": "h/steal-b07df6.mp3",
+   "ipa": "/stiːl/",
+   "src": "wiktionary:en-us-steel.ogg",
+   "w": "w/to-steal-d3d3ad.mp3"
+  },
+  "to succeed": {
+   "dict": 4,
+   "e": "e/she-succeeded-in-her-new-business-88fe7f.mp3",
+   "h": "h/succeed-013b6e.mp3",
+   "ipa": "/səkˈsiːd/",
+   "src": "wiktionary:en-us-succeed.ogg",
+   "w": "w/to-succeed-25a9ef.mp3"
+  },
   "to suggest": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/i-suggest-we-start-now-93d890.mp3",
    "h": "h/suggest-fd0a49.mp3",
    "ipa": "/səˈd͡ʒɛst/",
    "src": "wiktionary:En-us-suggest.ogg",
    "w": "w/to-suggest-4e7a20.mp3"
   },
+  "to support": {
+   "dict": 4,
+   "e": "e/my-family-always-supports-me-a236be.mp3",
+   "h": "h/support-5bdcd3.mp3",
+   "ipa": "/səˈpɔːt/",
+   "src": "wiktionary:en-us-support.ogg",
+   "w": "w/to-support-69bd76.mp3"
+  },
+  "to suppose": {
+   "dict": 4,
+   "e": "e/i-suppose-you-are-right-05ff6c.mp3",
+   "h": "h/suppose-e78b52.mp3",
+   "ipa": "/ˈspoʊz/",
+   "src": "wiktionary:en-us-suppose.ogg",
+   "w": "w/to-suppose-a17270.mp3"
+  },
+  "to take a break": {
+   "dict": 4,
+   "e": "e/let-s-take-a-break-b8b4eb.mp3",
+   "ipa": "",
+   "w": "w/to-take-a-break-9d9ae1.mp3"
+  },
+  "to take care of": {
+   "dict": 4,
+   "e": "e/she-takes-care-of-her-grandmother-32a2fa.mp3",
+   "ipa": "",
+   "w": "w/to-take-care-of-1e3152.mp3"
+  },
+  "to take off": {
+   "dict": 4,
+   "e": "e/the-plane-will-take-off-soon-ff680a.mp3",
+   "ipa": "",
+   "w": "w/to-take-off-72e6fe.mp3"
+  },
+  "to take part in": {
+   "dict": 4,
+   "e": "e/i-want-to-take-part-in-a-marathon-9926a4.mp3",
+   "ipa": "",
+   "w": "w/to-take-part-in-f3be48.mp3"
+  },
+  "to take place": {
+   "dict": 4,
+   "e": "e/the-meeting-will-take-place-on-monday-24cd67.mp3",
+   "ipa": "",
+   "w": "w/to-take-place-cb6bfd.mp3"
+  },
+  "to taste": {
+   "dict": 4,
+   "e": "e/taste-the-soup-bd6505.mp3",
+   "h": "h/taste-270fdb.mp3",
+   "ipa": "/teɪst/",
+   "src": "wiktionary:en-us-taste.ogg",
+   "w": "w/to-taste-4b4f47.mp3"
+  },
+  "to tidy": {
+   "dict": 4,
+   "e": "e/tidy-your-room-please-3d8bbd.mp3",
+   "h": "h/tidy-a78fb1.mp3",
+   "ipa": "/ˈtaɪ.di/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-tidy.wav",
+   "w": "w/to-tidy-310598.mp3"
+  },
+  "to train": {
+   "dict": 4,
+   "e": "e/she-trains-every-morning-07fa1c.mp3",
+   "h": "h/train-94efdd.mp3",
+   "ipa": "/ˈtɹeɪn/",
+   "src": "wiktionary:en-us-train.ogg",
+   "w": "w/to-train-5bbc14.mp3"
+  },
+  "to translate": {
+   "dict": 4,
+   "e": "e/can-you-translate-this-text-faa3b7.mp3",
+   "h": "h/translate-3ed950.mp3",
+   "ipa": "/tɹænzˈleɪt/",
+   "src": "wiktionary:En-us-translate.ogg",
+   "w": "w/to-translate-3554ae.mp3"
+  },
+  "to trust": {
+   "dict": 4,
+   "e": "e/i-trust-you-completely-7af2d2.mp3",
+   "h": "h/trust-fcbc33.mp3",
+   "ipa": "/tɹʌst/",
+   "src": "wiktionary:en-us-trust.ogg",
+   "w": "w/to-trust-1ccccc.mp3"
+  },
   "to turn down": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/they-turned-down-our-offer-4330d7.mp3",
    "ipa": "",
    "w": "w/to-turn-down-ace32b.mp3"
   },
+  "to turn off": {
+   "dict": 4,
+   "e": "e/please-turn-off-the-light-730c75.mp3",
+   "ipa": "",
+   "w": "w/to-turn-off-9ee538.mp3"
+  },
+  "to type": {
+   "dict": 4,
+   "e": "e/she-types-very-fast-923525.mp3",
+   "h": "h/type-d0a3e7.mp3",
+   "ipa": "/taɪp/",
+   "src": "wiktionary:en-us-type.ogg",
+   "w": "w/to-type-65c87d.mp3"
+  },
+  "to upload": {
+   "dict": 4,
+   "e": "e/i-uploaded-the-photos-7bb4b4.mp3",
+   "h": "h/upload-bb73aa.mp3",
+   "ipa": "/ˈʌpˌloʊd/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-upload.wav",
+   "w": "w/to-upload-94ebb4.mp3"
+  },
+  "to vote": {
+   "dict": 4,
+   "e": "e/did-you-vote-in-the-election-e1b295.mp3",
+   "h": "h/vote-fd63f1.mp3",
+   "ipa": "/voʊt/",
+   "src": "wiktionary:en-us-vote.ogg",
+   "w": "w/to-vote-12ce18.mp3"
+  },
+  "to warn": {
+   "dict": 4,
+   "e": "e/i-warned-you-about-the-dog-3d4fd3.mp3",
+   "h": "h/warn-4c8ea4.mp3",
+   "ipa": "/woɹn/",
+   "src": "wiktionary:en-us-worn.ogg",
+   "w": "w/to-warn-a99527.mp3"
+  },
+  "to waste": {
+   "dict": 4,
+   "e": "e/don-t-waste-money-on-that-8443b2.mp3",
+   "h": "h/waste-3fcdcb.mp3",
+   "ipa": "/ˈweɪ̯st/",
+   "src": "wiktionary:En-us-waste.ogg",
+   "w": "w/to-waste-13dc0c.mp3"
+  },
+  "to waste time": {
+   "dict": 4,
+   "e": "e/don-t-waste-time-on-that-5f6335.mp3",
+   "ipa": "",
+   "w": "w/to-waste-time-bbc393.mp3"
+  },
+  "to whisper": {
+   "dict": 4,
+   "e": "e/she-whispered-something-in-my-ear-c1b074.mp3",
+   "h": "h/whisper-4a0281.mp3",
+   "ipa": "/ˈ(h)wɪspə/",
+   "src": "wiktionary:en-us-whisper.ogg",
+   "w": "w/to-whisper-ec369b.mp3"
+  },
+  "to win": {
+   "dict": 4,
+   "e": "e/our-team-won-the-game-0fd63e.mp3",
+   "h": "h/win-c76ac2.mp3",
+   "ipa": "/wɪn/",
+   "src": "wiktionary:en-us-win.ogg",
+   "w": "w/to-win-4aa7be.mp3"
+  },
+  "to wonder": {
+   "dict": 4,
+   "e": "e/i-wonder-why-he-left-3e3d96.mp3",
+   "h": "h/wonder-c37424.mp3",
+   "ipa": "/ˈwʌndɚ/",
+   "src": "wiktionary:En-us-wonder.ogg",
+   "w": "w/to-wonder-eac981.mp3"
+  },
+  "to work out": {
+   "dict": 4,
+   "e": "e/i-work-out-three-times-a-week-e925ba.mp3",
+   "ipa": "",
+   "w": "w/to-work-out-68f9f3.mp3"
+  },
+  "tool": {
+   "dict": 4,
+   "e": "e/i-need-the-right-tool-for-this-2786fc.mp3",
+   "h": "h/tool-1937c4.mp3",
+   "ipa": "/tul/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-tool.wav",
+   "w": "w/tool-1b4fae.mp3"
+  },
+  "traffic": {
+   "dict": 4,
+   "e": "e/there-was-a-lot-of-traffic-e1aaeb.mp3",
+   "h": "h/traffic-c8ab51.mp3",
+   "ipa": "/ˈtɹæfɪk/",
+   "src": "wiktionary:En-us-traffic.ogg",
+   "w": "w/traffic-7fa232.mp3"
+  },
+  "traffic jam": {
+   "dict": 4,
+   "e": "e/we-were-stuck-in-a-traffic-jam-6e29c5.mp3",
+   "ipa": "",
+   "w": "w/traffic-jam-7ce45d.mp3"
+  },
+  "trash": {
+   "dict": 4,
+   "e": "e/take-out-the-trash-please-465736.mp3",
+   "h": "h/trash-6aa460.mp3",
+   "ipa": "/tɹæʃ/",
+   "src": "wiktionary:en-us-trash.ogg",
+   "w": "w/trash-99b1c8.mp3"
+  },
+  "treatment": {
+   "dict": 4,
+   "e": "e/the-treatment-worked-well-cd1287.mp3",
+   "h": "h/treatment-532735.mp3",
+   "ipa": "/ˈtɹiːtmənt/",
+   "src": "wiktionary:en-us-treatment.ogg",
+   "w": "w/treatment-790b1f.mp3"
+  },
+  "trip": {
+   "dict": 4,
+   "e": "e/we-had-a-great-trip-to-spain-13d71c.mp3",
+   "h": "h/trip-fdd91f.mp3",
+   "ipa": "/tɹɪp/",
+   "src": "wiktionary:en-us-trip.ogg",
+   "w": "w/trip-bfeeda.mp3"
+  },
+  "truth": {
+   "dict": 4,
+   "e": "e/tell-me-the-truth-59988a.mp3",
+   "h": "h/truth-45fa15.mp3",
+   "ipa": "/tɹuθ/",
+   "src": "wiktionary:en-us-truth.ogg",
+   "w": "w/truth-c45c82.mp3"
+  },
+  "unemployment": {
+   "dict": 4,
+   "e": "e/unemployment-is-rising-25d2ba.mp3",
+   "h": "h/unemployment-ff922d.mp3",
+   "ipa": "/ʌn.ɪmˈplɔɪ.mənt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-unemployment.wav",
+   "w": "w/unemployment-71b84e.mp3"
+  },
+  "unless": {
+   "dict": 4,
+   "e": "e/i-won-t-go-unless-you-come-with-me-7d92ef.mp3",
+   "h": "h/unless-42e184.mp3",
+   "ipa": "/ɪnˈlɛs/",
+   "src": "wiktionary:en-us-unless.ogg",
+   "w": "w/unless-569bd9.mp3"
+  },
+  "until": {
+   "dict": 4,
+   "e": "e/wait-until-i-come-back-af4a39.mp3",
+   "h": "h/until-b310f4.mp3",
+   "ipa": "/ʌnˈtɪl/",
+   "src": "wiktionary:En-us-until.ogg",
+   "w": "w/until-0ddcac.mp3"
+  },
+  "unusual": {
+   "dict": 4,
+   "e": "e/that-s-an-unusual-name-5a70df.mp3",
+   "h": "h/unusual-7cdf15.mp3",
+   "ipa": "/ʌnˈjuːʒ(u)əl/",
+   "src": "wiktionary:en-us-unusual.ogg",
+   "w": "w/unusual-2e7392.mp3"
+  },
+  "update": {
+   "dict": 4,
+   "e": "e/the-update-takes-ten-minutes-d64e01.mp3",
+   "h": "h/update-0a25ba.mp3",
+   "ipa": "/ˈʌp.deɪt/",
+   "src": "wiktionary:En-us-update.ogg",
+   "w": "w/update-0f1bef.mp3"
+  },
+  "upset": {
+   "dict": 4,
+   "e": "e/she-was-upset-about-the-news-f5374b.mp3",
+   "h": "h/upset-589cef.mp3",
+   "ipa": "/ʌpˈsɛt/",
+   "src": "wiktionary:en-us-upset-noun.ogg",
+   "w": "w/upset-4d3606.mp3"
+  },
+  "useful": {
+   "dict": 4,
+   "e": "e/this-app-is-very-useful-a8b944.mp3",
+   "h": "h/useful-c4ba45.mp3",
+   "ipa": "/ˈjusfəl/",
+   "src": "wiktionary:en-us-useful.ogg",
+   "w": "w/useful-c1cd6f.mp3"
+  },
+  "useless": {
+   "dict": 4,
+   "e": "e/this-old-map-is-useless-9087dd.mp3",
+   "h": "h/useless-9384db.mp3",
+   "ipa": "/ˈjus.ləs/",
+   "src": "wiktionary:en-us-useless.ogg",
+   "w": "w/useless-7aeee1.mp3"
+  },
+  "valley": {
+   "dict": 4,
+   "e": "e/the-village-is-in-a-valley-e54888.mp3",
+   "h": "h/valley-484c4c.mp3",
+   "ipa": "/ˈvæli/",
+   "src": "wiktionary:En-us-valley.ogg",
+   "w": "w/valley-3c6433.mp3"
+  },
+  "valuable": {
+   "dict": 4,
+   "e": "e/this-ring-is-very-valuable-83a955.mp3",
+   "h": "h/valuable-fc3fb5.mp3",
+   "ipa": "/ˈvælju(ə)bl̩/",
+   "src": "wiktionary:en-us-valuable.ogg",
+   "w": "w/valuable-5e788f.mp3"
+  },
+  "value": {
+   "dict": 4,
+   "e": "e/the-value-of-the-house-went-up-5eaa02.mp3",
+   "h": "h/value-f32b67.mp3",
+   "ipa": "/ˈvæl.ju/",
+   "src": "wiktionary:en-us-value.ogg",
+   "w": "w/value-20837c.mp3"
+  },
   "vegetable": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/eat-more-vegetables-4b53e2.mp3",
    "h": "h/vegetable-f13a90.mp3",
    "ipa": "/ˈvɛt͡ʃ.tə.bəl/",
    "src": "wiktionary:en-us-vegetable.ogg",
    "w": "w/vegetable-0e0d73.mp3"
   },
+  "vegetarian": {
+   "dict": 4,
+   "e": "e/she-is-a-vegetarian-6e6737.mp3",
+   "h": "h/vegetarian-35a14b.mp3",
+   "ipa": "/vɛ.d͡ʒɪˈtɛ.ɹi.ən/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-vegetarian.wav",
+   "w": "w/vegetarian-69d9a0.mp3"
+  },
+  "victim": {
+   "dict": 4,
+   "e": "e/the-victim-was-taken-to-the-hospital-9df02d.mp3",
+   "h": "h/victim-540f54.mp3",
+   "ipa": "/ˈvɪktɪm/",
+   "src": "wiktionary:en-us-victim.ogg",
+   "w": "w/victim-c2411e.mp3"
+  },
+  "village": {
+   "dict": 4,
+   "e": "e/she-grew-up-in-a-small-village-2c4119.mp3",
+   "h": "h/village-3bdc3e.mp3",
+   "ipa": "/ˈvɪlɪd͡ʒ/",
+   "src": "wiktionary:En-us-village.ogg",
+   "w": "w/village-75f679.mp3"
+  },
+  "waiter": {
+   "dict": 4,
+   "e": "e/the-waiter-brought-the-menu-ec233a.mp3",
+   "h": "h/waiter-bda55e.mp3",
+   "ipa": "/ˈweɪ̯təː/",
+   "src": "wiktionary:en-us-waiter.ogg",
+   "w": "w/waiter-190b4a.mp3"
+  },
+  "wealthy": {
+   "dict": 4,
+   "e": "e/they-come-from-a-wealthy-family-d3013f.mp3",
+   "h": "h/wealthy-7c48ff.mp3",
+   "ipa": "/ˈwɛl.θi/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-wealthy.wav",
+   "w": "w/wealthy-f5924b.mp3"
+  },
   "weather": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/the-weather-is-nice-today-a086f3.mp3",
    "h": "h/weather-f98669.mp3",
    "ipa": "/ˈwɛðɚ/",
    "src": "wiktionary:en-us-weather.ogg",
    "w": "w/weather-677256.mp3"
   },
+  "website": {
+   "dict": 4,
+   "e": "e/check-their-website-5fc95d.mp3",
+   "h": "h/website-3ab3e0.mp3",
+   "ipa": "/ˈwɛb(ˌ)saɪt/",
+   "src": "wiktionary:LL-Q1860 (eng)-Vealhurl-website.wav",
+   "w": "w/website-deb344.mp3"
+  },
+  "wedding": {
+   "dict": 4,
+   "e": "e/the-wedding-was-beautiful-ae7dce.mp3",
+   "h": "h/wedding-c27fc1.mp3",
+   "ipa": "/ˈwɛdɪŋ/",
+   "src": "wiktionary:en-us-wedding.ogg",
+   "w": "w/wedding-1a25fd.mp3"
+  },
   "wednesday": {
-   "dict": 3,
+   "dict": 4,
    "e": "e/see-you-on-wednesday-5862ff.mp3",
-   "ipa": "",
+   "h": "h/wednesday-c1b89f.mp3",
+   "ipa": "/ˈwɛnz.deɪ/",
+   "src": "wiktionary:en-us-Wednesday.ogg",
    "w": "w/wednesday-7cf258.mp3"
+  },
+  "weekday": {
+   "dict": 4,
+   "e": "e/the-shop-is-open-on-weekdays-a026c4.mp3",
+   "h": "h/weekday-4a4b1a.mp3",
+   "ipa": "/ˈwiːkdeɪ̯/",
+   "src": "wiktionary:en-us-weekday.ogg",
+   "w": "w/weekday-0b7493.mp3"
+  },
+  "weight": {
+   "dict": 4,
+   "e": "e/i-want-to-lose-weight-727f46.mp3",
+   "h": "h/weight-afe044.mp3",
+   "ipa": "/weɪt/",
+   "src": "wiktionary:en-us-weight.ogg",
+   "w": "w/weight-d797e3.mp3"
+  },
+  "whether": {
+   "dict": 4,
+   "e": "e/i-don-t-know-whether-he-is-at-home-306c33.mp3",
+   "h": "h/whether-3b9596.mp3",
+   "ipa": "/ˈwɛðə(ɹ)/",
+   "src": "wiktionary:en-us-whether.ogg",
+   "w": "w/whether-d49044.mp3"
+  },
+  "while": {
+   "dict": 4,
+   "e": "e/i-read-a-book-while-i-was-waiting-b3d630.mp3",
+   "h": "h/while-6517f8.mp3",
+   "ipa": "/wæl/",
+   "src": "wiktionary:en-us-while.ogg",
+   "w": "w/while-19ef07.mp3"
+  },
+  "wide": {
+   "dict": 4,
+   "e": "e/the-river-is-wide-here-edc999.mp3",
+   "h": "h/wide-414768.mp3",
+   "ipa": "/waɪd/",
+   "src": "wiktionary:en-us-wide.ogg",
+   "w": "w/wide-834720.mp3"
+  },
+  "wildlife": {
+   "dict": 4,
+   "e": "e/the-park-is-full-of-wildlife-c8ae53.mp3",
+   "h": "h/wildlife-bdd987.mp3",
+   "ipa": "/ˈwaɪldlaɪf/",
+   "src": "wiktionary:En-au-wildlife.ogg",
+   "w": "w/wildlife-280daa.mp3"
+  },
+  "wireless": {
+   "dict": 4,
+   "e": "e/we-have-wireless-internet-a3842a.mp3",
+   "h": "h/wireless-9f56b8.mp3",
+   "ipa": "/ˈwaɪ(jə)ɹ.ləs/",
+   "src": "wiktionary:en-us-wireless.ogg",
+   "w": "w/wireless-3a4957.mp3"
+  },
+  "witness": {
+   "dict": 4,
+   "e": "e/were-there-any-witnesses-9af330.mp3",
+   "h": "h/witness-4a86db.mp3",
+   "ipa": "/ˈwɪt.nəs/",
+   "src": "wiktionary:en-us-witness.ogg",
+   "w": "w/witness-6b1bdf.mp3"
+  },
+  "women": {
+   "dict": 4,
+   "e": "e/two-women-were-waiting-outside-91f289.mp3",
+   "h": "h/women-b3ae4f.mp3",
+   "ipa": "/ˈwɪmɪn/",
+   "src": "wiktionary:en-uk-women.ogg",
+   "w": "w/women-25741e.mp3"
+  },
+  "worried": {
+   "dict": 4,
+   "e": "e/i-m-worried-about-my-mother-3fa261.mp3",
+   "h": "h/worried-7c3dc3.mp3",
+   "ipa": "/ˈwʌɹid/",
+   "src": "wiktionary:en-us-worried.ogg",
+   "w": "w/worried-167599.mp3"
+  },
+  "yet": {
+   "dict": 4,
+   "e": "e/have-you-finished-yet-72f5fc.mp3",
+   "h": "h/yet-1002ea.mp3",
+   "ipa": "/jɛt/",
+   "src": "wiktionary:en-us-yet.ogg",
+   "w": "w/yet-39afd1.mp3"
   }
  }
 }
