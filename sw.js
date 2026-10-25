@@ -1,7 +1,9 @@
-// Офлайн-режим: приложение и список слов берутся из сети, а без интернета — из сохранённой копии.
-const CACHE = 'ty-geniy-v1';
+// Офлайн-режим: приложение и список слов берутся из сети, без интернета — из сохранённой копии.
+// Озвучка (audio/*.mp3) не меняется, поэтому после первого прослушивания берётся из памяти.
+const CACHE = 'ty-geniy-v2';
+const AUDIO = 'ty-geniy-audio';
 const FONTS = 'ty-geniy-fonts';
-const SHELL = ['./', './index.html', './words.txt', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
+const SHELL = ['./', './index.html', './words.txt', './manifest.json', './audio/index.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -14,19 +16,20 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE && k !== FONTS).map(k => caches.delete(k))))
+      .then(keys => Promise.all(keys.filter(k => ![CACHE, AUDIO, FONTS].includes(k)).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
 
 self.addEventListener('fetch', event => {
   const req = event.request;
-  if (req.method !== 'GET') return;
+  if (req.method !== 'GET' || req.headers.has('range')) return;
   const url = new URL(req.url);
   if (url.origin === self.location.origin) {
-    event.respondWith(networkFirst(req));
+    if (/\/audio\/.+\.mp3$/.test(url.pathname)) event.respondWith(cacheFirst(req, AUDIO));
+    else event.respondWith(networkFirst(req));
   } else if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
-    event.respondWith(cacheFirst(req));
+    event.respondWith(cacheFirst(req, FONTS));
   }
 });
 
@@ -47,8 +50,8 @@ async function networkFirst(req) {
   }
 }
 
-async function cacheFirst(req) {
-  const cache = await caches.open(FONTS);
+async function cacheFirst(req, name) {
+  const cache = await caches.open(name);
   const hit = await cache.match(req);
   if (hit) return hit;
   const res = await fetch(req);
@@ -59,9 +62,6 @@ async function cacheFirst(req) {
 function withTimeout(promise, ms) {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => reject(new Error('timeout')), ms);
-    promise.then(
-      value => { clearTimeout(timer); resolve(value); },
-      error => { clearTimeout(timer); reject(error); }
-    );
+    promise.then(v => { clearTimeout(timer); resolve(v); }, e => { clearTimeout(timer); reject(e); });
   });
 }
