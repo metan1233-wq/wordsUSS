@@ -1,0 +1,194 @@
+{
+ "voice": "en-US-AvaMultilingualNeural",
+ "words": {
+  "although": {
+   "e": "e/although-it-was-late-we-kept-working-104fa9.mp3",
+   "ipa": "",
+   "w": "w/although-735cfa.mp3"
+  },
+  "available": {
+   "e": "e/the-manager-is-not-available-right-now-2ce8f9.mp3",
+   "ipa": "/əˈveɪləb(ə)l/",
+   "w": "w/available-8b22d7.mp3"
+  },
+  "colleague": {
+   "e": "e/my-colleague-will-help-you-4456e8.mp3",
+   "ipa": "",
+   "w": "w/colleague-1427f0.mp3"
+  },
+  "comfortable": {
+   "e": "e/this-chair-is-very-comfortable-7e852f.mp3",
+   "ipa": "",
+   "w": "w/comfortable-656ea7.mp3"
+  },
+  "deadline": {
+   "e": "e/the-deadline-is-friday-85fd00.mp3",
+   "ipa": "/ˈdɛdˌlaɪn/",
+   "w": "w/deadline-68b605.mp3"
+  },
+  "enough": {
+   "e": "e/we-don-t-have-enough-time-c0b296.mp3",
+   "ipa": "",
+   "w": "w/enough-97bcb4.mp3"
+  },
+  "estimate": {
+   "ipa": "/ˈɛstɨmɨt/",
+   "w": "w/estimate-15c48a.mp3"
+  },
+  "eventually": {
+   "e": "e/eventually-everything-worked-out-285569.mp3",
+   "ipa": "",
+   "w": "w/eventually-e2cc0a.mp3"
+  },
+  "hierarchy": {
+   "e": "e/the-company-has-a-strict-hierarchy-986b12.mp3",
+   "ipa": "",
+   "w": "w/hierarchy-4f79f3.mp3"
+  },
+  "meeting": {
+   "e": "e/the-meeting-starts-at-ten-3a4dc9.mp3",
+   "ipa": "",
+   "w": "w/meeting-28f642.mp3"
+  },
+  "queue": {
+   "e": "e/there-was-a-long-queue-e8b083.mp3",
+   "ipa": "",
+   "w": "w/queue-9a142a.mp3"
+  },
+  "reliable": {
+   "e": "e/this-is-a-reliable-car-d07a8d.mp3",
+   "ipa": "/ɹɪˈlaɪəbəl/",
+   "w": "w/reliable-d43ede.mp3"
+  },
+  "requirement": {
+   "e": "e/the-design-meets-all-requirements-ead453.mp3",
+   "ipa": "",
+   "w": "w/requirement-229b96.mp3"
+  },
+  "schedule": {
+   "e": "e/let-s-check-the-schedule-e06cc4.mp3",
+   "ipa": "/ˈskɛ.dʒu.əl/",
+   "w": "w/schedule-999274.mp3"
+  },
+  "thorough": {
+   "e": "e/we-need-a-thorough-check-d0402f.mp3",
+   "ipa": "",
+   "w": "w/thorough-035e95.mp3"
+  },
+  "throughout": {
+   "e": "e/it-rained-throughout-the-day-e10ada.mp3",
+   "ipa": "[θɹuːˈʷaʊt]",
+   "w": "w/throughout-f9fbfa.mp3"
+  },
+  "to approve": {
+   "e": "e/the-director-approved-the-plan-0602d4.mp3",
+   "ipa": "",
+   "w": "w/to-approve-6ba0d4.mp3"
+  },
+  "to attach": {
+   "e": "e/i-attached-the-file-to-the-email-e2c2ff.mp3",
+   "ipa": "",
+   "w": "w/to-attach-65242e.mp3"
+  },
+  "to be in charge of": {
+   "dict": true,
+   "e": "e/she-is-in-charge-of-testing-e78879.mp3",
+   "ipa": "",
+   "w": "w/to-be-in-charge-of-2aefe6.mp3"
+  },
+  "to borrow": {
+   "e": "e/can-i-borrow-your-pen-1f1dd9.mp3",
+   "ipa": "",
+   "w": "w/to-borrow-eed188.mp3"
+  },
+  "to carry on": {
+   "dict": true,
+   "e": "e/carry-on-please-d7f91d.mp3",
+   "ipa": "",
+   "w": "w/to-carry-on-647e57.mp3"
+  },
+  "to come up with": {
+   "dict": true,
+   "e": "e/she-came-up-with-a-great-idea-59f8cb.mp3",
+   "ipa": "",
+   "w": "w/to-come-up-with-395fb5.mp3"
+  },
+  "to determine": {
+   "e": "e/we-need-to-determine-the-cause-35a541.mp3",
+   "ipa": "",
+   "w": "w/to-determine-0460fb.mp3"
+  },
+  "to figure out": {
+   "dict": true,
+   "e": "e/i-can-t-figure-out-this-problem-9e9670.mp3",
+   "ipa": "",
+   "w": "w/to-figure-out-3d7e73.mp3"
+  },
+  "to follow up": {
+   "dict": true,
+   "e": "e/i-ll-follow-up-with-you-tomorrow-7f09be.mp3",
+   "ipa": "",
+   "w": "w/to-follow-up-e622ce.mp3"
+  },
+  "to give up": {
+   "dict": true,
+   "e": "e/don-t-give-up-aaf4d2.mp3",
+   "ipa": "",
+   "w": "w/to-give-up-1821b8.mp3"
+  },
+  "to lend": {
+   "e": "e/could-you-lend-me-some-money-f78d55.mp3",
+   "ipa": "",
+   "w": "w/to-lend-5ec97a.mp3"
+  },
+  "to look forward to": {
+   "dict": true,
+   "e": "e/i-look-forward-to-your-reply-a6edff.mp3",
+   "ipa": "",
+   "w": "w/to-look-forward-to-ea6566.mp3"
+  },
+  "to postpone": {
+   "e": "e/we-had-to-postpone-the-meeting-e8dcb2.mp3",
+   "ipa": "/poʊstˈpoʊn/",
+   "w": "w/to-postpone-31d74b.mp3"
+  },
+  "to run out of": {
+   "dict": true,
+   "e": "e/we-ran-out-of-coffee-ad9750.mp3",
+   "ipa": "",
+   "w": "w/to-run-out-of-cd6287.mp3"
+  },
+  "to set up": {
+   "dict": true,
+   "e": "e/i-need-to-set-up-the-new-laptop-170e2b.mp3",
+   "ipa": "",
+   "w": "w/to-set-up-95501a.mp3"
+  },
+  "to suggest": {
+   "e": "e/i-suggest-we-start-now-93d890.mp3",
+   "ipa": "",
+   "w": "w/to-suggest-4e7a20.mp3"
+  },
+  "to turn down": {
+   "dict": true,
+   "e": "e/they-turned-down-our-offer-4330d7.mp3",
+   "ipa": "",
+   "w": "w/to-turn-down-ace32b.mp3"
+  },
+  "vegetable": {
+   "e": "e/eat-more-vegetables-4b53e2.mp3",
+   "ipa": "/ˈvɛd͡ʒtəbəl/",
+   "w": "w/vegetable-0e0d73.mp3"
+  },
+  "weather": {
+   "e": "e/the-weather-is-nice-today-a086f3.mp3",
+   "ipa": "/ˈwɛðɚ/",
+   "w": "w/weather-677256.mp3"
+  },
+  "wednesday": {
+   "e": "e/see-you-on-wednesday-5862ff.mp3",
+   "ipa": "",
+   "w": "w/wednesday-7cf258.mp3"
+  }
+ }
+}
