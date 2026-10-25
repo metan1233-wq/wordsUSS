@@ -66,8 +66,8 @@ def slug(text, salt=""):
 
 
 def dict_term(en):
-    t = re.sub(r"^to\s+", "", en.split("/")[0].strip().lower())
-    return t if re.fullmatch(r"[a-z][a-z'-]*", t) else None
+    t = re.sub(r"^to\s+", "", en.split("/")[0].strip(), flags=re.I)
+    return t if re.fullmatch(r"[A-Za-z][A-Za-z'-]*", t) else None
 
 
 def fetch_json(url):
@@ -101,8 +101,9 @@ def to_mp3(data, dest):
         tmp.write(data)
     try:
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", tmp.name,
-                        "-af", "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                               "silenceremove=start_periods=1:start_threshold=-45dB,areverse,loudnorm=I=-16:TP=-1.5",
+                        "-af", "silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.15,areverse,"
+                               "silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.2,areverse,"
+                               "adelay=120:all=1,apad=pad_dur=0.25,loudnorm=I=-16:TP=-1.5",
                         "-ac", "1", "-ar", "44100", "-b:a", "96k", str(dest)], check=True)
     finally:
         os.unlink(tmp.name)
@@ -158,7 +159,7 @@ def human_audio(term, dest, api_url):
 def dictionary_info(term):
     """Транскрипция и ссылка на живую запись (сначала нужный акцент)."""
     try:
-        data = fetch_json("https://api.dictionaryapi.dev/api/v2/entries/en/" + urllib.parse.quote(term))
+        data = fetch_json("https://api.dictionaryapi.dev/api/v2/entries/en/" + urllib.parse.quote(term.lower()))
     except Exception as e:
         log(f"  ! dictionaryapi «{term}»: {e}")
         data = []
@@ -217,16 +218,16 @@ async def main():
         if not (AUDIO / wf).exists():
             jobs.append((w["en"], AUDIO / wf, "w"))
         # живая запись и транскрипция — спрашиваем словарь один раз
-        if prev.get("dict") == 3:
+        if prev.get("dict") == 4:
             rec["ipa"], rec["dict"] = prev.get("ipa", ""), prev["dict"]
             if prev.get("h") and (AUDIO / prev["h"]).exists():
                 rec["h"] = prev["h"]
         else:
             term = dict_term(w["en"])
-            rec["ipa"], rec["dict"] = "", 3
+            rec["ipa"], rec["dict"] = "", 4
             if term:
                 ipa, url = dictionary_info(term)
-                hf = f"h/{slug(term)}.mp3"
+                hf = f"h/{slug(term.lower())}.mp3"
                 src, wipa, checked = human_audio(term, AUDIO / hf, url)
                 rec["ipa"] = wipa if wipa.startswith("/") else (ipa or wipa)
                 if not checked:
