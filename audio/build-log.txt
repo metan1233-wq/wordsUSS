@@ -1,0 +1,87 @@
+  ! запись en-us-throughout.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «throughout»: HTTP Error 502: Bad Gateway
+  - живой записи нет: throughout
+  ! запись en-us-although.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «although»: HTTP Error 502: Bad Gateway
+  - живой записи нет: although
+  ! запись En-us-enough.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись En-uk-enough.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись LL-Q1860 (eng)-Back ache-enough.wav: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «enough»: HTTP Error 502: Bad Gateway
+  - живой записи нет: enough
+  ! запись en-us-reliable.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «reliable»: HTTP Error 502: Bad Gateway
+  - живой записи нет: reliable
+  ! запись en-us-available.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «available»: HTTP Error 502: Bad Gateway
+  - живой записи нет: available
+  ! запись en-us-borrow.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «borrow»: HTTP Error 502: Bad Gateway
+  - живой записи нет: borrow
+  ! запись En-us-lend.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «lend»: HTTP Error 502: Bad Gateway
+  - живой записи нет: lend
+  ! запись En-us-suggest.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «suggest»: HTTP Error 502: Bad Gateway
+  - живой записи нет: suggest
+  ! dictionaryapi «eventually»: HTTP Error 502: Bad Gateway
+  ! запись en-us-eventually.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  - живой записи нет: eventually
+  ! dictionaryapi «weather»: HTTP Error 502: Bad Gateway
+  ! запись en-us-weather.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  - живой записи нет: weather
+  ! запись LL-Q1860 (eng)-Back ache-deadline.wav: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «deadline»: HTTP Error 502: Bad Gateway
+  - живой записи нет: deadline
+  ! запись en-us-schedule.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-uk-schedule.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-au-schedule.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «schedule»: HTTP Error 502: Bad Gateway
+  - живой записи нет: schedule
+  ! запись en-us-postpone.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «postpone»: HTTP Error 502: Bad Gateway
+  - живой записи нет: postpone
+  ! запись LL-Q1860 (eng)-Vealhurl-requirement.wav: [Errno 2] No such file or directory: 'ffmpeg'
+  - живой записи нет: requirement
+  ! запись LL-Q1860 (eng)-Mélange a trois-approve.wav: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «approve»: HTTP Error 502: Bad Gateway
+  - живой записи нет: approve
+  ! запись en-us-estimate-noun.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-us-estimate-verb.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «estimate»: HTTP Error 502: Bad Gateway
+  - живой записи нет: estimate
+  ! запись LL-Q1860 (eng)-Vealhurl-attach.wav: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «attach»: HTTP Error 502: Bad Gateway
+  - живой записи нет: attach
+  ! запись en-us-meeting.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «meeting»: HTTP Error 502: Bad Gateway
+  - живой записи нет: meeting
+  ! запись En-us-comfortable.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «comfortable»: HTTP Error 502: Bad Gateway
+  - живой записи нет: comfortable
+  ! запись en-us-vegetable.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись En-uk-vegetable.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «vegetable»: HTTP Error 502: Bad Gateway
+  - живой записи нет: vegetable
+  - живой записи нет: wednesday
+  ! dictionaryapi «colleague»: HTTP Error 502: Bad Gateway
+  ! запись En-us-colleague.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  - живой записи нет: colleague
+  ! dictionaryapi «queue»: HTTP Error 502: Bad Gateway
+  ! запись en-us-queue.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-au-queue.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  - живой записи нет: queue
+  ! запись En-us-ne-thorough.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-us-thorough.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-uk-thorough.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «thorough»: HTTP Error 502: Bad Gateway
+  - живой записи нет: thorough
+  ! запись en-us-determine.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-uk-determine.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись en-ca-determine.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «determine»: The read operation timed out
+  - живой записи нет: determine
+  ! запись en-us-hierarchy.ogg: [Errno 2] No such file or directory: 'ffmpeg'
+  ! запись dictionaryapi «hierarchy»: HTTP Error 502: Bad Gateway
+  - живой записи нет: hierarchy
+Слов: 36. Новых файлов: нейроголос слов 0, примеров 1, живых записей 0. Удалено лишних: 0.
