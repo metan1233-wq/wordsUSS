@@ -1,2 +1,1492 @@
-  ! нейроголос «кроме, помимо»: No audio was received. Please verify that your parameters are correct.
-Слов: 885. Новых файлов: нейроголос слов 0, примеров 0, переводов 7, живых записей 0. Удалено лишних: 0.
+  ! запись En-us-ignore.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: ignore
+  ! запись LL-Q1860 (eng)-Vealhurl-interact.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: interact
+  ! запись LL-Q1860 (eng)-Vealhurl-inspire.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «blend»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «leap»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «inspire»: HTTP Error 502: Bad Gateway
+  - живой записи нет: inspire
+  ! запись en-us-discourage.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «discourage»: HTTP Error 502: Bad Gateway
+  - живой записи нет: discourage
+  ! dictionaryapi «crash»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «monitor»: HTTP Error 502: Bad Gateway
+  ! запись en-us-crash.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: crash
+  ! запись En-us-exit.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-grill.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись En-us-minimum.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «distribution»: HTTP Error 500: Internal Server Error
+  ! запись dictionaryapi «minimum»: HTTP Error 502: Bad Gateway
+  - живой записи нет: minimum
+  ! запись en-us-conflict-noun.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-conflict-verb.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «conflict»: HTTP Error 502: Bad Gateway
+  - живой записи нет: conflict
+  ! запись en-us-academy.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «academy»: HTTP Error 502: Bad Gateway
+  - живой записи нет: academy
+  ! запись en-us-gap.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись EN-AU ck1 gap.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «gap»: HTTP Error 502: Bad Gateway
+  - живой записи нет: gap
+  ! запись en-us-guarantee.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: guarantee
+  ! запись en-us-ceremony.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-designer.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: designer
+  ! запись en-us-aspect.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-bureau.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-establishment.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «aspect»: HTTP Error 502: Bad Gateway
+  - живой записи нет: aspect
+  ! dictionaryapi «rail»: HTTP Error 502: Bad Gateway
+  ! запись en-us-ne-bureau.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «establishment»: HTTP Error 502: Bad Gateway
+  - живой записи нет: establishment
+  ! запись dictionaryapi «bureau»: HTTP Error 502: Bad Gateway
+  - живой записи нет: bureau
+  ! запись en-us-broadcast.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-log.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «log»: HTTP Error 502: Bad Gateway
+  - живой записи нет: log
+  ! dictionaryapi «bull»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «crossing»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «terminal»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «pump»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «logo»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «equality»: HTTP Error 500: Internal Server Error
+  ! запись LL-Q1860 (eng)-Vealhurl-logo.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: logo
+  ! dictionaryapi «inquiry»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «oxygen»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «signature»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «spider»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «baker»: HTTP Error 502: Bad Gateway
+  ! запись en-us-deposit.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «invasion»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «palm»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «pole»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «deposit»: HTTP Error 502: Bad Gateway
+  - живой записи нет: deposit
+  ! dictionaryapi «motivation»: HTTP Error 502: Bad Gateway
+  ! запись en-us-bin.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-biology.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «tension»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «bin»: HTTP Error 502: Bad Gateway
+  - живой записи нет: bin
+  ! запись dictionaryapi «biology»: HTTP Error 502: Bad Gateway
+  - живой записи нет: biology
+  ! dictionaryapi «excess»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «bronze»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «prisoner»: HTTP Error 502: Bad Gateway
+  ! запись En-us-prisoner.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-dealer.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-boot.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «dealer»: HTTP Error 502: Bad Gateway
+  - живой записи нет: dealer
+  ! dictionaryapi «humor»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «insight»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «tobacco»: HTTP Error 502: Bad Gateway
+  ! запись EN-AU ck1 boot.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «boot»: HTTP Error 502: Bad Gateway
+  - живой записи нет: boot
+  ! dictionaryapi «compound»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «liver»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «significance»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «barrel»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «boxing»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «reflection»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «substitute»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «gentleman»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «strain»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «scholarship»: The read operation timed out
+  ! запись En-us-organ.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-au-scholarship.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: scholarship
+  ! запись dictionaryapi «organ»: HTTP Error 502: Bad Gateway
+  - живой записи нет: organ
+  ! запись LL-Q1860 (eng)-Vealhurl-miracle.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: miracle
+  ! dictionaryapi «visa»: HTTP Error 502: Bad Gateway
+  ! запись En-us-cliff.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «cliff»: HTTP Error 502: Bad Gateway
+  - живой записи нет: cliff
+  ! запись en-us-merchant.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «graduation»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «horizon»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «ink»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «merchant»: HTTP Error 502: Bad Gateway
+  - живой записи нет: merchant
+  ! dictionaryapi «uncertainty»: HTTP Error 502: Bad Gateway
+  ! запись en-us-uncertainty.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «honesty»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-survivor.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: survivor
+  ! dictionaryapi «caution»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «frustration»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «suspicion»: HTTP Error 502: Bad Gateway
+  ! запись en-us-critic.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «critic»: HTTP Error 502: Bad Gateway
+  - живой записи нет: critic
+  ! запись en-us-idol.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «runway»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «sculpture»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-shortage.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: shortage
+  ! dictionaryapi «vet»: HTTP Error 502: Bad Gateway
+  ! запись En-us-monument.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-thriller.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: thriller
+  - живой записи нет: counseling
+  ! запись dictionaryapi «monument»: HTTP Error 502: Bad Gateway
+  - живой записи нет: monument
+  ! запись en-us-farewell.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «farewell»: HTTP Error 502: Bad Gateway
+  - живой записи нет: farewell
+  ! dictionaryapi «sadness»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «whistle»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «dynasty»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «rubbish»: Expecting value: line 1 column 1 (char 0)
+  ! dictionaryapi «abundance»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «ant»: HTTP Error 502: Bad Gateway
+  ! запись en-us-antique.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «antique»: HTTP Error 502: Bad Gateway
+  - живой записи нет: antique
+  ! dictionaryapi «ivory»: HTTP Error 502: Bad Gateway
+  - живой записи нет: telecommunications
+  ! dictionaryapi «niece»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «rainfall»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «revision»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «sunrise»: HTTP Error 502: Bad Gateway
+  ! запись en-us-tornado.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «eternity»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «performer»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «tornado»: HTTP Error 502: Bad Gateway
+  - живой записи нет: tornado
+  ! dictionaryapi «bulletin»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «encouragement»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «goalkeeper»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «prejudice»: HTTP Error 502: Bad Gateway
+  ! запись En-us-industrial.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «industrial»: HTTP Error 502: Bad Gateway
+  - живой записи нет: industrial
+  ! запись En-us-academic.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «academic»: HTTP Error 502: Bad Gateway
+  - живой записи нет: academic
+  ! dictionaryapi «hidden»: HTTP Error 502: Bad Gateway
+  ! запись en-us-electronic.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «electronic»: HTTP Error 502: Bad Gateway
+  - живой записи нет: electronic
+  - живой записи нет: out-of-date
+  ! dictionaryapi «up-to-date»: HTTP Error 502: Bad Gateway
+  ! запись en-us-practical.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «superior»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-stable.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «face-to-face»: HTTP Error 502: Bad Gateway
+  - живой записи нет: face-to-face
+  ! запись dictionaryapi «practical»: HTTP Error 502: Bad Gateway
+  - живой записи нет: practical
+  ! запись dictionaryapi «stable»: HTTP Error 502: Bad Gateway
+  - живой записи нет: stable
+  ! dictionaryapi «silent»: HTTP Error 502: Bad Gateway
+  ! запись en-us-organic.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «organic»: HTTP Error 502: Bad Gateway
+  - живой записи нет: organic
+  - живой записи нет: next-door
+  ! запись en-us-dependent.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «dependent»: HTTP Error 502: Bad Gateway
+  - живой записи нет: dependent
+  ! dictionaryapi «worn»: HTTP Error 502: Bad Gateway
+  ! запись En-us-classical.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «classical»: HTTP Error 502: Bad Gateway
+  - живой записи нет: classical
+  - живой записи нет: brand-new
+  ! dictionaryapi «glorious»: HTTP Error 502: Bad Gateway
+  ! запись en-us-atomic.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «atomic»: HTTP Error 502: Bad Gateway
+  - живой записи нет: atomic
+  ! dictionaryapi «terrified»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «thankful»: HTTP Error 502: Bad Gateway
+  ! запись en-us-alcoholic.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: devastating
+  ! запись dictionaryapi «alcoholic»: HTTP Error 502: Bad Gateway
+  - живой записи нет: alcoholic
+  ! dictionaryapi «depressing»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «accidental»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «cautious»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «hopeful»: HTTP Error 502: Bad Gateway
+  ! запись en-us-nevertheless.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «freely»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «traditionally»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «formally»: HTTP Error 502: Bad Gateway
+  ! запись en-us-traditionally.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: traditionally
+  - живой записи нет: internationally
+  ! запись en-us-extensively.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «extensively»: HTTP Error 502: Bad Gateway
+  - живой записи нет: extensively
+  ! dictionaryapi «yield»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «torture»: HTTP Error 502: Bad Gateway
+  ! запись En-us-investigate.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-console-noun.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись En-us-import.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-import (noun).wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-import (verb).wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «wipe»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «import»: HTTP Error 502: Bad Gateway
+  - живой записи нет: import
+  ! запись en-us-obey.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «obey»: HTTP Error 502: Bad Gateway
+  - живой записи нет: obey
+  ! запись en-us-anticipate.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «strive»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «anticipate»: HTTP Error 502: Bad Gateway
+  - живой записи нет: anticipate
+  ! запись en-us-manipulate.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-retrieve.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «stimulate»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «manipulate»: HTTP Error 502: Bad Gateway
+  - живой записи нет: manipulate
+  ! dictionaryapi «transmit»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «suppress»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-ban.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись En-us-crack.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «ban»: HTTP Error 502: Bad Gateway
+  - живой записи нет: ban
+  ! dictionaryapi «verse»: HTTP Error 502: Bad Gateway
+  ! запись en-us-leak.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «leak»: HTTP Error 502: Bad Gateway
+  - живой записи нет: leak
+  ! запись en-us-campaign.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись En-us-media.oga: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «campaign»: HTTP Error 502: Bad Gateway
+  - живой записи нет: campaign
+  ! dictionaryapi «faith»: Expecting value: line 1 column 1 (char 0)
+  ! dictionaryapi «understanding»: Expecting value: line 1 column 1 (char 0)
+  ! запись LL-Q1860 (eng)-Vealhurl-media.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: media
+  ! запись LL-Q1860 (eng)-Vealhurl-marketing.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: marketing
+  ! запись en-us-user.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «user»: HTTP Error 502: Bad Gateway
+  - живой записи нет: user
+  ! запись En-us-index.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-plot.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «index»: HTTP Error 502: Bad Gateway
+  - живой записи нет: index
+  ! запись dictionaryapi «plot»: HTTP Error 502: Bad Gateway
+  - живой записи нет: plot
+  ! запись en-us-panel.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-mate.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «panel»: HTTP Error 502: Bad Gateway
+  - живой записи нет: panel
+  ! запись en-au-mate.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «mate»: HTTP Error 502: Bad Gateway
+  - живой записи нет: mate
+  ! запись en-us-jury.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-assessment.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: assessment
+  ! запись dictionaryapi «jury»: HTTP Error 502: Bad Gateway
+  - живой записи нет: jury
+  ! dictionaryapi «replacement»: HTTP Error 502: Bad Gateway
+  ! запись En-us-label.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-evolution.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «label»: HTTP Error 502: Bad Gateway
+  - живой записи нет: label
+  ! запись LL-Q1860 (eng)-Berrely-evolution.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «evolution»: HTTP Error 502: Bad Gateway
+  - живой записи нет: evolution
+  ! dictionaryapi «fate»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-arena.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: arena
+  ! dictionaryapi «operator»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-feedback.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: feedback
+  ! запись LL-Q1860 (eng)-Vealhurl-trailer.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «devil»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «equity»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «coaching»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «execution»: HTTP Error 502: Bad Gateway
+  ! запись en-us-hardware.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: coaching
+  ! запись dictionaryapi «hardware»: HTTP Error 502: Bad Gateway
+  - живой записи нет: hardware
+  ! запись En-us-laptop.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: laptop
+  ! запись LL-Q1860 (eng)-Vealhurl-electronics.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: electronics
+  ! dictionaryapi «classification»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-laser.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: laser
+  ! запись en-us-nightmare.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-cherry.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-classification.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: classification
+  ! запись dictionaryapi «nightmare»: HTTP Error 502: Bad Gateway
+  - живой записи нет: nightmare
+  ! запись En-us-lap.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись LL-Q1860 (eng)-Vealhurl-lap.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «lap»: HTTP Error 502: Bad Gateway
+  - живой записи нет: lap
+  ! dictionaryapi «migration»: The read operation timed out
+  ! dictionaryapi «ridge»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «voter»: HTTP Error 502: Bad Gateway
+  ! запись en-us-assumption.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «rainbow»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «assumption»: HTTP Error 502: Bad Gateway
+  - живой записи нет: assumption
+  ! dictionaryapi «reed»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «fiber»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «pulse»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «mobility»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-withdrawal.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-anchor.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «anchor»: HTTP Error 502: Bad Gateway
+  - живой записи нет: anchor
+  ! dictionaryapi «keeper»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «resignation»: HTTP Error 502: Bad Gateway
+  ! запись a=Canada: HTTP Error 404: Not Found
+  - живой записи нет: publicity
+  ! dictionaryapi «dock»: HTTP Error 502: Bad Gateway
+  ! запись en-us-outlet.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись En-us-vaccine.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «outlet»: HTTP Error 502: Bad Gateway
+  - живой записи нет: outlet
+  ! dictionaryapi «feat»: HTTP Error 502: Bad Gateway
+  ! запись LL-Q1860 (eng)-Vealhurl-barn.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «barn»: HTTP Error 502: Bad Gateway
+  - живой записи нет: barn
+  ! запись LL-Q1860 (eng)-Vealhurl-sprint.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: sprint
+  ! запись en-us-particular.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-expected.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «expected»: HTTP Error 502: Bad Gateway
+  - живой записи нет: expected
+  ! запись en-us-grand.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «grand»: HTTP Error 502: Bad Gateway
+  - живой записи нет: grand
+  ! dictionaryapi «estimated»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «improved»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «ultimate»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «attached»: HTTP Error 502: Bad Gateway
+  - живой записи нет: scheduled
+  - живой записи нет: well-built
+  ! запись LL-Q1860 (eng)-Vealhurl-biological.wav: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: last-minute
+  ! запись en-us-fluid.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! dictionaryapi «preliminary»: HTTP Error 502: Bad Gateway
+  ! запись dictionaryapi «fluid»: HTTP Error 502: Bad Gateway
+  - живой записи нет: fluid
+  - живой записи нет: motivated
+  ! dictionaryapi «skilled»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «mighty»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «unlimited»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «infected»: The read operation timed out
+  ! dictionaryapi «passionate»: HTTP Error 502: Bad Gateway
+  ! запись en-us-infected.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: infected
+  ! dictionaryapi «nationwide»: HTTP Error 502: Bad Gateway
+  ! запись en-us-charming.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «charming»: HTTP Error 502: Bad Gateway
+  - живой записи нет: charming
+  ! dictionaryapi «foul»: HTTP Error 502: Bad Gateway
+  ! запись en-us-foul.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: foul
+  ! запись en-us-transparent.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись en-us-furious.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  - живой записи нет: bothered
+  ! запись dictionaryapi «transparent»: HTTP Error 502: Bad Gateway
+  - живой записи нет: transparent
+  ! запись dictionaryapi «furious»: HTTP Error 502: Bad Gateway
+  - живой записи нет: furious
+  ! dictionaryapi «high-tech»: HTTP Error 502: Bad Gateway
+  ! запись en-us-absurd.ogg: HTTP Error 429: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)
+  ! запись dictionaryapi «absurd»: HTTP Error 502: Bad Gateway
+  - живой записи нет: absurd
+  ! dictionaryapi «potentially»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «versus»: HTTP Error 502: Bad Gateway
+  ! dictionaryapi «concerning»: HTTP Error 500: Internal Server Error
+  ! dictionaryapi «gently»: HTTP Error 502: Bad Gateway
+  - живой записи нет: financially
+  ! нейроголос «What was the cause of the fire?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «кроме того, помимо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «борьба, бороться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вилка, пробка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «борьба, бороться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «качели, качаться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подъёмный кран, журавль»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «добрый, вид, сорт»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «справиться, суметь, управлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «копить, спасать, сохранять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «справиться, суметь, управлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «копить, спасать, сохранять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «растить, поднимать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «продолжаться, происходить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «гид, путеводитель»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We moved to a new city last year.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «украшать, делать ремонт»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «гид, путеводитель»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «чаевые, совет»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «повторять, проверять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «предмет, тема»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «чаевые, совет»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «предмет, тема»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бить, победить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to bet»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to prove»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I will transfer the money tomorrow.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to remove»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to ensure»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to advance»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «продвигаться, развивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «противостоять, возражать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «побеждать, наносить поражение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to ignore»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «игнорировать, не обращать внимания»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «игнорировать, не обращать внимания»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «soil»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Please confirm your booking by email.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to obtain»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «игнорировать, не обращать внимания»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I can't recall his name.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связывать, ассоциировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to connect»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «соединять, подключать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связывать, ассоциировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «игнорировать, не обращать внимания»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «считать, рассматривать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «растягивать, потягиваться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Everyone contributed ten dollars.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to commit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «совершать, брать обязательство»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вкладывать, инвестировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вкладывать, инвестировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «булавка, прикалывать, PIN-код»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «относиться, быть связанным, понимать чув»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «выделять, подчёркивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «относиться, быть связанным, понимать чув»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «выделять, подчёркивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «продолжать, переходить к»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «решать, улаживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «решать, улаживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «лопаться, взрываться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «устранять, исключать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «лопаться, взрываться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to accomplish»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «объявлять, заявлять, декларировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to accomplish»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бросать, покидать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to possess»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He possesses great talent.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обладать, владеть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to inspire»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обладать, владеть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to inspire»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «приспосабливаться, адаптировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to bump into»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «приспосабливаться, адаптировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подвергать, разоблачать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «приспосабливаться, адаптировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He was punished for being late.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to bore»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обучать, давать образование»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to outline»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пристально смотреть, глазеть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бросать, подбрасывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We need to analyze the results.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «развлекать, принимать гостей»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «развлекать, принимать гостей»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «портить, баловать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сводить к минимуму»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хватать, захватывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подчёркивать, делать акцент»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He almost drowned in the river.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «управлять, править»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Could you fetch some water?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отговаривать, лишать уверенности»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Click here to undo the last change.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разминать, делать пюре»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разминать, делать пюре»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «получать, извлекать, происходить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сочинять, составлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обслуживание, услуга, обслуживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обслуживание, услуга, обслуживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «гонка, забег, раса, участвовать в гонке»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ссылка, связь, связывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обслуживание, услуга, обслуживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ссылка, связь, связывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ссылка, связь, связывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ручей, поток, транслировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «выключатель, переключать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to register»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «crash»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «lift»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to register»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Firefighters rescued the family.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The photo captures the beauty of the cit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «монитор, отслеживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «громкий удар, хлопок, хлопать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «монитор, отслеживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крутить, скручивать, вывихнуть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «заворачивать, упаковывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «громкий удар, хлопок, хлопать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крутить, скручивать, вывихнуть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «уменьшение, уменьшаться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «громкий удар, хлопок, хлопать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Fold the paper in half.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крутить, скручивать, вывихнуть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пауза, ставить на паузу»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «wax»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The candle is made of wax.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «громкий удар, хлопок, хлопать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крутить, скручивать, вывихнуть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Let's grill some fish.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «громкий удар, хлопок, хлопать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «серия, сериал»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крутить, скручивать, вывихнуть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «развитие, разработка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «развитие, разработка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «срок, семестр, термин»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «громкий удар, хлопок, хлопать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The city council approved the plan.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «district»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Safety standards are very high here.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «стандарт, стандартный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «потенциал, потенциальный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «содержание, контент, довольный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «содержание, контент, довольный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «строительство, конструкция»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The majority of students passed the test»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подход, приближаться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «операция, работа»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The analysis of the data took a week.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The analysis of the data took a week.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Leave a comment below the video.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Leave a comment below the video.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Their mission is to help homeless people»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «spirit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The police caught the criminal.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «investigation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Treat others as you want to be treated.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Treat others as you want to be treated.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «violence»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «blog»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Your presence is important to us.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Is there an alternative to this plan?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «duty»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «steel»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The bridge is made of steel.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «studio»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She needs surgery on her knee.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She studies English literature.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The mayor opened the new library.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The shop sells electrical goods.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «republic»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «France is a republic.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «assistance»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There is a strong bond between them.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «For instance, you can take the bus.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Look up the definition in a dictionary.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «academy»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «bunch»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «academy»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «category»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There was strong opposition to the plan.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Speak to a customer service representati»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «storage»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I need more storage space on my phone.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Speak to a customer service representati»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «storage»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She suffered from depression after the a»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «tournament»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Our team won the tennis tournament.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She suffered from depression after the a»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «depth»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «tournament»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «depth»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «existence»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «tournament»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What is the origin of this word?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The police are investigating the inciden»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «weapon»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «motor»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The police are investigating the inciden»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «democracy»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «recording»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «approval»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «coal»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «coal»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «membership»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «belief»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «element»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «passion»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The children played in the sand.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The children played in the sand.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The wedding ceremony was beautiful.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «economics»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «economics»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «virus»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «bureau»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The travel bureau is open on Saturdays.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «economics»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Hold the rail when you go downstairs.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «decline»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «experiment»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «currency»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The team returned home in glory.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I bought chicken breast for dinner.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «chemistry»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «consumption»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I bought a dozen eggs.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I bought a dozen eggs.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The bull ran across the field.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The punishment was too severe.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «crossing»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It takes courage to speak in public.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «смелость, мужество»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There is no cure for the common cold.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «grave»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He plays jazz on the piano.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «похвала, хвалить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «похвала, хвалить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ремесло, судно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «summit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Many celebrities came to the party.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «summit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «filter»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company changed its logo.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We need a pump to remove the water.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «насос, качать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «pit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was my first encounter with snow.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «осмотр, экзамен»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ужас, террор»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «arrangement»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «arrangement»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запрос, расследование»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «powder»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «укрытие, приют»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «copyright»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «залог, депозит, класть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «залог, депозит, класть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «залог, депозит, класть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ладонь, пальма»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «reception»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Leave your key at reception.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The boots are made of rubber.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «syndrome»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Throw it in the bin.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «syndrome»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «explosion»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «люди, народный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «explosion»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I have no motivation to study today.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «clinic»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ноготь, гвоздь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Pushkin is a famous Russian poet.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «slavery»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The city went through a big transformati»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преобразование, превращение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We explored a cave in the mountains.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преобразование, превращение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преобразование, превращение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «dealer»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «дилер, торговец»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «insight»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Tobacco is bad for your health.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «след, отслеживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «animation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «след, отслеживать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «collapse»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «соединение, составной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Alcohol damages the liver.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бочка, баррель»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «loyalty»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «верность, лояльность»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I saw my reflection in the window.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отражение, размышление»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «принятие, согласие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her determination helped her win.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I need a hammer and some nails.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The island is a paradise for divers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her determination helped her win.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «satisfaction»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The island is a paradise for divers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Admission is free for children.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «compromise»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «компромисс, идти на компромисс»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «harbor»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «mathematics»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нагрузка, напряжение, растяжение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нагрузка, напряжение, растяжение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «изгиб, кривая»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «рог, гудок»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «изгиб, кривая»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «рог, гудок»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «патруль, патрулировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «cabin»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «каюта, салон, хижина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My dog is my best companion.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «cabin»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «каюта, салон, хижина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Teaching is a noble profession.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разделение, разлука»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обаяние, шарм, амулет»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «достопримечательность, притяжение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «A large proportion of students work part»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «proportion»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пропорция, доля»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пропорция, доля»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сильное желание, настоятельно призывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «утёс, скала»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «декларация, заявление»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сильное желание, настоятельно призывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «nutrition»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «раковина, таз, бассейн»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «раковина, таз, бассейн»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «торговец, купец»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «яд, отравлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «торговец, купец»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «раковина, таз, бассейн»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «яд, отравлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «превосходство, высокое качество»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пенни, копейка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We bought a large quantity of paper.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пенни, копейка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сторонник, болельщик»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «благословение, благо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «демонстрация, показ»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пенни, копейка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «благословение, благо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «упаковка, сбор вещей»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «brass»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The door handle is made of brass.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «благословение, благо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пенни, копейка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «латунь, медные духовые»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «латунь, медные духовые»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «латунь, медные духовые»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We slept in a tent by the lake.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «tide»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «прилив, отлив»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «спонсор, спонсировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «buyer»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The essence of the problem is money.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «суть, сущность»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «headline»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «remainder»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «remainder»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My driving instructor is very patient.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ягнёнок, баранина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My driving instructor is very patient.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ягнёнок, баранина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My driving instructor is very patient.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «disk»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Save the file to the hard disk.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ягнёнок, баранина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «salmon»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Grilled salmon is my favorite dish.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «salmon»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There were no survivors.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «выживший»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «geography»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «характерная черта, характерный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Children are full of curiosity.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «frustration»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The comedian made everyone laugh.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «головоломка, пазл»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «tendency»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «головоломка, пазл»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пир, праздничный обед»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мороз, иней»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «головоломка, пазл»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пир, праздничный обед»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «кошелёк, сумочка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вздох, вздыхать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пир, праздничный обед»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вздох, вздыхать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «напряжённый, время»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «советник, консультант»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вздох, вздыхать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «советник, консультант»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пир, праздничный обед»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I like tea with ginger.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Roll up your sleeves.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The plane is moving along the runway.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пир, праздничный обед»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взлётно-посадочная полоса»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нехватка, дефицит»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сфера, шар»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нехватка, дефицит»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пир, праздничный обед»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нехватка, дефицит»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ощущение, сенсация»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We skied down the slope.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ощущение, сенсация»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мусор, ерунда»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «антиквариат, старинный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «антиквариат, старинный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «карманные деньги, пособие, норма»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «лаять, кора»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «карманные деньги, пособие, норма»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вагон, экипаж»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «карманные деньги, пособие, норма»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «схема, диаграмма»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «слоновая кость»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «слоновая кость»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «болезнь, тошнота»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «телекоммуникации»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «hatch»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «телекоммуникации»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The chicks hatched this morning.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «люк, вылупляться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «телекоммуникации»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «sunrise»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «sunrise»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «конкурент, участник соревнования»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «pupil»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The street performer played the guitar.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «шкаф для одежды, гардероб»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «encouragement»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «шкаф для одежды, гардероб»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ларёк, прилавок»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «шкаф для одежды, гардероб»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Put your laptop in the backpack.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ларёк, прилавок»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «дополнение, дополнять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Do you have any objections?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The car uses a gallon of fuel every 30 m»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «able»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «способный, be able to — мочь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «текущий, нынешний, течение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «способный, be able to — мочь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «текущий, нынешний, течение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «главный, начальник»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «текущий, нынешний, течение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «written»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We have a written exam tomorrow.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Is it legal to park here?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «leading»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ежегодный, годовой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «That was a stupid mistake.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My grandmother is still very active.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «коммерческий, рекламный ролик»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «mass»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сложный, комплекс»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сложный, комплекс»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Are you prepared for the exam?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «готовый, подготовленный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ядерный, атомный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «твёрдый, надёжный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «огромный, массивный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «regional»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «совместный, сустав»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «равный, равняться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «pure»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «надёжный, безопасный, обеспечивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «равный, равняться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «гигантский, великан»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «надёжный, безопасный, обеспечивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «незначительный, несовершеннолетний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «незначительный, несовершеннолетний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «надёжный, безопасный, обеспечивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «незначительный, несовершеннолетний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «надёжный, безопасный, обеспечивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «незначительный, несовершеннолетний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There's a hidden camera in the room.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «скрытый, спрятанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «надёжный, безопасный, обеспечивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «скрытый, спрятанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «engaged»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «немедленный, ближайший»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «marked»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «горящий, жгучий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «надёжный, безопасный, обеспечивать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «горящий, жгучий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She is an outstanding student.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «горящий, жгучий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «исторический, имеющий историческое значе»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «исторический, имеющий историческое значе»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «грубый, шероховатый, приблизительный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «горящий, жгучий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «practical»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «стабильный, устойчивый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «оскорбительный, нападение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «горящий, жгучий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «превосходящий, лучший, начальник»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «превосходящий, лучший, начальник»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вспышка, сверкать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Wear formal clothes to the interview.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «невиновный, невинный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «превосходящий, лучший, начальник»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «тихий, молчаливый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «horrible»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «простой, равнина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was a strategic decision.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This car is very fuel efficient.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «превосходящий, лучший, начальник»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «эффективный, экономичный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «простой, равнина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was a strategic decision.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «эффективный, экономичный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «простой, равнина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was a strategic decision.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There was a dramatic increase in prices.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «insane»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «простой, равнина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «органический, экологически чистый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «органический, экологически чистый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «повествование, рассказ»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «быстрый, стремительный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «простой, равнина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «известный, видный, заметный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «известный, видный, заметный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очевидный, кажущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «простой, равнина»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очевидный, кажущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очевидный, кажущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «устойчивый, постоянный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «неловкий, неудобный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «с инвалидностью»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очевидный, кажущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «неловкий, неудобный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «с инвалидностью»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «dependent»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «неловкий, неудобный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «с инвалидностью»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очевидный, кажущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «с инвалидностью»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «bold»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «homeless»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очевидный, кажущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взаимный, общий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взаимный, общий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «с инвалидностью»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взаимный, общий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «повседневный, небрежный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взаимный, общий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «графический, наглядный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The healing process takes a few weeks.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «заживление, целебный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «графический, наглядный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «графический, наглядный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взаимный, общий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «на ночь, за ночь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He sent her threatening messages.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «графический, наглядный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «на ночь, за ночь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The use of smartphones is widespread.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «широко распространённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «на ночь, за ночь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «широко распространённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The museum is accessible by bus.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «графический, наглядный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «голый, обнажённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The museum is accessible by bus.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «широко распространённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «голый, обнажённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The meeting seemed endless.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «широко распространённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «stressed»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «графический, наглядный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her son is very artistic.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «художественный, артистичный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «широко распространённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «противоположный, on the contrary — наобо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «abstract»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавленный, в депрессии»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The results are very encouraging.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «lean»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «широко распространённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавленный, в депрессии»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «meaningful»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «значимый, содержательный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавленный, в депрессии»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Wear protective glasses.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «защитный, заботливый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He has an athletic body.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «защитный, заботливый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «спортивный, атлетический»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «occasional»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «спортивный, атлетический»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «редкий, случающийся время от времени»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was an unfortunate mistake.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «защитный, заботливый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «неудачный, прискорбный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «редкий, случающийся время от времени»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «неудачный, прискорбный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «длительный, прочный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «неудачный, прискорбный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мягкий, умеренный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «длительный, прочный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очень довольный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «длительный, прочный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «очень довольный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Change is inevitable.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавляющий, ошеломляющий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «pale»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «длительный, прочный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «несчастный, ужасный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «adorable»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «несчастный, ужасный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «длительный, прочный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «несчастный, ужасный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мелкий, поверхностный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мелкий, поверхностный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «длительный, прочный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «confusing»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запутанный, сбивающий с толку»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хрупкий, деликатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запутанный, сбивающий с толку»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мелкий, поверхностный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хрупкий, деликатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запутанный, сбивающий с толку»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «indirect»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мелкий, поверхностный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хрупкий, деликатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «bent»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запутанный, сбивающий с толку»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «bent»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хрупкий, деликатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «больной, воспалённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запутанный, сбивающий с толку»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «больной, воспалённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хрупкий, деликатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «удачливый, счастливый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «удачливый, счастливый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запоминающийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запутанный, сбивающий с толку»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запоминающийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хрупкий, деликатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «duty-free»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запоминающийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запоминающийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «destructive»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запоминающийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «любящий, be fond of — любить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She is a gifted pianist.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «любящий, be fond of — любить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «напряжённый, стрессовый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We need a systematic approach.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «не связанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «не связанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «unwanted»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «не связанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «за, в»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «не связанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «за, в»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «абсолютно, совершенно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «за, в»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «определённо, точно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «абсолютно, совершенно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «не связанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обычно, в целом»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «абсолютно, совершенно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «за, в»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обычно, в целом»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «прямо, непосредственно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «не связанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «абсолютно, совершенно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «прямо, непосредственно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «за, в»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «весьма, очень, высоко»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «весьма, очень, высоко»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «totally»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «абсолютно, совершенно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «слегка, немного»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «полностью, целиком»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «относительно, касательно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «слегка, немного»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Watch closely.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Watch closely.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Initially, I didn't like the city.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The newly opened café is always full.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «недавно, вновь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There was nowhere to park.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нигде, никуда»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «incredibly»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «incredibly»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «beneath»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «incredibly»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «furthermore»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «safely»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «incredibly»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «annually»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «primary school»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The test was surprisingly easy.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «permanently»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «постоянно, навсегда»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «freely»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «accurately»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He is socially active.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I'm terribly sorry.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «positively»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «extensively»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She has traveled extensively in Asia.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «farther»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I didn't do it intentionally.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «check-in counter»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «lower»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to found»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to investigate»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавать, представлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to skip»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пропускать, прыгать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавать, представлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to skip»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пропускать, прыгать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «переворачивать, листать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «exhibit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подавать, представлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пропускать, прыгать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «оправдывать, обосновывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пропускать, прыгать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Convert the file to PDF.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «превращать, конвертировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We import coffee from Brazil.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to surrender»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обманывать, жульничать, списывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to rub»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The police enforce the law.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to squeeze»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to impose»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The government imposed new taxes.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «bully»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He was bullied at school.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company dominates the market.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He agreed to testify in court.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «decay»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Workers were exploited in the factory.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What are you implying?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What are you implying?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The two companies cooperate on many proj»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This medicine will relieve the pain.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to bind»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to utilize»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to utilize»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company went bankrupt.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to integrate»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We need to integrate the new system.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «How do people perceive our brand?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She adores her grandchildren.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He tried to manipulate his friends.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The virus is transmitted by mosquitoes.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «to suppress»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «purchase»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Can you give me a quote for the repair?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «pitch»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There is a crack in the glass.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «stroke»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The sink drain is blocked.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «dash»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «They started a campaign against smoking.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «learning»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «division»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Buying a flat is a good investment.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «estate»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What was his reaction to the news?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The crew welcomed us on board.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «route»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He was picked for the national squad.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «payment»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «phase»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «creation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «personnel»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The internet caused a revolution in comm»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «therapy»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The commander gave the order.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The medicine is in the bathroom cabinet.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There is a problem with the electrical c»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There is a problem with the electrical c»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Bring your camping gear.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The publication of the book is in May.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Hunting is not allowed in the park.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Hunting is not allowed in the park.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «memorial»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Safety is our top priority.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «alliance»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «idiot»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вся жизнь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «translation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «mill»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «creek»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He was arrested for fraud.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company's headquarters are in London»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «initiative»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The government promised to fight corrupt»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Thank you for your input.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «результат, исход»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Einstein was a genius.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «radical»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «радикальный, коренной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «передача, коробка передач»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «радикальный, коренной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «компонент, деталь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «передача, коробка передач»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «факультет, способность»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «радикальный, коренной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обратная связь, отзыв»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «innovation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обратная связь, отзыв»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «инновация, нововведение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «руководство, инструкция, ручной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «инновация, нововведение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обратная связь, отзыв»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трейлер, прицеп»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «инновация, нововведение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трейлер, прицеп»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обратная связь, отзыв»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «инновация, нововведение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The rocket was launched into space.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «stability»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обратная связь, отзыв»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «cooperation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «справедливость, капитал»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «hardware»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «интеллектуальный, интеллектуал»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «щит, защищать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «полировать, лак»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «выбор времени»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «dawn»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We left at dawn.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «предприятие, рискованное дело»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «They showed no mercy.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «conversion»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «substance»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вещество, суть»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This has no bearing on the result.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «interpretation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There are different interpretations of t»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «backup»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Put your hood up, it's raining.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «blade»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This shop sells electronics.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She had the nerve to say no.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нерв, смелость, nerves — волнение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We picked cherries in the garden.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нерв, смелость, nerves — волнение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «identification»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «удостоверение личности, опознание»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «adoption»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «аренда, договор аренды, сдавать в аренду»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «testimony»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «embrace»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «marathon»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «parade»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «barrier»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «medication»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ровесник, сверстник»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «consultant»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «pose»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «olive»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «trainer»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She became a widow at 40.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «намёк, подсказка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «obligation»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You are under no obligation to buy.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «перспектива, прогноз, мировоззрение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «перспектива, прогноз, мировоззрение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «cemetery»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We tested the effectiveness of the new d»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «перспектива, прогноз, мировоззрение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «диссертация, тезис»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company has an annual audit.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «аудит, проверка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Ignorance of the law is no excuse.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «невежество, незнание»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «аудит, проверка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отдых, досуг»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «аудит, проверка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отдых, досуг»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вестибюль, холл, лобби»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The car has a navigation system.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «supplement»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отдых, досуг»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ствол, багажник, хобот»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The Earth turns on its axis.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ствол, багажник, хобот»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «значок, бейдж»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I didn't understand the complexity of th»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «значок, бейдж»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ствол, багажник, хобот»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The job offers flexibility.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «значок, бейдж»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хранитель, смотритель, вратарь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отставка, увольнение по собственному жел»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хранитель, смотритель, вратарь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «наездник, велосипедист»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «значок, бейдж»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отставка, увольнение по собственному жел»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «наездник, велосипедист»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хранитель, смотритель, вратарь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The can is made of aluminum.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «наездник, велосипедист»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The can is made of aluminum.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хранитель, смотритель, вратарь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «блокнот, подушечка, накладка»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The can is made of aluminum.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «наездник, велосипедист»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хранитель, смотритель, вратарь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We made a donation to the hospital.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «розетка, торговая точка, выход»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The vaccine protects against flu.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «хранитель, смотритель, вратарь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пункт, придаточное предложение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «док, причал, док-станция»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «infant»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подвиг, достижение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подвиг, достижение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There was an outbreak of flu in the scho»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «They sent a probe to Mars.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «зонд, исследовать, расследовать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «искра, вызывать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «certification»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «взрывчатое вещество, взрывной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The bonus is an incentive to work harder»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «стимул, поощрение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She talks to a therapist once a week.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «стимул, поощрение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «терапевт, психотерапевт»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обучение, плата за обучение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She talks to a therapist once a week.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her dedication to the job is amazing.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преданность делу, посвящение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «grown-up»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «grown-up»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преданность делу, посвящение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company is looking for investors.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «oath»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He took an oath to tell the truth.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He took an oath to tell the truth.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преданность делу, посвящение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «откровение, открытие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «spa»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «откровение, открытие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «sprint»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преданность делу, посвящение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «поход, долгий путь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «откровение, открытие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «wit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «поход, долгий путь»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «wit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обломки, крушение, разрушать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преданность делу, посвящение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «wit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «messenger»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «посыльный, мессенджер»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связанный, родственный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «посыльный, мессенджер»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was a very moving film.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трогательный, движущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связанный, родственный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «преданность делу, посвящение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He lives in western Canada.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трогательный, движущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связанный, родственный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «особый, определённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трогательный, движущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «особый, определённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связанный, родственный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трогательный, движущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «overall»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «основной, начальный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «действительный, фактический»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «связанный, родственный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «основной, начальный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Prior experience is not required.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трогательный, движущийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «основной, начальный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «prime»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «tough»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «existing»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «основной, начальный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «готовый, желающий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The proposed changes will start next yea»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The price is fixed.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «готовый, желающий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «внутренний, домашний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «основной, начальный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «внутренний, домашний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «внутренний, домашний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «relevant»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Only include relevant information.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «уместный, имеющий отношение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «уместный, имеющий отношение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «внутренний, домашний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «глупый, немой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Money is of secondary importance.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «глупый, немой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ultimate»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «глупый, немой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «прикреплённый, привязанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «прикреплённый, привязанный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «раненый, травмированный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «глупый, немой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «раненый, травмированный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разделённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «запланированный, регулярный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «long-term»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разделённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «That's odd, the door was locked.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «убеждённый, уверенный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He earns a decent salary.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «valid»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «действительный, обоснованный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «убеждённый, уверенный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подлинный, искренний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подлинный, искренний»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «фундаментальный, основной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «доказанный, проверенный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крепкий, хорошо сложённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «фундаментальный, основной»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крепкий, хорошо сложённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «packed»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «крепкий, хорошо сложённый»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «packed»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «eligible»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You are eligible for a discount.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «eligible»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «packed»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This is a crucial moment.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «spare»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «hilarious»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «hilarious»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «serial»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We got a last-minute deal on the hotel.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «affordable»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We are looking for affordable housing.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «identical»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «These are only preliminary results.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «rocky»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «corrupt»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «corrupt»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We need skilled workers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Excessive drinking is dangerous.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We need skilled workers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «entertaining»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «mighty»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We visited a medieval castle.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «profitable»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The menu is varied.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «compatible»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The room was literally full of books.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «previously»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Previously, she worked as a teacher.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «health care»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «health care»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «essentially»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Save the files on the hard drive.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The offer is available exclusively onlin»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «instantly»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «additionally»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The offer is available exclusively onlin»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I practically live at the office.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The offer is available exclusively onlin»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I practically live at the office.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «technically»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Clean the room thoroughly.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Clean the room thoroughly.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «real estate»: No audio was received. Please verify that your parameters are correct.
+Слов: 3005. Новых файлов: нейроголос слов 2120, примеров 2187, переводов 2142, живых записей 1995. Удалено лишних: 133.
