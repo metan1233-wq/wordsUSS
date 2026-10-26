@@ -197,14 +197,14 @@ def ru_speech(ru):
 async def tts(text, dest, sem, voice=VOICE):
     import edge_tts
     async with sem:
-        for attempt in range(3):
+        for attempt in range(6):
             try:
                 await edge_tts.Communicate(text, voice, rate=RATE if voice == VOICE else "+0%").save(str(dest))
                 if dest.stat().st_size > 800:
                     return True
             except Exception as e:  # сеть или сервис — пробуем ещё
                 log(f"  ! нейроголос «{text[:40]}»: {e}")
-            await asyncio.sleep(2 + attempt * 3)
+            await asyncio.sleep(3 + attempt * 4)  # сервис иногда отвечает пустым звуком, ждём и пробуем снова
         dest.unlink(missing_ok=True)
         return False
 
