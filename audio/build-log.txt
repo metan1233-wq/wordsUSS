@@ -1,13 +1,88 @@
-  - живой записи нет: germs
-  ! dictionaryapi «roof»: Expecting value: line 1 column 1 (char 0)
-  ! dictionaryapi «pipe»: Expecting value: line 1 column 1 (char 0)
-  ! dictionaryapi «plumber»: HTTP Error 502: Bad Gateway
-  ! dictionaryapi «slippers»: HTTP Error 502: Bad Gateway
-  ! dictionaryapi «dig»: HTTP Error 502: Bad Gateway
-  - живой записи нет: instantaneously
-  ! dictionaryapi «undefeated»: HTTP Error 502: Bad Gateway
-  - живой записи нет: undefeated
-  ! dictionaryapi «exile»: HTTP Error 502: Bad Gateway
-  - живой записи нет: unfruitful
-  ! dictionaryapi «nausea»: HTTP Error 502: Bad Gateway
-Слов: 885. Новых файлов: нейроголос слов 196, примеров 204, живых записей 167. Удалено лишних: 13.
+  ! нейроголос «зависимость, пристрастие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «повторяющийся, монотонный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «зависимость, пристрастие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «красться, подкрадываться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «зависимость, пристрастие»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «забирать, уносить»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «моряк, матрос»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подать заявку на»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «моряк, матрос»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «подать заявку на»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вещи, штуки»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «богатый, состоятельный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «через, поперёк»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «богатый, состоятельный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «продвинуться, добиться успеха»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «кредит, заём»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разделять, изолировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «разделять, изолировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «содержание под стражей до суда»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бесплодный, безрезультатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «узнавать, справляться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бесплодный, безрезультатный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «винить, обвинять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «мерзкий, отвратительный»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «винить, обвинять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «тратить время на»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «пойти куда-нибудь с»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «винить, обвинять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «оставаться на связи»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «приносящий удовлетворение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «оставаться на связи»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «приносящий удовлетворение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «на протяжении, повсюду»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «чтобы, для того чтобы»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «чтобы, для того чтобы»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «кроме, помимо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «организовать, договориться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «кроме, помимо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «чтобы, для того чтобы»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «справляться с, иметь дело с»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «кроме, помимо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «провалить, потерпеть неудачу»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «справляться с, иметь дело с»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «провалить, потерпеть неудачу»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «обеспечивать, предоставлять»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «провалить, потерпеть неудачу»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «полагать, предполагать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «одобрять, утверждать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «избавиться от»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «поправляться, становиться лучше»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «указать, обратить внимание»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «вернуться к вопросу, связаться повторно»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ревнивый, завидующий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нервничающий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «нервничающий»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «тесный, тугой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «свободный, болтающийся»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «тесный, тугой»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «бизнес, дело»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «плата, взнос»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «ценность, стоимость»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «указания, как пройти»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «стирка, бельё»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «с аллергией»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «диета, питание»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «приём пищи, блюдо»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «диета, питание»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «продуктовый магазин»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «в наши дни»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «продуктовый магазин»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «в наши дни»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отвечать, реагировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «в наши дни»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отвечать, реагировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «отвечать, реагировать»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «находиться, располагаться»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «жертва, пострадавший»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «цель, назначение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трудная задача, вызов»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сделать всё возможное»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «цель, назначение»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «сделать перерыв»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «трудная задача, вызов»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «веселиться, хорошо провести время»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «насколько я знаю»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «решать тебе»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «решать тебе»: No audio was received. Please verify that your parameters are correct.
+Слов: 885. Новых файлов: нейроголос слов 0, примеров 0, переводов 878, живых записей 0. Удалено лишних: 0.
