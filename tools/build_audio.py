@@ -2,7 +2,8 @@
 
 Для каждого слова:
   * живая запись диктора из открытого словаря (dictionaryapi.dev, записи Wiktionary), если она есть;
-  * нейроголос Microsoft (edge-tts) — для слова и для примера.
+  * нейроголос Microsoft (edge-tts) — для слова и для примера;
+  * русский нейроголос — для перевода (тренировка «Перевод на слух»).
 Файлы складываются в audio/, а audio/index.json говорит приложению, что где лежит.
 Уже готовые файлы повторно не создаются, лишние удаляются.
 
@@ -24,6 +25,7 @@ from pathlib import Path
 VOICE = "en-US-AvaMultilingualNeural"   # другой голос: en-US-AndrewMultilingualNeural, en-US-EmmaMultilingualNeural, en-GB-SoniaNeural
 ACCENT = "us"                            # какую живую запись брать первой: us / uk
 RATE = "-5%"                             # чуть медленнее обычного темпа
+VOICE_RU = "ru-RU-SvetlanaNeural"        # голос для переводов: ru-RU-DmitryNeural — мужской
 
 ROOT = Path(__file__).resolve().parent.parent
 WORDS = ROOT / "words.txt"
@@ -56,7 +58,7 @@ def parse_words(text):
         ru = parts[1] if len(parts) > 1 else ""
         ex = "; ".join(p for p in parts[2:] if p)
         if en and ru:
-            out.append({"key": re.sub(r"\s+", " ", en.lower()), "en": en, "ex": ex})
+            out.append({"key": re.sub(r"\s+", " ", en.lower()), "en": en, "ru": ru, "ex": ex})
     return out
 
 
@@ -183,12 +185,21 @@ def dictionary_info(term):
             audio.get(ACCENT) or audio.get(other) or audio.get("any") or "")
 
 
-async def tts(text, dest, sem):
+def ru_speech(ru):
+    """Перевод для озвучки: без пояснений в скобках и помет."""
+    t = re.sub(r"\([^)]*\)", " ", ru)
+    t = re.sub(r"\b(разг|сленг|устар)\.", " ", t)
+    t = t.replace(";", ",").replace("/", ",")
+    t = re.sub(r"\s*,\s*(,\s*)*", ", ", t)
+    return re.sub(r"\s+", " ", t).strip(" ,.—-")
+
+
+async def tts(text, dest, sem, voice=VOICE):
     import edge_tts
     async with sem:
         for attempt in range(3):
             try:
-                await edge_tts.Communicate(text, VOICE, rate=RATE).save(str(dest))
+                await edge_tts.Communicate(text, voice, rate=RATE if voice == VOICE else "+0%").save(str(dest))
                 if dest.stat().st_size > 800:
                     return True
             except Exception as e:  # сеть или сервис — пробуем ещё
@@ -200,14 +211,14 @@ async def tts(text, dest, sem):
 
 async def main():
     words = parse_words(WORDS.read_text(encoding="utf-8"))
-    for sub in ("w", "h", "e"):
+    for sub in ("w", "h", "e", "r"):
         (AUDIO / sub).mkdir(parents=True, exist_ok=True)
     old = json.loads(INDEX.read_text(encoding="utf-8")) if INDEX.exists() else {}
     old_words = old.get("words", {}) if old.get("voice") == VOICE else {}
     index = {"voice": VOICE, "words": {}}
     sem = asyncio.Semaphore(4)
     jobs = []
-    made = {"w": 0, "h": 0, "e": 0}
+    made = {"w": 0, "h": 0, "e": 0, "r": 0}
 
     for w in words:
         key, prev = w["key"], old_words.get(w["key"], {})
@@ -216,7 +227,7 @@ async def main():
         wf = f"w/{slug(w['en'], VOICE)}.mp3"
         rec["w"] = wf
         if not (AUDIO / wf).exists():
-            jobs.append((w["en"], AUDIO / wf, "w"))
+            jobs.append((w["en"], AUDIO / wf, "w", VOICE))
         # живая запись и транскрипция — спрашиваем словарь один раз
         if prev.get("dict") == 4:
             rec["ipa"], rec["dict"] = prev.get("ipa", ""), prev["dict"]
@@ -243,11 +254,18 @@ async def main():
             ef = f"e/{slug(w['ex'], VOICE)}.mp3"
             rec["e"] = ef
             if not (AUDIO / ef).exists():
-                jobs.append((w["ex"], AUDIO / ef, "e"))
+                jobs.append((w["ex"], AUDIO / ef, "e", VOICE))
+        # русский нейроголос для перевода
+        ru_text = ru_speech(w["ru"])
+        if ru_text:
+            rf = f"r/{slug(ru_text, VOICE_RU)}.mp3"
+            rec["r"] = rf
+            if not (AUDIO / rf).exists():
+                jobs.append((ru_text, AUDIO / rf, "r", VOICE_RU))
         index["words"][key] = rec
 
-    results = await asyncio.gather(*(tts(t, d, sem) for t, d, _ in jobs))
-    for (_, dest, kind), ok in zip(jobs, results):
+    results = await asyncio.gather(*(tts(t, d, sem, v) for t, d, _, v in jobs))
+    for (_, dest, kind, _v), ok in zip(jobs, results):
         if ok:
             made[kind] += 1
         else:  # не получилось — приложение озвучит голосом устройства
@@ -255,9 +273,9 @@ async def main():
                 if rec.get(kind) == str(dest.relative_to(AUDIO)).replace("\\", "/"):
                     rec.pop(kind, None)
 
-    used = {f for rec in index["words"].values() for k, f in rec.items() if k in ("w", "h", "e")}
+    used = {f for rec in index["words"].values() for k, f in rec.items() if k in ("w", "h", "e", "r")}
     removed = 0
-    for sub in ("w", "h", "e"):
+    for sub in ("w", "h", "e", "r"):
         for f in (AUDIO / sub).glob("*.mp3"):
             if f"{sub}/{f.name}" not in used:
                 f.unlink()
@@ -265,7 +283,7 @@ async def main():
 
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     log(f"Слов: {len(words)}. Новых файлов: нейроголос слов {made['w']}, примеров {made['e']}, "
-          f"живых записей {made['h']}. Удалено лишних: {removed}.")
+          f"переводов {made['r']}, живых записей {made['h']}. Удалено лишних: {removed}.")
 
     (AUDIO / "build-log.txt").write_text("\n".join(LOG) + "\n", encoding="utf-8")
 

@@ -100,7 +100,8 @@ button { cursor: pointer; }
   border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2);
   transform: translateY(-70%) rotate(45deg); pointer-events: none;
 }
-.icon-btn { width: 40px; height: 40px; flex: none; display: grid; place-items: center; padding: 0; border: 1px solid var(--hair); border-radius: 50%; background: var(--paper); }
+.icon-btn { position: relative; width: 40px; height: 40px; flex: none; display: grid; place-items: center; padding: 0; border: 1px solid var(--hair); border-radius: 50%; background: var(--paper); }
+.icon-btn[data-alert]::after { content: ""; position: absolute; top: 1px; right: 1px; width: 10px; height: 10px; border-radius: 50%; background: var(--bad); box-shadow: 0 0 0 2px var(--desk); }
 .banner { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; margin-block: 2px 6px; padding: 10px 12px; border-radius: 12px; background: var(--paper); box-shadow: inset 0 0 0 1px var(--hair); font-size: 14px; line-height: 1.35; }
 .banner p { margin: 0; flex: 1 1 220px; min-width: 0; }
 .banner .i { width: 18px; height: 18px; vertical-align: -3px; }
@@ -315,6 +316,16 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .switch input:checked + span { background: var(--good); }
 .switch input:checked + span::after { transform: translateX(20px); }
 .switch input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sync-state { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; color: var(--ink); }
+.sync-state::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); }
+.sync-state[data-s="idle"]::before { background: var(--good); }
+.sync-state[data-s="syncing"]::before { background: var(--warn); }
+.sync-state[data-s="error"]::before { background: var(--bad); }
+.sync-steps { margin: 0; padding-left: 22px; display: grid; gap: 6px; font-size: 14px; line-height: 1.45; color: var(--ink-2); }
+.sync-steps a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
+.sync-form { display: flex; gap: 8px; }
+.sync-form input { flex: 1; min-width: 0; height: 40px; padding: 0 12px; border: 0; border-radius: 11px; background: var(--paper-2); font-size: 16px; }
+.sync-form input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
 .yg-box { min-height: 220px; border-radius: 12px; overflow: hidden; background: var(--paper-2); }
 .yg-status { margin: 10px 0 0; font-size: 14px; color: var(--ink-2); }
 .yg-status:empty { display: none; }
@@ -411,9 +422,31 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <button type="button" role="radio" data-set="theme" data-val="dark">Тёмное</button>
       </div>
     </div>
+    <div class="set-group" id="syncGroup">
+      <span class="set-label">Синхронизация между устройствами</span>
+      <span class="sync-state" id="syncState" data-s="off">Выключена</span>
+      <p class="set-note" id="syncInfo"></p>
+      <div id="syncOff">
+        <ol class="sync-steps">
+          <li><a id="tokenLink" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Создай ключ на GitHub</a>. Всё уже заполнено: пролистай страницу вниз, нажми зелёную кнопку «Generate token» и скопируй ключ.</li>
+          <li>Вставь ключ сюда и нажми «Подключить».</li>
+          <li>На iPhone, планшете и других устройствах вставь тот же ключ. Переслать его себе удобно кнопкой «Скопировать ключ», она появится после подключения.</li>
+        </ol>
+        <form class="sync-form" id="syncForm" autocomplete="off" novalidate>
+          <label class="sr" for="syncToken">Ключ GitHub</label>
+          <input id="syncToken" type="text" placeholder="github_pat_…" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
+          <button class="btn btn-primary btn-sm" type="submit">Подключить</button>
+        </form>
+      </div>
+      <div class="set-actions" id="syncOn" hidden>
+        <button class="btn btn-ghost btn-sm" type="button" data-act="sync-now">Синхронизировать</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-act="sync-copy">Скопировать ключ</button>
+        <button class="btn btn-ghost btn-sm btn-danger" type="button" data-act="sync-off">Отключить здесь</button>
+      </div>
+    </div>
     <div class="set-group">
       <span class="set-label">Прогресс</span>
-      <p class="set-note">Хранится на этом устройстве. На iPhone и компьютере он свой.</p>
+      <p class="set-note" id="progressNote">Хранится только на этом устройстве.</p>
       <div class="set-actions"><button class="btn btn-ghost btn-sm btn-danger" type="button" data-act="reset">Сбросить прогресс</button></div>
     </div>
   </div>
@@ -486,7 +519,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     Object.keys(old).forEach(k => { const o = old[k]; if (o && o.b > 0) SRS[k] = { st: 'review', s: legacy[o.b] || 1, d: 5, due: o.d || Date.now(), last: o.t || Date.now(), lg: 3, es: 0, reps: o.n || 1, lapses: o.e || 0 }; else if (o) SRS[k] = { st: 'learning', s: 0.4, d: 7, due: Date.now(), last: Date.now(), lg: 1, es: 0, reps: o.n || 1, lapses: 0 }; });
     store.set('tg:srs', SRS);
   }
-  const saveSrs = () => store.set('tg:srs', SRS);
+  let onSrsSaved = () => {};
+  const saveSrs = () => { store.set('tg:srs', SRS); onSrsSaved(); };
   let PST = store.get('tg:practice', {});
   const savePst = () => store.set('tg:practice', PST);
 
@@ -611,7 +645,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       }
       return this.bufs.get(path);
     },
-    prefetch(w) { const r = audioRec(w); [r.h, r.w, r.e].filter(Boolean).forEach(p => this.fetchRaw(p).catch(() => {})); },
+    prefetch(w, withRu) { const r = audioRec(w); [r.h, r.w, r.e, withRu ? r.r : null].filter(Boolean).forEach(p => this.fetchRaw(p).catch(() => {})); },
     stop() {
       try { if (this.src) this.src.stop(); } catch (e) { /* ignore */ }
       this.src = null;
@@ -643,18 +677,20 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       }
     }
   };
-  function speakFallback(text) {
+  function speakFallback(text, lang = 'en-US') {
     if (!('speechSynthesis' in window)) return;
     try {
       speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
-      const v = speechSynthesis.getVoices().filter(x => /^en[-_]US/i.test(x.lang)).sort((a, b) => /natural|enhanced|premium|samantha|google us/i.test(b.name) - /natural|enhanced|premium|samantha|google us/i.test(a.name))[0];
+      const re = lang === 'ru-RU' ? /^ru/i : /^en[-_]US/i;
+      const v = speechSynthesis.getVoices().filter(x => re.test(x.lang)).sort((a, b) => /natural|enhanced|premium|samantha|milena|google/i.test(b.name) - /natural|enhanced|premium|samantha|milena|google/i.test(a.name))[0];
       if (v) u.voice = v;
-      u.lang = 'en-US';
+      u.lang = lang;
       u.rate = 0.9;
       speechSynthesis.speak(u);
     } catch (e) { /* ignore */ }
   }
+  const ruSpeech = w => w.ru.replace(/\([^)]*\)/g, ' ').replace(/;/g, ',').replace(/\s+/g, ' ').trim();
   function wordPath(w, which) {
     const r = audioRec(w);
     if (which === 'human') return r.h || null;
@@ -665,6 +701,12 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const path = wordPath(w, which);
     if (path) return Sound.play(path).catch(() => { speakFallback(ttsText(w)); return null; });
     speakFallback(ttsText(w));
+    return Promise.resolve(null);
+  }
+  function playRu(w) {
+    const r = audioRec(w);
+    if (r.r) return Sound.play(r.r).catch(() => { speakFallback(ruSpeech(w), 'ru-RU'); return null; });
+    speakFallback(ruSpeech(w), 'ru-RU');
     return Promise.resolve(null);
   }
   function playExample(w) {
@@ -966,6 +1008,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     test: { title: 'Тест', type: () => S.dir === 'en-ru' ? 'pick-ru' : 'pick-en' },
     write: { title: 'Ввод', type: () => 'type-en' },
     listen: { title: 'На слух', type: () => 'listen' },
+    'listen-ru': { title: 'Перевод на слух', type: () => 'listen-ru' },
     cloze: { title: 'Пропуск в предложении', type: () => 'cloze', filter: w => !!maskInfo(w) }
   };
   function renderHub() {
@@ -978,8 +1021,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <div><b>Изучение трудных слов</b><span>${probs ? `${plural(probs, WORD_FORMS)} с «Не знаю» и «Не помню». При ${LEARN_LIMIT} запускается само.` : 'Трудных слов нет. Сюда попадут слова с «Не знаю» и «Не помню».'}</span></div></button>
       <button class="tile" type="button" data-act="mode" data-mode="test">${ICON.test}<b>Тест</b><span>Выбери перевод из четырёх</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="write">${ICON.write}<b>Ввод</b><span>Напиши слово по-английски</span></button>
-      <button class="tile" type="button" data-act="mode" data-mode="listen">${ICON.ear}<b>На слух</b><span>Диктор говорит, ты пишешь</span></button>
-      <button class="tile" type="button" data-act="mode" data-mode="cloze">${ICON.cloze}<b>Пропуск</b><span>Впиши слово в пример (${clozeN})</span></button>
+      <button class="tile" type="button" data-act="mode" data-mode="listen">${ICON.ear}<b>На слух</b><span>Диктор говорит по-английски, ты пишешь слово</span></button>
+      <button class="tile" type="button" data-act="mode" data-mode="listen-ru">${ICON.ear}<b>Перевод на слух</b><span>Диктор говорит по-русски, ты пишешь по-английски</span></button>
+      <button class="tile tile-wide" type="button" data-act="mode" data-mode="cloze">${ICON.cloze}<div><b>Пропуск в предложении</b><span>Впиши слово в пример. Подходящих слов: ${clozeN}</span></div></button>
     </div>
     <p class="hub-note">${seen ? `В тренировки берутся слова, которые уже были на карточках: сначала трудные. Сейчас таких ${seen}.` : 'Пока на карточках не было ни одного слова, поэтому тренировки берут новые.'}</p>`;
   }
@@ -1072,7 +1116,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return shuffle(opts);
   }
   const TYPE_FIELD = { 'pick-ru': 'ru', 'pick-en': 'en', 'cloze-pick': 'en' };
-  const TITLES = { learn: 'Изучение трудных слов', test: 'Тест', write: 'Ввод', listen: 'На слух', cloze: 'Пропуск в предложении' };
+  const TITLES = { learn: 'Изучение трудных слов', test: 'Тест', write: 'Ввод', listen: 'На слух', 'listen-ru': 'Перевод на слух', cloze: 'Пропуск в предложении' };
 
   function renderPractice() {
     if (!ses) { trainMode = null; renderHub(); return; }
@@ -1103,6 +1147,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     } else {
       if (type === 'type-en') prompt = `${topHTML(w)}<div class="ru">${esc(w.ru)}</div>${ses.hint && !st && maskInfo(w) ? `<p class="ex" lang="en">${maskedHTML(w)}</p>` : ''}`;
       else if (type === 'listen') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay" aria-label="Прослушать ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay-slow">${ICON.voice}<span>Ещё раз</span></button>${w.ex ? `<button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>В предложении</span></button>` : ''}</div>`;
+      else if (type === 'listen-ru') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay-ru" aria-label="Прослушать перевод ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay-ru">${ICON.voice}<span>Ещё раз</span></button>${st ? '' : `<button class="chip" type="button" data-act="show-ru">${ICON.example}<span>${ses.showRu ? esc(w.ru) : 'Показать текст'}</span></button>`}</div>`;
       else prompt = `${topHTML(w)}<p class="ex ex-big" lang="en">${maskedHTML(w)}</p><div class="ru-sm">${esc(w.ru)}</div>`;
       if (ses.hint && !st) prompt += `<p class="hint" lang="en" aria-label="Подсказка">${esc(hintPattern(type === 'cloze' ? maskInfo(w).form : w.en, ses.hint))}</p>`;
       answer = `<form class="write" id="writeForm" autocomplete="off" novalidate>
@@ -1116,11 +1161,14 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       keysHTML(...(field ? [['1–4', 'выбрать'], ['Enter', 'дальше']] : [['Enter', st ? 'дальше' : 'проверить']]), ['S', 'звук']);
     const form = $('#writeForm');
     if (form) form.addEventListener('submit', e => { e.preventDefault(); submitAnswer(); });
-    Sound.prefetch(w);
+    Sound.prefetch(w, type === 'listen-ru');
+    const nextItem = ses.kind !== 'learn' && ses.items ? ses.items[ses.i + 1] : null;
+    if (nextItem) Sound.prefetch(nextItem.w, type === 'listen-ru');
     const key = (ses.kind === 'learn' ? ses.steps + ':' + ses.total + ':' + w.key + type : ses.i);
     if (!st && ses.spoken !== key) {
       ses.spoken = key;
       if (type === 'listen') playWord(w);
+      else if (type === 'listen-ru') playRu(w);
       else if ((type === 'pick-ru' || type === 'intro') && S.autoplay && interacted) playWord(w);
     }
     if (st) { const b = $('[data-act="next"],[data-act="wnext"]'); if (b) b.focus({ preventScroll: true }); }
@@ -1128,7 +1176,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
   function feedbackHTML(w, st, type) {
     const word = `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span>${ipaHTML(w)}</div>`;
-    const ru = type === 'listen' ? `<div class="ru-sm">${esc(w.ru)}</div>` : '';
+    const ru = type === 'listen' || type === 'listen-ru' ? `<div class="ru-sm">${esc(w.ru)}</div>` : '';
     const ex = w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : '';
     if (st.ok) return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : 'Верно'}</p>${word}${ru}${chipsHTML(w, !!w.ex)}${ex}<div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
     return `<div class="feedback" role="status"><p class="verdict bad">${st.input ? 'Неверно' : 'Правильный ответ'}</p>
@@ -1162,7 +1210,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const ok = isCorrect(input.value, item.w, item.type === 'cloze');
     settle(ok, { input: input.value.trim() });
     render();
-    if (S.autoplay || item.type === 'listen') playWord(item.w);
+    if (S.autoplay || item.type === 'listen' || item.type === 'listen-ru') playWord(item.w);
   }
   function giveUp() {
     const item = currentItem();
@@ -1193,7 +1241,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (!ses || !ses.st) return;
     clearTimeout(ses.timer);
     if (ses.kind === 'learn') { learnResult(ses.st.ok); nextLearnItem(); }
-    else { ses.i++; ses.st = null; ses.opts = null; ses.hint = 0; }
+    else { ses.i++; ses.st = null; ses.opts = null; ses.hint = 0; ses.showRu = false; }
     if (tab === 'train') render();
   }
   function renderPracticeDone() {
@@ -1317,10 +1365,237 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       return;
     }
     delete btn.dataset.armed; btn.textContent = 'Сбросить прогресс';
+    Sync.meta.resetAt = Date.now(); Sync.save();
     SRS = {}; PST = {}; saveSrs(); savePst();
     card = null; ses = null; trainMode = null; learnPrompt = false;
-    render(); toast('Прогресс сброшен');
+    render(); toast(Sync.on ? 'Прогресс сброшен на всех устройствах' : 'Прогресс сброшен');
   }
+
+  /* ================= синхронизация через GitHub ================= */
+  const SYNC_FILE = 'ty-geniy-progress.json';
+  const TOKEN_URL = 'https://github.com/settings/personal-access-tokens/new?' + new URLSearchParams({
+    name: 'Ты гений — синхронизация',
+    description: 'Синхронизация прогресса приложения «Ты гений» между устройствами. Доступ только к gist.',
+    expires_in: 'none', gists: 'write'
+  }).toString();
+  function deviceName() {
+    const ua = navigator.userAgent;
+    if (/iPhone/.test(ua)) return 'iPhone';
+    if (/iPad/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) return 'iPad';
+    if (/Android/.test(ua)) return /Mobile/.test(ua) ? 'Android-телефон' : 'Android-планшет';
+    if (/Windows/.test(ua)) return 'компьютер';
+    if (/Macintosh/.test(ua)) return 'Mac';
+    return 'другое устройство';
+  }
+  function relTime(t) {
+    if (!t) return '';
+    const m = Math.round((Date.now() - t) / MIN);
+    if (m < 1) return 'только что';
+    if (m < 60) return m + ' мин назад';
+    const h = Math.round(m / 60);
+    if (h < 24) return h + ' ч назад';
+    const d = new Date(t);
+    return d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' }) + ' в ' + d.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+  }
+  const sameRec = (a, b) => (!a && !b) || (!!a && !!b && (a.last || 0) === (b.last || 0) && (a.reps || 0) === (b.reps || 0) && (a.due || 0) === (b.due || 0));
+  function compactSrs(src) {
+    const out = {};
+    Object.keys(src).forEach(k => {
+      const r = Object.assign({}, src[k]);
+      if (typeof r.s === 'number') r.s = Math.round(r.s * 1e4) / 1e4;
+      if (typeof r.d === 'number') r.d = Math.round(r.d * 1e4) / 1e4;
+      out[k] = r;
+    });
+    return out;
+  }
+  function syncError(message, fatal) { return Object.assign(new Error(message), { userMessage: true, fatal: !!fatal }); }
+
+  const Sync = {
+    token: store.get('tg:sync-token', ''),
+    gist: store.get('tg:sync-gist', ''),
+    meta: store.get('tg:sync-meta', null) || { resetAt: 0 },
+    last: store.get('tg:sync-last', 0),
+    dirty: store.get('tg:sync-dirty', false),
+    remoteBy: store.get('tg:sync-by', ''),
+    remoteAt: store.get('tg:sync-at', 0),
+    state: 'off', error: '', fatal: false, running: null, again: false, timer: 0, lastPush: 0,
+    get on() { return !!this.token; },
+    save() {
+      store.set('tg:sync-token', this.token); store.set('tg:sync-gist', this.gist); store.set('tg:sync-meta', this.meta);
+      store.set('tg:sync-last', this.last); store.set('tg:sync-dirty', this.dirty);
+      store.set('tg:sync-by', this.remoteBy); store.set('tg:sync-at', this.remoteAt);
+    },
+    async api(path, opts = {}) {
+      const headers = { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + this.token };
+      if (opts.body) headers['Content-Type'] = 'application/json';
+      let res;
+      try {
+        res = await fetch('https://api.github.com' + path, { method: opts.method || 'GET', headers, body: opts.body ? JSON.stringify(opts.body) : undefined, cache: 'no-store' });
+      } catch (e) {
+        throw syncError('Нет связи с GitHub. Прогресс сохранён на этом устройстве и отправится позже.');
+      }
+      if (res.status === 404 && opts.allow404) return null;
+      if (res.status === 401) throw syncError('Ключ не подходит или отозван. Создай новый ключ и вставь его.', true);
+      if (res.status === 403 || res.status === 429) {
+        if (res.headers.get('x-ratelimit-remaining') === '0' || res.status === 429) throw syncError('GitHub временно ограничил запросы. Повторю позже.');
+        throw syncError('У ключа нет доступа к gist. При создании ключа нужно разрешение «Gists: Read and write».', true);
+      }
+      if (res.status === 404) throw syncError('У ключа нет доступа к gist. При создании ключа нужно разрешение «Gists: Read and write».', true);
+      if (!res.ok) throw syncError('GitHub ответил ошибкой ' + res.status + '. Повторю позже.');
+      return res.status === 204 ? null : res.json();
+    },
+    payload(srs) { return { app: 'ty-geniy', v: 1, at: Date.now(), by: deviceName(), resetAt: this.meta.resetAt || 0, srs: compactSrs(srs) }; },
+    async findGist() {
+      if (this.gist) {
+        const g = await this.api('/gists/' + this.gist, { allow404: true });
+        if (g && g.files && g.files[SYNC_FILE]) return g;
+        this.gist = '';
+      }
+      for (let page = 1; page <= 10; page++) {
+        const list = await this.api('/gists?per_page=100&page=' + page);
+        const hit = (list || []).find(g => g.files && g.files[SYNC_FILE]);
+        if (hit) { this.gist = hit.id; return this.api('/gists/' + hit.id); }
+        if (!list || list.length < 100) break;
+      }
+      return null;
+    },
+    async readRemote(g) {
+      const f = g && g.files && g.files[SYNC_FILE];
+      if (!f) return null;
+      let text = f.content;
+      if (f.truncated && f.raw_url) text = await (await fetch(f.raw_url, { cache: 'no-store' })).text();
+      try { const data = JSON.parse(text || '{}'); return data && typeof data === 'object' ? data : { srs: {} }; } catch (e) { return { srs: {} }; }
+    },
+    merge(remote) {
+      const rs = (remote && remote.srs) || {};
+      const resetAt = Math.max(this.meta.resetAt || 0, (remote && remote.resetAt) || 0);
+      const out = {};
+      let localChanged = false, remoteChanged = resetAt !== ((remote && remote.resetAt) || 0);
+      const newer = (a, b) => (a.last || 0) > (b.last || 0) || ((a.last || 0) === (b.last || 0) && (a.reps || 0) > (b.reps || 0));
+      new Set(Object.keys(SRS).concat(Object.keys(rs))).forEach(k => {
+        let l = SRS[k], r = rs[k];
+        if (l && (l.last || 0) <= resetAt) l = null;
+        if (r && (r.last || 0) <= resetAt) r = null;
+        const pick = l && r ? (newer(r, l) ? r : l) : (l || r || null);
+        if (pick) out[k] = pick;
+        if (!sameRec(pick, SRS[k])) localChanged = true;
+        if (!sameRec(pick, rs[k])) remoteChanged = true;
+      });
+      this.meta.resetAt = resetAt;
+      return { out, localChanged, remoteChanged };
+    },
+    run(reason) {
+      if (!this.token || IS_PREVIEW) return Promise.resolve();
+      if (this.running) { this.again = true; return this.running; }
+      clearTimeout(this.timer);
+      this.running = (async () => {
+        this.state = 'syncing'; this.paint();
+        try {
+          let g = await this.findGist();
+          if (!g) {
+            g = await this.api('/gists', { method: 'POST', body: { description: 'Ты гений — прогресс изучения слов (синхронизация)', public: false, files: { [SYNC_FILE]: { content: JSON.stringify(this.payload(SRS)) } } } });
+            this.gist = g.id; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
+          } else {
+            const remote = await this.readRemote(g);
+            const m = this.merge(remote);
+            if (m.localChanged) { SRS = m.out; store.set('tg:srs', SRS); refreshAfterSync(); }
+            if (m.remoteChanged) {
+              await this.api('/gists/' + this.gist, { method: 'PATCH', body: { files: { [SYNC_FILE]: { content: JSON.stringify(this.payload(m.out)) } } } });
+              this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
+            } else {
+              this.remoteBy = (remote && remote.by) || this.remoteBy; this.remoteAt = (remote && remote.at) || this.remoteAt;
+            }
+          }
+          this.dirty = false; this.last = Date.now(); this.state = 'idle'; this.error = ''; this.fatal = false;
+        } catch (e) {
+          this.state = 'error'; this.fatal = !!e.fatal;
+          this.error = e.userMessage ? e.message : 'Не получилось синхронизировать. Повторю позже.';
+        } finally {
+          this.save(); this.running = null; this.paint();
+          if (this.again) { this.again = false; this.schedule(2000); }
+          else if (this.state === 'error' && !this.fatal) this.schedule(60000);
+        }
+      })();
+      return this.running;
+    },
+    changed() {
+      if (!this.token) return;
+      this.dirty = true; store.set('tg:sync-dirty', true);
+      this.schedule(15000);
+    },
+    schedule(ms) {
+      clearTimeout(this.timer);
+      const wait = Math.max(ms, 30000 - (Date.now() - this.lastPush));
+      this.timer = setTimeout(() => this.run('auto'), wait);
+    },
+    async connect(raw) {
+      const parts = String(raw || '').replace(/\s+/g, '').split('~');
+      const tok = parts[0] || '', gid = parts[1] || '';
+      if (!/^(github_pat_\w{20,}|gh[pousr]_\w{20,})$/.test(tok)) {
+        this.state = 'error'; this.error = 'Это не похоже на ключ GitHub: он начинается с github_pat_. Скопируй его целиком.'; this.paint();
+        return;
+      }
+      this.token = tok;
+      this.gist = /^[0-9a-f]{20,40}$/i.test(gid) ? gid : '';
+      this.dirty = Object.keys(SRS).length > 0;
+      this.save();
+      await this.run('connect');
+      if (this.state === 'idle') { $('#syncToken').value = ''; toast('Синхронизация включена'); }
+      else if (this.fatal) { this.token = ''; this.gist = ''; this.save(); this.paint(); }
+    },
+    disconnect() {
+      clearTimeout(this.timer);
+      this.token = ''; this.gist = ''; this.state = 'off'; this.error = ''; this.dirty = false;
+      this.save(); this.paint();
+      toast('Синхронизация отключена на этом устройстве');
+    },
+    async copy(btn) {
+      const text = this.token + (this.gist ? '~' + this.gist : '');
+      try { await navigator.clipboard.writeText(text); toast('Ключ скопирован. Вставь его на другом устройстве'); }
+      catch (e) {
+        const input = $('#syncToken');
+        $('#syncOff').hidden = false; input.value = text; input.focus(); input.select();
+        toast('Скопируй выделенный ключ вручную');
+      }
+    },
+    paint() {
+      const off = !this.token;
+      const st = $('#syncState'), info = $('#syncInfo');
+      if (!st) return;
+      const label = IS_PREVIEW ? 'Только на сайте' : off ? 'Выключена' : this.state === 'syncing' ? 'Синхронизирую…' : this.state === 'error' ? 'Ошибка' : 'Включена';
+      st.textContent = label;
+      st.dataset.s = off ? (this.state === 'error' ? 'error' : 'off') : this.state;
+      let t;
+      if (IS_PREVIEW) t = 'В превью синхронизация не работает. Открой приложение на сайте GitHub.';
+      else if (this.state === 'error') t = this.error;
+      else if (off) t = 'Сейчас прогресс хранится только на этом устройстве. После подключения он станет общим на компьютере, iPhone и планшете. Нужен бесплатный ключ GitHub с правом только на gist: к коду и словам он доступа не даёт.';
+      else if (this.state === 'syncing') t = 'Сверяю прогресс с другими устройствами.';
+      else t = `Последняя синхронизация: ${relTime(this.last) || 'ещё не было'}.` + (this.remoteAt ? ` Последние изменения в облаке: ${this.remoteBy || 'устройство'}, ${relTime(this.remoteAt)}.` : '');
+      info.textContent = t;
+      $('#syncOff').hidden = !off || IS_PREVIEW;
+      $('#syncOn').hidden = off || IS_PREVIEW;
+      $('#tokenLink').href = TOKEN_URL;
+      const note = $('#progressNote');
+      if (note) note.textContent = off ? 'Хранится только на этом устройстве.' : 'Общий для всех подключённых устройств. Сброс удалит прогресс везде.';
+      const gear = $('#openSettings');
+      if (this.token && this.state === 'error') gear.setAttribute('data-alert', ''); else gear.removeAttribute('data-alert');
+    }
+  };
+  onSrsSaved = () => Sync.changed();
+  function refreshAfterSync() {
+    if (tab === 'list') { if ($('#listBody')) renderListBody(); }
+    else if (tab === 'cards') { if (!learnPrompt && (!card || !card.flipped)) renderCards(); }
+    else if (tab === 'train' && !trainMode) renderHub();
+  }
+  $('#syncForm').addEventListener('submit', e => { e.preventDefault(); Sync.connect($('#syncToken').value); });
+  document.addEventListener('visibilitychange', () => {
+    if (!Sync.on) return;
+    if (document.visibilityState === 'visible') { if (Date.now() - Sync.last > 20000) Sync.run('visible'); }
+    else if (Sync.dirty) Sync.run('hidden');
+  });
+  window.addEventListener('online', () => { if (Sync.on && Sync.dirty) Sync.run('online'); });
+  setInterval(() => { if (Sync.on && document.visibilityState === 'visible') Sync.run('interval'); }, 4 * 60000);
+  setInterval(() => { if ($('#settings') && !$('#settings').hidden) Sync.paint(); }, 30000);
 
   /* ================= install hint ================= */
   let installEvent = null;
@@ -1360,6 +1635,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'say-ex': if (w && w.ex) playExample(w); break;
       case 'yg': if (!IS_PREVIEW && w) { e.preventDefault(); openYouglish(w); } break;
       case 'replay': case 'replay-slow': if (w) playWord(w); break;
+      case 'replay-ru': if (w) playRu(w); break;
+      case 'show-ru': if (ses) { ses.showRu = true; const typed = $('#answer') ? $('#answer').value : ''; render(); if ($('#answer')) $('#answer').value = typed; } break;
+      case 'sync-now': Sync.run('manual').then(() => { if (Sync.state === 'idle') toast('Синхронизировано'); }); break;
+      case 'sync-copy': Sync.copy(el); break;
+      case 'sync-off': Sync.disconnect(); break;
       case 'opt': choose(Number(el.dataset.i)); break;
       case 'next': case 'wnext': advance(); break;
       case 'intro-next': settle(true, {}); advance(); break;
@@ -1382,7 +1662,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     }
   });
   $$('.sheet').forEach(s => s.addEventListener('click', e => { if (e.target === s) closeSheets(); }));
-  $('#openSettings').addEventListener('click', () => { syncSettingsUI(); openSheet('#settings'); });
+  $('#openSettings').addEventListener('click', () => { syncSettingsUI(); Sync.paint(); openSheet('#settings'); });
   $('#group').addEventListener('change', e => { S.group = e.target.value; saveSettings(); card = null; ses = null; trainMode = null; openKey = null; render(); });
   $('#autoplay').addEventListener('change', e => { S.autoplay = e.target.checked; saveSettings(); });
 
@@ -1393,7 +1673,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const typing = tag === 'input' || tag === 'select' || tag === 'textarea';
     const onControl = tag === 'button' || tag === 'a';
     const w = tab === 'cards' && card ? card.w : (currentItem() || {}).w;
-    if (e.code === 'KeyS' && !typing && w) { playWord(w); return; }
+    if (e.code === 'KeyS' && !typing && w) {
+      const it = tab === 'train' ? currentItem() : null;
+      if (it && it.type === 'listen-ru' && !ses.st) playRu(w); else playWord(w);
+      return;
+    }
     if (tab === 'cards' && !typing && card) {
       if ((e.code === 'Space' || e.key === 'Enter') && !onControl) { e.preventDefault(); flipCard(); }
       else if (card.flipped && /^[1-4]$/.test(e.key)) gradeCard(Number(e.key));
@@ -1411,7 +1695,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   render();
   renderBanner();
   syncSettingsUI();
+  Sync.paint();
   loadWords();
+  if (Sync.on) Sync.run('start');
   if (!IS_PREVIEW && 'serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
     navigator.serviceWorker.register('sw.js').catch(() => { /* offline mode unavailable */ });
   }
