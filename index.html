@@ -549,7 +549,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       if (line.startsWith('#')) { group = line.replace(/^#+\s*/, '').trim() || 'Без темы'; return; }
       let parts = line.includes(';') ? line.split(';') : line.includes('\t') ? line.split('\t') : line.split(/\s+[-–—]\s+/);
       parts = parts.map(p => p.trim());
-      const en = parts[0] || '', ru = parts[1] || '', ex = parts.slice(2).filter(Boolean).join('; ');
+      const en = parts[0] || '';
+      const rest = parts.slice(1).filter(Boolean);
+      // пример — последняя часть, если она английская; значения перевода могут идти через «;»
+      const ex = rest.length >= 2 && /[a-z]/i.test(rest[rest.length - 1]) && !/[а-яё]/i.test(rest[rest.length - 1]) ? rest.pop() : '';
+      const ru = rest.join('; ');
       if (!en || !ru) { skipped.push(idx + 1); return; }
       if (!groups.includes(group)) groups.push(group);
       words.push({ en, ru, ex, group, key: en.toLowerCase().replace(/\s+/g, ' ') });
@@ -572,7 +576,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     lastFetch = Date.now();
     loadAudioIndex();
     try {
-      const res = await fetch('words.txt', { cache: 'no-store' });
+      const res = await fetch('words.txt', { cache: 'no-cache' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const text = await res.text();
       wordsAt = Date.now();
@@ -598,7 +602,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   async function loadAudioIndex() {
     if (IS_PREVIEW) return;
     try {
-      const res = await fetch('audio/index.json', { cache: 'no-store' });
+      const res = await fetch('audio/index.json', { cache: 'no-cache' });
       if (!res.ok) return;
       AUDIO = await res.json();
       store.set('tg:audio', AUDIO);

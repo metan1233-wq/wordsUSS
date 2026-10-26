@@ -55,8 +55,11 @@ def parse_words(text):
             parts = re.split(r"\s+[-–—]\s+", line)
         parts = [p.strip() for p in parts]
         en = parts[0] if parts else ""
-        ru = parts[1] if len(parts) > 1 else ""
-        ex = "; ".join(p for p in parts[2:] if p)
+        rest = [p for p in parts[1:] if p]
+        ex = ""
+        if len(rest) >= 2 and re.search(r"[A-Za-z]", rest[-1]) and not re.search(r"[А-Яа-яЁё]", rest[-1]):
+            ex = rest.pop()  # пример всегда последний, значения перевода могут идти через «;»
+        ru = "; ".join(rest)
         if en and ru:
             out.append({"key": re.sub(r"\s+", " ", en.lower()), "en": en, "ru": ru, "ex": ex})
     return out
@@ -216,9 +219,10 @@ async def main():
     old = json.loads(INDEX.read_text(encoding="utf-8")) if INDEX.exists() else {}
     old_words = old.get("words", {}) if old.get("voice") == VOICE else {}
     index = {"voice": VOICE, "words": {}}
-    sem = asyncio.Semaphore(4)
+    sem = asyncio.Semaphore(5)
     jobs = []
     made = {"w": 0, "h": 0, "e": 0, "r": 0}
+    lookups = []
 
     for w in words:
         key, prev = w["key"], old_words.get(w["key"], {})
@@ -234,21 +238,10 @@ async def main():
             if prev.get("h") and (AUDIO / prev["h"]).exists():
                 rec["h"] = prev["h"]
         else:
-            term = dict_term(w["en"])
             rec["ipa"], rec["dict"] = "", 4
+            term = dict_term(w["en"])
             if term:
-                ipa, url = dictionary_info(term)
-                hf = f"h/{slug(term.lower())}.mp3"
-                src, wipa, checked = human_audio(term, AUDIO / hf, url)
-                rec["ipa"] = wipa if wipa.startswith("/") else (ipa or wipa)
-                if not checked:
-                    rec.pop("dict")
-                if src:
-                    rec["h"], rec["src"] = hf, src
-                    made["h"] += 1
-                else:
-                    log(f"  - живой записи нет: {term}")
-                time.sleep(0.4)
+                lookups.append((term, rec))
         # нейроголос для примера
         if w["ex"]:
             ef = f"e/{slug(w['ex'], VOICE)}.mp3"
@@ -263,6 +256,26 @@ async def main():
             if not (AUDIO / rf).exists():
                 jobs.append((ru_text, AUDIO / rf, "r", VOICE_RU))
         index["words"][key] = rec
+
+    # живые записи и транскрипция: несколько запросов параллельно, чтобы большой список не шёл часами
+    def lookup(item):
+        term, rec = item
+        ipa, url = dictionary_info(term)
+        hf = f"h/{slug(term.lower())}.mp3"
+        src, wipa, checked = human_audio(term, AUDIO / hf, url)
+        rec["ipa"] = wipa if wipa.startswith("/") else (ipa or wipa)
+        if not checked:
+            rec.pop("dict", None)
+        if src:
+            rec["h"], rec["src"] = hf, src
+        else:
+            log(f"  - живой записи нет: {term}")
+        time.sleep(0.3)
+        return bool(src)
+    if lookups:
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            made["h"] += sum(pool.map(lookup, lookups))
 
     results = await asyncio.gather(*(tts(t, d, sem, v) for t, d, _, v in jobs))
     for (_, dest, kind, _v), ok in zip(jobs, results):
@@ -281,7 +294,7 @@ async def main():
                 f.unlink()
                 removed += 1
 
-    INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    INDEX.write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     log(f"Слов: {len(words)}. Новых файлов: нейроголос слов {made['w']}, примеров {made['e']}, "
           f"переводов {made['r']}, живых записей {made['h']}. Удалено лишних: {removed}.")
 

@@ -1,7 +1,9 @@
 // Формат строки:  слово ; перевод ; пример
+// Значения перевода можно перечислять через «;», пример всегда последний и на английском.
 // Пример можно не писать. Строка с # в начале задаёт тему.
 // Пустые строки и строки с // приложение пропускает.
-// Список: самые частые слова уровня B1 (и немного A2+ и B2) по темам.
+// Список: темы, «Мои слова» и ~2100 слов уровней B1–B2 (без A1 и A2).
+// Уровни слов: CEFR-J Vocabulary Profile 1.5, Tono Laboratory, TUFS (openlanguageprofiles/olp-en-cefrj).
 
 # Мои слова
 disease ; болезнь, заболевание ; Heart disease is very common.
@@ -937,3 +939,2155 @@ specific ; конкретный ; Can you be more specific?
 chocolate ; шоколад ; I love dark chocolate.
 mountain ; гора ; We climbed a mountain.
 interesting ; интересный ; It's an interesting book.
+
+# B1 · Глаголы
+to beat ; бить ; победить ; Our team beat them 3 to 1.
+to bet ; спорить на что-то, делать ставку ; I bet you can't do it.
+to prove ; доказывать ; Can you prove that you were at home?
+to stick ; приклеивать ; застрять ; Stick the photo on the first page.
+to transfer ; переводить, переносить ; I will transfer the money tomorrow.
+to remove ; убирать, удалять ; Please remove your shoes at the door.
+to ensure ; обеспечивать, гарантировать ; We must ensure that everyone is safe.
+to launch ; запускать ; The company will launch a new product in May.
+to advance ; продвигаться ; развивать ; Technology advances very quickly.
+to finance ; финансировать ; The bank agreed to finance the project.
+to maintain ; поддерживать, сохранять ; обслуживать ; It is hard to maintain a healthy diet.
+to lay ; класть, укладывать ; She laid the baby on the bed.
+to hang ; вешать ; висеть ; Hang your coat on the hook.
+to affect ; влиять на ; The weather can affect your mood.
+to assume ; предполагать ; I assume you have already eaten.
+to shift ; сдвигать, перемещать(ся) ; Help me shift the table to the left.
+to tend ; иметь склонность ; I tend to wake up early.
+to counter ; противостоять, возражать ; He tried to counter my argument.
+to promote ; продвигать ; повышать в должности ; She was promoted to manager last year.
+to grab ; хватать ; Grab your bag, we are leaving.
+to defeat ; побеждать, наносить поражение ; They defeated the champions easily.
+to swear ; клясться ; ругаться ; I swear I didn't take it.
+to ignore ; игнорировать, не обращать внимания ; Just ignore him.
+to defend ; защищать ; He defended his friend in the argument.
+to occur ; происходить, случаться ; The accident occurred at night.
+to suffer ; страдать ; Many people suffer from back pain.
+to assist ; помогать, содействовать ; The nurse will assist the doctor.
+to participate ; участвовать ; Everyone can participate in the game.
+soil ; почва ; пачкать ; Tomatoes grow well in this soil.
+to confirm ; подтверждать ; Please confirm your booking by email.
+to obtain ; получать, добывать ; You need to obtain a visa first.
+to recall ; вспоминать ; отзывать ; I can't recall his name.
+to associate ; связывать, ассоциировать ; I associate this song with summer.
+to connect ; соединять, подключать ; Connect the printer to your laptop.
+to engage ; вовлекать ; заниматься ; The game engages children for hours.
+to regard ; считать, рассматривать ; I regard him as my best friend.
+to expand ; расширять(ся) ; The company plans to expand abroad.
+to stretch ; растягивать(ся) ; потягиваться ; Stretch your legs before running.
+to contribute ; вносить вклад ; Everyone contributed ten dollars.
+to extend ; продлевать ; расширять ; Can I extend my visa?
+to commit ; совершать (ошибку, преступление) ; брать обязательство ; He committed a serious crime.
+to invest ; вкладывать, инвестировать ; They invested all their savings in the house.
+to dare ; осмеливаться ; I didn't dare to ask him.
+to define ; определять, давать определение ; How do you define success?
+to enable ; давать возможность ; The app enables you to pay by phone.
+to stem from ; происходить из, быть следствием ; His fear stems from childhood.
+to drag ; тащить, волочить ; Don't drag your bag on the floor.
+to involve ; включать в себя ; вовлекать ; The job involves a lot of travel.
+pin ; булавка ; прикалывать ; PIN-код ; Pin the note to the board.
+to volunteer ; вызываться добровольно ; She volunteered to help at the hospital.
+to forgive ; прощать ; Please forgive me.
+to vary ; различаться, меняться ; Prices vary from shop to shop.
+to relate ; относиться, быть связанным ; понимать чувства ; I can relate to your problem.
+to generate ; производить, генерировать ; The wind farm generates electricity.
+to highlight ; выделять, подчёркивать ; Highlight the key words in yellow.
+to attract ; привлекать ; The festival attracts thousands of tourists.
+to demonstrate ; демонстрировать, показывать ; Let me demonstrate how it works.
+to resist ; сопротивляться ; устоять ; I couldn't resist the chocolate cake.
+to preserve ; сохранять ; консервировать ; We must preserve old buildings.
+to qualify ; получать право, квалификацию ; She qualified as a doctor in 2020.
+to acknowledge ; признавать ; подтверждать получение ; He acknowledged his mistake.
+to proceed ; продолжать, переходить к ; Please proceed to gate 5.
+to restore ; восстанавливать, реставрировать ; They restored the old church.
+to bless ; благословлять ; Bless you! Do you have a cold?
+to resolve ; решать, улаживать ; We resolved the problem quickly.
+to react ; реагировать ; How did she react to the news?
+to retain ; сохранять, удерживать ; The company wants to retain its best workers.
+to burst ; лопаться, взрываться ; The balloon burst with a loud bang.
+to eliminate ; устранять, исключать ; We need to eliminate all mistakes.
+to inform ; сообщать, информировать ; Please inform us of any changes.
+to acquire ; приобретать ; She acquired a lot of experience abroad.
+to combine ; сочетать, объединять ; Combine the flour and the eggs.
+to heal ; заживать ; исцелять ; The wound healed quickly.
+to breed ; разводить (животных) ; размножаться ; They breed horses on the farm.
+to scare ; пугать ; Sorry, I didn't mean to scare you.
+to observe ; наблюдать ; соблюдать ; Scientists observe the birds every day.
+to accomplish ; выполнить, достичь ; We accomplished a lot this week.
+to declare ; объявлять, заявлять ; декларировать ; Do you have anything to declare?
+to interact ; взаимодействовать ; Children learn by interacting with others.
+to strengthen ; укреплять ; Exercise strengthens your muscles.
+to transform ; преобразовывать, превращать ; The new park transformed the area.
+to differ ; отличаться ; Our opinions differ on this point.
+to reject ; отклонять, отвергать ; The bank rejected my application.
+to abandon ; бросать, покидать ; They abandoned the car in the snow.
+to bounce ; отскакивать, подпрыгивать ; The ball bounced off the wall.
+to possess ; обладать, владеть ; He possesses great talent.
+tire ; шина (амер.) ; утомлять(ся) ; We had a flat tire on the way home.
+to inspire ; вдохновлять ; Her story inspired me to start running.
+to propose ; предлагать ; делать предложение (руки) ; He proposed to her in Paris.
+to adapt ; приспосабливаться, адаптировать ; It takes time to adapt to a new job.
+to bump into ; удариться о ; случайно встретить ; I bumped into my teacher at the mall.
+to construct ; строить, сооружать ; They plan to construct a new bridge.
+to expose ; подвергать ; разоблачать ; Don't expose your skin to the sun for too long.
+to stir ; мешать, помешивать ; Stir the soup every few minutes.
+to blend ; смешивать ; Blend the fruit with some milk.
+to punish ; наказывать ; He was punished for being late.
+to leap ; прыгать, скакать ; The cat leaped onto the table.
+to locate ; находить, определять местоположение ; We couldn't locate the problem.
+to arise ; возникать ; Problems may arise during the trip.
+to bore ; надоедать, наскучить ; His long stories bore everyone.
+to occupy ; занимать ; The meeting occupied the whole morning.
+to educate ; обучать, давать образование ; Parents should educate children about money.
+to outline ; излагать кратко, обрисовывать ; Let me outline the main points.
+to stare ; пристально смотреть, глазеть ; Why are you staring at me?
+to toss ; бросать, подбрасывать ; Let's toss a coin.
+to conclude ; заключать, делать вывод ; заканчивать ; We concluded that the plan was too risky.
+to rebuild ; восстанавливать, перестраивать ; They rebuilt the house after the fire.
+to unite ; объединять(ся) ; The disaster united the whole town.
+to emerge ; появляться, выясняться ; New problems emerged during the test.
+to calculate ; вычислять, рассчитывать ; Calculate the total cost of the trip.
+to distinguish ; различать, отличать ; Can you distinguish between the twins?
+to fade ; выцветать ; угасать ; The colors faded in the sun.
+to constitute ; составлять, являться ; Women constitute half of the team.
+to analyze ; анализировать ; We need to analyze the results.
+to convey ; передавать, выражать ; It is hard to convey my feelings in English.
+to entertain ; развлекать ; принимать гостей ; The clown entertained the children.
+to shave ; брить(ся) ; He shaves every morning.
+to endure ; терпеть, выносить ; She endured a lot of pain.
+to absorb ; впитывать, поглощать ; The towel absorbs water well.
+to accompany ; сопровождать ; Children must be accompanied by an adult.
+to spoil ; портить ; баловать ; Don't spoil the surprise!
+to undergo ; подвергаться, проходить (лечение, проверку) ; He will undergo surgery next week.
+to minimize ; сводить к минимуму ; We want to minimize the risk.
+to restrict ; ограничивать ; The law restricts smoking in public places.
+to seize ; хватать ; захватывать ; Seize the opportunity!
+to distribute ; распределять, раздавать ; They distributed food to the poor.
+to hesitate ; колебаться, не решаться ; Don't hesitate to call me.
+to modify ; изменять, модифицировать ; We had to modify the design.
+to surround ; окружать ; The house is surrounded by trees.
+to conquer ; завоёвывать, покорять ; He conquered his fear of flying.
+to regain ; вернуть, восстановить ; She slowly regained her strength.
+to renew ; обновлять, продлевать ; I need to renew my passport.
+to resemble ; быть похожим на ; She resembles her mother.
+to bleed ; кровоточить ; My finger is bleeding.
+to choke ; давиться, задыхаться ; He choked on a fish bone.
+to accuse ; обвинять ; They accused him of stealing.
+to appoint ; назначать ; She was appointed head of the department.
+to emphasize ; подчёркивать, делать акцент ; The teacher emphasized the importance of practice.
+to drown ; тонуть, утонуть ; He almost drowned in the river.
+to depart ; отправляться, отбывать ; The train departs at 6:15.
+to disappoint ; разочаровывать ; I don't want to disappoint my parents.
+to govern ; управлять, править ; The country is governed by a president.
+to advertise ; рекламировать ; They advertise on social media.
+to assign ; поручать, назначать ; The teacher assigned us a project.
+to knit ; вязать ; My grandmother knits warm socks.
+to remark ; замечать, высказываться ; He remarked that the room was cold.
+to repay ; возвращать (долг) ; I will repay the loan in two years.
+to fetch ; сходить за, принести ; Could you fetch some water?
+to swell ; опухать, отекать ; My ankle started to swell.
+thirst ; жажда ; Water is the best drink for thirst.
+to reproduce ; воспроизводить ; размножаться ; It is hard to reproduce the results.
+to attain ; достигать ; She attained her goal.
+to motivate ; мотивировать ; Good teachers motivate their students.
+to congratulate ; поздравлять ; I congratulated him on his promotion.
+to discourage ; отговаривать ; лишать уверенности ; Don't let one mistake discourage you.
+to undo ; отменить, расстегнуть ; Click here to undo the last change.
+to mash ; разминать, делать пюре ; Mash the potatoes with butter.
+to cherish ; дорожить, лелеять ; I cherish every moment with my family.
+to disable ; отключать ; выводить из строя ; You can disable notifications in settings.
+to boast ; хвастаться ; He always boasts about his car.
+to dedicate ; посвящать ; She dedicated her life to science.
+to derive ; получать, извлекать ; происходить ; Many English words derive from Latin.
+to tighten ; затягивать, подтягивать ; Tighten the screws on the chair.
+to dissolve ; растворять(ся) ; Sugar dissolves in water.
+to revise ; пересматривать ; повторять (к экзамену) ; I need to revise for my exam.
+to uncover ; раскрывать, обнаруживать ; The journalist uncovered the truth.
+to rewrite ; переписывать ; I had to rewrite the whole essay.
+to applaud ; аплодировать ; The audience applauded loudly.
+to compose ; сочинять ; составлять ; Mozart composed his first music at five.
+to simplify ; упрощать ; Let me simplify the explanation.
+
+# B1 · Существительные и глаголы
+service ; обслуживание, услуга ; обслуживать ; The service in this hotel is excellent.
+rest ; отдых ; остаток ; отдыхать ; I'll do the rest tomorrow.
+press ; нажимать ; пресса ; Press the green button to start.
+race ; гонка, забег ; раса ; участвовать в гонке ; He won the race easily.
+link ; ссылка ; связь ; связывать ; Click the link to download the file.
+damage ; ущерб, повреждение ; повреждать ; The storm caused a lot of damage.
+demand ; спрос ; требование ; требовать ; There is a big demand for engineers.
+fund ; фонд ; финансировать ; We started a fund for the new school.
+gain ; получать, набирать ; прирост ; I gained two kilos on vacation.
+rise ; рост, повышение ; подниматься ; Prices continue to rise.
+aid ; помощь ; помогать ; The country needs international aid.
+limit ; предел, ограничение ; ограничивать ; There is a speed limit of 60 here.
+flow ; поток ; течь ; The river flows into the sea.
+to grant ; предоставлять, давать (разрешение) ; They granted him a visa.
+measure ; мера ; измерять ; We need to take measures to save energy.
+stream ; ручей, поток ; транслировать ; You can stream the match online.
+bomb ; бомба ; бомбить ; The police found a bomb near the station.
+cycle ; цикл ; ездить на велосипеде ; I cycle to work every day.
+to reserve ; бронировать, резервировать ; I'd like to reserve a table for four.
+switch ; выключатель ; переключать ; Switch off the light when you leave.
+to register ; регистрироваться ; You need to register before the course.
+crash ; авария ; разбиться ; зависнуть (о компьютере) ; My laptop crashed again.
+lift ; поднимать ; лифт (брит.) ; Can you help me lift this box?
+to hunt ; охотиться ; искать ; We spent the weekend hunting for a new flat.
+to rescue ; спасать ; Firefighters rescued the family.
+format ; формат ; Save the file in PDF format.
+to capture ; захватывать ; запечатлевать ; The photo captures the beauty of the city.
+monitor ; монитор ; отслеживать ; Doctors monitor his heart rate.
+exit ; выход ; выходить ; Where is the exit?
+bang ; громкий удар, хлопок ; хлопать ; The door closed with a bang.
+to slip ; поскользнуться ; Be careful not to slip on the ice.
+to twist ; крутить, скручивать ; вывихнуть ; I twisted my ankle playing football.
+to wrap ; заворачивать, упаковывать ; Can you wrap it as a gift?
+decrease ; уменьшение ; уменьшаться ; Sales decreased last month.
+to dive ; нырять ; He dived into the pool.
+to fold ; складывать ; Fold the paper in half.
+pause ; пауза ; ставить на паузу ; Pause the video, please.
+to dial ; набирать (номер) ; Dial 112 in an emergency.
+wax ; воск ; The candle is made of wax.
+glance ; беглый взгляд ; взглянуть ; She glanced at her watch.
+grill ; гриль ; жарить на гриле ; Let's grill some fish.
+tick ; галочка ; тикать ; отмечать галочкой ; Tick the correct answer.
+
+# B1 · Существительные 1
+general ; общий ; генерал ; This is a general rule.
+series ; серия, сериал ; We watched the whole series in a week.
+development ; развитие ; разработка ; The development of the app took a year.
+process ; процесс ; обрабатывать ; Learning a language is a long process.
+department ; отдел, отделение ; She works in the sales department.
+term ; срок ; семестр ; термин ; This is a medical term.
+total ; итог, сумма ; общий ; The total cost is 500 dollars.
+security ; безопасность ; охрана ; Airport security checked our bags.
+industry ; промышленность, отрасль ; He works in the car industry.
+policy ; политика, правила ; полис ; The company has a no-smoking policy.
+league ; лига ; Our team plays in the top league.
+management ; управление ; руководство ; The management decided to close the shop.
+property ; собственность, имущество ; свойство ; This property belongs to the city.
+council ; совет (орган) ; The city council approved the plan.
+union ; союз ; профсоюз ; She joined the union last year.
+loss ; потеря, утрата ; убыток ; The company reported a loss.
+army ; армия ; He served in the army for two years.
+district ; район, округ ; We live in a quiet district.
+percent ; процент ; Prices rose by five percent.
+growth ; рост ; Economic growth is slow this year.
+standard ; стандарт ; стандартный ; Safety standards are very high here.
+network ; сеть ; The company has a large network of shops.
+potential ; потенциал ; потенциальный ; She has great potential as a singer.
+content ; содержание, контент ; довольный ; The content of the course is useful.
+region ; регион, область ; This region is famous for its wine.
+sort ; вид, сорт ; сортировать ; What sort of music do you like?
+construction ; строительство ; конструкция ; The bridge is under construction.
+income ; доход ; Half of my income goes on rent.
+justice ; справедливость ; правосудие ; They want justice for the victims.
+movement ; движение ; Any movement causes pain in my back.
+safety ; безопасность ; Safety comes first.
+battle ; битва, сражение ; бороться ; It was a long battle against the illness.
+insurance ; страховка, страхование ; Do you have travel insurance?
+majority ; большинство ; The majority of students passed the test.
+opening ; открытие ; отверстие ; вакансия ; The opening of the new store is on Friday.
+administration ; администрация ; управление ; The administration of the school is strict.
+approach ; подход ; приближаться ; We need a new approach to this problem.
+cancer ; рак (болезнь) ; Smoking can cause cancer.
+defense ; защита, оборона ; The best defense is a good attack.
+operation ; операция ; работа (механизма) ; The operation was successful.
+organization ; организация ; She works for a charity organization.
+analysis ; анализ ; The analysis of the data took a week.
+marriage ; брак ; Their marriage lasted fifty years.
+skin ; кожа ; This cream is good for dry skin.
+professor ; профессор ; Our professor is very strict.
+reality ; реальность, действительность ; In reality, the job was very boring.
+comment ; комментарий ; комментировать ; Leave a comment below the video.
+theory ; теория ; In theory, it should work.
+cell ; клетка ; мобильный телефон (амер.) ; Call me on my cell.
+economy ; экономика ; The economy is growing slowly.
+foot ; ступня ; фут (30,5 см) ; My left foot hurts after the long walk.
+mission ; миссия, задание ; Their mission is to help homeless people.
+politics ; политика ; I'm not interested in politics.
+status ; статус, положение ; What is the status of my order?
+location ; местоположение ; The hotel has a great location.
+channel ; канал ; Which channel is the match on?
+distance ; расстояние ; What is the distance between the two cities?
+finding ; вывод, результат (исследования) ; The findings of the study were surprising.
+engine ; двигатель ; The engine won't start.
+surface ; поверхность ; The surface of the table is wet.
+hearing ; слух ; слушание (в суде) ; My grandfather has poor hearing.
+authority ; власть ; полномочия ; орган власти ; Local authorities closed the road.
+basis ; основа, основание ; We meet on a weekly basis.
+foundation ; фонд ; основание, фундамент ; The house has a strong foundation.
+soul ; душа ; She put her heart and soul into the project.
+supply ; запас, поставка ; снабжать ; We have a good supply of water.
+artist ; художник ; артист ; The artist painted a portrait of the queen.
+edition ; издание, выпуск ; This is the first edition of the book.
+engineering ; инженерное дело, машиностроение ; He studied mechanical engineering.
+institute ; институт ; She works at a research institute.
+option ; вариант, выбор ; We have two options.
+prison ; тюрьма ; He spent five years in prison.
+firm ; фирма ; твёрдый ; She works for a law firm.
+spirit ; дух ; настроение ; The team has great spirit.
+van ; фургон ; The delivery van arrived at nine.
+concept ; концепция, понятие ; The concept of time is different in every culture.
+journal ; журнал (научный) ; дневник ; She keeps a journal of her travels.
+leadership ; руководство, лидерство ; The team needs strong leadership.
+length ; длина ; The length of the room is five meters.
+setting ; обстановка, место действия ; настройка ; Change the settings on your phone.
+ad ; реклама, объявление ; I saw an ad for a new phone.
+balance ; равновесие ; баланс ; остаток (на счёте) ; Check your balance before paying.
+fellow ; парень ; товарищ ; коллега ; He is a nice fellow.
+vehicle ; транспортное средство ; Park your vehicle here.
+volume ; громкость ; объём ; том ; Turn down the volume, please.
+criminal ; преступник ; уголовный ; The police caught the criminal.
+investigation ; расследование ; The investigation is still going on.
+treat ; угощение ; обращаться с ; лечить ; Treat others as you want to be treated.
+variety ; разнообразие ; The shop offers a wide variety of cheese.
+violence ; насилие ; There is too much violence on TV.
+edge ; край ; лезвие ; Don't stand so close to the edge.
+religion ; религия ; We discussed religion and culture.
+blog ; блог ; She writes a blog about cooking.
+port ; порт ; The ship arrived at the port.
+presence ; присутствие ; Your presence is important to us.
+stress ; стресс ; ударение ; подчёркивать ; Exams cause a lot of stress.
+victory ; победа ; It was a great victory for the team.
+fuel ; топливо ; The car is running out of fuel.
+initial ; начальный, первоначальный ; My initial reaction was surprise.
+session ; сеанс, занятие, сессия ; The training session lasts two hours.
+teaching ; преподавание ; She loves teaching children.
+alternative ; альтернатива ; альтернативный ; Is there an alternative to this plan?
+capacity ; вместимость ; мощность ; способность ; The stadium has a capacity of 50,000.
+duty ; долг, обязанность ; пошлина ; It's my duty to help.
+governor ; губернатор ; The governor visited the factory.
+steel ; сталь ; The bridge is made of steel.
+command ; команда, приказ ; командовать ; The officer gave the command to start.
+enemy ; враг ; They became enemies after the argument.
+ocean ; океан ; We swam in the ocean.
+proof ; доказательство ; Do you have any proof?
+minimum ; минимум ; минимальный ; The minimum age is 18.
+transport ; транспорт ; перевозить ; Public transport is cheap here.
+appeal ; призыв ; привлекательность ; обращаться с просьбой ; The idea has a lot of appeal.
+entry ; вход ; запись ; участие (в конкурсе) ; Entry to the museum is free.
+era ; эпоха, эра ; We live in the digital era.
+studio ; студия ; She rents a small studio in the city.
+confidence ; уверенность ; She speaks with confidence.
+identity ; личность ; идентичность ; The police checked his identity.
+conflict ; конфликт ; There is a conflict between the two departments.
+distribution ; распределение ; распространение ; The distribution of food was well organized.
+surgery ; операция ; хирургия ; She needs surgery on her knee.
+vision ; зрение ; видение ; Her vision is getting worse.
+crisis ; кризис ; The country is in an economic crisis.
+jail ; тюрьма ; He spent a night in jail.
+literature ; литература ; She studies English literature.
+mayor ; мэр ; The mayor opened the new library.
+selection ; выбор, отбор ; ассортимент ; The shop has a good selection of wines.
+alcohol ; алкоголь ; Don't drink alcohol before driving.
+combination ; сочетание, комбинация ; It's a perfect combination of style and comfort.
+medium ; средний ; средство ; I'd like a medium coffee.
+wing ; крыло ; The bird hurt its wing.
+facility ; объект, помещение ; удобства ; The hotel has excellent sports facilities.
+goods ; товары ; The shop sells electrical goods.
+maximum ; максимум ; максимальный ; The maximum speed is 90 km per hour.
+republic ; республика ; France is a republic.
+threat ; угроза ; Pollution is a threat to our health.
+assistance ; помощь, содействие ; Do you need any assistance?
+bond ; связь, узы ; облигация ; There is a strong bond between them.
+instance ; случай, пример ; For instance, you can take the bus.
+mile ; миля (1,6 км) ; The station is two miles from here.
+prize ; приз, награда ; She won first prize.
+universe ; вселенная ; How big is the universe?
+warning ; предупреждение ; There was no warning before the storm.
+definition ; определение ; Look up the definition in a dictionary.
+heaven ; рай, небеса ; This beach is heaven on earth.
+possibility ; возможность ; There is a possibility of rain tomorrow.
+recovery ; выздоровление ; восстановление ; I wish you a quick recovery.
+academy ; академия ; He studied at a music academy.
+bunch ; связка, пучок ; группа ; She bought a bunch of flowers.
+category ; категория ; Divide the words into three categories.
+opposition ; оппозиция ; сопротивление ; There was strong opposition to the plan.
+representative ; представитель ; Speak to a customer service representative.
+storage ; хранение ; склад ; I need more storage space on my phone.
+tank ; бак, резервуар ; танк ; Fill the tank with petrol.
+transportation ; транспорт, перевозка ; The city has good public transportation.
+constitution ; конституция ; The constitution protects our rights.
+consumer ; потребитель ; Consumers want cheaper products.
+depression ; депрессия ; упадок ; She suffered from depression after the accident.
+employment ; трудоустройство, работа ; Employment in the region is growing.
+object ; предмет, объект ; цель ; There was a strange object in the sky.
+tournament ; турнир ; Our team won the tennis tournament.
+depth ; глубина ; What is the depth of the pool?
+existence ; существование ; Do you believe in the existence of ghosts?
+maintenance ; обслуживание, техническое содержание ; The lift is closed for maintenance.
+origin ; происхождение ; What is the origin of this word?
+retail ; розничная торговля ; She works in retail.
+shame ; стыд ; жаль ; What a shame you can't come!
+empire ; империя ; The Roman Empire was huge.
+incident ; инцидент, происшествие ; The police are investigating the incident.
+weapon ; оружие ; He was carrying a weapon.
+motor ; мотор, двигатель ; The boat has a small motor.
+conduct ; поведение ; проводить (исследование) ; They conducted a survey of 500 people.
+fantasy ; фантазия ; фэнтези ; I love fantasy books.
+introduction ; введение ; представление, знакомство ; Read the introduction first.
+steam ; пар ; Steam was coming from the kettle.
+aim ; цель ; целиться, стремиться ; Our aim is to finish by Friday.
+comedy ; комедия ; We watched a romantic comedy.
+comparison ; сравнение ; There is no comparison between the two hotels.
+democracy ; демократия ; Free elections are part of democracy.
+recording ; запись ; Listen to the recording again.
+suspect ; подозреваемый ; подозревать ; The police arrested a suspect.
+trend ; тенденция, тренд ; There is a trend towards working from home.
+approval ; одобрение ; The plan needs the director's approval.
+document ; документ ; Sign the document at the bottom.
+coal ; уголь ; The factory uses coal for energy.
+improvement ; улучшение ; There is a big improvement in your English.
+monster ; монстр, чудовище ; The children drew a monster.
+philosophy ; философия ; My philosophy is to enjoy every day.
+settlement ; поселение ; урегулирование ; They reached a settlement after long talks.
+finger ; палец (руки) ; I cut my finger while cooking.
+extent ; степень, размер ; To some extent, you are right.
+gap ; разрыв, пробел, промежуток ; Mind the gap between the train and the platform.
+household ; домохозяйство, семья ; домашний ; Every household has a TV.
+immigration ; иммиграция ; Immigration is a big topic in the news.
+membership ; членство ; Gym membership costs 30 dollars a month.
+mount ; гора (в названиях) ; устанавливать ; подниматься ; Mount the TV on the wall.
+parking ; парковка, стоянка ; Parking is free after six.
+proposal ; предложение (план) ; предложение руки ; Our proposal was accepted.
+reputation ; репутация ; The restaurant has a good reputation.
+technique ; техника, метод ; You need a good technique to play tennis.
+
+# B1 · Существительные 2
+atmosphere ; атмосфера ; The café has a friendly atmosphere.
+belief ; вера, убеждение ; It is my belief that people are kind.
+element ; элемент ; стихия ; Trust is a key element of any relationship.
+hip ; бедро ; She broke her hip last winter.
+moral ; мораль ; моральный ; What is the moral of the story?
+package ; посылка, пакет ; упаковка ; A package arrived for you.
+railway ; железная дорога (брит.) ; The railway station is near the center.
+server ; сервер ; The server is down again.
+actress ; актриса ; She is a famous actress.
+anxiety ; тревога, беспокойство ; Exams cause a lot of anxiety.
+charity ; благотворительность ; благотворительная организация ; She gives money to charity every month.
+discovery ; открытие ; It was an important scientific discovery.
+formula ; формула ; Use this formula to calculate the area.
+trail ; тропа ; след ; We walked along a forest trail.
+awareness ; осведомлённость, понимание ; We need more awareness of climate change.
+guarantee ; гарантия ; гарантировать ; The phone has a two-year guarantee.
+muscle ; мышца ; My muscles hurt after the gym.
+passion ; страсть ; Music is his passion.
+producer ; производитель ; продюсер ; Brazil is the largest coffee producer.
+rank ; ранг, звание ; занимать место ; The university ranks among the top ten.
+sand ; песок ; The children played in the sand.
+avenue ; проспект, авеню ; The shop is on Fifth Avenue.
+wire ; провод, проволока ; Don't touch that wire!
+on behalf of ; от имени ; I'm writing on behalf of my company.
+ceremony ; церемония ; The wedding ceremony was beautiful.
+designer ; дизайнер, конструктор ; She is a fashion designer.
+economics ; экономика (наука) ; He studied economics at university.
+establishment ; учреждение, заведение ; создание ; This establishment opened in 1950.
+prayer ; молитва ; She said a short prayer.
+virus ; вирус ; My computer has a virus.
+aspect ; аспект, сторона ; Price is an important aspect of the decision.
+bureau ; бюро, отдел ; The travel bureau is open on Saturdays.
+comfort ; комфорт, удобство ; утешение ; They live in comfort.
+minority ; меньшинство ; Only a minority of people agreed.
+rail ; рельс ; перила ; железная дорога ; Hold the rail when you go downstairs.
+buddy ; приятель (разг.) ; He is my old buddy from school.
+conclusion ; вывод, заключение ; What conclusion did you reach?
+decline ; снижение, упадок ; снижаться ; отклонять ; Sales are in decline.
+hop ; прыгать на одной ноге ; заскочить ; Hop in, I'll drive you home.
+layer ; слой ; Wear several layers of clothes in winter.
+poetry ; поэзия ; She loves reading poetry.
+pot ; горшок ; кастрюля ; Put the plant in a bigger pot.
+sheet ; простыня ; лист ; I need a clean sheet of paper.
+broadcast ; трансляция ; транслировать ; The concert will be broadcast live.
+disaster ; катастрофа, бедствие ; The trip was a complete disaster.
+fitness ; физическая форма, фитнес ; Swimming is great for fitness.
+liquid ; жидкость ; жидкий ; You can't take liquids on the plane.
+physics ; физика ; Physics was my favorite subject.
+reduction ; сокращение, снижение ; There is a reduction in prices this week.
+resource ; ресурс ; Water is a valuable resource.
+angle ; угол ; точка зрения ; Look at the problem from a different angle.
+efficiency ; эффективность, производительность ; The new machine improved efficiency.
+experiment ; эксперимент, опыт ; экспериментировать ; We did an experiment in class.
+pace ; темп ; шаг ; Everyone can learn at their own pace.
+possession ; владение ; имущество ; Keep your possessions with you.
+regulation ; правило, норма ; регулирование ; Safety regulations are very strict.
+agriculture ; сельское хозяйство ; Agriculture is important for the region.
+currency ; валюта ; What currency do they use in Japan?
+funeral ; похороны ; Many people came to the funeral.
+log ; бревно ; журнал (записей) ; входить (в систему) ; We sat on a log by the river.
+resort ; курорт ; We stayed at a ski resort.
+routine ; распорядок, рутина ; Exercise is part of my daily routine.
+survival ; выживание ; Water is necessary for survival.
+sword ; меч ; The knight carried a sword.
+tongue ; язык (орган) ; язык (речь) ; Russian is my mother tongue.
+ward ; палата (в больнице) ; She is in the children's ward.
+achievement ; достижение ; Finishing the marathon was a big achievement.
+destruction ; разрушение ; The war caused great destruction.
+frequency ; частота ; The frequency of flights has increased.
+gene ; ген ; Eye color is passed on in our genes.
+glory ; слава ; The team returned home in glory.
+logic ; логика ; I don't understand the logic of this decision.
+objective ; цель ; объективный ; Our main objective is to increase sales.
+privacy ; конфиденциальность, личное пространство ; Please respect my privacy.
+strip ; полоска ; раздеваться ; Cut the paper into strips.
+breast ; грудь ; грудка (куриная) ; I bought chicken breast for dinner.
+chemistry ; химия ; Chemistry was hard at school.
+consumption ; потребление ; Our energy consumption is too high.
+cotton ; хлопок ; This shirt is made of cotton.
+dozen ; дюжина ; I bought a dozen eggs.
+luxury ; роскошь ; роскошный ; They stayed in a luxury hotel.
+sequence ; последовательность ; Put the pictures in the right sequence.
+absence ; отсутствие ; In my absence, Anna will be in charge.
+bull ; бык ; The bull ran across the field.
+contribution ; вклад ; Thank you for your contribution.
+principle ; принцип ; In principle, I agree with you.
+punishment ; наказание ; The punishment was too severe.
+twin ; близнец ; двойной ; My sister and I are twins.
+boom ; бум, резкий рост ; гул ; There was a boom in tourism.
+composition ; состав ; сочинение ; композиция ; The composition of the team has changed.
+conservation ; охрана (природы), сохранение ; Wildlife conservation is important.
+crossing ; переход ; переправа ; Use the pedestrian crossing.
+guidance ; руководство, консультация ; I need some guidance with my thesis.
+infection ; инфекция ; The doctor gave me pills for the infection.
+intention ; намерение ; I have no intention of leaving.
+priest ; священник ; The priest married them in a small church.
+satellite ; спутник ; We have satellite TV at home.
+teen ; подросток (разг.) ; The movie is popular with teens.
+courage ; смелость, мужество ; It takes courage to speak in public.
+cure ; лекарство, средство ; вылечить ; There is no cure for the common cold.
+humanity ; человечество ; человечность ; This is a crime against humanity.
+pound ; фунт ; It costs ten pounds.
+preparation ; подготовка ; Good preparation is the key to success.
+railroad ; железная дорога (амер.) ; The railroad runs along the river.
+registration ; регистрация ; Registration for the course is now open.
+tissue ; салфетка ; ткань (в организме) ; Can I have a tissue?
+announcement ; объявление ; Listen to the announcement.
+discrimination ; дискриминация ; Discrimination at work is illegal.
+documentary ; документальный фильм ; We watched a documentary about whales.
+grave ; могила ; серьёзный ; We visited my grandfather's grave.
+jazz ; джаз ; He plays jazz on the piano.
+laboratory ; лаборатория ; The samples were sent to the laboratory.
+praise ; похвала ; хвалить ; The teacher praised her work.
+presentation ; презентация ; I have to give a presentation tomorrow.
+relation ; отношение, связь ; Relations between the two countries are good.
+terminal ; терминал ; Our flight leaves from Terminal 2.
+agenda ; повестка дня ; What is on the agenda for today's meeting?
+bow ; бант ; лук (оружие) ; кланяться ; She tied a red bow in her hair.
+craft ; ремесло ; судно ; Pottery is a traditional craft.
+darkness ; темнота ; The room was in complete darkness.
+phrase ; фраза, выражение ; Learn this phrase by heart.
+summit ; вершина ; саммит ; We reached the summit at noon.
+beast ; зверь, чудовище ; The film is about a beauty and a beast.
+celebrity ; знаменитость ; Many celebrities came to the party.
+interaction ; взаимодействие ; Interaction with customers is part of my job.
+tale ; сказка, рассказ ; My grandmother told us old tales.
+consideration ; рассмотрение ; внимание, учёт ; Thank you for your consideration.
+filter ; фильтр ; фильтровать ; Change the water filter every month.
+judgment ; суждение ; приговор ; Use your own judgment.
+logo ; логотип ; The company changed its logo.
+pump ; насос ; качать ; We need a pump to remove the water.
+specialist ; специалист ; You should see a specialist about your back.
+tourism ; туризм ; Tourism is important for the local economy.
+chaos ; хаос ; The airport was in chaos after the storm.
+concentration ; концентрация, сосредоточенность ; This job requires a lot of concentration.
+pit ; яма ; косточка (плода) ; Be careful, there's a deep pit.
+radiation ; радиация, излучение ; Doctors use radiation to treat cancer.
+clip ; клип, отрывок ; зажим, скрепка ; Watch this short clip.
+encounter ; встреча ; столкнуться ; It was my first encounter with snow.
+equality ; равенство ; We support equality between men and women.
+examination ; осмотр ; экзамен ; The doctor did a full examination.
+oral ; устный ; We have an oral exam tomorrow.
+scope ; охват, рамки ; This question is outside the scope of the project.
+terror ; ужас ; террор ; She screamed in terror.
+arrangement ; договорённость ; расположение ; We made an arrangement to meet on Friday.
+emperor ; император ; The emperor lived in a huge palace.
+inquiry ; запрос ; расследование ; We received many inquiries about the job.
+oxygen ; кислород ; Plants produce oxygen.
+powder ; порошок ; Add a spoon of baking powder.
+shelter ; укрытие, приют ; We found shelter from the rain.
+signature ; подпись ; We need your signature here.
+spider ; паук ; There's a spider in the bath.
+accuracy ; точность ; The accuracy of the data is important.
+copyright ; авторское право ; The photos are protected by copyright.
+deposit ; залог, депозит ; класть (деньги) ; We paid a deposit for the flat.
+dirt ; грязь ; His boots were covered in dirt.
+robot ; робот ; Robots do many jobs in factories.
+terrorism ; терроризм ; The government fights against terrorism.
+wound ; рана ; ранить ; The soldier had a wound in his leg.
+baker ; пекарь ; The baker starts work at 4 a.m.
+burden ; бремя, груз ; I don't want to be a burden to my family.
+expense ; расход, затраты ; Travel expenses are paid by the company.
+invasion ; вторжение ; The invasion began in spring.
+palm ; ладонь ; пальма ; The beach was full of palm trees.
+pole ; столб, шест ; полюс ; The North Pole is very cold.
+pub ; паб ; Let's meet at the pub after work.
+reception ; приёмная, ресепшен ; приём ; Leave your key at reception.
+rubber ; резина ; ластик ; The boots are made of rubber.
+syndrome ; синдром ; He suffers from a rare syndrome.
+usage ; использование, употребление ; Water usage is high in summer.
+bin ; мусорное ведро, контейнер ; Throw it in the bin.
+biology ; биология ; She studies biology at university.
+canal ; канал (искусственный) ; We took a boat along the canal.
+explosion ; взрыв ; We heard a loud explosion.
+folk ; люди ; народный ; I love folk music.
+motivation ; мотивация ; I have no motivation to study today.
+slight ; незначительный, лёгкий ; There's a slight problem with the plan.
+tension ; напряжение, напряжённость ; You could feel the tension in the room.
+clinic ; клиника, поликлиника ; I have an appointment at the clinic.
+creator ; создатель ; He is the creator of a popular game.
+detective ; детектив, сыщик ; The detective solved the case.
+disability ; инвалидность, ограниченные возможности ; The building is accessible for people with disabilities.
+excess ; излишек, избыток ; Excess sugar is bad for your health.
+farming ; сельское хозяйство, фермерство ; Farming is hard work.
+nail ; ноготь ; гвоздь ; Hammer the nail into the wall.
+nonsense ; чепуха, ерунда ; That's complete nonsense!
+poet ; поэт ; Pushkin is a famous Russian poet.
+slavery ; рабство ; Slavery was abolished long ago.
+transformation ; преобразование, превращение ; The city went through a big transformation.
+bronze ; бронза ; She won a bronze medal.
+cave ; пещера ; We explored a cave in the mountains.
+patience ; терпение ; Teaching children requires patience.
+prisoner ; заключённый, пленный ; The prisoner escaped last night.
+yoga ; йога ; I do yoga every morning.
+boot ; ботинок, сапог ; багажник (брит.) ; Put your bags in the boot.
+confusion ; путаница, замешательство ; There was some confusion about the date.
+dealer ; дилер, торговец ; He bought his car from a local dealer.
+emotion ; эмоция ; She couldn't hide her emotions.
+emphasis ; акцент, особое внимание ; The course puts emphasis on speaking.
+excitement ; волнение, восторг ; The kids were full of excitement.
+
+# B1 · Существительные 3
+exploration ; исследование ; Space exploration is very expensive.
+filling ; начинка ; пломба ; I need a new filling in my tooth.
+graphics ; графика ; The game has amazing graphics.
+humor ; юмор ; He has a great sense of humor.
+insight ; понимание, представление ; The book gives an insight into Japanese culture.
+pie ; пирог ; My mom makes great apple pie.
+tobacco ; табак ; Tobacco is bad for your health.
+trace ; след ; отслеживать ; The police found no trace of him.
+weakness ; слабость ; Chocolate is my weakness.
+animation ; анимация, мультипликация ; She works in animation.
+assignment ; задание ; I have to finish my assignment tonight.
+basement ; подвал ; We keep old things in the basement.
+carpet ; ковёр ; The carpet in the living room is new.
+collapse ; обрушение, крах ; рухнуть ; The old bridge collapsed.
+compound ; соединение ; составной ; Water is a compound of hydrogen and oxygen.
+liver ; печень ; Alcohol damages the liver.
+significance ; значение, важность ; What is the significance of this date?
+barrel ; бочка ; баррель ; The price of oil is 80 dollars a barrel.
+boxing ; бокс ; He watches boxing on TV.
+loyalty ; верность, лояльность ; Customer loyalty is important.
+reflection ; отражение ; размышление ; I saw my reflection in the window.
+substitute ; замена ; заменять ; You can use honey as a substitute for sugar.
+acceptance ; принятие ; согласие ; I received a letter of acceptance from the university.
+bubble ; пузырь ; Children love blowing bubbles.
+determination ; решимость ; Her determination helped her win.
+gentleman ; джентльмен ; He is a real gentleman.
+hammer ; молоток ; I need a hammer and some nails.
+paradise ; рай ; The island is a paradise for divers.
+politician ; политик ; The politician gave a long speech.
+satisfaction ; удовлетворение ; Customer satisfaction is our priority.
+scratch ; царапина ; царапать ; чесать ; The cat scratched my hand.
+admission ; вход, плата за вход ; признание ; Admission is free for children.
+bacon ; бекон ; I had bacon and eggs for breakfast.
+cattle ; крупный рогатый скот ; They raise cattle on the farm.
+compromise ; компромисс ; идти на компромисс ; We reached a compromise.
+crop ; урожай ; сельхозкультура ; Rice is the main crop here.
+harbor ; гавань ; The boats are in the harbor.
+mathematics ; математика ; Mathematics was my best subject.
+scholarship ; стипендия ; She got a scholarship to study abroad.
+strain ; нагрузка, напряжение ; растяжение ; The job puts a lot of strain on him.
+workshop ; мастерская ; семинар ; We attended a writing workshop.
+accent ; акцент ; He speaks English with a strong accent.
+curve ; изгиб, кривая ; The road has a sharp curve.
+horn ; рог ; гудок ; The driver sounded the horn.
+inspection ; проверка, осмотр ; The car needs a safety inspection.
+instruction ; инструкция, указание ; Read the instructions carefully.
+invitation ; приглашение ; Thank you for the invitation.
+organ ; орган ; орган (муз.) ; The heart is a vital organ.
+patrol ; патруль ; патрулировать ; Police patrol the streets at night.
+tragedy ; трагедия ; The accident was a terrible tragedy.
+arrow ; стрела ; стрелка ; Follow the arrows to the exit.
+cabin ; каюта, салон ; хижина ; We rented a small cabin in the woods.
+cage ; клетка ; The bird lives in a cage.
+companion ; спутник, компаньон ; My dog is my best companion.
+guilt ; вина, чувство вины ; She felt guilt for lying.
+haven ; убежище, гавань ; The library is a haven of peace.
+miracle ; чудо ; It's a miracle that nobody was hurt.
+mud ; грязь ; The car got stuck in the mud.
+observation ; наблюдение ; The patient is under observation.
+phenomenon ; явление ; The northern lights are a natural phenomenon.
+profession ; профессия ; Teaching is a noble profession.
+publisher ; издатель ; The publisher accepted her book.
+separation ; разделение ; разлука ; The separation was hard for the children.
+theft ; кража ; Report the theft to the police.
+visa ; виза ; Do I need a visa to visit China?
+appreciation ; признательность ; понимание, оценка ; I want to show my appreciation for your help.
+charm ; обаяние, шарм ; амулет ; The old town has a lot of charm.
+curriculum ; учебная программа ; Programming is now part of the school curriculum.
+jungle ; джунгли ; Tigers live in the jungle.
+attraction ; достопримечательность ; притяжение ; The museum is the main tourist attraction.
+defender ; защитник ; He plays as a defender.
+preference ; предпочтение ; Do you have a preference for tea or coffee?
+proportion ; пропорция, доля ; A large proportion of students work part-time.
+rage ; ярость ; He was shaking with rage.
+silk ; шёлк ; She wore a silk dress.
+urge ; сильное желание ; настоятельно призывать ; I had a sudden urge to laugh.
+cliff ; утёс, скала ; The house stands on top of a cliff.
+declaration ; декларация, заявление ; Fill in the customs declaration.
+distinction ; различие ; отличие ; There is a clear distinction between the two words.
+hunger ; голод ; Millions of people suffer from hunger.
+laughter ; смех ; The room was full of laughter.
+lung ; лёгкое ; Smoking damages your lungs.
+nutrition ; питание ; Good nutrition is important for children.
+lighter ; зажигалка ; Do you have a lighter?
+slot ; щель, прорезь ; слот, время ; Put a coin in the slot.
+architect ; архитектор ; The building was designed by a famous architect.
+basin ; раковина, таз ; бассейн (реки) ; Wash your hands in the basin.
+breeding ; разведение ; Dog breeding is his hobby.
+confirmation ; подтверждение ; You will receive a confirmation by email.
+diameter ; диаметр ; The pipe has a diameter of 10 cm.
+lodge ; домик, сторожка ; We stayed in a mountain lodge.
+merchant ; торговец, купец ; The merchant sold spices and silk.
+myth ; миф ; It's a myth that we use only 10% of our brain.
+poison ; яд ; отравлять ; Some mushrooms contain poison.
+excellence ; превосходство, высокое качество ; The hotel is known for its excellence in service.
+graduation ; выпуск, окончание учёбы ; My parents came to my graduation.
+horizon ; горизонт ; The sun disappeared below the horizon.
+ink ; чернила ; Sign the form in black ink.
+motorcycle ; мотоцикл ; He rides a motorcycle to work.
+penny ; пенни, копейка ; It didn't cost a penny.
+quantity ; количество ; We bought a large quantity of paper.
+scan ; сканировать ; сканирование ; Scan the document and send it to me.
+supporter ; сторонник ; болельщик ; Thousands of supporters came to the stadium.
+blessing ; благословение ; благо ; The rain was a blessing for the farmers.
+demonstration ; демонстрация ; показ ; The salesman gave us a demonstration of the vacuum cleaner.
+packing ; упаковка ; сбор вещей ; I hate packing for a trip.
+apology ; извинение ; Please accept my apology.
+brass ; латунь ; медные духовые ; The door handle is made of brass.
+dot ; точка ; Draw a line between the two dots.
+graph ; график ; The graph shows sales for the last year.
+hatred ; ненависть ; Hatred never solves anything.
+measurement ; измерение ; размер ; Take the measurements of the window.
+passport ; паспорт (заграничный) ; Don't forget your passport!
+tablet ; планшет ; таблетка ; She reads books on her tablet.
+tent ; палатка ; We slept in a tent by the lake.
+tide ; прилив, отлив ; The tide is coming in.
+airline ; авиакомпания ; Which airline are you flying with?
+collar ; воротник ; ошейник ; The dog has a red collar.
+sponsor ; спонсор ; спонсировать ; A bank sponsors the football team.
+sunset ; закат ; We watched the sunset on the beach.
+workplace ; рабочее место ; Safety in the workplace is important.
+buyer ; покупатель ; We have found a buyer for the house.
+essence ; суть, сущность ; The essence of the problem is money.
+fur ; мех ; The cat has soft fur.
+headline ; заголовок ; The news was in all the headlines.
+ladder ; лестница (приставная) ; Climb the ladder carefully.
+mineral ; минерал ; минеральный ; I'd like a bottle of mineral water.
+orbit ; орбита ; The satellite is in orbit around the Earth.
+pork ; свинина ; I don't eat pork.
+remainder ; остаток, оставшаяся часть ; He spent the remainder of his life in Spain.
+tin ; олово ; консервная банка (брит.) ; Open a tin of beans.
+uncertainty ; неопределённость ; There is a lot of uncertainty about the future.
+diving ; дайвинг, ныряние ; We went diving in the Red Sea.
+enthusiasm ; энтузиазм ; She started the new job with enthusiasm.
+ferry ; паром ; We took the ferry to the island.
+helmet ; шлем ; Always wear a helmet when you cycle.
+instructor ; инструктор ; My driving instructor is very patient.
+isolation ; изоляция, уединение ; Old people often live in isolation.
+lamb ; ягнёнок ; баранина ; We had roast lamb for dinner.
+liar ; лжец, лгун ; He is a terrible liar.
+probability ; вероятность ; The probability of rain is low.
+workout ; тренировка ; I do a short workout every morning.
+civilization ; цивилизация ; Ancient Egypt was a great civilization.
+disappointment ; разочарование ; The film was a big disappointment.
+disk ; диск ; Save the file to the hard disk.
+goddess ; богиня ; Venus was the Roman goddess of love.
+orchestra ; оркестр ; She plays violin in an orchestra.
+preservation ; сохранение ; The preservation of old buildings is expensive.
+salmon ; лосось ; Grilled salmon is my favorite dish.
+sympathy ; сочувствие ; You have my deepest sympathy.
+thumb ; большой палец (руки) ; Give me a thumbs up if you agree.
+wrist ; запястье ; She wears a watch on her left wrist.
+kindness ; доброта ; Thank you for your kindness.
+lottery ; лотерея ; He won the lottery last year.
+puppy ; щенок ; Our neighbors have a new puppy.
+spelling ; правописание ; Check your spelling before you send it.
+survivor ; выживший ; There were no survivors.
+honesty ; честность ; Honesty is the best policy.
+straw ; солома ; трубочка (для напитков) ; Can I have a straw for my drink?
+circus ; цирк ; The children loved the circus.
+geography ; география ; I was good at geography at school.
+habitat ; среда обитания ; The forest is a natural habitat for bears.
+hazard ; опасность, риск ; Smoking is a health hazard.
+needle ; игла ; She threaded the needle.
+pond ; пруд ; There are fish in the pond.
+whale ; кит ; We saw a whale from the boat.
+caution ; осторожность ; Drive with caution on icy roads.
+characteristic ; характерная черта ; характерный ; Patience is his best characteristic.
+curiosity ; любопытство ; Children are full of curiosity.
+delight ; восторг, удовольствие ; The kids screamed with delight.
+frustration ; разочарование, досада ; I understand your frustration.
+suspicion ; подозрение ; He was arrested on suspicion of theft.
+comedian ; комик ; The comedian made everyone laugh.
+flu ; грипп ; I've got the flu.
+marble ; мрамор ; The floor is made of marble.
+pillow ; подушка ; I need a softer pillow.
+puzzle ; головоломка, пазл ; The kids are doing a puzzle.
+scholar ; учёный ; He is a respected scholar of history.
+tendency ; тенденция, склонность ; She has a tendency to talk too much.
+triumph ; триумф ; The concert was a great triumph.
+correction ; исправление ; Make the corrections in red.
+critic ; критик ; The film critics loved it.
+feast ; пир, праздничный обед ; They prepared a feast for the wedding.
+frost ; мороз ; иней ; There was frost on the car this morning.
+meditation ; медитация ; Meditation helps me relax.
+purse ; кошелёк ; сумочка (амер.) ; She left her purse in the taxi.
+sigh ; вздох ; вздыхать ; She gave a deep sigh.
+tense ; напряжённый ; время (грамм.) ; The atmosphere was tense.
+adviser ; советник, консультант ; Talk to your financial adviser.
+idol ; кумир ; He was my childhood idol.
+motive ; мотив ; What was the motive for the crime?
+spice ; специя ; This dish needs more spice.
+ginger ; имбирь ; I like tea with ginger.
+jar ; банка (стеклянная) ; Put the honey in a jar.
+sleeve ; рукав ; Roll up your sleeves.
+affection ; привязанность, нежность ; She looked at him with affection.
+debris ; обломки, мусор ; The road was covered with debris after the storm.
+gratitude ; благодарность ; I want to express my gratitude to all of you.
+researcher ; исследователь ; Researchers found a new species of frog.
+runway ; взлётно-посадочная полоса ; The plane is moving along the runway.
+
+# B1 · Существительные 4
+sculpture ; скульптура ; There is a large sculpture in the park.
+compliment ; комплимент ; Thank you for the compliment.
+fountain ; фонтан ; We met by the fountain.
+liberation ; освобождение ; They celebrated the liberation of the city.
+nickname ; прозвище ; His nickname at school was "Professor".
+prosperity ; процветание ; The new factory brought prosperity to the town.
+shortage ; нехватка, дефицит ; There is a shortage of doctors.
+sphere ; сфера, шар ; She works in the sphere of education.
+thriller ; триллер ; We watched a scary thriller.
+turtle ; черепаха ; A turtle swam next to our boat.
+gesture ; жест ; It was a kind gesture.
+historian ; историк ; The historian wrote a book about the war.
+moisture ; влага ; The plant needs moisture.
+monument ; памятник ; There is a monument to Pushkin in the square.
+peanut ; арахис ; I'm allergic to peanuts.
+sensation ; ощущение ; сенсация ; I felt a burning sensation in my hand.
+slope ; склон ; We skied down the slope.
+vet ; ветеринар ; Take the cat to the vet.
+wagon ; повозка, вагон ; The horse pulled the wagon.
+biography ; биография ; I'm reading a biography of Steve Jobs.
+cod ; треска ; Fish and chips are usually made with cod.
+counseling ; консультирование ; She works in career counseling.
+farewell ; прощание ; We had a farewell party for Anna.
+misery ; страдание, несчастье ; The war brought misery to millions.
+moss ; мох ; The stones were covered in moss.
+trim ; подравнивать, подстригать ; I just need a trim, not a new haircut.
+voyage ; путешествие (морское) ; The voyage across the ocean took two weeks.
+attachment ; вложение (в письме) ; привязанность ; Open the attachment to see the photos.
+candle ; свеча ; She lit a candle.
+choir ; хор ; She sings in a church choir.
+gossip ; сплетни ; сплетничать ; Don't listen to office gossip.
+mankind ; человечество ; It was a great step for mankind.
+sadness ; печаль, грусть ; I felt a deep sadness.
+whistle ; свисток ; свистеть ; The referee blew the whistle.
+appetite ; аппетит ; I have no appetite today.
+dynasty ; династия ; The Romanov dynasty ruled Russia for 300 years.
+forehead ; лоб ; She kissed him on the forehead.
+rubbish ; мусор ; ерунда (брит.) ; Take out the rubbish, please.
+abundance ; изобилие ; There is an abundance of fruit in summer.
+ant ; муравей ; Ants are very strong for their size.
+antique ; антиквариат ; старинный ; This antique clock is 200 years old.
+booking ; бронирование ; I made a booking for two nights.
+curtain ; занавеска, штора ; Close the curtains, please.
+maple ; клён ; Canada is famous for maple syrup.
+referee ; судья (в спорте) ; The referee gave him a red card.
+allowance ; карманные деньги ; пособие ; норма ; My parents gave me a weekly allowance.
+bark ; лаять ; кора ; The dog barks at strangers.
+blogger ; блогер ; She is a popular travel blogger.
+brotherhood ; братство ; There is a strong sense of brotherhood in the team.
+builder ; строитель ; The builders finished the house in May.
+carriage ; вагон ; экипаж ; The first carriage was full.
+diagram ; схема, диаграмма ; Look at the diagram on page five.
+ivory ; слоновая кость ; The sale of ivory is banned.
+necklace ; ожерелье ; She wore a pearl necklace.
+yell ; кричать, орать ; Don't yell at me!
+elbow ; локоть ; I hurt my elbow playing tennis.
+genetics ; генетика ; Genetics affects our health.
+heel ; пятка ; каблук ; She wore shoes with high heels.
+hut ; хижина ; We spent the night in a mountain hut.
+teammate ; товарищ по команде ; He passed the ball to a teammate.
+applause ; аплодисменты ; The audience broke into applause.
+breakthrough ; прорыв ; Scientists made a breakthrough in cancer research.
+reef ; риф ; We swam near a coral reef.
+refusal ; отказ ; His refusal to help surprised me.
+sickness ; болезнь ; тошнота ; She missed work because of sickness.
+telecommunications ; телекоммуникации ; He works in telecommunications.
+certainty ; уверенность, определённость ; I can't say with certainty.
+despair ; отчаяние ; She was in despair after losing her job.
+electron ; электрон ; An electron has a negative charge.
+hatch ; люк ; вылупляться ; The chicks hatched this morning.
+nap ; короткий сон ; вздремнуть ; I usually take a nap after lunch.
+niece ; племянница ; My niece is starting school this year.
+rainfall ; количество осадков ; The region has very little rainfall.
+remedy ; средство (от болезни, проблемы) ; Honey is a good remedy for a cough.
+revision ; пересмотр, исправление ; повторение (к экзамену) ; The plan needs some revision.
+sunrise ; восход ; We got up early to see the sunrise.
+tornado ; торнадо, смерч ; The tornado destroyed several houses.
+willingness ; готовность, желание ; Thank you for your willingness to help.
+competitor ; конкурент ; участник соревнования ; Our main competitor lowered its prices.
+enjoyment ; удовольствие ; Music adds to my enjoyment of the evening.
+glimpse ; мимолётный взгляд ; I caught a glimpse of the singer.
+pupil ; ученик ; зрачок ; The school has 500 pupils.
+submarine ; подводная лодка ; The submarine stayed under water for weeks.
+temper ; характер, нрав ; вспыльчивость ; He has a bad temper.
+coffin ; гроб ; The coffin was carried into the church.
+crow ; ворона ; A crow was sitting on the fence.
+eternity ; вечность ; We waited for an eternity.
+performer ; исполнитель, артист ; The street performer played the guitar.
+skeleton ; скелет ; There is a dinosaur skeleton in the museum.
+wardrobe ; шкаф для одежды ; гардероб ; Hang your clothes in the wardrobe.
+warmth ; тепло, теплота ; I love the warmth of the sun.
+bulletin ; бюллетень, сводка ; We listened to the news bulletin.
+encouragement ; поддержка, поощрение ; Thank you for your encouragement.
+goalkeeper ; вратарь ; The goalkeeper saved the penalty.
+mechanic ; механик, автомеханик ; The mechanic fixed my car.
+oppression ; угнетение ; The people fought against oppression.
+prejudice ; предубеждение ; We must fight racial prejudice.
+shrimp ; креветка ; I ordered shrimp salad.
+stall ; ларёк, прилавок ; She runs a fruit stall at the market.
+backpack ; рюкзак ; Put your laptop in the backpack.
+daisy ; ромашка ; The field was full of daisies.
+ecosystem ; экосистема ; Pollution damages the ecosystem.
+greenhouse ; теплица ; We grow tomatoes in a greenhouse.
+negotiation ; переговоры ; The negotiations lasted two days.
+participant ; участник ; Each participant received a certificate.
+complement ; дополнение ; дополнять ; The wine is a perfect complement to the fish.
+embarrassment ; смущение, неловкость ; Her face went red with embarrassment.
+herd ; стадо ; A herd of cows blocked the road.
+interval ; интервал, промежуток ; Buses run at ten-minute intervals.
+objection ; возражение ; Do you have any objections?
+prohibition ; запрет ; There is a prohibition on smoking in public places.
+vein ; вена ; The nurse couldn't find a vein.
+accountant ; бухгалтер ; Our accountant checks all the bills.
+calculation ; расчёт, вычисление ; My calculations were wrong.
+extinction ; вымирание ; Many animals are in danger of extinction.
+geology ; геология ; He studied geology at university.
+recycling ; переработка отходов ; Recycling helps protect the environment.
+volcano ; вулкан ; The volcano erupted last year.
+butcher ; мясник ; Buy the meat at the butcher's.
+deed ; поступок, дело ; Do one good deed every day.
+gallon ; галлон (3,8 л) ; The car uses a gallon of fuel every 30 miles.
+gown ; платье (вечернее) ; мантия ; She wore a beautiful evening gown.
+
+# B1 · Прилагательные 1
+working ; рабочий ; работающий ; Working hours are from nine to six.
+able ; способный ; be able to — мочь ; Will you be able to come?
+current ; текущий, нынешний ; течение ; What is your current address?
+main ; главный, основной ; This is the main street of the town.
+central ; центральный ; We stayed in central London.
+paid ; оплачиваемый, платный ; She has a well-paid job.
+various ; различный, разнообразный ; The shop sells various kinds of tea.
+chief ; главный ; начальник ; He is the chief engineer.
+amazing ; удивительный, потрясающий ; The view from the top is amazing.
+economic ; экономический ; The country has economic problems.
+involved ; вовлечённый, участвующий ; How many people were involved in the project?
+serious ; серьёзный ; This is a serious problem.
+entire ; весь, целый ; I spent the entire day in bed.
+written ; письменный ; We have a written exam tomorrow.
+financial ; финансовый ; The company has financial difficulties.
+legal ; законный ; юридический ; Is it legal to park here?
+limited ; ограниченный ; We have limited time.
+individual ; отдельный, индивидуальный ; личность ; Each individual has the right to vote.
+leading ; ведущий ; She is a leading expert in her field.
+previous ; предыдущий ; In my previous job I worked in a bank.
+positive ; положительный, позитивный ; Try to stay positive.
+global ; мировой, глобальный ; Global warming is a serious issue.
+annual ; ежегодный, годовой ; What is your annual income?
+stupid ; глупый ; That was a stupid mistake.
+active ; активный ; My grandmother is still very active.
+civil ; гражданский ; He works as a civil engineer.
+independent ; независимый, самостоятельный ; She is very independent.
+awesome ; потрясающий, классный ; The concert was awesome!
+commercial ; коммерческий ; рекламный ролик ; I hate the commercials during films.
+effective ; эффективный ; This medicine is very effective.
+holy ; святой, священный ; This is a holy place.
+mass ; масса ; массовый ; There was mass unemployment in the region.
+complex ; сложный ; комплекс ; The problem is more complex than it seems.
+northern ; северный ; We visited northern Italy.
+religious ; религиозный ; Christmas is a religious holiday.
+southern ; южный ; They live in southern Spain.
+critical ; критический ; решающий ; This is a critical moment for the company.
+digital ; цифровой ; I bought a digital camera.
+mental ; умственный, психический ; Sport is good for your mental health.
+weird ; странный ; There's a weird smell in the kitchen.
+aware ; осведомлённый ; be aware of — знать, осознавать ; Are you aware of the risks?
+eastern ; восточный ; He comes from eastern Europe.
+rare ; редкий ; This bird is very rare.
+concerned ; обеспокоенный ; I'm concerned about his health.
+cultural ; культурный ; The city has a rich cultural life.
+unique ; уникальный ; Every person is unique.
+prepared ; готовый, подготовленный ; Are you prepared for the exam?
+democratic ; демократический ; The country held democratic elections.
+nuclear ; ядерный, атомный ; They built a nuclear power station.
+solid ; твёрдый ; надёжный ; The table is made of solid wood.
+massive ; огромный, массивный ; They live in a massive house.
+regional ; региональный ; She works for a regional newspaper.
+upper ; верхний ; The bedroom is on the upper floor.
+industrial ; промышленный ; This is an industrial area.
+joint ; совместный ; сустав ; We opened a joint bank account.
+environmental ; экологический ; Pollution is a big environmental problem.
+historical ; исторический ; I love historical novels.
+stuck ; застрявший ; I'm stuck in traffic.
+emotional ; эмоциональный ; It was a very emotional moment.
+internal ; внутренний ; This information is for internal use only.
+equal ; равный ; равняться ; Two plus two equals four.
+fake ; поддельный, фальшивый ; The police found fake money.
+numerous ; многочисленный ; I have been there numerous times.
+pure ; чистый ; This ring is made of pure gold.
+secure ; надёжный, безопасный ; обеспечивать ; Keep your password in a secure place.
+experienced ; опытный ; We need an experienced driver.
+giant ; гигантский ; великан ; A giant wave hit the boat.
+minor ; незначительный ; несовершеннолетний ; There are a few minor problems.
+conservative ; консервативный ; My parents are very conservative.
+drunk ; пьяный ; He was too drunk to drive.
+guilty ; виновный ; чувствующий вину ; I feel guilty about leaving early.
+unable ; неспособный ; be unable to — не мочь ; I'm unable to come tomorrow.
+extreme ; крайний, экстремальный ; Extreme heat is dangerous for old people.
+typical ; типичный ; This is a typical English breakfast.
+academic ; академический, учебный ; The academic year starts in September.
+accurate ; точный ; The weather forecast was accurate.
+competitive ; конкурентный, соревновательный ; The job market is very competitive.
+exclusive ; эксклюзивный ; исключительный ; It's an exclusive club for members only.
+pregnant ; беременная ; She is six months pregnant.
+severe ; суровый, тяжёлый ; There was a severe storm last night.
+electronic ; электронный ; Send me an electronic copy.
+absolute ; абсолютный, полный ; It was an absolute disaster.
+broad ; широкий ; The river is broad here.
+hidden ; скрытый, спрятанный ; There's a hidden camera in the room.
+marine ; морской ; We studied marine animals.
+blind ; слепой ; жалюзи ; He has been blind since birth.
+brief ; краткий ; Please give a brief answer.
+engaged ; помолвленный ; занятый ; They got engaged last summer.
+immediate ; немедленный ; ближайший ; We need an immediate answer.
+burning ; горящий ; жгучий ; I smell something burning.
+marked ; заметный, явный ; There was a marked improvement in his work.
+monthly ; ежемесячный ; Pay your monthly bills on time.
+outstanding ; выдающийся ; неоплаченный ; She is an outstanding student.
+visual ; визуальный, зрительный ; The film has amazing visual effects.
+historic ; исторический, имеющий историческое значение ; It was a historic day for the country.
+out-of-date ; устаревший ; просроченный ; This map is out-of-date.
+rough ; грубый, шероховатый ; приблизительный ; Give me a rough idea of the cost.
+surrounding ; окружающий ; We explored the surrounding villages.
+up-to-date ; современный, актуальный ; Keep your software up-to-date.
+vast ; огромный, обширный ; Siberia is a vast region.
+practical ; практичный, практический ; She gave me some practical advice.
+stable ; стабильный, устойчивый ; The patient is now in a stable condition.
+impressive ; впечатляющий ; Your English is impressive.
+bound ; обязательно (be bound to) ; направляющийся ; It's bound to rain this weekend.
+offensive ; оскорбительный ; нападение ; His comments were offensive.
+qualified ; квалифицированный ; We need a qualified electrician.
+superior ; превосходящий, лучший ; начальник ; This model is superior to the old one.
+face-to-face ; лично, лицом к лицу ; Let's discuss it face-to-face.
+flash ; вспышка ; сверкать ; You can't use flash in the museum.
+formal ; официальный, формальный ; Wear formal clothes to the interview.
+innocent ; невиновный ; невинный ; He says he is innocent.
+silent ; тихий, молчаливый ; The room was completely silent.
+horrible ; ужасный ; The weather was horrible.
+naked ; голый ; You can't see it with the naked eye.
+plain ; простой ; равнина ; I prefer plain food.
+strategic ; стратегический ; It was a strategic decision.
+efficient ; эффективный, экономичный ; This car is very fuel efficient.
+electrical ; электрический ; We need an electrical engineer.
+dramatic ; резкий, впечатляющий ; драматический ; There was a dramatic increase in prices.
+insane ; безумный, сумасшедший ; It's insane to drive so fast.
+organic ; органический, экологически чистый ; We buy organic vegetables.
+spiritual ; духовный ; She is a very spiritual person.
+damaged ; повреждённый ; The car was badly damaged.
+intense ; сильный, интенсивный ; The heat was intense.
+narrative ; повествование, рассказ ; The book has a strong narrative.
+visible ; видимый ; The mountain is visible from the city.
+rapid ; быстрый, стремительный ; The city saw rapid growth.
+scary ; страшный ; The movie was too scary for children.
+extraordinary ; необыкновенный, выдающийся ; She has an extraordinary voice.
+gorgeous ; великолепный, прекрасный ; What a gorgeous day!
+self-service ; самообслуживание ; It's a self-service restaurant.
+agricultural ; сельскохозяйственный ; They sell agricultural machines.
+genetic ; генетический ; It's a genetic disease.
+mechanical ; механический ; The car has a mechanical problem.
+precious ; драгоценный, ценный ; Time is precious.
+prominent ; известный, видный ; заметный ; He is a prominent scientist.
+residential ; жилой ; We live in a quiet residential area.
+substantial ; значительный, существенный ; They paid a substantial amount of money.
+aggressive ; агрессивный ; The dog became aggressive.
+apparent ; очевидный ; кажущийся ; For no apparent reason, she started crying.
+desperate ; отчаянный ; отчаянно нуждающийся ; I'm desperate for a cup of coffee.
+frozen ; замёрзший ; замороженный ; We bought some frozen vegetables.
+painful ; болезненный ; The injection was painful.
+sufficient ; достаточный ; We don't have sufficient time.
+virtual ; виртуальный ; We had a virtual meeting.
+literary ; литературный ; She won a literary prize.
+steady ; устойчивый, постоянный ; Hold the ladder steady.
+unlikely ; маловероятный ; It's unlikely to rain today.
+racial ; расовый ; Racial discrimination is illegal.
+talented ; талантливый ; She is a talented musician.
+awkward ; неловкий, неудобный ; There was an awkward silence.
+disabled ; с инвалидностью ; The building has a lift for disabled people.
+next-door ; соседний ; Our next-door neighbors are very friendly.
+remarkable ; замечательный, удивительный ; She made a remarkable recovery.
+worthy ; достойный ; He is a worthy winner.
+dependent ; зависимый ; Children are dependent on their parents.
+challenging ; сложный, требующий усилий ; The new job is challenging.
+frequent ; частый ; There are frequent buses to the airport.
+moderate ; умеренный ; Moderate exercise is good for you.
+psychological ; психологический ; The war had a psychological effect on him.
+shocked ; потрясённый ; I was shocked by the news.
+bold ; смелый ; жирный (шрифт) ; Write the title in bold.
+classical ; классический ; I listen to classical music.
+homeless ; бездомный ; The charity helps homeless people.
+mutual ; взаимный, общий ; We have a mutual friend.
+worn ; изношенный ; His shoes were old and worn.
+considerable ; значительный ; It cost a considerable amount of money.
+outer ; внешний, наружный ; Remove the outer leaves of the cabbage.
+diverse ; разнообразный ; London is a very diverse city.
+divine ; божественный ; The cake was divine!
+neutral ; нейтральный ; Switzerland stayed neutral during the war.
+sacred ; священный ; The river is sacred to the local people.
+casual ; повседневный ; небрежный ; We wear casual clothes at work on Fridays.
+controversial ; спорный, неоднозначный ; It's a controversial decision.
+disgusting ; отвратительный ; The food was disgusting.
+graphic ; графический ; наглядный ; She works as a graphic designer.
+healing ; заживление ; целебный ; The healing process takes a few weeks.
+outdoor ; на открытом воздухе ; The hotel has an outdoor pool.
+unexpected ; неожиданный ; We had an unexpected visit from my aunt.
+magical ; волшебный ; It was a magical evening.
+nasty ; противный, мерзкий ; There's a nasty smell in the fridge.
+productive ; продуктивный ; It was a very productive meeting.
+continuous ; непрерывный ; There was continuous rain for three days.
+loyal ; верный, преданный ; Dogs are very loyal animals.
+coastal ; прибрежный ; We visited a small coastal town.
+distant ; далёкий ; We could hear distant thunder.
+overnight ; на ночь ; за ночь ; We stayed overnight in a hotel.
+threatening ; угрожающий ; He sent her threatening messages.
+widespread ; широко распространённый ; The use of smartphones is widespread.
+accessible ; доступный ; The museum is accessible by bus.
+bare ; голый, обнажённый ; Don't walk in bare feet.
+conscious ; сознательный ; в сознании ; He was still conscious after the accident.
+endless ; бесконечный ; The meeting seemed endless.
+stressed ; в стрессе ; I'm really stressed about my exams.
+tropical ; тропический ; We spent a week on a tropical island.
+artistic ; художественный ; артистичный ; Her son is very artistic.
+beloved ; любимый ; He lost his beloved wife last year.
+contrary ; противоположный ; on the contrary — наоборот ; I'm not tired. On the contrary, I feel great.
+partial ; частичный ; We got a partial refund.
+deadly ; смертельный ; This snake is deadly.
+
+# B1 · Прилагательные 2
+realistic ; реалистичный ; We need a realistic plan.
+urgent ; срочный ; I have an urgent message for you.
+abstract ; абстрактный ; I don't understand abstract art.
+depressed ; подавленный, в депрессии ; He felt depressed after losing his job.
+encouraging ; обнадёживающий ; The results are very encouraging.
+lean ; худощавый, постный ; наклоняться ; Don't lean on the door.
+meaningful ; значимый, содержательный ; We had a meaningful conversation.
+alike ; похожий ; одинаково ; The two sisters look alike.
+mere ; всего лишь, простой ; The trip took a mere two hours.
+protective ; защитный ; заботливый ; Wear protective glasses.
+athletic ; спортивный, атлетический ; He has an athletic body.
+occasional ; редкий, случающийся время от времени ; I have an occasional glass of wine.
+unfortunate ; неудачный, прискорбный ; It was an unfortunate mistake.
+eternal ; вечный ; Nothing is eternal.
+lasting ; длительный, прочный ; The trip made a lasting impression on me.
+mild ; мягкий, умеренный ; We had a mild winter.
+brand-new ; совершенно новый ; He bought a brand-new car.
+faithful ; верный ; She was a faithful friend.
+shocking ; шокирующий ; The news was shocking.
+delighted ; очень довольный ; I'm delighted to meet you.
+exhausted ; измученный, обессиленный ; I'm exhausted after the long trip.
+frustrated ; расстроенный, раздосадованный ; I get frustrated when my computer is slow.
+glorious ; великолепный ; славный ; We had glorious weather.
+inevitable ; неизбежный ; Change is inevitable.
+overwhelming ; подавляющий ; ошеломляющий ; The response was overwhelming.
+pale ; бледный ; You look pale. Are you ill?
+tragic ; трагический ; It was a tragic accident.
+unbelievable ; невероятный ; The view was unbelievable.
+animated ; оживлённый ; анимационный ; We watched an animated film.
+miserable ; несчастный ; ужасный ; The weather was miserable.
+adorable ; очаровательный, милый ; What an adorable puppy!
+intensive ; интенсивный ; I took an intensive English course.
+rational ; рациональный ; Let's try to find a rational solution.
+spectacular ; впечатляющий, зрелищный ; The fireworks were spectacular.
+technological ; технологический ; We live in a time of rapid technological change.
+supportive ; поддерживающий ; My family is very supportive.
+divorced ; разведённый ; My parents are divorced.
+intermediate ; средний (уровень) ; I'm at an intermediate level in English.
+magnificent ; великолепный ; The palace is magnificent.
+shallow ; мелкий ; поверхностный ; The water is shallow here.
+eager ; стремящийся, нетерпеливый ; She is eager to learn.
+passive ; пассивный ; Don't be so passive, say something!
+confusing ; запутанный, сбивающий с толку ; The instructions were confusing.
+delicate ; хрупкий, деликатный ; This is a delicate situation.
+sheer ; чистый, явный ; отвесный ; It was sheer luck.
+indirect ; косвенный, непрямой ; There is an indirect flight via Istanbul.
+bent ; согнутый, изогнутый ; The fork is bent.
+deaf ; глухой ; He is deaf in one ear.
+evident ; очевидный ; It was evident that she was tired.
+sore ; больной, воспалённый ; My legs are sore after the run.
+steep ; крутой ; The road up the hill is very steep.
+absent ; отсутствующий ; Two students were absent today.
+atomic ; атомный ; The atomic bomb changed history.
+fortunate ; удачливый, счастливый ; We were fortunate to find a hotel.
+handy ; удобный, полезный ; This little knife is very handy.
+memorable ; запоминающийся ; It was a memorable trip.
+circular ; круглый ; They sat at a circular table.
+countless ; бесчисленный ; I have told you countless times!
+duty-free ; беспошлинный ; We bought perfume at the duty-free shop.
+forbidden ; запрещённый ; Smoking is forbidden here.
+stuffed ; фаршированный ; набитый ; We had stuffed peppers for dinner.
+dull ; скучный ; тусклый ; The lecture was really dull.
+incorrect ; неправильный ; Your answer is incorrect.
+terrified ; в ужасе ; I'm terrified of spiders.
+thankful ; благодарный ; I'm thankful for my family.
+unclear ; неясный ; The instructions are unclear.
+alcoholic ; алкогольный ; алкоголик ; We only serve non-alcoholic drinks.
+amazed ; поражённый ; I was amazed by her talent.
+enjoyable ; приятный ; We had an enjoyable evening.
+relaxing ; расслабляющий ; A warm bath is very relaxing.
+terrific ; потрясающий ; You look terrific!
+unemployed ; безработный ; He has been unemployed for six months.
+destructive ; разрушительный ; The storm was very destructive.
+fond ; любящий ; be fond of — любить ; I'm very fond of my grandmother.
+foolish ; глупый ; It was foolish of me to trust him.
+gifted ; одарённый ; She is a gifted pianist.
+stressful ; напряжённый, стрессовый ; It was a stressful week.
+messy ; неряшливый, грязный ; His room is always messy.
+systematic ; систематический ; We need a systematic approach.
+vague ; смутный, неясный ; I have a vague memory of the house.
+devastating ; разрушительный ; опустошающий ; The news was devastating.
+favorable ; благоприятный ; The weather is favorable for sailing.
+geographical ; географический ; The map shows geographical features.
+spiral ; спираль ; спиральный ; We climbed the spiral staircase.
+timely ; своевременный ; Thank you for your timely reply.
+enthusiastic ; полный энтузиазма ; The students were enthusiastic about the trip.
+tasty ; вкусный ; The soup is very tasty.
+depressing ; удручающий ; The news is so depressing.
+notorious ; печально известный ; The area is notorious for crime.
+accidental ; случайный ; It was an accidental discovery.
+rotten ; гнилой ; Throw away the rotten apples.
+primitive ; примитивный ; They used primitive tools.
+sticky ; липкий ; My hands are sticky from the honey.
+unrelated ; не связанный ; The two events are unrelated.
+cautious ; осторожный ; Be cautious when you invest money.
+hopeful ; полный надежды ; I'm hopeful that things will get better.
+imaginary ; воображаемый ; My son has an imaginary friend.
+definite ; определённый, точный ; We need a definite answer by Friday.
+ecological ; экологический ; It is an ecological disaster.
+faint ; слабый, едва заметный ; падать в обморок ; I heard a faint sound.
+newborn ; новорождённый ; The newborn baby slept all day.
+parental ; родительский ; The film needs parental guidance.
+unwanted ; нежелательный, ненужный ; Delete unwanted emails.
+abundant ; обильный ; Fish are abundant in this lake.
+delightful ; восхитительный ; We had a delightful evening.
+amusing ; забавный ; It was an amusing story.
+heavenly ; небесный ; чудесный ; The cake tastes heavenly.
+lifelong ; пожизненный, на всю жизнь ; They are lifelong friends.
+noticeable ; заметный ; There is a noticeable improvement.
+
+# B1 · Наречия, предлоги и связки
+including ; включая ; The price is 50 dollars, including tax.
+per ; за, в (на единицу) ; The tickets cost 20 dollars per person.
+because of ; из-за ; We stayed at home because of the rain.
+currently ; в настоящее время ; She is currently working in Berlin.
+provided ; при условии что ; You can go provided you finish your homework.
+via ; через ; We flew to Tokyo via Dubai.
+completely ; полностью, совершенно ; I completely forgot about the meeting.
+absolutely ; абсолютно, совершенно ; You are absolutely right.
+definitely ; определённо, точно ; I will definitely come.
+particularly ; особенно ; I particularly like the last song.
+generally ; обычно ; в целом ; I generally get up at seven.
+thus ; таким образом ; Prices rose, and thus sales fell.
+directly ; прямо, непосредственно ; Please contact me directly.
+highly ; весьма, очень ; высоко ; I highly recommend this book.
+totally ; полностью, совершенно ; I totally agree with you.
+nor ; и не, также не ; I can't swim, nor can my brother.
+onto ; на (движение на поверхность) ; The cat jumped onto the table.
+slightly ; слегка, немного ; I feel slightly better today.
+entirely ; полностью, целиком ; It was entirely my fault.
+regarding ; относительно, касательно ; I'm writing regarding your order.
+relatively ; относительно, сравнительно ; The test was relatively easy.
+approximately ; приблизительно ; The trip takes approximately three hours.
+properly ; правильно, как следует ; The machine isn't working properly.
+whenever ; всякий раз когда ; когда угодно ; Call me whenever you want.
+typically ; обычно, как правило ; We typically eat dinner at seven.
+largely ; в основном, по большей части ; The success was largely due to luck.
+aside ; в сторону ; Put your phone aside and listen.
+normally ; обычно ; I normally walk to work.
+personally ; лично ; Personally, I prefer tea.
+hopefully ; надеюсь ; с надеждой ; Hopefully, the weather will be good.
+surely ; конечно, несомненно ; Surely you don't believe that!
+instead of ; вместо ; Let's walk instead of taking a taxi.
+closely ; внимательно ; тесно ; Watch closely.
+constantly ; постоянно ; He constantly complains.
+officially ; официально ; The shop officially opens on Monday.
+somehow ; как-нибудь, каким-то образом ; We'll finish it somehow.
+initially ; сначала, первоначально ; Initially, I didn't like the city.
+naturally ; естественно, конечно ; Naturally, I said yes.
+primarily ; главным образом ; The course is primarily for beginners.
+shortly ; вскоре ; The doctor will see you shortly.
+afterwards ; потом, впоследствии ; We had dinner and afterwards went for a walk.
+newly ; недавно, вновь ; The newly opened café is always full.
+forth ; вперёд ; back and forth — туда-сюда ; He walked back and forth across the room.
+nowhere ; нигде, никуда ; There was nowhere to park.
+equally ; одинаково, в равной степени ; Both options are equally good.
+commonly ; обычно, часто ; This word is commonly used in speech.
+increasingly ; всё более ; It's increasingly difficult to find a cheap flat.
+incredibly ; невероятно ; The film was incredibly boring.
+merely ; просто, всего лишь ; I was merely trying to help.
+rapidly ; быстро ; The city is growing rapidly.
+similarly ; аналогично, подобным образом ; Similarly, prices went up in Europe.
+next door ; по соседству ; They live next door.
+publicly ; публично ; He publicly apologized.
+wherever ; где бы ни, куда бы ни ; Sit wherever you like.
+nevertheless ; тем не менее ; It was raining. Nevertheless, we went out.
+beneath ; под, ниже ; The cat was hiding beneath the bed.
+furthermore ; кроме того, более того ; The hotel is cheap. Furthermore, it's near the beach.
+accidentally ; случайно ; I accidentally deleted the file.
+briefly ; кратко ; ненадолго ; Let me briefly explain the plan.
+safely ; безопасно, благополучно ; We arrived safely.
+legally ; законно, юридически ; You can't legally drive at 16.
+repeatedly ; неоднократно ; I told him repeatedly to stop.
+mentally ; мысленно, психически ; I was mentally exhausted.
+common sense ; здравый смысл ; Use your common sense.
+heart attack ; инфаркт, сердечный приступ ; He had a heart attack last year.
+question mark ; вопросительный знак ; Put a question mark at the end.
+simultaneously ; одновременно ; Two things happened simultaneously.
+annually ; ежегодно ; The festival takes place annually.
+sometime ; когда-нибудь ; Let's have lunch sometime.
+aboard ; на борту ; All passengers are now aboard.
+primary school ; начальная школа ; My son goes to primary school.
+severely ; сильно, жестоко ; The house was severely damaged.
+surprisingly ; удивительно ; The test was surprisingly easy.
+permanently ; постоянно, навсегда ; They moved to Spain permanently.
+underneath ; под, внизу ; I found my keys underneath the sofa.
+altogether ; в целом ; полностью ; Altogether, it cost 300 dollars.
+freely ; свободно ; You can speak freely here.
+traditionally ; традиционно ; Traditionally, we eat cake on birthdays.
+emotionally ; эмоционально ; She was emotionally exhausted.
+nonetheless ; тем не менее ; It was hard work. Nonetheless, we enjoyed it.
+ground floor ; первый этаж (брит.) ; The café is on the ground floor.
+formally ; официально, формально ; He was formally dressed.
+secretly ; тайно ; She secretly read his letters.
+specially ; специально ; I made this cake specially for you.
+firmly ; крепко, твёрдо ; Hold the rope firmly.
+minus ; минус ; It was minus twenty last night.
+accurately ; точно ; Describe the man as accurately as possible.
+continuously ; непрерывно ; It rained continuously for two days.
+exchange rate ; обменный курс ; What's the exchange rate today?
+lightly ; слегка, легко ; Fry the onions lightly.
+socially ; социально ; в обществе ; He is socially active.
+supposedly ; якобы, предположительно ; The car is supposedly very safe.
+internationally ; на международном уровне ; She is known internationally.
+consequently ; следовательно ; He missed the bus and consequently was late.
+beautifully ; красиво, прекрасно ; She sings beautifully.
+continually ; постоянно, то и дело ; He is continually late.
+terribly ; ужасно, очень ; I'm terribly sorry.
+positively ; положительно ; определённо ; Think positively.
+travel agent ; турагент ; Our travel agent booked the hotel.
+extensively ; широко, много ; She has traveled extensively in Asia.
+illegally ; незаконно ; The car was parked illegally.
+farther ; дальше (о расстоянии) ; I can't walk any farther.
+steadily ; неуклонно, постоянно ; Prices are rising steadily.
+intentionally ; намеренно ; I didn't do it intentionally.
+identity card ; удостоверение личности ; Show your identity card at the entrance.
+secondary school ; средняя школа ; She teaches at a secondary school.
+check-in counter ; стойка регистрации ; Go to the check-in counter two hours before the flight.
+tightly ; крепко, плотно ; Hold my hand tightly.
+unusually ; необычно ; It was unusually warm for October.
+
+# B2 · Глаголы
+to found ; основывать ; The company was founded in 1990.
+lower ; нижний ; понижать, опускать ; Please lower your voice.
+to identify ; опознавать, определять ; Can you identify the man in the photo?
+bid ; заявка, предложение цены ; предлагать цену ; They made a bid for the company.
+to spin ; крутить(ся), вращать(ся) ; The wheel spins very fast.
+reverse ; обратный ; задний ход ; менять на противоположное ; Put the car in reverse.
+alert ; тревога ; бдительный ; предупреждать ; The app alerts you when the price drops.
+to investigate ; расследовать, исследовать ; The police are investigating the crime.
+to submit ; подавать (документы), представлять ; Submit your application by May 1.
+to sue ; подавать в суд ; She sued the company for damages.
+to skip ; пропускать ; прыгать ; Don't skip breakfast.
+to snap ; ломаться с треском ; огрызнуться ; щёлкнуть ; The branch snapped under his weight.
+to flip ; переворачивать ; листать ; Flip the pancake after one minute.
+exhibit ; экспонат ; выставлять ; The museum exhibits modern art.
+to yield ; приносить (результат) ; уступать ; The research yielded interesting results.
+to tackle ; браться за решение, справляться ; We need to tackle this problem now.
+torture ; пытка ; пытать ; The waiting was torture.
+to justify ; оправдывать, обосновывать ; How can you justify such a high price?
+to resume ; возобновлять ; The meeting will resume after lunch.
+to alternate ; чередовать(ся) ; Alternate between running and walking.
+to convert ; превращать, конвертировать ; Convert the file to PDF.
+import ; импорт ; импортировать ; We import coffee from Brazil.
+to smash ; разбивать вдребезги ; The ball smashed the window.
+to surrender ; сдаваться ; The soldiers refused to surrender.
+console ; утешать ; консоль ; She tried to console her friend.
+to assess ; оценивать ; The teacher will assess your progress.
+span ; промежуток, период ; охватывать ; The bridge spans the river.
+to cheat ; обманывать, жульничать ; списывать ; He cheated on the test.
+to alter ; изменять, переделывать ; I need to alter this dress.
+to detect ; обнаруживать ; The test can detect the virus early.
+to dip ; окунать, макать ; Dip the bread in the sauce.
+to withdraw ; снимать (деньги) ; отзывать ; I need to withdraw some cash.
+to cope ; справляться ; How do you cope with stress?
+to donate ; жертвовать ; She donated money to the hospital.
+to enhance ; улучшать, усиливать ; The music enhances the film.
+sketch ; набросок ; делать набросок ; She made a quick sketch of the bridge.
+to cease ; прекращать(ся) ; The rain finally ceased.
+to elect ; избирать ; The people elected a new mayor.
+to slam ; захлопнуть ; Don't slam the door!
+to evaluate ; оценивать ; We need to evaluate the results.
+to sail ; плыть (под парусом) ; We sailed around the islands.
+whip ; кнут ; взбивать ; Whip the cream until it's thick.
+to wipe ; вытирать ; Wipe the table, please.
+to facilitate ; облегчать, содействовать ; The new road will facilitate trade.
+to resign ; уходить в отставку, увольняться ; The manager resigned last week.
+to rub ; тереть ; Don't rub your eyes.
+to sweep ; подметать ; Sweep the floor, please.
+to employ ; нанимать ; использовать ; The factory employs 300 people.
+to enforce ; обеспечивать соблюдение (закона) ; The police enforce the law.
+to execute ; выполнять ; казнить ; The plan was executed perfectly.
+to squeeze ; сжимать, выжимать ; Squeeze the lemon over the fish.
+to threaten ; угрожать ; He threatened to call the police.
+to sustain ; поддерживать, сохранять ; We can't sustain this level of growth.
+to exceed ; превышать ; Don't exceed the speed limit.
+hail ; град ; окликать ; The hail damaged our car.
+to impose ; навязывать ; вводить (налог, запрет) ; The government imposed new taxes.
+sack ; мешок ; увольнять (брит.) ; He was sacked for being late.
+to unlock ; отпирать, разблокировать ; Unlock your phone with your finger.
+to recruit ; набирать (персонал) ; The company is recruiting new staff.
+to interfere ; вмешиваться ; мешать ; Don't interfere in their argument.
+bully ; хулиган, задира ; запугивать ; He was bullied at school.
+to consult ; консультироваться ; Consult your doctor before taking this medicine.
+to dominate ; доминировать, господствовать ; The company dominates the market.
+to regulate ; регулировать ; The government regulates prices.
+to fulfill ; выполнять, исполнять ; She fulfilled her dream of becoming a pilot.
+to clarify ; уточнять, разъяснять ; Could you clarify what you mean?
+to dismiss ; отвергать ; увольнять ; отпускать ; The teacher dismissed the class early.
+utter ; произносить ; полный, абсолютный ; She didn't utter a word.
+to testify ; давать показания ; He agreed to testify in court.
+to tolerate ; терпеть ; I can't tolerate noise when I work.
+decay ; гниение, разрушение ; гнить ; Sugar causes tooth decay.
+to exploit ; эксплуатировать ; использовать ; Workers were exploited in the factory.
+to imply ; подразумевать, намекать ; What are you implying?
+to obey ; подчиняться, слушаться ; Dogs should obey their owners.
+to confess ; признаваться ; He confessed to the crime.
+to flee ; бежать, спасаться бегством ; Thousands fled the war.
+to interpret ; толковать ; переводить устно ; How do you interpret this result?
+to confront ; противостоять ; сталкиваться ; She confronted him about the lie.
+to evolve ; развиваться, эволюционировать ; The company evolved from a small shop.
+to cooperate ; сотрудничать ; The two companies cooperate on many projects.
+to compensate ; компенсировать ; The airline compensated us for the delay.
+to exclude ; исключать ; The price excludes tax.
+to specify ; уточнять, указывать ; Please specify the size you need.
+to stab ; ударить ножом ; He was stabbed in the arm.
+to chop ; рубить, нарезать ; Chop the onions finely.
+to crawl ; ползать ; The baby is starting to crawl.
+to lick ; лизать ; The dog licked my hand.
+to relieve ; облегчать, снимать (боль, стресс) ; This medicine will relieve the pain.
+to reckon ; считать, полагать (разг.) ; I reckon it will rain later.
+to bind ; связывать, привязывать ; The rules bind all members.
+to merge ; сливаться, объединять ; The two companies merged last year.
+to utilize ; использовать ; We should utilize all our resources.
+to violate ; нарушать ; They violated the rules.
+to anticipate ; ожидать, предвидеть ; We don't anticipate any problems.
+bankrupt ; обанкротившийся ; The company went bankrupt.
+to blink ; моргать ; She didn't even blink.
+to excel ; преуспевать, отличаться ; He excels at math.
+to undertake ; браться, предпринимать ; The company undertook a big project.
+to condemn ; осуждать ; Everyone condemned the attack.
+to integrate ; интегрировать, объединять ; We need to integrate the new system.
+to perceive ; воспринимать, замечать ; How do people perceive our brand?
+to steer ; управлять, вести (машину, разговор) ; She steered the conversation to work.
+to strive ; стремиться ; We strive to improve our service.
+to distract ; отвлекать ; Don't distract the driver.
+to illustrate ; иллюстрировать, пояснять ; Let me illustrate this with an example.
+to adore ; обожать ; She adores her grandchildren.
+roar ; рёв ; реветь ; We heard the roar of a lion.
+to manipulate ; манипулировать ; He tried to manipulate his friends.
+to retrieve ; извлекать, возвращать ; I retrieved my bag from the lost property office.
+to underestimate ; недооценивать ; Never underestimate your enemy.
+to navigate ; ориентироваться, прокладывать путь ; It's easy to navigate the city with this app.
+to reinforce ; укреплять, подкреплять ; Practice reinforces new words.
+to revive ; оживлять, возрождать ; The new park revived the old district.
+to suspend ; приостанавливать ; отстранять ; The game was suspended because of rain.
+to stimulate ; стимулировать ; The government wants to stimulate the economy.
+to transmit ; передавать ; The virus is transmitted by mosquitoes.
+to chew ; жевать ; Chew your food slowly.
+to suppress ; подавлять ; She tried to suppress a smile.
+
+# B2 · Существительные и глаголы
+project ; проект ; проецировать ; We are working on a new project.
+cast ; актёрский состав ; бросать ; The cast of the film is excellent.
+purchase ; покупка ; покупать ; You can purchase tickets online.
+ban ; запрет ; запрещать ; The city banned cars from the center.
+quote ; цитата ; цитировать ; называть цену ; Can you give me a quote for the repair?
+pitch ; поле (спорт.) ; высота звука ; подача ; The players ran onto the pitch.
+boost ; поддержка, стимул ; повышать ; The good news boosted my confidence.
+crack ; трещина ; трескаться ; There is a crack in the glass.
+hook ; крючок ; подвешивать ; Hang your towel on the hook.
+ease ; лёгкость ; облегчать ; She passed the exam with ease.
+blast ; взрыв ; порыв ; We heard a blast from the mine.
+punch ; удар кулаком ; ударить кулаком ; He punched the bag hard.
+to edit ; редактировать ; She edits a fashion magazine.
+stroke ; инсульт ; гладить ; удар ; My grandfather had a stroke.
+export ; экспорт ; экспортировать ; Russia exports oil and gas.
+upgrade ; обновление ; модернизировать ; I upgraded my phone to a new model.
+to implement ; внедрять, осуществлять ; The company implemented a new system.
+spray ; спрей ; распылять ; Spray the plants with water.
+verse ; стих, куплет ; Let's sing the first verse again.
+retreat ; отступление ; отступать ; The army began to retreat.
+grip ; хватка ; крепко держать ; Keep a firm grip on the rope.
+leak ; утечка ; протекать ; The roof is leaking.
+rebel ; бунтарь, повстанец ; бунтовать ; Teenagers often rebel against their parents.
+drain ; сток ; сливать ; The sink drain is blocked.
+buzz ; жужжание ; жужжать ; I heard the buzz of a bee.
+bolt ; засов ; болт ; запирать ; Bolt the door before you go to bed.
+extract ; отрывок ; извлекать ; Read the extract from the novel.
+dash ; рывок ; тире ; мчаться ; I made a dash for the bus.
+insult ; оскорбление ; оскорблять ; He insulted my family.
+to manufacture ; производить ; The factory manufactures car parts.
+slap ; пощёчина, шлепок ; шлёпать ; She slapped him in the face.
+prompt ; быстрый, незамедлительный ; побуждать ; Thank you for your prompt reply.
+
+# B2 · Существительные 1
+media ; СМИ ; The media reported the story widely.
+version ; версия ; Download the latest version of the app.
+conference ; конференция ; She is speaking at a conference in Berlin.
+campaign ; кампания ; They started a campaign against smoking.
+master ; мастер ; хозяин ; овладевать ; It takes years to master a language.
+stock ; запас ; акции ; иметь в наличии ; Do you have this model in stock?
+learning ; обучение, изучение ; Learning a new language takes time.
+commission ; комиссия ; The agent takes a five percent commission.
+planning ; планирование ; Good planning saves time.
+executive ; руководитель ; исполнительный ; She is a senior executive at a bank.
+trial ; суд, судебный процесс ; испытание ; The trial lasted three weeks.
+division ; деление ; отдел, подразделение ; She works in the sales division.
+species ; вид (биол.) ; Many species are in danger.
+investment ; инвестиция, вложение ; Buying a flat is a good investment.
+estate ; имущество, поместье ; жилой район ; They own a large estate in the country.
+faith ; вера ; Don't lose faith.
+profile ; профиль ; Update your profile photo.
+understanding ; понимание ; Thank you for your understanding.
+remains ; остатки, останки ; We visited the remains of an old castle.
+marketing ; маркетинг ; She works in marketing.
+billion ; миллиард ; The project cost two billion dollars.
+evil ; зло ; злой ; The film is about good and evil.
+parliament ; парламент ; Parliament passed a new law.
+reference ; ссылка, упоминание ; рекомендация ; My old boss gave me a good reference.
+core ; ядро, суть ; основной ; Let's focus on the core problem.
+reaction ; реакция ; What was his reaction to the news?
+crew ; экипаж, команда ; The crew welcomed us on board.
+profit ; прибыль ; The company made a big profit this year.
+user ; пользователь ; The app has millions of users.
+factor ; фактор ; Price is an important factor.
+route ; маршрут ; What is the fastest route to the airport?
+squad ; отряд, команда ; He was picked for the national squad.
+abuse ; злоупотребление ; жестокое обращение ; Drug abuse is a serious problem.
+candidate ; кандидат ; There are three candidates for the job.
+fox ; лиса ; A fox ran across the road.
+payment ; оплата, платёж ; We accept payment by card.
+sector ; сектор ; He works in the public sector.
+aircraft ; самолёт, воздушное судно ; The aircraft landed safely.
+phase ; этап, фаза ; The project is in its final phase.
+revenue ; доход, выручка ; The company's revenue grew by 10%.
+theme ; тема ; The theme of the party was the 1980s.
+assembly ; собрание ; сборка ; The school assembly starts at nine.
+draft ; черновик ; набросать ; This is only the first draft.
+solo ; соло ; в одиночку ; She traveled solo across Asia.
+statistics ; статистика ; Statistics show that crime is falling.
+territory ; территория ; This territory belongs to the state.
+corporation ; корпорация ; He works for a large corporation.
+motion ; движение ; предложение (на собрании) ; The film is shown in slow motion.
+resolution ; решение ; разрешение (экрана) ; What is your New Year's resolution?
+saving ; экономия ; savings — сбережения ; We spent all our savings on the house.
+plot ; сюжет ; участок ; заговор ; The plot of the film was confusing.
+index ; указатель, индекс ; Look up the word in the index.
+navy ; военно-морской флот ; Her brother is in the navy.
+scheme ; схема, план ; The government launched a new scheme for young workers.
+creation ; создание ; The creation of the website took a month.
+manufacturing ; производство ; Manufacturing is important for the economy.
+personnel ; персонал ; All personnel must wear a badge.
+perspective ; перспектива, точка зрения ; Try to see it from my perspective.
+revolution ; революция ; The internet caused a revolution in communication.
+carbon ; углерод ; We need to reduce carbon emissions.
+deputy ; заместитель ; She is the deputy director.
+interior ; интерьер ; внутренний ; I love the interior of this café.
+legislation ; законодательство ; New legislation protects consumers.
+mate ; приятель (брит.) ; напарник ; He went out with his mates.
+panel ; панель ; комиссия ; A panel of experts judged the competition.
+relief ; облегчение ; помощь ; What a relief!
+resistance ; сопротивление ; There was strong resistance to the new law.
+cable ; кабель ; Connect the TV with this cable.
+expansion ; расширение ; The company plans further expansion.
+peak ; пик, вершина ; Prices reach their peak in summer.
+reform ; реформа ; The government promised education reform.
+retirement ; выход на пенсию ; пенсия ; He plans to travel after retirement.
+suffering ; страдание ; The war caused great suffering.
+shipping ; доставка ; судоходство ; Shipping is free for orders over 50 dollars.
+therapy ; терапия, лечение ; She is having physical therapy for her back.
+commander ; командир ; The commander gave the order.
+convention ; конвенция ; съезд ; обычай ; It is a social convention to shake hands.
+gang ; банда ; компания ; A gang of kids was standing outside.
+cabinet ; шкаф(чик) ; кабинет министров ; The medicine is in the bathroom cabinet.
+criticism ; критика ; He can't take criticism.
+formation ; образование, формирование ; This is the formation of a new team.
+jury ; присяжные ; жюри ; The jury found him guilty.
+partnership ; партнёрство ; The two firms formed a partnership.
+percentage ; процент, доля ; What percentage of students passed?
+circuit ; цепь (электр.) ; круг, трасса ; There is a problem with the electrical circuit.
+clothing ; одежда ; Wear warm clothing in winter.
+province ; провинция ; Canada has ten provinces.
+recognition ; признание ; распознавание ; She received recognition for her work.
+assessment ; оценка ; The teacher made an assessment of my level.
+extension ; продление ; пристройка ; добавочный номер ; I asked for an extension of the deadline.
+gear ; снаряжение ; передача (в машине) ; Bring your camping gear.
+transition ; переход ; The transition to the new system was smooth.
+acid ; кислота ; кислотный ; Lemon juice contains acid.
+penalty ; штраф ; пенальти ; There is a penalty for late payment.
+publication ; публикация, издание ; The publication of the book is in May.
+assault ; нападение ; He was arrested for assault.
+legend ; легенда ; According to legend, the castle has a ghost.
+procedure ; процедура ; What is the procedure for getting a visa?
+replacement ; замена ; We need a replacement for the broken part.
+tag ; ярлык, бирка ; отмечать (на фото) ; Check the price tag.
+thread ; нитка ; ветка (обсуждения) ; I need a needle and thread.
+wage ; заработная плата (почасовая) ; The minimum wage went up this year.
+label ; этикетка, ярлык ; маркировать ; Read the label before you buy.
+output ; выпуск, производительность ; вывод ; The factory increased its output.
+welfare ; благосостояние ; социальное пособие ; The government cares about the welfare of children.
+hunting ; охота ; Hunting is not allowed in the park.
+deck ; палуба ; колода (карт) ; We stood on the deck and watched the sea.
+evolution ; эволюция, развитие ; Darwin wrote about evolution.
+institution ; учреждение ; институт (общества) ; Banks are financial institutions.
+memorial ; мемориал, памятник ; We visited the war memorial.
+priority ; приоритет ; Safety is our top priority.
+alliance ; союз, альянс ; The two parties formed an alliance.
+elite ; элита ; элитный ; He went to an elite school.
+landing ; посадка (самолёта) ; лестничная площадка ; The landing was smooth.
+idiot ; идиот ; I felt like an idiot.
+lifetime ; вся жизнь ; It was the trip of a lifetime.
+mortgage ; ипотека ; We took out a mortgage to buy the flat.
+translation ; перевод ; The translation of the book is excellent.
+enterprise ; предприятие ; She runs a small enterprise.
+mill ; мельница ; фабрика ; There is an old mill by the river.
+commerce ; торговля, коммерция ; Online commerce is growing fast.
+creek ; ручей ; We had a picnic by the creek.
+fraud ; мошенничество ; He was arrested for fraud.
+programming ; программирование ; He is learning programming.
+consent ; согласие ; соглашаться ; You need your parents' consent.
+fate ; судьба ; It was fate that we met.
+headquarters ; штаб-квартира, главный офис ; The company's headquarters are in London.
+heritage ; наследие ; The old town is part of our heritage.
+initiative ; инициатива ; She took the initiative and called the client.
+residence ; место жительства, резиденция ; He has a residence permit.
+ambassador ; посол ; The ambassador met the president.
+corruption ; коррупция ; The government promised to fight corruption.
+exception ; исключение ; There is an exception to every rule.
+input ; вклад ; ввод (данных) ; Thank you for your input.
+lyrics ; текст песни ; I don't know the lyrics of this song.
+outcome ; результат, исход ; What was the outcome of the meeting?
+wolf ; волк ; We heard a wolf in the forest.
+fame ; слава ; He found fame as an actor.
+rally ; митинг ; ралли ; Thousands attended the rally.
+arena ; арена ; The concert is at the city arena.
+compensation ; компенсация ; We received compensation for the delayed flight.
+fleet ; флот ; автопарк ; The company has a fleet of 50 trucks.
+genius ; гений ; Einstein was a genius.
+participation ; участие ; Thank you for your participation.
+radical ; радикальный, коренной ; We need radical changes.
+transmission ; передача ; коробка передач ; The car has an automatic transmission.
+component ; компонент, деталь ; The factory produces car components.
+faculty ; факультет ; способность ; She studies at the faculty of law.
+feedback ; обратная связь, отзыв ; Thanks for your feedback.
+innovation ; инновация, нововведение ; The company is known for innovation.
+manual ; руководство, инструкция ; ручной ; Read the manual before using the machine.
+operator ; оператор ; The operator connected my call.
+trailer ; трейлер ; прицеп ; Have you seen the trailer for the new film?
+chip ; чипс ; микросхема ; щербина ; I'd like fish and chips.
+database ; база данных ; All customers are in our database.
+disorder ; расстройство ; беспорядок ; He suffers from a sleep disorder.
+engagement ; помолвка ; вовлечённость ; They announced their engagement.
+mask ; маска ; Wear a mask in the hospital.
+psychology ; психология ; She has a degree in psychology.
+rocket ; ракета ; The rocket was launched into space.
+stability ; стабильность ; The country needs political stability.
+treaty ; договор (междунар.) ; The two countries signed a peace treaty.
+cooperation ; сотрудничество ; Thank you for your cooperation.
+devil ; дьявол ; Speak of the devil, here he is!
+equity ; справедливость ; капитал (акции) ; The company sold 20% of its equity.
+hardware ; оборудование, «железо» ; скобяные изделия ; The computer hardware is old.
+intellectual ; интеллектуальный ; интеллектуал ; Chess is an intellectual game.
+involvement ; участие, вовлечённость ; Thank you for your involvement in the project.
+regime ; режим ; The regime controlled the media.
+seal ; тюлень ; печать ; запечатывать ; Seal the envelope.
+shield ; щит ; защищать ; Sunglasses shield your eyes from the sun.
+throat ; горло ; My throat hurts.
+coaching ; тренерская работа ; коучинг ; She does business coaching.
+execution ; выполнение ; казнь ; The execution of the plan was perfect.
+lighting ; освещение ; The lighting in the room is too dark.
+polish ; полировать ; лак ; She polished her shoes.
+timing ; выбор времени ; The timing of the meeting is bad.
+ton ; тонна ; The truck carries ten tons.
+worship ; поклонение ; поклоняться ; The temple is a place of worship.
+prevention ; предотвращение, профилактика ; Prevention is better than cure.
+revenge ; месть ; He wanted revenge.
+copper ; медь ; The wires are made of copper.
+dawn ; рассвет ; We left at dawn.
+dispute ; спор ; оспаривать ; There is a dispute about the price.
+earnings ; заработок, доходы ; His earnings increased last year.
+margin ; поле (страницы) ; разница, маржа ; Write notes in the margin.
+utility ; коммунальная услуга ; полезность ; Utilities include water and electricity.
+weed ; сорняк ; The garden is full of weeds.
+acquisition ; приобретение ; The acquisition of the company cost millions.
+controversy ; разногласия, полемика ; The new law caused controversy.
+offense ; правонарушение ; обида ; No offense, but I disagree.
+segment ; сегмент, отрезок ; Cut the orange into segments.
+venture ; предприятие, рискованное дело ; It's a joint business venture.
+inspector ; инспектор ; The inspector checked our tickets.
+mercy ; милосердие ; They showed no mercy.
+racism ; расизм ; The campaign is against racism.
+venue ; место проведения ; The venue for the wedding is a castle.
+conversion ; преобразование, переоборудование ; The conversion of the old barn into a house took a year.
+popularity ; популярность ; The singer's popularity is growing.
+tunnel ; туннель ; The train went through a long tunnel.
+
+# B2 · Существительные 2
+coalition ; коалиция ; The two parties formed a coalition.
+discipline ; дисциплина ; Learning a language requires discipline.
+laptop ; ноутбук ; I work on my laptop.
+shed ; сарай ; Keep the bikes in the shed.
+substance ; вещество ; суть ; This substance is dangerous.
+bearing ; подшипник ; отношение, влияние ; This has no bearing on the result.
+completion ; завершение ; The completion of the project is planned for May.
+interpretation ; толкование, интерпретация ; There are different interpretations of the poem.
+outfit ; наряд, костюм ; I love your outfit!
+pension ; пенсия ; She lives on a small pension.
+backup ; резервная копия ; запасной ; Make a backup of your files.
+evaluation ; оценка ; We did an evaluation of the course.
+holder ; владелец ; держатель ; Only ticket holders can enter.
+hood ; капюшон ; капот (амер.) ; Put your hood up, it's raining.
+manufacturer ; производитель ; Contact the manufacturer if the product is broken.
+veteran ; ветеран ; My grandfather is a war veteran.
+dose ; доза ; Take one dose every six hours.
+flesh ; плоть, мякоть ; The flesh of the fruit is sweet.
+laser ; лазер ; The doctor used a laser to treat my eyes.
+opponent ; противник, соперник ; He beat his opponent easily.
+patch ; заплатка ; участок ; There was a patch of ice on the road.
+privilege ; привилегия ; честь ; It's a privilege to work with you.
+radar ; радар ; The plane disappeared from the radar.
+villa ; вилла ; We rented a villa in Italy.
+blade ; лезвие ; The blade of the knife is very sharp.
+destiny ; судьба ; She believes in destiny.
+electronics ; электроника ; This shop sells electronics.
+nerve ; нерв ; смелость ; nerves — волнение ; She had the nerve to say no.
+nightmare ; кошмар ; The trip was a nightmare.
+cherry ; вишня, черешня ; We picked cherries in the garden.
+classification ; классификация ; The classification of plants is complex.
+costume ; костюм (маскарадный, сценический) ; The kids wore Halloween costumes.
+grain ; зерно ; The farm produces grain.
+identification ; удостоверение личности ; опознание ; You need identification to enter.
+lap ; колени (сидящего) ; круг (в гонке) ; The cat sat on my lap.
+mixture ; смесь ; Pour the mixture into a bowl.
+perception ; восприятие ; Our perception of time changes with age.
+physician ; врач ; Consult your physician before you start the diet.
+rival ; соперник ; конкурирующий ; The two companies are rivals.
+adoption ; усыновление ; принятие ; Adoption of the new law took two years.
+attendance ; посещаемость ; Attendance at lectures is required.
+genre ; жанр ; What is your favorite film genre?
+lease ; аренда, договор аренды ; сдавать в аренду ; We signed a two-year lease.
+scandal ; скандал ; The scandal ruined his career.
+surveillance ; наблюдение, слежка ; The street is under video surveillance.
+testimony ; показания (в суде) ; The witness gave her testimony.
+trophy ; трофей, кубок ; The team won the trophy.
+ash ; пепел ; ясень ; The fire left only ash.
+embrace ; объятие ; обнимать ; принимать (идею) ; They embraced at the airport.
+icon ; значок, иконка ; кумир ; Click on the icon to open the app.
+marathon ; марафон ; She ran her first marathon last year.
+parade ; парад ; We watched the parade from the window.
+barrier ; барьер, преграда ; Language can be a barrier.
+medication ; лекарство ; Are you taking any medication?
+stake ; ставка ; доля ; Our future is at stake.
+beam ; луч ; балка ; A beam of light came through the window.
+inflation ; инфляция ; Inflation is rising.
+migration ; миграция ; Bird migration happens every autumn.
+missile ; ракета (боевая) ; The missile hit the target.
+pearl ; жемчуг ; She wore a pearl necklace.
+peer ; ровесник, сверстник ; Teenagers care about the opinion of their peers.
+provision ; обеспечение ; положение (договора) ; The provision of clean water is important.
+tattoo ; татуировка ; He has a tattoo on his arm.
+availability ; доступность, наличие ; Check the availability of rooms.
+consciousness ; сознание ; He lost consciousness after the fall.
+consultant ; консультант ; She works as a business consultant.
+courtesy ; вежливость, любезность ; It's common courtesy to say thank you.
+eagle ; орёл ; An eagle flew over the mountains.
+embassy ; посольство ; Go to the embassy to get a visa.
+helicopter ; вертолёт ; The helicopter landed on the roof.
+prospect ; перспектива ; The job has good prospects.
+deer ; олень ; We saw a deer in the forest.
+journalism ; журналистика ; She studied journalism.
+pursuit ; погоня ; стремление ; The pursuit of happiness is a basic right.
+reminder ; напоминание ; I set a reminder on my phone.
+ridge ; гребень, хребет ; We walked along the mountain ridge.
+tribe ; племя ; The tribe lives deep in the forest.
+bankruptcy ; банкротство ; The company is close to bankruptcy.
+closure ; закрытие ; The closure of the factory left 200 people without work.
+editorial ; редакционная статья ; редакционный ; Did you read today's editorial?
+voter ; избиратель ; Voters will choose a new mayor.
+ally ; союзник ; The two countries are close allies.
+booth ; будка, кабинка ; стенд ; Wait for me near the ticket booth.
+breakdown ; поломка ; срыв ; разбивка ; We had a breakdown on the highway.
+consensus ; консенсус, общее согласие ; We reached a consensus after a long discussion.
+pine ; сосна ; The house is surrounded by pine trees.
+pose ; поза ; позировать ; представлять (угрозу) ; Smoking poses a risk to your health.
+rental ; аренда, прокат ; We picked up the rental car at the airport.
+darling ; дорогой, милый (обращение) ; Good morning, darling!
+lawsuit ; судебный иск ; She filed a lawsuit against her employer.
+olive ; оливка ; Add some olives to the salad.
+recommendation ; рекомендация ; Can you give me a recommendation for a good dentist?
+servant ; слуга ; The rich family had many servants.
+bud ; почка, бутон ; The trees are covered in buds.
+fabric ; ткань ; This fabric is soft and warm.
+gambling ; азартные игры ; Gambling is illegal in some countries.
+grief ; горе ; She couldn't hide her grief.
+toll ; плата за проезд ; число жертв ; We paid a toll to use the bridge.
+trainer ; тренер ; кроссовка (брит.) ; My personal trainer is very strict.
+variation ; вариант ; изменение, колебание ; There are small variations in price.
+widow ; вдова ; She became a widow at 40.
+assumption ; предположение ; Your assumption is wrong.
+capability ; способность, возможность ; The phone has 5G capability.
+flame ; пламя ; The flames reached the roof.
+hint ; намёк ; подсказка ; Give me a hint!
+nomination ; номинация ; выдвижение ; The film received three nominations.
+obligation ; обязательство ; You are under no obligation to buy.
+outlook ; перспектива, прогноз ; мировоззрение ; The economic outlook is positive.
+rainbow ; радуга ; Look, there's a rainbow!
+reed ; тростник, камыш ; Ducks were hiding in the reeds.
+ballot ; бюллетень ; голосование ; Voters put their ballots in the box.
+cemetery ; кладбище ; My grandparents are buried in this cemetery.
+deficit ; дефицит ; The country has a budget deficit.
+fiber ; волокно ; клетчатка ; Vegetables are rich in fiber.
+pulse ; пульс ; The nurse checked my pulse.
+effectiveness ; эффективность ; We tested the effectiveness of the new drug.
+mobility ; подвижность, мобильность ; The injury reduced his mobility.
+stack ; стопка, куча ; складывать в стопку ; There's a stack of papers on my desk.
+thesis ; диссертация, тезис ; She is writing her thesis.
+withdrawal ; снятие (денег) ; вывод (войск) ; отказ ; You can make a withdrawal at any ATM.
+audit ; аудит, проверка ; The company has an annual audit.
+ignorance ; невежество, незнание ; Ignorance of the law is no excuse.
+immigrant ; иммигрант ; Many immigrants work in the city.
+nut ; орех ; гайка ; I'm allergic to nuts.
+recreation ; отдых, досуг ; The park is used for recreation.
+spite ; злоба ; in spite of — несмотря на ; We went out in spite of the rain.
+analyst ; аналитик ; She works as a financial analyst.
+lobby ; вестибюль, холл ; лобби ; Let's meet in the hotel lobby.
+navigation ; навигация ; The car has a navigation system.
+supplement ; добавка ; дополнение ; She takes vitamin supplements.
+trunk ; ствол ; багажник (амер.) ; хобот ; Put the bags in the trunk.
+anchor ; якорь ; ведущий (новостей) ; The ship dropped anchor near the island.
+arch ; арка ; We walked under the stone arch.
+axis ; ось ; The Earth turns on its axis.
+badge ; значок, бейдж ; Wear your badge at all times.
+complexity ; сложность ; I didn't understand the complexity of the problem.
+dignity ; достоинство ; Everyone deserves to be treated with dignity.
+dimension ; измерение ; размер ; What are the dimensions of the room?
+equation ; уравнение ; Solve this equation.
+flexibility ; гибкость ; The job offers flexibility.
+goat ; коза, козёл ; The farm has goats and sheep.
+ideology ; идеология ; The party has a clear ideology.
+keeper ; хранитель ; смотритель ; вратарь ; The zoo keeper feeds the animals.
+mansion ; особняк ; The actor lives in a huge mansion.
+resignation ; отставка, увольнение по собственному желанию ; She handed in her resignation.
+rider ; наездник ; велосипедист ; The rider fell off the horse.
+ritual ; ритуал ; Morning coffee is my daily ritual.
+width ; ширина ; What is the width of the door?
+aluminum ; алюминий ; The can is made of aluminum.
+massage ; массаж ; I need a massage after the long flight.
+pad ; блокнот ; подушечка, накладка ; Write it on the pad by the phone.
+seller ; продавец ; The seller agreed to lower the price.
+tan ; загар ; She got a nice tan on vacation.
+vitamin ; витамин ; Oranges are full of vitamin C.
+wheat ; пшеница ; Bread is made from wheat.
+cottage ; коттедж, загородный дом ; We rented a cottage by the lake.
+disposal ; утилизация ; at your disposal — в вашем распоряжении ; The car is at your disposal.
+donation ; пожертвование ; We made a donation to the hospital.
+outlet ; розетка (амер.) ; торговая точка ; выход ; Is there an outlet for my charger?
+publicity ; реклама, известность ; The film got a lot of publicity.
+vaccine ; вакцина ; The vaccine protects against flu.
+barn ; амбар, сарай ; The cows are in the barn.
+cathedral ; собор ; We visited the cathedral in the old town.
+clause ; пункт (договора) ; придаточное предложение ; Read every clause of the contract.
+dock ; док, причал ; док-станция ; The ship is in the dock.
+entrepreneur ; предприниматель ; She is a successful entrepreneur.
+expectation ; ожидание ; The hotel was below my expectations.
+expedition ; экспедиция ; They went on an expedition to the North Pole.
+feat ; подвиг, достижение ; Climbing Everest is an amazing feat.
+infant ; младенец ; The infant was sleeping in her arms.
+injection ; укол, инъекция ; The nurse gave me an injection.
+outbreak ; вспышка (болезни, войны) ; There was an outbreak of flu in the school.
+probe ; зонд ; исследовать, расследовать ; They sent a probe to Mars.
+spark ; искра ; вызывать ; One small spark can start a fire.
+jaw ; челюсть ; He broke his jaw in the accident.
+lawn ; газон ; Can you mow the lawn on Saturday?
+refugee ; беженец ; The refugees found shelter in a school.
+berry ; ягода ; We picked berries in the forest.
+certification ; сертификация ; свидетельство ; You need certification to work as an electrician.
+explosive ; взрывчатое вещество ; взрывной ; The police found explosives in the car.
+frontier ; граница, рубеж ; Space is the final frontier.
+grasp ; понимание ; схватывать ; She has a good grasp of grammar.
+incentive ; стимул, поощрение ; The bonus is an incentive to work harder.
+madness ; безумие ; It's madness to drive in this weather.
+merger ; слияние (компаний) ; The merger created a huge company.
+therapist ; терапевт, психотерапевт ; She talks to a therapist once a week.
+tuition ; обучение ; плата за обучение ; University tuition is expensive.
+tumor ; опухоль ; The doctors removed the tumor.
+coincidence ; совпадение ; What a coincidence!
+dedication ; преданность делу ; посвящение ; Her dedication to the job is amazing.
+grown-up ; взрослый ; Grown-ups never understand!
+investor ; инвестор ; The company is looking for investors.
+oath ; клятва ; He took an oath to tell the truth.
+pirate ; пират ; The children played pirates.
+revelation ; откровение, открытие ; The news was a revelation to me.
+spa ; спа ; We spent a day at the spa.
+sprint ; спринт, забег ; бежать изо всех сил ; She won the 100-meter sprint.
+trek ; поход, долгий путь ; We went on a trek in the mountains.
+underwear ; нижнее бельё ; Pack enough underwear for the trip.
+waist ; талия ; These jeans are too tight at the waist.
+
+# B2 · Существительные 3
+wit ; остроумие ; She is famous for her wit.
+wreck ; обломки, крушение ; разрушать ; The storm wrecked our garden.
+ballet ; балет ; We went to the ballet at the Mariinsky Theatre.
+compassion ; сострадание ; She treats her patients with compassion.
+messenger ; посыльный ; мессенджер ; I sent the file via messenger.
+
+# B2 · Прилагательные
+related ; связанный ; родственный ; Are you related to him?
+moving ; трогательный ; движущийся ; It was a very moving film.
+western ; западный ; He lives in western Canada.
+particular ; особый, определённый ; Is there a particular reason?
+expected ; ожидаемый ; The expected result is positive.
+growing ; растущий ; There is growing interest in electric cars.
+multiple ; многочисленный, множественный ; The app supports multiple languages.
+grand ; величественный, грандиозный ; They stayed in a grand hotel.
+overall ; общий ; в целом ; Overall, it was a good trip.
+primary ; основной ; начальный ; Our primary goal is safety.
+actual ; действительный, фактический ; The actual cost was higher.
+prior ; предыдущий ; prior to — до ; Prior experience is not required.
+so-called ; так называемый ; His so-called friends left him.
+prime ; главный ; первоклассный ; The prime reason was money.
+tough ; трудный ; жёсткий ; стойкий ; It was a tough decision.
+existing ; существующий ; We need to improve the existing system.
+technical ; технический ; We had a technical problem.
+willing ; готовый, желающий ; Are you willing to help?
+proposed ; предлагаемый ; The proposed changes will start next year.
+fixed ; фиксированный, установленный ; The price is fixed.
+domestic ; внутренний ; домашний ; Domestic flights leave from Terminal 1.
+developing ; развивающийся ; India is a developing country.
+liberal ; либеральный ; She has liberal views.
+urban ; городской ; Urban life is stressful.
+corporate ; корпоративный ; We had a corporate party.
+determined ; решительный, полный решимости ; She is determined to win.
+remaining ; оставшийся ; Let's spend the remaining money on food.
+estimated ; приблизительный, предполагаемый ; The estimated cost is 2,000 dollars.
+improved ; улучшенный ; The new model has an improved battery.
+relevant ; уместный, имеющий отношение ; Only include relevant information.
+rural ; сельский ; They moved to a rural area.
+constant ; постоянный ; The constant noise drives me crazy.
+dumb ; глупый (разг.) ; немой ; That was a dumb idea.
+secondary ; второстепенный ; средний (о школе) ; Money is of secondary importance.
+solar ; солнечный ; They put solar panels on the roof.
+ultimate ; окончательный ; высший ; Our ultimate goal is to win the cup.
+attached ; прикреплённый ; привязанный ; Please see the attached file.
+external ; внешний ; I bought an external hard drive.
+adopted ; приёмный ; принятый ; They have two adopted children.
+detailed ; подробный ; Give me a detailed report.
+injured ; раненый, травмированный ; Two people were injured in the accident.
+contemporary ; современный ; I like contemporary art.
+extensive ; обширный ; She has extensive experience in sales.
+universal ; всеобщий, универсальный ; Music is a universal language.
+consistent ; последовательный, постоянный ; His work is consistent and reliable.
+divided ; разделённый ; The country is divided on this issue.
+administrative ; административный ; I do a lot of administrative work.
+scheduled ; запланированный ; регулярный (рейс) ; The meeting is scheduled for Monday.
+long-term ; долгосрочный ; We need a long-term plan.
+rear ; задний ; тыл ; Get in the rear of the car.
+odd ; странный ; нечётный ; That's odd, the door was locked.
+convinced ; убеждённый, уверенный ; I'm convinced that he is lying.
+decent ; приличный, достойный ; He earns a decent salary.
+valid ; действительный (документ) ; обоснованный ; Your ticket is valid for one month.
+vital ; жизненно важный ; Water is vital for life.
+genuine ; подлинный, искренний ; This is a genuine leather bag.
+comprehensive ; всесторонний, полный ; The book gives a comprehensive overview.
+impressed ; впечатлённый ; I was impressed by his speech.
+ethnic ; этнический ; The city has many ethnic restaurants.
+fundamental ; фундаментальный, основной ; There is a fundamental difference.
+proven ; доказанный, проверенный ; This is a proven method.
+well-built ; крепкий, хорошо сложённый ; He is tall and well-built.
+underground ; подземный ; метро (брит.) ; We took the underground to the center.
+biological ; биологический ; She is his biological mother.
+dynamic ; динамичный ; She is a dynamic young manager.
+packed ; переполненный ; упакованный ; The bus was packed.
+dated ; устаревший ; датированный ; The design looks dated.
+educated ; образованный ; She is a well-educated woman.
+eligible ; имеющий право, подходящий ; You are eligible for a discount.
+crucial ; решающий, крайне важный ; This is a crucial moment.
+intent ; намерение ; сосредоточенный ; He was intent on winning.
+mature ; зрелый ; She is very mature for her age.
+short-term ; краткосрочный ; It's only a short-term solution.
+spare ; запасной, лишний ; уделить (время) ; Do you have a spare key?
+hilarious ; уморительный, очень смешной ; The film was hilarious.
+fiscal ; налоговый, финансовый ; The fiscal year starts in April.
+conventional ; обычный, традиционный ; He prefers conventional medicine.
+functional ; функциональный ; рабочий ; The kitchen is small but functional.
+noble ; благородный ; It was a noble act.
+toxic ; ядовитый, токсичный ; Some plants are toxic to cats.
+legendary ; легендарный ; He is a legendary football player.
+serial ; серийный ; Write down the serial number.
+last-minute ; в последний момент ; We got a last-minute deal on the hotel.
+affordable ; доступный (по цене) ; We are looking for affordable housing.
+fluid ; жидкость ; Drink plenty of fluids when you have a fever.
+legitimate ; законный ; обоснованный ; It's a legitimate question.
+identical ; идентичный, одинаковый ; The two pictures look identical.
+caring ; заботливый ; She is a kind and caring person.
+distinguished ; выдающийся, известный ; He is a distinguished scientist.
+striking ; поразительный, яркий ; There is a striking difference between them.
+balanced ; сбалансированный ; Eat a balanced diet.
+devoted ; преданный ; He is a devoted father.
+anonymous ; анонимный ; The donor wants to stay anonymous.
+revolutionary ; революционный ; It was a revolutionary idea.
+preliminary ; предварительный ; These are only preliminary results.
+rocky ; каменистый, скалистый ; We walked along a rocky path.
+swift ; быстрый ; Thank you for your swift reply.
+corrupt ; коррумпированный, продажный ; The police officer was corrupt.
+motivated ; мотивированный ; She is a highly motivated student.
+corresponding ; соответствующий ; Sales rose, with a corresponding increase in profit.
+demanding ; требовательный ; трудный ; My boss is very demanding.
+flexible ; гибкий ; I have flexible working hours.
+infected ; заражённый, инфицированный ; The wound got infected.
+keen ; увлечённый ; be keen on — увлекаться ; He is keen on football.
+skilled ; квалифицированный, умелый ; We need skilled workers.
+excessive ; чрезмерный ; Excessive drinking is dangerous.
+worrying ; тревожный ; The news is very worrying.
+dental ; зубной, стоматологический ; I have a dental appointment.
+entertaining ; занимательный, развлекательный ; The show was very entertaining.
+humble ; скромный ; He is humble about his success.
+hybrid ; гибрид ; гибридный ; We bought a hybrid car.
+respected ; уважаемый ; She is a respected doctor.
+fatal ; смертельный, роковой ; It was a fatal mistake.
+innovative ; инновационный ; The company is very innovative.
+long-distance ; дальний, междугородний ; It's hard to have a long-distance relationship.
+mighty ; могучий ; The mighty river flows through the valley.
+unlimited ; неограниченный ; The plan includes unlimited internet.
+influential ; влиятельный ; He is one of the most influential people in the city.
+invisible ; невидимый ; Germs are invisible to the naked eye.
+passionate ; страстный, увлечённый ; She is passionate about music.
+suspicious ; подозрительный ; Call the police if you see anything suspicious.
+tender ; нежный ; мягкий ; The meat is very tender.
+beneficial ; полезный, благотворный ; Sleep is beneficial for your health.
+fabulous ; потрясающий, сказочный ; We had a fabulous time.
+subtle ; тонкий, едва уловимый ; There is a subtle difference between the two colors.
+charming ; очаровательный ; What a charming little town!
+nationwide ; общенациональный, по всей стране ; There was a nationwide strike.
+petty ; мелкий, незначительный ; Don't worry about petty problems.
+interactive ; интерактивный ; The museum has interactive displays.
+intimate ; близкий, интимный ; уютный ; It's a small, intimate restaurant.
+adequate ; достаточный, адекватный ; The room was small but adequate.
+exceptional ; исключительный ; She is an exceptional student.
+foul ; фол ; отвратительный ; The player committed a foul.
+ignorant ; невежественный, несведущий ; He is ignorant of the facts.
+medieval ; средневековый ; We visited a medieval castle.
+sophisticated ; сложный, утончённый ; This is a sophisticated system.
+mathematical ; математический ; He has a mathematical mind.
+arctic ; арктический ; Polar bears live in the Arctic.
+profitable ; прибыльный ; The business is very profitable.
+varied ; разнообразный ; The menu is varied.
+bizarre ; странный, причудливый ; What a bizarre story!
+transparent ; прозрачный ; The bag is made of transparent plastic.
+acute ; острый (о боли, проблеме) ; He felt an acute pain in his chest.
+neat ; аккуратный ; Her room is always neat.
+dense ; плотный, густой ; We walked through a dense forest.
+furious ; взбешённый ; He was furious with me.
+oval ; овальный ; She has an oval face.
+seasonal ; сезонный ; He does seasonal work on farms.
+twisted ; искривлённый ; извращённый ; The car was a twisted piece of metal.
+compatible ; совместимый ; Is this charger compatible with my phone?
+bothered ; обеспокоенный ; I can't be bothered — мне лень ; I can't be bothered to cook tonight.
+superb ; превосходный ; The food was superb.
+tricky ; хитрый ; каверзный, сложный ; This question is tricky.
+absurd ; абсурдный, нелепый ; That's an absurd idea.
+elegant ; элегантный ; She wore an elegant black dress.
+high-tech ; высокотехнологичный ; It's a high-tech company.
+hollow ; полый, пустой ; The tree is hollow inside.
+
+# B2 · Наречия, предлоги и связки
+literally ; буквально ; The room was literally full of books.
+previously ; ранее ; Previously, she worked as a teacher.
+neither ; ни один из двух ; neither... nor — ни... ни ; Neither of them came.
+originally ; изначально, первоначально ; Originally, I wanted to study law.
+specifically ; специально ; конкретно ; This course is specifically for beginners.
+considering ; учитывая ; Considering the weather, the trip went well.
+ultimately ; в конечном счёте ; Ultimately, it's your decision.
+somewhat ; несколько, отчасти ; I was somewhat surprised.
+significantly ; значительно ; Prices have increased significantly.
+health care ; здравоохранение ; Health care is free in many countries.
+effectively ; эффективно ; фактически ; The new system works effectively.
+necessarily ; обязательно, непременно ; Expensive doesn't necessarily mean good.
+regardless ; несмотря на, независимо от ; Everyone can join regardless of age.
+alongside ; рядом, наряду с ; We worked alongside local people.
+essentially ; по сути, в основном ; Essentially, the two plans are the same.
+whereas ; тогда как ; I like tea, whereas my wife prefers coffee.
+potentially ; потенциально ; This is potentially dangerous.
+versus ; против (vs) ; It was Spain versus Italy in the final.
+concerning ; касательно ; тревожный ; I have a question concerning my order.
+hard drive ; жёсткий диск ; Save the files on the hard drive.
+human rights ; права человека ; The organization protects human rights.
+virtually ; практически, почти ; It's virtually impossible to get tickets.
+exclusively ; исключительно ; The offer is available exclusively online.
+formerly ; ранее, прежде ; The hotel was formerly a palace.
+actively ; активно ; She is actively looking for a job.
+instantly ; мгновенно ; The message arrives instantly.
+additionally ; кроме того, дополнительно ; Additionally, we offer free delivery.
+precisely ; точно, именно ; That's precisely what I mean.
+practically ; практически, почти ; I practically live at the office.
+strictly ; строго ; Smoking is strictly forbidden.
+openly ; открыто ; She talked openly about her problems.
+genuinely ; искренне, по-настоящему ; I'm genuinely sorry.
+technically ; технически, формально ; Technically, you are right.
+thoroughly ; тщательно ; совершенно ; Clean the room thoroughly.
+gently ; осторожно, мягко ; Hold the baby gently.
+separately ; отдельно ; Wash the white clothes separately.
+nicely ; хорошо, мило ; She asked nicely.
+stock market ; фондовый рынок ; He lost money on the stock market.
+independently ; независимо, самостоятельно ; She lives independently.
+politically ; политически ; It's a politically sensitive topic.
+presumably ; предположительно, вероятно ; Presumably, he missed the train.
+temporarily ; временно ; The shop is temporarily closed.
+frankly ; откровенно говоря ; Frankly, I don't care.
+real estate ; недвижимость ; She works in real estate.
+likewise ; так же, аналогично ; Nice to meet you. Likewise!
+reasonably ; разумно ; достаточно ; The hotel was reasonably priced.
+accordingly ; соответственно ; Plan your time accordingly.
+deliberately ; намеренно, нарочно ; He deliberately ignored me.
+utterly ; совершенно, крайне ; I was utterly exhausted.
+privately ; частным образом, наедине ; Can we talk privately?
+considerably ; значительно ; The city has changed considerably.
+desperately ; отчаянно ; She desperately needed money.
+financially ; финансово ; He is financially independent.
+thereafter ; после этого ; He moved to Spain and thereafter rarely visited us.
+climate change ; изменение климата ; Climate change affects everyone.
+dramatically ; резко, значительно ; Prices rose dramatically.
