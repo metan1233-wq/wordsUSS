@@ -217,6 +217,7 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border-radius: 
 .answer-input::placeholder { color: var(--ink-3); font-family: var(--font-ui); font-size: 16px; }
 .write .btn { flex: none; }
 .write-tools { display: flex; justify-content: space-between; gap: 12px; padding-top: 6px; }
+.syn-note { margin: 8px 0 0; padding: 8px 12px; border-radius: 10px; background: var(--warn-bg); color: var(--warn); font-size: 15px; }
 .hint { margin: 2px 0 0; font-family: var(--font-word); font-size: 21px; letter-spacing: .14em; white-space: pre-wrap; color: var(--ink-2); }
 .blank { display: inline-block; width: 3.4em; border-bottom: 2px solid var(--ink-3); vertical-align: -3px; }
 .feedback { display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 16px; text-align: center; }
@@ -924,12 +925,18 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   const newToday = () => dayTotal(dayKey(), 'n');
   function extraNew() { const x = store.get('tg:extra', null); return x && x.day === dayKey() ? x.n : 0; }
   const newLimit = () => S.newPerDay ? S.newPerDay + extraNew() : Infinity;
+  // a past day counts with the goal that was set on that day, so raising the goal does not break the streak
+  function dayGoal(k, fallback) {
+    let g = 0;
+    Object.values(ACT[k] || {}).forEach(x => { if (x && x.g && (!g || x.g < g)) g = x.g; });
+    return g || fallback;
+  }
   function streakInfo() {
-    const goal = S.goal || 20, d = new Date();
-    const todayDone = dayTotal(dayKey(d), 'c') >= goal;
+    const goal = S.goal || 20, d = new Date(), tk = dayKey(d);
+    const todayDone = dayTotal(tk, 'c') >= goal;
     if (!todayDone) d.setDate(d.getDate() - 1);
     let streak = 0;
-    while (streak < 3000 && dayTotal(dayKey(d), 'c') >= goal) { streak++; d.setDate(d.getDate() - 1); }
+    for (let k = dayKey(d); streak < 3000 && dayTotal(k, 'c') >= (k === tk ? goal : dayGoal(k, goal)); k = dayKey(d)) { streak++; d.setDate(d.getDate() - 1); }
     return { streak, todayDone };
   }
   function bump(f) {
@@ -937,6 +944,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const day = ACT[k] || (ACT[k] = {});
     const me = day[DEV] || (day[DEV] = { c: 0, n: 0 });
     me[f] = (me[f] || 0) + 1;
+    me.g = S.goal;
     saveAct(); onActChanged();
     if (f === 'c' && before < S.goal && before + 1 >= S.goal) {
       const n = streakInfo().streak;
@@ -1296,10 +1304,21 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function hintPattern(en, level) {
     return en.split('/')[0].trim().split(/\s+/).map(word => Array.from(word).map((ch, i) => (i < level || !/\p{L}/u.test(ch)) ? ch : '_').join('')).join('   ');
   }
+  // words with a common meaning (достигать: achieve / attain) must not be distractors for each other
+  function meaningsOf(w) {
+    if (!w._m) w._m = new Set(w.ru.toLowerCase().replace(/\([^)]*\)/g, ' ').split(/[;,]/).map(t => t.trim()).filter(Boolean));
+    return w._m;
+  }
+  function shareMeaning(a, b) { const mb = meaningsOf(b); for (const m of meaningsOf(a)) if (mb.has(m)) return true; return false; }
+  function synonymFor(input, w) {
+    const a = normalize(input).replace(/^to (be )?/, '');
+    if (!a) return null;
+    return WORDS.find(x => x !== w && shareMeaning(x, w) && x.en.split('/').some(v => normalize(v).replace(/^to (be )?/, '') === a)) || null;
+  }
   function makeOptions(w, field) {
     const answer = w[field], seen = new Set([answer.toLowerCase()]), opts = [answer];
     const candidates = shuffle(pool().filter(x => x !== w)).concat(shuffle(WORDS.filter(x => x !== w)));
-    for (const x of candidates) { const v = x[field], k = v.toLowerCase(); if (seen.has(k)) continue; seen.add(k); opts.push(v); if (opts.length === 4) break; }
+    for (const x of candidates) { const v = x[field], k = v.toLowerCase(); if (seen.has(k) || shareMeaning(x, w)) continue; seen.add(k); opts.push(v); if (opts.length === 4) break; }
     return shuffle(opts);
   }
   const TYPE_FIELD = { 'pick-ru': 'ru', 'pick-en': 'en', 'cloze-pick': 'en' };
@@ -1354,6 +1373,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
           <input id="answer" class="answer-input" lang="en" type="text" inputmode="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="Напиши по-английски" aria-label="Ответ по-английски"${st ? ' readonly' : ''} value="${st ? esc(st.input) : ''}">
           ${st ? '' : '<button class="btn btn-primary" type="submit">Проверить</button>'}
         </form>
+        ${!st && ses.synMsg ? `<p class="syn-note" role="status">${esc(ses.synMsg)}</p>` : ''}
         ${st ? feedbackHTML(w, st, type) : `<div class="write-tools"><button class="btn-link" type="button" data-act="hint">${ses.hint ? 'Ещё буква' : 'Подсказка'}</button><button class="btn-link" type="button" data-act="giveup">Не помню</button></div>`}`;
     }
     view.className = 'wrap view';
@@ -1378,7 +1398,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const word = `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span>${ipaHTML(w)}</div>`;
     const ru = type === 'listen' || type === 'listen-ru' ? `<div class="ru-sm">${esc(w.ru)}</div>` : '';
     const ex = w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : '';
-    if (st.ok) return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : 'Верно'}</p>${word}${ru}${chipsHTML(w, !!w.ex)}${ex}<div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
+    if (st.ok) return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : st.syn ? `Тоже верно, загадано слово ${esc(w.en)}` : 'Верно'}</p>${word}${ru}${chipsHTML(w, !!w.ex)}${ex}<div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
     return `<div class="feedback" role="status"><p class="verdict bad">${st.input ? 'Неверно' : 'Правильный ответ'}</p>
       ${st.input ? `<p class="yours">Ты написал: <s lang="en">${esc(st.input)}</s></p>` : ''}${word}${ru}${chipsHTML(w, !!w.ex)}${ex}
       <div class="fb-actions">${st.input ? '<button class="btn btn-ghost" type="button" data-act="override">Я был прав</button>' : ''}<button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
@@ -1390,6 +1410,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
   function settle(ok, extra) {
     const item = currentItem();
+    ses.synMsg = '';
     ses.st = Object.assign({ ok }, extra);
     if (ses.kind !== 'learn') { if (ok) ses.right++; else ses.wrong.push(item.w); }
     logPractice(item.w, ok);
@@ -1408,8 +1429,20 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const item = currentItem(), input = $('#answer');
     if (!item || ses.st || !input) return;
     if (!input.value.trim()) { input.focus(); return; }
-    const ok = isCorrect(input.value, item.w, item.type === 'cloze');
-    settle(ok, { input: input.value.trim() });
+    let ok = isCorrect(input.value, item.w, item.type === 'cloze');
+    const extra = { input: input.value.trim() };
+    if (!ok && (item.type === 'type-en' || item.type === 'listen-ru')) {
+      const syn = synonymFor(input.value, item.w);
+      if (syn && normalize(syn.ru) === normalize(item.w.ru)) { ok = true; extra.syn = syn.en; }
+      else if (syn) {
+        ses.synMsg = `«${syn.en}» тоже подходит по смыслу, но загадано другое слово. Попробуй ещё раз.`;
+        const typed = input.value;
+        render();
+        const again = $('#answer'); if (again) { again.value = typed; again.select(); }
+        return;
+      }
+    }
+    settle(ok, extra);
     render();
     if (S.autoplay || item.type === 'listen' || item.type === 'listen-ru') playWord(item.w);
   }
@@ -1443,6 +1476,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     clearTimeout(ses.timer);
     if (ses.kind === 'learn') { learnResult(ses.st.ok); nextLearnItem(); }
     else { ses.i++; ses.st = null; ses.opts = null; ses.hint = 0; ses.showRu = false; }
+    ses.synMsg = '';
     if (tab === 'train') render();
   }
   function renderPracticeDone() {
@@ -1870,12 +1904,12 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       let localChanged = false, remoteChanged = false;
       Object.keys(ra).forEach(day => Object.keys(ra[day] || {}).forEach(dev => {
         const r = ra[day][dev] || {}, l = out[day] && out[day][dev];
-        const c = Math.max((l && l.c) || 0, r.c || 0), n = Math.max((l && l.n) || 0, r.n || 0);
-        if (!l || c > (l.c || 0) || n > (l.n || 0)) { (out[day] || (out[day] = {}))[dev] = { c, n }; localChanged = true; }
+        const c = Math.max((l && l.c) || 0, r.c || 0), n = Math.max((l && l.n) || 0, r.n || 0), g = Math.max((l && l.g) || 0, r.g || 0);
+        if (!l || c > (l.c || 0) || n > (l.n || 0) || g > (l.g || 0)) { (out[day] || (out[day] = {}))[dev] = g ? { c, n, g } : { c, n }; localChanged = true; }
       }));
       recentDays(out).forEach(day => Object.keys(out[day]).forEach(dev => {
         const r = ra[day] && ra[day][dev], l = out[day][dev];
-        if (!r || (r.c || 0) < (l.c || 0) || (r.n || 0) < (l.n || 0)) remoteChanged = true;
+        if (!r || (r.c || 0) < (l.c || 0) || (r.n || 0) < (l.n || 0) || (r.g || 0) < (l.g || 0)) remoteChanged = true;
       }));
       return { out, localChanged, remoteChanged };
     },
