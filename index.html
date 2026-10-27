@@ -1696,7 +1696,18 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (!text) return null;
     const base = w.en.split('/')[0].trim().replace(/^to\s+(be\s+)?/i, '');
     if (!base) return null;
-    const re = new RegExp('(^|[^\\p{L}])(' + escRe(base).replace(/ +/g, '\\s+') + '(?:s|es|ed|d|ing)?)(?![\\p{L}])', 'iu');
+    // любая форма первого слова (made, stolen, running) и любое притяжательное вместо your / one's
+    const parts = base.split(/\s+/), lead = parts[0].toLowerCase();
+    const hy = x => escRe(x).replace(/-/g, '[-\\s]');
+    // в тексте ищем шире, чем принимаем в ответах: transmitted, leaped рядом с leapt
+    const all = new Set([lead, ...inflections(lead)]);
+    if (/[^aeiou][aeiou][bdgklmnprtv]$/.test(lead)) ['ed', 'ing'].forEach(x => all.add(lead + lead.slice(-1) + x));
+    if (/[a-z]$/.test(lead) && !/e$/.test(lead)) all.add(lead + 'ed'); else if (/e$/.test(lead)) all.add(lead + 'd');
+    const forms = [...all].sort((a, b) => b.length - a.length).map(hy).join('|');
+    const tail = parts.slice(1).map(p => /^(your|one's|someone's)$/i.test(p) ? "(?:my|your|his|her|its|our|their|one's)" : hy(p)).join('\\s+');
+    // pick you up, sort it out: между глаголом и частицей может стоять одно-два слова
+    const gap = parts.length === 2 && /^(up|down|out|off|on|in|back|over|away|around|through|about)$/i.test(parts[1]) ? "(?:\\s+[\\p{L}']+){0,2}?" : '';
+    const re = new RegExp('(^|[^\\p{L}])((?:' + forms + ')' + (tail ? gap + '\\s+' + tail + '(?:s|es)?' : '') + ')(?![\\p{L}])', 'iu');
     const m = text.match(re);
     if (!m) return null;
     const start = m.index + m[1].length;
@@ -1707,7 +1718,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return m ? esc(text.slice(0, m.start)) + '<span class="blank"></span>' + esc(text.slice(m.end)) : '';
   }
   function normalize(s) {
-    return String(s).toLowerCase().replace(/[‘’ʼ`´]/g, "'").replace(/[^\p{L}\p{N}' -]+/gu, ' ').replace(/\s+/g, ' ').trim();
+    return String(s).toLowerCase().replace(/[‘’ʼ`´]/g, "'").replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();  // up-to-date = up to date
   }
   /* ---------- проверка ответа: британское написание и другие формы слова ---------- */
   // both the answer and the target are brought to American spelling, so organise = organize, colour = color
@@ -1745,7 +1756,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     + 'fly flew flown|forbid forbade forbidden|foresee foresaw foreseen|forget forgot forgotten|forgive forgave forgiven|forsake forsook forsaken|'
     + 'freeze froze frozen|get got gotten|give gave given|go goes went gone|grind ground|grow grew grown|hang hung|have has had|hear heard|'
     + 'hide hid hidden|hold held|keep kept|kneel knelt|know knew known|lay laid|lead led|lean leant|leap leapt|learn learnt|leave left|lend lent|'
-    + 'lie lay lain|light lit|lose lost|make made|mean meant|meet met|mislead misled|mistake mistook mistaken|misunderstand misunderstood|'
+    + 'lie lay lain lied|light lit|lose lost|make made|mean meant|meet met|mislead misled|mistake mistook mistaken|misunderstand misunderstood|'
     + 'overcome overcame|overhear overheard|oversee oversaw overseen|overtake overtook overtaken|overthrow overthrew overthrown|'
     + 'override overrode overridden|pay paid|prove proven|rebuild rebuilt|ride rode ridden|ring rang rung|rise rose risen|run ran|say said|'
     + 'see saw seen|seek sought|sell sold|send sent|sew sewn|shake shook shaken|shine shone|shoot shot|show shown|shrink shrank shrunk|'
@@ -1754,20 +1765,27 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     + 'stride strode|strike struck|strive strove striven|swear swore sworn|sweep swept|swell swollen|swim swam swum|swing swung|take took taken|'
     + 'teach taught|tear tore torn|tell told|think thought|throw threw thrown|tread trod trodden|undergo underwent undergone|'
     + 'understand understood|undertake undertook undertaken|undo undid undone|uphold upheld|wake woke woken|wear wore worn|weave wove woven|'
-    + 'weep wept|win won|wind wound|withdraw withdrew withdrawn|withhold withheld|withstand withstood|write wrote written')
+    + 'weep wept|win won|wind wound|withdraw withdrew withdrawn|withhold withheld|withstand withstood|write wrote written'
+    + '|repay repaid|overpay overpaid|mislay mislaid|rewrite rewrote rewritten|retell retold|rethink rethought|resell resold|redo redid redone|'
+    + 'remake remade|oversleep overslept|outgrow outgrew outgrown|overdo overdid overdone|outdo outdid outdone|overeat overate overeaten|'
+    + 'bet bet|burst burst|cast cast|cost cost|cut cut|hit hit|hurt hurt|let let|put put|quit quit|read read|set set|shut shut|split split|'
+    + 'spread spread|thrust thrust|shed shed|broadcast broadcast|forecast forecast|upset upset|bid bid|rid rid|'
+    + 'foot feet|tooth teeth|man men|woman women|child children|mouse mice|person people|goose geese|knife knives|leaf leaves|life lives|'
+    + 'wife wives|half halves|shelf shelves|wolf wolves|thief thieves|loaf loaves|gentleman gentlemen|businessman businessmen|'
+    + 'policeman policemen|fireman firemen|chairman chairmen|salesman salesmen|fisherman fishermen|spokesman spokesmen|sportsman sportsmen')
     .split('|').forEach(row => { const [base, ...forms] = row.split(' '); IRREG[base] = forms; });
   function inflections(word) {
     const f = new Set([word, word + 's']);
     if (/(s|x|z|ch|sh|o)$/.test(word)) f.add(word + 'es');
     if (/[^aeiou]y$/.test(word)) { const st = word.slice(0, -1); ['ies', 'ied', 'ier', 'iest'].forEach(x => f.add(st + x)); }
-    const irr = IRREG[word];
+    const irr = Object.prototype.hasOwnProperty.call(IRREG, word) ? IRREG[word] : null;
     if (/e$/.test(word)) { if (!irr) f.add(word + 'd'); f.add(word.slice(0, -1) + 'ing'); }
     else { if (!irr) f.add(word + 'ed'); f.add(word + 'ing'); }
     if (/ie$/.test(word)) f.add(word.slice(0, -2) + 'ying');
     if (/c$/.test(word)) { f.add(word + 'ked'); f.add(word + 'king'); }
     if (word.length <= 6) {
       if (/e$/.test(word)) { f.add(word + 'r'); f.add(word + 'st'); } else { f.add(word + 'er'); f.add(word + 'est'); }
-      if (/[^aeiou][aeiou][bdgklmnprtv]$/.test(word)) { const d = word + word.slice(-1); ['ed', 'ing', 'er', 'est'].forEach(x => f.add(d + x)); }
+      if (/[^aeiou][aeiou][bdgklmnprtv]$/.test(word)) { const d = word + word.slice(-1); (irr ? ['ing', 'er', 'est'] : ['ed', 'ing', 'er', 'est']).forEach(x => f.add(d + x)); }
     }
     (irr || []).forEach(x => f.add(x));
     return f;
@@ -1789,9 +1807,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const a = canon(input);
     if (!a) return { ok: false };
     const m = type === 'cloze' ? maskInfo(w, sentence || w.ex) : null;
-    const vars = answerVariants(w, type !== 'listen');
-    if (m) vars.add(canon(m.form));
-    if (![a, a.replace(/^to (be )?/, ''), a.replace(/^be /, '')].some(x => vars.has(x))) return { ok: false };
+    const pn = /\b(your|one's)\b/i.test(w.en) ? s => s.replace(/\b(my|your|his|her|its|our|their|one's)\b/g, 'your') : s => s;
+    const vars = new Set([...answerVariants(w, type !== 'listen')].map(pn));
+    if (m) vars.add(pn(canon(m.form)));
+    if (![a, a.replace(/^to (be )?/, ''), a.replace(/^be /, '')].some(x => vars.has(pn(x)))) return { ok: false };
     const expected = m ? m.form : w.en.split('/')[0].trim();
     const typed = normalize(input).replace(/^to (be )?/, ''), exp = normalize(expected).replace(/^to (be )?/, '');
     if (typed === exp || (!m && w.en.split('/').some(v => normalize(v).replace(/^to (be )?/, '') === typed))) return { ok: true };
