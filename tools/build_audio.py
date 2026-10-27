@@ -5,6 +5,9 @@
   * нейроголос Microsoft (edge-tts) — для слова и для примера;
   * русский нейроголос — для перевода (тренировка «Перевод на слух»).
 Файлы складываются в audio/, а audio/index.json говорит приложению, что где лежит.
+Дополнительные примеры из examples.txt и предложения историй из stories/ тоже озвучиваются нейроголосом
+(имена файлов приложение вычисляет само, как slug() ниже).
+Большая порция делается по частям: после AUDIO_BUDGET_MIN минут новые файлы откладываются до следующего запуска.
 Уже готовые файлы повторно не создаются, лишние удаляются.
 
 Запуск вручную:  pip install edge-tts  &&  python tools/build_audio.py
@@ -29,6 +32,10 @@ VOICE_RU = "ru-RU-SvetlanaNeural"        # голос для переводов:
 
 ROOT = Path(__file__).resolve().parent.parent
 WORDS = ROOT / "words.txt"
+EXAMPLES = ROOT / "examples.txt"
+STORIES = ROOT / "stories"
+DEADLINE = time.time() + float(os.environ.get("AUDIO_BUDGET_MIN", "300")) * 60
+POSTPONED = [0]
 AUDIO = ROOT / "audio"
 INDEX = AUDIO / "index.json"
 UA = {"User-Agent": "ty-geniy-words/1.1 (personal vocabulary app; https://github.com/metan1233-wq/wordsuss)"}
@@ -197,9 +204,50 @@ def ru_speech(ru):
     return re.sub(r"\s+", " ", t).strip(" ,.—-")
 
 
+def extra_examples(words):
+    """examples.txt: «слово | пример = перевод | ... | ~ синонимы» -> {key: [пример, ...]} без основного примера из words.txt"""
+    if not EXAMPLES.exists():
+        return {}
+    main = {w["key"]: w["ex"].strip().lower() for w in words}
+    out = {}
+    for raw in EXAMPLES.read_text(encoding="utf-8").lstrip("\ufeff").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("//") or line.startswith("#"):
+            continue
+        parts = [p.strip() for p in line.split(" | ")]
+        key = re.sub(r"\s+", " ", parts[0].lower())
+        sents = []
+        for pt in parts[1:]:
+            if pt.startswith("~") or " = " not in pt:
+                continue
+            en = pt.split(" = ", 1)[0].strip()
+            if en and en.lower() != main.get(key, "") and en not in sents:
+                sents.append(en)
+        if sents:
+            out[key] = sents
+    return out
+
+
+def story_sentences():
+    """stories/*.txt: строки «English sentence = перевод»; озвучиваются английские части"""
+    out = []
+    if STORIES.exists():
+        for f in sorted(STORIES.glob("*.txt")):
+            for raw in f.read_text(encoding="utf-8").splitlines():
+                line = raw.strip()
+                if " = " in line and not line.startswith(("//", "#", "тема:", "уровень:")):
+                    en = line.split(" = ", 1)[0].strip()
+                    if en:
+                        out.append(en)
+    return out
+
+
 async def tts(text, dest, sem, voice=VOICE):
     import edge_tts
     async with sem:
+        if time.time() > DEADLINE:
+            POSTPONED[0] += 1
+            return False
         for attempt in range(6):
             try:
                 await edge_tts.Communicate(text, voice, rate=RATE if voice == VOICE else "+0%").save(str(dest))
@@ -257,6 +305,18 @@ async def main():
                 jobs.append((ru_text, AUDIO / rf, "r", VOICE_RU))
         index["words"][key] = rec
 
+    # дополнительные примеры и истории: только нейроголос, имена файлов по тексту
+    extra_used = set()
+    sentences = [s for lst in extra_examples(words).values() for s in lst] + story_sentences()
+    queued = {str(d) for _, d, _, _ in jobs}
+    for sent in dict.fromkeys(sentences):
+        ef = f"e/{slug(sent, VOICE)}.mp3"
+        extra_used.add(ef)
+        if not (AUDIO / ef).exists() and str(AUDIO / ef) not in queued:
+            queued.add(str(AUDIO / ef))
+            jobs.append((sent, AUDIO / ef, "x", VOICE))
+    made["x"] = 0
+
     # живые записи и транскрипция: несколько запросов параллельно, чтобы большой список не шёл часами
     def lookup(item):
         term, rec = item
@@ -286,7 +346,7 @@ async def main():
                 if rec.get(kind) == str(dest.relative_to(AUDIO)).replace("\\", "/"):
                     rec.pop(kind, None)
 
-    used = {f for rec in index["words"].values() for k, f in rec.items() if k in ("w", "h", "e", "r")}
+    used = {f for rec in index["words"].values() for k, f in rec.items() if k in ("w", "h", "e", "r")} | extra_used
     removed = 0
     for sub in ("w", "h", "e", "r"):
         for f in (AUDIO / sub).glob("*.mp3"):
@@ -296,7 +356,10 @@ async def main():
 
     INDEX.write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     log(f"Слов: {len(words)}. Новых файлов: нейроголос слов {made['w']}, примеров {made['e']}, "
-          f"переводов {made['r']}, живых записей {made['h']}. Удалено лишних: {removed}.")
+          f"переводов {made['r']}, живых записей {made['h']}, доп. примеров и историй {made['x']}. Удалено лишних: {removed}.")
+    if POSTPONED[0]:
+        log(f"Не успел за отведённое время: {POSTPONED[0]} файлов, продолжу в следующем запуске.")
+        Path("/tmp/audio-more").write_text(str(POSTPONED[0]))
 
     (AUDIO / "build-log.txt").write_text("\n".join(LOG) + "\n", encoding="utf-8")
 

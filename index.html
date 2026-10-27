@@ -157,6 +157,10 @@ button { cursor: pointer; }
 .ru { font-weight: 600; font-size: clamp(24px, 6.6vw, 32px); line-height: 1.2; overflow-wrap: anywhere; text-wrap: balance; }
 .ex { margin: 6px 0 0; max-width: 34ch; font-family: var(--font-word); font-style: italic; font-size: 18px; line-height: 1.4; color: var(--ink-2); text-wrap: pretty; }
 .ex-big { font-size: 22px; color: var(--ink); max-width: 30ch; }
+.ex-tr { margin: 2px 0 0; max-width: 36ch; color: var(--ink-3); font-size: 14.5px; line-height: 1.35; text-wrap: pretty; }
+.build-tr { margin: 10px auto 0; text-align: center; color: var(--ink-2); font-size: 16px; }
+.syn-in { box-shadow: inset 0 0 0 1.5px var(--good); }
+.syn-out { color: var(--ink-2); }
 .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .chip {
   display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 7px 13px 7px 11px; border: 0; border-radius: 999px;
@@ -849,11 +853,52 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     syncWordsInfo();
   }
   const byKey = k => KEYMAP.get(k) || null;
+  // examples.txt: «word | example = translation | ... | ~ synonym, synonym»
+  let EXTRA = new Map();
+  function parseExamples(text) {
+    const map = new Map();
+    String(text || '').replace(/^\uFEFF/, '').split(/\r?\n/).forEach(raw => {
+      const line = raw.trim();
+      if (!line || line.startsWith('//') || line.startsWith('#')) return;
+      const parts = line.split(' | ').map(x => x.trim());
+      const key = (parts.shift() || '').toLowerCase().replace(/\s+/g, ' ');
+      if (!key) return;
+      const rec = { pairs: [], syn: [] };
+      parts.forEach(pt => {
+        if (pt.startsWith('~')) { rec.syn = pt.slice(1).split(',').map(x => x.trim()).filter(Boolean); return; }
+        const i = pt.indexOf(' = ');
+        if (i > 0) rec.pairs.push({ en: pt.slice(0, i).trim(), ru: pt.slice(i + 3).trim() });
+      });
+      map.set(key, rec);
+    });
+    return map;
+  }
+  let examplesText = '';
+  async function loadExamples() {
+    try {
+      const res = await fetch('examples.txt', { cache: 'no-cache' });
+      if (!res.ok) return;
+      const text = await res.text();
+      if (text === examplesText) return;
+      examplesText = text; EXTRA = parseExamples(text);
+      if (tab === 'cards' && card && card.flipped === false) { const b = $('#card .back'); if (b) b.innerHTML = faceHTML(card.w, 'back'); }
+    } catch (e) { /* no examples yet */ }
+  }
+  const extraOf = w => EXTRA.get(w.key) || null;
+  const sameText = (a, b) => String(a).trim().toLowerCase() === String(b).trim().toLowerCase();
+  function examplesOf(w) {   // main example from words.txt first, then the extra ones
+    const x = extraOf(w), out = [];
+    if (w.ex) { const m = x && x.pairs.find(pr => sameText(pr.en, w.ex)); out.push({ en: w.ex, ru: m ? m.ru : '', path: audioRec(w).e || null }); }
+    if (x) x.pairs.forEach(pr => { if (!w.ex || !sameText(pr.en, w.ex)) out.push({ en: pr.en, ru: pr.ru, path: null }); });
+    return out;
+  }
+  const mainTr = w => { const e = examplesOf(w)[0]; return e && w.ex && sameText(e.en, w.ex) ? e.ru : ''; };
   const pool = () => S.group ? WORDS.filter(w => w.group === S.group) : WORDS;
 
   async function loadWords(opts = {}) {
     lastFetch = Date.now();
     loadAudioIndex();
+    loadExamples();
     try {
       const res = await fetch('words.txt', { cache: 'no-cache' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -1010,6 +1055,24 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (r.e) return Sound.play(r.e).catch(() => { speakFallback(w.ex); return null; });
     speakFallback(w.ex);
     return Promise.resolve(null);
+  }
+  async function sha1hex(t) {
+    const buf = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(t));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+  // same naming as tools/build_audio.py: e/<slug of the text>-<sha1(text + voice)[:6]>.mp3
+  async function sentencePath(text) {
+    if (!AUDIO || !AUDIO.words || !(window.crypto && crypto.subtle)) return null;
+    const voice = AUDIO.voice || 'en-US-AvaMultilingualNeural';
+    const base = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40) || 'w';
+    try { return 'e/' + base + '-' + (await sha1hex(text + voice)).slice(0, 6) + '.mp3'; } catch (e) { return null; }
+  }
+  async function playSentence(x, slow) {
+    const path = x.path || await sentencePath(x.en);
+    if (slow) return playPathSlow(path, x.en);
+    if (path) return Sound.play(path).catch(() => { speakFallback(x.en); return null; });
+    speakFallback(x.en);
+    return null;
   }
   const SLOW = 0.55;
   function playPathSlow(path, text, lang = 'en-US') {
@@ -1337,7 +1400,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       return topHTML(w) + `<div class="face-body">
           ${enFirst ? '' : `<div class="cue">${esc(w.ru)}</div>`}
           <div class="word" lang="en">${esc(w.en)}</div>${ipaHTML(w)}
-          ${withEx ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}
+          ${withEx ? `<p class="ex" lang="en">${esc(w.ex)}</p>${side === 'back' && mainTr(w) ? `<p class="ex-tr">${esc(mainTr(w))}</p>` : ''}` : ''}
           ${side === 'back' ? noteLine(w) : (noteOf(w) ? (card && card.hint ? noteLine(w) : `<button class="btn-link" type="button" data-act="card-hint">Своя подсказка</button>`) : '')}
         </div>${chipsHTML(w, withEx, side === 'back')}`;
     }
@@ -1345,7 +1408,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return topHTML(w) + `<div class="face-body">
         ${enFirst ? `<div class="cue" lang="en">${esc(w.en)}</div>` : ''}
         <div class="ru">${esc(w.ru)}</div>
-        ${exHere ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}
+        ${exHere ? `<p class="ex" lang="en">${esc(w.ex)}</p>${mainTr(w) ? `<p class="ex-tr">${esc(mainTr(w))}</p>` : ''}` : ''}
         ${side === 'back' ? noteLine(w) : (noteOf(w) ? (card && card.hint ? noteLine(w) : `<button class="btn-link" type="button" data-act="card-hint">Своя подсказка</button>`) : '')}
       </div><div class="chips">${exHere ? `<button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button><button class="chip" type="button" data-act="say-ex-slow" data-key="${esc(w.key)}">${ICON.snail}<span>Медленно</span></button>` : ''}${side === 'back' ? infoChip(w) : ''}</div>`;
   }
@@ -1475,14 +1538,25 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     write: { title: 'Ввод', type: () => 'type-en' },
     listen: { title: 'На слух', type: () => 'listen' },
     'listen-ru': { title: 'Перевод на слух', type: () => 'listen-ru' },
-    cloze: { title: 'Пропуск в предложении', type: () => 'cloze', filter: w => !!maskInfo(w) },
-    build: { title: 'Сборка предложения', type: () => 'build', filter: w => { const n = buildTokens(w).length; return n >= 3 && n <= 12; } }
+    cloze: { title: 'Пропуск в предложении', type: () => 'cloze', filter: w => hasCloze(w) },
+    build: { title: 'Сборка предложения', type: () => 'build', filter: w => examplesOf(w).some(x => canBuild(x.en)) }
   };
-  function buildTokens(w) { return w.ex ? w.ex.trim().replace(/[.!?…]+$/, '').split(/\s+/).filter(Boolean) : []; }
+  function buildTokens(text) { return text ? String(text).trim().replace(/[.!?…]+$/, '').split(/\s+/).filter(Boolean) : []; }
+  const canBuild = t => { const n = buildTokens(t).length; return n >= 3 && n <= 12 && !/[—–"«]/.test(t); };
+  const hasCloze = w => examplesOf(w).some(x => maskInfo(w, x.en));
+  function pickSentence(w, ok) { const list = examplesOf(w).filter(x => ok(x.en)); return list.length ? list[Math.floor(Math.random() * list.length)] : null; }
+  function makeItem(w, m) {
+    const it = { w, type: MODES[m].type() };
+    if (m === 'cloze') it.ex = pickSentence(w, t => !!maskInfo(w, t));
+    if (m === 'build') it.ex = pickSentence(w, canBuild);
+    return it;
+  }
+  const itemText = it => (it && it.ex && it.ex.en) || (it && it.w.ex) || '';
+  const itemSentence = it => (it && it.ex) || (it ? { en: it.w.ex, ru: mainTr(it.w), path: audioRec(it.w).e || null } : null);
   function renderHub() {
     const probs = problemWords().length;
     const seen = pool().filter(w => !isFresh(SRS[w.key])).length;
-    const clozeN = pool().filter(w => maskInfo(w)).length;
+    const clozeN = pool().filter(w => hasCloze(w)).length;
     const freshN = pool().filter(w => isFresh(SRS[w.key])).length;
     const leechN = pool().filter(w => isLeech(SRS[w.key])).length;
     view.className = 'wrap view';
@@ -1513,7 +1587,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (m === 'player') { trainMode = 'player'; ses = null; Player.load(Player.sources().today.length ? 'today' : 'topic'); render(); return; }
     trainMode = m;
     const words = practiceWords(MODES[m].filter);
-    ses = { kind: m, items: words.map(w => ({ w, type: MODES[m].type() })), i: 0, right: 0, wrong: [], st: null, opts: null, hint: 0, spoken: -1 };
+    ses = { kind: m, items: words.map(w => makeItem(w, m)), i: 0, right: 0, wrong: [], st: null, opts: null, hint: 0, spoken: -1 };
     render();
   }
 
@@ -1526,7 +1600,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       ? pool().filter(w => isLeech(SRS[w.key])).sort((a, b) => (SRS[b.key].lapses || 0) - (SRS[a.key].lapses || 0)).slice(0, LEARN_LIMIT)
       : problemWords().sort((a, b) => SRS[a.key].lg - SRS[b.key].lg).slice(0, LEARN_LIMIT);
     if (!words.length) { toast(kind === 'leech' ? 'Вечно забываемых слов нет' : 'Трудных слов нет'); return; }
-    const stages = w => ['intro', 'pick-ru', maskInfo(w) ? 'cloze-pick' : 'pick-en', 'listen', 'type-en'];
+    const stages = w => ['intro', 'pick-ru', hasCloze(w) ? 'cloze-pick' : 'pick-en', 'listen', 'type-en'];
     tab = 'train'; store.set('tg:tab', tab); trainMode = kind;
     const plan = new Map(words.map(w => [w.key, { stages: stages(w), at: 0 }]));
     const total = words.reduce((n, w) => n + plan.get(w.key).stages.length, 0);
@@ -1539,6 +1613,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (!w) { ses.cur = null; ses.done = true; finishLearn(); return; }
     const p = ses.plan.get(w.key);
     ses.cur = { w, type: p.stages[p.at] };
+    if (ses.cur.type === 'cloze-pick') ses.cur.ex = pickSentence(w, t => !!maskInfo(w, t));
     ses.st = null; ses.opts = null; ses.hint = 0;
   }
   function learnResult(ok) {
@@ -1570,7 +1645,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   /* ---------- Умный режим «Учить» ---------- */
   // the word's familiarity picks its path: new words go through all five steps, learned ones only need writing
   function smartStages(w) {
-    const s = SRS[w.key], pick2 = maskInfo(w) ? 'cloze-pick' : 'pick-en';
+    const s = SRS[w.key], pick2 = hasCloze(w) ? 'cloze-pick' : 'pick-en';
     if (isFresh(s)) return ['intro', 'pick-ru', pick2, 'listen', 'type-en'];
     if (s.st !== 'review') return ['pick-ru', pick2, 'type-en'];
     if ((s.s || 0) < 21) return [pick2, 'type-en'];
@@ -1617,19 +1692,19 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (ses.kind === 'sort') { const w = ses.list[ses.i]; return w ? { w, type: 'sort' } : null; }
     return ses.items[ses.i] || null;
   }
-  function maskInfo(w) {
-    if (!w.ex) return null;
+  function maskInfo(w, text = w.ex) {
+    if (!text) return null;
     const base = w.en.split('/')[0].trim().replace(/^to\s+(be\s+)?/i, '');
     if (!base) return null;
     const re = new RegExp('(^|[^\\p{L}])(' + escRe(base).replace(/ +/g, '\\s+') + '(?:s|es|ed|d|ing)?)(?![\\p{L}])', 'iu');
-    const m = w.ex.match(re);
+    const m = text.match(re);
     if (!m) return null;
     const start = m.index + m[1].length;
     return { start, end: start + m[2].length, form: m[2] };
   }
-  function maskedHTML(w) {
-    const m = maskInfo(w);
-    return m ? esc(w.ex.slice(0, m.start)) + '<span class="blank"></span>' + esc(w.ex.slice(m.end)) : '';
+  function maskedHTML(w, text = w.ex) {
+    const m = maskInfo(w, text);
+    return m ? esc(text.slice(0, m.start)) + '<span class="blank"></span>' + esc(text.slice(m.end)) : '';
   }
   function normalize(s) {
     return String(s).toLowerCase().replace(/[‘’ʼ`´]/g, "'").replace(/[^\p{L}\p{N}' -]+/gu, ' ').replace(/\s+/g, ' ').trim();
@@ -1710,10 +1785,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return out;
   }
   // type: cloze | listen | type-en | listen-ru; in «На слух» only the spelling may differ, elsewhere any form of the word counts
-  function checkAnswer(input, w, type) {
+  function checkAnswer(input, w, type, sentence) {
     const a = canon(input);
     if (!a) return { ok: false };
-    const m = type === 'cloze' ? maskInfo(w) : null;
+    const m = type === 'cloze' ? maskInfo(w, sentence || w.ex) : null;
     const vars = answerVariants(w, type !== 'listen');
     if (m) vars.add(canon(m.form));
     if (![a, a.replace(/^to (be )?/, ''), a.replace(/^be /, '')].some(x => vars.has(x))) return { ok: false };
@@ -1753,6 +1828,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const item = currentItem();
     if (!item) { renderPracticeDone(); return; }
     const w = item.w, type = item.type, st = ses.st;
+    const X = itemSentence(item), xt = (X && X.en) || '';
     const field = TYPE_FIELD[type];
     if (field && !ses.opts) ses.opts = makeOptions(w, field);
     const pos = STAGED.has(ses.kind) ? ses.steps : ses.i, total = STAGED.has(ses.kind) ? ses.total : ses.items.length;
@@ -1767,7 +1843,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       const correct = ses.opts.indexOf(w[field]);
       if (type === 'pick-ru') prompt = `${topHTML(w)}<div class="word" lang="en">${esc(w.en)}</div>${ipaHTML(w)}${chipsHTML(w, false)}`;
       else if (type === 'pick-en') prompt = `${topHTML(w)}<div class="ru">${esc(w.ru)}</div>`;
-      else prompt = `${topHTML(w)}<p class="ex ex-big" lang="en">${maskedHTML(w)}</p><div class="ru-sm">${esc(w.ru)}</div>`;
+      else prompt = `${topHTML(w)}<p class="ex ex-big" lang="en">${maskedHTML(w, xt)}</p><div class="ru-sm">${esc(w.ru)}</div>`;
       answer = `<div class="options" role="group" aria-label="Варианты ответа">${ses.opts.map((o, i) => {
         let cls = 'opt';
         if (st) cls += i === correct ? ' right' : i === st.choice ? ' wrong' : ' dim';
@@ -1777,7 +1853,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         ${type !== 'pick-ru' ? `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span>${ipaHTML(w)}</div>${chipsHTML(w, !!w.ex)}` : ''}
         <button class="btn btn-primary" type="button" data-act="next">Дальше</button>` : ''}</div>`;
     } else if (type === 'build') {
-      const toks = buildTokens(w);
+      const toks = buildTokens(xt);
       if (!ses.bp || ses.bp.id !== ses.i + ':' + w.key) {
         let order = shuffle(toks.map((_, i) => i));
         for (let t = 0; t < 6 && toks.length > 1 && order.every((v, i) => toks[v] === toks[i]); t++) order = shuffle(order);
@@ -1786,21 +1862,21 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       const bp = ses.bp;
       const line = bp.picked.map((ti, pi) => `<button class="tok" type="button" data-act="bunpick" data-p="${pi}"${st ? ' disabled' : ''}>${esc(toks[ti])}</button>`).join('');
       const rest = bp.order.filter(ti => !bp.picked.includes(ti)).map(ti => `<button class="tok" type="button" data-act="bpick" data-t="${ti}">${esc(toks[ti])}</button>`).join('');
-      prompt = `${topHTML(w)}<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span><span class="ru-sm">${esc(w.ru)}</span></div><div class="build-line" data-empty="Нажимай на слова по порядку" lang="en">${line}</div>`;
+      prompt = `${topHTML(w)}<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span><span class="ru-sm">${esc(w.ru)}</span></div>${X && X.ru ? `<p class="ex-tr build-tr">${esc(X.ru)}</p>` : ''}<div class="build-line" data-empty="Нажимай на слова по порядку" lang="en">${line}</div>`;
       if (!st) answer = `<div class="build-pool" lang="en">${rest}</div><div class="build-tools"><button class="btn-link" type="button" data-act="bclear"${bp.picked.length ? '' : ' disabled'}>Сбросить</button><button class="btn btn-primary" type="button" data-act="bcheck"${bp.picked.length === toks.length ? '' : ' disabled'}>Проверить</button></div>`;
-      else answer = `<div class="feedback" role="status"><p class="verdict ${st.ok ? 'good' : 'bad'}">${st.ok ? (st.overridden ? 'Засчитано' : 'Верно') : 'Неверно, правильно так:'}</p>${st.ok ? '' : `<p class="answer-line" lang="en">${esc(w.ex)}</p>`}<div class="chips"><button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button></div><div class="fb-actions">${st.ok ? '' : '<button class="btn btn-ghost" type="button" data-act="override">Я был прав</button>'}<button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
+      else answer = `<div class="feedback" role="status"><p class="verdict ${st.ok ? 'good' : 'bad'}">${st.ok ? (st.overridden ? 'Засчитано' : 'Верно') : 'Неверно, правильно так:'}</p>${st.ok ? '' : `<p class="answer-line" lang="en">${esc(xt)}</p>`}<div class="chips"><button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button></div><div class="fb-actions">${st.ok ? '' : '<button class="btn btn-ghost" type="button" data-act="override">Я был прав</button>'}<button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
     } else {
       if (type === 'type-en') prompt = `${topHTML(w)}<div class="ru">${esc(w.ru)}</div>${ses.hint && !st && maskInfo(w) ? `<p class="ex" lang="en">${maskedHTML(w)}</p>` : ''}`;
       else if (type === 'listen') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay" aria-label="Прослушать ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay">${ICON.repeat}<span>Ещё раз</span></button><button class="chip" type="button" data-act="replay-slow">${ICON.snail}<span>Медленно</span></button>${w.ex ? `<button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>В предложении</span></button>` : ''}</div>`;
       else if (type === 'listen-ru') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay-ru" aria-label="Прослушать перевод ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay-ru">${ICON.repeat}<span>Ещё раз</span></button><button class="chip" type="button" data-act="replay-ru-slow">${ICON.snail}<span>Медленно</span></button>${st ? '' : `<button class="chip" type="button" data-act="show-ru">${ICON.example}<span>${ses.showRu ? esc(w.ru) : 'Показать текст'}</span></button>`}</div>`;
-      else prompt = `${topHTML(w)}<p class="ex ex-big" lang="en">${maskedHTML(w)}</p><div class="ru-sm">${esc(w.ru)}</div>`;
-      if (ses.hint && !st) prompt += `<p class="hint" lang="en" aria-label="Подсказка">${esc(hintPattern(type === 'cloze' ? maskInfo(w).form : w.en, ses.hint))}</p>`;
+      else prompt = `${topHTML(w)}<p class="ex ex-big" lang="en">${maskedHTML(w, xt)}</p><div class="ru-sm">${esc(w.ru)}</div>`;
+      if (ses.hint && !st) prompt += `<p class="hint" lang="en" aria-label="Подсказка">${esc(hintPattern(type === 'cloze' ? maskInfo(w, xt).form : w.en, ses.hint))}</p>`;
       answer = `<form class="write" id="writeForm" autocomplete="off" novalidate>
           <input id="answer" class="answer-input" lang="en" type="text" inputmode="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="Напиши по-английски" aria-label="Ответ по-английски"${st ? ' readonly' : ''} value="${st ? esc(st.input) : ''}">
           ${st ? '' : '<button class="btn btn-primary" type="submit">Проверить</button>'}
         </form>
         ${!st && ses.synMsg ? `<p class="syn-note" role="status">${esc(ses.synMsg)}</p>` : ''}
-        ${st ? feedbackHTML(w, st, type) : `<div class="write-tools"><button class="btn-link" type="button" data-act="hint">${ses.hint ? 'Ещё буква' : 'Подсказка'}</button><button class="btn-link" type="button" data-act="giveup">Не помню</button></div>`}`;
+        ${st ? feedbackHTML(w, st, type, X) : `<div class="write-tools"><button class="btn-link" type="button" data-act="hint">${ses.hint ? 'Ещё буква' : 'Подсказка'}</button><button class="btn-link" type="button" data-act="giveup">Не помню</button></div>`}`;
     }
     view.className = 'wrap view';
     view.innerHTML = modeHead(TITLES[ses.kind]) + progressHTML(pos, total) + `<div class="prompt">${prompt}</div>${answer}` +
@@ -1820,10 +1896,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (st) { const b = $('[data-act="next"],[data-act="wnext"]'); if (b) b.focus({ preventScroll: true }); }
     else if ($('#answer')) $('#answer').focus({ preventScroll: true });
   }
-  function feedbackHTML(w, st, type) {
+  function feedbackHTML(w, st, type, X) {
     const word = `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span>${ipaHTML(w)}</div>`;
     const ru = type === 'listen' || type === 'listen-ru' ? `<div class="ru-sm">${esc(w.ru)}</div>` : '';
-    const ex = w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : '';
+    const sx = type === 'cloze' && X ? X : { en: w.ex, ru: mainTr(w) };
+    const ex = sx.en ? `<p class="ex" lang="en">${esc(sx.en)}</p>${sx.ru ? `<p class="ex-tr">${esc(sx.ru)}</p>` : ''}` : '';
     const note = st.ok && st.note && !st.overridden ? `<p class="fb-note">${esc(st.note[0])} <b lang="en">${esc(st.note[1])}</b></p>` : '';
     if (st.ok) return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : st.syn ? `Тоже верно, загадано слово ${esc(w.en)}` : 'Верно'}</p>${note}${word}${ru}${chipsHTML(w, !!w.ex, true)}${ex}<div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
     return `<div class="feedback" role="status"><p class="verdict bad">${st.input ? 'Неверно' : 'Правильный ответ'}</p>
@@ -1858,7 +1935,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const item = currentItem(), input = $('#answer');
     if (!item || ses.st || !input) return;
     if (!input.value.trim()) { input.focus(); return; }
-    const res = checkAnswer(input.value, item.w, item.type);
+    const res = checkAnswer(input.value, item.w, item.type, itemText(item));
     let ok = res.ok;
     const extra = { input: input.value.trim() };
     if (res.note) extra.note = res.note;
@@ -1896,7 +1973,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function showHint() {
     const item = currentItem();
     if (!item || ses.st) return;
-    const target = item.type === 'cloze' ? maskInfo(item.w).form : item.w.en;
+    const target = item.type === 'cloze' ? maskInfo(item.w, itemText(item)).form : item.w.en;
     const longest = Math.max(...target.split(/\s+/).map(x => x.length));
     if (ses.hint < Math.max(1, longest - 1)) ses.hint++;
     const typed = $('#answer') ? $('#answer').value : '';
@@ -1993,7 +2070,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function buildAct(act, el) {
     const item = currentItem();
     if (!item || item.type !== 'build' || !ses.bp) return;
-    const bp = ses.bp, toks = buildTokens(item.w);
+    const bp = ses.bp, toks = buildTokens(itemText(item));
     if (act === 'bpick' && !ses.st) bp.picked.push(Number(el.dataset.t));
     else if (act === 'bunpick' && !ses.st) bp.picked.splice(Number(el.dataset.p), 1);
     else if (act === 'bclear' && !ses.st) bp.picked = [];
@@ -2002,7 +2079,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       const ok = said.toLowerCase() === toks.join(' ').toLowerCase();
       settle(ok, { input: said });
       render();
-      playExample(item.w);
+      playSentence(itemSentence(item));
       return;
     }
     render();
@@ -2190,7 +2267,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <button class="row-main" type="button" data-act="row" data-key="${esc(w.key)}" aria-expanded="${open}">
           <span class="row-text"><span class="row-en" lang="en">${esc(w.en)}</span><span class="row-ru">${esc(w.ru)}</span></span>${pendingTag(w) || statusTag(w)}
         </button>
-        ${open ? `<div class="row-more">${ipaHTML(w)}${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${noteLine(w)}${chipsHTML(w, !!w.ex, true)}${rowActionsHTML(w)}</div>` : ''}
+        ${open ? `<div class="row-more">${ipaHTML(w)}${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>${mainTr(w) ? `<p class="ex-tr">${esc(mainTr(w))}</p>` : ''}` : ''}${noteLine(w)}${chipsHTML(w, !!w.ex, true)}${rowActionsHTML(w)}</div>` : ''}
       </div>`;
     });
     if (!shown.length) html = `<p class="empty">По запросу «${esc(listQuery)}» ничего нет.</p>`;
@@ -2200,12 +2277,16 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 
   /* ---------- Карточка слова: примеры, своя подсказка, история ---------- */
   let wsWord = null, wsTimer = 0;
-  function exampleItems(w) {   // main example plus extra ones when examples.txt has them
-    const out = [];
-    const extra = (typeof EXTRA !== 'undefined' && EXTRA.get(w.key)) || null;
-    if (w.ex) out.push({ en: w.ex, ru: extra && extra.main && extra.main.en === w.ex ? extra.main.ru : '', path: audioRec(w).e || null });
-    if (extra) extra.more.forEach((x, i) => out.push({ en: x.en, ru: x.ru, path: (audioRec(w).x || [])[i] || null }));
-    return out;
+  const exampleItems = w => examplesOf(w);
+  function synonymsHTML(w) {
+    const x = extraOf(w);
+    if (!x || !x.syn.length) return '';
+    const chips = x.syn.map(sy => {
+      const t = byKey(sy.toLowerCase()) || byKey('to ' + sy.toLowerCase());
+      return t && t !== w ? `<button class="aw-chip syn-in" type="button" data-act="word-info" data-key="${esc(t.key)}" lang="en">${esc(sy)}</button>` : `<span class="aw-chip syn-out" lang="en">${esc(sy)}</span>`;
+    }).join('');
+    const any = x.syn.some(sy => { const t = byKey(sy.toLowerCase()) || byKey('to ' + sy.toLowerCase()); return t && t !== w; });
+    return `<h3 class="ws-h">Синонимы</h3><div class="aw-chips">${chips}</div>${any ? '<p class="pf-note">Слова в рамке есть в твоём словаре: нажми, чтобы открыть.</p>' : ''}`;
   }
   function openWordSheet(w) {
     wsWord = w;
@@ -3287,7 +3368,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'grade': gradeCard(Number(el.dataset.g)); break;
       case 'say-human': if (w) playWord(w, 'human'); break;
       case 'say-voice': if (w) playWord(w, 'voice'); break;
-      case 'say-ex': if (w && w.ex) playExample(w); break;
+      case 'say-ex': { const it = tab === 'train' ? currentItem() : null; if (it && it.ex && w && it.w.key === w.key) playSentence(it.ex); else if (w && w.ex) playExample(w); break; }
       case 'yg': if (!IS_PREVIEW && w) { e.preventDefault(); openYouglish(w); } break;
       case 'replay': if (w) playWord(w); break;
       case 'replay-slow': if (w) playWordSlow(w); break;
@@ -3334,17 +3415,17 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'row-known': if (w) { const prev = markKnown(w); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast(`«${w.en}» отмечено как знакомое`, { action: 'Отменить', run: () => { unmarkKnown(w, prev); if (tab === 'list') renderListBody(); } }); } break;
       case 'row-relearn': if (w) { const prev = SRS[w.key] || {}; const now = Date.now(); SRS[w.key] = { st: 'learning', s: W[2], d: initD(2), due: now, last: now, lg: 3, es: 0, reps: (prev.reps || 0) + 1, lapses: prev.lapses || 0 }; saveSrs(); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast('Слово вернётся на карточки сегодня'); } break;
       case 'mode': startMode(el.dataset.mode); break;
-      case 'repeat': { const k = ses.kind, words = shuffle(Array.from(new Set(ses.wrong))); trainMode = k; ses = { kind: k, items: words.map(x => ({ w: x, type: MODES[k].type() })), i: 0, right: 0, wrong: [], st: null, opts: null, hint: 0, spoken: -1 }; render(); break; }
+      case 'repeat': { const k = ses.kind, words = shuffle(Array.from(new Set(ses.wrong))); trainMode = k; ses = { kind: k, items: words.map(x => makeItem(x, k)), i: 0, right: 0, wrong: [], st: null, opts: null, hint: 0, spoken: -1 }; render(); break; }
       case 'start-learn': startLearn(); break;
       case 'start-leech': startLearn('leech'); break;
       case 'start-smart': startSmart(); break;
       case 'more-new-smart': { const x = store.get(pk('tg:extra'), null), cur = x && x.day === dayKey() ? x.n : 0; store.set(pk('tg:extra'), { day: dayKey(), n: cur + 5 }); startSmart(); break; }
       case 'word-info': if (w) openWordSheet(w); break;
       case 'say-slow': if (w) playWordSlow(w); break;
-      case 'say-ex-slow': if (w && w.ex) playExampleSlow(w); break;
+      case 'say-ex-slow': { const it = tab === 'train' ? currentItem() : null; if (it && it.ex && w && it.w.key === w.key) playSentence(it.ex, true); else if (w && w.ex) playExampleSlow(w); break; }
       case 'replay-ru-slow': if (w) playRuSlow(w); break;
       case 'card-hint': if (card) { card.hint = true; const front = $('#card .front'); if (front) front.innerHTML = faceHTML(card.w, 'front'); } break;
-      case 'ws-ex': case 'ws-ex-slow': if (wsWord) { const x = exampleItems(wsWord)[Number(el.dataset.i)]; if (x) { if (el.dataset.act === 'ws-ex') { if (x.path) Sound.play(x.path).catch(() => speakFallback(x.en)); else speakFallback(x.en); } else playPathSlow(x.path, x.en); } } break;
+      case 'ws-ex': case 'ws-ex-slow': if (wsWord) { const x = exampleItems(wsWord)[Number(el.dataset.i)]; if (x) playSentence(x, el.dataset.act === 'ws-ex-slow'); } break;
       case 'later': learnPrompt = false; promptSnooze = problemWords().length + 5; render(); break;
       case 'go-train': setTab('train'); break;
       case 'go-cards': trainMode = null; ses = null; setTab('cards'); break;
@@ -3405,6 +3486,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 
   /* ================= start ================= */
   paintHeaderAvatar();
+  loadExamples();
   setTimeout(() => { if (Sync.token && repoName()) PENDING.filter(e => e.status !== 'saved' && !e.err).forEach(savePendingWord); }, 4000);
   applyTheme();
   if (wordsText) applyWords(wordsText); else renderGroupPicker();
