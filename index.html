@@ -35,6 +35,8 @@
   --marker: #ffe14a;
   --marker-ink: #16203a;
   --toast-act: #ffe14a;
+  --heat-1: #7fc49b; --heat-2: #4ea877; --heat-3: #23885a; --heat-4: #155f3f;
+  --bar-a: #23885a; --bar-b: #1d5bb8; --bar-c: #828ba0;
   --good: #17784b;
   --good-bg: #dcf1e5;
   --bad: #b3392f;
@@ -54,6 +56,7 @@
     --desk: #0e1420; --paper: #182033; --paper-2: #20293d; --seg-on: #323c53; --knob: #ffffff;
     --ink: #e6eaf2; --ink-2: #a0a9bb; --ink-3: #6f798e; --hair: #2a3448;
     --rule-red: #d9645c; --rule-blue: #1c2538; --marker: #f2d03c; --marker-ink: #16203a; --toast-act: #1d5bb8;
+    --heat-1: #1f5a3e; --heat-2: #2e8659; --heat-3: #45b479; --heat-4: #7fdcab; --bar-a: #45b479; --bar-b: #8db6ff; --bar-c: #6f798e;
     --good: #5bcf96; --good-bg: #153226; --bad: #f08a82; --bad-bg: #3a1e22;
     --warn: #f0b95c; --warn-bg: #382b14; --great: #8db6ff; --great-bg: #1a2a48;
     --shade: rgba(0, 0, 0, 0.42); --scrim: rgba(0, 0, 0, 0.58);
@@ -64,6 +67,7 @@
   --desk: #0e1420; --paper: #182033; --paper-2: #20293d; --seg-on: #323c53; --knob: #ffffff;
   --ink: #e6eaf2; --ink-2: #a0a9bb; --ink-3: #6f798e; --hair: #2a3448;
   --rule-red: #d9645c; --rule-blue: #1c2538; --marker: #f2d03c; --marker-ink: #16203a; --toast-act: #1d5bb8;
+    --heat-1: #1f5a3e; --heat-2: #2e8659; --heat-3: #45b479; --heat-4: #7fdcab; --bar-a: #45b479; --bar-b: #8db6ff; --bar-c: #6f798e;
   --good: #5bcf96; --good-bg: #153226; --bad: #f08a82; --bad-bg: #3a1e22;
   --warn: #f0b95c; --warn-bg: #382b14; --great: #8db6ff; --great-bg: #1a2a48;
   --shade: rgba(0, 0, 0, 0.42); --scrim: rgba(0, 0, 0, 0.58);
@@ -210,6 +214,8 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border-radius: 
 .after { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; }
 .verdict { margin: 0; font-size: 17px; font-weight: 700; text-align: center; }
 .verdict.good { color: var(--good); } .verdict.bad { color: var(--bad); }
+.fb-note { margin: -4px 0 0; color: var(--ink-2); font-size: 15px; }
+.fb-note b { font-family: var(--font-word); font-size: 18px; font-weight: 400; color: var(--ink); }
 .write { display: flex; gap: 10px; }
 .answer-input { flex: 1; min-width: 0; height: 54px; padding: 0 16px; border: 0; border-radius: 14px; background: var(--paper); box-shadow: inset 0 0 0 1.5px var(--hair); font-family: var(--font-word); font-size: 21px; }
 .answer-input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
@@ -240,6 +246,9 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border-radius: 
 .tile span { font-size: 13px; line-height: 1.35; color: var(--ink-2); }
 .tile-wide { grid-column: 1 / -1; min-height: 0; flex-direction: row; align-items: center; gap: 14px; }
 .tile-wide div { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+.tile-main { background: var(--ink); color: var(--paper); }
+.tile-main span, .tile-main .i { color: var(--paper); }
+.tile-main span { opacity: .82; }
 .tile-hot { background: var(--marker); color: var(--marker-ink); }
 .tile-hot span, .tile-hot .i { color: var(--marker-ink); }
 .hub-note { margin: 14px 2px 0; font-size: 13px; color: var(--ink-3); }
@@ -371,6 +380,78 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .more { display: flex; justify-content: center; padding-top: 10px; }
 .tag-known { background: var(--paper-2); color: var(--ink-2); }
 .row-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+/* profile and stats */
+.pf { display: flex; flex-direction: column; gap: 12px; padding-bottom: 10px; }
+.pf-card { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border-radius: 16px; background: var(--paper); box-shadow: 0 1px 2px var(--shade); }
+.pf-head { display: flex; align-items: center; gap: 12px; }
+.avatar { flex: none; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; color: #fff; font-size: 20px; font-weight: 700; }
+.av-0 { background: #2a6fdb; } .av-1 { background: #c2410c; } .av-2 { background: #15803d; } .av-3 { background: #7c3aed; } .av-4 { background: #be185d; } .av-5 { background: #0f766e; }
+.pf-who { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.pf-name { margin: 0; font-size: 19px; font-weight: 700; overflow-wrap: anywhere; }
+.pf-sub { font-size: 13px; color: var(--ink-3); }
+.pf-title { margin: 0; font-size: 15px; font-weight: 600; }
+.pf-note { margin: 0; font-size: 13px; color: var(--ink-3); }
+.pf-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.name-form { display: flex; gap: 8px; }
+.name-form input { flex: 1; min-width: 0; min-height: 40px; padding: 8px 12px; border: 1.5px solid var(--hair); border-radius: 10px; background: var(--paper); color: var(--ink); font: inherit; }
+.kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.kpi { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 14px; background: var(--paper); box-shadow: 0 1px 2px var(--shade); }
+.kpi-label { font-size: 13px; color: var(--ink-2); }
+.kpi-value { font-size: 26px; font-weight: 600; line-height: 1.15; color: var(--ink); }
+.kpi-sub { font-size: 12.5px; color: var(--ink-3); }
+.kpi-sub.up { color: var(--good); } .kpi-sub.down { color: var(--bad); }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { fill: var(--ink-3); font-family: var(--font-ui); font-size: 10px; font-variant-numeric: tabular-nums; }
+.chart .grid { stroke: var(--hair); stroke-width: 1; }
+.chart .goal-line { stroke: var(--ink-2); stroke-width: 1; }
+.chart .goal-label { fill: var(--ink-2); }
+.chart .hit { fill: transparent; cursor: default; }
+.chart .mark { pointer-events: none; }
+.chart .hit:hover + .mark, .chart .hit:focus + .mark { opacity: .72; }
+.chart .hit:focus { outline: none; }
+.chart .hit:focus-visible + .mark { stroke: var(--ink); stroke-width: 1.5; }
+.mark-a { fill: var(--bar-a); } .mark-b { fill: var(--bar-b); } .mark-c { fill: var(--bar-c); }
+.cal-cell { fill: var(--paper-2); }
+.cal-cell.l1 { fill: var(--heat-1); } .cal-cell.l2 { fill: var(--heat-2); } .cal-cell.l3 { fill: var(--heat-3); } .cal-cell.l4 { fill: var(--heat-4); }
+.cal-cell.today { stroke: var(--ink); stroke-width: 1.5; }
+.legend-row { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--ink-3); }
+.legend-row i { width: 11px; height: 11px; border-radius: 3px; background: var(--paper-2); }
+.legend-row i.l1 { background: var(--heat-1); } .legend-row i.l2 { background: var(--heat-2); } .legend-row i.l3 { background: var(--heat-3); } .legend-row i.l4 { background: var(--heat-4); }
+.legend-row span + i { margin-left: 4px; }
+.tip { position: fixed; z-index: 70; display: flex; flex-direction: column; padding: 6px 10px; border-radius: 8px; background: var(--ink); color: var(--paper); font-size: 12.5px; line-height: 1.3; pointer-events: none; box-shadow: 0 4px 14px var(--shade); }
+.tip b { font-size: 15px; font-weight: 600; }
+.mix { display: flex; flex-direction: column; gap: 8px; }
+.mix-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; font-size: 14px; }
+.mix-row b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.mix-track { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--paper-2); overflow: hidden; }
+.mix-track span { display: block; height: 100%; border-radius: 3px; background: var(--bar-a); }
+.meter { height: 8px; border-radius: 4px; background: var(--paper-2); overflow: hidden; }
+.meter span { display: block; height: 100%; border-radius: 4px; background: var(--bar-b); }
+.tabs .wrap.four { grid-template-columns: repeat(4, 1fr); }
+/* word sheet, hints, leeches */
+.tags { display: inline-flex; gap: 4px; }
+.tag-leech { background: var(--bad); color: var(--paper); }
+.ws { display: flex; flex-direction: column; gap: 12px; padding-bottom: 8px; }
+.ws-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.ws-top .ipa { margin: 0; }
+.ws-ru { margin: 0; font-size: 20px; font-weight: 600; }
+.ws-h { margin: 6px 0 0; font-size: 15px; font-weight: 600; }
+.ws-ex { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.ws-ex li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 8px; align-items: start; padding: 10px 12px; border-radius: 12px; background: var(--paper-2); }
+.ws-ex .en { margin: 0; font-family: var(--font-word); font-size: 18px; line-height: 1.35; }
+.ws-ex .tr { grid-column: 1; margin: 0; color: var(--ink-2); font-size: 14.5px; }
+.ws-ex .ws-play { grid-row: 1 / span 2; grid-column: 2; display: flex; gap: 4px; }
+.mini { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: var(--paper); color: var(--ink); box-shadow: inset 0 0 0 1px var(--hair); }
+.mini .i { width: 18px; height: 18px; }
+.ws-note { width: 100%; min-height: 76px; padding: 10px 12px; border: 1.5px solid var(--hair); border-radius: 12px; background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; line-height: 1.4; resize: vertical; }
+.ws-note:focus { outline: none; border-color: var(--ink-2); }
+.ws-saved { min-height: 1.2em; font-size: 13px; color: var(--ink-3); }
+.ws-stats { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13.5px; color: var(--ink-2); }
+.ws-stats b { color: var(--ink); font-weight: 600; }
+.note-line { display: flex; gap: 6px; align-items: flex-start; justify-content: center; margin: 2px 0 0; max-width: 100%; color: var(--ink-2); font-size: 15px; line-height: 1.35; text-align: left; }
+.note-line .i { flex: none; width: 18px; height: 18px; margin-top: 1px; color: var(--warn); }
+.leech-hint { margin: 0; padding: 8px 12px; border-radius: 10px; background: var(--bad-bg); color: var(--bad); font-size: 14.5px; }
 .toast.has-action { display: flex; align-items: center; gap: 14px; text-align: left; }
 .toast.has-action.show { pointer-events: auto; }
 .toast button { flex: none; min-height: 32px; padding: 4px 2px; border: 0; background: none; color: var(--toast-act); font: inherit; font-weight: 600; }
@@ -396,7 +477,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   <div class="wrap"><div class="banner" id="banner" hidden></div></div>
   <main class="main" id="main"><div class="wrap view" id="view"></div></main>
   <nav class="tabs" aria-label="Разделы">
-    <div class="wrap">
+    <div class="wrap four">
       <button class="tab" type="button" data-tab="cards">
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="7.5" width="13.5" height="12.5" rx="2.5"/><path d="M8 4.5h10A2.5 2.5 0 0 1 20.5 7v9"/></svg>
         <span class="tab-label">Карточки</span>
@@ -408,6 +489,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       <button class="tab" type="button" data-tab="list">
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.5h11.5M8.5 12h11.5M8.5 17.5h11.5"/><circle cx="4.5" cy="6.5" r="1" fill="currentColor"/><circle cx="4.5" cy="12" r="1" fill="currentColor"/><circle cx="4.5" cy="17.5" r="1" fill="currentColor"/></svg>
         <span class="tab-label">Список</span>
+      </button>
+      <button class="tab" type="button" data-tab="profile">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.9-3.8 3.9-6 7.5-6s6.6 2.2 7.5 6"/></svg>
+        <span class="tab-label">Профиль</span>
       </button>
     </div>
   </nav>
@@ -532,6 +617,16 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   </div>
 </div>
 
+<div class="sheet" id="wordSheet" hidden>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="wsTitle">
+    <div class="sheet-head">
+      <h2 id="wsTitle" lang="en"></h2>
+      <button class="icon-btn" type="button" data-act="close" aria-label="Закрыть"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div id="wsBody"></div>
+  </div>
+</div>
+
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script>
@@ -574,36 +669,55 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     phones: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 15v-3a7.5 7.5 0 0 1 15 0v3"/><rect x="3.5" y="14" width="4" height="6" rx="1.5"/><rect x="16.5" y="14" width="4" height="6" rx="1.5"/></svg>',
     sieve: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16l-6.2 7.2v5.3l-3.6 1.6v-6.9z"/></svg>',
     blocks: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="6" width="7" height="5" rx="1.2"/><rect x="13.5" y="6" width="7" height="5" rx="1.2"/><rect x="8.5" y="13.5" width="7" height="5" rx="1.2"/></svg>',
+    snail: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18.5h13.8a3.2 3.2 0 0 0 3.2-3.2V9.8"/><path d="M20 9.8l1.3-3.3M18.4 9.8l-.9-3.4"/><circle cx="10" cy="12.6" r="5.4"/><path d="M10 15a2.4 2.4 0 1 1 2.4-2.4"/></svg>',
+    info: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><circle cx="12" cy="7.8" r=".9" fill="currentColor" stroke="none"/></svg>',
+    bulb: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3.5a5.5 5.5 0 0 0-3.2 10c.7.5 1.2 1.4 1.2 2.3v.2h4v-.2c0-.9.5-1.8 1.2-2.3A5.5 5.5 0 0 0 12 3.5z"/></svg>',
+    repeat: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M17.5 3.5v3.6h-3.6M6.5 20.5v-3.6h3.6"/></svg>',
+    spark: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>',
     cloze: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9h4M16.5 9h4M3.5 15h17"/><rect x="9" y="7" width="6" height="4" rx="1"/></svg>',
   };
 
-  /* ================= state ================= */
-  const DEFAULTS = { dir: 'en-ru', primary: 'human', autoplay: true, size: 20, group: '', theme: 'auto', newPerDay: 15, goal: 20, retention: 90 };
-  const S = Object.assign({}, DEFAULTS, store.get('tg:settings', {}));
-  if (!['human', 'voice'].includes(S.primary)) S.primary = 'human';
-  const saveSettings = () => store.set('tg:settings', S);
+  /* ================= профили: кто занимается на этом устройстве ================= */
+  let PROFILES = store.get('tg:profiles', null);
+  if (!Array.isArray(PROFILES) || !PROFILES.length) PROFILES = [{ id: 'main', name: '', c: 0, at: 0 }];
+  let PID = store.get('tg:pid', 'main');
+  if (!PROFILES.some(p => p.id === PID)) PID = 'main';
+  const pk = k => PID === 'main' ? k : k + '@' + PID;   // first profile keeps the original keys
+  const me = () => PROFILES.find(p => p.id === PID) || PROFILES[0];
 
-  let SRS = store.get('tg:srs', null);
+  /* ================= state ================= */
+  const DEFAULTS = { dir: 'en-ru', primary: 'human', autoplay: true, size: 20, group: '', theme: 'auto', newPerDay: 15, goal: 20, retention: 90, adapt: true };
+  const S = Object.assign({}, DEFAULTS, store.get(pk('tg:settings'), {}));
+  if (!['human', 'voice'].includes(S.primary)) S.primary = 'human';
+  const saveSettings = () => store.set(pk('tg:settings'), S);
+
+  let SRS = store.get(pk('tg:srs'), null);
+  if (!SRS && PID !== 'main') SRS = {};
   if (!SRS) { // перенос прогресса из первой версии
     SRS = {};
     const old = store.get('tg:stats', {}), legacy = [0, 1, 2, 4, 8, 16];
     Object.keys(old).forEach(k => { const o = old[k]; if (o && o.b > 0) SRS[k] = { st: 'review', s: legacy[o.b] || 1, d: 5, due: o.d || Date.now(), last: o.t || Date.now(), lg: 3, es: 0, reps: o.n || 1, lapses: o.e || 0 }; else if (o) SRS[k] = { st: 'learning', s: 0.4, d: 7, due: Date.now(), last: Date.now(), lg: 1, es: 0, reps: o.n || 1, lapses: 0 }; });
-    store.set('tg:srs', SRS);
+    store.set(pk('tg:srs'), SRS);
   }
   let onSrsSaved = () => {};
-  const saveSrs = () => { store.set('tg:srs', SRS); onSrsSaved(); };
-  let PST = store.get('tg:practice', {});
-  const savePst = () => store.set('tg:practice', PST);
+  const saveSrs = () => { store.set(pk('tg:srs'), SRS); onSrsSaved(); };
+  let PST = store.get(pk('tg:practice'), {});
+  const savePst = () => store.set(pk('tg:practice'), PST);
   const DEV = store.get('tg:dev', '') || (() => { const id = Math.random().toString(36).slice(2, 10); store.set('tg:dev', id); return id; })();
-  let ACT = store.get('tg:act', {});
+  let ACT = store.get(pk('tg:act'), {});
   let onActChanged = () => {};
   function saveAct() {
     const keys = Object.keys(ACT).sort();
     if (keys.length > 400) keys.slice(0, keys.length - 400).forEach(k => { delete ACT[k]; });
-    store.set('tg:act', ACT);
+    store.set(pk('tg:act'), ACT);
   }
-  let PRIO = store.get('tg:prio', []);
-  const savePrio = () => store.set('tg:prio', PRIO.slice(-500));
+  let PRIO = store.get(pk('tg:prio'), []);
+  const savePrio = () => store.set(pk('tg:prio'), PRIO.slice(-500));
+  let NOTES = store.get(pk('tg:notes'), {});          // свои подсказки: key -> { t, at }
+  let onNotesChanged = () => {};
+  const saveNotes = () => { store.set(pk('tg:notes'), NOTES); onNotesChanged(); };
+  const noteOf = w => (NOTES[w.key] && NOTES[w.key].t) || '';
+  let CAL = store.get(pk('tg:cal'), {});              // ответы на повторениях по t/S, отдельно по устройствам
   let listLimit = 300;
 
   let WORDS = [], GROUPS = [], SKIPPED = [], KEYMAP = new Map();
@@ -614,7 +728,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   let AUDIO = store.get('tg:audio', null);
 
   const view = $('#view');
-  let tab = ['cards', 'train', 'list'].includes(store.get('tg:tab')) ? store.get('tg:tab') : 'cards';
+  let tab = ['cards', 'train', 'list', 'profile'].includes(store.get('tg:tab')) ? store.get('tg:tab') : 'cards';
   let trainMode = null;     // null = список тренировок
   let ses = null;           // текущая тренировка
   let card = null;          // текущая карточка { w, flipped }
@@ -736,6 +850,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       try { if (this.src) this.src.stop(); } catch (e) { /* ignore */ }
       this.src = null;
       try { if (this.el) this.el.pause(); } catch (e) { /* ignore */ }
+      try { if (this.slowEl) this.slowEl.pause(); } catch (e) { /* ignore */ }
       try { speechSynthesis.cancel(); } catch (e) { /* ignore */ }
     },
     playBuffer(buf) {
@@ -761,9 +876,21 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         await el.play();
         return null;
       }
+    },
+    // slow playback keeps the pitch: an audio element with preservesPitch, not the WebAudio buffer
+    async playSlow(path, rate = 0.7) {
+      this.stop();
+      this.token = (this.token || 0) + 1;
+      const el = this.slowEl || (this.slowEl = new Audio());
+      try { el.preservesPitch = true; el.mozPreservesPitch = true; el.webkitPreservesPitch = true; } catch (e) { /* old browsers */ }
+      el.src = 'audio/' + path;
+      el.defaultPlaybackRate = rate; el.playbackRate = rate;
+      el.onplaying = () => { if (el.playbackRate !== rate) el.playbackRate = rate; };
+      await el.play();
+      return null;
     }
   };
-  function speakFallback(text, lang = 'en-US') {
+  function speakFallback(text, lang = 'en-US', rate = 0.9) {
     if (!('speechSynthesis' in window)) return;
     try {
       speechSynthesis.cancel();
@@ -772,7 +899,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       const v = speechSynthesis.getVoices().filter(x => re.test(x.lang)).sort((a, b) => /natural|enhanced|premium|samantha|milena|google/i.test(b.name) - /natural|enhanced|premium|samantha|milena|google/i.test(a.name))[0];
       if (v) u.voice = v;
       u.lang = lang;
-      u.rate = 0.9;
+      u.rate = rate;
       speechSynthesis.speak(u);
     } catch (e) { /* ignore */ }
   }
@@ -801,6 +928,15 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     speakFallback(w.ex);
     return Promise.resolve(null);
   }
+  const SLOW = 0.55;
+  function playPathSlow(path, text, lang = 'en-US') {
+    if (path) return Sound.playSlow(path).catch(() => { speakFallback(text, lang, SLOW); return null; });
+    speakFallback(text, lang, SLOW);
+    return Promise.resolve(null);
+  }
+  const playWordSlow = w => playPathSlow(wordPath(w), ttsText(w));
+  const playExampleSlow = w => playPathSlow(audioRec(w).e, w.ex);
+  const playRuSlow = w => playPathSlow(audioRec(w).r, ruSpeech(w), 'ru-RU');
   const firstTouch = () => { interacted = true; Sound.ensure(); };
   ['click', 'touchend', 'keydown'].forEach(ev => window.addEventListener(ev, firstTouch, { once: true, capture: true }));
 
@@ -858,7 +994,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   const RET_FACTOR = { 85: 1.64, 90: 1, 95: 0.46 };
   function days(s, es) {
     const bonus = es >= 2 ? 1 + 0.15 * Math.min(es - 1, 4) : 1;
-    return Math.min(365, Math.max(1, Math.round(s * bonus * (RET_FACTOR[S.retention] || 1))));
+    return Math.min(365, Math.max(1, Math.round(s * bonus * (RET_FACTOR[S.retention] || 1) * memFactor())));
   }
   const isFresh = s => !s || s.st === 'new';
   // btn: 1 Не знаю, 2 Не помню, 3 Помню, 4 Помню хорошо
@@ -909,13 +1045,16 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
   const isProblem = s => s && s.st !== 'review' && s.lg <= 2;
   const problemWords = () => WORDS.filter(w => isProblem(SRS[w.key]));
+  const isLeech = s => !!s && !isFresh(s) && (s.lapses || 0) >= 4;
   function statusTag(w) {
     const s = SRS[w.key];
-    if (isFresh(s)) return '<span class="tag tag-new">новое</span>';
-    if (s.kn) return '<span class="tag tag-known">знаю</span>';
-    if (s.st !== 'review') return '<span class="tag tag-learn">учу</span>';
-    const left = s.due - Date.now();
-    return `<span class="tag tag-rev">${left <= 0 ? 'повторить' : 'через ' + fmtIvl(left)}</span>`;
+    const leech = isLeech(s) ? '<span class="tag tag-leech">трудное</span>' : '';
+    let main;
+    if (isFresh(s)) main = '<span class="tag tag-new">новое</span>';
+    else if (s.kn) main = '<span class="tag tag-known">знаю</span>';
+    else if (s.st !== 'review') main = '<span class="tag tag-learn">учу</span>';
+    else { const left = s.due - Date.now(); main = `<span class="tag tag-rev">${left <= 0 ? 'повторить' : 'через ' + fmtIvl(left)}</span>`; }
+    return leech ? `<span class="tags">${leech}${main}</span>` : main;
   }
 
   /* ================= день, серия, знакомые слова ================= */
@@ -923,7 +1062,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function dayTotal(k, f) { const day = ACT[k]; return day ? Object.values(day).reduce((a, x) => a + ((x && x[f]) || 0), 0) : 0; }
   const todayCount = () => dayTotal(dayKey(), 'c');
   const newToday = () => dayTotal(dayKey(), 'n');
-  function extraNew() { const x = store.get('tg:extra', null); return x && x.day === dayKey() ? x.n : 0; }
+  function extraNew() { const x = store.get(pk('tg:extra'), null); return x && x.day === dayKey() ? x.n : 0; }
   const newLimit = () => S.newPerDay ? S.newPerDay + extraNew() : Infinity;
   // a past day counts with the goal that was set on that day, so raising the goal does not break the streak
   function dayGoal(k, fallback) {
@@ -942,9 +1081,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function bump(f) {
     const k = dayKey(), before = dayTotal(k, 'c');
     const day = ACT[k] || (ACT[k] = {});
-    const me = day[DEV] || (day[DEV] = { c: 0, n: 0 });
-    me[f] = (me[f] || 0) + 1;
-    me.g = S.goal;
+    const mine = day[DEV] || (day[DEV] = { c: 0, n: 0, ok: 0 });
+    if (mine.ok == null) mine.ok = 0;
+    mine[f] = (mine[f] || 0) + 1;
+    mine.g = S.goal;
     saveAct(); onActChanged();
     if (f === 'c' && before < S.goal && before + 1 >= S.goal) {
       const n = streakInfo().streak;
@@ -973,17 +1113,71 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     });
   }
 
+  /* ================= подстройка интервалов под память ================= */
+  // every answer on a word in review is kept as (t / S, remembered?) in log-spaced bins; the forgetting curve
+  // R = (1 + 19/81 * t / (k * S))^-0.5 is then fitted for one number k: k > 1 means you remember longer than average
+  const CAL_BINS = 30, CAL_MIN = 1000;
+  const calBin = x => Math.max(0, Math.min(CAL_BINS - 1, Math.floor((Math.log2(Math.max(x, 1e-6)) + 4) * 3)));
+  const calX = i => Math.pow(2, (i + 0.5) / 3 - 4);
+  let memoCache = null;
+  function recordReview(prev, recalled, now) {
+    if (!prev || prev.st !== 'review' || !(prev.s > 0) || !prev.last) return;
+    const t = (now - prev.last) / DAY;
+    if (t < 0.5) return;
+    const mine = CAL[DEV] || (CAL[DEV] = { b: [] });
+    const i = calBin(t / prev.s);
+    const cell = mine.b[i] || (mine.b[i] = [0, 0]);
+    cell[0]++; if (recalled) cell[1]++;
+    for (let j = 0; j < mine.b.length; j++) if (!mine.b[j]) mine.b[j] = [0, 0];
+    store.set(pk('tg:cal'), CAL);
+    memoCache = null;
+    onActChanged();
+  }
+  function calBinsMerged() {
+    const tot = Array.from({ length: CAL_BINS }, () => [0, 0]);
+    Object.values(CAL).forEach(d => ((d && d.b) || []).forEach((c, i) => { if (c && i < CAL_BINS) { tot[i][0] += c[0] || 0; tot[i][1] += c[1] || 0; } }));
+    return tot;
+  }
+  function memoryFit() {
+    if (memoCache) return memoCache;
+    const bins = calBinsMerged();
+    const n = bins.reduce((a, c) => a + c[0], 0), ok = bins.reduce((a, c) => a + c[1], 0);
+    let k = 1;
+    if (n > 0) {
+      const ll = kk => bins.reduce((a, c, i) => {
+        if (!c[0]) return a;
+        const R = Math.min(0.9999, Math.max(1e-4, Math.pow(1 + 19 / 81 * calX(i) / kk, -0.5)));
+        return a + c[1] * Math.log(R) + (c[0] - c[1]) * Math.log(1 - R);
+      }, 0);
+      let lo = Math.log(0.3), hi = Math.log(3);
+      const g = (Math.sqrt(5) - 1) / 2;
+      let a = hi - g * (hi - lo), b = lo + g * (hi - lo), fa = ll(Math.exp(a)), fb = ll(Math.exp(b));
+      for (let it = 0; it < 40; it++) {
+        if (fa < fb) { lo = a; a = b; fa = fb; b = lo + g * (hi - lo); fb = ll(Math.exp(b)); }
+        else { hi = b; b = a; fb = fa; a = hi - g * (hi - lo); fa = ll(Math.exp(a)); }
+      }
+      k = Math.exp((lo + hi) / 2);
+    }
+    memoCache = { n, ok, k: Math.min(2.5, Math.max(0.5, k)), active: n >= CAL_MIN && S.adapt !== false };
+    return memoCache;
+  }
+  const memFactor = () => { const m = memoryFit(); return m.active ? m.k : 1; };
+
   /* ================= small UI pieces ================= */
-  function chipsHTML(w, withEx) {
+  function chipsHTML(w, withEx, info) {
     const k = esc(w.key), r = audioRec(w);
     const noFiles = !r.w && !r.h;
     return `<div class="chips">
       <button class="chip" type="button" data-act="say-human" data-key="${k}" data-need="h"${r.h ? '' : ' hidden'}>${ICON.human}<span>Диктор</span></button>
       <button class="chip" type="button" data-act="say-voice" data-key="${k}"${noFiles ? '' : (r.w ? '' : ' hidden')}>${ICON.voice}<span>${noFiles ? 'Голос' : 'Нейроголос'}</span></button>
+      <button class="chip" type="button" data-act="say-slow" data-key="${k}">${ICON.snail}<span>Медленно</span></button>
       <a class="chip" data-act="yg" data-key="${k}" href="${esc(ygUrl(w))}" target="_blank" rel="noopener">${ICON.video}<span>YouGlish</span></a>
       ${withEx ? `<button class="chip" type="button" data-act="say-ex" data-key="${k}">${ICON.example}<span>Пример</span></button>` : ''}
+      ${info ? infoChip(w) : ''}
     </div>`;
   }
+  const infoChip = w => `<button class="chip" type="button" data-act="word-info" data-key="${esc(w.key)}">${ICON.info}<span>Подробнее</span></button>`;
+  const noteLine = w => noteOf(w) ? `<p class="note-line">${ICON.bulb}<span>${esc(noteOf(w))}</span></p>` : '';
   const ipaHTML = w => `<div class="ipa" data-ipa="${esc(w.key)}" lang="en">${esc(ipaOf(w))}</div>`;
   const topHTML = w => `<div class="face-top"><span class="face-group">${esc(w.group)}</span>${statusTag(w)}</div>`;
   function progressHTML(i, n) {
@@ -1015,6 +1209,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (!WORDS.length) { renderEmpty(); return; }
     if (tab === 'cards') renderCards();
     else if (tab === 'list') renderList();
+    else if (tab === 'profile') renderProfile();
     else if (!trainMode) renderHub();
     else if (trainMode === 'player') renderPlayer();
     else if (trainMode === 'sort') renderSort();
@@ -1060,14 +1255,16 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
           ${enFirst ? '' : `<div class="cue">${esc(w.ru)}</div>`}
           <div class="word" lang="en">${esc(w.en)}</div>${ipaHTML(w)}
           ${withEx ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}
-        </div>${chipsHTML(w, withEx)}`;
+          ${side === 'back' ? noteLine(w) : (noteOf(w) ? (card && card.hint ? noteLine(w) : `<button class="btn-link" type="button" data-act="card-hint">Своя подсказка</button>`) : '')}
+        </div>${chipsHTML(w, withEx, side === 'back')}`;
     }
     const exHere = enFirst && !!w.ex;
     return topHTML(w) + `<div class="face-body">
         ${enFirst ? `<div class="cue" lang="en">${esc(w.en)}</div>` : ''}
         <div class="ru">${esc(w.ru)}</div>
         ${exHere ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}
-      </div>${exHere ? `<div class="chips"><button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button></div>` : ''}`;
+        ${side === 'back' ? noteLine(w) : (noteOf(w) ? (card && card.hint ? noteLine(w) : `<button class="btn-link" type="button" data-act="card-hint">Своя подсказка</button>`) : '')}
+      </div><div class="chips">${exHere ? `<button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button><button class="chip" type="button" data-act="say-ex-slow" data-key="${esc(w.key)}">${ICON.snail}<span>Медленно</span></button>` : ''}${side === 'back' ? infoChip(w) : ''}</div>`;
   }
   function renderCards(opts = {}) {
     if (learnPrompt) { renderLearnPrompt(); return; }
@@ -1090,7 +1287,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       </div>
       <div id="cardActions">${cardActionsHTML()}</div>
       ${keysHTML(['Пробел', 'перевернуть'], ['1–4', 'оценка'], ['K', 'уже знаю'], ['S', 'звук'])}`;
-    $('#card').addEventListener('click', e => { if (!e.target.closest('.chip')) flipCard(); });
+    $('#card').addEventListener('click', e => { if (!e.target.closest('.chip, [data-act]')) flipCard(); });
     const next = pickNextForPrefetch(w);
     Sound.prefetch(w); if (next) Sound.prefetch(next);
     if (!card.spoken) {
@@ -1152,10 +1349,12 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (!card || !card.flipped) return;
     const w = card.w, now = Date.now();
     const wasNew = isFresh(SRS[w.key]);
+    recordReview(SRS[w.key], g >= 3, now);
     SRS[w.key] = schedule(SRS[w.key], g, now);
     saveSrs();
     if (wasNew) { bump('n'); if (PRIO.includes(w.key)) { PRIO = PRIO.filter(k => k !== w.key); savePrio(); } }
     bump('c');
+    if (g >= 3) bump('ok');
     lastCardKey = w.key; cardsShown++; card = null;
     const probs = problemWords().length;
     if (g <= 2 && probs >= LEARN_LIMIT && probs >= promptSnooze) learnPrompt = true;
@@ -1202,10 +1401,14 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const seen = pool().filter(w => !isFresh(SRS[w.key])).length;
     const clozeN = pool().filter(w => maskInfo(w)).length;
     const freshN = pool().filter(w => isFresh(SRS[w.key])).length;
+    const leechN = pool().filter(w => isLeech(SRS[w.key])).length;
     view.className = 'wrap view';
+    const sp = smartPlan();
     view.innerHTML = `<div class="tiles">
+      <button class="tile tile-wide tile-main" type="button" data-act="start-smart">${ICON.spark}<div><b>Учить</b><span>${sp.words.length ? `Повторить: ${sp.due}, новых сегодня: ${sp.room}. Упражнения подбираются по тому, насколько слово знакомо: от выбора перевода до написания.` : 'На сейчас всё повторено. Можно взять ещё новых слов.'}</span></div></button>
       <button class="tile tile-wide${probs ? ' tile-hot' : ''}" type="button" data-act="start-learn"${probs ? '' : ' disabled'}>${ICON.learn}
         <div><b>Изучение трудных слов</b><span>${probs ? `${plural(probs, WORD_FORMS)} с «Не знаю» и «Не помню». При ${LEARN_LIMIT} запускается само.` : 'Трудных слов нет. Сюда попадут слова с «Не знаю» и «Не помню».'}</span></div></button>
+      <button class="tile tile-wide${leechN ? ' tile-hot' : ''}" type="button" data-act="start-leech"${leechN ? '' : ' disabled'}>${ICON.repeat}<div><b>Вечно забываемые</b><span>${leechN ? `${plural(leechN, WORD_FORMS)}, забытых 4 раза и больше. Пять этапов и своя подсказка к каждому.` : 'Сюда попадут слова, которые ты забыл 4 раза и больше.'}</span></div></button>
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="sort">${ICON.sieve}<div><b>Отсеять знакомые</b><span>Новых слов: ${freshN}. Отметь те, что уже знаешь, чтобы не тратить на них повторения.</span></div></button>
       <button class="tile" type="button" data-act="mode" data-mode="test">${ICON.test}<b>Тест</b><span>Выбери перевод из четырёх</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="write">${ICON.write}<b>Ввод</b><span>Напиши слово по-английски</span></button>
@@ -1232,15 +1435,19 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
 
   /* ---------- Изучение трудных слов ---------- */
-  function startLearn() {
+  function startLearn(kind = 'learn') {
     learnPrompt = false;
-    const words = problemWords().sort((a, b) => SRS[a.key].lg - SRS[b.key].lg).slice(0, LEARN_LIMIT);
-    if (!words.length) { toast('Трудных слов нет'); return; }
+    Player.stop();
+    $('#main').scrollTop = 0;
+    const words = kind === 'leech'
+      ? pool().filter(w => isLeech(SRS[w.key])).sort((a, b) => (SRS[b.key].lapses || 0) - (SRS[a.key].lapses || 0)).slice(0, LEARN_LIMIT)
+      : problemWords().sort((a, b) => SRS[a.key].lg - SRS[b.key].lg).slice(0, LEARN_LIMIT);
+    if (!words.length) { toast(kind === 'leech' ? 'Вечно забываемых слов нет' : 'Трудных слов нет'); return; }
     const stages = w => ['intro', 'pick-ru', maskInfo(w) ? 'cloze-pick' : 'pick-en', 'listen', 'type-en'];
-    tab = 'train'; store.set('tg:tab', tab); trainMode = 'learn';
+    tab = 'train'; store.set('tg:tab', tab); trainMode = kind;
     const plan = new Map(words.map(w => [w.key, { stages: stages(w), at: 0 }]));
     const total = words.reduce((n, w) => n + plan.get(w.key).stages.length, 0);
-    ses = { kind: 'learn', words, plan, active: words.slice(0, 5), pending: words.slice(5), total, steps: 0, finished: [], st: null, opts: null, hint: 0, spoken: -1, cur: null };
+    ses = { kind, words, plan, active: words.slice(0, 5), pending: words.slice(5), total, steps: 0, finished: [], st: null, opts: null, hint: 0, spoken: -1, cur: null };
     nextLearnItem();
     render();
   }
@@ -1253,9 +1460,14 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
   function learnResult(ok) {
     const w = ses.cur.w, p = ses.plan.get(w.key);
+    if (ses.cur.type !== 'intro') { if (!p.tries) p.firstOk = ok; p.tries = (p.tries || 0) + 1; if (!ok) p.miss = (p.miss || 0) + 1; }
     if (ok) {
       p.at++; ses.steps++;
-      if (p.at >= p.stages.length) { ses.finished.push(w); if (ses.pending.length) ses.active.push(ses.pending.shift()); }
+      if (p.at >= p.stages.length) {
+        ses.finished.push(w);
+        if (ses.kind === 'smart') smartDone(w, p);
+        if (ses.pending.length) ses.active.push(ses.pending.shift());
+      }
       else ses.active.push(w);
     } else {
       if (p.at > 1) { p.at--; ses.steps--; }
@@ -1263,6 +1475,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     }
   }
   function finishLearn() {
+    if (ses.kind === 'smart') return;
     const now = Date.now();
     ses.finished.forEach(w => {
       const s = SRS[w.key] || {};
@@ -1271,10 +1484,53 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     saveSrs();
   }
 
+  /* ---------- Умный режим «Учить» ---------- */
+  // the word's familiarity picks its path: new words go through all five steps, learned ones only need writing
+  function smartStages(w) {
+    const s = SRS[w.key], pick2 = maskInfo(w) ? 'cloze-pick' : 'pick-en';
+    if (isFresh(s)) return ['intro', 'pick-ru', pick2, 'listen', 'type-en'];
+    if (s.st !== 'review') return ['pick-ru', pick2, 'type-en'];
+    if ((s.s || 0) < 21) return [pick2, 'type-en'];
+    return ['type-en'];
+  }
+  function smartPlan() {
+    const now = Date.now(), size = S.size || 20;
+    const due = pool().filter(w => { const s = SRS[w.key]; return !isFresh(s) && !s.kn && s.due <= now; }).sort((a, b) => SRS[a.key].due - SRS[b.key].due);
+    const room = problemWords().length >= LEARN_LIMIT ? 0 : Math.max(0, newLimit() - newToday());
+    const words = due.slice(0, size);
+    const fresh = room ? freshOrder(pool().filter(w => isFresh(SRS[w.key]))).slice(0, Math.min(room, size - words.length)) : [];
+    return { due: due.length, room, words: words.concat(fresh), fresh: fresh.length };
+  }
+  function startSmart() {
+    learnPrompt = false;
+    Player.stop();
+    $('#main').scrollTop = 0;
+    const plan0 = smartPlan(), words = plan0.words;
+    tab = 'train'; store.set('tg:tab', tab); trainMode = 'smart';
+    if (!words.length) { ses = { kind: 'smart', empty: true, words: [], finished: [], plan: new Map(), active: [], pending: [], total: 0, steps: 0, cur: null, done: true }; render(); return; }
+    const plan = new Map(words.map(w => [w.key, { stages: smartStages(w), at: 0, fresh: isFresh(SRS[w.key]) }]));
+    const total = words.reduce((n, w) => n + plan.get(w.key).stages.length, 0);
+    ses = { kind: 'smart', words, plan, active: words.slice(0, 5), pending: words.slice(5), total, steps: 0, finished: [], st: null, opts: null, hint: 0, spoken: -1, cur: null };
+    nextLearnItem();
+    render();
+  }
+  function smartDone(w, p) {
+    const now = Date.now(), prev = SRS[w.key], clean = !p.miss;
+    if (isFresh(prev)) {
+      SRS[w.key] = clean ? schedule(schedule(null, 3, now), 3, now) : schedule(null, 2, now);
+      bump('n');
+      if (PRIO.includes(w.key)) { PRIO = PRIO.filter(k => k !== w.key); savePrio(); }
+    } else {
+      recordReview(prev, !!p.firstOk, now);
+      SRS[w.key] = schedule(prev, clean ? 3 : 2, now);
+    }
+    saveSrs();
+  }
+
   /* ---------- общий движок упражнений ---------- */
   function currentItem() {
     if (!ses) return null;
-    if (ses.kind === 'learn') return ses.cur;
+    if (STAGED.has(ses.kind)) return ses.cur;
     if (ses.kind === 'sort') { const w = ses.list[ses.i]; return w ? { w, type: 'sort' } : null; }
     return ses.items[ses.i] || null;
   }
@@ -1295,11 +1551,94 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function normalize(s) {
     return String(s).toLowerCase().replace(/[‘’ʼ`´]/g, "'").replace(/[^\p{L}\p{N}' -]+/gu, ' ').replace(/\s+/g, ' ').trim();
   }
-  function isCorrect(input, w, cloze) {
-    const a = normalize(input), a2 = a.replace(/^to /, '');
-    const targets = w.en.split('/').map(normalize).filter(Boolean);
-    if (cloze) { const m = maskInfo(w); if (m) targets.push(normalize(m.form)); }
-    return targets.some(v => v === a || v.replace(/^to (be )?/, '') === a2.replace(/^be /, '') || v.replace(/^to /, '') === a2);
+  /* ---------- проверка ответа: британское написание и другие формы слова ---------- */
+  // both the answer and the target are brought to American spelling, so organise = organize, colour = color
+  const UK_US = {
+    grey: 'gray', greyer: 'grayer', tyre: 'tire', tyres: 'tires', cheque: 'check', cheques: 'checks', programme: 'program', programmes: 'programs',
+    plough: 'plow', mould: 'mold', mouldy: 'moldy', aluminium: 'aluminum', sceptical: 'skeptical', sceptic: 'skeptic', jewellery: 'jewelry',
+    pyjamas: 'pajamas', aeroplane: 'airplane', aeroplanes: 'airplanes', storey: 'story', storeys: 'stories', draught: 'draft', ageing: 'aging',
+    judgement: 'judgment', judgements: 'judgments', acknowledgement: 'acknowledgment', enrol: 'enroll', enrols: 'enrolls', enrolment: 'enrollment',
+    fulfil: 'fulfill', fulfils: 'fulfills', fulfilment: 'fulfillment', skilful: 'skillful', skilfully: 'skillfully', wilful: 'willful',
+    manoeuvre: 'maneuver', manoeuvres: 'maneuvers', defence: 'defense', defences: 'defenses', offence: 'offense', offences: 'offenses',
+    licence: 'license', licences: 'licenses', pretence: 'pretense', practise: 'practice', practises: 'practices', practised: 'practiced',
+    practising: 'practicing', kerb: 'curb', mum: 'mom', mums: 'moms', maths: 'math', cosy: 'cozy', moustache: 'mustache', sulphur: 'sulfur',
+    doughnut: 'donut', axe: 'ax', whisky: 'whiskey', speciality: 'specialty', specialities: 'specialties', centre: 'center', centres: 'centers',
+    centred: 'centered', theatre: 'theater', theatres: 'theaters', metre: 'meter', metres: 'meters', litre: 'liter', litres: 'liters',
+    fibre: 'fiber', fibres: 'fibers', calibre: 'caliber', sombre: 'somber', lustre: 'luster', spectre: 'specter', sabre: 'saber',
+    paediatric: 'pediatric', anaemia: 'anemia', encyclopaedia: 'encyclopedia', foetus: 'fetus', haemorrhage: 'hemorrhage', mediaeval: 'medieval',
+    tonne: 'ton', tonnes: 'tons', learnt: 'learned', burnt: 'burned', dreamt: 'dreamed', spelt: 'spelled', spoilt: 'spoiled', spilt: 'spilled',
+    leant: 'leaned', leapt: 'leaped', smelt: 'smelled', knelt: 'kneeled', dwelt: 'dwelled', gotten: 'got'
+  };
+  function usWord(t) {
+    if (UK_US[t]) return UK_US[t];
+    return t
+      .replace(/^([a-z]{3,})is(e|es|ed|ing|ation|ations|er|ers)$/, '$1iz$2')        // organise, realisation
+      .replace(/^([a-z]{2,})ys(e|es|ed|ing)$/, '$1yz$2')                                // analyse
+      .replace(/^([a-z]{3,})our(s|ed|ing|ite|ites|able|ful|less|er|ers)?$/, '$1or$2')    // colour, favourite
+      .replace(/^([a-z]{2,}[aeiou])ll(ed|ing|er|ers)$/, '$1l$2')                         // travelled
+      .replace(/^([a-z]{3,})ogue(s)?$/, '$1og$2');                                       // catalogue
+  }
+  const canon = s => normalize(s).split(' ').map(usWord).join(' ');
+  const IRREG = {};
+  ('arise arose arisen|awake awoke awoken|be am is are was were been being|bear bore borne born|beat beaten|become became|begin began begun|'
+    + 'bend bent|bind bound|bite bit bitten|bleed bled|blow blew blown|break broke broken|breed bred|bring brought|build built|burn burnt|buy bought|'
+    + 'catch caught|choose chose chosen|cling clung|come came|creep crept|deal dealt|dig dug|do does did done|draw drew drawn|dream dreamt|'
+    + 'drink drank drunk|drive drove driven|eat ate eaten|fall fell fallen|feed fed|feel felt|fight fought|find found|flee fled|fling flung|'
+    + 'fly flew flown|forbid forbade forbidden|foresee foresaw foreseen|forget forgot forgotten|forgive forgave forgiven|forsake forsook forsaken|'
+    + 'freeze froze frozen|get got gotten|give gave given|go goes went gone|grind ground|grow grew grown|hang hung|have has had|hear heard|'
+    + 'hide hid hidden|hold held|keep kept|kneel knelt|know knew known|lay laid|lead led|lean leant|leap leapt|learn learnt|leave left|lend lent|'
+    + 'lie lay lain|light lit|lose lost|make made|mean meant|meet met|mislead misled|mistake mistook mistaken|misunderstand misunderstood|'
+    + 'overcome overcame|overhear overheard|oversee oversaw overseen|overtake overtook overtaken|overthrow overthrew overthrown|'
+    + 'override overrode overridden|pay paid|prove proven|rebuild rebuilt|ride rode ridden|ring rang rung|rise rose risen|run ran|say said|'
+    + 'see saw seen|seek sought|sell sold|send sent|sew sewn|shake shook shaken|shine shone|shoot shot|show shown|shrink shrank shrunk|'
+    + 'sing sang sung|sink sank sunk|sit sat|sleep slept|slide slid|sow sown|speak spoke spoken|speed sped|spell spelt|spend spent|spill spilt|'
+    + 'spin spun|spit spat|spoil spoilt|spring sprang sprung|stand stood|steal stole stolen|stick stuck|sting stung|stink stank stunk|'
+    + 'stride strode|strike struck|strive strove striven|swear swore sworn|sweep swept|swell swollen|swim swam swum|swing swung|take took taken|'
+    + 'teach taught|tear tore torn|tell told|think thought|throw threw thrown|tread trod trodden|undergo underwent undergone|'
+    + 'understand understood|undertake undertook undertaken|undo undid undone|uphold upheld|wake woke woken|wear wore worn|weave wove woven|'
+    + 'weep wept|win won|wind wound|withdraw withdrew withdrawn|withhold withheld|withstand withstood|write wrote written')
+    .split('|').forEach(row => { const [base, ...forms] = row.split(' '); IRREG[base] = forms; });
+  function inflections(word) {
+    const f = new Set([word, word + 's']);
+    if (/(s|x|z|ch|sh|o)$/.test(word)) f.add(word + 'es');
+    if (/[^aeiou]y$/.test(word)) { const st = word.slice(0, -1); ['ies', 'ied', 'ier', 'iest'].forEach(x => f.add(st + x)); }
+    const irr = IRREG[word];
+    if (/e$/.test(word)) { if (!irr) f.add(word + 'd'); f.add(word.slice(0, -1) + 'ing'); }
+    else { if (!irr) f.add(word + 'ed'); f.add(word + 'ing'); }
+    if (/ie$/.test(word)) f.add(word.slice(0, -2) + 'ying');
+    if (/c$/.test(word)) { f.add(word + 'ked'); f.add(word + 'king'); }
+    if (word.length <= 6) {
+      if (/e$/.test(word)) { f.add(word + 'r'); f.add(word + 'st'); } else { f.add(word + 'er'); f.add(word + 'est'); }
+      if (/[^aeiou][aeiou][bdgklmnprtv]$/.test(word)) { const d = word + word.slice(-1); ['ed', 'ing', 'er', 'est'].forEach(x => f.add(d + x)); }
+    }
+    (irr || []).forEach(x => f.add(x));
+    return f;
+  }
+  function answerVariants(w, withForms) {
+    const out = new Set();
+    w.en.split('/').map(normalize).filter(Boolean).forEach(v => {
+      const bare = v.replace(/^to (be )?/, '');
+      [v, bare, v.replace(/^to /, '')].forEach(x => out.add(canon(x)));
+      if (withForms) {
+        const parts = bare.split(' ');
+        inflections(parts[0]).forEach(x => out.add(canon([x].concat(parts.slice(1)).join(' '))));
+      }
+    });
+    return out;
+  }
+  // type: cloze | listen | type-en | listen-ru; in «На слух» only the spelling may differ, elsewhere any form of the word counts
+  function checkAnswer(input, w, type) {
+    const a = canon(input);
+    if (!a) return { ok: false };
+    const m = type === 'cloze' ? maskInfo(w) : null;
+    const vars = answerVariants(w, type !== 'listen');
+    if (m) vars.add(canon(m.form));
+    if (![a, a.replace(/^to (be )?/, ''), a.replace(/^be /, '')].some(x => vars.has(x))) return { ok: false };
+    const expected = m ? m.form : w.en.split('/')[0].trim();
+    const typed = normalize(input).replace(/^to (be )?/, ''), exp = normalize(expected).replace(/^to (be )?/, '');
+    if (typed === exp || (!m && w.en.split('/').some(v => normalize(v).replace(/^to (be )?/, '') === typed))) return { ok: true };
+    if (m) return { ok: true, note: ['В примере:', m.form] };
+    return { ok: true, note: [canon(typed) === canon(exp) ? 'В словаре:' : 'Словарная форма:', expected] };
   }
   function hintPattern(en, level) {
     return en.split('/')[0].trim().split(/\s+/).map(word => Array.from(word).map((ch, i) => (i < level || !/\p{L}/u.test(ch)) ? ch : '_').join('')).join('   ');
@@ -1322,20 +1661,24 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return shuffle(opts);
   }
   const TYPE_FIELD = { 'pick-ru': 'ru', 'pick-en': 'en', 'cloze-pick': 'en' };
-  const TITLES = { learn: 'Изучение трудных слов', test: 'Тест', write: 'Ввод', listen: 'На слух', 'listen-ru': 'Перевод на слух', cloze: 'Пропуск в предложении', build: 'Сборка предложения' };
+  const STAGED = new Set(['learn', 'leech', 'smart']);
+  const TITLES = { smart: 'Учить', leech: 'Вечно забываемые', learn: 'Изучение трудных слов', test: 'Тест', write: 'Ввод', listen: 'На слух', 'listen-ru': 'Перевод на слух', cloze: 'Пропуск в предложении', build: 'Сборка предложения' };
 
   function renderPractice() {
     if (!ses) { trainMode = null; renderHub(); return; }
+    if (ses.kind === 'smart' && ses.empty) { renderPracticeDone(); return; }
     const item = currentItem();
     if (!item) { renderPracticeDone(); return; }
     const w = item.w, type = item.type, st = ses.st;
     const field = TYPE_FIELD[type];
     if (field && !ses.opts) ses.opts = makeOptions(w, field);
-    const pos = ses.kind === 'learn' ? ses.steps : ses.i, total = ses.kind === 'learn' ? ses.total : ses.items.length;
+    const pos = STAGED.has(ses.kind) ? ses.steps : ses.i, total = STAGED.has(ses.kind) ? ses.total : ses.items.length;
     let prompt = '', answer = '';
 
     if (type === 'intro') {
-      prompt = `${topHTML(w)}<div class="word" lang="en">${esc(w.en)}</div>${ipaHTML(w)}<div class="ru-sm">${esc(w.ru)}</div>${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${chipsHTML(w, !!w.ex)}`;
+      const leechHint = isLeech(SRS[w.key]) && !noteOf(w) ? `<p class="leech-hint">Это слово ты забыл ${plural(SRS[w.key].lapses, ['раз', 'раза', 'раз'])}. Придумай к нему ассоциацию: так оно запомнится быстрее.</p>` : '';
+      prompt = `${topHTML(w)}<div class="word" lang="en">${esc(w.en)}</div>${ipaHTML(w)}<div class="ru-sm">${esc(w.ru)}</div>${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${noteLine(w)}${leechHint}${chipsHTML(w, !!w.ex)}
+        <button class="btn-link" type="button" data-act="word-info" data-key="${esc(w.key)}">${noteOf(w) ? 'Изменить подсказку' : 'Придумать подсказку'}</button>`;
       answer = `<div class="after"><button class="btn btn-primary" type="button" data-act="intro-next">Запомнил, дальше</button></div>`;
     } else if (field) {
       const correct = ses.opts.indexOf(w[field]);
@@ -1365,8 +1708,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       else answer = `<div class="feedback" role="status"><p class="verdict ${st.ok ? 'good' : 'bad'}">${st.ok ? (st.overridden ? 'Засчитано' : 'Верно') : 'Неверно, правильно так:'}</p>${st.ok ? '' : `<p class="answer-line" lang="en">${esc(w.ex)}</p>`}<div class="chips"><button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>Пример</span></button></div><div class="fb-actions">${st.ok ? '' : '<button class="btn btn-ghost" type="button" data-act="override">Я был прав</button>'}<button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
     } else {
       if (type === 'type-en') prompt = `${topHTML(w)}<div class="ru">${esc(w.ru)}</div>${ses.hint && !st && maskInfo(w) ? `<p class="ex" lang="en">${maskedHTML(w)}</p>` : ''}`;
-      else if (type === 'listen') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay" aria-label="Прослушать ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay-slow">${ICON.voice}<span>Ещё раз</span></button>${w.ex ? `<button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>В предложении</span></button>` : ''}</div>`;
-      else if (type === 'listen-ru') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay-ru" aria-label="Прослушать перевод ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay-ru">${ICON.voice}<span>Ещё раз</span></button>${st ? '' : `<button class="chip" type="button" data-act="show-ru">${ICON.example}<span>${ses.showRu ? esc(w.ru) : 'Показать текст'}</span></button>`}</div>`;
+      else if (type === 'listen') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay" aria-label="Прослушать ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay">${ICON.repeat}<span>Ещё раз</span></button><button class="chip" type="button" data-act="replay-slow">${ICON.snail}<span>Медленно</span></button>${w.ex ? `<button class="chip" type="button" data-act="say-ex" data-key="${esc(w.key)}">${ICON.example}<span>В предложении</span></button>` : ''}</div>`;
+      else if (type === 'listen-ru') prompt = `${topHTML(w)}<button class="play-big" type="button" data-act="replay-ru" aria-label="Прослушать перевод ещё раз">${ICON.play}</button><div class="play-row"><button class="chip" type="button" data-act="replay-ru">${ICON.repeat}<span>Ещё раз</span></button><button class="chip" type="button" data-act="replay-ru-slow">${ICON.snail}<span>Медленно</span></button>${st ? '' : `<button class="chip" type="button" data-act="show-ru">${ICON.example}<span>${ses.showRu ? esc(w.ru) : 'Показать текст'}</span></button>`}</div>`;
       else prompt = `${topHTML(w)}<p class="ex ex-big" lang="en">${maskedHTML(w)}</p><div class="ru-sm">${esc(w.ru)}</div>`;
       if (ses.hint && !st) prompt += `<p class="hint" lang="en" aria-label="Подсказка">${esc(hintPattern(type === 'cloze' ? maskInfo(w).form : w.en, ses.hint))}</p>`;
       answer = `<form class="write" id="writeForm" autocomplete="off" novalidate>
@@ -1382,9 +1725,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const form = $('#writeForm');
     if (form) form.addEventListener('submit', e => { e.preventDefault(); submitAnswer(); });
     Sound.prefetch(w, type === 'listen-ru');
-    const nextItem = ses.kind !== 'learn' && ses.items ? ses.items[ses.i + 1] : null;
+    const nextItem = !STAGED.has(ses.kind) && ses.items ? ses.items[ses.i + 1] : null;
     if (nextItem) Sound.prefetch(nextItem.w, type === 'listen-ru');
-    const key = (ses.kind === 'learn' ? ses.steps + ':' + ses.total + ':' + w.key + type : ses.i);
+    const key = (STAGED.has(ses.kind) ? ses.steps + ':' + ses.total + ':' + w.key + type : ses.i);
     if (!st && ses.spoken !== key) {
       ses.spoken = key;
       if (type === 'listen') playWord(w);
@@ -1398,9 +1741,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const word = `<div class="fb-word"><span class="word-sm" lang="en">${esc(w.en)}</span>${ipaHTML(w)}</div>`;
     const ru = type === 'listen' || type === 'listen-ru' ? `<div class="ru-sm">${esc(w.ru)}</div>` : '';
     const ex = w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : '';
-    if (st.ok) return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : st.syn ? `Тоже верно, загадано слово ${esc(w.en)}` : 'Верно'}</p>${word}${ru}${chipsHTML(w, !!w.ex)}${ex}<div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
+    const note = st.ok && st.note && !st.overridden ? `<p class="fb-note">${esc(st.note[0])} <b lang="en">${esc(st.note[1])}</b></p>` : '';
+    if (st.ok) return `<div class="feedback" role="status"><p class="verdict good">${st.overridden ? 'Засчитано' : st.syn ? `Тоже верно, загадано слово ${esc(w.en)}` : 'Верно'}</p>${note}${word}${ru}${chipsHTML(w, !!w.ex, true)}${ex}<div class="fb-actions"><button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
     return `<div class="feedback" role="status"><p class="verdict bad">${st.input ? 'Неверно' : 'Правильный ответ'}</p>
-      ${st.input ? `<p class="yours">Ты написал: <s lang="en">${esc(st.input)}</s></p>` : ''}${word}${ru}${chipsHTML(w, !!w.ex)}${ex}
+      ${st.input ? `<p class="yours">Ты написал: <s lang="en">${esc(st.input)}</s></p>` : ''}${word}${ru}${chipsHTML(w, !!w.ex, true)}${ex}${noteLine(w)}
       <div class="fb-actions">${st.input ? '<button class="btn btn-ghost" type="button" data-act="override">Я был прав</button>' : ''}<button class="btn btn-primary" type="button" data-act="wnext">Дальше</button></div></div>`;
   }
   function logPractice(w, ok) {
@@ -1412,9 +1756,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const item = currentItem();
     ses.synMsg = '';
     ses.st = Object.assign({ ok }, extra);
-    if (ses.kind !== 'learn') { if (ok) ses.right++; else ses.wrong.push(item.w); }
+    if (!STAGED.has(ses.kind)) { if (ok) ses.right++; else ses.wrong.push(item.w); }
+    if (extra && extra.intro) return;
     logPractice(item.w, ok);
     bump('c');
+    if (ok) bump('ok');
   }
   function choose(i) {
     const item = currentItem();
@@ -1429,8 +1775,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const item = currentItem(), input = $('#answer');
     if (!item || ses.st || !input) return;
     if (!input.value.trim()) { input.focus(); return; }
-    let ok = isCorrect(input.value, item.w, item.type === 'cloze');
+    const res = checkAnswer(input.value, item.w, item.type);
+    let ok = res.ok;
     const extra = { input: input.value.trim() };
+    if (res.note) extra.note = res.note;
     if (!ok && (item.type === 'type-en' || item.type === 'listen-ru')) {
       const syn = synonymFor(input.value, item.w);
       if (syn && normalize(syn.ru) === normalize(item.w.ru)) { ok = true; extra.syn = syn.en; }
@@ -1456,8 +1804,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function override() {
     if (!ses || !ses.st || ses.st.ok) return;
     const w = currentItem().w;
-    if (ses.kind !== 'learn') { const at = ses.wrong.lastIndexOf(w); if (at >= 0) ses.wrong.splice(at, 1); ses.right++; }
+    if (!STAGED.has(ses.kind)) { const at = ses.wrong.lastIndexOf(w); if (at >= 0) ses.wrong.splice(at, 1); ses.right++; }
     const p = PST[w.key]; if (p && p.e) { p.e--; p.c++; savePst(); }
+    bump('ok');
     ses.st = { ok: true, input: ses.st.input, overridden: true };
     render();
   }
@@ -1474,16 +1823,30 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function advance() {
     if (!ses || !ses.st) return;
     clearTimeout(ses.timer);
-    if (ses.kind === 'learn') { learnResult(ses.st.ok); nextLearnItem(); }
+    if (STAGED.has(ses.kind)) { learnResult(ses.st.ok); nextLearnItem(); }
     else { ses.i++; ses.st = null; ses.opts = null; ses.hint = 0; ses.showRu = false; }
     ses.synMsg = '';
     if (tab === 'train') render();
   }
   function renderPracticeDone() {
     view.className = 'wrap view';
-    if (ses.kind === 'learn') {
-      view.innerHTML = modeHead(TITLES.learn) + `<div class="done"><h2>Изучено: ${plural(ses.finished.length, WORD_FORMS)}</h2>
-        <p>Эти слова вернутся на карточки завтра. Новые слова снова открыты.</p>
+    if (ses.kind === 'smart') {
+      if (ses.empty) {
+        view.innerHTML = modeHead(TITLES.smart) + `<div class="done"><h2>На сегодня всё</h2><p>${newToday() >= newLimit() ? `Новых слов сегодня: ${newToday()} из ${newLimit()}. ` : ''}Повторений на сейчас нет. Можно взять ещё 5 новых слов или потренироваться в другом режиме.</p>
+          <div class="done-actions"><button class="btn btn-primary" type="button" data-act="more-new-smart">Ещё 5 новых слов</button></div></div>`;
+        return;
+      }
+      const fresh = ses.finished.filter(w => ses.plan.get(w.key).fresh).length, clean = ses.finished.filter(w => !ses.plan.get(w.key).miss).length;
+      view.innerHTML = modeHead(TITLES.smart) + `<div class="done"><h2>Готово: ${plural(ses.finished.length, WORD_FORMS)}</h2>
+        <div class="tally"><div class="t-good"><b>${clean}</b><span>без ошибок</span></div><div class="t-bad"><b>${ses.finished.length - clean}</b><span>с ошибками</span></div></div>
+        <p>Новых слов: ${fresh}, повторено: ${ses.finished.length - fresh}. Слова с ошибками вернутся раньше.</p>
+        <div class="done-actions"><button class="btn btn-primary" type="button" data-act="start-smart">Учить дальше</button>
+        <button class="btn btn-ghost" type="button" data-act="go-cards">К карточкам</button></div></div>`;
+      return;
+    }
+    if (STAGED.has(ses.kind)) {
+      view.innerHTML = modeHead(TITLES[ses.kind]) + `<div class="done"><h2>Изучено: ${plural(ses.finished.length, WORD_FORMS)}</h2>
+        <p>${ses.kind === 'leech' ? 'Эти слова вернутся на карточки завтра. Если снова забудутся, загляни в свою подсказку.' : 'Эти слова вернутся на карточки завтра. Новые слова снова открыты.'}</p>
         <div class="done-actions"><button class="btn btn-primary" type="button" data-act="go-cards">К карточкам</button></div></div>`;
       return;
     }
@@ -1564,7 +1927,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 
   /* ---------- Слушать без рук ---------- */
   const Player = {
-    el: null, list: [], i: 0, steps: [], k: 0, playing: false, timer: 0, errors: 0, tok: 0, h: null, src: 'today', gap: store.get('tg:gap', 1),
+    el: null, list: [], i: 0, steps: [], k: 0, playing: false, timer: 0, errors: 0, tok: 0, h: null, src: 'today', gap: store.get(pk('tg:gap'), 1),
     sources() {
       const now = Date.now(), start = new Date(); start.setHours(0, 0, 0, 0);
       const seen = pool().filter(w => !isFresh(SRS[w.key]));
@@ -1638,7 +2001,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       if (!path) { if (st.gap) this.timer = setTimeout(done, 1000); else this.speak(st, done); return; }
       const el = this.ensureEl();
       el.src = 'audio/' + path;
-      this.timer = setTimeout(fail, st.gap ? 6000 : 25000);
+      const rate = st.gap ? 1 : (S.prate || 1);
+      try { el.preservesPitch = true; el.webkitPreservesPitch = true; } catch (e) { /* old browsers */ }
+      el.defaultPlaybackRate = rate; el.playbackRate = rate;
+      el.onplaying = () => { if (el.playbackRate !== rate) el.playbackRate = rate; };
+      this.timer = setTimeout(fail, st.gap ? 6000 : 25000 / rate);
       const pr = el.play();
       if (pr && pr.then) pr.then(() => { if (tok === this.tok) this.errors = 0; }).catch(fail);
     },
@@ -1646,7 +2013,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       if (!('speechSynthesis' in window)) { this.errors++; this.timer = setTimeout(done, 800); return; }
       try {
         const u = new SpeechSynthesisUtterance(st.text);
-        u.lang = st.lang; u.rate = 0.9;
+        u.lang = st.lang; u.rate = 0.9 * (S.prate || 1);
         const re = st.lang === 'ru-RU' ? /^ru/i : /^en[-_]US/i;
         const v = speechSynthesis.getVoices().find(x => re.test(x.lang));
         if (v) u.voice = v;
@@ -1695,6 +2062,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <div class="seg" role="radiogroup" aria-labelledby="lblPlSrc">${seg('pl-src', 'today', `На сегодня ${lists.today.length}`, P.src === 'today')}${seg('pl-src', 'hard', `Трудные ${lists.hard.length}`, P.src === 'hard')}${seg('pl-src', 'topic', `Тема ${lists.topic.length}`, P.src === 'topic')}</div>
         <span class="set-label" id="lblPlGap">Паузы между частями</span>
         <div class="seg" role="radiogroup" aria-labelledby="lblPlGap">${seg('pl-gap', '1', 'Короткие', P.gap === 1)}${seg('pl-gap', '2', 'Длинные', P.gap === 2)}</div>
+        <span class="set-label" id="lblPlRate">Скорость</span>
+        <div class="seg" role="radiogroup" aria-labelledby="lblPlRate">${seg('pl-rate', '1', 'Обычная', (S.prate || 1) === 1)}${seg('pl-rate', '0.75', 'Медленная', S.prate === 0.75)}</div>
       </div>
       <p class="hub-note">Порядок: слово, перевод, пример, затем следующее слово. Управлять можно и с экрана блокировки, если телефон это поддерживает. Если при выключенном экране звук останавливается, оставь экран включённым.</p>
       ${keysHTML(['Пробел', 'пауза'], ['← →', 'другое слово'])}`;
@@ -1735,13 +2104,268 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <button class="row-main" type="button" data-act="row" data-key="${esc(w.key)}" aria-expanded="${open}">
           <span class="row-text"><span class="row-en" lang="en">${esc(w.en)}</span><span class="row-ru">${esc(w.ru)}</span></span>${statusTag(w)}
         </button>
-        ${open ? `<div class="row-more">${ipaHTML(w)}${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${chipsHTML(w, !!w.ex)}${rowActionsHTML(w)}</div>` : ''}
+        ${open ? `<div class="row-more">${ipaHTML(w)}${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${noteLine(w)}${chipsHTML(w, !!w.ex, true)}${rowActionsHTML(w)}</div>` : ''}
       </div>`;
     });
     if (!shown.length) html = `<p class="empty">По запросу «${esc(listQuery)}» ничего нет.</p>`;
     if (found.length > shown.length) html += `<div class="more"><button class="btn btn-ghost btn-sm" type="button" data-act="list-more">Показать ещё (${found.length - shown.length})</button></div>`;
     $('#listBody').innerHTML = html;
   }
+
+  /* ---------- Карточка слова: примеры, своя подсказка, история ---------- */
+  let wsWord = null, wsTimer = 0;
+  function exampleItems(w) {   // main example plus extra ones when examples.txt has them
+    const out = [];
+    const extra = (typeof EXTRA !== 'undefined' && EXTRA.get(w.key)) || null;
+    if (w.ex) out.push({ en: w.ex, ru: extra && extra.main && extra.main.en === w.ex ? extra.main.ru : '', path: audioRec(w).e || null });
+    if (extra) extra.more.forEach((x, i) => out.push({ en: x.en, ru: x.ru, path: (audioRec(w).x || [])[i] || null }));
+    return out;
+  }
+  function openWordSheet(w) {
+    wsWord = w;
+    $('#wsTitle').textContent = w.en;
+    renderWordSheet();
+    openSheet('#wordSheet');
+  }
+  function renderWordSheet() {
+    const w = wsWord;
+    if (!w) return;
+    const s = SRS[w.key], ex = exampleItems(w);
+    const syn = (typeof synonymsHTML === 'function') ? synonymsHTML(w) : '';
+    let statsLine = '';
+    if (!isFresh(s)) {
+      const left = s.due - Date.now();
+      statsLine = `<div class="ws-stats"><span>Повторений: <b>${s.reps || 0}</b></span><span>Забыто: <b>${s.lapses || 0}</b></span>${s.kn ? '' : `<span>Следующее: <b>${left <= 0 ? 'сейчас' : 'через ' + fmtIvl(left)}</b></span>`}</div>`;
+    }
+    $('#wsBody').innerHTML = `<div class="ws">
+      <div class="ws-top">${ipaHTML(w)}${statusTag(w)}</div>
+      <p class="ws-ru">${esc(w.ru)}</p>
+      ${chipsHTML(w, false)}
+      ${ex.length ? `<h3 class="ws-h">Примеры</h3><ul class="ws-ex">${ex.map((x, i) => `<li><p class="en" lang="en">${esc(x.en)}</p>${x.ru ? `<p class="tr">${esc(x.ru)}</p>` : ''}<span class="ws-play"><button class="mini" type="button" data-act="ws-ex" data-i="${i}" aria-label="Прослушать пример">${ICON.play}</button><button class="mini" type="button" data-act="ws-ex-slow" data-i="${i}" aria-label="Прослушать медленно">${ICON.snail}</button></span></li>`).join('')}</ul>` : ''}
+      ${syn}
+      <h3 class="ws-h">Своя подсказка</h3>
+      <p class="pf-note">Ассоциация, похожее русское слово, картинка в голове. Будет видна на карточке после ответа, а на лицевой стороне — по кнопке «Своя подсказка».</p>
+      <textarea class="ws-note" id="wsNote" rows="3" maxlength="300" placeholder="Например: organize — «органайзер», в нём всё организовано">${esc(noteOf(w))}</textarea>
+      <span class="ws-saved" id="wsSaved" aria-live="polite"></span>
+      ${statsLine}
+      ${rowActionsHTML(w)}
+    </div>`;
+    $('#wsNote').addEventListener('input', e => { clearTimeout(wsTimer); const v = e.target.value; wsTimer = setTimeout(() => saveNote(w, v), 500); });
+  }
+  function saveNote(w, raw) {
+    const t = String(raw || '').trim().slice(0, 300);
+    if ((noteOf(w)) === t) return;
+    NOTES[w.key] = { t, at: Date.now() };
+    saveNotes();
+    const sv = $('#wsSaved'); if (sv) sv.textContent = t ? 'Сохранено' : 'Подсказка удалена';
+  }
+  function flushNote() {
+    const n = $('#wsNote');
+    if (wsWord && n) { clearTimeout(wsTimer); saveNote(wsWord, n.value); }
+  }
+
+  /* ---------- Профиль и статистика ---------- */
+  const DAY_NAMES = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+  const MONTHS = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+  const MONTHS_SHORT = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+  const dayStart = (offset = 0) => { const d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + offset); return d; };
+  const fmtDay = d => `${DAY_NAMES[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+  function dayOk(k) {   // correct answers and answers on that day, only where correct answers were counted
+    let c = 0, ok = 0;
+    Object.values(ACT[k] || {}).forEach(x => { if (x && x.ok != null) { c += x.c || 0; ok += x.ok || 0; } });
+    return { c, ok };
+  }
+  function accuracy(fromOffset, toOffset) {
+    let c = 0, ok = 0;
+    for (let i = fromOffset; i <= toOffset; i++) { const r = dayOk(dayKey(dayStart(i))); c += r.c; ok += r.ok; }
+    return c ? { pct: Math.round(ok / c * 100), c } : null;
+  }
+  function bestStreak() {
+    const keys = Object.keys(ACT).sort();
+    if (!keys.length) return 0;
+    const goal = S.goal || 20, tk = dayKey();
+    const [y, m, d] = keys[0].split('-').map(Number);
+    const cur = new Date(y, m - 1, d), end = dayStart();
+    let best = 0, run = 0;
+    for (let guard = 0; cur <= end && guard < 4000; guard++, cur.setDate(cur.getDate() + 1)) {
+      const k = dayKey(cur);
+      if (dayTotal(k, 'c') >= (k === tk ? goal : dayGoal(k, goal))) { run++; best = Math.max(best, run); }
+      else if (k !== tk) run = 0;
+    }
+    return best;
+  }
+  function wordMix() {
+    const c = { fresh: 0, learn: 0, rev: 0, known: 0, leech: 0 };
+    WORDS.forEach(w => {
+      const s = SRS[w.key];
+      if (isFresh(s)) c.fresh++; else if (s.kn) c.known++; else if (s.st !== 'review') c.learn++; else c.rev++;
+      if (s && (s.lapses || 0) >= 4) c.leech++;
+    });
+    return c;
+  }
+  function forecast() {
+    const out = Array(7).fill(0), now = Date.now(), bounds = Array.from({ length: 8 }, (_, i) => dayStart(i).getTime());
+    WORDS.forEach(w => {
+      const s = SRS[w.key];
+      if (isFresh(s) || !s.due) return;
+      const due = Math.max(s.due, now);
+      for (let i = 0; i < 7; i++) if (due < bounds[i + 1]) { out[i]++; break; }
+    });
+    return out;
+  }
+  const niceMax = v => { if (v <= 5) return 5; const p = Math.pow(10, Math.floor(Math.log10(v))); const n = v / p; return (n <= 2 ? 2 : n <= 5 ? 5 : 10) * p; };
+  // single-series column chart; every column carries its own hover/focus target
+  function columns({ values, tips, ticks, cls, goal, label }) {
+    const W = 320, H = 132, L = 26, B = 18, T = 8, R = goal ? 40 : 0, n = values.length;
+    const max = niceMax(Math.max(1, goal || 0, ...values));
+    const band = (W - L - R) / n, bw = Math.min(24, Math.max(3, band - 2)), y = v => T + (H - T - B) * (1 - v / max);
+    let out = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">`;
+    (max % 2 ? [0, max] : [0, max / 2, max]).forEach(v => { out += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 5}" y="${y(v) + 3}" text-anchor="end">${Math.round(v)}</text>`; });
+    if (goal) out += `<line class="goal-line" x1="${L}" x2="${W - R + 2}" y1="${y(goal)}" y2="${y(goal)}"/><text class="goal-label" x="${W - R + 6}" y="${y(goal) + 3}">цель ${goal}</text>`;
+    values.forEach((v, i) => {
+      const x = L + i * band + (band - bw) / 2, top = y(v), base = y(0), h = base - top, r = Math.min(4, h, bw / 2);
+      const d = h <= 0 ? '' : `M${x},${base}V${top + r}Q${x},${top} ${x + r},${top}H${x + bw - r}Q${x + bw},${top} ${x + bw},${top + r}V${base}Z`;
+      out += `<rect class="hit" x="${L + i * band}" y="${T}" width="${band}" height="${H - T - B}" tabindex="0" data-tv="${esc(tips[i][0])}" data-tl="${esc(tips[i][1])}" aria-label="${esc(tips[i][1] + ': ' + tips[i][0])}"/>`;
+      out += d ? `<path class="mark ${cls}" d="${d}"/>` : `<path class="mark ${cls}" d=""/>`;
+    });
+    ticks.forEach(([i, t]) => { out += `<text x="${L + i * band + band / 2}" y="${H - 4}" text-anchor="middle">${esc(t)}</text>`; });
+    return out + '</svg>';
+  }
+  function calendar(weeks) {
+    const goal = S.goal || 20, cell = 15, gap = 3, L = 20, T = 14;
+    const start = dayStart(); start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - (weeks - 1) * 7); // monday, weeks ago
+    const W = L + weeks * (cell + gap), H = T + 7 * (cell + gap);
+    let out = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Календарь занятий за ${weeks} недель">`;
+    ['пн', 'ср', 'пт'].forEach((t, j) => { out += `<text x="0" y="${T + (j * 2) * (cell + gap) + cell - 3}">${t}</text>`; });
+    const today = dayKey(), now = dayStart();
+    let lastMonth = -1, lastLabelX = -99;
+    for (let wk = 0; wk < weeks; wk++) {
+      for (let d = 0; d < 7; d++) {
+        const date = new Date(start); date.setDate(start.getDate() + wk * 7 + d);
+        if (date > now) continue;
+        if (d === 0 && date.getMonth() !== lastMonth) {
+          lastMonth = date.getMonth();
+          const lx = L + wk * (cell + gap);
+          if (lx - lastLabelX >= 30) { out += `<text x="${lx}" y="9">${MONTHS_SHORT[lastMonth]}</text>`; lastLabelX = lx; }
+        }
+        const k = dayKey(date), c = dayTotal(k, 'c'), n = dayTotal(k, 'n'), need = k === today ? goal : dayGoal(k, goal);
+        const lvl = !c ? 0 : c >= need ? 4 : c >= need / 2 ? 3 : c >= need / 4 ? 2 : 1;
+        const x = L + wk * (cell + gap), y = T + d * (cell + gap);
+        const tip = c ? `${plural(c, ['ответ', 'ответа', 'ответов'])}${n ? ', новых слов: ' + n : ''}${c >= need ? ', цель выполнена' : ''}` : 'занятий не было';
+        out += `<rect class="hit" x="${x - 1}" y="${y - 1}" width="${cell + 2}" height="${cell + 2}" tabindex="0" data-tv="${esc(tip)}" data-tl="${esc(fmtDay(date))}" aria-label="${esc(fmtDay(date) + ': ' + tip)}"/>`;
+        out += `<rect class="mark cal-cell l${lvl}${k === today ? ' today' : ''}" x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3"/>`;
+      }
+    }
+    return out + '</svg>';
+  }
+  let editingName = false;
+  function renderProfile() {
+    view.className = 'wrap view';
+    const prof = me(), name = prof.name || '', goal = S.goal || 20;
+    const st = streakInfo(), best = Math.max(bestStreak(), st.streak), mix = wordMix();
+    const acc = accuracy(-6, 0), accPrev = accuracy(-13, -7);
+    const newWeek = Array.from({ length: 7 }, (_, i) => dayTotal(dayKey(dayStart(-i)), 'n')).reduce((a, b) => a + b, 0);
+    const today = todayCount();
+    // answers per day, 30 days
+    const d30 = Array.from({ length: 30 }, (_, i) => dayStart(i - 29));
+    const a30 = d30.map(d => dayTotal(dayKey(d), 'c'));
+    const t30 = d30.map((d, i) => [plural(a30[i], ['ответ', 'ответа', 'ответов']), fmtDay(d)]);
+    const ticks30 = [[0, `${d30[0].getDate()} ${MONTHS[d30[0].getMonth()]}`], [14, `${d30[14].getDate()} ${MONTHS[d30[14].getMonth()]}`], [29, 'сегодня']];
+    // new words per week, 12 weeks (monday-based)
+    const monday = dayStart(); monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));
+    const weeks = Array.from({ length: 12 }, (_, i) => { const s0 = new Date(monday); s0.setDate(monday.getDate() - (11 - i) * 7); return s0; });
+    const nw = weeks.map(s0 => { let n = 0; for (let j = 0; j < 7; j++) { const d = new Date(s0); d.setDate(s0.getDate() + j); n += dayTotal(dayKey(d), 'n'); } return n; });
+    const tw = weeks.map((s0, i) => { const e = new Date(s0); e.setDate(s0.getDate() + 6); return [plural(nw[i], ['новое слово', 'новых слова', 'новых слов']), `${s0.getDate()} ${MONTHS[s0.getMonth()]} – ${e.getDate()} ${MONTHS[e.getMonth()]}`]; });
+    const ticksW = [[0, `${weeks[0].getDate()} ${MONTHS[weeks[0].getMonth()]}`], [11, 'эта неделя']];
+    // forecast
+    const fc = forecast();
+    const tf = fc.map((v, i) => [plural(v, ['повторение', 'повторения', 'повторений']), i === 0 ? 'сегодня' : i === 1 ? 'завтра' : fmtDay(dayStart(i))]);
+    const ticksF = fc.map((_, i) => [i, i === 0 ? 'сег.' : i === 1 ? 'завтра' : DAY_NAMES[dayStart(i).getDay()]]);
+    const mem = memoryFit();
+    const total = WORDS.length || 1;
+    const mixRow = (label, v) => `<div class="mix-row"><span>${label}</span><b>${v}</b><div class="mix-track"><span style="width:${Math.round(v / total * 100)}%"></span></div></div>`;
+    const accDelta = acc && accPrev ? acc.pct - accPrev.pct : null;
+    view.innerHTML = `<div class="pf">
+      <section class="pf-card" aria-label="Профиль">
+        <div class="pf-head">
+          <span class="avatar av-${(prof.c || 0) % 6}" aria-hidden="true">${esc((name || 'Я').trim().charAt(0).toUpperCase())}</span>
+          <div class="pf-who"><p class="pf-name">${esc(name || 'Без имени')}</p><span class="pf-sub">${Sync.on ? 'Прогресс синхронизируется между устройствами' : 'Прогресс хранится на этом устройстве'}</span></div>
+          ${editingName ? '' : '<button class="btn btn-ghost btn-sm" type="button" data-act="pf-rename">Имя</button>'}
+        </div>
+        ${editingName ? `<form class="name-form" id="nameForm"><input id="pfName" maxlength="30" placeholder="Как тебя зовут" value="${esc(name)}" autocomplete="off"><button class="btn btn-primary btn-sm" type="submit">Сохранить</button></form>` : ''}
+      </section>
+      <div class="kpis">
+        <div class="kpi"><span class="kpi-label">Дней подряд</span><span class="kpi-value">${st.streak}</span><span class="kpi-sub">лучшая серия: ${best}</span></div>
+        <div class="kpi"><span class="kpi-label">Сегодня ответов</span><span class="kpi-value">${today}</span><span class="kpi-sub">цель ${goal}${today >= goal ? ', выполнена' : ''}</span></div>
+        <div class="kpi"><span class="kpi-label">Выучено слов</span><span class="kpi-value">${mix.rev}</span><span class="kpi-sub">новых за неделю: ${newWeek}</span></div>
+        <div class="kpi"><span class="kpi-label">Точность за 7 дней</span><span class="kpi-value">${acc ? acc.pct + '%' : '—'}</span><span class="kpi-sub${accDelta > 0 ? ' up' : accDelta < 0 ? ' down' : ''}">${accDelta == null ? (acc ? 'ответов: ' + acc.c : 'пока нет ответов') : (accDelta > 0 ? '+' : accDelta < 0 ? '−' : '±') + Math.abs(accDelta) + ' к прошлой неделе'}</span></div>
+      </div>
+      <section class="pf-card" aria-labelledby="hCal">
+        <h3 class="pf-title" id="hCal">Календарь занятий</h3>
+        <div class="chart">${calendar(18)}</div>
+        <div class="legend-row"><span>меньше</span><i></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>цель выполнена</span></div>
+      </section>
+      <section class="pf-card" aria-labelledby="hDays">
+        <h3 class="pf-title" id="hDays">Ответы по дням</h3>
+        <div class="chart">${columns({ values: a30, tips: t30, ticks: ticks30, cls: 'mark-a', goal, label: 'Ответы за 30 дней' })}</div>
+      </section>
+      <section class="pf-card" aria-labelledby="hWeeks">
+        <h3 class="pf-title" id="hWeeks">Новые слова по неделям</h3>
+        <div class="chart">${columns({ values: nw, tips: tw, ticks: ticksW, cls: 'mark-b', label: 'Новые слова за 12 недель' })}</div>
+      </section>
+      <section class="pf-card" aria-labelledby="hFc">
+        <h3 class="pf-title" id="hFc">Повторения на неделю вперёд</h3>
+        ${fc.some(Boolean) ? `<div class="chart">${columns({ values: fc, tips: tf, ticks: ticksF, cls: 'mark-c', label: 'Повторения на 7 дней' })}</div>` : '<p class="pf-note">Повторений пока нет: они появятся после первых карточек.</p>'}
+      </section>
+      <section class="pf-card" aria-labelledby="hMix">
+        <h3 class="pf-title" id="hMix">Слова в словаре: ${WORDS.length}</h3>
+        <div class="mix">${mixRow('Новые', mix.fresh)}${mixRow('Учу', mix.learn)}${mixRow('На повторении', mix.rev)}${mixRow('Уже знаю', mix.known)}${mixRow('Вечно забываемые (4 раза и больше)', mix.leech)}</div>
+      </section>
+      <section class="pf-card" aria-labelledby="hMem">
+        <h3 class="pf-title" id="hMem">Подстройка под твою память</h3>
+        ${mem.n >= CAL_MIN
+          ? `<p class="pf-note">По ${plural(mem.n, ['ответу', 'ответам', 'ответам'])} на повторениях: ${mem.k >= 1.05 ? `ты помнишь слова дольше среднего, интервалы длиннее в ${mem.k.toFixed(2).replace('.', ',')} раза` : mem.k <= 0.95 ? `слова забываются быстрее среднего, интервалы короче: ×${mem.k.toFixed(2).replace('.', ',')}` : 'память как в среднем, интервалы без изменений'}.</p>`
+          : `<p class="pf-note">Включится после ${CAL_MIN} ответов на повторениях: тогда интервалы подстроятся под то, как быстро ты забываешь. Сейчас ответов: ${mem.n}.</p><div class="meter" role="img" aria-label="${mem.n} из ${CAL_MIN}"><span style="width:${Math.min(100, Math.round(mem.n / CAL_MIN * 100))}%"></span></div>`}
+        <div class="toggle-row"><label for="adaptToggle">Подстраивать интервалы</label><span class="switch"><input type="checkbox" id="adaptToggle"${S.adapt !== false ? ' checked' : ''}><span></span></span></div>
+      </section>
+      <section class="pf-card" aria-labelledby="hSync">
+        <h3 class="pf-title" id="hSync">Синхронизация</h3>
+        <p class="pf-note">${Sync.on ? (Sync.state === 'error' ? esc(Sync.error) : `Включена. Последняя синхронизация: ${esc(relTime(Sync.last) || 'ещё не было')}.`) : 'Выключена. Подключи ключ GitHub, и прогресс станет общим на компьютере, iPhone и планшете.'}</p>
+        <div class="pf-row"><button class="btn btn-ghost btn-sm" type="button" data-act="open-sync">${Sync.on ? 'Настройки синхронизации' : 'Подключить'}</button></div>
+      </section>
+    </div>`;
+    const nf = $('#nameForm');
+    if (nf) { const inp = $('#pfName'); inp.focus(); nf.addEventListener('submit', e => { e.preventDefault(); renameProfile(inp.value); }); }
+    $('#adaptToggle').addEventListener('change', e => setSetting('adapt', e.target.checked ? 'true' : 'false'));
+  }
+  function renameProfile(raw) {
+    const name = String(raw || '').replace(/\s+/g, ' ').trim().slice(0, 30);
+    const prof = me();
+    prof.name = name; prof.at = Date.now();
+    store.set('tg:profiles', PROFILES);
+    editingName = false;
+    if (typeof onProfilesChanged === 'function') onProfilesChanged();
+    renderProfile();
+  }
+  // tooltip for chart marks (hover, focus, tap)
+  const tipEl = document.createElement('div');
+  tipEl.className = 'tip'; tipEl.hidden = true; tipEl.setAttribute('role', 'tooltip');
+  document.body.appendChild(tipEl);
+  function showTip(el, x, y) {
+    tipEl.textContent = '';
+    const b = document.createElement('b'); b.textContent = el.dataset.tv; tipEl.appendChild(b);
+    const sp = document.createElement('span'); sp.textContent = el.dataset.tl; tipEl.appendChild(sp);
+    tipEl.hidden = false;
+    const r = tipEl.getBoundingClientRect(), vw = document.documentElement.clientWidth;
+    tipEl.style.left = Math.max(8, Math.min(vw - r.width - 8, x - r.width / 2)) + 'px';
+    tipEl.style.top = Math.max(8, y - r.height - 12) + 'px';
+  }
+  const hideTip = () => { tipEl.hidden = true; };
+  document.addEventListener('pointerover', e => { const el = e.target.closest && e.target.closest('.chart .hit'); if (el) showTip(el, e.clientX, e.clientY); else if (!tipEl.hidden && !(e.target.closest && e.target.closest('.chart'))) hideTip(); });
+  document.addEventListener('pointermove', e => { const el = e.target.closest && e.target.closest('.chart .hit'); if (el && !tipEl.hidden) showTip(el, e.clientX, e.clientY); });
+  document.addEventListener('pointerout', e => { if (e.target.closest && e.target.closest('.chart .hit') && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('.chart .hit'))) hideTip(); });
+  document.addEventListener('focusin', e => { const el = e.target.closest && e.target.closest('.chart .hit'); if (el) { const r = el.getBoundingClientRect(); showTip(el, r.left + r.width / 2, r.top); } else hideTip(); });
+  document.addEventListener('scroll', hideTip, true);
 
   /* ================= header, settings, theme ================= */
   function renderGroupPicker() {
@@ -1787,7 +2411,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     syncWordsInfo();
   }
   function setSetting(k, raw) {
-    const v = ['size', 'newPerDay', 'goal', 'retention'].includes(k) ? Number(raw) : raw;
+    const v = ['size', 'newPerDay', 'goal', 'retention'].includes(k) ? Number(raw) : raw === 'true' ? true : raw === 'false' ? false : raw;
+    memoCache = null;
     if (S[k] === v) return;
     S[k] = v; saveSettings(); syncSettingsUI();
     if (k === 'theme') applyTheme();
@@ -1802,6 +2427,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const close = s.querySelector('[data-act="close"]'); if (close) close.focus({ preventScroll: true });
   }
   function closeSheets() {
+    flushNote();
+    if (wsWord && !$('#wordSheet').hidden) { const k = wsWord.key; setTimeout(() => { if (tab === 'list') renderListBody(); else if (tab === 'cards' && card && card.w.key === k) { const f = $('#card .front'), b = $('#card .back'); if (f) f.innerHTML = faceHTML(card.w, 'front'); if (b) b.innerHTML = faceHTML(card.w, 'back'); } }, 0); }
     $$('.sheet').forEach(s => { if (s.hidden) return; s.classList.remove('open'); setTimeout(() => { s.hidden = true; }, reduced() ? 0 : 200); });
     if (yg.widget) { try { yg.widget.pause(); } catch (e) { /* ignore */ } }
     if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
@@ -1861,18 +2488,18 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 
   const Sync = {
     token: store.get('tg:sync-token', ''),
-    gist: store.get('tg:sync-gist', ''),
-    meta: store.get('tg:sync-meta', null) || { resetAt: 0 },
-    last: store.get('tg:sync-last', 0),
-    dirty: store.get('tg:sync-dirty', false),
-    remoteBy: store.get('tg:sync-by', ''),
-    remoteAt: store.get('tg:sync-at', 0),
+    gist: store.get(pk('tg:sync-gist'), ''),
+    meta: store.get(pk('tg:sync-meta'), null) || { resetAt: 0 },
+    last: store.get(pk('tg:sync-last'), 0),
+    dirty: store.get(pk('tg:sync-dirty'), false),
+    remoteBy: store.get(pk('tg:sync-by'), ''),
+    remoteAt: store.get(pk('tg:sync-at'), 0),
     state: 'off', error: '', fatal: false, running: null, again: false, timer: 0, lastPush: 0,
     get on() { return !!this.token; },
     save() {
-      store.set('tg:sync-token', this.token); store.set('tg:sync-gist', this.gist); store.set('tg:sync-meta', this.meta);
-      store.set('tg:sync-last', this.last); store.set('tg:sync-dirty', this.dirty);
-      store.set('tg:sync-by', this.remoteBy); store.set('tg:sync-at', this.remoteAt);
+      store.set('tg:sync-token', this.token); store.set(pk('tg:sync-gist'), this.gist); store.set(pk('tg:sync-meta'), this.meta);
+      store.set(pk('tg:sync-last'), this.last); store.set(pk('tg:sync-dirty'), this.dirty);
+      store.set(pk('tg:sync-by'), this.remoteBy); store.set(pk('tg:sync-at'), this.remoteAt);
     },
     async api(path, opts = {}) {
       const headers = { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + this.token };
@@ -1896,7 +2523,34 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     payload(srs, act) {
       const a = {};
       recentDays(act || {}).forEach(k => { a[k] = act[k]; });
-      return { app: 'ty-geniy', v: 1, at: Date.now(), by: deviceName(), resetAt: this.meta.resetAt || 0, srs: compactSrs(srs), act: a };
+      return { app: 'ty-geniy', v: 1, at: Date.now(), by: deviceName(), resetAt: this.meta.resetAt || 0, srs: compactSrs(srs), act: a, cal: CAL, notes: NOTES };
+    },
+    mergeCal(remote) {
+      const rc = (remote && remote.cal) || {};
+      const out = JSON.parse(JSON.stringify(CAL));
+      let localChanged = false, remoteChanged = false;
+      new Set(Object.keys(out).concat(Object.keys(rc))).forEach(dev => {
+        const l = (out[dev] && out[dev].b) || [], r = (rc[dev] && rc[dev].b) || [], b = [];
+        for (let i = 0; i < Math.max(l.length, r.length); i++) {
+          const a = l[i] || [0, 0], c = r[i] || [0, 0];
+          b[i] = [Math.max(a[0], c[0]), Math.max(a[1], c[1])];
+          if (b[i][0] > a[0] || b[i][1] > a[1]) localChanged = true;
+          if (b[i][0] > c[0] || b[i][1] > c[1]) remoteChanged = true;
+        }
+        out[dev] = { b };
+      });
+      return { out, localChanged, remoteChanged };
+    },
+    mergeNotes(remote) {
+      const rn = (remote && remote.notes) || {};
+      const out = Object.assign({}, NOTES);
+      let localChanged = false, remoteChanged = false;
+      new Set(Object.keys(out).concat(Object.keys(rn))).forEach(k => {
+        const l = out[k], r = rn[k];
+        if (r && (!l || (r.at || 0) > (l.at || 0))) { out[k] = r; localChanged = true; }
+        else if (l && (!r || (l.at || 0) > (r.at || 0))) remoteChanged = true;
+      });
+      return { out, localChanged, remoteChanged };
     },
     mergeAct(remote) {
       const ra = (remote && remote.act) || {};
@@ -1905,11 +2559,15 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       Object.keys(ra).forEach(day => Object.keys(ra[day] || {}).forEach(dev => {
         const r = ra[day][dev] || {}, l = out[day] && out[day][dev];
         const c = Math.max((l && l.c) || 0, r.c || 0), n = Math.max((l && l.n) || 0, r.n || 0), g = Math.max((l && l.g) || 0, r.g || 0);
-        if (!l || c > (l.c || 0) || n > (l.n || 0) || g > (l.g || 0)) { (out[day] || (out[day] = {}))[dev] = g ? { c, n, g } : { c, n }; localChanged = true; }
+        const hasOk = (l && l.ok != null) || r.ok != null, ok = Math.max((l && l.ok) || 0, r.ok || 0);
+        if (!l || c > (l.c || 0) || n > (l.n || 0) || g > (l.g || 0) || ok > ((l && l.ok) || 0)) {
+          const v = { c, n }; if (g) v.g = g; if (hasOk) v.ok = ok;
+          (out[day] || (out[day] = {}))[dev] = v; localChanged = true;
+        }
       }));
       recentDays(out).forEach(day => Object.keys(out[day]).forEach(dev => {
         const r = ra[day] && ra[day][dev], l = out[day][dev];
-        if (!r || (r.c || 0) < (l.c || 0) || (r.n || 0) < (l.n || 0) || (r.g || 0) < (l.g || 0)) remoteChanged = true;
+        if (!r || (r.c || 0) < (l.c || 0) || (r.n || 0) < (l.n || 0) || (r.g || 0) < (l.g || 0) || (r.ok || 0) < (l.ok || 0)) remoteChanged = true;
       }));
       return { out, localChanged, remoteChanged };
     },
@@ -1965,11 +2623,13 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
             this.gist = g.id; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
           } else {
             const remote = await this.readRemote(g);
-            const m = this.merge(remote), ma = this.mergeAct(remote);
-            if (ma.localChanged) { ACT = ma.out; store.set('tg:act', ACT); }
-            if (m.localChanged) { SRS = m.out; store.set('tg:srs', SRS); }
-            if (m.localChanged || ma.localChanged) refreshAfterSync();
-            if (m.remoteChanged || ma.remoteChanged) {
+            const m = this.merge(remote), ma = this.mergeAct(remote), mc = this.mergeCal(remote), mn = this.mergeNotes(remote);
+            if (ma.localChanged) { ACT = ma.out; store.set(pk('tg:act'), ACT); }
+            if (mc.localChanged) { CAL = mc.out; store.set(pk('tg:cal'), CAL); memoCache = null; }
+            if (mn.localChanged) { NOTES = mn.out; store.set(pk('tg:notes'), NOTES); }
+            if (m.localChanged) { SRS = m.out; store.set(pk('tg:srs'), SRS); }
+            if (m.localChanged || ma.localChanged || mn.localChanged) refreshAfterSync();
+            if (m.remoteChanged || ma.remoteChanged || mc.remoteChanged || mn.remoteChanged) {
               await this.api('/gists/' + this.gist, { method: 'PATCH', body: { files: { [SYNC_FILE]: { content: JSON.stringify(this.payload(m.out, ACT)) } } } });
               this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
             } else {
@@ -1990,7 +2650,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     },
     changed() {
       if (!this.token) return;
-      this.dirty = true; store.set('tg:sync-dirty', true);
+      this.dirty = true; store.set(pk('tg:sync-dirty'), true);
       this.schedule(15000);
     },
     schedule(ms) {
@@ -2053,10 +2713,12 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   };
   onSrsSaved = () => Sync.changed();
   onActChanged = () => Sync.changed();
+  onNotesChanged = () => Sync.changed();
   function refreshAfterSync() {
     if (tab === 'list') { if ($('#listBody')) renderListBody(); }
     else if (tab === 'cards') { if (!learnPrompt && (!card || !card.flipped)) renderCards(); }
     else if (tab === 'train' && !trainMode) renderHub();
+    else if (tab === 'profile' && !editingName) renderProfile();
   }
   $('#syncForm').addEventListener('submit', e => { e.preventDefault(); Sync.connect($('#syncToken').value); });
   document.addEventListener('visibilitychange', () => {
@@ -2106,7 +2768,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'say-voice': if (w) playWord(w, 'voice'); break;
       case 'say-ex': if (w && w.ex) playExample(w); break;
       case 'yg': if (!IS_PREVIEW && w) { e.preventDefault(); openYouglish(w); } break;
-      case 'replay': case 'replay-slow': if (w) playWord(w); break;
+      case 'replay': if (w) playWord(w); break;
+      case 'replay-slow': if (w) playWordSlow(w); break;
       case 'replay-ru': if (w) playRu(w); break;
       case 'show-ru': if (ses) { ses.showRu = true; const typed = $('#answer') ? $('#answer').value : ''; render(); if ($('#answer')) $('#answer').value = typed; } break;
       case 'sync-now': Sync.run('manual').then(() => { if (Sync.state === 'idle') toast('Синхронизировано'); }); break;
@@ -2114,13 +2777,13 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'sync-off': Sync.disconnect(); break;
       case 'opt': choose(Number(el.dataset.i)); break;
       case 'next': case 'wnext': advance(); break;
-      case 'intro-next': settle(true, {}); advance(); break;
+      case 'intro-next': settle(true, { intro: true }); advance(); break;
       case 'hint': showHint(); break;
       case 'giveup': giveUp(); break;
       case 'override': override(); break;
       case 'hub': Player.stop(); trainMode = null; ses = null; Sound.stop(); $('#main').scrollTop = 0; render(); break;
       case 'known': knownFromCard(); break;
-      case 'more-new': { const x = store.get('tg:extra', null), cur = x && x.day === dayKey() ? x.n : 0; store.set('tg:extra', { day: dayKey(), n: cur + 5 }); card = null; renderCards(); break; }
+      case 'more-new': { const x = store.get(pk('tg:extra'), null), cur = x && x.day === dayKey() ? x.n : 0; store.set(pk('tg:extra'), { day: dayKey(), n: cur + 5 }); card = null; renderCards(); break; }
       case 'sort-known': sortDecide('known'); break;
       case 'sort-learn': sortDecide('learn'); break;
       case 'sort-show': if (ses) { ses.show = true; render(); } break;
@@ -2130,13 +2793,25 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'pl-next': Player.nextWord(); break;
       case 'pl-prev': Player.prevWord(); break;
       case 'pl-src': Player.load(el.dataset.val); render(); break;
-      case 'pl-gap': Player.gap = Number(el.dataset.val); store.set('tg:gap', Player.gap); if (!Player.playing) Player.buildSteps(); render(); break;
+      case 'pl-rate': S.prate = Number(el.dataset.val); saveSettings(); render(); break;
+      case 'pl-gap': Player.gap = Number(el.dataset.val); store.set(pk('tg:gap'), Player.gap); if (!Player.playing) Player.buildSteps(); render(); break;
       case 'list-more': listLimit += 300; renderListBody(); break;
-      case 'row-known': if (w) { const prev = markKnown(w); renderListBody(); toast(`«${w.en}» отмечено как знакомое`, { action: 'Отменить', run: () => { unmarkKnown(w, prev); if (tab === 'list') renderListBody(); } }); } break;
-      case 'row-relearn': if (w) { const prev = SRS[w.key] || {}; const now = Date.now(); SRS[w.key] = { st: 'learning', s: W[2], d: initD(2), due: now, last: now, lg: 3, es: 0, reps: (prev.reps || 0) + 1, lapses: prev.lapses || 0 }; saveSrs(); renderListBody(); toast('Слово вернётся на карточки сегодня'); } break;
+      case 'pf-rename': editingName = true; renderProfile(); break;
+      case 'open-sync': syncSettingsUI(); Sync.paint(); openSheet('#settings'); setTimeout(() => { const g = $('#syncGroup'); if (g) g.scrollIntoView({ block: 'start', behavior: reduced() ? 'auto' : 'smooth' }); }, 220); break;
+      case 'row-known': if (w) { const prev = markKnown(w); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast(`«${w.en}» отмечено как знакомое`, { action: 'Отменить', run: () => { unmarkKnown(w, prev); if (tab === 'list') renderListBody(); } }); } break;
+      case 'row-relearn': if (w) { const prev = SRS[w.key] || {}; const now = Date.now(); SRS[w.key] = { st: 'learning', s: W[2], d: initD(2), due: now, last: now, lg: 3, es: 0, reps: (prev.reps || 0) + 1, lapses: prev.lapses || 0 }; saveSrs(); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast('Слово вернётся на карточки сегодня'); } break;
       case 'mode': startMode(el.dataset.mode); break;
       case 'repeat': { const k = ses.kind, words = shuffle(Array.from(new Set(ses.wrong))); trainMode = k; ses = { kind: k, items: words.map(x => ({ w: x, type: MODES[k].type() })), i: 0, right: 0, wrong: [], st: null, opts: null, hint: 0, spoken: -1 }; render(); break; }
       case 'start-learn': startLearn(); break;
+      case 'start-leech': startLearn('leech'); break;
+      case 'start-smart': startSmart(); break;
+      case 'more-new-smart': { const x = store.get(pk('tg:extra'), null), cur = x && x.day === dayKey() ? x.n : 0; store.set(pk('tg:extra'), { day: dayKey(), n: cur + 5 }); startSmart(); break; }
+      case 'word-info': if (w) openWordSheet(w); break;
+      case 'say-slow': if (w) playWordSlow(w); break;
+      case 'say-ex-slow': if (w && w.ex) playExampleSlow(w); break;
+      case 'replay-ru-slow': if (w) playRuSlow(w); break;
+      case 'card-hint': if (card) { card.hint = true; const front = $('#card .front'); if (front) front.innerHTML = faceHTML(card.w, 'front'); } break;
+      case 'ws-ex': case 'ws-ex-slow': if (wsWord) { const x = exampleItems(wsWord)[Number(el.dataset.i)]; if (x) { if (el.dataset.act === 'ws-ex') { if (x.path) Sound.play(x.path).catch(() => speakFallback(x.en)); else speakFallback(x.en); } else playPathSlow(x.path, x.en); } } break;
       case 'later': learnPrompt = false; promptSnooze = problemWords().length + 5; render(); break;
       case 'go-train': setTab('train'); break;
       case 'go-cards': trainMode = null; ses = null; setTab('cards'); break;
@@ -2162,7 +2837,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const w = tab === 'cards' && card ? card.w : (currentItem() || {}).w;
     if (e.code === 'KeyS' && !typing && w) {
       const it = tab === 'train' ? currentItem() : null;
-      if (it && it.type === 'listen-ru' && !ses.st) playRu(w); else playWord(w);
+      const ru = it && it.type === 'listen-ru' && !ses.st;
+      if (e.shiftKey) { if (ru) playRuSlow(w); else playWordSlow(w); } else if (ru) playRu(w); else playWord(w);
       return;
     }
     if (tab === 'cards' && !typing && card) {
