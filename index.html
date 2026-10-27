@@ -452,6 +452,45 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .note-line { display: flex; gap: 6px; align-items: flex-start; justify-content: center; margin: 2px 0 0; max-width: 100%; color: var(--ink-2); font-size: 15px; line-height: 1.35; text-align: left; }
 .note-line .i { flex: none; width: 18px; height: 18px; margin-top: 1px; color: var(--warn); }
 .leech-hint { margin: 0; padding: 8px 12px; border-radius: 10px; background: var(--bad-bg); color: var(--bad); font-size: 14.5px; }
+/* people */
+.people { display: flex; flex-direction: column; gap: 8px; }
+.person { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; padding: 10px 12px; border-radius: 12px; background: var(--paper-2); }
+.person .avatar { width: 38px; height: 38px; font-size: 16px; }
+.person-name { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+.person-name small { margin-left: 6px; color: var(--ink-3); font-size: 12.5px; font-weight: 500; }
+.person-stats { grid-column: 2 / -1; margin: 0; font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.person-actions { display: flex; gap: 6px; }
+.add-form { display: flex; gap: 8px; }
+.add-form input { flex: 1; min-width: 0; min-height: 40px; padding: 8px 12px; border: 1.5px solid var(--hair); border-radius: 10px; background: var(--paper); color: var(--ink); font: inherit; }
+.hdr-avatar { width: 40px; height: 40px; padding: 0; border: 0; font-size: 16px; }
+.who-list { display: flex; flex-direction: column; gap: 8px; padding-bottom: 8px; }
+.who-list button { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 0; border-radius: 12px; background: var(--paper-2); color: var(--ink); font: inherit; font-size: 17px; font-weight: 600; text-align: left; }
+.who-list .avatar { width: 38px; height: 38px; font-size: 16px; }
+/* add word */
+.list-tools { display: flex; gap: 8px; }
+.list-tools .search { flex: 1; min-width: 0; }
+.add-btn { flex: none; display: inline-flex; align-items: center; gap: 6px; height: 46px; padding: 0 14px; border: 0; border-radius: 12px; background: var(--ink); color: var(--paper); font: inherit; font-size: 15px; font-weight: 600; }
+.add-btn .i { width: 20px; height: 20px; }
+.aw { display: flex; flex-direction: column; gap: 10px; padding-bottom: 10px; }
+.aw label { font-size: 13px; font-weight: 600; color: var(--ink-2); }
+.aw input, .aw select { width: 100%; min-height: 44px; padding: 8px 12px; border: 1.5px solid var(--hair); border-radius: 10px; background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; }
+.aw input:focus, .aw select:focus { outline: none; border-color: var(--ink-2); }
+.aw input[lang="en"] { font-family: var(--font-word); font-size: 19px; }
+.aw-row { display: flex; gap: 8px; }
+.aw-row input { flex: 1; min-width: 0; }
+.aw-status { min-height: 1.3em; margin: 0; font-size: 13.5px; color: var(--ink-3); }
+.aw-status.warn { color: var(--warn); }
+.aw-sense { display: flex; flex-direction: column; gap: 6px; }
+.aw-gloss { font-size: 12.5px; color: var(--ink-3); }
+.aw-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.aw-chip { min-height: 34px; padding: 5px 11px; border: 0; border-radius: 999px; background: var(--paper-2); color: var(--ink); font: inherit; font-size: 15px; }
+.aw-chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.aw-ex { display: flex; flex-direction: column; gap: 6px; }
+.aw-ex button { display: flex; flex-direction: column; gap: 2px; padding: 9px 12px; border: 0; border-radius: 10px; background: var(--paper-2); color: var(--ink); font: inherit; text-align: left; }
+.aw-ex button[aria-pressed="true"] { box-shadow: inset 0 0 0 2px var(--ink); }
+.aw-ex .en { font-family: var(--font-word); font-size: 17px; }
+.aw-ex .tr { font-size: 14px; color: var(--ink-2); }
+.tag-local { background: var(--warn-bg); color: var(--warn); }
 .toast.has-action { display: flex; align-items: center; gap: 14px; text-align: left; }
 .toast.has-action.show { pointer-events: auto; }
 .toast button { flex: none; min-height: 32px; padding: 4px 2px; border: 0; background: none; color: var(--toast-act); font: inherit; font-weight: 600; }
@@ -469,6 +508,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     <div class="wrap">
       <h1 class="brand">Ты гений</h1>
       <label class="picker" for="group"><span class="sr">Тема</span><select id="group"></select></label>
+      <button class="avatar hdr-avatar" id="hdrAvatar" type="button" hidden></button>
       <button class="icon-btn" id="openSettings" type="button" aria-label="Настройки">
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg>
       </button>
@@ -578,7 +618,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       <p class="set-note" id="syncInfo"></p>
       <div id="syncOff">
         <ol class="sync-steps">
-          <li><a id="tokenLink" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Создай ключ на GitHub</a>. Всё уже заполнено: пролистай страницу вниз, нажми зелёную кнопку «Generate token» и скопируй ключ.</li>
+          <li><a id="tokenLink" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Создай ключ на GitHub</a>. Название и права уже заполнены. В блоке «Repository access» выбери «Only select repositories» и отметь wordsUSS: это нужно, чтобы добавлять слова прямо из приложения. Затем пролистай вниз, нажми зелёную кнопку «Generate token» и скопируй ключ.</li>
           <li>Вставь ключ сюда и нажми «Подключить».</li>
           <li>На iPhone, планшете и других устройствах вставь тот же ключ. Переслать его себе удобно кнопкой «Скопировать ключ», она появится после подключения.</li>
         </ol>
@@ -614,6 +654,42 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       <a id="ygLink" href="https://youglish.com" target="_blank" rel="noopener">Открыть на youglish.com</a>
       <span class="yg-legal"><span>Powered by <a href="https://youglish.com" target="_blank" rel="noopener">YouGlish.com</a></span><a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms</a></span>
     </div>
+  </div>
+</div>
+
+<div class="sheet" id="addSheet" hidden>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="addTitle">
+    <div class="sheet-head">
+      <h2 id="addTitle">Добавить слово</h2>
+      <button class="icon-btn" type="button" data-act="close" aria-label="Закрыть"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <form class="aw" id="addForm" autocomplete="off" novalidate>
+      <label for="awEn">Слово или выражение по-английски</label>
+      <div class="aw-row"><input id="awEn" lang="en" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="например, reluctant или look forward to"><button class="btn btn-ghost btn-sm" type="button" data-act="aw-find">Найти</button></div>
+      <p class="aw-status" id="awDup" aria-live="polite"></p>
+      <div id="awSenses"></div>
+      <label for="awRu">Перевод</label>
+      <input id="awRu" placeholder="Нажми варианты выше или напиши свой">
+      <label for="awEx">Пример по-английски</label>
+      <input id="awEx" lang="en" autocapitalize="sentences" placeholder="Пример подставится сам, можно написать свой">
+      <p class="aw-status" id="awExStatus" aria-live="polite"></p>
+      <div class="aw-ex" id="awExList"></div>
+      <label for="awGroup">Тема</label>
+      <select id="awGroup"></select>
+      <input id="awNewGroup" placeholder="Название новой темы" hidden>
+      <p class="aw-status" id="awSave"></p>
+      <button class="btn btn-primary" type="submit">Добавить</button>
+    </form>
+  </div>
+</div>
+
+<div class="sheet" id="whoSheet" hidden>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="whoTitle">
+    <div class="sheet-head">
+      <h2 id="whoTitle">Кто занимается на этом устройстве?</h2>
+      <button class="icon-btn" type="button" data-act="close" aria-label="Закрыть"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="who-list" id="whoList"></div>
   </div>
 </div>
 
@@ -674,6 +750,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     bulb: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3.5a5.5 5.5 0 0 0-3.2 10c.7.5 1.2 1.4 1.2 2.3v.2h4v-.2c0-.9.5-1.8 1.2-2.3A5.5 5.5 0 0 0 12 3.5z"/></svg>',
     repeat: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M17.5 3.5v3.6h-3.6M6.5 20.5v-3.6h3.6"/></svg>',
     spark: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>',
+    plus: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
     cloze: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9h4M16.5 9h4M3.5 15h17"/><rect x="9" y="7" width="6" height="4" rx="1"/></svg>',
   };
 
@@ -684,6 +761,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   if (!PROFILES.some(p => p.id === PID)) PID = 'main';
   const pk = k => PID === 'main' ? k : k + '@' + PID;   // first profile keeps the original keys
   const me = () => PROFILES.find(p => p.id === PID) || PROFILES[0];
+  const people = () => PROFILES.filter(p => !p.deleted);
+  let onProfilesChanged = () => {};
+  function saveProfiles() { store.set('tg:profiles', PROFILES); onProfilesChanged(); }
+  const pkOf = (id, k) => id === 'main' ? k : k + '@' + id;
+  const nameOf = p => (p && p.name) || (p && p.id === 'main' ? 'Я' : 'Без имени');
 
   /* ================= state ================= */
   const DEFAULTS = { dir: 'en-ru', primary: 'human', autoplay: true, size: 20, group: '', theme: 'auto', newPerDay: 15, goal: 20, retention: 90, adapt: true };
@@ -761,6 +843,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     WORDS = r.words; GROUPS = r.groups; SKIPPED = r.skipped;
     KEYMAP = new Map();
     WORDS.forEach(w => { if (!KEYMAP.has(w.key)) KEYMAP.set(w.key, w); });
+    mergePending();
     if (S.group && !GROUPS.includes(S.group)) { S.group = ''; saveSettings(); }
     renderGroupPicker();
     syncWordsInfo();
@@ -2075,7 +2158,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function renderList() {
     view.className = 'wrap view';
     view.innerHTML = `<div class="list-head">
-        <input id="q" type="search" class="search" placeholder="Найти слово или перевод" aria-label="Поиск по списку" autocomplete="off" autocapitalize="none" spellcheck="false" value="${esc(listQuery)}">
+        <div class="list-tools"><input id="q" type="search" class="search" placeholder="Найти слово или перевод" aria-label="Поиск по списку" autocomplete="off" autocapitalize="none" spellcheck="false" value="${esc(listQuery)}"><button class="add-btn" type="button" data-act="add-word">${ICON.plus}<span>Слово</span></button></div>
         <div class="stats-row" id="listStats"></div>
       </div>
       <div class="list" id="listBody"></div>
@@ -2085,6 +2168,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
   function rowActionsHTML(w) {
     const s = SRS[w.key], k = esc(w.key);
+    const pe = w.pending ? PENDING.find(x => keyOfEn(x.en) === w.key) : null;
+    const pend = pe && pe.status === 'local' ? `<p class="pf-note">${esc(pe.err || 'Слово пока есть только на этом устройстве.')}</p>${Sync.token && repoName() ? `<button class="btn btn-ghost btn-sm" type="button" data-act="pending-retry" data-key="${k}">Сохранить на GitHub</button>` : ''}` : '';
+    if (pend) return `<div class="row-actions">${pend}</div>`;
     if (isFresh(s)) return `<div class="row-actions"><button class="btn btn-ghost btn-sm" type="button" data-act="row-known" data-key="${k}">Уже знаю</button></div>`;
     if (s.kn || s.st === 'review') return `<div class="row-actions"><button class="btn btn-ghost btn-sm" type="button" data-act="row-relearn" data-key="${k}">Учить заново</button></div>`;
     return '';
@@ -2102,7 +2188,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       const open = openKey === w.key;
       html += `<div class="row">
         <button class="row-main" type="button" data-act="row" data-key="${esc(w.key)}" aria-expanded="${open}">
-          <span class="row-text"><span class="row-en" lang="en">${esc(w.en)}</span><span class="row-ru">${esc(w.ru)}</span></span>${statusTag(w)}
+          <span class="row-text"><span class="row-en" lang="en">${esc(w.en)}</span><span class="row-ru">${esc(w.ru)}</span></span>${pendingTag(w) || statusTag(w)}
         </button>
         ${open ? `<div class="row-more">${ipaHTML(w)}${w.ex ? `<p class="ex" lang="en">${esc(w.ex)}</p>` : ''}${noteLine(w)}${chipsHTML(w, !!w.ex, true)}${rowActionsHTML(w)}</div>` : ''}
       </div>`;
@@ -2262,6 +2348,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function renderProfile() {
     view.className = 'wrap view';
     const prof = me(), name = prof.name || '', goal = S.goal || 20;
+    paintHeaderAvatar();
     const st = streakInfo(), best = Math.max(bestStreak(), st.streak), mix = wordMix();
     const acc = accuracy(-6, 0), accPrev = accuracy(-13, -7);
     const newWeek = Array.from({ length: 7 }, (_, i) => dayTotal(dayKey(dayStart(-i)), 'n')).reduce((a, b) => a + b, 0);
@@ -2289,8 +2376,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       <section class="pf-card" aria-label="Профиль">
         <div class="pf-head">
           <span class="avatar av-${(prof.c || 0) % 6}" aria-hidden="true">${esc((name || 'Я').trim().charAt(0).toUpperCase())}</span>
-          <div class="pf-who"><p class="pf-name">${esc(name || 'Без имени')}</p><span class="pf-sub">${Sync.on ? 'Прогресс синхронизируется между устройствами' : 'Прогресс хранится на этом устройстве'}</span></div>
-          ${editingName ? '' : '<button class="btn btn-ghost btn-sm" type="button" data-act="pf-rename">Имя</button>'}
+          <div class="pf-who"><p class="pf-name">${esc(name || 'Без имени')}</p><span class="pf-sub" id="pfSub">${esc(pfSubText())}</span></div>
+          ${editingName ? '' : `<span class="person-actions" id="pfActions">${pfActionsHTML()}</span>`}
         </div>
         ${editingName ? `<form class="name-form" id="nameForm"><input id="pfName" maxlength="30" placeholder="Как тебя зовут" value="${esc(name)}" autocomplete="off"><button class="btn btn-primary btn-sm" type="submit">Сохранить</button></form>` : ''}
       </section>
@@ -2328,15 +2415,29 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
           : `<p class="pf-note">Включится после ${CAL_MIN} ответов на повторениях: тогда интервалы подстроятся под то, как быстро ты забываешь. Сейчас ответов: ${mem.n}.</p><div class="meter" role="img" aria-label="${mem.n} из ${CAL_MIN}"><span style="width:${Math.min(100, Math.round(mem.n / CAL_MIN * 100))}%"></span></div>`}
         <div class="toggle-row"><label for="adaptToggle">Подстраивать интервалы</label><span class="switch"><input type="checkbox" id="adaptToggle"${S.adapt !== false ? ' checked' : ''}><span></span></span></div>
       </section>
+      <section class="pf-card" aria-labelledby="hPeople">
+        <h3 class="pf-title" id="hPeople">Кто занимается</h3>
+        <div id="peopleBox">${peopleHTML()}</div>
+      </section>
       <section class="pf-card" aria-labelledby="hSync">
         <h3 class="pf-title" id="hSync">Синхронизация</h3>
-        <p class="pf-note">${Sync.on ? (Sync.state === 'error' ? esc(Sync.error) : `Включена. Последняя синхронизация: ${esc(relTime(Sync.last) || 'ещё не было')}.`) : 'Выключена. Подключи ключ GitHub, и прогресс станет общим на компьютере, iPhone и планшете.'}</p>
-        <div class="pf-row"><button class="btn btn-ghost btn-sm" type="button" data-act="open-sync">${Sync.on ? 'Настройки синхронизации' : 'Подключить'}</button></div>
+        <p class="pf-note" id="pfSyncNote">${esc(pfSyncText())}</p>
+        <div class="pf-row"><button class="btn btn-ghost btn-sm" type="button" data-act="open-sync" id="pfSyncBtn">${Sync.on ? 'Настройки синхронизации' : 'Подключить'}</button></div>
       </section>
     </div>`;
     const nf = $('#nameForm');
     if (nf) { const inp = $('#pfName'); inp.focus(); nf.addEventListener('submit', e => { e.preventDefault(); renameProfile(inp.value); }); }
     $('#adaptToggle').addEventListener('change', e => setSetting('adapt', e.target.checked ? 'true' : 'false'));
+    bindPeople();
+    loadPeople(false);
+  }
+  const pfSubText = () => Sync.on ? 'Прогресс синхронизируется между устройствами' : 'Прогресс хранится на этом устройстве';
+  const pfSyncText = () => Sync.on ? (Sync.state === 'error' ? Sync.error : Sync.state === 'syncing' ? 'Синхронизирую…' : `Включена. Последняя синхронизация: ${relTime(Sync.last) || 'ещё не было'}.`) : 'Выключена. Подключи ключ GitHub, и прогресс станет общим на компьютере, iPhone и планшете.';
+  function paintProfileSync() {
+    const a = $('#pfSub'), b = $('#pfSyncNote'), c = $('#pfSyncBtn');
+    if (a) a.textContent = pfSubText();
+    if (b) b.textContent = pfSyncText();
+    if (c) c.textContent = Sync.on ? 'Настройки синхронизации' : 'Подключить';
   }
   function renameProfile(raw) {
     const name = String(raw || '').replace(/\s+/g, ' ').trim().slice(0, 30);
@@ -2448,10 +2549,13 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 
   /* ================= синхронизация через GitHub ================= */
   const SYNC_FILE = 'ty-geniy-progress.json';
+  const LIST_FILE = 'ty-geniy-profiles.json';
+  const progFile = id => id === 'main' ? SYNC_FILE : 'ty-geniy-progress-' + id + '.json';
+  const MY_FILE = progFile(PID);
   const TOKEN_URL = 'https://github.com/settings/personal-access-tokens/new?' + new URLSearchParams({
     name: 'Ты гений — синхронизация',
-    description: 'Синхронизация прогресса приложения «Ты гений» между устройствами. Доступ только к gist.',
-    expires_in: 'none', gists: 'write'
+    description: 'Синхронизация прогресса «Ты гений» и добавление слов в words.txt. Доступ к gist и к репозиторию со словами.',
+    expires_in: 'none', gists: 'write', contents: 'write'
   }).toString();
   function deviceName() {
     const ua = navigator.userAgent;
@@ -2494,22 +2598,36 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     dirty: store.get(pk('tg:sync-dirty'), false),
     remoteBy: store.get(pk('tg:sync-by'), ''),
     remoteAt: store.get(pk('tg:sync-at'), 0),
+    etag: store.get(pk('tg:sync-etag'), ''),
+    listGist: store.get('tg:sync-list-gist', ''),
+    listAt: 0,
+    listDirty: store.get('tg:sync-list-dirty', false),
     state: 'off', error: '', fatal: false, running: null, again: false, timer: 0, lastPush: 0,
     get on() { return !!this.token; },
     save() {
       store.set('tg:sync-token', this.token); store.set(pk('tg:sync-gist'), this.gist); store.set(pk('tg:sync-meta'), this.meta);
       store.set(pk('tg:sync-last'), this.last); store.set(pk('tg:sync-dirty'), this.dirty);
       store.set(pk('tg:sync-by'), this.remoteBy); store.set(pk('tg:sync-at'), this.remoteAt);
+      store.set(pk('tg:sync-etag'), this.etag); store.set('tg:sync-list-gist', this.listGist); store.set('tg:sync-list-dirty', this.listDirty);
     },
     async api(path, opts = {}) {
       const headers = { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + this.token };
       if (opts.body) headers['Content-Type'] = 'application/json';
+      if (opts.etag) headers['If-None-Match'] = opts.etag;
       let res;
       try {
         res = await fetch('https://api.github.com' + path, { method: opts.method || 'GET', headers, body: opts.body ? JSON.stringify(opts.body) : undefined, cache: 'no-store' });
       } catch (e) {
         throw syncError('Нет связи с GitHub. Прогресс сохранён на этом устройстве и отправится позже.');
       }
+      if (res.status === 304) return { notModified: true };
+      if (opts.repo && !res.ok) {
+        if (res.status === 401) throw syncError('Ключ не подходит или отозван. Создай новый ключ и вставь его в настройках.');
+        if (res.status === 409) throw Object.assign(syncError('conflict'), { conflict: true });
+        if (res.status === 403 || res.status === 404) throw syncError('У ключа нет доступа к списку слов. Создай ключ заново: в «Repository access» выбери wordsUSS, право Contents — Read and write.');
+        throw syncError('GitHub ответил ошибкой ' + res.status + '.');
+      }
+      if (opts.keepEtag) this.lastEtag = res.headers.get('etag') || '';
       if (res.status === 404 && opts.allow404) return null;
       if (res.status === 401) throw syncError('Ключ не подходит или отозван. Создай новый ключ и вставь его.', true);
       if (res.status === 403 || res.status === 429) {
@@ -2571,22 +2689,49 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       }));
       return { out, localChanged, remoteChanged };
     },
-    async findGist() {
-      if (this.gist) {
-        const g = await this.api('/gists/' + this.gist, { allow404: true });
-        if (g && g.files && g.files[SYNC_FILE]) return g;
-        this.gist = '';
-      }
+    async findGistId(file) {
       for (let page = 1; page <= 10; page++) {
         const list = await this.api('/gists?per_page=100&page=' + page);
-        const hit = (list || []).find(g => g.files && g.files[SYNC_FILE]);
-        if (hit) { this.gist = hit.id; return this.api('/gists/' + hit.id); }
+        const hit = (list || []).find(g => g.files && g.files[file]);
+        if (hit) return hit.id;
         if (!list || list.length < 100) break;
       }
-      return null;
+      return '';
+    },
+    async findGist() {
+      if (this.gist) {
+        const g = await this.api('/gists/' + this.gist, { allow404: true, etag: this.etag, keepEtag: true });
+        if (g && g.notModified) return g;
+        if (g && g.files && g.files[MY_FILE]) { this.etag = this.lastEtag; return g; }
+        this.gist = ''; this.etag = '';
+      }
+      const id = await this.findGistId(MY_FILE);
+      if (!id) return null;
+      this.gist = id;
+      const g = await this.api('/gists/' + id, { keepEtag: true });
+      this.etag = this.lastEtag;
+      return g;
+    },
+    // people list: a tiny gist that every device reads, so names and new people show up everywhere
+    async syncList(force) {
+      if (!force && !this.listDirty && Date.now() - this.listAt < 10 * MIN) return;
+      let g = this.listGist ? await this.api('/gists/' + this.listGist, { allow404: true }) : null;
+      if (!g || !g.files || !g.files[LIST_FILE]) { this.listGist = await this.findGistId(LIST_FILE); g = this.listGist ? await this.api('/gists/' + this.listGist) : null; }
+      let remote = [];
+      if (g) { try { remote = JSON.parse((g.files[LIST_FILE] && g.files[LIST_FILE].content) || '{}').profiles || []; } catch (e) { remote = []; } }
+      const m = mergeProfiles(PROFILES, remote);
+      if (m.localChanged) { PROFILES = m.out; store.set('tg:profiles', PROFILES); paintPeople(); }
+      const content = JSON.stringify({ app: 'ty-geniy', v: 1, at: Date.now(), profiles: m.out });
+      if (!g) {
+        const ng = await this.api('/gists', { method: 'POST', body: { description: 'Ты гений — кто занимается', public: false, files: { [LIST_FILE]: { content } } } });
+        this.listGist = ng.id;
+      } else if (m.remoteChanged) {
+        await this.api('/gists/' + this.listGist, { method: 'PATCH', body: { files: { [LIST_FILE]: { content } } } });
+      }
+      this.listAt = Date.now(); this.listDirty = false;
     },
     async readRemote(g) {
-      const f = g && g.files && g.files[SYNC_FILE];
+      const f = g && g.files && g.files[MY_FILE];
       if (!f) return null;
       let text = f.content;
       if (f.truncated && f.raw_url) text = await (await fetch(f.raw_url, { cache: 'no-store' })).text();
@@ -2617,10 +2762,17 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       this.running = (async () => {
         this.state = 'syncing'; this.paint();
         try {
+          await this.syncList(reason === 'connect' || reason === 'manual' || reason === 'people');
           let g = await this.findGist();
-          if (!g) {
-            g = await this.api('/gists', { method: 'POST', body: { description: 'Ты гений — прогресс изучения слов (синхронизация)', public: false, files: { [SYNC_FILE]: { content: JSON.stringify(this.payload(SRS, ACT)) } } } });
-            this.gist = g.id; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
+          if (g && g.notModified) {
+            // nothing changed in the cloud since our last look: only push our own changes
+            if (this.dirty) {
+              await this.api('/gists/' + this.gist, { method: 'PATCH', body: { files: { [MY_FILE]: { content: JSON.stringify(this.payload(SRS, ACT)) } } }, keepEtag: true });
+              this.etag = this.lastEtag; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
+            }
+          } else if (!g) {
+            g = await this.api('/gists', { method: 'POST', body: { description: 'Ты гений — прогресс: ' + nameOf(me()), public: false, files: { [MY_FILE]: { content: JSON.stringify(this.payload(SRS, ACT)) } } }, keepEtag: true });
+            this.gist = g.id; this.etag = ''; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
           } else {
             const remote = await this.readRemote(g);
             const m = this.merge(remote), ma = this.mergeAct(remote), mc = this.mergeCal(remote), mn = this.mergeNotes(remote);
@@ -2630,12 +2782,13 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
             if (m.localChanged) { SRS = m.out; store.set(pk('tg:srs'), SRS); }
             if (m.localChanged || ma.localChanged || mn.localChanged) refreshAfterSync();
             if (m.remoteChanged || ma.remoteChanged || mc.remoteChanged || mn.remoteChanged) {
-              await this.api('/gists/' + this.gist, { method: 'PATCH', body: { files: { [SYNC_FILE]: { content: JSON.stringify(this.payload(m.out, ACT)) } } } });
-              this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
+              await this.api('/gists/' + this.gist, { method: 'PATCH', body: { files: { [MY_FILE]: { content: JSON.stringify(this.payload(m.out, ACT)) } } }, keepEtag: true });
+              this.etag = this.lastEtag; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
             } else {
               this.remoteBy = (remote && remote.by) || this.remoteBy; this.remoteAt = (remote && remote.at) || this.remoteAt;
             }
           }
+          if (this.gist && me().gist !== this.gist) { me().gist = this.gist; me().at = Date.now(); store.set('tg:profiles', PROFILES); this.listDirty = true; await this.syncList(true); }
           this.dirty = false; this.last = Date.now(); this.state = 'idle'; this.error = ''; this.fatal = false;
         } catch (e) {
           this.state = 'error'; this.fatal = !!e.fatal;
@@ -2651,12 +2804,12 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     changed() {
       if (!this.token) return;
       this.dirty = true; store.set(pk('tg:sync-dirty'), true);
-      this.schedule(15000);
+      if (!this.timer) this.schedule(90000);
     },
     schedule(ms) {
       clearTimeout(this.timer);
       const wait = Math.max(ms, 30000 - (Date.now() - this.lastPush));
-      this.timer = setTimeout(() => this.run('auto'), wait);
+      this.timer = setTimeout(() => { this.timer = 0; this.run('auto'); }, wait);
     },
     async connect(raw) {
       const parts = String(raw || '').replace(/\s+/g, '').split('~');
@@ -2666,11 +2819,15 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         return;
       }
       this.token = tok;
-      this.gist = /^[0-9a-f]{20,40}$/i.test(gid) ? gid : '';
+      this.gist = PID === 'main' && /^[0-9a-f]{20,40}$/i.test(gid) ? gid : '';
+      this.etag = '';
       this.dirty = Object.keys(SRS).length > 0;
       this.save();
       await this.run('connect');
-      if (this.state === 'idle') { $('#syncToken').value = ''; toast('Синхронизация включена'); }
+      if (this.state === 'idle') {
+        $('#syncToken').value = ''; toast('Синхронизация включена');
+        if (people().length > 1 && !store.get('tg:pid-chosen', false)) setTimeout(openWho, 400);
+      }
       else if (this.fatal) { this.token = ''; this.gist = ''; this.save(); this.paint(); }
     },
     disconnect() {
@@ -2709,6 +2866,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       if (note) note.textContent = off ? 'Хранится только на этом устройстве.' : 'Общий для всех подключённых устройств. Сброс удалит прогресс везде.';
       const gear = $('#openSettings');
       if (this.token && this.state === 'error') gear.setAttribute('data-alert', ''); else gear.removeAttribute('data-alert');
+      paintProfileSync();
     }
   };
   onSrsSaved = () => Sync.changed();
@@ -2727,8 +2885,371 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     else if (Sync.dirty) Sync.run('hidden');
   });
   window.addEventListener('online', () => { if (Sync.on && Sync.dirty) Sync.run('online'); });
+  window.addEventListener('pagehide', () => { if (Sync.on && Sync.dirty) Sync.run('hidden'); });
   setInterval(() => { if (Sync.on && document.visibilityState === 'visible') Sync.run('interval'); }, 4 * 60000);
   setInterval(() => { if ($('#settings') && !$('#settings').hidden) Sync.paint(); }, 30000);
+
+  /* ================= добавление слова ================= */
+  let PENDING = store.get('tg:pending', []);           // added here, not yet in words.txt on the site
+  const savePending = () => store.set('tg:pending', PENDING);
+  const keyOfEn = en => en.toLowerCase().replace(/\s+/g, ' ');
+  function repoName() {
+    const o = store.get('tg:repo', '');
+    if (o) return o;
+    const h = location.hostname;
+    if (!/\.github\.io$/i.test(h)) return '';
+    const user = h.replace(/\.github\.io$/i, ''), seg = location.pathname.split('/').filter(Boolean)[0];
+    return user + '/' + (seg && !seg.includes('.') ? seg : user + '.github.io');
+  }
+  const b64dec = b => new TextDecoder().decode(Uint8Array.from(atob(String(b).replace(/\s/g, '')), c => c.charCodeAt(0)));
+  function b64enc(t) {
+    const bytes = new TextEncoder().encode(t);
+    let out = '';
+    for (let i = 0; i < bytes.length; i += 0x8000) out += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    return btoa(out);
+  }
+  const lineOf = e => `${e.en} ; ${e.ru}${e.ex ? ' ; ' + e.ex : ''}`;
+  function insertLine(text, e) {
+    const lines = String(text).replace(/\r\n/g, '\n').split('\n');
+    const head = lines.findIndex(l => l.trim().startsWith('#') && l.trim().replace(/^#+\s*/, '') === e.group);
+    if (head < 0) {
+      while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
+      lines.push('', '# ' + e.group, lineOf(e));
+      return lines.join('\n') + '\n';
+    }
+    let end = head + 1;
+    while (end < lines.length && !lines[end].trim().startsWith('#')) end++;
+    let at = end;
+    while (at > head + 1 && !lines[at - 1].trim()) at--;
+    lines.splice(at, 0, lineOf(e));
+    return lines.join('\n');
+  }
+  async function commitWord(e) {
+    const repo = repoName();
+    if (!repo) throw syncError('Это не сайт на GitHub: слово сохранено только здесь.');
+    if (!Sync.token) throw syncError('Чтобы слово попало на все устройства и получило озвучку, подключи ключ GitHub в настройках.');
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const meta = await Sync.api(`/repos/${repo}/contents/words.txt?ref=main`, { repo: true });
+      const text = b64dec(meta.content || '');
+      if (parseWords(text).words.some(w => w.key === keyOfEn(e.en))) return 'exists';
+      try {
+        await Sync.api(`/repos/${repo}/contents/words.txt`, { method: 'PUT', repo: true, body: { message: 'Добавлено слово: ' + e.en, content: b64enc(insertLine(text, e)), sha: meta.sha, branch: 'main' } });
+        return 'saved';
+      } catch (err) { if (!err.conflict || attempt === 2) throw err; }
+    }
+    return 'saved';
+  }
+  async function savePendingWord(e) {
+    e.status = 'saving'; e.err = ''; savePending(); refreshPendingViews();
+    try {
+      await commitWord(e);
+      e.status = 'saved'; e.savedAt = Date.now();
+      toast(`«${e.en}» сохранено на GitHub. Озвучка появится через пару минут`);
+      [3, 6, 10].forEach(m => setTimeout(() => { loadWords(); }, m * MIN));
+    } catch (err) {
+      e.status = 'local'; e.err = err.userMessage ? err.message : 'Не получилось сохранить на GitHub.';
+    }
+    savePending(); refreshPendingViews();
+  }
+  function mergePending() {   // pending words join the list until words.txt on the site has them
+    const before = PENDING.length;
+    PENDING = PENDING.filter(e => !(KEYMAP.has(keyOfEn(e.en)) && !KEYMAP.get(keyOfEn(e.en)).pending));
+    PENDING.forEach(e => {
+      const key = keyOfEn(e.en);
+      if (KEYMAP.has(key)) return;
+      const w = { en: e.en, ru: e.ru, ex: e.ex || '', group: e.group, key, pending: true };
+      WORDS.push(w); KEYMAP.set(key, w);
+      if (!GROUPS.includes(e.group)) GROUPS.push(e.group);
+    });
+    if (PENDING.length !== before) savePending();
+  }
+  function pendingTag(w) {
+    if (!w.pending) return '';
+    const e = PENDING.find(x => keyOfEn(x.en) === w.key);
+    if (!e) return '';
+    const t = e.status === 'saving' ? 'сохраняю…' : e.status === 'saved' ? 'на GitHub, озвучка скоро' : 'только на этом устройстве';
+    return `<span class="tag tag-local">${t}</span>`;
+  }
+  function refreshPendingViews() { if (tab === 'list' && $('#listBody')) renderListBody(); }
+  // suggestions: Wiktionary translations (fast), Tatoeba examples with Russian translations (slow, ~10 s)
+  const Lookup = {
+    async wikt(page) {
+      const r = await fetch('https://en.wiktionary.org/w/api.php?action=parse&page=' + encodeURIComponent(page) + '&prop=wikitext&format=json&formatversion=2&redirects=1&origin=*');
+      const j = await r.json();
+      return (j.parse && j.parse.wikitext) || '';
+    },
+    strip: t => t.normalize('NFD').replace(/[̀́]/g, '').normalize('NFC'),
+    async translations(word) {
+      const text = await this.wikt(word);
+      const eng = (text.match(/==English==([\s\S]*?)(\n==[^=]|$)/) || [])[1] || '';
+      let src = eng;
+      if (/\{\{see translation subpage/i.test(eng)) src += '\n' + await this.wikt(word + '/translations');
+      const see = (eng.match(/\{\{trans-see\|([^}|]+)/) || [])[1];
+      if (see && !/\{\{(?:check)?trans-top/.test(eng)) src += '\n' + await this.wikt(see);
+      const senses = [];
+      let cur = null;
+      src.split('\n').forEach(line => {
+        const top = line.match(/\{\{(?:check)?trans-top[^|}]*(?:\|(?:id=[^|}]*\|)?([^}|]*))?/);
+        if (top) { cur = { gloss: (top[1] || '').trim(), ru: [] }; senses.push(cur); return; }
+        if (/\{\{trans-bottom/.test(line)) { cur = null; return; }
+        if (cur && /^\*:?\s*Russian:/.test(line)) for (const m of line.matchAll(/\{\{tt?\+?\|ru\|([^}|]+)/g)) { const t = this.strip(m[1].trim()); if (!cur.ru.includes(t)) cur.ru.push(t); }
+      });
+      return senses.filter(x => x.ru.length).slice(0, 6);
+    },
+    async machine(word) {
+      const r = await fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|ru');
+      const j = await r.json();
+      const t = j && j.responseData && j.responseData.translatedText;
+      return t && !/[a-z]{3,}/i.test(t) ? t.toLowerCase() : '';
+    },
+    async examples(word) {
+      const q = /\s/.test(word) ? `"${word}"` : '=' + word;
+      const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 25000);
+      try {
+        const r = await fetch('https://api.tatoeba.org/unstable/sentences?lang=eng&q=' + encodeURIComponent(q) + '&trans:lang=rus&sort=relevance&limit=20', { signal: ctrl.signal });
+        const j = await r.json();
+        return (j.data || []).map(x => {
+          const tr = [].concat(x.translations || []).flat(2);
+          const ru = tr.find(t => t && t.lang === 'rus');
+          return { en: x.text, ru: ru ? this.strip(ru.text) : '' };
+        }).filter(x => x.ru && x.en.split(' ').length >= 3 && x.en.length <= 90)
+          .sort((a, b) => (/^Tom\b/.test(a.en) - /^Tom\b/.test(b.en)) || (a.en.length - b.en.length))
+          .slice(0, 4);
+      } finally { clearTimeout(timer); }
+    }
+  };
+  let awToken = 0, awTimer = 0;
+  function openAddWord(prefill) {
+    const f = $('#addForm');
+    f.reset();
+    $('#awSenses').innerHTML = ''; $('#awExList').innerHTML = ''; $('#awExStatus').textContent = ''; $('#awDup').textContent = ''; $('#awSave').textContent = '';
+    $('#awSave').className = 'aw-status'; $('#awNewGroup').hidden = true;
+    const groups = GROUPS.includes('Мои слова') ? GROUPS : ['Мои слова'].concat(GROUPS);
+    $('#awGroup').innerHTML = groups.map(g => `<option value="${esc(g)}">${esc(g)}</option>`).join('') + '<option value="__new">Новая тема…</option>';
+    $('#awGroup').value = S.group && S.group !== '' ? S.group : 'Мои слова';
+    if (!Sync.token || !repoName()) { const sv = $('#awSave'); sv.textContent = repoName() ? 'Ключ GitHub не подключён: слово будет только на этом устройстве и без озвучки диктором. Подключить можно в настройках.' : 'Это превью: слово сохранится только здесь.'; sv.className = 'aw-status warn'; }
+    if (prefill) $('#awEn').value = prefill;
+    openSheet('#addSheet');
+    setTimeout(() => { $('#awEn').focus(); if (prefill) findWord(); }, 250);
+  }
+  function awCheckDup() {
+    const en = $('#awEn').value.trim(), w = en ? byKey(keyOfEn(en)) : null;
+    $('#awDup').textContent = w ? `Это слово уже есть в теме «${w.group}».` : '';
+    return w;
+  }
+  async function findWord() {
+    const en = $('#awEn').value.trim();
+    awCheckDup();
+    if (!en) return;
+    const token = ++awToken, term = en.replace(/^to\s+/i, '');
+    const box = $('#awSenses'), exBox = $('#awExList'), exSt = $('#awExStatus');
+    box.innerHTML = '<p class="aw-status">Ищу перевод в Викисловаре…</p>';
+    exBox.innerHTML = ''; exSt.textContent = 'Ищу примеры с переводом. Это может занять до 20 секунд.';
+    Lookup.translations(term).then(async senses => {
+      if (token !== awToken) return;
+      if (!senses.length) {
+        const mt = await Lookup.machine(term).catch(() => '');
+        if (token !== awToken) return;
+        box.innerHTML = mt ? `<div class="aw-sense"><span class="aw-gloss">В Викисловаре нет перевода. Машинный перевод:</span><div class="aw-chips"><button class="aw-chip" type="button" data-act="aw-ru" data-v="${esc(mt)}" aria-pressed="false">${esc(mt)}</button></div></div>` : '<p class="aw-status">Перевод не нашёлся. Напиши его сам.</p>';
+        if (mt && !$('#awRu').value.trim()) awToggleRu(mt);
+        return;
+      }
+      box.innerHTML = senses.map(x => `<div class="aw-sense">${x.gloss ? `<span class="aw-gloss" lang="en">${esc(x.gloss)}</span>` : ''}<div class="aw-chips">${x.ru.slice(0, 6).map(t => `<button class="aw-chip" type="button" data-act="aw-ru" data-v="${esc(t)}" aria-pressed="false">${esc(t)}</button>`).join('')}</div></div>`).join('');
+      if (!$('#awRu').value.trim()) senses[0].ru.slice(0, 2).forEach(awToggleRu);
+      else awPaintRu();
+    }).catch(() => { if (token === awToken) box.innerHTML = '<p class="aw-status">Викисловарь не ответил. Напиши перевод сам.</p>'; });
+    Lookup.examples(term).then(list => {
+      if (token !== awToken) return;
+      exSt.textContent = list.length ? 'Выбери пример или напиши свой:' : 'Примеров не нашлось. Можно написать свой или оставить пустым.';
+      exBox.innerHTML = list.map((x, i) => `<button type="button" data-act="aw-ex" data-i="${i}" aria-pressed="false"><span class="en" lang="en">${esc(x.en)}</span><span class="tr">${esc(x.ru)}</span></button>`).join('');
+      exBox._list = list;
+      if (list.length && !$('#awEx').value.trim()) { $('#awEx').value = list[0].en; awPaintEx(); }
+    }).catch(() => { if (token === awToken) exSt.textContent = 'Примеры не загрузились. Можно написать свой или оставить пустым.'; });
+  }
+  const awParts = () => $('#awRu').value.split(/[,;]/).map(x => x.trim()).filter(Boolean);
+  function awToggleRu(v) {
+    const parts = awParts(), i = parts.indexOf(v);
+    if (i >= 0) parts.splice(i, 1); else parts.push(v);
+    $('#awRu').value = parts.join(', ');
+    awPaintRu();
+  }
+  function awPaintRu() { const parts = awParts(); $$('#awSenses .aw-chip').forEach(b => b.setAttribute('aria-pressed', String(parts.includes(b.dataset.v)))); }
+  function awPaintEx() { const v = $('#awEx').value.trim(), list = $('#awExList')._list || []; $$('#awExList button').forEach(b => b.setAttribute('aria-pressed', String(list[Number(b.dataset.i)] && list[Number(b.dataset.i)].en === v))); }
+  function submitAddWord() {
+    const en = $('#awEn').value.replace(/[;\n]/g, ' ').replace(/\s+/g, ' ').trim();
+    const ru = $('#awRu').value.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+    let ex = $('#awEx').value.replace(/[;\n]/g, ' ').replace(/\s+/g, ' ').trim();
+    let group = $('#awGroup').value;
+    const sv = $('#awSave');
+    if (!en || !ru) { sv.textContent = !en ? 'Напиши слово по-английски.' : 'Напиши перевод.'; sv.className = 'aw-status warn'; return; }
+    if (/[а-яё]/i.test(ex)) ex = '';
+    if (awCheckDup()) { sv.textContent = 'Такое слово уже есть.'; sv.className = 'aw-status warn'; return; }
+    if (group === '__new') group = $('#awNewGroup').value.replace(/[#;\n]/g, ' ').replace(/\s+/g, ' ').trim() || 'Мои слова';
+    const e = { en, ru, ex, group, at: Date.now(), status: 'local' };
+    PENDING.push(e); savePending();
+    mergePending();
+    if (!PRIO.includes(keyOfEn(en))) { PRIO.unshift(keyOfEn(en)); savePrio(); }
+    if (card && !card.flipped) card = null;   // the new word comes up next on cards
+    renderGroupPicker(); syncWordsInfo();
+    closeSheets();
+    toast(`«${en}» добавлено в карточки`);
+    if (Sync.token && repoName()) savePendingWord(e);
+    else refreshPendingViews();
+  }
+
+  /* ================= несколько человек ================= */
+  function mergeProfiles(local, remote) {
+    const byId = new Map();
+    let localChanged = false, remoteChanged = false;
+    const rm = new Map((remote || []).filter(x => x && x.id).map(x => [x.id, x]));
+    local.forEach(l => {
+      const r = rm.get(l.id);
+      if (!r) { byId.set(l.id, l); remoteChanged = true; return; }
+      const pick = (r.at || 0) > (l.at || 0) ? Object.assign({}, r) : Object.assign({}, l);
+      pick.gist = pick.gist || l.gist || r.gist || '';
+      if (JSON.stringify(pick) !== JSON.stringify(l)) localChanged = true;
+      if (JSON.stringify(pick) !== JSON.stringify(r)) remoteChanged = true;
+      byId.set(l.id, pick);
+    });
+    rm.forEach((r, id) => { if (!byId.has(id)) { byId.set(id, r); localChanged = true; } });
+    const out = Array.from(byId.values());
+    out.sort((a, b) => (a.id === 'main' ? -1 : b.id === 'main' ? 1 : (a.created || a.at || 0) - (b.created || b.at || 0)));
+    return { out, localChanged, remoteChanged };
+  }
+  onProfilesChanged = () => { if (Sync.on) { Sync.listDirty = true; store.set('tg:sync-list-dirty', true); Sync.changed(); } paintPeople(); };
+  function addProfile(raw) {
+    const name = String(raw || '').replace(/\s+/g, ' ').trim().slice(0, 30);
+    if (!name) { toast('Напиши имя'); return null; }
+    const used = new Set(people().map(p => p.c));
+    let c = 0; while (used.has(c) && c < 6) c++;
+    const prof = { id: Math.random().toString(36).slice(2, 10), name, c: c % 6, at: Date.now(), created: Date.now() };
+    PROFILES.push(prof);
+    saveProfiles();
+    return prof;
+  }
+  function switchProfile(id) {
+    if (id === PID || !people().some(p => p.id === id)) return;
+    if (Sync.on && Sync.dirty) Sync.run('hidden');
+    store.set('tg:pid', id); store.set('tg:pid-chosen', true);
+    setTimeout(() => location.reload(), Sync.running ? 1500 : 50);
+  }
+  function deleteProfile(id) {
+    const prof = PROFILES.find(p => p.id === id);
+    if (!prof || id === PID || id === 'main') return;
+    prof.deleted = true; prof.at = Date.now();
+    ['tg:settings', 'tg:srs', 'tg:practice', 'tg:act', 'tg:prio', 'tg:extra', 'tg:gap', 'tg:notes', 'tg:cal', 'tg:sync-gist', 'tg:sync-meta', 'tg:sync-last', 'tg:sync-dirty', 'tg:sync-by', 'tg:sync-at', 'tg:sync-etag']
+      .forEach(k => { try { localStorage.removeItem(pkOf(id, k)); } catch (e) { /* ignore */ } });
+    PEOPLE.delete(id);
+    saveProfiles();
+  }
+  // everyone's numbers: from this device when the profile was used here, from the cloud otherwise
+  function statsOf(srs, act, goalHint) {
+    act = act || {}; srs = srs || {};
+    const tot = (k, f) => Object.values(act[k] || {}).reduce((a, x) => a + ((x && x[f]) || 0), 0);
+    let latestGoal = 0;
+    Object.keys(act).sort().forEach(k => Object.values(act[k] || {}).forEach(x => { if (x && x.g) latestGoal = x.g; }));
+    const goal = goalHint || latestGoal || 20;
+    const goalOn = k => { let g = 0; Object.values(act[k] || {}).forEach(x => { if (x && x.g && (!g || x.g < g)) g = x.g; }); return g || goal; };
+    const d = dayStart(), tk = dayKey(d);
+    if (tot(tk, 'c') < goal) d.setDate(d.getDate() - 1);
+    let streak = 0;
+    for (let k = dayKey(d); streak < 3000 && tot(k, 'c') >= (k === tk ? goal : goalOn(k)); k = dayKey(d)) { streak++; d.setDate(d.getDate() - 1); }
+    let c = 0, ok = 0;
+    for (let i = 0; i < 7; i++) Object.values(act[dayKey(dayStart(-i))] || {}).forEach(x => { if (x && x.ok != null) { c += x.c || 0; ok += x.ok || 0; } });
+    let week = 0; for (let i = 0; i < 7; i++) week += tot(dayKey(dayStart(-i)), 'c');
+    const learned = Object.values(srs).filter(r => r && r.st === 'review' && !r.kn).length;
+    const active = Object.keys(act).filter(k => tot(k, 'c') > 0).sort();
+    return { streak, today: tot(tk, 'c'), goal, learned, week, acc: c ? Math.round(ok / c * 100) : null, last: active.length ? active[active.length - 1] : '' };
+  }
+  const PEOPLE = new Map();   // id -> { stats, at, from }
+  function localStatsOf(prof) {
+    if (prof.id === PID) return statsOf(SRS, ACT, S.goal);
+    const srs = store.get(pkOf(prof.id, 'tg:srs'), null), act = store.get(pkOf(prof.id, 'tg:act'), null);
+    if (!srs && !act) return null;
+    return statsOf(srs, act, (store.get(pkOf(prof.id, 'tg:settings'), {}) || {}).goal);
+  }
+  let peopleLoading = false;
+  async function loadPeople(force) {
+    if (!Sync.on || IS_PREVIEW || peopleLoading) return;
+    peopleLoading = true;
+    let changed = false;
+    try {
+      if (force) await Sync.syncList(true);
+      for (const prof of people()) {
+        if (prof.id === PID || !prof.gist) continue;
+        const cached = PEOPLE.get(prof.id);
+        if (!force && cached && Date.now() - cached.at < 5 * MIN) continue;
+        const g = await Sync.api('/gists/' + prof.gist, { allow404: true });
+        const f = g && g.files && g.files[progFile(prof.id)];
+        if (!f) continue;
+        let text = f.content;
+        if (f.truncated && f.raw_url) text = await (await fetch(f.raw_url, { cache: 'no-store' })).text();
+        let data = {}; try { data = JSON.parse(text || '{}'); } catch (e) { data = {}; }
+        PEOPLE.set(prof.id, { stats: statsOf(data.srs, data.act), at: Date.now(), cloudAt: data.at || 0, by: data.by || '' });
+        changed = true;
+      }
+    } catch (e) { /* the cloud is not reachable: show what this device knows */ }
+    peopleLoading = false;
+    if (changed || force) paintPeople();
+  }
+  function lastSeen(k) {
+    if (!k) return 'ещё не занимался';
+    const diff = Math.round((dayStart().getTime() - new Date(k + 'T00:00:00').getTime()) / DAY);
+    return diff <= 0 ? 'занимался сегодня' : diff === 1 ? 'занимался вчера' : `занимался ${plural(diff, ['день', 'дня', 'дней'])} назад`;
+  }
+  function peopleHTML() {
+    const list = people();
+    const rows = list.map(prof => {
+      const mine = prof.id === PID;
+      const remote = PEOPLE.get(prof.id);
+      const st = mine ? localStatsOf(prof) : (remote ? remote.stats : localStatsOf(prof));
+      const line = st ? `Серия: ${st.streak} · сегодня ${st.today} из ${st.goal} · выучено ${st.learned}${st.acc != null ? ` · точность ${st.acc}%` : ''} · ${lastSeen(st.last)}`
+        : (Sync.on ? (peopleLoading ? 'Загружаю…' : 'Ещё не синхронизировался') : 'На этом устройстве ещё не занимался');
+      return `<div class="person"><span class="avatar av-${(prof.c || 0) % 6}" aria-hidden="true">${esc(nameOf(prof).charAt(0).toUpperCase())}</span>
+        <p class="person-name">${esc(nameOf(prof))}${mine ? '<small>это ты</small>' : ''}</p>
+        <span class="person-actions">${mine ? '' : `<button class="btn btn-ghost btn-sm" type="button" data-act="person-switch" data-id="${esc(prof.id)}">Перейти</button>`}${!mine && prof.id !== 'main' ? `<button class="btn-link" type="button" data-act="person-del" data-id="${esc(prof.id)}">Удалить</button>` : ''}</span>
+        <p class="person-stats">${esc(line)}</p></div>`;
+    }).join('');
+    return `<div class="people" id="peopleList">${rows}</div>
+      <form class="add-form" id="addPersonForm"><input id="addPersonName" maxlength="30" placeholder="Имя нового человека" autocomplete="off"><button class="btn btn-ghost btn-sm" type="submit">Добавить</button></form>
+      <p class="pf-note">${Sync.on ? 'У каждого свой прогресс, настройки и подсказки. Успехи всех видны здесь на любом устройстве с тем же ключом.' : 'У каждого свой прогресс и настройки. Чтобы видеть успехи друг друга с разных устройств, включи синхронизацию.'}</p>`;
+  }
+  const pfActionsHTML = () => `<button class="btn btn-ghost btn-sm" type="button" data-act="pf-rename">Имя</button>${people().length > 1 ? '<button class="btn btn-ghost btn-sm" type="button" data-act="who-open">Сменить</button>' : ''}`;
+  function paintPeople() {
+    const box = $('#peopleBox');
+    if (box) {
+      const inp = $('#addPersonName'), typed = inp ? inp.value : '', had = inp && document.activeElement === inp;
+      box.innerHTML = peopleHTML(); bindPeople();
+      const again = $('#addPersonName'); if (again && typed) { again.value = typed; if (had) again.focus(); }
+    }
+    const acts = $('#pfActions'); if (acts) acts.innerHTML = pfActionsHTML();
+    paintHeaderAvatar();
+  }
+  function bindPeople() {
+    const f = $('#addPersonForm');
+    if (f) f.addEventListener('submit', e => {
+      e.preventDefault();
+      const inp = $('#addPersonName'), raw = inp.value;
+      inp.value = '';
+      const prof = addProfile(raw);
+      if (!prof) inp.value = raw;
+      if (prof) toast(`Добавлен: ${prof.name}`, { action: 'Перейти', run: () => switchProfile(prof.id) });
+    });
+  }
+  function paintHeaderAvatar() {
+    const b = $('#hdrAvatar');
+    if (!b) return;
+    const many = people().length > 1, prof = me();
+    b.hidden = !many;
+    if (!many) return;
+    b.className = `avatar hdr-avatar av-${(prof.c || 0) % 6}`;
+    b.textContent = nameOf(prof).charAt(0).toUpperCase();
+    b.setAttribute('aria-label', 'Занимается: ' + nameOf(prof));
+  }
+  function openWho() {
+    $('#whoList').innerHTML = people().map(prof => `<button type="button" data-act="who-pick" data-id="${esc(prof.id)}"><span class="avatar av-${(prof.c || 0) % 6}" aria-hidden="true">${esc(nameOf(prof).charAt(0).toUpperCase())}</span>${esc(nameOf(prof))}${prof.id === PID ? ' (сейчас)' : ''}</button>`).join('');
+    openSheet('#whoSheet');
+  }
 
   /* ================= install hint ================= */
   let installEvent = null;
@@ -2797,6 +3318,18 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'pl-gap': Player.gap = Number(el.dataset.val); store.set(pk('tg:gap'), Player.gap); if (!Player.playing) Player.buildSteps(); render(); break;
       case 'list-more': listLimit += 300; renderListBody(); break;
       case 'pf-rename': editingName = true; renderProfile(); break;
+      case 'person-switch': { const prof = PROFILES.find(x => x.id === el.dataset.id); if (prof) { toast(`Переключаю на: ${nameOf(prof)}`); switchProfile(prof.id); } break; }
+      case 'person-del': {
+        if (!el.dataset.armed) { el.dataset.armed = '1'; el.textContent = 'Точно удалить?'; setTimeout(() => { if (el.isConnected) { delete el.dataset.armed; el.textContent = 'Удалить'; } }, 4000); break; }
+        deleteProfile(el.dataset.id); break;
+      }
+      case 'who-open': openWho(); break;
+      case 'add-word': openAddWord(listQuery && !byKey(keyOfEn(listQuery.trim())) && /^[a-z][a-z '-]*$/i.test(listQuery.trim()) ? listQuery.trim() : ''); break;
+      case 'aw-find': findWord(); break;
+      case 'aw-ru': awToggleRu(el.dataset.v); break;
+      case 'aw-ex': { const list = $('#awExList')._list || [], x = list[Number(el.dataset.i)]; if (x) { $('#awEx').value = x.en; awPaintEx(); } break; }
+      case 'pending-retry': { const pe = PENDING.find(x => keyOfEn(x.en) === el.dataset.key); if (pe) savePendingWord(pe); break; }
+      case 'who-pick': store.set('tg:pid-chosen', true); if (el.dataset.id === PID) closeSheets(); else switchProfile(el.dataset.id); break;
       case 'open-sync': syncSettingsUI(); Sync.paint(); openSheet('#settings'); setTimeout(() => { const g = $('#syncGroup'); if (g) g.scrollIntoView({ block: 'start', behavior: reduced() ? 'auto' : 'smooth' }); }, 220); break;
       case 'row-known': if (w) { const prev = markKnown(w); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast(`«${w.en}» отмечено как знакомое`, { action: 'Отменить', run: () => { unmarkKnown(w, prev); if (tab === 'list') renderListBody(); } }); } break;
       case 'row-relearn': if (w) { const prev = SRS[w.key] || {}; const now = Date.now(); SRS[w.key] = { st: 'learning', s: W[2], d: initD(2), due: now, last: now, lg: 3, es: 0, reps: (prev.reps || 0) + 1, lapses: prev.lapses || 0 }; saveSrs(); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast('Слово вернётся на карточки сегодня'); } break;
@@ -2824,6 +3357,13 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     }
   });
   $$('.sheet').forEach(s => s.addEventListener('click', e => { if (e.target === s) closeSheets(); }));
+  $('#hdrAvatar').addEventListener('click', () => setTab('profile'));
+  $('#addForm').addEventListener('submit', e => { e.preventDefault(); submitAddWord(); });
+  $('#awEn').addEventListener('input', () => { awCheckDup(); clearTimeout(awTimer); awTimer = setTimeout(() => { if ($('#awEn').value.trim().length >= 2) findWord(); }, 900); });
+  $('#awEn').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); clearTimeout(awTimer); findWord(); } });
+  $('#awRu').addEventListener('input', awPaintRu);
+  $('#awGroup').addEventListener('change', e => { const n = $('#awNewGroup'); n.hidden = e.target.value !== '__new'; if (!n.hidden) n.focus(); });
+  $('#awEx').addEventListener('input', awPaintEx);
   $('#openSettings').addEventListener('click', () => { syncSettingsUI(); Sync.paint(); openSheet('#settings'); });
   $('#group').addEventListener('change', e => { Player.stop(); S.group = e.target.value; saveSettings(); card = null; ses = null; trainMode = null; openKey = null; listLimit = 300; render(); });
   $('#autoplay').addEventListener('change', e => { S.autoplay = e.target.checked; saveSettings(); });
@@ -2864,6 +3404,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme); } catch (e) { /* old Safari */ }
 
   /* ================= start ================= */
+  paintHeaderAvatar();
+  setTimeout(() => { if (Sync.token && repoName()) PENDING.filter(e => e.status !== 'saved' && !e.err).forEach(savePendingWord); }, 4000);
   applyTheme();
   if (wordsText) applyWords(wordsText); else renderGroupPicker();
   render();
