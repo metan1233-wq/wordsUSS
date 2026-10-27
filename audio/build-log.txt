@@ -1,1 +1,183 @@
-Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 13, живых записей 0. Удалено лишних: 0.
+  ! нейроголос «He received a prize for his work.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Money is not an end, it's a means.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Money is not an end, it's a means.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Repetitive exercises help you remember n»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Money is not an end, it's a means.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We sneaked into the cinema without ticke»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I made this cake especially for you.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The gas pipe runs under the street.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You can apply for a loan online.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She was wearing a yellow raincoat.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She was wearing a dress with a flower pa»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Iron your shirt, it's full of wrinkles.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He wrinkled his nose at the smell.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «They lived in happy matrimony for forty »: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I got the impression that he was lying.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «They lived in happy matrimony for forty »: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She dumped her boyfriend by text message»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The vase has a small flaw at the bottom.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She sat poised and calm during the inter»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This café makes the best donuts in town.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He pulled the trigger.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The film was so creepy I couldn't sleep.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She is a real warrior in business.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He welched on a bet and lost his friends»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «In the end, the butler was the murderer.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My kids turned the house into a bughouse»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Therapists talk about the transference o»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Only a simpleton would believe that stor»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He plays a simpleton in the comedy.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I wear this suit only on special occasio»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Fishing vessels came back with a big cat»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We wasted a lot of time on that report.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Don't waste your time on people who don'»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We wasted a lot of time on that report.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You look tired. Go and have a rest.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «When was the last time you saw a doctor?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You look tired. Go and have a rest.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her English vocabulary is very rich.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The medicine has an unpleasant taste.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He's too irresponsible to have a dog.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We share the same values.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I'm not sure whether to go or stay.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Many animals, for example dogs, can lear»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The game was cancelled due to rain.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Apart from the price, I like the car.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Enough! I don't want to hear it.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Can you afford a holiday this year?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Can you afford a holiday this year?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I don't feel I belong here.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Can you afford a holiday this year?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It's hard to convince my father.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Let me explain what happened.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The plan failed completely.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «— Thank you! — Don't mention it.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I noticed that she looked tired.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I'd prefer to stay at home tonight.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The police never solved the crime.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He succeeded in passing the exam.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I borrowed some money from my brother.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Attach a photo to your application.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We agreed to meet at eight.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My parents often disagree about money.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He admitted that he was wrong.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We agreed to meet at eight.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I can't promise anything.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We discussed the problem for an hour.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I can't promise anything.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The number of tourists is growing.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «His words really hurt me.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What are you looking for?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My English is getting better every day.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The band broke up in 2010.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «They brought up three kids.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Only ten people showed up to the party.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The car ran into a tree.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We're running out of time.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Only ten people showed up to the party.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The car ran into a tree.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We're running out of time.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I need to sort out my papers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I need to sort out my papers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The doctor told him to cut down on salt.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Log in with your email and password.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The hotel staff were really friendly.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She was annoyed with me for being late.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her boyfriend gets jealous easily.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She was surprised by the result.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She couldn't sleep from fear.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «There's no need to fear.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her eyes were full of happiness.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She couldn't sleep from fear.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Please empty the bin.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Put your dirty clothes in the basket.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He fell into a deep sleep.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He has a broken arm.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The weather is unusual for April.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We have similar tastes in music.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The two cities are very similar.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «For obvious reasons, I can't tell you.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It's useless to complain.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Thank you for your valuable advice.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I quit smoking two years ago.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The lawyer met her client in prison.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The lawyer met her client in prison.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was a chance meeting at the airport.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I need a change of scene.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Do you have change for a hundred?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «How was your business trip?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Her departure from the company surprised»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Call me on arrival.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Book your tickets early, they sell fast.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The hotel is fully booked.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I have some reservations about this plan»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It's hard to find cheap accommodation in»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company provides accommodation for i»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I bought a guide to London.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The company provides accommodation for i»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We waited on the platform for twenty min»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We waited on the platform for twenty min»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We landed in Rome at midnight.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She packed her suitcase the night before»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We landed in Rome at midnight.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My suitcase has wheels.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The towel has a blue border.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My suitcase has wheels.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You must declare these goods at customs.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «You must declare these goods at customs.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «My suitcase has wheels.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He ironed his trousers for the interview»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Turn on the heating, it's cold.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Electric cars run on electricity.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He keeps his tools in the garage.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Lock your phone with a password.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He missed the season because of an injur»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Laughter is the best medicine.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Can I make an appointment for Friday?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He missed the season because of an injur»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She woke up with a sore throat.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Did you take your pills this morning?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What's the weight of this box?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Thank you for the delicious dinner.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We bought some snacks for the trip.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We made soup from the leftovers.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The grocery store closes at ten.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We bought some snacks for the trip.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We grow vegetables in the garden.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Carrots are my favourite vegetable.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The grocery store closes at ten.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Carrots are my favourite vegetable.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He never pays his bills on time.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Will we get there in time for dinner?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Have you seen Tom lately?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He never pays his bills on time.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Lately, I've been sleeping badly.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Have you seen Tom lately?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Kids nowadays grow up so fast.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Lately, I've been sleeping badly.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He never pays his bills on time.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I haven't seen him for a while.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Have you seen Tom lately?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «As usual, the train was full.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «As usual, the train was full.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We live in the 21st century.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Take this medicine daily.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I haven't seen the film yet.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Please sit still.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Long ago, people lived in caves.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Don't use your phone during the lesson.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «What would you advise me to do?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Don't interrupt me when I'm speaking!»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Obviously, we can't go in this weather.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Correct me if I'm wrong.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This app works on any device.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Choose a strong password.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The remote needs new batteries.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I missed my connection in Frankfurt.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Keep me posted.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Stop at the next intersection.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The factory makes chocolate.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Cars are a major cause of pollution.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Noise pollution makes it hard to sleep.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Cars are a major cause of pollution.»: No audio was received. Please verify that your parameters are correct.
+Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 0, живых записей 0, доп. примеров и историй 1495. Удалено лишних: 0.
