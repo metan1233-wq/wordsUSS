@@ -33,7 +33,8 @@ VOICE_RU = "ru-RU-SvetlanaNeural"        # голос для переводов:
 ROOT = Path(__file__).resolve().parent.parent
 WORDS = ROOT / "words.txt"
 EXAMPLES = ROOT / "examples.txt"
-STORIES = ROOT / "stories"
+STORIES = ROOT / "stories"          # папка с отдельными историями (по желанию)
+STORIES_FILE = ROOT / "stories.txt"  # все истории одним файлом
 DEADLINE = time.time() + float(os.environ.get("AUDIO_BUDGET_MIN", "300")) * 60
 POSTPONED = [0]
 AUDIO = ROOT / "audio"
@@ -229,16 +230,19 @@ def extra_examples(words):
 
 
 def story_sentences():
-    """stories/*.txt: строки «English sentence = перевод»; озвучиваются английские части"""
+    """stories.txt и stories/*.txt: строки «English sentence = перевод» и заголовки «## Title = перевод»;
+    озвучиваются английские части"""
+    files = ([STORIES_FILE] if STORIES_FILE.exists() else []) + (sorted(STORIES.glob("*.txt")) if STORIES.exists() else [])
     out = []
-    if STORIES.exists():
-        for f in sorted(STORIES.glob("*.txt")):
-            for raw in f.read_text(encoding="utf-8").splitlines():
-                line = raw.strip()
-                if " = " in line and not line.startswith(("//", "#", "тема:", "уровень:")):
-                    en = line.split(" = ", 1)[0].strip()
-                    if en:
-                        out.append(en)
+    for f in files:
+        for raw in f.read_text(encoding="utf-8").splitlines():
+            line = raw.strip()
+            if line.startswith("## "):
+                line = line[3:]
+            if " = " in line and not line.startswith(("//", "#", "тема:", "уровень:")):
+                en = line.split(" = ", 1)[0].strip()
+                if en:
+                    out.append(en)
     return out
 
 

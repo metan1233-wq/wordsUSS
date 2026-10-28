@@ -1,0 +1,635 @@
+// Короткие истории на словах из словаря. Каждая строка: English = перевод.
+// Новая история начинается с «## Название = перевод», под ним — «тема:». Пустая строка — новый абзац.
+// Озвучку предложений GitHub делает сам после правки этого файла.
+
+## The Night Shift = Ночная смена
+тема: Работа и производство
+
+Tom works at a factory that makes car parts. = Том работает на заводе, который делает автозапчасти.
+This month he is on the night shift. = В этом месяце он работает в ночную смену.
+The factory is quiet at night, and Tom likes it that way. = Ночью на заводе тихо, и Тому это нравится.
+
+At two in the morning, the biggest machine suddenly stopped. = В два часа ночи самый большой станок вдруг остановился.
+A red light was flashing, and nobody knew what to do. = Мигала красная лампочка, и никто не знал, что делать.
+The engineer was at home, and his phone was turned off. = Инженер был дома, а его телефон был выключен.
+
+Tom remembered a training course from last year. = Том вспомнил курс обучения, который проходил в прошлом году.
+He opened the manual and checked every part carefully. = Он открыл инструкцию и внимательно проверил каждую деталь.
+After an hour he found the problem: a broken belt. = Через час он нашёл причину: порванный ремень.
+He replaced it, and the machine started working again. = Он заменил его, и станок снова заработал.
+
+In the morning, the manager came to see him. = Утром к нему пришёл начальник.
+"You saved us a whole day of work," she said. = «Ты сэкономил нам целый день работы», — сказала она.
+"How would you like to become a team leader?" = «Как ты смотришь на то, чтобы стать бригадиром?»
+Tom smiled. He was tired, but very proud. = Том улыбнулся. Он устал, но очень гордился собой.
+
+## A New Machine = Новый станок
+тема: Работа и производство
+
+One Monday, a huge box arrived at the factory. = Однажды в понедельник на завод привезли огромный ящик.
+Inside was a new robot that could pack boxes three times faster than a person. = Внутри был новый робот, который упаковывал коробки в три раза быстрее человека.
+The workers looked at it with fear. = Рабочие смотрели на него со страхом.
+"Now they will fire half of us," said Maria. = «Теперь половину из нас уволят», — сказала Мария.
+
+The director called a meeting the same afternoon. = В тот же день директор собрал совещание.
+He explained that nobody would lose their job. = Он объяснил, что никто не потеряет работу.
+The robot would do the heavy and boring work. = Робот будет выполнять тяжёлую и скучную работу.
+The people would learn to control it and check the quality. = А люди научатся им управлять и проверять качество.
+
+The training was not easy, especially for the older workers. = Учиться было непросто, особенно тем, кто постарше.
+Maria made a lot of mistakes in the first week. = В первую неделю Мария сделала много ошибок.
+But she did not give up, and soon she was the best operator on the team. = Но она не сдалась и вскоре стала лучшим оператором в бригаде.
+
+Six months later, the factory was producing twice as much. = Через полгода завод производил вдвое больше.
+The company even hired ten new people. = Компания даже наняла десять новых сотрудников.
+"I was wrong about the robot," Maria laughed. "It's my best colleague now." = «Я ошибалась насчёт робота, — смеялась Мария. — Теперь это мой лучший коллега».
+
+## The Job Interview = Собеседование
+тема: Работа и производство
+
+Anna had a job interview at nine o'clock. = В девять часов у Анны было собеседование.
+She had prepared for a whole week, but she still felt nervous. = Она готовилась целую неделю, но всё равно нервничала.
+She chose a simple dark suit and checked her documents twice. = Она выбрала простой тёмный костюм и дважды проверила документы.
+
+The bus was late, and Anna started to panic. = Автобус опаздывал, и Анна начала паниковать.
+She ran the last two blocks and arrived just in time. = Последние два квартала она бежала и пришла как раз вовремя.
+The office was modern and bright, and everyone looked very busy. = Офис был современным и светлым, и все выглядели очень занятыми.
+
+The manager asked her about her experience and her strengths. = Начальница спросила её об опыте и сильных сторонах.
+Then she asked a difficult question: "What is your biggest weakness?" = Потом задала трудный вопрос: «Какая у вас самая большая слабость?»
+Anna thought for a moment and answered honestly. = Анна на мгновение задумалась и ответила честно.
+"I sometimes try to do everything myself, but I'm learning to ask for help." = «Иногда я стараюсь сделать всё сама, но учусь просить о помощи».
+
+The manager smiled and wrote something in her notebook. = Начальница улыбнулась и что-то записала в блокнот.
+Two days later, Anna's phone rang. = Через два дня у Анны зазвонил телефон.
+"Congratulations, you got the job!" = «Поздравляем, вы приняты!»
+Anna jumped with joy and called her mother right away. = Анна подпрыгнула от радости и сразу же позвонила маме.
+
+## Quality Control = Контроль качества
+тема: Работа и производство
+
+Mark checks the quality of products before they leave the factory. = Марк проверяет качество продукции, прежде чем она покинет завод.
+It is a boring job, but it is very important. = Это скучная работа, но очень важная.
+
+One Friday, he noticed a small crack in a metal part. = Однажды в пятницу он заметил маленькую трещину в металлической детали.
+Then he found another one, and another. = Потом нашёл ещё одну, и ещё.
+Almost every tenth part in the batch was damaged. = Почти каждая десятая деталь в партии была повреждена.
+
+Mark went to his boss with the bad news. = Марк пошёл к начальнику с плохой новостью.
+"The customer is waiting," the boss said. "We have to send the order today." = «Клиент ждёт, — сказал начальник. — Мы должны отправить заказ сегодня».
+"If we send it, the parts may break inside the cars," Mark answered. = «Если мы его отправим, детали могут сломаться прямо в машинах», — ответил Марк.
+"That could cause an accident." = «Это может привести к аварии».
+
+The boss was angry, but he agreed to check the whole batch. = Начальник был зол, но согласился проверить всю партию.
+The team worked all weekend, and they found the cause: an old tool. = Бригада работала все выходные и нашла причину: старый инструмент.
+On Monday, the customer received perfect parts, only three days late. = В понедельник клиент получил безупречные детали, опоздав всего на три дня.
+
+A month later, the boss thanked Mark in front of everyone. = Через месяц начальник поблагодарил Марка при всех.
+"You saved our reputation," he said. = «Ты спас нашу репутацию», — сказал он.
+
+## The Late Delivery = Поставка опоздала
+тема: Работа и производство
+
+The factory needed a delivery of steel every Tuesday. = Каждый вторник заводу нужна была поставка стали.
+But this Tuesday, the trucks did not come. = Но в этот вторник грузовики не приехали.
+The supplier said there was a strike at the port. = Поставщик сказал, что в порту забастовка.
+
+Without steel, the production line would stop in two days. = Без стали производственная линия остановилась бы через два дня.
+The director looked worried, and the workers were afraid of losing their bonus. = Директор выглядел обеспокоенным, а рабочие боялись лишиться премии.
+
+Elena from the purchasing department had an idea. = У Елены из отдела закупок появилась идея.
+She remembered a small company in a nearby town. = Она вспомнила маленькую компанию в соседнем городе.
+It was more expensive, but it had steel in stock. = Там было дороже, зато сталь была в наличии.
+She called them, negotiated a better price, and ordered enough for one week. = Она позвонила им, выторговала цену получше и заказала столько, сколько хватит на неделю.
+
+The steel arrived the next morning. = Сталь привезли на следующее утро.
+The line never stopped, and the orders left on time. = Линия так и не остановилась, а заказы ушли вовремя.
+Since then, the factory has always worked with two suppliers. = С тех пор завод всегда работает с двумя поставщиками.
+"Never put all your eggs in one basket," Elena likes to say. = «Не клади все яйца в одну корзину», — любит повторять Елена.
+
+## First Day as a Manager = Первый день начальником
+тема: Работа и производство
+
+Last week, Igor was promoted to shift manager. = На прошлой неделе Игоря повысили до начальника смены.
+Yesterday he was one of the workers, and today he was their boss. = Ещё вчера он был одним из рабочих, а сегодня стал их начальником.
+
+On his first morning, nobody listened to him. = В первое утро его никто не слушал.
+His old friends made jokes, and some people came late. = Старые друзья шутили, а некоторые опоздали.
+Igor felt that he was losing control. = Игорь почувствовал, что теряет контроль.
+
+At lunch, he asked the oldest worker for advice. = В обед он попросил совета у самого опытного рабочего.
+"Don't try to be the boss," the old man said. "Try to be fair." = «Не пытайся быть начальником, — сказал старик. — Старайся быть справедливым».
+"Listen to people, and help them when they have problems." = «Слушай людей и помогай им, когда у них проблемы».
+
+In the afternoon, a young worker could not finish his task. = Днём молодой рабочий не смог справиться с заданием.
+Igor did not shout at him. He showed him how to do it faster. = Игорь не стал на него кричать. Он показал, как сделать быстрее.
+By the end of the day, the team had finished all its work. = К концу дня бригада выполнила всю работу.
+
+It was only the first day, but Igor went home with a smile. = Это был только первый день, но Игорь шёл домой с улыбкой.
+He understood that respect cannot be ordered. It has to be earned. = Он понял, что уважение нельзя приказать. Его нужно заслужить.
+
+## A Busy Saturday = Суматошная суббота
+тема: Повседневная жизнь
+
+On Saturday morning, Kate woke up late. = В субботу утром Катя проснулась поздно.
+Her friends were coming for dinner at seven, and she had nothing ready. = В семь к ней на ужин приходили друзья, а у неё ничего не было готово.
+She made a long list: clean the flat, go shopping, cook, and buy flowers. = Она составила длинный список: убрать квартиру, сходить в магазин, приготовить еду и купить цветы.
+
+First she vacuumed the floors and cleaned the bathroom. = Сначала она пропылесосила полы и помыла ванную.
+Then she went to the supermarket. = Потом пошла в супермаркет.
+It was crowded, and the queue at the checkout was very long. = Там было людно, а очередь на кассе была очень длинной.
+
+At home, she started cooking her grandmother's famous soup. = Дома она начала варить знаменитый бабушкин суп.
+Suddenly she realized that she had forgotten to buy onions. = Вдруг она поняла, что забыла купить лук.
+She knocked on her neighbor's door, and he gave her two. = Она постучалась к соседу, и он дал ей две луковицы.
+
+At five to seven, everything was ready except Kate. = Без пяти семь всё было готово, кроме самой Кати.
+She was still wearing her old T-shirt when the doorbell rang. = Она всё ещё была в старой футболке, когда в дверь позвонили.
+Her friends laughed, but they loved the soup. = Друзья посмеялись, но суп им очень понравился.
+"Next time, let's just order pizza," Kate said, and everyone agreed. = «В следующий раз просто закажем пиццу», — сказала Катя, и все согласились.
+
+## The Neighbor's Dog = Соседская собака
+тема: Повседневная жизнь
+
+When Paul moved into his new flat, he was very happy. = Когда Павел переехал в новую квартиру, он был очень счастлив.
+The rooms were bright, and the neighborhood was quiet. = Комнаты были светлыми, а район тихим.
+But on the first night, a dog next door started barking. = Но в первую же ночь за стеной залаяла собака.
+
+The dog barked every evening when its owner left for work. = Собака лаяла каждый вечер, когда хозяйка уходила на работу.
+Paul could not sleep, and he became more and more annoyed. = Павел не мог уснуть и раздражался всё сильнее.
+One day he decided to complain. = Однажды он решил пожаловаться.
+
+An elderly woman opened the door. = Дверь открыла пожилая женщина.
+She apologized many times and explained the situation. = Она много раз извинилась и объяснила, в чём дело.
+She worked night shifts at a hospital, and the dog was lonely without her. = Она работала в больнице в ночные смены, и собаке было одиноко без неё.
+
+Paul felt sorry for both of them. = Павлу стало жаль их обоих.
+He offered to take the dog for a walk in the evenings. = Он предложил выгуливать собаку по вечерам.
+After long walks, the dog slept peacefully all night. = После долгих прогулок собака спокойно спала всю ночь.
+
+Now Paul and the dog are best friends. = Теперь Павел и собака лучшие друзья.
+And every Sunday, the neighbor brings him a homemade cake to say thank you. = А каждое воскресенье соседка приносит ему домашний пирог в знак благодарности.
+
+## Learning to Cook = Учусь готовить
+тема: Повседневная жизнь
+
+Sam was thirty years old and had never cooked a real meal. = Саше было тридцать лет, и он ни разу не готовил настоящий обед.
+He usually ate fast food or ordered delivery. = Обычно он ел фастфуд или заказывал доставку.
+One day his doctor told him to eat healthier food. = Однажды врач велел ему питаться правильнее.
+
+Sam bought a cookbook and chose an easy recipe: chicken with vegetables. = Саша купил кулинарную книгу и выбрал простой рецепт: курицу с овощами.
+He chopped the onions, but he cried so much that he could not see. = Он нарезал лук, но так плакал, что ничего не видел.
+Then he burned the chicken because he was watching a match on TV. = Потом он сжёг курицу, потому что смотрел матч по телевизору.
+The kitchen was full of smoke, and the fire alarm went off. = Кухня наполнилась дымом, и сработала пожарная сигнализация.
+
+Sam almost gave up, but the next day he tried again. = Саша чуть не сдался, но на следующий день попробовал снова.
+This time he turned off the TV and followed the recipe step by step. = На этот раз он выключил телевизор и делал всё строго по рецепту.
+The chicken was soft, and the vegetables were tasty. = Курица получилась мягкой, а овощи — вкусными.
+
+Now Sam cooks four times a week. = Теперь Саша готовит четыре раза в неделю.
+He has lost five kilos and saves a lot of money. = Он похудел на пять килограммов и сильно экономит.
+Last weekend, he even invited his parents for dinner, and his mother asked for the recipe. = В прошлые выходные он даже пригласил родителей на ужин, и мама попросила у него рецепт.
+
+## Moving House = Переезд
+тема: Повседневная жизнь
+
+After ten years in the same flat, the Petrov family decided to move. = Прожив десять лет в одной квартире, семья Петровых решила переехать.
+The children were growing, and they needed more space. = Дети росли, и им нужно было больше места.
+
+Packing took three whole weeks. = Сборы заняли целых три недели.
+They found things they had forgotten about years ago. = Они нашли вещи, о которых давно забыли.
+There were old toys, letters, and even a wedding photo album. = Там были старые игрушки, письма и даже свадебный фотоальбом.
+They gave a lot of clothes to charity and threw away the rest. = Много одежды они отдали на благотворительность, а остальное выбросили.
+
+On moving day, it was raining heavily. = В день переезда шёл сильный дождь.
+The movers were late, and one box of plates fell and broke. = Грузчики опоздали, а одна коробка с тарелками упала и разбилась.
+By evening, everyone was tired and a little sad. = К вечеру все устали и немного загрустили.
+
+The new house was full of boxes, and nothing was in its place. = Новый дом был заставлен коробками, и ничего не стояло на своих местах.
+They ate pizza on the floor because the table was still in pieces. = Они ели пиццу на полу, потому что стол ещё не собрали.
+Then their new neighbors knocked on the door with a bottle of juice and a cake. = Потом в дверь постучали новые соседи с бутылкой сока и тортом.
+At that moment, the new house started to feel like home. = В этот момент новый дом стал казаться родным.
+
+## The Broken Phone = Разбитый телефон
+тема: Повседневная жизнь
+
+On Monday morning, Lisa dropped her phone on the way to work. = В понедельник утром Лиза уронила телефон по дороге на работу.
+The screen broke into a hundred pieces, and the phone died. = Экран разбился вдребезги, и телефон умер.
+The repair shop said it would take three days to fix. = В мастерской сказали, что ремонт займёт три дня.
+
+At first, Lisa felt completely lost. = Сначала Лиза чувствовала себя совершенно потерянной.
+She couldn't check the time, the weather, or her messages. = Она не могла посмотреть время, погоду или сообщения.
+On the bus, everyone was looking at their screens, and she had nothing to do. = В автобусе все смотрели в экраны, а ей было нечем заняться.
+
+So she looked out of the window and noticed things she had never seen before. = Тогда она стала смотреть в окно и заметила то, чего никогда раньше не видела.
+There was a little bakery on the corner and a beautiful old church. = На углу была маленькая пекарня, а ещё красивая старая церковь.
+At lunch, she talked to her colleagues instead of scrolling. = В обед она болтала с коллегами, вместо того чтобы листать ленту.
+In the evening, she finished a book that she had started a year ago. = Вечером она дочитала книгу, которую начала год назад.
+
+On Thursday, she got her phone back. = В четверг ей вернули телефон.
+She had two hundred unread messages, but none of them were important. = У неё было двести непрочитанных сообщений, но ни одно из них не было важным.
+Now Lisa leaves her phone at home every Sunday. = Теперь каждое воскресенье Лиза оставляет телефон дома.
+She calls it her "day of freedom." = Она называет это своим «днём свободы».
+
+## Healthy Habits = Полезные привычки
+тема: Повседневная жизнь
+
+On New Year's Eve, Dima promised himself to get fit. = В новогоднюю ночь Дима пообещал себе прийти в форму.
+He bought expensive running shoes and joined a gym. = Он купил дорогие кроссовки и записался в спортзал.
+For the first week, he went every day and felt great. = Первую неделю он ходил каждый день и чувствовал себя прекрасно.
+
+In the second week, his muscles were sore and he was always tired. = На второй неделе у него болели мышцы, и он постоянно уставал.
+It was dark and cold in the mornings, and his bed was so warm. = По утрам было темно и холодно, а кровать была такой тёплой.
+By February, he had stopped going completely. = К февралю он совсем перестал ходить.
+
+Then he read an article about small habits. = Потом он прочитал статью о маленьких привычках.
+It said that big changes start with tiny steps. = В ней говорилось, что большие перемены начинаются с крошечных шагов.
+So Dima decided to walk for just ten minutes after dinner. = Тогда Дима решил гулять всего по десять минут после ужина.
+It was easy, so he did it every day. = Это было легко, и он делал это каждый день.
+
+Soon ten minutes became thirty, and walking became running. = Вскоре десять минут превратились в тридцать, а ходьба — в бег.
+He also started drinking more water and going to bed earlier. = Ещё он стал пить больше воды и раньше ложиться спать.
+In September, Dima ran his first race, five kilometers. = В сентябре Дима пробежал свой первый забег — пять километров.
+He finished almost last, but he was the happiest runner on the track. = Он финишировал почти последним, но был самым счастливым бегуном на дистанции.
+
+## Lost in Rome = Заблудился в Риме
+тема: Путешествия и города
+
+It was Alex's first trip abroad, and he was very excited. = Это была первая поездка Алексея за границу, и он был очень взволнован.
+On his second day in Rome, he decided to explore the city without a map. = На второй день в Риме он решил осмотреть город без карты.
+"I'll just follow my nose," he thought. = «Пойду куда глаза глядят», — подумал он.
+
+He walked through narrow streets and beautiful squares. = Он шёл по узким улочкам и красивым площадям.
+He ate the best ice cream of his life and took hundreds of photos. = Он съел лучшее мороженое в жизни и сделал сотни фотографий.
+But when it got dark, he realized he had no idea where his hotel was. = Но когда стемнело, он понял, что понятия не имеет, где его отель.
+His phone battery was dead, and he didn't remember the address. = Телефон разрядился, а адреса он не помнил.
+
+Alex walked into a small restaurant and tried to explain the problem. = Алексей зашёл в маленький ресторан и попытался объяснить, в чём дело.
+The owner didn't speak much English, but he listened carefully. = Хозяин плохо говорил по-английски, но внимательно выслушал.
+Alex remembered only one thing: there was a fountain with three horses near the hotel. = Алексей помнил только одно: рядом с отелем был фонтан с тремя лошадьми.
+
+The owner smiled, closed the restaurant for ten minutes, and walked him there. = Хозяин улыбнулся, закрыл ресторан на десять минут и проводил его туда.
+The hotel was only two streets away. = Отель оказался всего в двух улицах оттуда.
+The next evening, Alex came back to the restaurant to have dinner and say thank you. = На следующий вечер Алексей вернулся в ресторан, чтобы поужинать и поблагодарить хозяина.
+He still says that getting lost was the best part of his trip. = Он до сих пор говорит, что потеряться было лучшим в его поездке.
+
+## The Missed Flight = Опоздал на самолёт
+тема: Путешествия и города
+
+Olga's flight to Barcelona was at seven in the morning. = Рейс Ольги в Барселону был в семь утра.
+She set two alarms, but she slept through both of them. = Она поставила два будильника, но проспала оба.
+When she woke up, it was already six o'clock. = Когда она проснулась, было уже шесть часов.
+
+She jumped out of bed, grabbed her bag, and called a taxi. = Она вскочила с кровати, схватила сумку и вызвала такси.
+The roads were empty, and the driver drove very fast. = Дороги были пусты, и водитель гнал очень быстро.
+But at the airport, the check-in counter was already closed. = Но в аэропорту стойка регистрации уже была закрыта.
+Olga watched her plane take off through the window. = Ольга смотрела в окно, как взлетает её самолёт.
+
+She almost cried, but then she went to the airline desk. = Она чуть не расплакалась, но потом пошла к стойке авиакомпании.
+The agent was kind and found her a seat on the afternoon flight. = Сотрудница была любезна и нашла ей место на дневной рейс.
+It cost fifty euros extra, but it was much cheaper than a new ticket. = Это стоило пятьдесят евро сверху, но было гораздо дешевле нового билета.
+
+While she was waiting, Olga had breakfast and read a guidebook. = Пока она ждала, Ольга позавтракала и почитала путеводитель.
+On the plane, she sat next to a woman from Barcelona. = В самолёте она сидела рядом с женщиной из Барселоны.
+The woman gave her a list of the best local cafés and beaches. = Женщина дала ей список лучших местных кафе и пляжей.
+"Sometimes missing a flight is lucky," Olga thought. = «Иногда опоздать на самолёт — к удаче», — подумала Ольга.
+
+## A Weekend in the Mountains = Выходные в горах
+тема: Путешествия и города
+
+Four friends decided to spend the weekend hiking in the mountains. = Четверо друзей решили провести выходные в походе по горам.
+They packed tents, warm clothes, and enough food for two days. = Они взяли палатки, тёплую одежду и еды на два дня.
+The weather forecast promised sunshine. = Прогноз погоды обещал солнце.
+
+The first day was perfect. = Первый день прошёл идеально.
+They walked along a river, saw deer, and took photos of the snowy peaks. = Они шли вдоль реки, видели оленей и фотографировали снежные вершины.
+In the evening, they made a fire and cooked soup under the stars. = Вечером они развели костёр и сварили суп под звёздами.
+
+At night, a storm arrived without any warning. = Ночью без всякого предупреждения налетела буря.
+The wind was so strong that one tent flew away. = Ветер был таким сильным, что одну палатку унесло.
+All four friends squeezed into the second tent and laughed until morning. = Все четверо втиснулись во вторую палатку и смеялись до утра.
+
+The next day, the path was wet and slippery. = На следующий день тропа была мокрой и скользкой.
+They walked slowly and helped each other on the steep parts. = Они шли медленно и помогали друг другу на крутых участках.
+When they finally reached the car, they were wet, dirty, and exhausted. = Когда они наконец добрались до машины, они были мокрые, грязные и без сил.
+"Same time next year?" asked Pavel. Everyone said yes. = «В это же время в следующем году?» — спросил Павел. Все согласились.
+
+## The Night Train = Ночной поезд
+тема: Путешествия и города
+
+Nina took the night train from Moscow to Saint Petersburg. = Нина поехала ночным поездом из Москвы в Санкт-Петербург.
+She shared a small compartment with an old man and a young student. = Она делила маленькое купе со стариком и молодым студентом.
+At first, nobody spoke. Everyone was looking at their phones. = Сначала никто не разговаривал. Все смотрели в телефоны.
+
+Then the old man took out a thermos and offered them some tea. = Потом старик достал термос и предложил им чаю.
+He told them that he had worked on the railway for forty years. = Он рассказал, что сорок лет проработал на железной дороге.
+He knew every station on the route and many funny stories about each one. = Он знал каждую станцию на маршруте и про каждую — много забавных историй.
+
+The student was going to an important exam the next day. = Студент ехал на важный экзамен, который был на следующий день.
+He was nervous, so Nina and the old man asked him questions to help him practice. = Он нервничал, поэтому Нина и старик задавали ему вопросы, чтобы он потренировался.
+They talked until late at night while the train rushed through the dark forest. = Они проговорили до поздней ночи, пока поезд мчался сквозь тёмный лес.
+
+In the morning, they arrived in the city in the rain. = Утром они приехали в город под дождём.
+They said goodbye on the platform like old friends. = Они попрощались на перроне, как старые друзья.
+A week later, Nina got a message from the student: "I passed! Thank you both!" = Через неделю Нине пришло сообщение от студента: «Я сдал! Спасибо вам обоим!»
+
+## A City by the Sea = Город у моря
+тема: Путешествия и города
+
+Every summer, my family goes to a small city by the sea. = Каждое лето моя семья ездит в маленький город у моря.
+It has narrow streets, white houses, and a long sandy beach. = Там узкие улочки, белые дома и длинный песчаный пляж.
+
+In the morning, the fishermen come back with their boats full of fish. = Утром рыбаки возвращаются с лодками, полными рыбы.
+You can buy fresh fish at the market and cook it for lunch. = На рынке можно купить свежую рыбу и приготовить её на обед.
+In the afternoon, when it is too hot, everyone has a nap. = Днём, когда слишком жарко, все отдыхают.
+The streets are empty, and even the dogs are sleeping in the shade. = Улицы пустеют, и даже собаки спят в тени.
+
+In the evening, the city comes alive. = Вечером город оживает.
+Families walk along the beach, and children play in the fountain. = Семьи гуляют по пляжу, а дети играют в фонтане.
+Street musicians play the guitar, and the cafés are full of people. = Уличные музыканты играют на гитаре, а кафе полны народу.
+
+Last year, a big hotel opened near the beach. = В прошлом году у пляжа открылся большой отель.
+Now there are more tourists and the prices are higher. = Теперь туристов больше, и цены выше.
+But the sunsets are still as beautiful as when I was a child. = Но закаты всё такие же красивые, как в моём детстве.
+I hope this little city never changes. = Надеюсь, этот городок никогда не изменится.
+
+## The Hotel Mistake = Ошибка в отеле
+тема: Путешествия и города
+
+Victor booked a cheap hotel room in London for his business trip. = Виктор забронировал недорогой номер в лондонском отеле для командировки.
+When he arrived at night, the receptionist looked worried. = Когда он приехал ночью, администратор выглядела обеспокоенной.
+"I'm sorry, sir, but we have no record of your booking," she said. = «Простите, сэр, но вашей брони у нас нет», — сказала она.
+
+Victor showed her the confirmation email on his phone. = Виктор показал ей письмо с подтверждением на телефоне.
+She checked it several times and called her manager. = Она проверила его несколько раз и позвонила управляющему.
+It turned out that the website had made a mistake, and the hotel was full. = Оказалось, что сайт ошибся, а отель был полон.
+
+The manager apologized and made a phone call. = Управляющий извинился и куда-то позвонил.
+"We have found you a room in our other hotel," he said. = «Мы нашли вам номер в другом нашем отеле», — сказал он.
+"A taxi will take you there for free." = «Такси отвезёт вас туда бесплатно».
+
+The other hotel turned out to be a luxury five-star hotel in the city center. = Другой отель оказался роскошной пятизвёздочной гостиницей в центре города.
+Victor's room had a huge bed and a view of the river. = В номере Виктора была огромная кровать и вид на реку.
+And because of the mistake, he paid the same cheap price. = А из-за ошибки он заплатил ту же низкую цену.
+"I hope the website makes mistakes more often," he joked. = «Надеюсь, сайт будет ошибаться почаще», — пошутил он.
+
+## The Missing Painting = Пропавшая картина
+тема: Приключения и детективы
+
+One morning, the guard at the city museum noticed an empty space on the wall. = Однажды утром охранник городского музея заметил пустое место на стене.
+The most famous painting in the museum was gone. = Самая знаменитая картина музея исчезла.
+There were no signs of a break-in, and the alarm had not gone off. = Следов взлома не было, и сигнализация не сработала.
+
+Detective Morris arrived an hour later. = Детектив Моррис приехал через час.
+He watched the security videos, but one camera had been switched off at midnight. = Он просмотрел записи с камер, но одну камеру в полночь отключили.
+Only three people knew the code: the director, the guard, and the cleaner. = Код знали только трое: директор, охранник и уборщица.
+
+The director said he had been at home all night. = Директор сказал, что всю ночь был дома.
+The guard said he had been watching a football match in his room. = Охранник сказал, что смотрел футбольный матч у себя в комнате.
+The cleaner said she had finished work at ten and gone straight home. = Уборщица сказала, что закончила работу в десять и сразу пошла домой.
+
+Morris checked the football results. = Моррис проверил результаты матча.
+"The match was canceled because of rain," he said quietly. = «Матч отменили из-за дождя», — тихо сказал он.
+The guard turned pale and finally confessed. = Охранник побледнел и наконец признался.
+He had owed a lot of money and had planned to sell the painting abroad. = Он задолжал много денег и собирался продать картину за границу.
+The painting was found in his car, wrapped in an old blanket. = Картину нашли в его машине, завёрнутой в старое одеяло.
+
+## Footprints in the Snow = Следы на снегу
+тема: Приключения и детективы
+
+It snowed all night in the small village. = Всю ночь в маленькой деревне шёл снег.
+In the morning, Mr. Brown discovered that his car had been stolen. = Утром мистер Браун обнаружил, что его машину угнали.
+He called the police, and Officer Kim came to his house. = Он вызвал полицию, и к нему приехала офицер Ким.
+
+The snow around the garage was white and clean. = Снег вокруг гаража был белым и нетронутым.
+There was only one line of footprints, from the house to the garage. = Была лишь одна цепочка следов — от дома к гаражу.
+And there were no tire tracks on the road. = А на дороге не было следов шин.
+
+Officer Kim looked at the footprints for a long time. = Офицер Ким долго разглядывала следы.
+"These are your footprints, aren't they?" she asked. = «Это ведь ваши следы?» — спросила она.
+"Yes, I went to the garage this morning," Mr. Brown answered. = «Да, я ходил в гараж сегодня утром», — ответил мистер Браун.
+"Then the car must have left before the snow started," she said. = «Значит, машина уехала до того, как начался снег», — сказала она.
+
+She asked the neighbors, and one of them remembered a noise at nine in the evening. = Она опросила соседей, и один вспомнил шум в девять вечера.
+Mr. Brown's son had borrowed the car to visit his girlfriend. = Сын мистера Брауна взял машину, чтобы навестить свою девушку.
+He had forgotten to tell his father. = Он забыл сказать об этом отцу.
+Mr. Brown was embarrassed, but Officer Kim just laughed. = Мистеру Брауну стало неловко, но офицер Ким только рассмеялась.
+"Not every mystery is a crime," she said. = «Не каждая загадка — преступление», — сказала она.
+
+## The Stranger on the Bus = Незнакомец в автобусе
+тема: Приключения и детективы
+
+Every day, Sofia takes the same bus to work. = Каждый день София ездит на работу одним и тем же автобусом.
+One Tuesday, a man in a gray coat sat next to her. = Однажды во вторник рядом с ней сел мужчина в сером пальто.
+He held a small black bag on his knees and looked around nervously. = Он держал на коленях маленькую чёрную сумку и нервно оглядывался.
+
+At the next stop, he jumped up and ran off the bus. = На следующей остановке он вскочил и выбежал из автобуса.
+He left the bag on the seat. = Сумку он оставил на сиденье.
+Sofia called after him, but the doors had already closed. = София окликнула его, но двери уже закрылись.
+
+She opened the bag carefully to look for a name. = Она осторожно открыла сумку, чтобы найти имя владельца.
+Inside there were old letters, a key, and a photo of a little girl. = Внутри были старые письма, ключ и фотография маленькой девочки.
+On the back of the photo was an address in her own neighborhood. = На обороте фотографии был адрес в её же районе.
+
+After work, Sofia went to the address and rang the bell. = После работы София пошла по этому адресу и позвонила в дверь.
+An old woman opened the door and saw the photo. = Дверь открыла пожилая женщина и увидела фотографию.
+"That's me, seventy years ago," she whispered. = «Это я, семьдесят лет назад», — прошептала она.
+The man on the bus was her younger brother, whom she had not seen for thirty years. = Мужчина из автобуса оказался её младшим братом, которого она не видела тридцать лет.
+He had been too afraid to knock on her door. = Он слишком боялся постучать к ней в дверь.
+A week later, thanks to Sofia, brother and sister finally met again. = Через неделю, благодаря Софии, брат и сестра наконец встретились.
+
+## The Locked Room = Запертая комната
+тема: Приключения и детективы
+
+The old hotel by the lake had a strange rule. = В старом отеле у озера было странное правило.
+Nobody was allowed to enter Room 13 on the top floor. = Никому не разрешалось входить в тринадцатый номер на последнем этаже.
+The owner said the room was dangerous, but he never explained why. = Владелец говорил, что номер опасен, но никогда не объяснял почему.
+
+Jack, a young journalist, wanted to write a story about the hotel. = Джек, молодой журналист, хотел написать статью об отеле.
+One night, he found the key in the reception desk while everyone was sleeping. = Однажды ночью, пока все спали, он нашёл ключ в стойке администратора.
+His heart was beating fast as he climbed the stairs. = Его сердце бешено колотилось, когда он поднимался по лестнице.
+
+He unlocked the door and turned on the light. = Он отпер дверь и включил свет.
+There were no ghosts and no monsters. = Не было ни призраков, ни чудовищ.
+The room was full of beautiful paintings of the lake in every season. = Комната была полна прекрасных картин с видами озера во все времена года.
+
+The next morning, Jack asked the owner about the paintings. = На следующее утро Джек спросил владельца о картинах.
+The man was silent for a long time, and then he smiled sadly. = Тот долго молчал, а потом грустно улыбнулся.
+"My wife painted them," he said. "That was her studio." = «Их рисовала моя жена, — сказал он. — Это была её мастерская».
+"After she died, I couldn't let anyone inside." = «После её смерти я не мог никого туда пускать».
+Jack never wrote his story, but a year later the owner opened the room as a small gallery. = Джек так и не написал статью, но через год владелец открыл в номере маленькую галерею.
+
+## The Treasure Map = Карта сокровищ
+тема: Приключения и детективы
+
+While cleaning his grandfather's attic, Leo found an old wooden box. = Разбирая дедушкин чердак, Лёва нашёл старую деревянную шкатулку.
+Inside was a map drawn by hand, with a red cross near a lake. = Внутри была нарисованная от руки карта с красным крестиком у озера.
+Under the cross, someone had written: "For the one who is brave." = Под крестиком кто-то написал: «Для того, кто смел».
+
+Leo showed the map to his best friend, Mia. = Лёва показал карту своей лучшей подруге Мие.
+They recognized the lake: it was only an hour from their town. = Они узнали озеро: оно было всего в часе от их городка.
+On Saturday, they took their bikes, a shovel, and some sandwiches. = В субботу они взяли велосипеды, лопату и бутерброды.
+
+They followed the map past an old mill and through a dark forest. = Они шли по карте мимо старой мельницы и через тёмный лес.
+Near a huge oak tree, they started digging. = У огромного дуба они начали копать.
+After an hour, the shovel hit something hard. = Через час лопата наткнулась на что-то твёрдое.
+It was a metal box, covered in mud. = Это была металлическая коробка, вся в грязи.
+
+There was no gold inside. = Золота внутри не было.
+There were letters that Leo's grandfather had written to his grandmother during the war. = Там были письма, которые дедушка Лёвы писал бабушке во время войны.
+The last one said: "I will come back, and we will have a house by this lake." = В последнем было написано: «Я вернусь, и у нас будет дом у этого озера».
+Leo's grandparents had lived by that lake for fifty happy years. = Бабушка и дедушка Лёвы прожили у этого озера пятьдесят счастливых лет.
+"This is better than gold," Mia said, and Leo agreed. = «Это лучше золота», — сказала Мия, и Лёва согласился.
+
+## Who Stole the Cake? = Кто украл торт?
+тема: Приключения и детективы
+
+It was Grandma's birthday, and the family had bought a big chocolate cake. = У бабушки был день рождения, и семья купила большой шоколадный торт.
+They hid it in the kitchen until dinner. = Его спрятали на кухне до ужина.
+But when Mom went to get it, half of the cake was gone. = Но когда мама пошла за ним, половины торта не было.
+
+Mom called everyone into the living room. = Мама позвала всех в гостиную.
+"Who ate the cake?" she asked. = «Кто съел торт?» — спросила она.
+Dad said he had been in the garage all afternoon. = Папа сказал, что весь день был в гараже.
+Little Max said he had been doing his homework. = Маленький Макс сказал, что делал уроки.
+Their sister Ella said she had been talking on the phone. = Их сестра Элла сказала, что разговаривала по телефону.
+
+Grandma looked at everyone with a smile. = Бабушка с улыбкой оглядела всех.
+"Max, why is there chocolate on your homework?" she asked. = «Макс, почему у тебя на домашнем задании шоколад?» — спросила она.
+Max looked down. There was a brown spot on his math book. = Макс опустил глаза. На учебнике математики было коричневое пятно.
+And then everyone noticed the dog. Its face was covered in chocolate too! = А потом все заметили собаку. Её морда тоже была в шоколаде!
+
+Max confessed that he had eaten one small piece. = Макс признался, что съел один маленький кусочек.
+The dog had done the rest when nobody was looking. = Остальное доела собака, пока никто не видел.
+Grandma laughed so much that she couldn't be angry. = Бабушка так смеялась, что не могла сердиться.
+"It's the best birthday story I've ever had," she said. = «Это лучшая история на мой день рождения», — сказала она.
+
+## The Robot Who Wanted to Rest = Робот, который хотел отдохнуть
+тема: Разное
+
+In a big city of the future, there was a cleaning robot called Bolt. = В большом городе будущего жил робот-уборщик по имени Болт.
+Every day, Bolt cleaned the streets from early morning until late at night. = Каждый день Болт убирал улицы с раннего утра до поздней ночи.
+He never stopped, never complained, and never took a break. = Он никогда не останавливался, не жаловался и не делал перерывов.
+
+One evening, Bolt saw a family having a picnic in the park. = Однажды вечером Болт увидел семью, устроившую пикник в парке.
+They were laughing, eating, and watching the sunset. = Они смеялись, ели и смотрели на закат.
+Bolt stopped. For the first time, he wondered what it felt like to rest. = Болт остановился. Впервые он задумался, каково это — отдыхать.
+
+The next day, Bolt sat down on a bench instead of working. = На следующий день Болт сел на скамейку вместо того, чтобы работать.
+People were shocked. Some were angry, and some took photos. = Люди были в шоке. Кто-то злился, кто-то фотографировал.
+The news spread quickly: "Robot goes on strike!" = Новость быстро разлетелась: «Робот объявил забастовку!»
+
+A little girl came up to Bolt and offered him a piece of her apple. = К Болту подошла маленькая девочка и предложила ему кусочек яблока.
+"You can't eat it, but you can sit with me," she said. = «Ты не можешь его съесть, но можешь посидеть со мной», — сказала она.
+They watched the birds together for an hour. = Целый час они вместе смотрели на птиц.
+
+After that, the city gave all robots one free hour every day. = После этого город дал всем роботам один свободный час в день.
+The streets were still clean, and Bolt was much happier. = Улицы по-прежнему были чистыми, а Болт стал гораздо счастливее.
+Every evening, he sits on the same bench and watches the sunset. = Каждый вечер он сидит на той же скамейке и смотрит на закат.
+
+## A Letter from the Future = Письмо из будущего
+тема: Разное
+
+On her eighteenth birthday, Vera found a strange envelope in her mailbox. = В свой восемнадцатый день рождения Вера нашла в почтовом ящике странный конверт.
+There was no stamp, and the handwriting looked exactly like hers. = Марки не было, а почерк был точь-в-точь как у неё.
+On the envelope it said: "Open me now. From Vera, age 40." = На конверте было написано: «Открой меня сейчас. От Веры, 40 лет».
+
+Inside was a short letter. = Внутри было короткое письмо.
+"Dear Vera, don't be afraid of making mistakes. = «Дорогая Вера, не бойся ошибаться.
+Learn English, even when it feels difficult. = Учи английский, даже когда кажется, что это трудно.
+Call Grandma more often, and don't worry so much about what other people think. = Звони бабушке почаще и не переживай так сильно о том, что думают другие.
+And please, never cut your hair very short. It was a terrible idea." = И пожалуйста, никогда не стриги волосы совсем коротко. Это была ужасная идея».
+
+Vera laughed and thought it was a joke from her friends. = Вера рассмеялась и решила, что это шутка друзей.
+But nobody admitted writing it. = Но никто не признался, что это написал.
+She kept the letter in her drawer and read it from time to time. = Она хранила письмо в ящике стола и время от времени перечитывала его.
+
+Twenty-two years later, on her fortieth birthday, Vera sat down at her desk. = Через двадцать два года, в свой сороковой день рождения, Вера села за стол.
+She took a sheet of paper and began to write: "Dear Vera..." = Она взяла лист бумаги и начала писать: «Дорогая Вера…»
+She smiled. Now she knew who had sent that letter. = Она улыбнулась. Теперь она знала, кто отправил то письмо.
+
+## The Old Photograph = Старая фотография
+тема: Разное
+
+At a flea market in Prague, Daniel found a box of old photographs. = На блошином рынке в Праге Даниил нашёл коробку старых фотографий.
+One picture caught his eye. = Одна фотография привлекла его внимание.
+It showed a young couple standing in front of a bakery, smiling at the camera. = На ней молодая пара стояла перед пекарней и улыбалась в камеру.
+On the back was a date, 1962, and two names: Jan and Eva. = На обороте была дата, 1962, и два имени: Ян и Ева.
+
+Daniel bought the photo for one euro. = Даниил купил фотографию за один евро.
+He posted it on social media and asked if anyone knew the couple. = Он выложил её в соцсети и спросил, не знает ли кто-нибудь эту пару.
+The post was shared thousands of times. = Пост разошёлся тысячами репостов.
+
+Three days later, a woman sent him a message. = Через три дня ему написала женщина.
+"Those are my grandparents!" she wrote. = «Это мои бабушка и дедушка!» — написала она.
+"Grandpa died last year, and Grandma lost all her photos in a flood." = «Дедушка умер в прошлом году, а бабушка потеряла все фотографии во время наводнения».
+"This would mean the world to her." = «Для неё это бесценно».
+
+Daniel sent the photo by mail the same day. = В тот же день Даниил отправил фотографию по почте.
+A week later, he received a video. = Через неделю он получил видео.
+An old woman was holding the photo and crying with happiness. = Пожилая женщина держала фотографию и плакала от счастья.
+"Thank you for bringing my Jan back to me," she said. = «Спасибо, что вернули мне моего Яна», — сказала она.
+
+## Grandma's Garden = Бабушкин сад
+тема: Разное
+
+My grandmother has a small garden behind her house in the village. = У моей бабушки за домом в деревне есть небольшой сад.
+She grows tomatoes, cucumbers, strawberries, and lots of flowers. = Она выращивает помидоры, огурцы, клубнику и много цветов.
+When I was a child, I spent every summer there. = В детстве я проводил там каждое лето.
+
+Grandma always got up at dawn to water the plants. = Бабушка всегда вставала на рассвете, чтобы полить растения.
+She talked to them as if they were her friends. = Она разговаривала с ними, как с друзьями.
+I thought it was funny, but her garden was the best in the village. = Мне это казалось смешным, но её сад был лучшим в деревне.
+
+She taught me how to plant seeds and how to get rid of weeds. = Она научила меня сажать семена и избавляться от сорняков.
+"Plants are like people," she said. "They need time, care, and patience." = «Растения как люди, — говорила она. — Им нужны время, забота и терпение».
+In August, we made jam from the berries and kept it for the winter. = В августе мы варили из ягод варенье и хранили его на зиму.
+
+Now Grandma is eighty-five, and her back hurts. = Теперь бабушке восемьдесят пять, и у неё болит спина.
+So every spring, I come to the village and help her with the garden. = Поэтому каждую весну я приезжаю в деревню и помогаю ей с садом.
+We work slowly, drink tea in the shade, and talk for hours. = Мы работаем не спеша, пьём чай в тени и часами разговариваем.
+I still think it's a little funny, but now I also talk to the plants. = Мне всё ещё немного смешно, но теперь я тоже разговариваю с растениями.
+
+## The Talent Show = Конкурс талантов
+тема: Разное
+
+Our school organized a talent show, and everyone wanted to take part. = В нашей школе устроили конкурс талантов, и все хотели участвовать.
+There were singers, dancers, a magician, and even a boy who could juggle five balls. = Там были певцы, танцоры, фокусник и даже мальчик, который жонглировал пятью мячами.
+
+My friend Nick was very shy, but he played the piano beautifully. = Мой друг Коля был очень застенчивым, но прекрасно играл на пианино.
+I begged him to sign up, and finally he agreed. = Я упросил его записаться, и в конце концов он согласился.
+For two weeks, he practiced every evening after school. = Две недели он репетировал каждый вечер после уроков.
+
+On the night of the show, the hall was full of parents and teachers. = В вечер конкурса зал был полон родителей и учителей.
+When Nick walked onto the stage, his hands were shaking. = Когда Коля вышел на сцену, у него тряслись руки.
+He sat down, closed his eyes, and started to play. = Он сел, закрыл глаза и начал играть.
+
+The hall went completely silent. = В зале стало совсем тихо.
+The music was so beautiful that some people had tears in their eyes. = Музыка была такой красивой, что у некоторых на глазах выступили слёзы.
+When he finished, everyone stood up and applauded for a long time. = Когда он закончил, все встали и долго аплодировали.
+
+Nick didn't win first prize. The juggler did. = Коля не занял первое место. Победил жонглёр.
+But after that night, he was never shy about playing again. = Но после того вечера он больше никогда не стеснялся играть.
+Today he studies music at a conservatory, and he still thanks me for that evening. = Сейчас он учится в консерватории и до сих пор благодарит меня за тот вечер.
+
+## The Last Bookshop = Последний книжный магазин
+тема: Разное
+
+In a quiet street downtown, there is a tiny bookshop called Page Turner. = На тихой улице в центре города есть крошечный книжный магазин «Перелистни».
+It is the last bookshop in the whole neighborhood. = Это последний книжный магазин во всём районе.
+The owner, Mr. Green, has worked there for forty years. = Его владелец, мистер Грин, работает там уже сорок лет.
+
+Most people buy books online now, and the shop is often empty. = Сейчас большинство людей покупает книги в интернете, и в магазине часто пусто.
+Last winter, Mr. Green put a sign in the window: "Closing at the end of the month." = Прошлой зимой мистер Грин повесил в окне объявление: «Закрываемся в конце месяца».
+
+A student who lived nearby saw the sign and felt sad. = Студентка, жившая неподалёку, увидела объявление и расстроилась.
+She had spent many happy hours in that shop as a child. = В детстве она провела в этом магазине много счастливых часов.
+She took a photo of the sign and posted it online with a short story about the shop. = Она сфотографировала объявление и выложила его в интернет с коротким рассказом о магазине.
+
+The next day, there was a queue outside the door. = На следующий день у двери выстроилась очередь.
+People came from all over the city to buy books and support Mr. Green. = Люди приезжали со всего города, чтобы купить книги и поддержать мистера Грина.
+Some brought cakes, and some offered to help in the shop for free. = Кто-то приносил пироги, а кто-то предлагал бесплатно помогать в магазине.
+
+The sign is gone now. = Теперь объявления нет.
+Every Saturday, the shop has a reading club, and the student runs it. = Каждую субботу в магазине собирается читательский клуб, и ведёт его та самая студентка.
+Mr. Green says he will retire when he is a hundred years old. = Мистер Грин говорит, что уйдёт на пенсию, когда ему исполнится сто лет.
