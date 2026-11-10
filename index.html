@@ -116,9 +116,13 @@ button { cursor: pointer; }
 .view { min-height: 100%; display: flex; flex-direction: column; padding-block: 2px 12px; }
 .view-cards { height: 100%; display: grid; grid-template-rows: auto minmax(250px, 1fr) auto auto; }
 
-.counters { display: flex; justify-content: center; gap: 18px; padding-block: 6px 2px; font-size: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.counters { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 18px; padding-block: 6px 2px; font-size: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .counters b { font-size: 16px; }
+.counters > * { white-space: nowrap; }
+@media (max-width: 420px) { .counters { column-gap: 12px; font-size: 13px; } .counters b { font-size: 15px; } }
 .c-new b { color: var(--great); } .c-learn b { color: var(--bad); } .c-due b { color: var(--good); }
+.c-stuck { font: inherit; color: inherit; background: none; border: 0; margin: -8px 0; padding: 8px 0; cursor: pointer; text-decoration: underline dotted var(--ink-3); text-underline-offset: 4px; }
+.c-stuck b { color: var(--warn); }
 .progress { display: flex; align-items: center; gap: 12px; padding-block: 6px 4px; }
 .bar { flex: 1; height: 6px; border-radius: 3px; background: var(--hair); overflow: hidden; }
 .bar span { display: block; height: 100%; border-radius: inherit; background: var(--marker); transition: width .3s ease; }
@@ -173,6 +177,7 @@ button { cursor: pointer; }
 .tag-new { background: var(--marker); color: var(--marker-ink); }
 .tag-learn { background: var(--bad-bg); color: var(--bad); }
 .tag-rev { background: var(--good-bg); color: var(--good); }
+.tag-stuck { background: var(--warn-bg); color: var(--warn); }
 
 /* buttons */
 .answer { display: grid; grid-template-columns: 1fr; gap: 8px; padding-block: 8px 4px; }
@@ -726,6 +731,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   const MIN = 6e4, DAY = 864e5;
   const WORD_FORMS = ['слово', 'слова', 'слов'];
   const LEARN_LIMIT = 15;
+  const STUCK_AFTER = 2;   // столько раз подряд «Не знаю / Не помню» после знакомства, и слово уходит с карточек в изучение
   function plural(n, f) { const a = Math.abs(n) % 100, b = a % 10; return n + ' ' + (a > 10 && a < 20 ? f[2] : b === 1 ? f[0] : b >= 2 && b <= 4 ? f[1] : f[2]); }
   function shuffle(arr) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
   const IS_PREVIEW = (() => { try { return window.self !== window.top || /claude/i.test(location.hostname); } catch (e) { return true; } })();
@@ -1143,6 +1149,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return Math.min(365, Math.max(1, Math.round(s * bonus * (RET_FACTOR[S.retention] || 1) * memFactor())));
   }
   const isFresh = s => !s || s.st === 'new';
+  const isProblem = s => !!s && s.st !== 'review' && s.st !== 'new' && s.lg <= 2;
+  // lf: сколько раз подряд слово не вспомнилось уже после первого показа. В записях до этого поля его нет: оцениваем по числу показов
+  const learnFails = s => !s || s.st === 'review' || s.st === 'new' ? 0 : s.lf != null ? s.lf : s.lg > 2 ? 0 : s.st === 'relearning' ? 1 : Math.min(STUCK_AFTER, Math.max(0, (s.reps || 1) - 1));
+  // карточки с этим словом не помогают: оно не крутится по кругу, а ждёт «Изучения трудных слов»
+  const isStuck = s => isProblem(s) && learnFails(s) >= STUCK_AFTER;
   // btn: 1 Не знаю, 2 Не помню, 3 Помню, 4 Помню хорошо
   function schedule(prev, btn, now) {
     const p = prev && prev.st !== 'new' ? Object.assign({}, prev) : null;
@@ -1152,12 +1163,13 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const gD = btn === 1 ? 1 : btn === 2 ? 2 : btn;
     if (!p) {
       n.d = initD(btn <= 2 ? (btn === 1 ? 1 : 1.5) : btn);
+      n.lf = 0;
       if (btn <= 2) { n.st = 'learning'; n.s = W[0]; n.due = now + (btn === 1 ? 1 : 10) * MIN; }
       else if (btn === 3) { n.st = 'learning'; n.s = W[2]; n.due = now + 10 * MIN; }
       else { n.st = 'review'; n.s = W[3]; n.due = now + days(n.s, n.es) * DAY; }
     } else if (p.st !== 'review') {
       n.d = nextD(p.d || initD(3), gD);
-      if (btn <= 2) { n.due = now + (btn === 1 ? 1 : 10) * MIN; }
+      if (btn <= 2) { n.lf = learnFails(prev) + 1; n.due = now + (btn === 1 ? 1 : 10) * MIN; }
       else if (btn === 3) { n.st = 'review'; n.s = Math.max(p.s || W[2], 1); n.due = now + days(n.s, 0) * DAY; }
       else { n.st = 'review'; n.s = Math.max(p.s || W[2], W[2]) * 1.6; n.due = now + Math.max(days(n.s, n.es), days(Math.max(p.s || W[2], 1), 0) + 1) * DAY; }
     } else {
@@ -1165,7 +1177,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       const r = retention(t, p.s);
       n.d = nextD(p.d, gD);
       if (btn <= 2) {
-        n.st = 'relearning'; n.lapses = (n.lapses || 0) + 1;
+        n.st = 'relearning'; n.lapses = (n.lapses || 0) + 1; n.lf = 0;
         n.s = Math.max(0.1, Math.min(p.s, sForget(p.d, p.s, r)) * (btn === 2 ? 1.25 : 1));
         n.due = now + (btn === 1 ? 1 : 10) * MIN;
       } else {
@@ -1176,8 +1188,16 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         n.due = now + ivl * DAY;
       }
     }
+    if (n.st === 'review') delete n.lf;
     n.last = now;
     return n;
+  }
+  // слово выучено в упражнениях: в повторения, первое через день
+  function graduate(w, now) {
+    const s = SRS[w.key] || {};
+    const n = Object.assign({}, s, { st: 'review', s: Math.max(s.s || 0, 1), d: s.d || initD(3), due: now + DAY, last: now, lg: 3, es: 0, reps: (s.reps || 0) + 1 });
+    delete n.lf; delete n.kn;
+    SRS[w.key] = n;
   }
   function fmtIvl(ms) {
     const m = Math.round(ms / MIN);
@@ -1189,8 +1209,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     if (d < 365) return Math.round(d / 30) + ' мес';
     return '1 год';
   }
-  const isProblem = s => s && s.st !== 'review' && s.lg <= 2;
   const problemWords = () => WORDS.filter(w => isProblem(SRS[w.key]));
+  const stuckWords = () => WORDS.filter(w => isStuck(SRS[w.key]));
   const isLeech = s => !!s && !isFresh(s) && (s.lapses || 0) >= 4;
   function statusTag(w) {
     const s = SRS[w.key];
@@ -1198,6 +1218,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     let main;
     if (isFresh(s)) main = '<span class="tag tag-new">новое</span>';
     else if (s.kn) main = '<span class="tag tag-known">знаю</span>';
+    else if (isStuck(s)) main = '<span class="tag tag-stuck">изучить</span>';
     else if (s.st !== 'review') main = '<span class="tag tag-learn">учу</span>';
     else { const left = s.due - Date.now(); main = `<span class="tag tag-rev">${left <= 0 ? 'повторить' : 'через ' + fmtIvl(left)}</span>`; }
     return leech ? `<span class="tags">${leech}${main}</span>` : main;
@@ -1371,15 +1392,15 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   /* ---------- Карточки ---------- */
   function cardCounts() {
     const now = Date.now(); let fresh = 0, learn = 0, due = 0;
-    pool().forEach(w => { const s = SRS[w.key]; if (isFresh(s)) fresh++; else if (s.st !== 'review') learn++; else if (s.due <= now) due++; });
-    return { fresh, learn, due };
+    pool().forEach(w => { const s = SRS[w.key]; if (isFresh(s)) fresh++; else if (s.st !== 'review') { if (!isStuck(s)) learn++; } else if (s.due <= now) due++; });
+    return { fresh, learn, due, stuck: stuckWords().length };
   }
   function pickCard() {
     const now = Date.now(), learnDue = [], revDue = [], fresh = [], ahead = [];
     pool().forEach(w => {
       const s = SRS[w.key];
       if (isFresh(s)) fresh.push(w);
-      else if (s.st !== 'review') { if (s.due <= now) learnDue.push(w); else if (s.due - now < 20 * MIN) ahead.push(w); }
+      else if (s.st !== 'review') { if (isStuck(s)) return; if (s.due <= now) learnDue.push(w); else if (s.due - now < 20 * MIN) ahead.push(w); }
       else if (s.due <= now) revDue.push(w);
     });
     const byDue = (a, b) => SRS[a.key].due - SRS[b.key].due;
@@ -1450,8 +1471,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <div class="goal" role="img" aria-label="Сегодня ${done} ответов из ${goal}"><div class="goal-bar"><span style="width:${pct}%"></span></div><span>Сегодня <b>${done}</b> из ${goal}</span></div>
         <span class="streak${st.todayDone ? ' on' : ''}"><b>${st.streak}</b> ${plural(st.streak, ['день', 'дня', 'дней']).replace(/^\d+ /, '')} подряд</span>
       </div>
-      <div class="counters"><span class="c-new">${newLabel}</span><span class="c-learn"><b>${c.learn}</b> учу</span><span class="c-due"><b>${c.due}</b> повторить</span></div></div>`;
+      <div class="counters"><span class="c-new">${newLabel}</span><span class="c-learn"><b>${c.learn}</b> учу</span>${c.stuck ? `<button class="c-stuck" type="button" data-act="start-learn" aria-label="Изучить в упражнениях: ${plural(c.stuck, WORD_FORMS)}"><b>${c.stuck}</b> изучить</button>` : ''}<span class="c-due"><b>${c.due}</b> повторить</span></div></div>`;
   }
+  const stuckVerb = n => n % 10 === 1 && n % 100 !== 11 ? 'не запоминается' : 'не запоминаются';
   function pickNextForPrefetch(cur) { const k = lastCardKey; lastCardKey = cur.key; const n = pickCard(); lastCardKey = k; return n && n.key !== cur.key ? n : null; }
   function cardsDoneHTML() {
     const probs = problemWords().length;
@@ -1461,9 +1483,18 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <div class="done-actions"><button class="btn btn-primary" type="button" data-act="start-learn">Начать изучение</button></div></div>`;
     }
     let next = Infinity;
-    pool().forEach(w => { const s = SRS[w.key]; if (!isFresh(s)) next = Math.min(next, s.due); });
+    pool().forEach(w => { const s = SRS[w.key]; if (!isFresh(s) && !isStuck(s)) next = Math.min(next, s.due); });
     const when = next < Infinity ? 'Следующее повторение через ' + fmtIvl(Math.max(0, next - Date.now())) + '.' : '';
     const freshLeft = pool().some(w => isFresh(SRS[w.key]));
+    const stuck = stuckWords().length;
+    if (stuck) {
+      const limitHit = freshLeft && newToday() >= newLimit();
+      return `<div class="done"><h2>${plural(stuck, WORD_FORMS)} ${stuckVerb(stuck)} по карточкам</h2>
+        <p>Выучим их в пяти упражнениях: знакомство, выбор перевода, пропуск в предложении, на слух и написание. После этого они вернутся в повторения.</p>
+        ${limitHit ? `<p>Новых слов сегодня: ${newToday()} из ${newLimit()}. ${when}</p>` : when ? `<p>${when}</p>` : ''}
+        <div class="done-actions"><button class="btn btn-primary" type="button" data-act="start-learn">Начать изучение</button>
+        ${limitHit ? '<button class="btn btn-ghost" type="button" data-act="more-new">Ещё 5 новых слов</button>' : ''}</div></div>`;
+    }
     if (freshLeft && newToday() >= newLimit()) {
       return `<div class="done"><h2>На сегодня всё</h2><p>Новых слов сегодня: ${newToday()} из ${newLimit()}. ${when}</p>
         <div class="done-actions"><button class="btn btn-primary" type="button" data-act="more-new">Ещё 5 новых слов</button>
@@ -1494,7 +1525,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function gradeCard(g) {
     if (!card || !card.flipped) return;
     const w = card.w, now = Date.now();
-    const wasNew = isFresh(SRS[w.key]);
+    const wasNew = isFresh(SRS[w.key]), wasStuck = isStuck(SRS[w.key]);
     recordReview(SRS[w.key], g >= 3, now);
     SRS[w.key] = schedule(SRS[w.key], g, now);
     saveSrs();
@@ -1505,6 +1536,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const probs = problemWords().length;
     if (g <= 2 && probs >= LEARN_LIMIT && probs >= promptSnooze) learnPrompt = true;
     renderCards();
+    if (!wasStuck && isStuck(SRS[w.key]) && !learnPrompt) toast(`«${w.en}» ${stuckVerb(1)}. Оно уходит с карточек в изучение`, { action: 'Изучить', run: () => startLearn() });
   }
   function knownFromCard() {
     if (!card || card.flipped) return;
@@ -1554,7 +1586,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   const itemText = it => (it && it.ex && it.ex.en) || (it && it.w.ex) || '';
   const itemSentence = it => (it && it.ex) || (it ? { en: it.w.ex, ru: mainTr(it.w), path: audioRec(it.w).e || null } : null);
   function renderHub() {
-    const probs = problemWords().length;
+    const probs = problemWords().length, stuck = stuckWords().length;
     const seen = pool().filter(w => !isFresh(SRS[w.key])).length;
     const clozeN = pool().filter(w => hasCloze(w)).length;
     const freshN = pool().filter(w => isFresh(SRS[w.key])).length;
@@ -1564,7 +1596,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     view.innerHTML = `<div class="tiles">
       <button class="tile tile-wide tile-main" type="button" data-act="start-smart">${ICON.spark}<div><b>Учить</b><span>${sp.words.length ? `Повторить: ${sp.due}, новых сегодня: ${sp.room}. Упражнения подбираются по тому, насколько слово знакомо: от выбора перевода до написания.` : 'На сейчас всё повторено. Можно взять ещё новых слов.'}</span></div></button>
       <button class="tile tile-wide${probs ? ' tile-hot' : ''}" type="button" data-act="start-learn"${probs ? '' : ' disabled'}>${ICON.learn}
-        <div><b>Изучение трудных слов</b><span>${probs ? `${plural(probs, WORD_FORMS)} с «Не знаю» и «Не помню». При ${LEARN_LIMIT} запускается само.` : 'Трудных слов нет. Сюда попадут слова с «Не знаю» и «Не помню».'}</span></div></button>
+        <div><b>Изучение трудных слов</b><span>${!probs ? 'Трудных слов нет.' : stuck === probs ? `${plural(probs, WORD_FORMS)} ${stuckVerb(probs)} по карточкам.` : `${plural(probs, WORD_FORMS)} с «Не знаю» и «Не помню»${stuck ? `, из них ${stuck} ${stuckVerb(stuck)} по карточкам` : ''}.`} Слово, которое не вспомнилось два раза подряд, уходит с карточек сюда.</span></div></button>
       <button class="tile tile-wide${leechN ? ' tile-hot' : ''}" type="button" data-act="start-leech"${leechN ? '' : ' disabled'}>${ICON.repeat}<div><b>Вечно забываемые</b><span>${leechN ? `${plural(leechN, WORD_FORMS)}, забытых 4 раза и больше. Пять этапов и своя подсказка к каждому.` : 'Сюда попадут слова, которые ты забыл 4 раза и больше.'}</span></div></button>
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="sort">${ICON.sieve}<div><b>Отсеять знакомые</b><span>Новых слов: ${freshN}. Отметь те, что уже знаешь, чтобы не тратить на них повторения.</span></div></button>
       <button class="tile" type="button" data-act="mode" data-mode="test">${ICON.test}<b>Тест</b><span>Выбери перевод из четырёх</span></button>
@@ -1598,7 +1630,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     $('#main').scrollTop = 0;
     const words = kind === 'leech'
       ? pool().filter(w => isLeech(SRS[w.key])).sort((a, b) => (SRS[b.key].lapses || 0) - (SRS[a.key].lapses || 0)).slice(0, LEARN_LIMIT)
-      : problemWords().sort((a, b) => SRS[a.key].lg - SRS[b.key].lg).slice(0, LEARN_LIMIT);
+      : problemWords().sort((a, b) => isStuck(SRS[b.key]) - isStuck(SRS[a.key]) || SRS[a.key].lg - SRS[b.key].lg).slice(0, LEARN_LIMIT);
     if (!words.length) { toast(kind === 'leech' ? 'Вечно забываемых слов нет' : 'Трудных слов нет'); return; }
     const stages = w => ['intro', 'pick-ru', hasCloze(w) ? 'cloze-pick' : 'pick-en', 'listen', 'type-en'];
     tab = 'train'; store.set('tg:tab', tab); trainMode = kind;
@@ -1610,7 +1642,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   }
   function nextLearnItem() {
     const w = ses.active.shift();
-    if (!w) { ses.cur = null; ses.done = true; finishLearn(); return; }
+    if (!w) { ses.cur = null; ses.done = true; return; }
     const p = ses.plan.get(w.key);
     ses.cur = { w, type: p.stages[p.at] };
     if (ses.cur.type === 'cloze-pick') ses.cur.ex = pickSentence(w, t => !!maskInfo(w, t));
@@ -1623,7 +1655,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       p.at++; ses.steps++;
       if (p.at >= p.stages.length) {
         ses.finished.push(w);
-        if (ses.kind === 'smart') smartDone(w, p);
+        // сохраняем сразу: если выйти из изучения на середине, выученные слова не теряются
+        if (ses.kind === 'smart') smartDone(w, p); else { graduate(w, Date.now()); saveSrs(); }
         if (ses.pending.length) ses.active.push(ses.pending.shift());
       }
       else ses.active.push(w);
@@ -1632,28 +1665,19 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       ses.active.splice(Math.min(2, ses.active.length), 0, w);
     }
   }
-  function finishLearn() {
-    if (ses.kind === 'smart') return;
-    const now = Date.now();
-    ses.finished.forEach(w => {
-      const s = SRS[w.key] || {};
-      SRS[w.key] = Object.assign({}, s, { st: 'review', s: Math.max(s.s || 0, 1), d: s.d || initD(3), due: now + DAY, last: now, lg: 3, es: 0, reps: (s.reps || 0) + 1 });
-    });
-    saveSrs();
-  }
 
   /* ---------- Умный режим «Учить» ---------- */
   // the word's familiarity picks its path: new words go through all five steps, learned ones only need writing
   function smartStages(w) {
     const s = SRS[w.key], pick2 = hasCloze(w) ? 'cloze-pick' : 'pick-en';
-    if (isFresh(s)) return ['intro', 'pick-ru', pick2, 'listen', 'type-en'];
+    if (isFresh(s) || isStuck(s)) return ['intro', 'pick-ru', pick2, 'listen', 'type-en'];
     if (s.st !== 'review') return ['pick-ru', pick2, 'type-en'];
     if ((s.s || 0) < 21) return [pick2, 'type-en'];
     return ['type-en'];
   }
   function smartPlan() {
     const now = Date.now(), size = S.size || 20;
-    const due = pool().filter(w => { const s = SRS[w.key]; return !isFresh(s) && !s.kn && s.due <= now; }).sort((a, b) => SRS[a.key].due - SRS[b.key].due);
+    const due = pool().filter(w => { const s = SRS[w.key]; return !isFresh(s) && !s.kn && (s.due <= now || isStuck(s)); }).sort((a, b) => SRS[a.key].due - SRS[b.key].due);
     const room = problemWords().length >= LEARN_LIMIT ? 0 : Math.max(0, newLimit() - newToday());
     const words = due.slice(0, size);
     const fresh = room ? freshOrder(pool().filter(w => isFresh(SRS[w.key]))).slice(0, Math.min(room, size - words.length)) : [];
@@ -1666,7 +1690,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const plan0 = smartPlan(), words = plan0.words;
     tab = 'train'; store.set('tg:tab', tab); trainMode = 'smart';
     if (!words.length) { ses = { kind: 'smart', empty: true, words: [], finished: [], plan: new Map(), active: [], pending: [], total: 0, steps: 0, cur: null, done: true }; render(); return; }
-    const plan = new Map(words.map(w => [w.key, { stages: smartStages(w), at: 0, fresh: isFresh(SRS[w.key]) }]));
+    const plan = new Map(words.map(w => [w.key, { stages: smartStages(w), at: 0, fresh: isFresh(SRS[w.key]), stuck: isStuck(SRS[w.key]) }]));
     const total = words.reduce((n, w) => n + plan.get(w.key).stages.length, 0);
     ses = { kind: 'smart', words, plan, active: words.slice(0, 5), pending: words.slice(5), total, steps: 0, finished: [], st: null, opts: null, hint: 0, spoken: -1, cur: null };
     nextLearnItem();
@@ -1678,6 +1702,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       SRS[w.key] = clean ? schedule(schedule(null, 3, now), 3, now) : schedule(null, 2, now);
       bump('n');
       if (PRIO.includes(w.key)) { PRIO = PRIO.filter(k => k !== w.key); savePrio(); }
+    } else if (p.stuck) {
+      graduate(w, now);   // прошло все пять упражнений, как в «Изучении трудных слов»
     } else {
       recordReview(prev, !!p.firstOk, now);
       SRS[w.key] = schedule(prev, clean ? 3 : 2, now);
@@ -2024,9 +2050,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       return;
     }
     if (STAGED.has(ses.kind)) {
+      const left = ses.kind === 'learn' ? problemWords().length : 0;
       view.innerHTML = modeHead(TITLES[ses.kind]) + `<div class="done"><h2>Изучено: ${plural(ses.finished.length, WORD_FORMS)}</h2>
-        <p>${ses.kind === 'leech' ? 'Эти слова вернутся на карточки завтра. Если снова забудутся, загляни в свою подсказку.' : 'Эти слова вернутся на карточки завтра. Новые слова снова открыты.'}</p>
-        <div class="done-actions"><button class="btn btn-primary" type="button" data-act="go-cards">К карточкам</button></div></div>`;
+        <p>${ses.kind === 'leech' ? 'Эти слова вернутся на карточки завтра. Если снова забудутся, загляни в свою подсказку.' : `Эти слова вернутся на карточки завтра.${left ? ` Ещё трудных: ${left}.` : ' Трудных слов больше нет.'}`}</p>
+        <div class="done-actions">${left ? `<button class="btn btn-primary" type="button" data-act="start-learn">Изучить ещё ${plural(Math.min(left, LEARN_LIMIT), WORD_FORMS)}</button>` : ''}
+        <button class="btn ${left ? 'btn-ghost' : 'btn-primary'}" type="button" data-act="go-cards">К карточкам</button></div></div>`;
       return;
     }
     if (!ses.items.length) {
@@ -2272,9 +2300,9 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     return '';
   }
   function renderListBody() {
-    const words = pool(), c = { fresh: 0, learn: 0, rev: 0, known: 0 };
-    words.forEach(w => { const s = SRS[w.key]; if (isFresh(s)) c.fresh++; else if (s.kn) c.known++; else if (s.st !== 'review') c.learn++; else c.rev++; });
-    $('#listStats').innerHTML = `<span><b>${words.length}</b> всего</span><span><b>${c.fresh}</b> новых</span><span><b>${c.learn}</b> учу</span><span><b>${c.rev}</b> на повторении</span><span><b>${c.known}</b> знаю</span>`;
+    const words = pool(), c = { fresh: 0, learn: 0, stuck: 0, rev: 0, known: 0 };
+    words.forEach(w => { const s = SRS[w.key]; if (isFresh(s)) c.fresh++; else if (s.kn) c.known++; else if (isStuck(s)) c.stuck++; else if (s.st !== 'review') c.learn++; else c.rev++; });
+    $('#listStats').innerHTML = `<span><b>${words.length}</b> всего</span><span><b>${c.fresh}</b> новых</span><span><b>${c.learn}</b> учу</span>${c.stuck ? `<span><b>${c.stuck}</b> изучить</span>` : ''}<span><b>${c.rev}</b> на повторении</span><span><b>${c.known}</b> знаю</span>`;
     const q = listQuery.trim().toLowerCase();
     const found = q ? words.filter(w => w.en.toLowerCase().includes(q) || w.ru.toLowerCase().includes(q)) : words;
     const shown = found.slice(0, listLimit);
@@ -3432,7 +3460,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'who-pick': store.set('tg:pid-chosen', true); if (el.dataset.id === PID) closeSheets(); else switchProfile(el.dataset.id); break;
       case 'open-sync': syncSettingsUI(); Sync.paint(); openSheet('#settings'); setTimeout(() => { const g = $('#syncGroup'); if (g) g.scrollIntoView({ block: 'start', behavior: reduced() ? 'auto' : 'smooth' }); }, 220); break;
       case 'row-known': if (w) { const prev = markKnown(w); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast(`«${w.en}» отмечено как знакомое`, { action: 'Отменить', run: () => { unmarkKnown(w, prev); if (tab === 'list') renderListBody(); } }); } break;
-      case 'row-relearn': if (w) { const prev = SRS[w.key] || {}; const now = Date.now(); SRS[w.key] = { st: 'learning', s: W[2], d: initD(2), due: now, last: now, lg: 3, es: 0, reps: (prev.reps || 0) + 1, lapses: prev.lapses || 0 }; saveSrs(); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast('Слово вернётся на карточки сегодня'); } break;
+      case 'row-relearn': if (w) { const prev = SRS[w.key] || {}; const now = Date.now(); SRS[w.key] = { st: 'learning', s: W[2], d: initD(2), due: now, last: now, lg: 3, es: 0, reps: (prev.reps || 0) + 1, lapses: prev.lapses || 0, lf: 0 }; saveSrs(); if (!$('#wordSheet').hidden) renderWordSheet(); if (tab === 'list') renderListBody(); toast('Слово вернётся на карточки сегодня'); } break;
       case 'mode': startMode(el.dataset.mode); break;
       case 'repeat': { const k = ses.kind, words = shuffle(Array.from(new Set(ses.wrong))); trainMode = k; ses = { kind: k, items: words.map(x => makeItem(x, k)), i: 0, right: 0, wrong: [], st: null, opts: null, hint: 0, spoken: -1 }; render(); break; }
       case 'start-learn': startLearn(); break;
