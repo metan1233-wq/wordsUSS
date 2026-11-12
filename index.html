@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#e6eaf0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
+<meta name="app-version" content="2026-11-12.1">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Ты гений">
 <link rel="manifest" href="manifest.json">
@@ -324,6 +325,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .sheet-head + .set-group { border-top: 0; padding-top: 4px; }
 .set-label { font-size: 14px; font-weight: 600; color: var(--ink-2); }
 .set-note { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-3); }
+.app-ver { margin-top: 20px; text-align: center; font-variant-numeric: tabular-nums; }
 .set-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 3px; padding: 3px; border-radius: 12px; background: var(--paper-2); }
 .seg button { min-height: 38px; padding: 7px 6px; border: 0; border-radius: 9px; background: transparent; color: var(--ink-2); font-size: 15px; font-weight: 500; line-height: 1.15; }
@@ -648,6 +650,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       <p class="set-note" id="progressNote">Хранится только на этом устройстве.</p>
       <div class="set-actions"><button class="btn btn-ghost btn-sm btn-danger" type="button" data-act="reset">Сбросить прогресс</button></div>
     </div>
+    <p class="set-note app-ver" id="appVer"></p>
   </div>
 </div>
 
@@ -3528,7 +3531,30 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       else if (e.key === 'Enter' && !onControl && ses.st) { e.preventDefault(); advance(); }
     } else if (tab === 'train' && ses && typing && e.key === 'Enter' && ses.st) { e.preventDefault(); advance(); }
   });
-  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - lastFetch > 15000) loadWords(); });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') { if (Date.now() - lastFetch > 15000) loadWords(); checkUpdate(); } });
+
+  /* ---------- новая версия приложения ----------
+     С главного экрана iPhone приложение неделями живёт в памяти со старым кодом и не видит обновлений.
+     Когда в него возвращаются, сверяем версию с сайтом: если вышла новая, перезагружаемся. */
+  const APP_VERSION = (document.querySelector('meta[name="app-version"]') || {}).content || '';
+  let lastVerCheck = 0;
+  const busyNow = () => !!(ses && !ses.done && !ses.empty) || Player.playing || !!document.querySelector('.sheet.open') || /^(INPUT|TEXTAREA|SELECT)$/.test((document.activeElement || {}).tagName || '');
+  async function checkUpdate() {
+    if (IS_PREVIEW || !APP_VERSION || !/^https?:$/.test(location.protocol) || Date.now() - lastVerCheck < 60000) return;
+    lastVerCheck = Date.now();
+    let remote = '';
+    try {
+      const res = await fetch('index.html', { cache: 'no-store' });
+      if (res.ok) remote = (/<meta name="app-version" content="([^"]+)"/.exec(await res.text()) || [])[1] || '';
+    } catch (e) { return; }
+    if (!remote || remote === APP_VERSION) return;
+    let tried = '';
+    try { tried = sessionStorage.getItem('tg:reloadFor') || ''; } catch (e) { /* private mode */ }
+    if (tried !== remote && !busyNow()) {
+      try { sessionStorage.setItem('tg:reloadFor', remote); } catch (e) { /* private mode */ }
+      location.reload();
+    } else toast('Вышла новая версия приложения', { action: 'Обновить', run: () => location.reload() });
+  }
   try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme); } catch (e) { /* old Safari */ }
 
   /* ================= start ================= */
@@ -3546,6 +3572,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   if (!IS_PREVIEW && 'serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
     navigator.serviceWorker.register('sw.js').catch(() => { /* offline mode unavailable */ });
   }
+  if (APP_VERSION) $('#appVer').textContent = 'Версия приложения: ' + APP_VERSION;
+  setTimeout(checkUpdate, 5000);
 })();
 </script>
 </body>
