@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#e6eaf0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="app-version" content="2026-11-12.1">
+<meta name="app-version" content="2026-11-17.1">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Ты гений">
 <link rel="manifest" href="manifest.json">
@@ -326,6 +326,51 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .set-label { font-size: 14px; font-weight: 600; color: var(--ink-2); }
 .set-note { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-3); }
 .app-ver { margin-top: 20px; text-align: center; font-variant-numeric: tabular-nums; }
+/* разделы тренировок */
+.hub-h { margin: 22px 2px 0; font-size: 13px; font-weight: 600; letter-spacing: .02em; text-transform: uppercase; color: var(--ink-3); }
+/* истории */
+.st-intro { margin: 8px 2px 10px; font-size: 14px; color: var(--ink-2); text-wrap: pretty; }
+.st-topics { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; margin: 0 -16px 12px; padding: 0 16px 2px; scrollbar-width: none; }
+.st-topics::-webkit-scrollbar { display: none; }
+.st-topics .chip { flex: none; }
+.st-topics .chip[aria-checked="true"], .st-tools .chip[aria-checked="true"] { background: var(--ink); color: var(--paper); }
+.st-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.st-item { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 14px 16px; border: 0; border-radius: 16px; background: var(--paper); color: var(--ink); text-align: left; }
+.st-item-t { font-family: var(--font-word); font-size: 20px; font-weight: 700; line-height: 1.2; }
+.st-item-ru { font-size: 14px; color: var(--ink-2); }
+.st-item-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-top: 4px; font-size: 13px; color: var(--ink-3); }
+.st-item.is-read .st-item-t { color: var(--ink-2); }
+.st-h { margin: 12px 0 0; font-family: var(--font-word); font-size: 28px; line-height: 1.15; text-wrap: balance; }
+.st-h-ru { margin: 4px 0 0; font-size: 15px; color: var(--ink-2); }
+.st-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 14px; }
+.st-tools .btn .i { width: 18px; height: 18px; }
+.st-tools .btn { padding-inline: 12px 14px; }
+.st-tools .chip { padding-inline: 8px 10px; }
+.st-help { margin: 10px 2px 0; font-size: 13px; line-height: 1.4; color: var(--ink-3); text-wrap: pretty; }
+.st-text { margin-top: 12px; padding: 12px 14px; border-radius: 18px; background: var(--paper); }
+.st-p + .st-p { margin-top: 14px; }
+.st-line { margin: 0 -6px; padding: 3px 6px; border-radius: 8px; font-family: var(--font-word); font-size: 19px; line-height: 1.5; cursor: pointer; }
+.st-line:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+.st-line.is-cur { background: var(--marker); color: var(--marker-ink); }
+.st-ru { display: block; margin: 1px 0 3px; font-family: var(--font-ui); font-size: 14.5px; line-height: 1.35; color: var(--ink-2); }
+.st-line.is-cur .st-ru { color: inherit; opacity: .8; }
+.st-w { display: inline; padding: 0; border: 0; background: none; color: inherit; font: inherit; line-height: inherit; text-align: inherit; cursor: pointer; text-decoration-line: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.sw-new { text-decoration-style: dotted; text-decoration-color: var(--ink-3); }
+.sw-learn { border-radius: 3px; background: var(--bad-bg); color: var(--bad); text-decoration-color: var(--bad); }
+.sw-rev { text-decoration-color: var(--good); }
+.sw-known { text-decoration-line: none; }
+.st-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin: 10px 0 0; font-size: 13px; color: var(--ink-3); }
+.st-legend span { text-decoration-line: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.st-end { display: grid; gap: 8px; margin-top: 18px; text-align: center; }
+.st-bar { position: sticky; bottom: 8px; z-index: 5; margin-top: 12px; }
+.st-bar-in { display: flex; flex-direction: column; gap: 6px; padding: 12px 12px 10px 14px; border-radius: 16px; background: var(--paper); box-shadow: 0 6px 24px var(--shade), 0 0 0 1px var(--hair); }
+.st-bar-w { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.st-bar-w b { font-family: var(--font-word); font-size: 21px; }
+.st-bar-ru { flex-basis: 100%; font-size: 15px; color: var(--ink-2); }
+.st-bar-a { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.st-bar-a .btn-link { white-space: nowrap; }
+.st-bar-x { margin-left: auto; }
+
 .set-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 3px; padding: 3px; border-radius: 12px; background: var(--paper-2); }
 .seg button { min-height: 38px; padding: 7px 6px; border: 0; border-radius: 9px; background: transparent; color: var(--ink-2); font-size: 15px; font-weight: 500; line-height: 1.15; }
@@ -764,6 +809,8 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     repeat: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M17.5 3.5v3.6h-3.6M6.5 20.5v-3.6h3.6"/></svg>',
     spark: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>',
     plus: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
+    x: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg>',
+    book: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5c-1.8-1.3-4.3-2-7.5-2v13c3.2 0 5.7.7 7.5 2 1.8-1.3 4.3-2 7.5-2v-13c-3.2 0-5.7.7-7.5 2z"/><path d="M12 6.5v13"/></svg>',
     cloze: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9h4M16.5 9h4M3.5 15h17"/><rect x="9" y="7" width="6" height="4" rx="1"/></svg>',
   };
 
@@ -813,6 +860,10 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   const saveNotes = () => { store.set(pk('tg:notes'), NOTES); onNotesChanged(); };
   const noteOf = w => (NOTES[w.key] && NOTES[w.key].t) || '';
   let CAL = store.get(pk('tg:cal'), {});              // ответы на повторениях по t/S, отдельно по устройствам
+  let EXT = store.get(pk('tg:ext'), {});              // истории, глаголы, грамматика, путаница: key -> { …, at }
+  let onExtChanged = () => {};
+  const saveExt = () => { store.set(pk('tg:ext'), EXT); onExtChanged(); };
+  const extSet = (k, v) => { EXT[k] = Object.assign({}, v, { at: Date.now() }); saveExt(); };
   let listLimit = 300;
 
   let WORDS = [], GROUPS = [], SKIPPED = [], KEYMAP = new Map();
@@ -1383,6 +1434,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     else if (!trainMode) renderHub();
     else if (trainMode === 'player') renderPlayer();
     else if (trainMode === 'sort') renderSort();
+    else if (MODS[trainMode]) MODS[trainMode].render();
     else renderPractice();
   }
   function renderEmpty() {
@@ -1602,13 +1654,20 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
         <div><b>Изучение трудных слов</b><span>${!probs ? 'Трудных слов нет.' : stuck === probs ? `${plural(probs, WORD_FORMS)} ${stuckVerb(probs)} по карточкам.` : `${plural(probs, WORD_FORMS)} с «Не знаю» и «Не помню»${stuck ? `, из них ${stuck} ${stuckVerb(stuck)} по карточкам` : ''}.`} Слово, которое не вспомнилось два раза подряд, уходит с карточек сюда.</span></div></button>
       <button class="tile tile-wide${leechN ? ' tile-hot' : ''}" type="button" data-act="start-leech"${leechN ? '' : ' disabled'}>${ICON.repeat}<div><b>Вечно забываемые</b><span>${leechN ? `${plural(leechN, WORD_FORMS)}, забытых 4 раза и больше. Пять этапов и своя подсказка к каждому.` : 'Сюда попадут слова, которые ты забыл 4 раза и больше.'}</span></div></button>
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="sort">${ICON.sieve}<div><b>Отсеять знакомые</b><span>Новых слов: ${freshN}. Отметь те, что уже знаешь, чтобы не тратить на них повторения.</span></div></button>
+    </div>
+    <h2 class="hub-h">Читать и слушать</h2>
+    <div class="tiles">
+      <button class="tile tile-wide" type="button" data-act="mode" data-mode="stories">${ICON.book}<div><b>Истории</b><span>${storiesTile()}</span></div></button>
+      <button class="tile tile-wide" type="button" data-act="mode" data-mode="player">${ICON.phones}<div><b>Слушать без рук</b><span>Слово, перевод и пример подряд. Можно в дороге и на прогулке.</span></div></button>
+    </div>
+    <h2 class="hub-h">Упражнения со словами</h2>
+    <div class="tiles">
       <button class="tile" type="button" data-act="mode" data-mode="test">${ICON.test}<b>Тест</b><span>Выбери перевод из четырёх</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="write">${ICON.write}<b>Ввод</b><span>Напиши слово по-английски</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="listen">${ICON.ear}<b>На слух</b><span>Диктор говорит по-английски, ты пишешь слово</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="listen-ru">${ICON.ear}<b>Перевод на слух</b><span>Диктор говорит по-русски, ты пишешь по-английски</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="cloze">${ICON.cloze}<b>Пропуск</b><span>Впиши слово в пример (${clozeN})</span></button>
       <button class="tile" type="button" data-act="mode" data-mode="build">${ICON.blocks}<b>Сборка предложения</b><span>Собери пример из перемешанных слов</span></button>
-      <button class="tile tile-wide" type="button" data-act="mode" data-mode="player">${ICON.phones}<div><b>Слушать без рук</b><span>Слово, перевод и пример подряд. Можно в дороге и на прогулке.</span></div></button>
     </div>
     <p class="hub-note">${seen ? `В тренировки берутся слова, которые уже были на карточках: сначала трудные. Сейчас таких ${seen}.` : 'Пока на карточках не было ни одного слова, поэтому тренировки берут новые.'}</p>`;
   }
@@ -1618,6 +1677,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   function startMode(m) {
     Player.stop();
     $('#main').scrollTop = 0;
+    if (MODS[m]) { stopMods(); trainMode = m; ses = null; MODS[m].start(); return; }
     if (m === 'sort') { startSort(); return; }
     if (m === 'player') { trainMode = 'player'; ses = null; Player.load(Player.sources().today.length ? 'today' : 'topic'); render(); return; }
     trainMode = m;
@@ -2673,10 +2733,320 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     }
     delete btn.dataset.armed; btn.textContent = 'Сбросить прогресс';
     Sync.meta.resetAt = Date.now(); Sync.save();
-    SRS = {}; PST = {}; saveSrs(); savePst();
+    SRS = {}; PST = {}; EXT = {}; saveSrs(); savePst(); saveExt();
     card = null; ses = null; trainMode = null; learnPrompt = false;
     render(); toast(Sync.on ? 'Прогресс сброшен на всех устройствах' : 'Прогресс сброшен');
   }
+
+  /* ================= разделы тренировок со своим экраном ================= */
+  const MODS = {};   // trainMode -> { start(), render(), stop(), key(e, typing, onControl) }
+  const ACTS = {};   // data-act -> (el, e) => …
+  function stopMods() { Seq.stop(); Object.values(MODS).forEach(m => { if (m.stop) m.stop(); }); }
+
+  /* ---------- проигрывание по очереди: история целиком, образец и своя запись ---------- */
+  const Seq = {
+    el: null, tok: 0, timer: 0, on: false,
+    stop() {
+      this.on = false; this.tok++; clearTimeout(this.timer);
+      if (this.el) { try { this.el.pause(); } catch (e) { /* ignore */ } this.el.onended = null; this.el.onerror = null; }
+      try { if (speechSynthesis.speaking || speechSynthesis.pending) speechSynthesis.cancel(); } catch (e) { /* ignore */ }
+    },
+    // items: [{ path | url, text, lang, rate }]; onStep(i, item) перед каждым, onEnd() после последнего
+    play(items, { gap = 400, onStep, onEnd } = {}) {
+      Player.stop(); Sound.stop(); this.stop();
+      const tok = this.tok, el = this.el || (this.el = new Audio());
+      this.on = true;
+      let i = 0;
+      const next = () => {
+        if (tok !== this.tok) return;
+        if (i >= items.length) { this.on = false; if (onEnd) onEnd(); return; }
+        const it = items[i], idx = i++;
+        if (onStep) onStep(idx, it);
+        let settled = false, fell = false;
+        const done = () => { if (settled || tok !== this.tok) return; settled = true; clearTimeout(this.timer); this.timer = setTimeout(next, gap); };
+        const speak = () => {
+          if (fell || settled || tok !== this.tok) return;
+          fell = true;
+          if (!it.text || !('speechSynthesis' in window)) { done(); return; }
+          try {
+            speechSynthesis.cancel();
+            const u = new SpeechSynthesisUtterance(it.text);
+            u.lang = it.lang || 'en-US'; u.rate = 0.9 * (it.rate || 1);
+            const re = /^ru/i.test(u.lang) ? /^ru/i : /^en[-_]US/i;
+            const v = speechSynthesis.getVoices().find(x => re.test(x.lang));
+            if (v) u.voice = v;
+            u.onend = done; u.onerror = done;
+            speechSynthesis.speak(u);
+            clearTimeout(this.timer);
+            this.timer = setTimeout(done, Math.min(20000, 2500 + it.text.length * 120 / (it.rate || 1)));
+          } catch (e) { done(); }
+        };
+        const src = it.url || (it.path ? 'audio/' + it.path : '');
+        if (!src) { speak(); return; }
+        const rate = it.rate || 1;
+        el.onended = done;
+        el.onerror = speak;
+        el.src = src;
+        try { el.preservesPitch = true; el.webkitPreservesPitch = true; } catch (e) { /* old browsers */ }
+        el.defaultPlaybackRate = rate; el.playbackRate = rate;
+        el.onplaying = () => { if (el.playbackRate !== rate) el.playbackRate = rate; };
+        clearTimeout(this.timer);
+        this.timer = setTimeout(() => { try { el.pause(); } catch (e) { /* ignore */ } done(); }, 30000 / rate);
+        const pr = el.play();
+        if (pr && pr.catch) pr.catch(speak);
+      };
+      next();
+    }
+  };
+
+  /* ---------- слова словаря в тексте: любые формы, фразы целиком ---------- */
+  const POSS = new Set(['my', 'your', 'his', 'her', 'its', 'our', 'their', "one's", "someone's"]);
+  let WIDX = null, WIDX_SRC = null;
+  function wordIndex() {
+    if (WIDX && WIDX_SRC === WORDS) return WIDX;
+    const idx = new Map();
+    let maxN = 1;
+    WORDS.forEach(w => w.en.split('/').forEach(v => {
+      const bare = v.trim().toLowerCase().replace(/[‘’ʼ]/g, "'").replace(/^to\s+(be\s+)?/, '');
+      if (!/^[a-z]/.test(bare)) return;
+      const parts = bare.split(/\s+/).map(x => POSS.has(x) ? '~' : x.replace(/[^a-z'-]/g, '')).filter(Boolean);
+      if (!parts.length) return;
+      maxN = Math.max(maxN, parts.length);
+      const lead = parts[0], forms = new Set([lead, ...inflections(lead)]);
+      if (/[^aeiou][aeiou][bdgklmnprtv]$/.test(lead)) ['ed', 'ing'].forEach(x => forms.add(lead + lead.slice(-1) + x));
+      forms.forEach(f => {
+        const key = [f].concat(parts.slice(1)).join(' '), exact = f === lead, prev = idx.get(key);
+        if (!prev || (exact && !prev.exact)) idx.set(key, { w, exact });
+      });
+    }));
+    WIDX = { idx, maxN }; WIDX_SRC = WORDS;
+    return WIDX;
+  }
+  function markWords(text) {
+    const { idx, maxN } = wordIndex(), toks = [], re = /[A-Za-z]+(?:['’-][A-Za-z]+)*/g;
+    let m;
+    while ((m = re.exec(text))) toks.push({ s: m.index, e: m.index + m[0].length, t: m[0].toLowerCase().replace(/’/g, "'") });
+    const hits = [];
+    for (let i = 0; i < toks.length;) {
+      let hit = null;
+      for (let n = Math.min(maxN, toks.length - i); n >= 1 && !hit; n--) {
+        // слова фразы идут подряд, между ними только пробелы
+        let joined = true;
+        for (let j = i; j < i + n - 1; j++) if (!/^\s+$/.test(text.slice(toks[j].e, toks[j + 1].s))) { joined = false; break; }
+        if (!joined) continue;
+        const key = toks.slice(i, i + n).map((x, j) => j && POSS.has(x.t) ? '~' : x.t).join(' ');
+        let h = idx.get(key);
+        if (!h && n === 1 && /'s$/.test(key)) h = idx.get(key.slice(0, -2));
+        if (h) hit = { s: toks[i].s, e: toks[i + n - 1].e, w: h.w, n };
+      }
+      if (hit) { hits.push(hit); i += hit.n; } else i++;
+    }
+    return hits;
+  }
+  const wordCls = w => { const s = SRS[w.key]; return isFresh(s) ? 'sw-new' : s.kn ? 'sw-known' : s.st !== 'review' ? 'sw-learn' : 'sw-rev'; };
+  function linkedText(text) {
+    let out = '', pos = 0;
+    markWords(text).forEach(h => {
+      out += esc(text.slice(pos, h.s)) + `<button class="st-w ${wordCls(h.w)}" type="button" data-act="st-word" data-key="${esc(h.w.key)}">${esc(text.slice(h.s, h.e))}</button>`;
+      pos = h.e;
+    });
+    return out + esc(text.slice(pos));
+  }
+
+  /* ================= Истории ================= */
+  const SENT_FORMS = ['предложение', 'предложения', 'предложений'];
+  const STORY = { list: null, err: false, loading: false, id: null, topic: '', tr: false, slow: false, open: new Set(), cur: -1, playing: false, word: null };
+  let storiesSrc = '';
+  const slugId = t => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  function parseStories(text) {
+    const out = [];
+    let cur = null, para = 0;
+    String(text || '').replace(/^﻿/, '').split(/\r?\n/).forEach(raw => {
+      const line = raw.trim();
+      if (line.startsWith('//')) return;
+      if (line.startsWith('## ')) {
+        const t = line.slice(3), i = t.indexOf(' = '), en = (i > 0 ? t.slice(0, i) : t).trim();
+        cur = { id: slugId(en), en, ru: i > 0 ? t.slice(i + 3).trim() : '', topic: '', lines: [] };
+        out.push(cur); para = 0;
+        return;
+      }
+      if (!cur) return;
+      if (!line) { if (cur.lines.length) para++; return; }
+      if (/^тема:/i.test(line)) { cur.topic = line.replace(/^тема:\s*/i, '').trim(); return; }
+      if (/^уровень:/i.test(line)) return;
+      const i = line.indexOf(' = ');
+      if (i > 0) cur.lines.push({ en: line.slice(0, i).trim(), ru: line.slice(i + 3).trim(), p: para });
+    });
+    return out.filter(x => x.lines.length);
+  }
+  async function loadStories() {
+    if (STORY.loading) return;
+    STORY.loading = true;
+    try {
+      const res = await fetch('stories.txt', { cache: 'no-cache' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const t = await res.text();
+      STORY.err = false;
+      if (t !== storiesSrc) { storiesSrc = t; STORY.list = parseStories(t); }
+    } catch (e) { if (!STORY.list) STORY.err = true; }
+    STORY.loading = false;
+    if (tab === 'train' && (!trainMode || (trainMode === 'stories' && !STORY.id))) render();
+  }
+  const curStory = () => (STORY.list || []).find(x => x.id === STORY.id) || null;
+  const storyRead = s => { const r = EXT['st:' + s.id]; return (r && r.read) || 0; };
+  function storyKeys(s) {
+    if (s._keys && s._src === WORDS) return s._keys;
+    const keys = new Set();
+    s.lines.forEach(l => markWords(l.en).forEach(h => keys.add(h.w.key)));
+    s._keys = keys; s._src = WORDS;
+    return keys;
+  }
+  function storyStats(s) {
+    const keys = storyKeys(s);
+    let known = 0, fresh = 0;
+    keys.forEach(k => { const r = SRS[k]; if (isFresh(r)) fresh++; else if (r.kn || r.st === 'review') known++; });
+    return { total: keys.size, known, fresh, pct: keys.size ? Math.round(known / keys.size * 100) : 0 };
+  }
+  const sentCount = s => s.lines.reduce((n, l) => n + Math.max(1, (l.en.match(/[.!?]+(?=["”»]?(\s|$))/g) || []).length), 0);
+  const storyOrder = () => STORY.list.map(s => ({ s, read: storyRead(s), st: storyStats(s) })).sort((a, b) => (!!a.read - !!b.read) || (b.st.pct - a.st.pct));
+  function storiesTile() {
+    if (!STORY.list) { if (!STORY.loading && !STORY.err) loadStories(); return 'Короткие истории на словах из словаря, с озвучкой.'; }
+    const n = STORY.list.length, r = STORY.list.filter(storyRead).length;
+    return `${plural(n, ['история', 'истории', 'историй'])} на словах из словаря, с озвучкой. Прочитано: ${r} из ${n}.`;
+  }
+  function renderStories() {
+    view.className = 'wrap view';
+    if (!STORY.list) {
+      view.innerHTML = modeHead('Истории') + `<div class="state"><p>${STORY.err ? 'Истории не загрузились. Проверь интернет.' : 'Загружаю истории…'}</p>${STORY.err ? '<button class="btn btn-primary" type="button" data-act="st-reload">Попробовать снова</button>' : ''}</div>`;
+      if (!STORY.err) loadStories();
+      return;
+    }
+    if (STORY.id && curStory()) { renderStory(); return; }
+    STORY.id = null;
+    const topics = [...new Set(STORY.list.map(x => x.topic).filter(Boolean))];
+    if (STORY.topic && !topics.includes(STORY.topic)) STORY.topic = '';
+    const items = storyOrder().filter(x => !STORY.topic || x.s.topic === STORY.topic);
+    const readN = STORY.list.filter(storyRead).length;
+    view.innerHTML = modeHead('Истории') + `
+      <p class="st-intro">Прочитано ${readN} из ${STORY.list.length}. Вверху непрочитанные, сначала те, где больше знакомых слов.</p>
+      <div class="chips st-topics" role="radiogroup" aria-label="Тема">${['', ...topics].map(t => `<button class="chip" type="button" role="radio" aria-checked="${STORY.topic === t}" data-act="st-topic" data-val="${esc(t)}">${esc(t || 'Все')}</button>`).join('')}</div>
+      <ul class="st-list">${items.map(({ s, read, st }) => `<li><button class="st-item${read ? ' is-read' : ''}" type="button" data-act="st-open" data-id="${esc(s.id)}">
+        <span class="st-item-t" lang="en">${esc(s.en)}</span><span class="st-item-ru">${esc(s.ru)}</span>
+        <span class="st-item-meta"><span>${plural(sentCount(s), SENT_FORMS)}</span><span>знакомых слов ${st.pct}%</span>${read ? '<span class="tag tag-rev">прочитано</span>' : ''}</span></button></li>`).join('')}</ul>`;
+  }
+  function storyLineHTML(s, i) {
+    const l = s.lines[i], open = STORY.tr || STORY.open.has(i);
+    return `<p class="st-line${STORY.cur === i ? ' is-cur' : ''}" data-act="st-line" data-i="${i}" tabindex="0"><span class="st-en" lang="en">${linkedText(l.en)}</span>${open ? `<span class="st-ru">${esc(l.ru)}</span>` : ''}</p>`;
+  }
+  const playLabel = () => STORY.playing ? `${ICON.pause}Стоп` : `${ICON.play}Слушать`;
+  function storyBarHTML(w) {
+    const fresh = isFresh(SRS[w.key]), queued = PRIO.includes(w.key), k = esc(w.key);
+    return `<div class="st-bar-in" role="status"><div class="st-bar-w"><b lang="en">${esc(w.en)}</b>${statusTag(w)}<span class="st-bar-ru">${esc(w.ru)}</span></div>
+      <div class="st-bar-a"><button class="mini" type="button" data-act="replay" data-key="${k}" aria-label="Прослушать слово">${ICON.play}</button>
+        ${fresh ? `<button class="btn-link" type="button" data-act="st-prio" data-key="${k}"${queued ? ' disabled' : ''}>${queued ? 'Будет среди первых новых' : 'Учить первым'}</button>` : ''}
+        <button class="btn-link" type="button" data-act="word-info" data-key="${k}">Подробнее</button>
+        <button class="mini st-bar-x" type="button" data-act="st-bar-close" aria-label="Закрыть">${ICON.x}</button></div></div>`;
+  }
+  function renderStory() {
+    const s = curStory(), read = storyRead(s);
+    let html = '', p = null;
+    s.lines.forEach((l, i) => {
+      if (l.p !== p) { if (p !== null) html += '</div>'; html += '<div class="st-p">'; p = l.p; }
+      html += storyLineHTML(s, i);
+    });
+    if (p !== null) html += '</div>';
+    view.className = 'wrap view';
+    view.innerHTML = `<div class="mode-head"><button class="back-link" type="button" data-act="st-back">${ICON.back}Истории</button><p class="mode-title">${esc(s.topic)}</p></div>
+      <h2 class="st-h" lang="en">${esc(s.en)}</h2><p class="st-h-ru">${esc(s.ru)}</p>
+      <div class="st-tools">
+        <button class="btn btn-primary btn-sm" type="button" data-act="st-play" id="stPlay">${playLabel()}</button>
+        <button class="chip" type="button" role="switch" aria-checked="${STORY.slow}" data-act="st-slow" id="stSlow">${ICON.snail}Медленно</button>
+        <button class="chip" type="button" role="switch" aria-checked="${STORY.tr}" data-act="st-tr">Перевод</button>
+      </div>
+      <p class="st-help">Нажми на предложение: оно прозвучит и появится перевод. Подчёркнуты слова из твоего словаря, по нажатию будет перевод слова.</p>
+      <div class="st-text">${html}</div>
+      <p class="st-legend" aria-hidden="true"><span class="sw-new">новое</span><span class="sw-learn">учу</span><span class="sw-rev">на повторении</span></p>
+      <div class="st-end">${read ? `<p class="done-note">Уже прочитано</p>` : ''}<button class="btn btn-primary" type="button" data-act="st-done">${read ? 'К следующей истории' : 'Прочитал, к следующей'}</button></div>
+      <div class="st-bar" id="stBar"${STORY.word ? '' : ' hidden'}>${STORY.word ? storyBarHTML(STORY.word) : ''}</div>`;
+  }
+  function paintStoryPlay() { const b = $('#stPlay'); if (b) b.innerHTML = playLabel(); }
+  function paintStoryCur(scroll) {
+    $$('.st-line').forEach(el => el.classList.toggle('is-cur', Number(el.dataset.i) === STORY.cur));
+    const el = scroll && STORY.cur >= 0 ? $(`.st-line[data-i="${STORY.cur}"]`) : null;
+    if (el) el.scrollIntoView({ block: 'center', behavior: reduced() ? 'auto' : 'smooth' });
+  }
+  function paintStoryBar() {
+    const bar = $('#stBar');
+    if (!bar) return;
+    bar.hidden = !STORY.word;
+    bar.innerHTML = STORY.word ? storyBarHTML(STORY.word) : '';
+  }
+  function markStoryRead(s, quiet) {
+    if (storyRead(s)) return;
+    extSet('st:' + s.id, { read: Date.now() });
+    if (!quiet) toast('История отмечена прочитанной');
+  }
+  function storyLineTap(i) {
+    const s = curStory();
+    if (!s || !s.lines[i]) return;
+    if (STORY.playing) { Seq.stop(); STORY.playing = false; paintStoryPlay(); }
+    STORY.open.add(i); STORY.cur = i;
+    const el = $(`.st-line[data-i="${i}"]`);
+    if (el) el.outerHTML = storyLineHTML(s, i);
+    paintStoryCur(false);
+    playSentence({ en: s.lines[i].en }, STORY.slow);
+  }
+  async function storyPlayAll() {
+    const s = curStory();
+    if (!s) return;
+    if (STORY.playing) { Seq.stop(); STORY.playing = false; paintStoryPlay(); return; }
+    STORY.playing = true; paintStoryPlay();
+    const from = STORY.cur >= 0 && STORY.cur < s.lines.length - 1 ? STORY.cur : -1, rate = STORY.slow ? 0.75 : 1;
+    const items = [];
+    if (from < 0) items.push({ line: -1, text: s.en, path: await sentencePath(s.en), rate });
+    for (let i = Math.max(0, from); i < s.lines.length; i++) items.push({ line: i, text: s.lines[i].en, path: await sentencePath(s.lines[i].en), rate });
+    if (!STORY.playing || curStory() !== s) return;
+    Seq.play(items, {
+      gap: 350,
+      onStep: (k, it) => { STORY.cur = it.line; paintStoryCur(true); },
+      onEnd: () => { STORY.playing = false; STORY.cur = -1; paintStoryCur(false); paintStoryPlay(); markStoryRead(s); }
+    });
+  }
+  MODS.stories = {
+    start() { STORY.id = null; STORY.word = null; STORY.cur = -1; STORY.playing = false; render(); loadStories(); },
+    render: renderStories,
+    stop() { STORY.playing = false; },
+    key(e, typing) {
+      if (typing || !STORY.id) return;
+      const t = e.target;
+      if (e.key === 'Enter' && t.classList && t.classList.contains('st-line')) { e.preventDefault(); storyLineTap(Number(t.dataset.i)); }
+      else if (e.code === 'Space' && (t === document.body || (t.classList && t.classList.contains('st-line')))) { e.preventDefault(); storyPlayAll(); }
+      else if (e.key === 'Escape' && STORY.word) { STORY.word = null; paintStoryBar(); }
+    }
+  };
+  Object.assign(ACTS, {
+    'st-topic': el => { STORY.topic = el.dataset.val || ''; renderStories(); },
+    'st-open': el => { Seq.stop(); Object.assign(STORY, { id: el.dataset.id, open: new Set(), cur: -1, word: null, playing: false }); $('#main').scrollTop = 0; renderStories(); },
+    'st-back': () => { Seq.stop(); Object.assign(STORY, { id: null, word: null, playing: false }); $('#main').scrollTop = 0; renderStories(); },
+    'st-line': el => storyLineTap(Number(el.dataset.i)),
+    'st-word': el => { const w = byKey(el.dataset.key); if (!w) return; STORY.word = w; paintStoryBar(); playWord(w); },
+    'st-bar-close': () => { STORY.word = null; paintStoryBar(); },
+    'st-prio': el => { const k = el.dataset.key; PRIO = [k].concat(PRIO.filter(x => x !== k)); savePrio(); paintStoryBar(); toast('Слово будет среди первых новых на карточках'); },
+    'st-play': () => storyPlayAll(),
+    'st-slow': el => { STORY.slow = !STORY.slow; el.setAttribute('aria-checked', String(STORY.slow)); if (STORY.playing) { Seq.stop(); STORY.playing = false; storyPlayAll(); } },
+    'st-tr': () => { const y = $('#main').scrollTop; STORY.tr = !STORY.tr; renderStory(); $('#main').scrollTop = y; },
+    'st-done': () => {
+      const s = curStory();
+      if (!s) return;
+      markStoryRead(s, true);
+      const next = storyOrder().find(x => !x.read && x.s.id !== s.id && (!STORY.topic || x.s.topic === STORY.topic));
+      Seq.stop();
+      Object.assign(STORY, { id: next ? next.s.id : null, open: new Set(), cur: -1, word: null, playing: false });
+      toast(next ? 'Следующая: ' + next.s.ru : 'Все истории прочитаны');
+      $('#main').scrollTop = 0; renderStories();
+    },
+    'st-reload': () => { STORY.err = false; renderStories(); }
+  });
 
   /* ================= синхронизация через GitHub ================= */
   const SYNC_FILE = 'ty-geniy-progress.json';
@@ -2772,7 +3142,23 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     payload(srs, act) {
       const a = {};
       recentDays(act || {}).forEach(k => { a[k] = act[k]; });
-      return { app: 'ty-geniy', v: 1, at: Date.now(), by: deviceName(), resetAt: this.meta.resetAt || 0, srs: compactSrs(srs), act: a, cal: CAL, notes: NOTES };
+      return { app: 'ty-geniy', v: 1, at: Date.now(), by: deviceName(), resetAt: this.meta.resetAt || 0, srs: compactSrs(srs), act: a, cal: CAL, notes: NOTES, ext: EXT };
+    },
+    mergeExt(remote) {
+      const rx = (remote && remote.ext) || {};
+      const resetAt = Math.max(this.meta.resetAt || 0, (remote && remote.resetAt) || 0);
+      const out = {}, J = x => JSON.stringify(x || null);
+      let localChanged = false, remoteChanged = false;
+      new Set(Object.keys(EXT).concat(Object.keys(rx))).forEach(k => {
+        let l = EXT[k], r = rx[k];
+        if (l && (l.at || 0) <= resetAt) l = null;
+        if (r && (r.at || 0) <= resetAt) r = null;
+        const pick = l && r ? ((r.at || 0) > (l.at || 0) ? r : l) : (l || r || null);
+        if (pick) out[k] = pick;
+        if (J(pick) !== J(EXT[k])) localChanged = true;
+        if (J(pick) !== J(rx[k])) remoteChanged = true;
+      });
+      return { out, localChanged, remoteChanged };
     },
     mergeCal(remote) {
       const rc = (remote && remote.cal) || {};
@@ -2906,13 +3292,14 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
             this.gist = g.id; this.etag = ''; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
           } else {
             const remote = await this.readRemote(g);
-            const m = this.merge(remote), ma = this.mergeAct(remote), mc = this.mergeCal(remote), mn = this.mergeNotes(remote);
+            const m = this.merge(remote), ma = this.mergeAct(remote), mc = this.mergeCal(remote), mn = this.mergeNotes(remote), mx = this.mergeExt(remote);
             if (ma.localChanged) { ACT = ma.out; store.set(pk('tg:act'), ACT); }
             if (mc.localChanged) { CAL = mc.out; store.set(pk('tg:cal'), CAL); memoCache = null; }
             if (mn.localChanged) { NOTES = mn.out; store.set(pk('tg:notes'), NOTES); }
+            if (mx.localChanged) { EXT = mx.out; store.set(pk('tg:ext'), EXT); }
             if (m.localChanged) { SRS = m.out; store.set(pk('tg:srs'), SRS); }
-            if (m.localChanged || ma.localChanged || mn.localChanged) refreshAfterSync();
-            if (m.remoteChanged || ma.remoteChanged || mc.remoteChanged || mn.remoteChanged) {
+            if (m.localChanged || ma.localChanged || mn.localChanged || mx.localChanged) refreshAfterSync();
+            if (m.remoteChanged || ma.remoteChanged || mc.remoteChanged || mn.remoteChanged || mx.remoteChanged) {
               await this.api('/gists/' + this.gist, { method: 'PATCH', body: { files: { [MY_FILE]: { content: JSON.stringify(this.payload(m.out, ACT)) } } }, keepEtag: true });
               this.etag = this.lastEtag; this.lastPush = Date.now(); this.remoteBy = deviceName(); this.remoteAt = Date.now();
             } else {
@@ -3003,6 +3390,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   onSrsSaved = () => Sync.changed();
   onActChanged = () => Sync.changed();
   onNotesChanged = () => Sync.changed();
+  onExtChanged = () => Sync.changed();
   function refreshAfterSync() {
     if (tab === 'list') { if ($('#listBody')) renderListBody(); }
     else if (tab === 'cards') { if (!learnPrompt && (!card || !card.flipped)) renderCards(); }
@@ -3268,7 +3656,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const prof = PROFILES.find(p => p.id === id);
     if (!prof || id === PID || id === 'main') return;
     prof.deleted = true; prof.at = Date.now();
-    ['tg:settings', 'tg:srs', 'tg:practice', 'tg:act', 'tg:prio', 'tg:extra', 'tg:gap', 'tg:notes', 'tg:cal', 'tg:sync-gist', 'tg:sync-meta', 'tg:sync-last', 'tg:sync-dirty', 'tg:sync-by', 'tg:sync-at', 'tg:sync-etag']
+    ['tg:settings', 'tg:srs', 'tg:practice', 'tg:act', 'tg:prio', 'tg:extra', 'tg:gap', 'tg:notes', 'tg:cal', 'tg:ext', 'tg:sync-gist', 'tg:sync-meta', 'tg:sync-last', 'tg:sync-dirty', 'tg:sync-by', 'tg:sync-at', 'tg:sync-etag']
       .forEach(k => { try { localStorage.removeItem(pkOf(id, k)); } catch (e) { /* ignore */ } });
     PEOPLE.delete(id);
     saveProfiles();
@@ -3400,6 +3788,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
   /* ================= events ================= */
   function setTab(t) {
     if (t !== 'train' || t === tab) Player.stop();
+    stopMods();
     if (t === tab) { if (t === 'train' && trainMode) { trainMode = null; render(); } return; }
     tab = t; store.set('tg:tab', t);
     Sound.stop();
@@ -3433,7 +3822,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'hint': showHint(); break;
       case 'giveup': giveUp(); break;
       case 'override': override(); break;
-      case 'hub': Player.stop(); trainMode = null; ses = null; Sound.stop(); $('#main').scrollTop = 0; render(); break;
+      case 'hub': Player.stop(); stopMods(); trainMode = null; ses = null; Sound.stop(); $('#main').scrollTop = 0; render(); break;
       case 'known': knownFromCard(); break;
       case 'more-new': { const x = store.get(pk('tg:extra'), null), cur = x && x.day === dayKey() ? x.n : 0; store.set(pk('tg:extra'), { day: dayKey(), n: cur + 5 }); card = null; renderCards(); break; }
       case 'sort-known': sortDecide('known'); break;
@@ -3485,6 +3874,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       case 'reset': resetProgress(el); break;
       case 'install': if (installEvent) { installEvent.prompt(); installEvent = null; renderBanner(); } break;
       case 'banner-off': store.set('tg:banner-off', true); renderBanner(); break;
+      default: if (ACTS[el.dataset.act]) ACTS[el.dataset.act](el, e);
     }
   });
   $$('.sheet').forEach(s => s.addEventListener('click', e => { if (e.target === s) closeSheets(); }));
@@ -3505,6 +3895,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     const tag = (e.target.tagName || '').toLowerCase();
     const typing = tag === 'input' || tag === 'select' || tag === 'textarea';
     const onControl = tag === 'button' || tag === 'a';
+    if (tab === 'train' && MODS[trainMode]) { if (MODS[trainMode].key) MODS[trainMode].key(e, typing, onControl); return; }
     const w = tab === 'cards' && card ? card.w : (currentItem() || {}).w;
     if (e.code === 'KeyS' && !typing && w) {
       const it = tab === 'train' ? currentItem() : null;
