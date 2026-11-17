@@ -1,3 +1,27 @@
-  ! нейроголос «One evening, Robi saw a family having a »: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «The streets were still clean, and Robi w»: No audio was received. Please verify that your parameters are correct.
-Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 0, живых записей 0, доп. примеров и историй 7. Удалено лишних: 7.
+  ! нейроголос «make, made»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «put»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «begin, began, begun»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «run, ran»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «sit, sat»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «lead, led»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «build, built»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «understand, understood»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «break, broke, broken»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «cut»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «build, built»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «drive, drove, driven»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «buy, bought»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «build, built»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «forget, forgot, forgotten»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «sell, sold»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «fight, fought»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «teach, taught»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «shut»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «feed, fed»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «light, lit»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «strike, struck»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «learn, learned, learnt»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «mistake, mistook, mistaken»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «forbid, forbade, forbidden»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «mistake, mistook, mistaken»: No audio was received. Please verify that your parameters are correct.
+Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 0, живых записей 0, доп. примеров и историй 117. Удалено лишних: 0.
