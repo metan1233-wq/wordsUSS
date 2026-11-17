@@ -1,27 +1,12 @@
-  ! нейроголос «make, made»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «put»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «begin, began, begun»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «run, ran»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «sit, sat»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «lead, led»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «build, built»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «understand, understood»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «break, broke, broken»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «cut»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «build, built»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «drive, drove, driven»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «buy, bought»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «build, built»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «forget, forgot, forgotten»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «sell, sold»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «fight, fought»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «teach, taught»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «shut»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «feed, fed»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «light, lit»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «strike, struck»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «learn, learned, learnt»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «mistake, mistook, mistaken»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «forbid, forbade, forbidden»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «mistake, mistook, mistaken»: No audio was received. Please verify that your parameters are correct.
-Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 0, живых записей 0, доп. примеров и историй 117. Удалено лишних: 0.
+  ! нейроголос «Water boils at 100 degrees Celsius.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I met an old friend while I was shopping»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «We went to Spain last summer.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «When did you buy this car?»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I've known him since we were at school.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I've known him since we were at school.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «This phone is more expensive than that o»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Thank you for helping me.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «If she were here, she would help us.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «He's the teacher who helped me most.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «She said that she liked the film.»: No audio was received. Please verify that your parameters are correct.
+Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 0, живых записей 0, доп. примеров и историй 215. Удалено лишних: 0.
