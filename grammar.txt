@@ -1,0 +1,326 @@
+// Грамматика B1. Тема начинается с «## Название», под ней строки «правило:».
+// Задание: «предложение с ___ = перевод | верный ответ | неверный | неверный ~ пояснение».
+// Первый вариант после перевода — верный, в приложении варианты перемешиваются.
+// Озвучку готовых предложений GitHub делает сам после правки этого файла.
+
+## Present Simple или Present Continuous
+правило: Present Simple — то, что бывает обычно, регулярно или всегда: I work in an office. Water boils at 100 degrees.
+правило: Present Continuous (am / is / are + -ing) — то, что происходит сейчас или в этот период: I'm working now. They're building a bridge this year.
+правило: Глаголы состояния (know, like, want, need, understand, belong) обычно не ставят в -ing: I know him, а не I'm knowing him.
+правило: Подсказки: usually, often, every day → Present Simple; now, look!, at the moment, this week → Present Continuous.
+I usually ___ to work by bus. = Обычно я езжу на работу на автобусе. | go | am going ~ usually — регулярное действие, значит, Present Simple.
+Look! It ___ outside. = Смотри! На улице идёт снег. | is snowing | snows ~ Look! — происходит прямо сейчас: Present Continuous.
+Water ___ at 100 degrees Celsius. = Вода кипит при 100 градусах по Цельсию. | boils | is boiling ~ Факт, который верен всегда: Present Simple.
+Please be quiet, the baby ___. = Тише, пожалуйста, ребёнок спит. | is sleeping | sleeps ~ Происходит в момент речи: Present Continuous.
+I ___ what you mean. = Я понимаю, что ты имеешь в виду. | understand | am understanding ~ understand — глагол состояния, его не ставят в -ing.
+She ___ three languages. = Она говорит на трёх языках. | speaks | is speaking ~ Постоянное умение, а не действие в эту минуту: Present Simple.
+They ___ a new bridge in our town this year. = В этом году в нашем городе строят новый мост. | are building | build ~ this year — процесс идёт в этот период: Present Continuous.
+How often ___ you go to the gym? = Как часто ты ходишь в спортзал? | do | are ~ How often — о регулярном действии: вопрос в Present Simple с do.
+Why ___ you wearing a coat? It's warm! = Почему ты в пальто? Тепло же! | are | do ~ wearing — форма с -ing, значит, Present Continuous: are you wearing.
+My brother ___ coffee. He prefers tea. = Мой брат не пьёт кофе. Он предпочитает чай. | doesn't drink | isn't drinking ~ Привычка, а не эта минута: Present Simple, отрицание doesn't.
+Hurry up! Everyone ___ for us. = Поторопись! Все нас ждут. | is waiting | waits ~ Происходит сейчас: Present Continuous. Everyone — единственное число, поэтому is.
+This bag ___ to my sister. = Эта сумка принадлежит моей сестре. | belongs | is belonging ~ belong — глагол состояния, его не ставят в -ing.
+
+## Past Simple или Past Continuous
+правило: Past Simple (2-я форма или -ed) — законченное действие в прошлом, действия одно за другим: I came home, had dinner and went to bed.
+правило: Past Continuous (was / were + -ing) — действие шло в какой-то момент прошлого: At eight I was watching TV.
+правило: Вместе: длинное действие (Continuous) прерывает короткое (Simple): I was cooking when the phone rang.
+правило: while — обычно с длинным действием, when — с коротким.
+I ___ TV when the lights went out. = Я смотрел телевизор, когда погас свет. | was watching | watched ~ Длинное действие, которое прервали: Past Continuous.
+She ___ her keys yesterday. = Вчера она потеряла ключи. | lost | was losing ~ Законченное действие в прошлом: Past Simple.
+At nine o'clock last night we ___ dinner. = Вчера в девять вечера мы как раз ужинали. | were having | had ~ Действие шло в конкретный момент прошлого: Past Continuous.
+While I ___ to work, I saw an accident. = Пока я ехал на работу, я увидел аварию. | was driving | drove ~ while + длинное действие: Past Continuous.
+When the phone rang, I ___ it immediately. = Когда зазвонил телефон, я сразу ответил. | answered | was answering ~ Короткое действие сразу после другого: Past Simple.
+It ___ when we left the house. = Когда мы вышли из дома, шёл дождь. | was raining | rained ~ Фон, который уже шёл: Past Continuous.
+They ___ in Paris for three years and then moved to London. = Они прожили в Париже три года, а потом переехали в Лондон. | lived | were living ~ Законченный отрезок в прошлом с указанным сроком: Past Simple.
+What ___ you doing at ten o'clock yesterday evening? = Что ты делал вчера в десять вечера? | were | did ~ doing — форма с -ing: Past Continuous, were you doing.
+I ___ an old friend while I was shopping. = Пока я ходил по магазинам, я встретил старого друга. | met | was meeting ~ Короткое действие на фоне длинного: Past Simple.
+He ___ the window and looked outside. = Он открыл окно и выглянул наружу. | opened | was opening ~ Действия одно за другим: Past Simple.
+The children ___ in the garden when it started to rain. = Дети играли в саду, когда начался дождь. | were playing | played ~ Длинное действие прервано коротким: Past Continuous.
+___ you see the match last night? = Ты смотрел матч вчера вечером? | Did | Were ~ Вопрос в Past Simple: did + начальная форма (see).
+
+## Present Perfect или Past Simple
+правило: Present Perfect (have / has + 3-я форма) — важен результат или опыт к сегодняшнему дню, время не названо: Have you ever been to London?
+правило: Past Simple (2-я форма) — названо время в прошлом: yesterday, last week, in 2019, two days ago, when I was a child.
+правило: Вопрос When…? всегда в Past Simple: When did you arrive?
+правило: Если период закончен (человека уже нет, событие давно прошло), — Past Simple: Shakespeare wrote many plays.
+She ___ in three different countries so far. = До сих пор она успела пожить в трёх разных странах. | has lived | lived ~ so far — «до сих пор», результат к сегодняшнему дню: Present Perfect.
+We ___ to Spain last summer. = Прошлым летом мы ездили в Испанию. | went | have gone ~ last summer — названо время в прошлом: Past Simple.
+___ you ever been to London? = Ты когда-нибудь был в Лондоне? | Have | Did ~ ever + been (3-я форма): опыт за всю жизнь, Present Perfect.
+She ___ the report two days ago. = Она закончила отчёт два дня назад. | finished | has finished ~ ago — точное время в прошлом: Past Simple.
+How long ___ you known Tom? = Сколько ты уже знаешь Тома? | have | did ~ How long + known (3-я форма): Present Perfect.
+When ___ you buy this car? = Когда ты купил эту машину? | did | have ~ Вопрос When…? — всегда Past Simple.
+Shakespeare ___ many plays. = Шекспир написал много пьес. | wrote | has written ~ Шекспира уже нет, период закончен: Past Simple.
+I ___ never eaten sushi. = Я никогда не ел суши. | have | did ~ never + eaten (3-я форма): Present Perfect. После did нужна начальная форма.
+I ___ him at the party on Saturday. = Я видел его на вечеринке в субботу. | saw | have seen ~ on Saturday — названо время: Past Simple.
+This is the best book I ___ ever read. = Это лучшая книга, которую я когда-либо читал. | have | did ~ ever + read (3-я форма) и связь с настоящим: Present Perfect.
+In 2019 my family ___ to a new flat. = В 2019 году наша семья переехала в новую квартиру. | moved | has moved ~ in 2019 — год в прошлом: Past Simple.
+___ she ever worked abroad? = Она когда-нибудь работала за границей? | Has | Did ~ ever + worked (3-я форма): Has she ever worked. После did нужна начальная форма.
+
+## for и since, already и yet, just
+правило: for + срок: for two years, for a week — сколько длится.
+правило: since + момент начала: since 2015, since Monday, since I was a child — с какого времени.
+правило: Если действие длится до сих пор — Present Perfect: I have lived here for ten years (и живу сейчас).
+правило: already — «уже» в утверждении; yet — «ещё не» в отрицании и «уже» в вопросе, стоит в конце; just — «только что», между have и 3-й формой.
+I have lived here ___ ten years. = Я живу здесь десять лет. | for | since ~ for + срок (ten years).
+She has worked at this company ___ 2018. = Она работает в этой компании с 2018 года. | since | for ~ since + момент начала (2018).
+We haven't seen each other ___ Christmas. = Мы не виделись с Рождества. | since | for ~ since + момент начала (Christmas).
+I've been waiting ___ half an hour! = Я жду уже полчаса! | for | since ~ for + срок (half an hour).
+I haven't finished my homework ___. = Я ещё не сделал домашнее задание. | yet | already ~ «Ещё не» в отрицании, в конце фразы: yet.
+Don't worry, I've ___ paid the bill. = Не волнуйся, я уже оплатил счёт. | already | yet ~ «Уже» в утверждении, между have и 3-й формой: already.
+The film has ___ started. Hurry up! = Фильм только что начался. Скорее! | just | yet ~ «Только что» — just, между has и 3-й формой.
+I've known him ___ we were at school. = Я знаю его со школы. | since | for ~ since + момент начала (since we were at school).
+They have been married ___ twenty years. = Они женаты двадцать лет. | for | since ~ for + срок (twenty years).
+How long ___ you had this phone? = Сколько у тебя уже этот телефон? | have | do ~ How long + had (3-я форма): Present Perfect.
+He ___ in hospital since Monday. = Он в больнице с понедельника. | has been | is ~ since + состояние до сих пор: has been, а не is.
+We have had this car ___ three years. = У нас эта машина уже три года. | for | since ~ for + срок (three years).
+
+## Будущее: will, going to, Present Continuous
+правило: will — решение в момент речи, обещание, предсказание-мнение: I'll help you. I think it will rain.
+правило: be going to — намерение, принятое заранее, или вывод по тому, что видно сейчас: I'm going to buy a car. Look at the clouds — it's going to rain.
+правило: Present Continuous — договорённость на конкретное время: I'm meeting Anna at six.
+правило: После if, when, before, after о будущем — Present Simple: When I get home, I'll call you.
+"The phone is ringing." "I ___ answer it." = «Телефон звонит». — «Я отвечу». | will | am going to ~ Решение принято в момент речи: will.
+We ___ visit my parents next weekend. We planned it a month ago. = В следующие выходные мы навестим моих родителей. Мы запланировали это месяц назад. | are going to | will ~ Намерение, принятое заранее: be going to.
+Look at those black clouds! It ___ rain. = Посмотри на эти чёрные тучи! Сейчас пойдёт дождь. | is going to | will ~ Вывод по тому, что видно сейчас: be going to.
+I ___ Anna at six this evening. It's in my calendar. = Сегодня в шесть я встречаюсь с Анной. Это у меня в календаре. | am meeting | meet ~ Договорённость на конкретное время: Present Continuous.
+When I ___ home, I'll call you. = Когда я приду домой, я тебе позвоню. | get | will get ~ После when о будущем — Present Simple.
+If it ___ tomorrow, we'll stay at home. = Если завтра будет дождь, мы останемся дома. | rains | will rain ~ После if о будущем — Present Simple.
+I promise I ___ be late again. = Обещаю, я больше не буду опаздывать. | won't | am not ~ Обещание: won't (will not) + глагол.
+I think Brazil ___ win the next World Cup. = Думаю, Бразилия выиграет следующий чемпионат мира. | will | is winning ~ Предсказание-мнение после I think: will.
+What ___ you doing on Saturday evening? = Что ты делаешь в субботу вечером? | are | will ~ Планы на конкретное время: Present Continuous, are you doing.
+The train ___ at 7:45 tomorrow morning. = Поезд отправляется завтра в 7:45 утра. | leaves | will leaving ~ Расписание: Present Simple.
+Wait, I ___ help you with those bags. = Подожди, я помогу тебе с сумками. | will | am going to ~ Предложение помощи, решил прямо сейчас: will.
+Hurry up! We ___ miss the bus! = Скорее! Мы опоздаем на автобус! | are going to | are ~ Вывод по тому, что видно сейчас: be going to.
+
+## Вопросы
+правило: Порядок в вопросе: вопросительное слово + вспомогательный глагол + подлежащее + глагол: Where do you work?
+правило: Present Simple — do / does, Past Simple — did; после них начальная форма: Did you see it? (не Did you saw).
+правило: С be и модальными глаголами do не нужен: Are you ready? Can you swim?
+правило: Вопрос к подлежащему (кто? что?) — без do: Who lives here? What happened?
+Where ___ you work? = Где ты работаешь? | do | are ~ Present Simple: вопрос с do.
+___ she like her new job? = Ей нравится её новая работа? | Does | Is ~ she + Present Simple: вопрос с does.
+What time ___ you get up yesterday? = Во сколько ты встал вчера? | did | do ~ yesterday — Past Simple: вопрос с did.
+___ you ready? = Ты готов? | Are | Do ~ ready — с глаголом be, do не нужен.
+Did you ___ the news? = Ты видел новости? | see | saw ~ После did — начальная форма.
+Who ___ this cake? = Кто испёк этот торт? | made | did make ~ Вопрос к подлежащему (кто?): без did.
+How long ___ it take to get there? = Сколько времени туда добираться? | does | is ~ it + Present Simple: вопрос с does.
+What ___? = Что случилось? | happened | did happen ~ Вопрос к подлежащему (что?): без did.
+___ you swim? = Ты умеешь плавать? | Can | Do ~ Умение: модальный глагол can, do не нужен.
+Why ___ he call you last night? = Почему он позвонил тебе вчера вечером? | did | was ~ last night — Past Simple: вопрос с did.
+___ your parents live near you? = Твои родители живут рядом с тобой? | Do | Does ~ parents — множественное число: do.
+How many people ___ to the meeting? = Сколько человек пришло на встречу? | came | did come ~ Вопрос к подлежащему (сколько человек?): без did.
+
+## Сравнение прилагательных
+правило: Короткие прилагательные: -er и the -est: cheap — cheaper — the cheapest; big — bigger — the biggest; easy — easier — the easiest.
+правило: Длинные: more и the most: expensive — more expensive — the most expensive.
+правило: Исключения: good — better — the best; bad — worse — the worst; far — further — the furthest.
+правило: После сравнительной степени — than: older than you. Такой же, как — as … as; не такой, как — not as … as.
+My brother is ___ than me. = Мой брат выше меня. | taller | more tall ~ tall — короткое прилагательное: taller.
+This is the ___ film I've ever seen. = Это самый интересный фильм, который я когда-либо видел. | most interesting | interestingest ~ interesting — длинное: the most interesting.
+Today the weather is ___ than yesterday. = Сегодня погода хуже, чем вчера. | worse | badder ~ bad — worse — the worst.
+Moscow is ___ than St Petersburg. = Москва больше Санкт-Петербурга. | bigger | biger ~ big: согласная удваивается — bigger.
+She is as tall ___ her mother. = Она такого же роста, как её мама. | as | than ~ Такой же, как: as … as.
+This test was ___ than the last one. = Этот тест был легче прошлого. | easier | more easy ~ easy: y меняется на i — easier.
+It's the ___ restaurant in town. = Это лучший ресторан в городе. | best | goodest ~ good — better — the best.
+This phone is ___ expensive than that one. = Этот телефон дороже того. | more | most ~ Сравниваем два предмета: more.
+My car is older ___ yours. = Моя машина старше твоей. | than | as ~ После сравнительной степени — than.
+This winter is not ___ cold as last winter. = Эта зима не такая холодная, как прошлая. | as | than ~ Не такой, как: not as … as.
+Which is the ___ river in the world? = Какая река самая длинная в мире? | longest | longer ~ Самый из всех: the longest.
+The station is ___ than I thought. = Станция дальше, чем я думал. | further | farer ~ far — further — the furthest.
+
+## Артикли a, an, the
+правило: a / an — один из многих, упоминаем впервые, профессия: I saw a dog. She is an engineer. An — перед гласным звуком: an apple, an hour.
+правило: the — конкретный, уже известный или единственный в своём роде: The dog was black. The sun. Close the door.
+правило: Без артикля — множественное число и неисчисляемые, когда говорим вообще: I like music. Dogs are friendly.
+правило: Без артикля в устойчивых сочетаниях: at home, at work, by bus, go to bed.
+I've got ___ idea! = У меня есть идея! | an | a ~ idea начинается с гласного звука: an.
+Can you close ___ door, please? = Закрой, пожалуйста, дверь. | the | a ~ Конкретная дверь, та, что здесь: the.
+She is ___ engineer. = Она инженер. | an | the ~ Профессия — с a / an; engineer начинается с гласного звука: an.
+___ moon goes around the Earth. = Луна вращается вокруг Земли. | The | A ~ Единственная в своём роде: the.
+I like ___. = Я люблю музыку. | music | the music ~ Музыка вообще, неисчисляемое: без артикля.
+We went there by ___. = Мы поехали туда на автобусе. | bus | the bus ~ by bus — устойчивое сочетание без артикля.
+I bought a pen and a notebook. ___ pen is red. = Я купил ручку и тетрадь. Ручка красная. | The | A ~ Ручку уже упоминали: the.
+It takes ___ hour to get there. = Туда добираться час. | an | a ~ hour начинается с гласного звука, h не читается: an hour.
+___ are friendly animals. = Собаки — дружелюбные животные. | Dogs | The dogs ~ О собаках вообще: множественное число без артикля.
+Is there ___ bank near here? = Здесь поблизости есть банк? | a | the ~ Любой, один из многих: a.
+She's at ___ now. = Она сейчас на работе. | work | the work ~ at work — устойчивое сочетание без артикля.
+He studies at ___ university. = Он учится в университете. | a | an ~ university начинается со звука [ju], а не с гласного: a.
+
+## some и any, much и many, a few и a little
+правило: some — в утверждениях и просьбах; any — в вопросах и отрицаниях: I have some money. Do you have any money? I don't have any.
+правило: many — с исчисляемыми (many books), much — с неисчисляемыми (much time). В утверждениях чаще a lot of.
+правило: a few — несколько (исчисляемые), a little — немного (неисчисляемые).
+правило: How many…? — сколько штук; How much…? — сколько вещества или денег.
+There aren't ___ eggs in the fridge. = В холодильнике нет яиц. | any | some ~ Отрицание: any.
+Can I have ___ water, please? = Можно мне немного воды? | some | any ~ Просьба: some.
+How ___ money do you need? = Сколько денег тебе нужно? | much | many ~ money — неисчисляемое: much.
+How ___ people came to the party? = Сколько человек пришло на вечеринку? | many | much ~ people — исчисляемое: many.
+I have ___ friends in London. = У меня есть несколько друзей в Лондоне. | a few | a little ~ friends — исчисляемое: a few.
+Add ___ salt to the soup. = Добавь немного соли в суп. | a little | a few ~ salt — неисчисляемое: a little.
+We don't have ___ time. Let's go. = У нас мало времени. Пошли. | much | many ~ time — неисчисляемое: much.
+There isn't ___ milk left. = Молока не осталось. | any | some ~ Отрицание: any.
+She drinks ___ coffee every day. = Она пьёт много кофе каждый день. | a lot of | many ~ coffee — неисчисляемое; в утверждении — a lot of.
+I need ___ information about the course. = Мне нужно немного информации о курсе. | some | a few ~ information — неисчисляемое: some или a little, но не a few.
+There are too ___ cars in the city centre. = В центре города слишком много машин. | many | much ~ cars — исчисляемое: many.
+Have you got ___ questions? = У вас есть вопросы? | any | some ~ Обычный вопрос: any.
+
+## Предлоги времени: in, on, at
+правило: at — точное время и ночь: at 5 o'clock, at noon, at night, at Christmas (праздник в целом).
+правило: on — дни и даты: on Monday, on 5 May, on my birthday, on Christmas Day.
+правило: in — месяцы, годы, времена года, части дня: in May, in 2020, in summer, in the morning. In + срок о будущем — «через»: in five minutes.
+правило: Без предлога: today, tomorrow, yesterday, next week, last year, this morning.
+The meeting starts ___ ten o'clock. = Встреча начинается в десять часов. | at | in ~ Точное время: at.
+I was born ___ 1990. = Я родился в 1990 году. | in | on ~ Год: in.
+See you ___ Monday! = Увидимся в понедельник! | on | in ~ День недели: on.
+We usually go skiing ___ winter. = Зимой мы обычно катаемся на лыжах. | in | on ~ Время года: in.
+My birthday is ___ 12 March. = Мой день рождения 12 марта. | on | in ~ Дата: on.
+I don't like driving ___ night. = Я не люблю водить ночью. | at | in ~ at night — ночью.
+The shop opens ___ the morning. = Магазин открывается утром. | in | at ~ Часть дня: in the morning.
+We met ___ Christmas Day. = Мы познакомились в Рождество. | on | at ~ Конкретный день: on Christmas Day.
+I'll call you ___ five minutes. = Я позвоню тебе через пять минут. | in | after ~ «Через» о будущем: in + срок.
+She works best ___ the afternoon. = Лучше всего она работает днём. | in | on ~ Часть дня: in the afternoon.
+The film came out ___ May. = Фильм вышел в мае. | in | on ~ Месяц: in.
+I'll see you ___. = Увидимся завтра. | tomorrow | on tomorrow ~ tomorrow, yesterday, next week — без предлога.
+
+## Модальные глаголы
+правило: must — сам считаю нужным; have to — нужно из-за правил или обстоятельств: I have to wear a uniform at work.
+правило: mustn't — нельзя; don't have to — не обязательно.
+правило: should — совет: You should see a doctor. can / could — умение и возможность; Could you…? — вежливая просьба.
+правило: might — может быть, возможно: It might rain. После модальных глаголов — начальная форма без to: You should go.
+You ___ smoke here. It's not allowed. = Здесь нельзя курить. Это запрещено. | mustn't | don't have to ~ Запрет: mustn't.
+Tomorrow is Sunday, so I ___ get up early. = Завтра воскресенье, так что мне не нужно рано вставать. | don't have to | mustn't ~ Не обязательно: don't have to.
+You look tired. You ___ go to bed. = Ты выглядишь уставшим. Тебе стоит лечь спать. | should | should to ~ Совет: should. После модальных глаголов to не нужен.
+___ you help me with this box, please? = Не мог бы ты помочь мне с этой коробкой? | Could | Must ~ Вежливая просьба: Could you…?
+When I was five, I ___ swim. = В пять лет я уже умел плавать. | could | can ~ Умение в прошлом: could.
+Take an umbrella. It ___ rain later. = Возьми зонт. Позже может пойти дождь. | might | must ~ Возможно, но не точно: might.
+In many countries you ___ wear a seatbelt by law. = Во многих странах по закону нужно пристёгиваться. | have to | don't have to ~ Обязанность по закону: have to.
+You ___ see this film. It's great! = Тебе обязательно надо посмотреть этот фильм. Он отличный! | must | must to ~ Сильный совет от себя: must. После must to не нужен.
+I ___ finish this report today. My boss needs it. = Мне нужно закончить этот отчёт сегодня: он нужен начальнику. | have to | can ~ Нужно из-за обстоятельств: have to.
+___ I open the window? It's hot. = Можно я открою окно? Жарко. | Can | Must ~ Просим разрешения: Can I…?
+She ___ speak three languages. = Она умеет говорить на трёх языках. | can | can to ~ Умение: can. После can to не нужен.
+You ___ pay now. You can pay later. = Сейчас платить не обязательно, можно заплатить позже. | don't have to | mustn't ~ Не обязательно: don't have to.
+
+## -ing или to + глагол
+правило: После enjoy, finish, mind, avoid, suggest, keep — глагол с -ing: I enjoy reading.
+правило: После want, decide, hope, plan, agree, promise, would like — to + глагол: I want to go.
+правило: После предлогов (about, of, at, for, without, before, after) — глагол с -ing: She is good at drawing. Thank you for helping.
+правило: После like, love, hate, start, begin можно и так, и так.
+I enjoy ___ books in the evening. = Я люблю читать книги по вечерам. | reading | to read ~ После enjoy — -ing.
+She decided ___ a new job. = Она решила найти новую работу. | to find | finding ~ После decide — to + глагол.
+Would you mind ___ the door? = Вы не могли бы закрыть дверь? | closing | to close ~ После mind — -ing.
+We hope ___ you again soon. = Надеемся скоро снова тебя увидеть. | to see | seeing ~ После hope — to + глагол.
+He finished ___ the report at midnight. = Он закончил писать отчёт в полночь. | writing | to write ~ После finish — -ing.
+Thank you for ___ me. = Спасибо, что помог мне. | helping | to help ~ После предлога for — -ing.
+I'm thinking about ___ a car. = Я подумываю купить машину. | buying | to buy ~ После предлога about — -ing.
+They agreed ___ us with the move. = Они согласились помочь нам с переездом. | to help | helping ~ После agree — to + глагол.
+She is good at ___. = Она хорошо рисует. | drawing | to draw ~ После предлога at — -ing.
+Try to avoid ___ too much sugar. = Старайся не есть слишком много сахара. | eating | to eat ~ После avoid — -ing.
+I'd like ___ a table for two, please. = Я бы хотел заказать столик на двоих. | to book | booking ~ После would like — to + глагол.
+He left without ___ goodbye. = Он ушёл, не попрощавшись. | saying | to say ~ После предлога without — -ing.
+
+## Условные предложения: 0 и 1 тип
+правило: 0 тип — так бывает всегда, факты: If you heat ice, it melts. В обеих частях Present Simple.
+правило: 1 тип — реальное будущее: If it rains, I will take an umbrella. if + Present Simple, потом will + глагол.
+правило: После if о будущем will не ставят: If I see him, I'll tell him (не If I will see him).
+правило: unless = if not, «если не»: Unless you hurry, you'll be late.
+If you heat ice, it ___. = Если нагреть лёд, он тает. | melts | melted ~ Так бывает всегда: 0 тип, Present Simple.
+If it ___ tomorrow, I will take an umbrella. = Если завтра будет дождь, я возьму зонт. | rains | will rain ~ После if — Present Simple, даже о будущем.
+If you ___ hard, you will pass the exam. = Если будешь усердно заниматься, сдашь экзамен. | study | will study ~ После if — Present Simple.
+If I see Tom, I ___ him. = Если увижу Тома, я ему скажу. | will tell | told ~ Результат в будущем: will + глагол.
+Water ___ if you cool it below zero. = Вода замерзает, если охладить её ниже нуля. | freezes | froze ~ Факт: 0 тип, Present Simple.
+___ you hurry, you'll be late. = Если не поторопишься, опоздаешь. | Unless | If ~ «Если не»: unless.
+What will you do if you ___ the job? = Что ты будешь делать, если не получишь эту работу? | don't get | won't get ~ После if — Present Simple: don't get.
+If you mix blue and yellow, you ___ green. = Если смешать синий и жёлтый, получится зелёный. | get | got ~ Так бывает всегда: Present Simple в обеих частях.
+I'll call you if I ___ any news. = Я позвоню тебе, если будут новости. | have | will have ~ После if — Present Simple.
+If she ___ the train, she will be here at eight. = Если она успеет на поезд, то будет здесь в восемь. | catches | will catch ~ После if — Present Simple.
+If you don't water plants, they ___. = Если не поливать растения, они погибают. | die | died ~ Так бывает всегда: 0 тип, Present Simple.
+We ___ go to the beach if the weather is nice. = Мы пойдём на пляж, если будет хорошая погода. | will | would ~ Реальное будущее: will. Would — для нереального.
+
+## Условные предложения: 2 тип
+правило: Нереальное или маловероятное условие сейчас: If I had more money, I would buy a car.
+правило: Схема: if + Past Simple, потом would + глагол. После if would не ставят.
+правило: С I, he, she, it после if часто говорят were: If I were you…
+правило: If I were you, I would… — так дают совет: «на твоём месте я бы…»
+If I ___ more money, I would buy a new car. = Если бы у меня было больше денег, я бы купил новую машину. | had | have ~ Нереальное условие: if + Past Simple.
+If I were you, I ___ talk to her. = На твоём месте я бы с ней поговорил. | would | will ~ Нереальное: would + глагол.
+If she ___ here, she would help us. = Если бы она была здесь, она бы нам помогла. | were | is ~ Нереальное условие: were.
+What ___ you do if you won a million? = Что бы ты сделал, если бы выиграл миллион? | would | will ~ После if стоит won (Past Simple), значит, 2 тип: would.
+If I knew his number, I ___ him. = Если бы я знал его номер, я бы ему позвонил. | would call | will call ~ Нереальное: would + глагол.
+I would travel more if I ___ more free time. = Я бы больше путешествовал, если бы у меня было больше свободного времени. | had | would have ~ После if would не ставят: had.
+If he ___ harder, he would get better marks. = Если бы он больше занимался, у него были бы оценки лучше. | studied | studies ~ Нереальное условие: if + Past Simple.
+If I ___ you, I wouldn't buy that phone. = На твоём месте я бы не покупал этот телефон. | were | am ~ Совет «на твоём месте»: If I were you.
+She would be happier if she ___ a different job. = Она была бы счастливее, если бы у неё была другая работа. | had | has ~ Нереальное условие: if + Past Simple.
+If we lived in the country, we ___ a dog. = Если бы мы жили за городом, у нас была бы собака. | would have | will have ~ Нереальное: would + глагол.
+If it ___ so expensive, I would buy it. = Если бы это не было так дорого, я бы это купил. | weren't | isn't ~ Нереальное условие: weren't.
+Would you help me if I ___ you? = Ты бы помог мне, если бы я тебя попросил? | asked | ask ~ Нереальное условие: if + Past Simple.
+
+## Пассив
+правило: Пассив — когда важно действие, а не тот, кто его сделал: be + 3-я форма.
+правило: Present: is / are made. Past: was / were built. Present Perfect: has / have been done. Future: will be done.
+правило: Кто сделал — после by: The book was written by Tolstoy.
+правило: После модальных глаголов: must be done, can be used.
+This bridge ___ in 1890. = Этот мост построили в 1890 году. | was built | built ~ Мост не строил сам себя: пассив в прошлом, was built.
+English ___ all over the world. = На английском говорят по всему миру. | is spoken | speaks ~ Язык не говорит сам: пассив, is spoken.
+My car ___ yesterday. = Вчера мою машину украли. | was stolen | stole ~ Машина не крала: пассив в прошлом, was stolen.
+These phones ___ in China. = Эти телефоны делают в Китае. | are made | make ~ Телефоны не делают сами себя: пассив, are made.
+The letter ___ by my grandmother. = Письмо написала моя бабушка. | was written | wrote ~ by + кто сделал: пассив, was written.
+The results ___ next week. = Результаты объявят на следующей неделе. | will be announced | will announce ~ Пассив в будущем: will be + 3-я форма.
+The room ___ every day. = Комнату убирают каждый день. | is cleaned | cleans ~ Комната не убирает сама: пассив, is cleaned.
+Our flight ___ because of the snow. = Наш рейс задержали из-за снега. | was delayed | delayed ~ Рейс не задерживал сам: пассив в прошлом, was delayed.
+The windows ___ yet. = Окна ещё не помыли. | haven't been cleaned | haven't cleaned ~ Пассив в Present Perfect: have been + 3-я форма.
+Coffee ___ from Brazil to many countries. = Кофе экспортируют из Бразилии во многие страны. | is exported | exports ~ Кофе не экспортирует сам: пассив, is exported.
+The thief ___ by the police last night. = Вора поймала полиция вчера вечером. | was caught | caught ~ by the police — кто сделал: пассив, was caught.
+Mobile phones must ___ off during the exam. = Во время экзамена мобильные телефоны должны быть выключены. | be turned | turn ~ Пассив после must: be + 3-я форма.
+
+## used to: раньше было, теперь нет
+правило: used to + глагол — раньше было, а теперь нет: I used to smoke (раньше курил, теперь нет).
+правило: В вопросе и отрицании — use to, без d: Did you use to…? I didn't use to…
+правило: Не путай с be used to + -ing — «привык к»: I'm used to getting up early.
+I ___ smoke, but I stopped five years ago. = Раньше я курил, но бросил пять лет назад. | used to | use to ~ Раньше было, теперь нет: used to.
+We ___ live in Moscow when I was a child. = В детстве мы жили в Москве. | used to | are used to ~ Было раньше: used to + глагол.
+___ you use to play football at school? = Ты играл в футбол в школе? | Did | Were ~ Вопрос: Did you use to…?
+She didn't ___ like coffee, but now she loves it. = Раньше она не любила кофе, а теперь обожает. | use to | used to ~ После didn't — use to, без d.
+There ___ be a cinema here, but it closed. = Раньше здесь был кинотеатр, но его закрыли. | used to | use to ~ Было раньше, теперь нет: used to.
+My grandfather ___ work at a factory. = Мой дедушка раньше работал на заводе. | used to | was used to ~ Было раньше: used to + глагол.
+I ___ getting up early now. It's not a problem. = Теперь я привык рано вставать, это не проблема. | am used to | used to ~ «Привык к» + -ing: be used to getting.
+Did you ___ have long hair? = У тебя раньше были длинные волосы? | use to | used to ~ После did — use to, без d.
+He ___ driving on the left yet. = Он ещё не привык ездить по левой стороне. | isn't used to | didn't use to ~ «Не привык к» + -ing: isn't used to driving.
+People ___ write letters much more often. = Раньше люди писали письма намного чаще. | used to | are used to ~ Было раньше: used to + глагол.
+This street ___ be very quiet. = Раньше эта улица была очень тихой. | used to | uses to ~ Было раньше: used to.
+I ___ go to work by bike, but now I take the bus. = Раньше я ездил на работу на велосипеде, а теперь езжу на автобусе. | used to | use to ~ Было раньше, теперь нет: used to.
+
+## who, which, that, where, whose
+правило: who — о людях: the man who lives next door.
+правило: which — о предметах и животных: the car which I bought. that — и о людях, и о предметах, в разговоре чаще всего.
+правило: where — о месте: the town where I was born. whose — «чей»: the girl whose bag was stolen.
+The woman ___ lives next door is a doctor. = Женщина, которая живёт по соседству, — врач. | who | which ~ О человеке: who.
+This is the house ___ I was born. = Это дом, в котором я родился. | where | which ~ О месте: where.
+I lost the book ___ you gave me. = Я потерял книгу, которую ты мне дал. | which | who ~ О предмете: which.
+Do you know the man ___ car is parked outside? = Ты знаешь человека, чья машина стоит у входа? | whose | who ~ «Чей»: whose.
+The film ___ we watched yesterday was boring. = Фильм, который мы смотрели вчера, был скучным. | that | who ~ О предмете: that или which, но не who.
+He's the teacher ___ helped me most. = Это учитель, который помог мне больше всех. | who | which ~ О человеке: who.
+Is this the restaurant ___ you had dinner? = Это ресторан, где ты ужинал? | where | which ~ О месте: where.
+I have a friend ___ speaks five languages. = У меня есть друг, который говорит на пяти языках. | who | where ~ О человеке: who.
+The phone ___ I bought last week has already broken. = Телефон, который я купил на прошлой неделе, уже сломался. | that | where ~ О предмете: that или which.
+That's the girl ___ brother works with me. = Это девушка, брат которой работает со мной. | whose | who ~ «Чей, которой»: whose.
+A dictionary is a book ___ explains words. = Словарь — это книга, которая объясняет слова. | which | who ~ О предмете: which.
+The city ___ we spent our holiday was beautiful. = Город, где мы провели отпуск, был красивым. | where | which ~ О месте: where.
+
+## Косвенная речь
+правило: Пересказываем слова после said или told — время сдвигается назад: "I am tired." → He said he was tired.
+правило: am / is → was, will → would, can → could, have done → had done.
+правило: said — без «кому»: He said that… told — с «кому»: He told me that…
+правило: В пересказанном вопросе обычный порядок слов и нет do: She asked where I lived. Просьба: tell / ask + to + глагол.
+"I'm tired." He said he ___ tired. = «Я устал». Он сказал, что устал. | was | were ~ he + was: am сдвигается в was.
+He ___ me that he was busy. = Он сказал мне, что занят. | told | said ~ С «кому» (me): told me.
+She ___ that she liked the film. = Она сказала, что ей понравился фильм. | said | told ~ Без «кому»: said.
+He asked me where ___. = Он спросил меня, где я живу. | I lived | did I live ~ В пересказанном вопросе обычный порядок слов и нет did.
+She asked me if ___ coffee. = Она спросила, люблю ли я кофе. | I liked | did I like ~ В пересказанном вопросе обычный порядок слов и нет did.
+"I will help." She said she ___ help. = «Я помогу». Она сказала, что поможет. | would | will to ~ will сдвигается в would.
+"We have finished." They said they ___ finished. = «Мы закончили». Они сказали, что закончили. | had | has ~ have done сдвигается в had done.
+They ___ us that the shop was closed. = Они сказали нам, что магазин закрыт. | told | said ~ С «кому» (us): told us.
+She told me ___ the window. = Она попросила меня закрыть окно. | to close | close ~ Просьба: told me + to + глагол.
+He asked me ___ late. = Он попросил меня не опаздывать. | not to be | don't be ~ Просьба не делать: asked me + not to + глагол.
+He asked me what time ___. = Он спросил меня, который час. | it was | was it ~ В пересказанном вопросе обычный порядок слов: it was.
+I told him ___ about it. = Я сказал ему не беспокоиться об этом. | not to worry | don't worry ~ Просьба не делать: told him + not to + глагол.

@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#e6eaf0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="app-version" content="2026-11-17.2">
+<meta name="app-version" content="2026-11-17.3">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Ты гений">
 <link rel="manifest" href="manifest.json">
@@ -413,6 +413,21 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .cf-card .chip { margin-top: 6px; }
 .cf-sum { margin: 0; font-size: 15px; line-height: 1.5; text-align: center; color: var(--ink-2); }
 .cf-sum b { color: var(--ink); font-family: var(--font-word); font-size: 17px; }
+/* грамматика */
+.gr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.gr-item { width: 100%; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 4px 12px; padding: 12px 14px; border: 0; border-radius: 16px; background: var(--paper); color: var(--ink); text-align: left; }
+.gr-n { grid-row: span 3; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: var(--paper-2); font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.gr-item.is-done .gr-n { background: var(--good-bg); color: var(--good); }
+.gr-t { font-size: 16px; font-weight: 600; line-height: 1.25; }
+.gr-meta { font-size: 13px; color: var(--ink-3); }
+.gr-bar { height: 4px; border-radius: 2px; background: var(--paper-2); overflow: hidden; }
+.gr-bar span { display: block; height: 100%; border-radius: 2px; background: var(--good); }
+.gr-h { margin-bottom: 4px; }
+.gr-rule { margin-top: 10px; padding: 12px 16px; border-radius: 16px; background: var(--paper); }
+.gr-rule-pop { margin: 8px 0 0; box-shadow: inset 0 0 0 1.5px var(--hair); }
+.gr-rules { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 15px; line-height: 1.45; text-wrap: pretty; }
+.gr-expl { margin: 0; padding: 10px 14px; border-radius: 14px; background: var(--paper); font-size: 15px; line-height: 1.45; text-align: center; text-wrap: pretty; }
+
 
 
 .set-actions { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -856,6 +871,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     x: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg>',
     swap: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 8.5h14M15 5l3.5 3.5L15 12"/><path d="M19.5 15.5h-14M9 12l-3.5 3.5L9 19"/></svg>',
     dict: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18.5h9"/><path d="M14.5 6l3.5 3.5-7 7-4 1 1-4z"/><path d="M17.5 3.5a3 3 0 0 1 3 3"/></svg>',
+    grammar: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18.5l4.5-13 4.5 13M5.6 14h5.8"/><path d="M15 9.5h5M15 13.5h5M15 17.5h3"/></svg>',
     verb: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="5" height="14" rx="1.5"/><rect x="9.5" y="5" width="5" height="14" rx="1.5"/><rect x="15.5" y="5" width="5" height="14" rx="1.5"/></svg>',
     book: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5c-1.8-1.3-4.3-2-7.5-2v13c3.2 0 5.7.7 7.5 2 1.8-1.3 4.3-2 7.5-2v-13c-3.2 0-5.7.7-7.5 2z"/><path d="M12 6.5v13"/></svg>',
     cloze: '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9h4M16.5 9h4M3.5 15h17"/><rect x="9" y="7" width="6" height="4" rx="1"/></svg>',
@@ -1711,6 +1727,7 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     </div>
     <h2 class="hub-h">Грамматика</h2>
     <div class="tiles">
+      <button class="tile tile-wide" type="button" data-act="mode" data-mode="grammar">${ICON.grammar}<div><b>Грамматика B1</b><span>${grammarTile()}</span></div></button>
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="verbs">${ICON.verb}<div><b>Неправильные глаголы</b><span>${verbsTile()}</span></div></button>
     </div>
     <h2 class="hub-h">Упражнения со словами</h2>
@@ -3591,6 +3608,163 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     'cf-start': () => startConfuse(),
     'cf-opt': el => cfChoose(Number(el.dataset.i)),
     'cf-next': () => { const S2 = CF.ses; if (!S2) return; S2.i++; S2.st = null; render(); }
+  });
+
+  /* ================= Грамматика B1 ================= */
+  const GR = { list: null, err: false, loading: false, topic: null, ses: null, rule: false };
+  let grammarSrc = '';
+  const hashStr = s => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0; return h.toString(36); };
+  function parseGrammar(text) {
+    const out = [];
+    let cur = null;
+    String(text || '').replace(/^﻿/, '').split(/\r?\n/).forEach(raw => {
+      const line = raw.trim();
+      if (!line || line.startsWith('//')) return;
+      if (line.startsWith('## ')) { const title = line.slice(3).trim(); cur = { id: 't' + hashStr(title), title, rules: [], items: [] }; out.push(cur); return; }
+      if (!cur) return;
+      if (/^правило:/i.test(line)) { cur.rules.push(line.replace(/^правило:\s*/i, '')); return; }
+      if (!line.includes('___') || !line.includes(' = ') || !line.includes('|')) return;
+      const t = line.indexOf(' ~ '), main = t > 0 ? line.slice(0, t) : line, expl = t > 0 ? line.slice(t + 3).trim() : '';
+      const eq = main.indexOf(' = '), sent = main.slice(0, eq).trim(), rest = main.slice(eq + 3).split('|').map(x => x.trim());
+      const ru = rest.shift(), opts = rest.filter(Boolean);
+      if (opts.length < 2 || !sent.includes('___')) return;
+      cur.items.push({ id: 'gr:' + hashStr(sent), sent, ru, right: opts[0], opts, expl, full: sent.replace('___', opts[0]) });
+    });
+    return out.filter(x => x.items.length);
+  }
+  async function loadGrammar() {
+    if (GR.loading) return;
+    GR.loading = true;
+    try {
+      const res = await fetch('grammar.txt', { cache: 'no-cache' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const t = await res.text();
+      GR.err = false;
+      if (t !== grammarSrc) { grammarSrc = t; GR.list = parseGrammar(t); }
+    } catch (e) { if (!GR.list) GR.err = true; }
+    GR.loading = false;
+    if (tab === 'train' && (!trainMode || (trainMode === 'grammar' && !GR.ses))) render();
+  }
+  const grRec = it => EXT[it.id] || null;
+  function topicStats(t) {
+    let ok = 0, tried = 0, wrong = 0;
+    t.items.forEach(it => { const r = grRec(it); if (r) { tried++; if (r.ok) ok++; else wrong++; } });
+    const pct = Math.round(ok / t.items.length * 100);
+    return { ok, tried, wrong, total: t.items.length, pct, done: pct >= 80 };
+  }
+  function grammarTile() {
+    if (!GR.list) { if (!GR.loading && !GR.err) loadGrammar(); return 'Темы уровня B1: времена, условные предложения, пассив и другое. Короткое правило и задания с пояснениями.'; }
+    const done = GR.list.filter(t => topicStats(t).done).length;
+    return `${plural(GR.list.length, ['тема', 'темы', 'тем'])} уровня B1: короткое правило и задания с пояснениями. Освоено: ${done} из ${GR.list.length}.`;
+  }
+  const curTopic = () => (GR.list || []).find(t => t.id === GR.topic) || null;
+  function grRulesHTML(t) { return `<ul class="gr-rules">${t.rules.map(r => `<li>${esc(r)}</li>`).join('')}</ul>`; }
+  function startGrammar(onlyWrong) {
+    const t = curTopic();
+    if (!t) return;
+    const items = shuffle(t.items.filter(it => !onlyWrong || (grRec(it) && !grRec(it).ok)));
+    if (!items.length) return;
+    GR.ses = { t, items, i: 0, st: null, opts: null, good: 0 };
+    GR.rule = false;
+    $('#main').scrollTop = 0;
+    render();
+  }
+  function grChoose(i) {
+    const S2 = GR.ses, it = S2 && S2.items[S2.i];
+    if (!it || S2.st || !S2.opts || i >= S2.opts.length) return;
+    const ok = S2.opts[i] === it.right, r = grRec(it) || {};
+    S2.st = { ok, choice: i };
+    if (ok) S2.good++;
+    extSet(it.id, { ok: ok ? 1 : 0, c: (r.c || 0) + (ok ? 1 : 0), w: (r.w || 0) + (ok ? 0 : 1) });
+    bump('c'); if (ok) bump('ok');
+    render();
+    playSentence({ en: it.full });
+  }
+  function grNext() { const S2 = GR.ses; if (!S2 || !S2.st) return; S2.i++; S2.st = null; S2.opts = null; render(); }
+  function renderGrammar() {
+    view.className = 'wrap view';
+    if (!GR.list) {
+      view.innerHTML = modeHead('Грамматика B1') + `<div class="state"><p>${GR.err ? 'Грамматика не загрузилась. Проверь интернет.' : 'Загружаю темы…'}</p>${GR.err ? '<button class="btn btn-primary" type="button" data-act="gr-reload">Попробовать снова</button>' : ''}</div>`;
+      if (!GR.err) loadGrammar();
+      return;
+    }
+    const t = curTopic();
+    if (!t) { GR.topic = null; GR.ses = null; renderGrammarList(); return; }
+    if (GR.ses) { renderGrammarRun(); return; }
+    const s = topicStats(t);
+    view.innerHTML = `<div class="mode-head"><button class="back-link" type="button" data-act="gr-back">${ICON.back}Темы</button><p class="mode-title">Грамматика B1</p></div>
+      <h2 class="st-h gr-h">${esc(t.title)}</h2>
+      <div class="gr-rule">${grRulesHTML(t)}</div>
+      <div class="done-actions vb-actions">
+        <button class="btn btn-primary" type="button" data-act="gr-start">${s.tried ? 'Пройти тему ещё раз' : 'Начать'}: ${plural(t.items.length, ['задание', 'задания', 'заданий'])}</button>
+        ${s.wrong ? `<button class="btn btn-ghost" type="button" data-act="gr-start" data-only="1">Только ошибки: ${s.wrong}</button>` : ''}
+      </div>
+      <p class="hub-note">${s.tried ? `Сейчас верно ${s.ok} из ${s.total}. Тема освоена, когда верно 80% заданий.` : 'После каждого ответа — пояснение и озвучка готового предложения.'}</p>`;
+  }
+  function renderGrammarList() {
+    view.innerHTML = modeHead('Грамматика B1') + `
+      <p class="st-intro">Темы идут от простых к сложным. Тема освоена, когда верно 80% заданий.</p>
+      <ol class="gr-list">${GR.list.map((t, n) => {
+        const s = topicStats(t);
+        return `<li><button class="gr-item${s.done ? ' is-done' : ''}" type="button" data-act="gr-open" data-id="${esc(t.id)}">
+          <span class="gr-n">${n + 1}</span><span class="gr-t">${esc(t.title)}</span>
+          <span class="gr-meta">${s.tried ? (s.done ? `освоено · ${s.ok} из ${s.total}` : `верно ${s.ok} из ${s.total}`) : 'не начато'}</span>
+          <span class="gr-bar" aria-hidden="true"><span style="width:${s.pct}%"></span></span></button></li>`;
+      }).join('')}</ol>`;
+  }
+  function renderGrammarRun() {
+    const S2 = GR.ses, it = S2.items[S2.i], t = S2.t;
+    const head = `<div class="mode-head"><button class="back-link" type="button" data-act="gr-topic">${ICON.back}Тема</button><p class="mode-title">${esc(t.title)}</p></div>`;
+    if (!it) {
+      const s = topicStats(t);
+      view.innerHTML = head + `<div class="done"><h2>Верно: ${S2.good} из ${S2.items.length}</h2>
+        <p>${s.done ? 'Тема освоена.' : `По всей теме верно ${s.ok} из ${s.total}. Для «освоено» нужно 80%.`}</p>
+        <div class="done-actions">${s.wrong ? `<button class="btn btn-primary" type="button" data-act="gr-start" data-only="1">Повторить ошибки: ${s.wrong}</button>` : ''}
+          <button class="btn ${s.wrong ? 'btn-ghost' : 'btn-primary'}" type="button" data-act="gr-back">К темам</button></div></div>`;
+      return;
+    }
+    const st = S2.st;
+    if (!S2.opts) S2.opts = shuffle(it.opts.slice());
+    const correct = S2.opts.indexOf(it.right);
+    const [pre, post] = [it.sent.slice(0, it.sent.indexOf('___')), it.sent.slice(it.sent.indexOf('___') + 3)];
+    const sentHTML = st ? `${esc(pre)}<mark>${esc(it.right)}</mark>${esc(post)}` : `${esc(pre)}<span class="blank"></span>${esc(post)}`;
+    view.innerHTML = head + progressHTML(S2.i, S2.items.length) + `
+      ${GR.rule ? `<div class="gr-rule gr-rule-pop">${grRulesHTML(t)}</div>` : ''}
+      <div class="prompt"><p class="ex ex-big" lang="en">${sentHTML}</p><p class="ex-tr">${esc(it.ru)}</p></div>
+      <div class="options" role="group" aria-label="Варианты ответа">${S2.opts.map((o, i) => {
+        let cls = 'opt';
+        if (st) cls += i === correct ? ' right' : i === st.choice ? ' wrong' : ' dim';
+        return `<button class="${cls}" type="button" data-act="gr-opt" data-i="${i}" lang="en"${st ? ' disabled' : ''}><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`;
+      }).join('')}</div>
+      ${st ? `<div class="after"><p class="verdict ${st.ok ? 'good' : 'bad'}" role="status">${st.ok ? 'Верно' : 'Неверно'}</p>
+        ${it.expl ? `<p class="gr-expl">${esc(it.expl)}</p>` : ''}
+        <div class="play-row"><button class="chip" type="button" data-act="gr-say">${ICON.play}Послушать</button><button class="chip" type="button" data-act="gr-say-slow">${ICON.snail}Медленно</button></div>
+        <button class="btn btn-primary" type="button" data-act="gr-next">Дальше</button></div>`
+        : `<div class="write-tools"><span></span><button class="btn-link" type="button" data-act="gr-rule">${GR.rule ? 'Скрыть правило' : 'Правило'}</button></div>`}
+      ${keysHTML(['1–' + S2.opts.length, 'выбрать'], ['Enter', 'дальше'])}`;
+    if (st) { const nb = $('[data-act="gr-next"]'); if (nb) nb.focus({ preventScroll: true }); }
+  }
+  MODS.grammar = {
+    start() { GR.topic = null; GR.ses = null; render(); loadGrammar(); },
+    render: renderGrammar,
+    key(e, typing, onControl) {
+      const S2 = GR.ses;
+      if (!S2 || typing) return;
+      if (/^[1-4]$/.test(e.key)) grChoose(Number(e.key) - 1);
+      else if (e.key === 'Enter' && S2.st && !onControl) { e.preventDefault(); grNext(); }
+    }
+  };
+  Object.assign(ACTS, {
+    'gr-open': el => { GR.topic = el.dataset.id; GR.ses = null; $('#main').scrollTop = 0; render(); },
+    'gr-back': () => { Seq.stop(); GR.topic = null; GR.ses = null; $('#main').scrollTop = 0; render(); },
+    'gr-topic': () => { Seq.stop(); GR.ses = null; $('#main').scrollTop = 0; render(); },
+    'gr-start': el => startGrammar(!!el.dataset.only),
+    'gr-opt': el => grChoose(Number(el.dataset.i)),
+    'gr-next': () => grNext(),
+    'gr-rule': () => { GR.rule = !GR.rule; render(); },
+    'gr-say': () => { const it = GR.ses && GR.ses.items[GR.ses.i]; if (it) playSentence({ en: it.full }); },
+    'gr-say-slow': () => { const it = GR.ses && GR.ses.items[GR.ses.i]; if (it) playSentence({ en: it.full }, true); },
+    'gr-reload': () => { GR.err = false; render(); }
   });
 
   /* ================= синхронизация через GitHub ================= */
