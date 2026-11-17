@@ -35,6 +35,8 @@ WORDS = ROOT / "words.txt"
 EXAMPLES = ROOT / "examples.txt"
 STORIES = ROOT / "stories"          # папка с отдельными историями (по желанию)
 STORIES_FILE = ROOT / "stories.txt"  # все истории одним файлом
+VERBS_FILE = ROOT / "verbs.txt"      # неправильные глаголы: «go | went | gone | перевод»
+GRAMMAR_FILE = ROOT / "grammar.txt"  # грамматика: озвучиваем готовые предложения
 DEADLINE = time.time() + float(os.environ.get("AUDIO_BUDGET_MIN", "300")) * 60
 POSTPONED = [0]
 AUDIO = ROOT / "audio"
@@ -246,6 +248,43 @@ def story_sentences():
     return out
 
 
+def verb_sentences():
+    """verbs.txt: «go | went | gone | перевод» — озвучиваем «go, went, gone» (как в приложении: без повторов)"""
+    if not VERBS_FILE.exists():
+        return []
+    out = []
+    for raw in VERBS_FILE.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith(("//", "#")) or "|" not in line:
+            continue
+        parts = [p.strip() for p in line.split("|")]
+        if len(parts) < 4:
+            continue
+        forms = []
+        for f in [parts[0]] + parts[1].split("/") + parts[2].split("/"):
+            f = f.strip()
+            if f and f not in forms:
+                forms.append(f)
+        out.append(", ".join(forms))
+    return out
+
+
+def grammar_sentences():
+    """grammar.txt: «I ___ my keys. = перевод | have lost | lost ~ пояснение» — озвучиваем предложение с верным ответом"""
+    if not GRAMMAR_FILE.exists():
+        return []
+    out = []
+    for raw in GRAMMAR_FILE.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith(("//", "#", "правило:")) or "___" not in line or " = " not in line or "|" not in line:
+            continue
+        sent = line.split(" = ", 1)[0].strip()
+        answer = line.split("|")[1].split("~")[0].strip()
+        if sent and answer:
+            out.append(sent.replace("___", answer, 1))
+    return out
+
+
 async def tts(text, dest, sem, voice=VOICE):
     import edge_tts
     async with sem:
@@ -311,7 +350,7 @@ async def main():
 
     # дополнительные примеры и истории: только нейроголос, имена файлов по тексту
     extra_used = set()
-    sentences = [s for lst in extra_examples(words).values() for s in lst] + story_sentences()
+    sentences = [s for lst in extra_examples(words).values() for s in lst] + story_sentences() + verb_sentences() + grammar_sentences()
     queued = {str(d) for _, d, _, _ in jobs}
     for sent in dict.fromkeys(sentences):
         ef = f"e/{slug(sent, VOICE)}.mp3"

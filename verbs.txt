@@ -1,0 +1,121 @@
+// Неправильные глаголы: начальная форма | Past Simple | Past Participle | перевод | ~ пояснение (по желанию)
+// Варианты одной формы пишутся через «/»: learned/learnt. Порядок — от самых частых.
+// Озвучку «go, went, gone» GitHub делает сам после правки этого файла.
+
+be | was/were | been | быть | ~ was — с I, he, she, it; were — с you, we, they
+have | had | had | иметь
+do | did | done | делать
+say | said | said | сказать, говорить
+go | went | gone | идти, ехать
+get | got | got/gotten | получать, становиться | ~ gotten — американский вариант, got — британский
+make | made | made | делать, создавать
+know | knew | known | знать
+think | thought | thought | думать
+take | took | taken | брать
+see | saw | seen | видеть
+come | came | come | приходить
+give | gave | given | давать
+find | found | found | находить
+tell | told | told | рассказывать, сообщать
+become | became | become | становиться
+leave | left | left | уходить, оставлять
+feel | felt | felt | чувствовать
+put | put | put | класть, ставить
+bring | brought | brought | приносить
+begin | began | begun | начинать
+keep | kept | kept | хранить, продолжать
+hold | held | held | держать
+write | wrote | written | писать
+stand | stood | stood | стоять
+hear | heard | heard | слышать
+let | let | let | позволять
+mean | meant | meant | значить, иметь в виду
+set | set | set | устанавливать
+meet | met | met | встречать, знакомиться
+run | ran | run | бежать
+pay | paid | paid | платить
+sit | sat | sat | сидеть
+speak | spoke | spoken | говорить
+lie | lay | lain | лежать | ~ lie в значении «врать» — правильный глагол: lie, lied, lied
+lead | led | led | вести, руководить
+read | read | read | читать | ~ пишется одинаково, но в прошедшем времени звучит как «ред»
+grow | grew | grown | расти, выращивать
+lose | lost | lost | терять, проигрывать
+fall | fell | fallen | падать
+send | sent | sent | отправлять
+build | built | built | строить
+understand | understood | understood | понимать
+draw | drew | drawn | рисовать, чертить
+break | broke | broken | ломать
+spend | spent | spent | тратить, проводить (время)
+cut | cut | cut | резать
+rise | rose | risen | подниматься, расти
+drive | drove | driven | водить машину, ехать
+buy | bought | bought | покупать
+wear | wore | worn | носить (одежду)
+choose | chose | chosen | выбирать
+throw | threw | thrown | бросать
+show | showed | shown | показывать | ~ Past Simple правильная, неправильная только третья форма
+catch | caught | caught | ловить, успеть (на транспорт)
+win | won | won | выигрывать, побеждать
+forget | forgot | forgotten | забывать
+sell | sold | sold | продавать
+fight | fought | fought | драться, бороться
+teach | taught | taught | учить (кого-то), преподавать
+eat | ate | eaten | есть
+drink | drank | drunk | пить
+sleep | slept | slept | спать
+fly | flew | flown | летать
+swim | swam | swum | плавать
+sing | sang | sung | петь
+cost | cost | cost | стоить
+hit | hit | hit | ударять, попадать
+hurt | hurt | hurt | причинять боль, болеть
+shut | shut | shut | закрывать
+forgive | forgave | forgiven | прощать
+hide | hid | hidden | прятать, прятаться
+steal | stole | stolen | красть
+ride | rode | ridden | ездить (на велосипеде, лошади)
+shake | shook | shaken | трясти, пожимать (руку)
+wake | woke | woken | просыпаться, будить
+freeze | froze | frozen | замерзать, замораживать
+bite | bit | bitten | кусать
+hang | hung | hung | вешать, висеть
+lend | lent | lent | давать взаймы | ~ не путай с borrow — брать взаймы, это правильный глагол
+lay | laid | laid | класть | ~ не путай с lie (лежать): lie — lay — lain
+feed | fed | fed | кормить
+bend | bent | bent | сгибать, наклоняться
+beat | beat | beaten | бить, побеждать
+blow | blew | blown | дуть
+light | lit | lit | зажигать, освещать
+shine | shone | shone | светить, сиять
+shoot | shot | shot | стрелять, снимать (фото, видео)
+stick | stuck | stuck | приклеивать, застревать
+strike | struck | struck | ударять, бастовать
+swear | swore | sworn | клясться, ругаться
+tear | tore | torn | рвать
+spread | spread | spread | распространять, намазывать
+dig | dug | dug | копать
+ring | rang | rung | звонить
+sink | sank | sunk | тонуть
+bet | bet | bet | спорить (на что-то), делать ставку
+quit | quit | quit | бросать, увольняться
+burn | burned/burnt | burned/burnt | гореть, жечь | ~ burned — американский вариант, burnt — британский
+learn | learned/learnt | learned/learnt | учить, узнавать | ~ learned — американский вариант, learnt — британский
+dream | dreamed/dreamt | dreamed/dreamt | мечтать, видеть сон
+smell | smelled/smelt | smelled/smelt | пахнуть, нюхать
+spell | spelled/spelt | spelled/spelt | писать по буквам
+spill | spilled/spilt | spilled/spilt | проливать
+deal | dealt | dealt | иметь дело, справляться
+seek | sought | sought | искать
+slide | slid | slid | скользить
+sweep | swept | swept | подметать
+swing | swung | swung | качаться, размахивать
+split | split | split | делить, раскалывать
+upset | upset | upset | расстраивать
+withdraw | withdrew | withdrawn | снимать (деньги), отзывать
+overcome | overcame | overcome | преодолевать
+mistake | mistook | mistaken | принимать за другого | ~ be mistaken — ошибаться
+misunderstand | misunderstood | misunderstood | неправильно понять
+forbid | forbade | forbidden | запрещать
+broadcast | broadcast | broadcast | транслировать, вещать
