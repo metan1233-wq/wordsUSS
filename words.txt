@@ -924,6 +924,118 @@ it's up to you ; решать тебе ; Tea or coffee? It's up to you.
 never mind ; ничего страшного, неважно ; Never mind, it's not important.
 no wonder ; неудивительно ; No wonder you are tired.
 
+# Разговор · Мнение
+in my opinion ; по-моему; на мой взгляд ; In my opinion, the first plan is better.
+I think so ; думаю, да ; "Will it rain today?" "I think so."
+I don't think so ; думаю, нет; вряд ли ; "Is he coming tonight?" "I don't think so."
+as far as I'm concerned ; что касается меня; по мне ; As far as I'm concerned, the price is too high.
+to tell the truth ; по правде говоря ; To tell the truth, I didn't like the film.
+it seems to me ; мне кажется ; It seems to me that he is tired.
+I'm not sure about that ; я в этом не уверен ; "It's the best car in the world." "I'm not sure about that."
+if you ask me ; если хочешь знать моё мнение; по-моему ; If you ask me, we should leave now.
+I'd say ; я бы сказал ; I'd say it's about ten kilometres from here.
+the thing is ; дело в том, что ; I'd like to come. The thing is, I have no time.
+from my point of view ; с моей точки зрения ; From my point of view, the new office is too far.
+I have no idea ; понятия не имею ; "Where is Tom?" "I have no idea."
+
+# Разговор · Согласие и несогласие
+I agree with you ; я с тобой согласен ; I agree with you, it's too expensive.
+that's true ; это правда; верно ; "Prices are going up." "That's true."
+you're right ; ты прав ; You're right, we should ask first.
+I see your point ; я понимаю, что ты хочешь сказать ; I see your point, but I still think we should wait.
+that's a good point ; хорошее замечание; верно подмечено ; That's a good point. I didn't think about it.
+I'm afraid I disagree ; боюсь, я не согласен ; I'm afraid I disagree. The plan is too risky.
+not really ; не совсем; не особо ; "Do you like jazz?" "Not really."
+I see what you mean ; понимаю, о чём ты ; I see what you mean, but it's not so simple.
+that's not what I meant ; я не это имел в виду ; Sorry, that's not what I meant.
+fair enough ; справедливо; ну ладно ; "I can't come, I'm working." "Fair enough."
+I couldn't agree more ; полностью согласен ; "We need a break." "I couldn't agree more."
+it depends ; смотря как; зависит от обстоятельств ; "Will you come?" "It depends on the weather."
+
+# Разговор · Просьбы и предложения
+could you help me ; не мог бы ты мне помочь ; Could you help me with this box?
+would you mind ; не мог бы ты; вы не против (+ -ing) ; Would you mind opening the window?
+can I ask you something ; можно тебя кое о чём спросить ; Can I ask you something? It's about work.
+do you mind if I ; ты не против, если я ; Do you mind if I sit here?
+I was wondering if ; я хотел спросить, не… (вежливая просьба) ; I was wondering if you could help me with my CV.
+how about ; как насчёт ; How about a cup of coffee?
+why don't we ; почему бы нам не; давай ; Why don't we go to the cinema tonight?
+shall we ; давай (предлагаем что-то сделать) ; Shall we start?
+let me know ; дай знать; сообщи ; Let me know when you arrive.
+would you like ; не хочешь ли; хотите ; Would you like some tea?
+no problem ; без проблем; не за что ; "Can you send it today?" "No problem."
+I'd rather ; я бы лучше; я бы предпочёл ; I'd rather stay in tonight. I'm tired.
+
+# Разговор · Переспросить и уточнить
+could you repeat that ; не могли бы вы повторить ; Sorry, could you repeat that?
+what do you mean ; что ты имеешь в виду ; What do you mean by "later"?
+could you speak more slowly ; не могли бы вы говорить медленнее ; Could you speak more slowly, please?
+how do you spell it ; как это пишется ; "My name is Siobhan." "How do you spell it?"
+what does it mean ; что это значит ; I don't know this word. What does it mean?
+I didn't catch that ; я не расслышал ; Sorry, I didn't catch that. Could you say it again?
+do you mean ; ты имеешь в виду; то есть ; Do you mean the meeting on Friday?
+in other words ; другими словами; то есть ; In other words, we need more time.
+so you're saying ; то есть ты говоришь, что ; So you're saying we should start again?
+let me check ; дай я проверю ; Let me check my calendar.
+I'm not sure I understand ; не уверен, что понимаю ; I'm not sure I understand. Can you give an example?
+what's the word for ; как называется; как сказать ; What's the word for a person who repairs cars?
+
+# Разговор · Small talk
+how's it going ; как дела ; Hi, Tom! How's it going?
+what do you do ; кем ты работаешь; чем занимаешься ; "What do you do?" "I'm an engineer."
+nice to meet you ; приятно познакомиться ; Hi, I'm Anna. Nice to meet you.
+long time no see ; сто лет не виделись ; Mike! Long time no see!
+how was your weekend ; как прошли выходные ; How was your weekend? Did you go anywhere?
+what are you up to ; чем занимаешься; какие планы ; Hey, what are you up to this evening?
+not bad ; неплохо ; "How are you?" "Not bad, thanks."
+same here ; у меня тоже; я тоже ; "I'm so tired." "Same here."
+it's been a while ; давно не виделись; прошло немало времени ; It's been a while since we last met.
+take care ; береги себя; пока ; Bye, take care!
+see you around ; ещё увидимся ; Nice talking to you. See you around!
+have a nice day ; хорошего дня ; Thanks for your help. Have a nice day!
+
+# Разговор · Телефон и встречи
+hold on a second ; подожди секунду ; Hold on a second, I'll get a pen.
+I'll call you back ; я тебе перезвоню ; I'm driving now. I'll call you back.
+can I leave a message ; можно оставить сообщение ; He's not here? Can I leave a message?
+who's calling ; кто звонит; кто говорит ; "Hello, is Anna there?" "Who's calling, please?"
+you're breaking up ; тебя плохо слышно (прерывается связь) ; Sorry, you're breaking up. I'll call you back.
+what time works for you ; во сколько тебе удобно ; What time works for you on Tuesday?
+does it suit you ; тебе это подходит; тебя это устраивает ; We can meet at ten. Does it suit you?
+let's reschedule ; давай перенесём ; I'm ill today. Let's reschedule for next week.
+I'm calling about ; я звоню по поводу ; Hello, I'm calling about the job advert.
+speak to you soon ; до связи; скоро поговорим ; Thanks, Anna. Speak to you soon.
+I'll get back to you ; я вернусь к тебе с ответом ; Let me think, and I'll get back to you tomorrow.
+can you hear me ; ты меня слышишь ; Hello? Can you hear me now?
+
+# Разговор · Письма и сообщения
+thank you for your email ; спасибо за письмо ; Thank you for your email and the photos.
+I'm writing to ask about ; пишу, чтобы спросить о ; I'm writing to ask about the price of the course.
+please find attached ; во вложении (вы найдёте) ; Please find attached the report for May.
+I look forward to hearing from you ; жду вашего ответа ; I look forward to hearing from you soon.
+could you please send me ; не могли бы вы прислать мне ; Could you please send me the contract?
+as discussed ; как мы обсуждали ; As discussed, I'm sending you the plan.
+just a quick reminder ; небольшое напоминание ; Just a quick reminder about our meeting tomorrow.
+sorry for the late reply ; извините за поздний ответ ; Sorry for the late reply. I was on holiday.
+feel free to ; не стесняйтесь; можете смело ; Feel free to call me if you need anything.
+best regards ; с уважением (в конце письма) ; Best regards, Anna.
+if you have any questions ; если у вас есть вопросы ; If you have any questions, please let me know.
+I hope you're well ; надеюсь, у вас всё хорошо ; Hi Tom, I hope you're well.
+
+# Разговор · На работе
+let's get started ; давайте начнём ; Everyone is here, so let's get started.
+on the agenda ; в повестке дня ; What's next on the agenda?
+to sum up ; подводя итог; подвести итог ; To sum up, we need more people and more time.
+to meet the deadline ; уложиться в срок ; We worked all weekend to meet the deadline.
+to keep you updated ; держать тебя в курсе ; I'll keep you updated on the project.
+to work on ; работать над ; I'm working on a new design.
+to take notes ; делать заметки; записывать ; Can you take notes during the meeting?
+I'll look into it ; я разберусь (с этим) ; Thanks for telling me. I'll look into it.
+to run behind schedule ; отставать от графика ; The project is running behind schedule.
+to set up a meeting ; назначить встречу ; Let's set up a meeting for Monday.
+any questions ; есть вопросы ; That's all from me. Any questions?
+to be on the same page ; понимать всё одинаково; быть на одной волне ; Let's make sure we're on the same page.
+
 # Трудное произношение
 Wednesday ; среда ; See you on Wednesday.
 February ; февраль ; My birthday is in February.
