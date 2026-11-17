@@ -1,12 +1,14 @@
-  ! нейроголос «Water boils at 100 degrees Celsius.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «I met an old friend while I was shopping»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «We went to Spain last summer.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «When did you buy this car?»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «I've known him since we were at school.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «I've known him since we were at school.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «This phone is more expensive than that o»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «Thank you for helping me.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «If she were here, she would help us.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «He's the teacher who helped me most.»: No audio was received. Please verify that your parameters are correct.
-  ! нейроголос «She said that she liked the film.»: No audio was received. Please verify that your parameters are correct.
-Слов: 3005. Новых файлов: нейроголос слов 0, примеров 0, переводов 0, живых записей 0, доп. примеров и историй 215. Удалено лишних: 0.
+  ! нейроголос «from my point of view»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Can I ask you something? It's about work»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «no problem»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «have a nice day»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I'm working on a new design.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «No, that's not what I meant at all.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «"How long does it take?" "It depends."»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «I'm not sure I understand what you want.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Nice to meet you too.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «It was nice to meet you. See you soon!»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «The food here is not bad.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «OK, I have to go. See you around.»: No audio was received. Please verify that your parameters are correct.
+  ! нейроголос «Sorry for the late reply, I've been very»: No audio was received. Please verify that your parameters are correct.
+Слов: 3101. Новых файлов: нейроголос слов 96, примеров 96, переводов 96, живых записей 0, доп. примеров и историй 192. Удалено лишних: 0.
