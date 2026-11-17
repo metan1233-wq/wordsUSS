@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#e6eaf0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="app-version" content="2026-11-17.3">
+<meta name="app-version" content="2026-11-17.4">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Ты гений">
 <link rel="manifest" href="manifest.json">
@@ -427,6 +427,20 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
 .gr-rule-pop { margin: 8px 0 0; box-shadow: inset 0 0 0 1.5px var(--hair); }
 .gr-rules { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 15px; line-height: 1.45; text-wrap: pretty; }
 .gr-expl { margin: 0; padding: 10px 14px; border-radius: 14px; background: var(--paper); font-size: 15px; line-height: 1.45; text-align: center; text-wrap: pretty; }
+/* говорение */
+.sp-box { display: flex; flex-direction: column; align-items: center; gap: 8px; padding-top: 4px; }
+.sp-rec { width: 84px; height: 84px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--paper); box-shadow: inset 0 0 0 2px var(--bad); }
+.sp-rec .sp-dot { width: 34px; height: 34px; border-radius: 50%; background: var(--bad); transition: border-radius .2s, transform .2s; }
+.sp-rec.is-on { background: var(--bad-bg); animation: sp-pulse 1.2s ease-in-out infinite; }
+.sp-rec.is-on .sp-dot { border-radius: 7px; transform: scale(.8); }
+.sp-rec:disabled { opacity: .4; }
+@keyframes sp-pulse { 50% { box-shadow: inset 0 0 0 2px var(--bad), 0 0 0 10px var(--bad-bg); } }
+@media (prefers-reduced-motion: reduce) { .sp-rec.is-on { animation: none; } }
+.sp-state { margin: 0; font-size: 14px; color: var(--ink-2); text-align: center; font-variant-numeric: tabular-nums; }
+.sp-err { margin: 0; max-width: 36ch; font-size: 14px; color: var(--bad); text-align: center; text-wrap: pretty; }
+.sp-check { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 14px; }
+.sp-check .dc-line { align-self: stretch; }
+
 
 
 
@@ -1719,10 +1733,11 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="confuse"${cfN ? '' : ' disabled'}>${ICON.swap}<div><b>Путаешь</b><span>${confuseTile()}</span></div></button>
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="sort">${ICON.sieve}<div><b>Отсеять знакомые</b><span>Новых слов: ${freshN}. Отметь те, что уже знаешь, чтобы не тратить на них повторения.</span></div></button>
     </div>
-    <h2 class="hub-h">Текст и слух</h2>
+    <h2 class="hub-h">Текст, слух и речь</h2>
     <div class="tiles">
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="stories">${ICON.book}<div><b>Истории</b><span>${storiesTile()}</span></div></button>
-      <button class="tile tile-wide" type="button" data-act="mode" data-mode="dict">${ICON.dict}<div><b>Диктант</b><span>Звучит пример, ты пишешь его целиком. Ошибки видны по словам.</span></div></button>
+      <button class="tile" type="button" data-act="mode" data-mode="dict">${ICON.dict}<b>Диктант</b><span>Звучит пример, ты пишешь его целиком</span></button>
+      <button class="tile" type="button" data-act="mode" data-mode="speak">${ICON.human}<b>Говорение</b><span>Повтори за диктором, запиши себя и сравни</span></button>
       <button class="tile tile-wide" type="button" data-act="mode" data-mode="player">${ICON.phones}<div><b>Слушать без рук</b><span>Слово, перевод и пример подряд. Можно в дороге и на прогулке.</span></div></button>
     </div>
     <h2 class="hub-h">Грамматика</h2>
@@ -3765,6 +3780,179 @@ code { padding: 1px 6px; border-radius: 6px; background: var(--paper); font-fami
     'gr-say': () => { const it = GR.ses && GR.ses.items[GR.ses.i]; if (it) playSentence({ en: it.full }); },
     'gr-say-slow': () => { const it = GR.ses && GR.ses.items[GR.ses.i]; if (it) playSentence({ en: it.full }, true); },
     'gr-reload': () => { GR.err = false; render(); }
+  });
+
+  /* ================= Говорение: образец → своя запись → сравнение ================= */
+  const SP = { ses: null, rec: null, stream: null, chunks: [], url: null, tick: 0, t0: 0, recog: null };
+  const SPEECH_REC = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  const canRecord = () => !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
+  function speakPick(n) {
+    const recent = new Set(store.get(pk('tg:speak-recent'), []));
+    const seen = WORDS.filter(w => !isFresh(SRS[w.key]) && !SRS[w.key].kn);
+    const src = seen.length >= 6 ? seen : WORDS;
+    const groups = [[], [], []];
+    src.forEach(w => {
+      const s = SRS[w.key], g = isFresh(s) ? 2 : s.st !== 'review' ? 0 : 1;
+      examplesOf(w).forEach(x => { const c = wordCount(x.en); if (x.ru && c >= 4 && c <= 12 && !/[\d"«»“”]/.test(x.en) && !recent.has(x.en)) groups[g].push({ w, x }); });
+    });
+    const out = [], used = new Set();
+    groups.forEach(g => shuffle(g).forEach(it => { if (out.length < n && !used.has(it.w.key)) { used.add(it.w.key); out.push(it); } }));
+    return shuffle(out);
+  }
+  function startSpeak() {
+    spReset();
+    const items = speakPick(6);
+    if (!items.length) { toast('Нет подходящих предложений'); return; }
+    SP.ses = { items, i: 0, done: 0, spoken: -1 };
+    $('#main').scrollTop = 0;
+    render();
+  }
+  function spReset() {
+    spStopRecording(true);
+    if (SP.recog) { try { SP.recog.abort(); } catch (e) { /* ignore */ } SP.recog = null; }
+    if (SP.url) { URL.revokeObjectURL(SP.url); SP.url = null; }
+    if (SP.ses) Object.assign(SP.ses, { recording: false, recorded: false, err: '', heard: null, listening: false, recErr: '' });
+  }
+  function spRelease() {
+    clearInterval(SP.tick);
+    if (SP.stream) { SP.stream.getTracks().forEach(t => t.stop()); SP.stream = null; }
+    try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) { /* old browsers */ }
+  }
+  async function spRecord() {
+    const S2 = SP.ses;
+    if (!S2 || S2.recording) return;
+    if (!canRecord()) { S2.err = 'Это устройство не даёт записывать звук в браузере. Можно слушать образец и повторять вслух.'; render(); return; }
+    Seq.stop(); Sound.stop();
+    try { if (navigator.audioSession) navigator.audioSession.type = 'play-and-record'; } catch (e) { /* old browsers */ }
+    try {
+      SP.stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
+    } catch (e) {
+      spRelease();
+      S2.err = e && e.name === 'NotAllowedError' ? 'Нет доступа к микрофону. Разреши микрофон для этого сайта в настройках браузера и попробуй ещё раз.' : 'Микрофон не включился. Проверь, что он не занят другим приложением.';
+      render(); return;
+    }
+    const mime = ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm'].find(m => window.MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(m));
+    let rec;
+    try { rec = new MediaRecorder(SP.stream, mime ? { mimeType: mime } : undefined); } catch (e) { spRelease(); S2.err = 'Запись не запустилась на этом устройстве.'; render(); return; }
+    SP.chunks = [];
+    rec.ondataavailable = e => { if (e.data && e.data.size) SP.chunks.push(e.data); };
+    rec.onstop = () => {
+      spRelease();
+      if (SP.ses !== S2) return;
+      S2.recording = false;
+      if (!SP.chunks.length) { S2.err = 'Запись получилась пустой. Попробуй ещё раз.'; render(); return; }
+      if (SP.url) URL.revokeObjectURL(SP.url);
+      SP.url = URL.createObjectURL(new Blob(SP.chunks, { type: rec.mimeType || mime || 'audio/mp4' }));
+      S2.recorded = true; S2.err = '';
+      render();
+      spPlayBoth();
+    };
+    rec.start();
+    SP.rec = rec; SP.t0 = Date.now();
+    S2.recording = true; S2.err = '';
+    render();
+    SP.tick = setInterval(() => {
+      const t = Math.floor((Date.now() - SP.t0) / 1000), el = $('#spTime');
+      if (el) el.textContent = `0:${String(t).padStart(2, '0')}`;
+      if (t >= 15) spStopRecording();
+    }, 250);
+  }
+  function spStopRecording(silent) {
+    clearInterval(SP.tick);
+    if (SP.rec && SP.rec.state !== 'inactive') {
+      if (silent) SP.rec.onstop = null;
+      try { SP.rec.stop(); } catch (e) { /* ignore */ }
+    }
+    SP.rec = null;
+    if (silent) spRelease();
+  }
+  async function spSample(slow) { const it = SP.ses && SP.ses.items[SP.ses.i]; if (it) { Seq.stop(); playSentence(it.x, slow); } }
+  async function spPlayMine() { if (SP.url) Seq.play([{ url: SP.url }], { gap: 0 }); }
+  async function spPlayBoth() {
+    const it = SP.ses && SP.ses.items[SP.ses.i];
+    if (!it || !SP.url) return;
+    const path = it.x.path || await sentencePath(it.x.en);
+    Seq.play([{ path, text: it.x.en }, { url: SP.url }], { gap: 600 });
+  }
+  function spRecognize() {
+    const S2 = SP.ses, it = S2 && S2.items[S2.i];
+    if (!it || !SPEECH_REC || S2.listening || S2.recording) return;
+    Seq.stop(); Sound.stop();
+    let r;
+    try { r = new SPEECH_REC(); } catch (e) { S2.recErr = 'Распознавание речи здесь не работает.'; render(); return; }
+    r.lang = 'en-US'; r.interimResults = false; r.maxAlternatives = 3; r.continuous = false;
+    r.onresult = e => {
+      const alts = Array.from(e.results[0] || []).map(a => a.transcript).filter(Boolean);
+      // берём вариант, который ближе всего к образцу
+      const best = alts.map(t => ({ t, c: dictCheck(it.x.en, t) })).sort((a, b) => a.c.errors - b.c.errors)[0];
+      if (best) S2.heard = { text: best.t, errors: best.c.errors, right: best.c.right, mine: best.c.mine, total: dictWords(it.x.en).toks.length };
+    };
+    r.onerror = e => { S2.recErr = e.error === 'not-allowed' || e.error === 'service-not-allowed' ? 'Распознавание речи запрещено в настройках браузера.' : e.error === 'no-speech' ? 'Ничего не услышал. Нажми и скажи предложение ещё раз.' : 'Распознавание не сработало. Нужен интернет.'; };
+    r.onend = () => { clearTimeout(S2.recTimer); S2.listening = false; SP.recog = null; if (SP.ses === S2) render(); };
+    try { r.start(); } catch (e) { S2.recErr = 'Распознавание не запустилось.'; render(); return; }
+    // если браузер так и не ответил, не оставляем кнопку в «Слушаю…»
+    S2.recTimer = setTimeout(() => { if (SP.recog !== r) return; try { r.abort(); } catch (e) { /* ignore */ } if (!S2.heard && !S2.recErr) S2.recErr = 'Не расслышал. Нажми и скажи предложение ещё раз.'; S2.listening = false; SP.recog = null; if (SP.ses === S2) render(); }, 10000);
+    SP.recog = r; S2.listening = true; S2.heard = null; S2.recErr = '';
+    render();
+  }
+  function spNext() {
+    const S2 = SP.ses;
+    if (!S2) return;
+    const it = S2.items[S2.i];
+    if (it && (S2.recorded || S2.heard)) {
+      S2.done++; bump('c');
+      store.set(pk('tg:speak-recent'), store.get(pk('tg:speak-recent'), []).concat(it.x.en).slice(-300));
+    }
+    Seq.stop(); spReset();
+    S2.i++;
+    render();
+  }
+  function renderSpeak() {
+    view.className = 'wrap view';
+    const S2 = SP.ses;
+    if (!S2) { trainMode = null; renderHub(); return; }
+    const it = S2.items[S2.i];
+    if (!it) {
+      view.innerHTML = modeHead('Говорение') + `<div class="done"><h2>Проговорено: ${S2.done} из ${S2.items.length}</h2><p>Чем чаще повторяешь за диктором вслух, тем легче потом говорить самому. Слушай не только слова, но и ударения и паузы.</p>
+        <div class="done-actions"><button class="btn btn-primary" type="button" data-act="sp-start">Ещё 6 предложений</button><button class="btn btn-ghost" type="button" data-act="hub">К тренировкам</button></div></div>`;
+      return;
+    }
+    const recBtn = S2.recording
+      ? `<button class="sp-rec is-on" type="button" data-act="sp-stop" aria-label="Остановить запись"><span class="sp-dot"></span></button><p class="sp-state"><span id="spTime">0:00</span> · идёт запись, нажми, когда закончишь</p>`
+      : `<button class="sp-rec" type="button" data-act="sp-record" aria-label="${S2.recorded ? 'Записать заново' : 'Записать себя'}"${canRecord() ? '' : ' disabled'}><span class="sp-dot"></span></button><p class="sp-state">${S2.recorded ? 'Записать заново' : 'Послушай образец, нажми и скажи предложение вслух'}</p>`;
+    view.innerHTML = modeHead('Говорение') + progressHTML(S2.i, S2.items.length) + `
+      <div class="prompt">
+        <p class="ex ex-big" lang="en">${esc(it.x.en)}</p>
+        <p class="ex-tr">${esc(it.x.ru)}</p>
+        <div class="play-row"><button class="chip" type="button" data-act="sp-sample">${ICON.play}Образец</button><button class="chip" type="button" data-act="sp-sample-slow">${ICON.snail}Медленно</button></div>
+      </div>
+      <div class="sp-box">${recBtn}
+        ${S2.recorded && !S2.recording ? `<div class="play-row"><button class="chip" type="button" data-act="sp-mine">${ICON.play}Моя запись</button><button class="chip" type="button" data-act="sp-both">${ICON.play}Образец, потом я</button></div>` : ''}
+        ${S2.err ? `<p class="sp-err" role="alert">${esc(S2.err)}</p>` : ''}
+      </div>
+      ${SPEECH_REC ? `<div class="sp-check">
+        <button class="btn btn-ghost btn-sm" type="button" data-act="sp-recog"${S2.listening || S2.recording ? ' disabled' : ''}>${S2.listening ? 'Слушаю… говори' : 'Проверить произношение'}</button>
+        ${S2.heard ? `<p class="dc-line"><span class="dc-lab">Распознано: ${S2.heard.total - Math.min(S2.heard.total, S2.heard.errors)} из ${plural(S2.heard.total, ['слова', 'слов', 'слов'])}</span><span lang="en">${S2.heard.right}</span></p>` : ''}
+        ${S2.recErr ? `<p class="sp-err" role="alert">${esc(S2.recErr)}</p>` : ''}
+      </div>` : ''}
+      <div class="after"><button class="btn ${S2.recorded || S2.heard ? 'btn-primary' : 'btn-ghost'}" type="button" data-act="sp-next">${S2.i + 1 < S2.items.length ? 'Следующее предложение' : 'Закончить'}</button></div>`;
+    if (S2.spoken !== S2.i && interacted) { S2.spoken = S2.i; spSample(false); }
+  }
+  MODS.speak = {
+    start() { startSpeak(); },
+    render: renderSpeak,
+    stop() { spReset(); }
+  };
+  Object.assign(ACTS, {
+    'sp-start': () => startSpeak(),
+    'sp-sample': () => spSample(false),
+    'sp-sample-slow': () => spSample(true),
+    'sp-record': () => spRecord(),
+    'sp-stop': () => spStopRecording(),
+    'sp-mine': () => spPlayMine(),
+    'sp-both': () => spPlayBoth(),
+    'sp-recog': () => spRecognize(),
+    'sp-next': () => spNext()
   });
 
   /* ================= синхронизация через GitHub ================= */
